@@ -43,14 +43,62 @@ document.querySelectorAll('[data-menu-toggle]').forEach((btn) => {
   });
 });
 
+// Tabs: <div data-tabs> [data-tab="id"] (button, role=tab) + [data-tab-panel="id"] (panel, hidden)
+// Style trạng thái active bằng Tailwind: aria-selected:... / group-aria-selected:...
+document.querySelectorAll('[data-tabs]').forEach((root) => {
+  const tabs = [...root.querySelectorAll('[data-tab]')].filter((t) => t.closest('[data-tabs]') === root);
+  const panels = [...root.querySelectorAll('[data-tab-panel]')].filter((p) => p.closest('[data-tabs]') === root);
+  const activate = (id) => {
+    tabs.forEach((t) => {
+      const on = t.dataset.tab === id;
+      t.setAttribute('aria-selected', on);
+      t.tabIndex = on ? 0 : -1;
+    });
+    panels.forEach((p) => {
+      const on = p.dataset.tabPanel === id;
+      p.hidden = !on;
+      if (on) { p.classList.remove('tab-in'); void p.offsetWidth; p.classList.add('tab-in'); }
+    });
+    // Swiper trong panel vừa hiện: cập nhật kích thước + trạng thái nút prev/next dùng chung
+    requestAnimationFrame(() => {
+      document.querySelectorAll('[data-swiper]').forEach((el) => {
+        if (el.swiper && !el.offsetParent) el.swiper.navigation && el.swiper.navigation.update();
+      });
+      panels.filter((p) => !p.hidden).forEach((p) => p.querySelectorAll('[data-swiper]').forEach((el) => {
+        if (el.swiper) { el.swiper.update(); el.swiper.navigation && el.swiper.navigation.update(); }
+      }));
+      AOS.refresh();
+    });
+  };
+  tabs.forEach((t) => t.addEventListener('click', () => activate(t.dataset.tab)));
+  root.addEventListener('keydown', (e) => {
+    if (!['ArrowRight', 'ArrowLeft'].includes(e.key)) return;
+    const i = tabs.findIndex((t) => t.getAttribute('aria-selected') === 'true');
+    const n = tabs[(i + (e.key === 'ArrowRight' ? 1 : -1) + tabs.length) % tabs.length];
+    n.focus(); activate(n.dataset.tab);
+  });
+  const first = tabs.find((t) => t.getAttribute('aria-selected') === 'true') || tabs[0];
+  if (first) activate(first.dataset.tab);
+});
+
 // Sliders: <div class="swiper" data-swiper='{"slidesPerView":3}'>
+// Bộ đếm: [data-swiper-current] / [data-swiper-total] trong cùng <section> (01 / 02)
+const pad = (n) => String(n).padStart(2, '0');
 document.querySelectorAll('[data-swiper]').forEach((el) => {
   let opts = {};
   try { opts = JSON.parse(el.dataset.swiper); } catch (e) {}
-  const scope = el.closest('section') || el.parentElement;
-  new Swiper(el, {
-    navigation: { nextEl: scope.querySelector('.swiper-next'), prevEl: scope.querySelector('.swiper-prev') },
+  const scope = el.closest('[data-swiper-scope]') || el.closest('section') || el.parentElement;
+  const cur = scope.querySelector('[data-swiper-current]');
+  const tot = scope.querySelector('[data-swiper-total]');
+  const sw = new Swiper(el, {
+    navigation: { nextEl: scope.querySelector('.swiper-next'), prevEl: scope.querySelector('.swiper-prev'), lockClass: 'swiper-button-nolock' },
     pagination: { el: el.querySelector('.swiper-pagination'), clickable: true },
     ...opts,
   });
+  if (cur || tot) {
+    const total = el.querySelectorAll('.swiper-slide:not(.swiper-slide-duplicate)').length;
+    const upd = () => { if (cur) cur.textContent = pad(sw.realIndex + 1); if (tot) tot.textContent = pad(total); };
+    sw.on('slideChange', upd); upd();
+  }
+  el.swiper = sw;
 });
