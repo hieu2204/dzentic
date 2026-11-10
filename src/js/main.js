@@ -100,6 +100,12 @@ document.querySelectorAll('[data-swiper]').forEach((el) => {
     const upd = () => { if (cur) cur.textContent = pad(sw.realIndex + 1); if (tot) tot.textContent = pad(total); };
     sw.on('slideChange', upd); upd();
   }
+  // Loop vô hạn mượt cho slidesPerView:auto: HTML có N slide gốc + N bản sao (data-swiper-clones=N).
+  // Khi trượt tới bản sao đầu tiên thì nhảy tức thì về slide gốc tương ứng (giao diện giống hệt nhau).
+  const clones = parseInt(el.dataset.swiperClones || 0, 10);
+  if (clones) {
+    sw.on('transitionEnd', () => { if (sw.activeIndex >= clones) sw.slideTo(sw.activeIndex - clones, 0, false); });
+  }
   el.swiper = sw;
 });
 
