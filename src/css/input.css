@@ -1,0 +1,45 @@
+@import "tailwindcss";
+@import "swiper/css";
+@import "swiper/css/navigation";
+@import "swiper/css/pagination";
+@import "@fancyapps/ui/dist/fancybox/fancybox.css";
+@import "aos/dist/aos.css";
+
+@source "../../*.html";
+@source "../../pages/**/*.html";
+
+/* Design tokens từ Figma sẽ được điền vào @theme */
+@theme {
+  --font-sans: "Google Sans Flex", ui-sans-serif, system-ui, sans-serif;
+
+  --color-bg: #faf6f5;
+  --color-white: #ffffff;
+  --color-ink: #1a1a1a;
+  --color-text: #302b27;
+  --color-navy: #101b3b;
+  --color-blue: #1a2d70;
+  --color-brown: #7e3f11;
+  --color-brown-dark: #50280b;
+  --color-brown-50: #f6ede6;
+  --color-hero-fill: #fecc88;
+  --color-green: #0eab4a;
+  --color-gray-ee: #eeeeee;
+  --color-gray-dd: #dddddd;
+  --color-gray-bb: #bbbbbb;
+  --color-gray-99: #999999;
+  --color-gray-66: #666666;
+  --color-gray-49: #494949;
+
+  --radius-xs: 1px;
+  --radius-sm: 2px;
+  --radius-md: 4px;
+
+  --shadow-popover: 0 8px 24px #101b3b1f;
+
+  --container-site: 1440px;
+}
+
+@layer base {
+  html { scroll-behavior: smooth; }
+  body { font-family: var(--font-sans); background: var(--color-bg); color: var(--color-text); -webkit-font-smoothing: antialiased; }
+}

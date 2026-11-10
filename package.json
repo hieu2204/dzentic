@@ -1,0 +1,27 @@
+{
+  "name": "dzentic",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev:css": "tailwindcss -i ./src/css/input.css -o ./assets/css/app.css --watch",
+    "build:css": "tailwindcss -i ./src/css/input.css -o ./assets/css/app.css --minify",
+    "dev:js": "esbuild src/js/main.js --bundle --outfile=assets/js/app.js --sourcemap --watch",
+    "build:js": "esbuild src/js/main.js --bundle --minify --outfile=assets/js/app.js",
+    "dev": "npm-run-all --parallel dev:css dev:js serve",
+    "serve": "live-server --port=5173 --no-browser .",
+    "build": "npm run build:css && npm run build:js"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.3.5",
+    "esbuild": "^0.28.2",
+    "live-server": "^1.2.2",
+    "npm-run-all": "^4.1.5",
+    "tailwindcss": "^4.3.5"
+  },
+  "dependencies": {
+    "@fancyapps/ui": "^6.1.15",
+    "aos": "^2.3.4",
+    "countup.js": "^2.10.1",
+    "swiper": "^14.4.0"
+  }
+}
