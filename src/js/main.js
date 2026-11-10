@@ -102,3 +102,52 @@ document.querySelectorAll('[data-swiper]').forEach((el) => {
   }
   el.swiper = sw;
 });
+
+// Header sticky: khi cuộn quá top bar thì header cố định, nền sáng + viền giống các trang con
+const siteHeader = document.querySelector('[data-site-header]');
+if (siteHeader) {
+  const offset = () => siteHeader.getBoundingClientRect().top + window.scrollY - (siteHeader.classList.contains('is-stuck') ? 0 : 0);
+  let startY = offset();
+  const onScroll = () => {
+    const stuck = window.scrollY > startY;
+    siteHeader.classList.toggle('is-stuck', stuck);
+  };
+  window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', () => { if (!siteHeader.classList.contains('is-stuck')) startY = offset(); });
+  onScroll();
+}
+
+// Store locator: bấm địa điểm (hoặc marker) -> hiện Google Maps của địa điểm đó; "Bản đồ tổng" quay lại bản đồ + marker thành phố
+// <li data-clinic="id" data-q="Tên, địa chỉ"> ; <button data-marker="id"> ; [data-map-frame] iframe ; [data-map-reset]
+document.querySelectorAll('[data-store-locator]').forEach((root) => {
+  const frame = root.querySelector('[data-map-frame]');
+  const back = root.querySelector('[data-map-reset]');
+  const items = () => [...root.querySelectorAll('[data-clinic]')];
+  const markers = () => [...root.querySelectorAll('[data-marker]')];
+  const reset = () => {
+    frame.hidden = true; frame.removeAttribute('src'); back.hidden = true;
+    items().forEach((i) => i.removeAttribute('aria-current'));
+    markers().forEach((m) => m.setAttribute('aria-pressed', 'false'));
+  };
+  const select = (id, scroll) => {
+    const li = items().find((i) => i.dataset.clinic === id);
+    if (!li) return;
+    items().forEach((i) => i.setAttribute('aria-current', i === li ? 'true' : 'false'));
+    markers().forEach((m) => m.setAttribute('aria-pressed', m.dataset.marker === id ? 'true' : 'false'));
+    frame.src = 'https://www.google.com/maps?q=' + encodeURIComponent(li.dataset.q) + '&hl=vi&z=16&output=embed';
+    frame.hidden = false; back.hidden = false;
+    if (scroll) li.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+  };
+  root.addEventListener('click', (e) => {
+    const li = e.target.closest('[data-clinic]');
+    const mk = e.target.closest('[data-marker]');
+    if (li) select(li.dataset.clinic, false);
+    else if (mk) select(mk.dataset.marker, true);
+    else if (e.target.closest('[data-map-reset]')) reset();
+    else if (e.target.closest('[data-tab]')) reset();
+  });
+  root.addEventListener('keydown', (e) => {
+    const li = e.target.closest('[data-clinic]');
+    if (li && (e.key === 'Enter' || e.key === ' ')) { e.preventDefault(); select(li.dataset.clinic, false); }
+  });
+});

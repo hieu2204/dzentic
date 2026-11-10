@@ -22,7 +22,7 @@
 <!-- SECTION: hero-header -->
 <section class="relative bg-hero-fill text-navy overflow-hidden" aria-roledescription="carousel" aria-label="Giới thiệu Dzentic">
   <!-- Header: nằm NGOÀI slider, đè lên ảnh nền -->
-  <header class="absolute inset-x-0 top-0 z-20">
+  <header data-site-header class="absolute inset-x-0 top-0 z-50 transition-[background-color,box-shadow] duration-300 [&.is-stuck]:fixed [&.is-stuck]:bg-bg [&.is-stuck]:border-b [&.is-stuck]:border-gray-ee [&.is-stuck]:shadow-popover">
     <div class="max-w-site mx-auto px-4 md:px-8 xl:px-[72px] h-20 xl:h-[120px] flex items-center justify-between xl:grid xl:grid-cols-[1fr_auto_1fr] xl:gap-6">
       <nav class="hidden xl:flex items-center gap-6 text-base leading-[22px] tracking-[0.224px]" aria-label="Menu trái">
         <a href="#" class="hover:text-brown focus-visible:text-brown focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brown">Khoa Học &amp; Bằng Chứng</a>
@@ -66,7 +66,7 @@
   </header>
 
   <!-- Slider hero -->
-  <div class="swiper" data-swiper='{"loop":true,"speed":700,"autoplay":{"delay":6000,"disableOnInteraction":false},"effect":"fade","fadeEffect":{"crossFade":true}}'>
+  <div class="swiper" data-swiper='{"rewind":true,"speed":700,"autoplay":{"delay":3000,"disableOnInteraction":false,"waitForTransition":false},"effect":"fade","fadeEffect":{"crossFade":true}}'>
     <div class="swiper-wrapper">
 
       <!-- Slide 01 (Figma) -->
@@ -99,13 +99,13 @@
         </div>
       </div>
 
-      <!-- TODO: nội dung slide 2 là placeholder, cần thay -->
-      <div class="swiper-slide relative !h-auto bg-brown-dark">
-        <img src="assets/img/hero/hero-bg-2.jpg" alt="Bộ sản phẩm Dzentic trên bục gỗ" width="2880" height="1601" loading="lazy"
-             class="absolute inset-0 w-full h-full object-cover object-[75%_center] md:object-center">
-        <div class="absolute inset-0 bg-navy/40 md:hidden" aria-hidden="true"></div>
+      <!-- Slide 02 (nội dung tham khảo, có thể thay) -->
+      <div class="swiper-slide relative !h-auto">
+        <img src="assets/img/hero/hero-bg-2.jpg" alt="Phân tử hoạt chất Dzentic trên nền sáng" width="2880" height="1662"
+             class="absolute inset-0 w-full h-full object-cover object-[75%_center] md:object-center" loading="lazy">
+        <div class="absolute inset-0 bg-hero-fill/60 md:hidden" aria-hidden="true"></div>
         <div class="relative max-w-site mx-auto px-4 md:px-8 xl:px-[72px] pt-[120px] pb-28 md:pt-[148px] md:pb-32 xl:pt-[238px] xl:pb-0 min-h-[560px] xl:min-h-[846px]">
-          <div class="flex flex-col gap-10 text-bg max-w-[620px] xl:max-w-[780px]">
+          <div class="flex flex-col gap-10 text-brown max-w-[620px] xl:max-w-[780px]">
             <div class="flex flex-col gap-6">
               <div class="flex flex-col gap-3 uppercase">
                 <p class="text-sm md:text-base leading-[22px] tracking-[4px]">Japanese Premium Medical Skincare</p>
@@ -115,14 +115,14 @@
               </div>
               <div class="text-base leading-[22px] tracking-[0.224px] max-w-[486px]">
                 <p>Clinically Proven. Dermatologist Recommended.</p>
-                <p>Bộ sản phẩm Dzentic được nghiên cứu và sản xuất tại Nhật Bản, tối ưu cho cấu trúc da Châu Á, với thành phần minh bạch và hiệu quả được kiểm chứng lâm sàng.</p>
+                <p>Bộ sản phẩm Dzentic được nghiên cứu và sản xuất tại Nhật Bản, tối ưu cho làn da Châu Á, với thành phần minh bạch và hiệu quả được kiểm chứng lâm sàng.</p>
               </div>
             </div>
             <div class="flex flex-wrap items-center gap-3">
-              <a href="#" class="inline-flex h-10 items-center justify-center gap-2 px-6 rounded-sm bg-bg text-brown text-base leading-[22px] tracking-[0.224px] hover:bg-brown-50 focus-visible:bg-brown-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-bg">Tìm Routine của bạn</a>
-              <a href="#" class="group inline-flex h-10 items-center justify-center gap-2 px-6 rounded-sm border border-bg text-bg text-base leading-[22px] tracking-[0.224px] hover:bg-bg hover:text-brown focus-visible:bg-bg focus-visible:text-brown focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-bg">
+              <a href="#" class="inline-flex h-10 items-center justify-center gap-2 px-6 rounded-sm bg-brown text-bg text-base leading-[22px] tracking-[0.224px] hover:bg-brown-dark focus-visible:bg-brown-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Tìm Routine của bạn</a>
+              <a href="#" class="group inline-flex h-10 items-center justify-center gap-2 px-6 rounded-sm border border-brown text-brown text-base leading-[22px] tracking-[0.224px] hover:bg-brown hover:text-bg focus-visible:bg-brown focus-visible:text-bg focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">
                 Xem sản phẩm
-                <img src="assets/img/hero/icon-arrow-up-right.svg" alt="" width="12" height="13" class="brightness-0 invert group-hover:invert-0 group-focus-visible:invert-0">
+                <img src="assets/img/hero/icon-arrow-up-right.svg" alt="" width="12" height="13" class="group-hover:brightness-0 group-hover:invert group-focus-visible:brightness-0 group-focus-visible:invert">
               </a>
             </div>
           </div>
@@ -137,16 +137,6 @@
     <span data-swiper-current>01</span>
     <span class="block h-px w-10 bg-bg/60" aria-hidden="true"></span>
     <span data-swiper-total>02</span>
-  </div>
-
-  <!-- Prev / Next -->
-  <div class="absolute bottom-4 md:bottom-[40px] right-4 md:right-8 xl:right-[72px] z-10 flex gap-2">
-    <button type="button" class="swiper-prev grid size-10 place-items-center rounded-full border border-bg/70 text-bg hover:bg-bg hover:text-brown focus-visible:bg-bg focus-visible:text-brown focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-bg" aria-label="Slide trước">
-      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M10 3 5 8l5 5"/></svg>
-    </button>
-    <button type="button" class="swiper-next grid size-10 place-items-center rounded-full border border-bg/70 text-bg hover:bg-bg hover:text-brown focus-visible:bg-bg focus-visible:text-brown focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-bg" aria-label="Slide sau">
-      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="m6 3 5 5-5 5"/></svg>
-    </button>
   </div>
 </section>
 
@@ -380,42 +370,66 @@
                 </div>
                 </div>
                 <div data-tab-panel="mun-dem" hidden>
-                <!-- TODO placeholder: Figma chưa có chu trình ban đêm -->
                 <div class="swiper" data-swiper='{"slidesPerView":1.4,"spaceBetween":16,"breakpoints":{"640":{"slidesPerView":2.4,"spaceBetween":24},"1024":{"slidesPerView":2,"spaceBetween":24},"1280":{"slidesPerView":3,"spaceBetween":23.7}}}'>
                   <ul class="swiper-wrapper">
                   <li class="swiper-slide">
-                    <article class="flex flex-col gap-6">
-                      <div class="aspect-[196/284] border border-dashed border-[#ccc] bg-[#f5f3f1]"></div>
+                    <article class="group flex flex-col gap-6 transition-transform duration-300 hover:-translate-y-1">
+                      <div class="relative aspect-[196/284] overflow-hidden">
+                        <img src="assets/img/thau-hieu-da/nen-san-pham.png" alt="" width="1089" height="1445" class="absolute inset-0 size-full object-cover" loading="lazy" />
+                        <img src="assets/img/thau-hieu-da/sp-cleansing-gel.png" alt="Purifying Cleansing Gel" width="656" height="1338" class="absolute left-[27%] top-[17.6%] h-[64.4%] w-[46%] object-contain" loading="lazy" />
+                        <div class="absolute inset-x-[10px] bottom-[10px] flex flex-col gap-1 opacity-100 transition-opacity lg:opacity-0 lg:group-focus-within:opacity-100 lg:group-hover:opacity-100">
+                          <a href="#" class="flex h-8 items-center justify-center rounded-sm bg-bg px-3 text-base tracking-[0.014em] text-ink hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue">Xem chi tiết</a>
+                          <button type="button" class="flex h-8 items-center justify-center rounded-sm bg-navy px-3 text-base tracking-[0.014em] text-bg hover:bg-blue focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-bg">Thêm vào giỏ hàng</button>
+                        </div>
+                      </div>
                       <div class="flex flex-col gap-3 text-base leading-[22px] tracking-[0.014em] text-navy">
-                        <h3>Đang cập nhật</h3>
-                        <p class="text-sm leading-5 text-gray-66">Bước 01 · chờ danh sách sản phẩm</p>
+                        <h3>Purifying Cleansing Gel</h3>
+                        <p>1,000,000 VNĐ</p>
                       </div>
                     </article>
                   </li>
                   <li class="swiper-slide">
-                    <article class="flex flex-col gap-6">
-                      <div class="aspect-[196/284] border border-dashed border-[#ccc] bg-[#f5f3f1]"></div>
+                    <article class="group flex flex-col gap-6 transition-transform duration-300 hover:-translate-y-1">
+                      <div class="relative aspect-[196/284] overflow-hidden">
+                        <img src="assets/img/danh-muc-san-pham/zinc-complex-serum.png" alt="Zinc Complex Night Serum" width="1089" height="1445" class="absolute inset-0 size-full object-cover" loading="lazy" />
+                        <div class="absolute inset-x-[10px] bottom-[10px] flex flex-col gap-1 opacity-100 transition-opacity lg:opacity-0 lg:group-focus-within:opacity-100 lg:group-hover:opacity-100">
+                          <a href="#" class="flex h-8 items-center justify-center rounded-sm bg-bg px-3 text-base tracking-[0.014em] text-ink hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue">Xem chi tiết</a>
+                          <button type="button" class="flex h-8 items-center justify-center rounded-sm bg-navy px-3 text-base tracking-[0.014em] text-bg hover:bg-blue focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-bg">Thêm vào giỏ hàng</button>
+                        </div>
+                      </div>
                       <div class="flex flex-col gap-3 text-base leading-[22px] tracking-[0.014em] text-navy">
-                        <h3>Đang cập nhật</h3>
-                        <p class="text-sm leading-5 text-gray-66">Bước 02 · chờ danh sách sản phẩm</p>
+                        <h3>Zinc Complex<br />Night Serum</h3>
+                        <p>1,000,000 VNĐ</p>
                       </div>
                     </article>
                   </li>
                   <li class="swiper-slide">
-                    <article class="flex flex-col gap-6">
-                      <div class="aspect-[196/284] border border-dashed border-[#ccc] bg-[#f5f3f1]"></div>
+                    <article class="group flex flex-col gap-6 transition-transform duration-300 hover:-translate-y-1">
+                      <div class="relative aspect-[196/284] overflow-hidden">
+                        <img src="assets/img/danh-muc-san-pham/retino-renewal-brightening-serum.png" alt="Retino Renewal Brightening Serum" width="1089" height="1445" class="absolute inset-0 size-full object-cover" loading="lazy" />
+                        <div class="absolute inset-x-[10px] bottom-[10px] flex flex-col gap-1 opacity-100 transition-opacity lg:opacity-0 lg:group-focus-within:opacity-100 lg:group-hover:opacity-100">
+                          <a href="#" class="flex h-8 items-center justify-center rounded-sm bg-bg px-3 text-base tracking-[0.014em] text-ink hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue">Xem chi tiết</a>
+                          <button type="button" class="flex h-8 items-center justify-center rounded-sm bg-navy px-3 text-base tracking-[0.014em] text-bg hover:bg-blue focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-bg">Thêm vào giỏ hàng</button>
+                        </div>
+                      </div>
                       <div class="flex flex-col gap-3 text-base leading-[22px] tracking-[0.014em] text-navy">
-                        <h3>Đang cập nhật</h3>
-                        <p class="text-sm leading-5 text-gray-66">Bước 03 · chờ danh sách sản phẩm</p>
+                        <h3>Retino Renewal<br />Brightening Serum</h3>
+                        <p>1,000,000 VNĐ</p>
                       </div>
                     </article>
                   </li>
                   <li class="swiper-slide">
-                    <article class="flex flex-col gap-6">
-                      <div class="aspect-[196/284] border border-dashed border-[#ccc] bg-[#f5f3f1]"></div>
+                    <article class="group flex flex-col gap-6 transition-transform duration-300 hover:-translate-y-1">
+                      <div class="relative aspect-[196/284] overflow-hidden">
+                        <img src="assets/img/thau-hieu-da/sp-blemish-cream.png" alt="Blemish Recovery Hydrating Cream" width="1089" height="1445" class="absolute inset-0 size-full object-cover" loading="lazy" />
+                        <div class="absolute inset-x-[10px] bottom-[10px] flex flex-col gap-1 opacity-100 transition-opacity lg:opacity-0 lg:group-focus-within:opacity-100 lg:group-hover:opacity-100">
+                          <a href="#" class="flex h-8 items-center justify-center rounded-sm bg-bg px-3 text-base tracking-[0.014em] text-ink hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue">Xem chi tiết</a>
+                          <button type="button" class="flex h-8 items-center justify-center rounded-sm bg-navy px-3 text-base tracking-[0.014em] text-bg hover:bg-blue focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-bg">Thêm vào giỏ hàng</button>
+                        </div>
+                      </div>
                       <div class="flex flex-col gap-3 text-base leading-[22px] tracking-[0.014em] text-navy">
-                        <h3>Đang cập nhật</h3>
-                        <p class="text-sm leading-5 text-gray-66">Bước 04 · chờ danh sách sản phẩm</p>
+                        <h3>Blemish Recovery<br />Hydrating Cream</h3>
+                        <p>1,000,000 VNĐ</p>
                       </div>
                     </article>
                   </li>
@@ -493,42 +507,67 @@
                 </div>
                 </div>
                 <div data-tab-panel="nam-dem" hidden>
-                <!-- TODO placeholder: Figma chưa có chu trình ban đêm -->
                 <div class="swiper" data-swiper='{"slidesPerView":1.4,"spaceBetween":16,"breakpoints":{"640":{"slidesPerView":2.4,"spaceBetween":24},"1024":{"slidesPerView":2,"spaceBetween":24},"1280":{"slidesPerView":3,"spaceBetween":23.7}}}'>
                   <ul class="swiper-wrapper">
                   <li class="swiper-slide">
-                    <article class="flex flex-col gap-6">
-                      <div class="aspect-[196/284] border border-dashed border-[#ccc] bg-[#f5f3f1]"></div>
+                    <article class="group flex flex-col gap-6 transition-transform duration-300 hover:-translate-y-1">
+                      <div class="relative aspect-[196/284] overflow-hidden">
+                        <img src="assets/img/thau-hieu-da/nen-san-pham.png" alt="" width="1089" height="1445" class="absolute inset-0 size-full object-cover" loading="lazy" />
+                        <img src="assets/img/thau-hieu-da/sp-cleansing-gel.png" alt="Purifying Cleansing Gel" width="656" height="1338" class="absolute left-[27%] top-[17.6%] h-[64.4%] w-[46%] object-contain" loading="lazy" />
+                        <div class="absolute inset-x-[10px] bottom-[10px] flex flex-col gap-1 opacity-100 transition-opacity lg:opacity-0 lg:group-focus-within:opacity-100 lg:group-hover:opacity-100">
+                          <a href="#" class="flex h-8 items-center justify-center rounded-sm bg-bg px-3 text-base tracking-[0.014em] text-ink hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue">Xem chi tiết</a>
+                          <button type="button" class="flex h-8 items-center justify-center rounded-sm bg-navy px-3 text-base tracking-[0.014em] text-bg hover:bg-blue focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-bg">Thêm vào giỏ hàng</button>
+                        </div>
+                      </div>
                       <div class="flex flex-col gap-3 text-base leading-[22px] tracking-[0.014em] text-navy">
-                        <h3>Đang cập nhật</h3>
-                        <p class="text-sm leading-5 text-gray-66">Bước 01 · chờ danh sách sản phẩm</p>
+                        <h3>Purifying Cleansing Gel</h3>
+                        <p>1,000,000 VNĐ</p>
                       </div>
                     </article>
                   </li>
                   <li class="swiper-slide">
-                    <article class="flex flex-col gap-6">
-                      <div class="aspect-[196/284] border border-dashed border-[#ccc] bg-[#f5f3f1]"></div>
+                    <article class="group flex flex-col gap-6 transition-transform duration-300 hover:-translate-y-1">
+                      <div class="relative aspect-[196/284] overflow-hidden">
+                        <img src="assets/img/danh-muc-san-pham/retino-renewal-brightening-serum.png" alt="Retino Renewal Brightening Serum" width="1089" height="1445" class="absolute inset-0 size-full object-cover" loading="lazy" />
+                        <div class="absolute inset-x-[10px] bottom-[10px] flex flex-col gap-1 opacity-100 transition-opacity lg:opacity-0 lg:group-focus-within:opacity-100 lg:group-hover:opacity-100">
+                          <a href="#" class="flex h-8 items-center justify-center rounded-sm bg-bg px-3 text-base tracking-[0.014em] text-ink hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue">Xem chi tiết</a>
+                          <button type="button" class="flex h-8 items-center justify-center rounded-sm bg-navy px-3 text-base tracking-[0.014em] text-bg hover:bg-blue focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-bg">Thêm vào giỏ hàng</button>
+                        </div>
+                      </div>
                       <div class="flex flex-col gap-3 text-base leading-[22px] tracking-[0.014em] text-navy">
-                        <h3>Đang cập nhật</h3>
-                        <p class="text-sm leading-5 text-gray-66">Bước 02 · chờ danh sách sản phẩm</p>
+                        <h3>Retino Renewal<br />Brightening Serum</h3>
+                        <p>1,000,000 VNĐ</p>
                       </div>
                     </article>
                   </li>
                   <li class="swiper-slide">
-                    <article class="flex flex-col gap-6">
-                      <div class="aspect-[196/284] border border-dashed border-[#ccc] bg-[#f5f3f1]"></div>
+                    <article class="group flex flex-col gap-6 transition-transform duration-300 hover:-translate-y-1">
+                      <div class="relative aspect-[196/284] overflow-hidden">
+                        <img src="assets/img/danh-muc-san-pham/photo-defense-brightening-serum.png" alt="Photo Defense Brightening Serum" width="1089" height="1445" class="absolute inset-0 size-full object-cover" loading="lazy" />
+                        <div class="absolute inset-x-[10px] bottom-[10px] flex flex-col gap-1 opacity-100 transition-opacity lg:opacity-0 lg:group-focus-within:opacity-100 lg:group-hover:opacity-100">
+                          <a href="#" class="flex h-8 items-center justify-center rounded-sm bg-bg px-3 text-base tracking-[0.014em] text-ink hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue">Xem chi tiết</a>
+                          <button type="button" class="flex h-8 items-center justify-center rounded-sm bg-navy px-3 text-base tracking-[0.014em] text-bg hover:bg-blue focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-bg">Thêm vào giỏ hàng</button>
+                        </div>
+                      </div>
                       <div class="flex flex-col gap-3 text-base leading-[22px] tracking-[0.014em] text-navy">
-                        <h3>Đang cập nhật</h3>
-                        <p class="text-sm leading-5 text-gray-66">Bước 03 · chờ danh sách sản phẩm</p>
+                        <h3>Photo Defense<br />Brightening Serum</h3>
+                        <p>1,000,000 VNĐ</p>
                       </div>
                     </article>
                   </li>
                   <li class="swiper-slide">
-                    <article class="flex flex-col gap-6">
-                      <div class="aspect-[196/284] border border-dashed border-[#ccc] bg-[#f5f3f1]"></div>
+                    <article class="group flex flex-col gap-6 transition-transform duration-300 hover:-translate-y-1">
+                      <div class="relative aspect-[196/284] overflow-hidden">
+                        <img src="assets/img/thau-hieu-da/nen-san-pham.png" alt="" width="1089" height="1445" class="absolute inset-0 size-full object-cover" loading="lazy" />
+                        <img src="assets/img/thau-hieu-da/san-pham-3.png" alt="NeoBright Repair Cream" width="792" height="608" class="absolute left-[27%] top-[17.6%] h-[64.4%] w-[46%] object-contain" loading="lazy" />
+                        <div class="absolute inset-x-[10px] bottom-[10px] flex flex-col gap-1 opacity-100 transition-opacity lg:opacity-0 lg:group-focus-within:opacity-100 lg:group-hover:opacity-100">
+                          <a href="#" class="flex h-8 items-center justify-center rounded-sm bg-bg px-3 text-base tracking-[0.014em] text-ink hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue">Xem chi tiết</a>
+                          <button type="button" class="flex h-8 items-center justify-center rounded-sm bg-navy px-3 text-base tracking-[0.014em] text-bg hover:bg-blue focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-bg">Thêm vào giỏ hàng</button>
+                        </div>
+                      </div>
                       <div class="flex flex-col gap-3 text-base leading-[22px] tracking-[0.014em] text-navy">
-                        <h3>Đang cập nhật</h3>
-                        <p class="text-sm leading-5 text-gray-66">Bước 04 · chờ danh sách sản phẩm</p>
+                        <h3>NeoBright Repair Cream</h3>
+                        <p>1,000,000 VNĐ</p>
                       </div>
                     </article>
                   </li>
@@ -552,42 +591,68 @@
               </div>
               <div class="mt-8 lg:mx-[49.8px] lg:mt-10">
                 <div data-tab-panel="nhay-cam-ngay" hidden>
-                <!-- TODO placeholder: Figma chưa có sản phẩm chu trình ban ngày cho tab này -->
                 <div class="swiper" data-swiper='{"slidesPerView":1.4,"spaceBetween":16,"breakpoints":{"640":{"slidesPerView":2.4,"spaceBetween":24},"1024":{"slidesPerView":2,"spaceBetween":24},"1280":{"slidesPerView":3,"spaceBetween":23.7}}}'>
                   <ul class="swiper-wrapper">
                   <li class="swiper-slide">
-                    <article class="flex flex-col gap-6">
-                      <div class="aspect-[196/284] border border-dashed border-[#ccc] bg-[#f5f3f1]"></div>
+                    <article class="group flex flex-col gap-6 transition-transform duration-300 hover:-translate-y-1">
+                      <div class="relative aspect-[196/284] overflow-hidden">
+                        <img src="assets/img/thau-hieu-da/nen-san-pham.png" alt="" width="1089" height="1445" class="absolute inset-0 size-full object-cover" loading="lazy" />
+                        <img src="assets/img/thau-hieu-da/sp-cleansing-gel.png" alt="Gentle Purifying Cleansing Gel" width="656" height="1338" class="absolute left-[27%] top-[17.6%] h-[64.4%] w-[46%] object-contain" loading="lazy" />
+                        <div class="absolute inset-x-[10px] bottom-[10px] flex flex-col gap-1 opacity-100 transition-opacity lg:opacity-0 lg:group-focus-within:opacity-100 lg:group-hover:opacity-100">
+                          <a href="#" class="flex h-8 items-center justify-center rounded-sm bg-bg px-3 text-base tracking-[0.014em] text-ink hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue">Xem chi tiết</a>
+                          <button type="button" class="flex h-8 items-center justify-center rounded-sm bg-navy px-3 text-base tracking-[0.014em] text-bg hover:bg-blue focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-bg">Thêm vào giỏ hàng</button>
+                        </div>
+                      </div>
                       <div class="flex flex-col gap-3 text-base leading-[22px] tracking-[0.014em] text-navy">
-                        <h3>Đang cập nhật</h3>
-                        <p class="text-sm leading-5 text-gray-66">Bước 01 · chờ danh sách sản phẩm</p>
+                        <h3>Gentle Purifying<br />Cleansing Gel</h3>
+                        <p>1,000,000 VNĐ</p>
                       </div>
                     </article>
                   </li>
                   <li class="swiper-slide">
-                    <article class="flex flex-col gap-6">
-                      <div class="aspect-[196/284] border border-dashed border-[#ccc] bg-[#f5f3f1]"></div>
+                    <article class="group flex flex-col gap-6 transition-transform duration-300 hover:-translate-y-1">
+                      <div class="relative aspect-[196/284] overflow-hidden">
+                        <img src="assets/img/danh-muc-san-pham/zinc-complex-serum.png" alt="Zinc Complex Serum" width="1089" height="1445" class="absolute inset-0 size-full object-cover" loading="lazy" />
+                        <div class="absolute inset-x-[10px] bottom-[10px] flex flex-col gap-1 opacity-100 transition-opacity lg:opacity-0 lg:group-focus-within:opacity-100 lg:group-hover:opacity-100">
+                          <a href="#" class="flex h-8 items-center justify-center rounded-sm bg-bg px-3 text-base tracking-[0.014em] text-ink hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue">Xem chi tiết</a>
+                          <button type="button" class="flex h-8 items-center justify-center rounded-sm bg-navy px-3 text-base tracking-[0.014em] text-bg hover:bg-blue focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-bg">Thêm vào giỏ hàng</button>
+                        </div>
+                      </div>
                       <div class="flex flex-col gap-3 text-base leading-[22px] tracking-[0.014em] text-navy">
-                        <h3>Đang cập nhật</h3>
-                        <p class="text-sm leading-5 text-gray-66">Bước 02 · chờ danh sách sản phẩm</p>
+                        <h3>Zinc Complex Serum</h3>
+                        <p>1,000,000 VNĐ</p>
                       </div>
                     </article>
                   </li>
                   <li class="swiper-slide">
-                    <article class="flex flex-col gap-6">
-                      <div class="aspect-[196/284] border border-dashed border-[#ccc] bg-[#f5f3f1]"></div>
+                    <article class="group flex flex-col gap-6 transition-transform duration-300 hover:-translate-y-1">
+                      <div class="relative aspect-[196/284] overflow-hidden">
+                        <img src="assets/img/thau-hieu-da/nen-san-pham.png" alt="" width="1089" height="1445" class="absolute inset-0 size-full object-cover" loading="lazy" />
+                        <img src="assets/img/thau-hieu-da/san-pham-3.png" alt="NeoBright Repair Cream" width="792" height="608" class="absolute left-[27%] top-[17.6%] h-[64.4%] w-[46%] object-contain" loading="lazy" />
+                        <div class="absolute inset-x-[10px] bottom-[10px] flex flex-col gap-1 opacity-100 transition-opacity lg:opacity-0 lg:group-focus-within:opacity-100 lg:group-hover:opacity-100">
+                          <a href="#" class="flex h-8 items-center justify-center rounded-sm bg-bg px-3 text-base tracking-[0.014em] text-ink hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue">Xem chi tiết</a>
+                          <button type="button" class="flex h-8 items-center justify-center rounded-sm bg-navy px-3 text-base tracking-[0.014em] text-bg hover:bg-blue focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-bg">Thêm vào giỏ hàng</button>
+                        </div>
+                      </div>
                       <div class="flex flex-col gap-3 text-base leading-[22px] tracking-[0.014em] text-navy">
-                        <h3>Đang cập nhật</h3>
-                        <p class="text-sm leading-5 text-gray-66">Bước 03 · chờ danh sách sản phẩm</p>
+                        <h3>NeoBright Repair Cream</h3>
+                        <p>1,000,000 VNĐ</p>
                       </div>
                     </article>
                   </li>
                   <li class="swiper-slide">
-                    <article class="flex flex-col gap-6">
-                      <div class="aspect-[196/284] border border-dashed border-[#ccc] bg-[#f5f3f1]"></div>
+                    <article class="group flex flex-col gap-6 transition-transform duration-300 hover:-translate-y-1">
+                      <div class="relative aspect-[196/284] overflow-hidden">
+                        <img src="assets/img/thau-hieu-da/nen-san-pham.png" alt="" width="1089" height="1445" class="absolute inset-0 size-full object-cover" loading="lazy" />
+                        <img src="assets/img/thau-hieu-da/sp-sunscreen.png" alt="Blue Light Shield Tone-up Fluid Sunscreen" width="486" height="1122" class="absolute left-[27%] top-[17.6%] h-[64.4%] w-[46%] object-contain" loading="lazy" />
+                        <div class="absolute inset-x-[10px] bottom-[10px] flex flex-col gap-1 opacity-100 transition-opacity lg:opacity-0 lg:group-focus-within:opacity-100 lg:group-hover:opacity-100">
+                          <a href="#" class="flex h-8 items-center justify-center rounded-sm bg-bg px-3 text-base tracking-[0.014em] text-ink hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue">Xem chi tiết</a>
+                          <button type="button" class="flex h-8 items-center justify-center rounded-sm bg-navy px-3 text-base tracking-[0.014em] text-bg hover:bg-blue focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-bg">Thêm vào giỏ hàng</button>
+                        </div>
+                      </div>
                       <div class="flex flex-col gap-3 text-base leading-[22px] tracking-[0.014em] text-navy">
-                        <h3>Đang cập nhật</h3>
-                        <p class="text-sm leading-5 text-gray-66">Bước 04 · chờ danh sách sản phẩm</p>
+                        <h3>Blue Light Shield<br />Tone-up Fluid Sunscreen</h3>
+                        <p>1,000,000 VNĐ</p>
                       </div>
                     </article>
                   </li>
@@ -595,42 +660,67 @@
                 </div>
                 </div>
                 <div data-tab-panel="nhay-cam-dem" hidden>
-                <!-- TODO placeholder: Figma chưa có chu trình ban đêm -->
                 <div class="swiper" data-swiper='{"slidesPerView":1.4,"spaceBetween":16,"breakpoints":{"640":{"slidesPerView":2.4,"spaceBetween":24},"1024":{"slidesPerView":2,"spaceBetween":24},"1280":{"slidesPerView":3,"spaceBetween":23.7}}}'>
                   <ul class="swiper-wrapper">
                   <li class="swiper-slide">
-                    <article class="flex flex-col gap-6">
-                      <div class="aspect-[196/284] border border-dashed border-[#ccc] bg-[#f5f3f1]"></div>
+                    <article class="group flex flex-col gap-6 transition-transform duration-300 hover:-translate-y-1">
+                      <div class="relative aspect-[196/284] overflow-hidden">
+                        <img src="assets/img/thau-hieu-da/nen-san-pham.png" alt="" width="1089" height="1445" class="absolute inset-0 size-full object-cover" loading="lazy" />
+                        <img src="assets/img/thau-hieu-da/sp-cleansing-gel.png" alt="Gentle Purifying Cleansing Gel" width="656" height="1338" class="absolute left-[27%] top-[17.6%] h-[64.4%] w-[46%] object-contain" loading="lazy" />
+                        <div class="absolute inset-x-[10px] bottom-[10px] flex flex-col gap-1 opacity-100 transition-opacity lg:opacity-0 lg:group-focus-within:opacity-100 lg:group-hover:opacity-100">
+                          <a href="#" class="flex h-8 items-center justify-center rounded-sm bg-bg px-3 text-base tracking-[0.014em] text-ink hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue">Xem chi tiết</a>
+                          <button type="button" class="flex h-8 items-center justify-center rounded-sm bg-navy px-3 text-base tracking-[0.014em] text-bg hover:bg-blue focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-bg">Thêm vào giỏ hàng</button>
+                        </div>
+                      </div>
                       <div class="flex flex-col gap-3 text-base leading-[22px] tracking-[0.014em] text-navy">
-                        <h3>Đang cập nhật</h3>
-                        <p class="text-sm leading-5 text-gray-66">Bước 01 · chờ danh sách sản phẩm</p>
+                        <h3>Gentle Purifying<br />Cleansing Gel</h3>
+                        <p>1,000,000 VNĐ</p>
                       </div>
                     </article>
                   </li>
                   <li class="swiper-slide">
-                    <article class="flex flex-col gap-6">
-                      <div class="aspect-[196/284] border border-dashed border-[#ccc] bg-[#f5f3f1]"></div>
+                    <article class="group flex flex-col gap-6 transition-transform duration-300 hover:-translate-y-1">
+                      <div class="relative aspect-[196/284] overflow-hidden">
+                        <img src="assets/img/thau-hieu-da/sp-zinc-serum.png" alt="Zinc Complex Soothing Serum" width="1089" height="1445" class="absolute inset-0 size-full object-cover" loading="lazy" />
+                        <div class="absolute inset-x-[10px] bottom-[10px] flex flex-col gap-1 opacity-100 transition-opacity lg:opacity-0 lg:group-focus-within:opacity-100 lg:group-hover:opacity-100">
+                          <a href="#" class="flex h-8 items-center justify-center rounded-sm bg-bg px-3 text-base tracking-[0.014em] text-ink hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue">Xem chi tiết</a>
+                          <button type="button" class="flex h-8 items-center justify-center rounded-sm bg-navy px-3 text-base tracking-[0.014em] text-bg hover:bg-blue focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-bg">Thêm vào giỏ hàng</button>
+                        </div>
+                      </div>
                       <div class="flex flex-col gap-3 text-base leading-[22px] tracking-[0.014em] text-navy">
-                        <h3>Đang cập nhật</h3>
-                        <p class="text-sm leading-5 text-gray-66">Bước 02 · chờ danh sách sản phẩm</p>
+                        <h3>Zinc Complex<br />Soothing Serum</h3>
+                        <p>1,000,000 VNĐ</p>
                       </div>
                     </article>
                   </li>
                   <li class="swiper-slide">
-                    <article class="flex flex-col gap-6">
-                      <div class="aspect-[196/284] border border-dashed border-[#ccc] bg-[#f5f3f1]"></div>
+                    <article class="group flex flex-col gap-6 transition-transform duration-300 hover:-translate-y-1">
+                      <div class="relative aspect-[196/284] overflow-hidden">
+                        <img src="assets/img/thau-hieu-da/sp-blemish-cream.png" alt="Blemish Recovery Hydrating Cream" width="1089" height="1445" class="absolute inset-0 size-full object-cover" loading="lazy" />
+                        <div class="absolute inset-x-[10px] bottom-[10px] flex flex-col gap-1 opacity-100 transition-opacity lg:opacity-0 lg:group-focus-within:opacity-100 lg:group-hover:opacity-100">
+                          <a href="#" class="flex h-8 items-center justify-center rounded-sm bg-bg px-3 text-base tracking-[0.014em] text-ink hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue">Xem chi tiết</a>
+                          <button type="button" class="flex h-8 items-center justify-center rounded-sm bg-navy px-3 text-base tracking-[0.014em] text-bg hover:bg-blue focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-bg">Thêm vào giỏ hàng</button>
+                        </div>
+                      </div>
                       <div class="flex flex-col gap-3 text-base leading-[22px] tracking-[0.014em] text-navy">
-                        <h3>Đang cập nhật</h3>
-                        <p class="text-sm leading-5 text-gray-66">Bước 03 · chờ danh sách sản phẩm</p>
+                        <h3>Blemish Recovery<br />Hydrating Cream</h3>
+                        <p>1,000,000 VNĐ</p>
                       </div>
                     </article>
                   </li>
                   <li class="swiper-slide">
-                    <article class="flex flex-col gap-6">
-                      <div class="aspect-[196/284] border border-dashed border-[#ccc] bg-[#f5f3f1]"></div>
+                    <article class="group flex flex-col gap-6 transition-transform duration-300 hover:-translate-y-1">
+                      <div class="relative aspect-[196/284] overflow-hidden">
+                        <img src="assets/img/thau-hieu-da/nen-san-pham.png" alt="" width="1089" height="1445" class="absolute inset-0 size-full object-cover" loading="lazy" />
+                        <img src="assets/img/thau-hieu-da/san-pham-3.png" alt="NeoBright Repair Cream" width="792" height="608" class="absolute left-[27%] top-[17.6%] h-[64.4%] w-[46%] object-contain" loading="lazy" />
+                        <div class="absolute inset-x-[10px] bottom-[10px] flex flex-col gap-1 opacity-100 transition-opacity lg:opacity-0 lg:group-focus-within:opacity-100 lg:group-hover:opacity-100">
+                          <a href="#" class="flex h-8 items-center justify-center rounded-sm bg-bg px-3 text-base tracking-[0.014em] text-ink hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue">Xem chi tiết</a>
+                          <button type="button" class="flex h-8 items-center justify-center rounded-sm bg-navy px-3 text-base tracking-[0.014em] text-bg hover:bg-blue focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-bg">Thêm vào giỏ hàng</button>
+                        </div>
+                      </div>
                       <div class="flex flex-col gap-3 text-base leading-[22px] tracking-[0.014em] text-navy">
-                        <h3>Đang cập nhật</h3>
-                        <p class="text-sm leading-5 text-gray-66">Bước 04 · chờ danh sách sản phẩm</p>
+                        <h3>NeoBright Repair Cream</h3>
+                        <p>1,000,000 VNĐ</p>
                       </div>
                     </article>
                   </li>
@@ -654,42 +744,67 @@
               </div>
               <div class="mt-8 lg:mx-[49.8px] lg:mt-10">
                 <div data-tab-panel="dieu-tri-ngay" hidden>
-                <!-- TODO placeholder: Figma chưa có sản phẩm chu trình ban ngày cho tab này -->
                 <div class="swiper" data-swiper='{"slidesPerView":1.4,"spaceBetween":16,"breakpoints":{"640":{"slidesPerView":2.4,"spaceBetween":24},"1024":{"slidesPerView":2,"spaceBetween":24},"1280":{"slidesPerView":3,"spaceBetween":23.7}}}'>
                   <ul class="swiper-wrapper">
                   <li class="swiper-slide">
-                    <article class="flex flex-col gap-6">
-                      <div class="aspect-[196/284] border border-dashed border-[#ccc] bg-[#f5f3f1]"></div>
+                    <article class="group flex flex-col gap-6 transition-transform duration-300 hover:-translate-y-1">
+                      <div class="relative aspect-[196/284] overflow-hidden">
+                        <img src="assets/img/thau-hieu-da/nen-san-pham.png" alt="" width="1089" height="1445" class="absolute inset-0 size-full object-cover" loading="lazy" />
+                        <img src="assets/img/thau-hieu-da/sp-cleansing-gel.png" alt="Purifying Cleansing Gel" width="656" height="1338" class="absolute left-[27%] top-[17.6%] h-[64.4%] w-[46%] object-contain" loading="lazy" />
+                        <div class="absolute inset-x-[10px] bottom-[10px] flex flex-col gap-1 opacity-100 transition-opacity lg:opacity-0 lg:group-focus-within:opacity-100 lg:group-hover:opacity-100">
+                          <a href="#" class="flex h-8 items-center justify-center rounded-sm bg-bg px-3 text-base tracking-[0.014em] text-ink hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue">Xem chi tiết</a>
+                          <button type="button" class="flex h-8 items-center justify-center rounded-sm bg-navy px-3 text-base tracking-[0.014em] text-bg hover:bg-blue focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-bg">Thêm vào giỏ hàng</button>
+                        </div>
+                      </div>
                       <div class="flex flex-col gap-3 text-base leading-[22px] tracking-[0.014em] text-navy">
-                        <h3>Đang cập nhật</h3>
-                        <p class="text-sm leading-5 text-gray-66">Bước 01 · chờ danh sách sản phẩm</p>
+                        <h3>Purifying Cleansing Gel</h3>
+                        <p>1,000,000 VNĐ</p>
                       </div>
                     </article>
                   </li>
                   <li class="swiper-slide">
-                    <article class="flex flex-col gap-6">
-                      <div class="aspect-[196/284] border border-dashed border-[#ccc] bg-[#f5f3f1]"></div>
+                    <article class="group flex flex-col gap-6 transition-transform duration-300 hover:-translate-y-1">
+                      <div class="relative aspect-[196/284] overflow-hidden">
+                        <img src="assets/img/danh-muc-san-pham/photo-defense-brightening-serum.png" alt="Photo Defense Brightening Serum" width="1089" height="1445" class="absolute inset-0 size-full object-cover" loading="lazy" />
+                        <div class="absolute inset-x-[10px] bottom-[10px] flex flex-col gap-1 opacity-100 transition-opacity lg:opacity-0 lg:group-focus-within:opacity-100 lg:group-hover:opacity-100">
+                          <a href="#" class="flex h-8 items-center justify-center rounded-sm bg-bg px-3 text-base tracking-[0.014em] text-ink hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue">Xem chi tiết</a>
+                          <button type="button" class="flex h-8 items-center justify-center rounded-sm bg-navy px-3 text-base tracking-[0.014em] text-bg hover:bg-blue focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-bg">Thêm vào giỏ hàng</button>
+                        </div>
+                      </div>
                       <div class="flex flex-col gap-3 text-base leading-[22px] tracking-[0.014em] text-navy">
-                        <h3>Đang cập nhật</h3>
-                        <p class="text-sm leading-5 text-gray-66">Bước 02 · chờ danh sách sản phẩm</p>
+                        <h3>Photo Defense<br />Brightening Serum</h3>
+                        <p>1,000,000 VNĐ</p>
                       </div>
                     </article>
                   </li>
                   <li class="swiper-slide">
-                    <article class="flex flex-col gap-6">
-                      <div class="aspect-[196/284] border border-dashed border-[#ccc] bg-[#f5f3f1]"></div>
+                    <article class="group flex flex-col gap-6 transition-transform duration-300 hover:-translate-y-1">
+                      <div class="relative aspect-[196/284] overflow-hidden">
+                        <img src="assets/img/thau-hieu-da/sp-blemish-cream.png" alt="Blemish Recovery Hydrating Cream" width="1089" height="1445" class="absolute inset-0 size-full object-cover" loading="lazy" />
+                        <div class="absolute inset-x-[10px] bottom-[10px] flex flex-col gap-1 opacity-100 transition-opacity lg:opacity-0 lg:group-focus-within:opacity-100 lg:group-hover:opacity-100">
+                          <a href="#" class="flex h-8 items-center justify-center rounded-sm bg-bg px-3 text-base tracking-[0.014em] text-ink hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue">Xem chi tiết</a>
+                          <button type="button" class="flex h-8 items-center justify-center rounded-sm bg-navy px-3 text-base tracking-[0.014em] text-bg hover:bg-blue focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-bg">Thêm vào giỏ hàng</button>
+                        </div>
+                      </div>
                       <div class="flex flex-col gap-3 text-base leading-[22px] tracking-[0.014em] text-navy">
-                        <h3>Đang cập nhật</h3>
-                        <p class="text-sm leading-5 text-gray-66">Bước 03 · chờ danh sách sản phẩm</p>
+                        <h3>Blemish Recovery<br />Hydrating Cream</h3>
+                        <p>1,000,000 VNĐ</p>
                       </div>
                     </article>
                   </li>
                   <li class="swiper-slide">
-                    <article class="flex flex-col gap-6">
-                      <div class="aspect-[196/284] border border-dashed border-[#ccc] bg-[#f5f3f1]"></div>
+                    <article class="group flex flex-col gap-6 transition-transform duration-300 hover:-translate-y-1">
+                      <div class="relative aspect-[196/284] overflow-hidden">
+                        <img src="assets/img/thau-hieu-da/nen-san-pham.png" alt="" width="1089" height="1445" class="absolute inset-0 size-full object-cover" loading="lazy" />
+                        <img src="assets/img/thau-hieu-da/sp-sunscreen.png" alt="Blue Light Shield Tone-up Fluid Sunscreen" width="486" height="1122" class="absolute left-[27%] top-[17.6%] h-[64.4%] w-[46%] object-contain" loading="lazy" />
+                        <div class="absolute inset-x-[10px] bottom-[10px] flex flex-col gap-1 opacity-100 transition-opacity lg:opacity-0 lg:group-focus-within:opacity-100 lg:group-hover:opacity-100">
+                          <a href="#" class="flex h-8 items-center justify-center rounded-sm bg-bg px-3 text-base tracking-[0.014em] text-ink hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue">Xem chi tiết</a>
+                          <button type="button" class="flex h-8 items-center justify-center rounded-sm bg-navy px-3 text-base tracking-[0.014em] text-bg hover:bg-blue focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-bg">Thêm vào giỏ hàng</button>
+                        </div>
+                      </div>
                       <div class="flex flex-col gap-3 text-base leading-[22px] tracking-[0.014em] text-navy">
-                        <h3>Đang cập nhật</h3>
-                        <p class="text-sm leading-5 text-gray-66">Bước 04 · chờ danh sách sản phẩm</p>
+                        <h3>Blue Light Shield<br />Tone-up Fluid Sunscreen</h3>
+                        <p>1,000,000 VNĐ</p>
                       </div>
                     </article>
                   </li>
@@ -697,42 +812,67 @@
                 </div>
                 </div>
                 <div data-tab-panel="dieu-tri-dem" hidden>
-                <!-- TODO placeholder: Figma chưa có chu trình ban đêm -->
                 <div class="swiper" data-swiper='{"slidesPerView":1.4,"spaceBetween":16,"breakpoints":{"640":{"slidesPerView":2.4,"spaceBetween":24},"1024":{"slidesPerView":2,"spaceBetween":24},"1280":{"slidesPerView":3,"spaceBetween":23.7}}}'>
                   <ul class="swiper-wrapper">
                   <li class="swiper-slide">
-                    <article class="flex flex-col gap-6">
-                      <div class="aspect-[196/284] border border-dashed border-[#ccc] bg-[#f5f3f1]"></div>
+                    <article class="group flex flex-col gap-6 transition-transform duration-300 hover:-translate-y-1">
+                      <div class="relative aspect-[196/284] overflow-hidden">
+                        <img src="assets/img/thau-hieu-da/nen-san-pham.png" alt="" width="1089" height="1445" class="absolute inset-0 size-full object-cover" loading="lazy" />
+                        <img src="assets/img/thau-hieu-da/sp-cleansing-gel.png" alt="Purifying Cleansing Gel" width="656" height="1338" class="absolute left-[27%] top-[17.6%] h-[64.4%] w-[46%] object-contain" loading="lazy" />
+                        <div class="absolute inset-x-[10px] bottom-[10px] flex flex-col gap-1 opacity-100 transition-opacity lg:opacity-0 lg:group-focus-within:opacity-100 lg:group-hover:opacity-100">
+                          <a href="#" class="flex h-8 items-center justify-center rounded-sm bg-bg px-3 text-base tracking-[0.014em] text-ink hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue">Xem chi tiết</a>
+                          <button type="button" class="flex h-8 items-center justify-center rounded-sm bg-navy px-3 text-base tracking-[0.014em] text-bg hover:bg-blue focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-bg">Thêm vào giỏ hàng</button>
+                        </div>
+                      </div>
                       <div class="flex flex-col gap-3 text-base leading-[22px] tracking-[0.014em] text-navy">
-                        <h3>Đang cập nhật</h3>
-                        <p class="text-sm leading-5 text-gray-66">Bước 01 · chờ danh sách sản phẩm</p>
+                        <h3>Purifying Cleansing Gel</h3>
+                        <p>1,000,000 VNĐ</p>
                       </div>
                     </article>
                   </li>
                   <li class="swiper-slide">
-                    <article class="flex flex-col gap-6">
-                      <div class="aspect-[196/284] border border-dashed border-[#ccc] bg-[#f5f3f1]"></div>
+                    <article class="group flex flex-col gap-6 transition-transform duration-300 hover:-translate-y-1">
+                      <div class="relative aspect-[196/284] overflow-hidden">
+                        <img src="assets/img/danh-muc-san-pham/retino-renewal-brightening-serum.png" alt="Retino Renewal Treatment Serum" width="1089" height="1445" class="absolute inset-0 size-full object-cover" loading="lazy" />
+                        <div class="absolute inset-x-[10px] bottom-[10px] flex flex-col gap-1 opacity-100 transition-opacity lg:opacity-0 lg:group-focus-within:opacity-100 lg:group-hover:opacity-100">
+                          <a href="#" class="flex h-8 items-center justify-center rounded-sm bg-bg px-3 text-base tracking-[0.014em] text-ink hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue">Xem chi tiết</a>
+                          <button type="button" class="flex h-8 items-center justify-center rounded-sm bg-navy px-3 text-base tracking-[0.014em] text-bg hover:bg-blue focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-bg">Thêm vào giỏ hàng</button>
+                        </div>
+                      </div>
                       <div class="flex flex-col gap-3 text-base leading-[22px] tracking-[0.014em] text-navy">
-                        <h3>Đang cập nhật</h3>
-                        <p class="text-sm leading-5 text-gray-66">Bước 02 · chờ danh sách sản phẩm</p>
+                        <h3>Retino Renewal<br />Treatment Serum</h3>
+                        <p>1,000,000 VNĐ</p>
                       </div>
                     </article>
                   </li>
                   <li class="swiper-slide">
-                    <article class="flex flex-col gap-6">
-                      <div class="aspect-[196/284] border border-dashed border-[#ccc] bg-[#f5f3f1]"></div>
+                    <article class="group flex flex-col gap-6 transition-transform duration-300 hover:-translate-y-1">
+                      <div class="relative aspect-[196/284] overflow-hidden">
+                        <img src="assets/img/danh-muc-san-pham/zinc-complex-serum.png" alt="Zinc Complex Recovery Serum" width="1089" height="1445" class="absolute inset-0 size-full object-cover" loading="lazy" />
+                        <div class="absolute inset-x-[10px] bottom-[10px] flex flex-col gap-1 opacity-100 transition-opacity lg:opacity-0 lg:group-focus-within:opacity-100 lg:group-hover:opacity-100">
+                          <a href="#" class="flex h-8 items-center justify-center rounded-sm bg-bg px-3 text-base tracking-[0.014em] text-ink hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue">Xem chi tiết</a>
+                          <button type="button" class="flex h-8 items-center justify-center rounded-sm bg-navy px-3 text-base tracking-[0.014em] text-bg hover:bg-blue focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-bg">Thêm vào giỏ hàng</button>
+                        </div>
+                      </div>
                       <div class="flex flex-col gap-3 text-base leading-[22px] tracking-[0.014em] text-navy">
-                        <h3>Đang cập nhật</h3>
-                        <p class="text-sm leading-5 text-gray-66">Bước 03 · chờ danh sách sản phẩm</p>
+                        <h3>Zinc Complex<br />Recovery Serum</h3>
+                        <p>1,000,000 VNĐ</p>
                       </div>
                     </article>
                   </li>
                   <li class="swiper-slide">
-                    <article class="flex flex-col gap-6">
-                      <div class="aspect-[196/284] border border-dashed border-[#ccc] bg-[#f5f3f1]"></div>
+                    <article class="group flex flex-col gap-6 transition-transform duration-300 hover:-translate-y-1">
+                      <div class="relative aspect-[196/284] overflow-hidden">
+                        <img src="assets/img/thau-hieu-da/nen-san-pham.png" alt="" width="1089" height="1445" class="absolute inset-0 size-full object-cover" loading="lazy" />
+                        <img src="assets/img/thau-hieu-da/san-pham-3.png" alt="NeoBright Repair Cream" width="792" height="608" class="absolute left-[27%] top-[17.6%] h-[64.4%] w-[46%] object-contain" loading="lazy" />
+                        <div class="absolute inset-x-[10px] bottom-[10px] flex flex-col gap-1 opacity-100 transition-opacity lg:opacity-0 lg:group-focus-within:opacity-100 lg:group-hover:opacity-100">
+                          <a href="#" class="flex h-8 items-center justify-center rounded-sm bg-bg px-3 text-base tracking-[0.014em] text-ink hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue">Xem chi tiết</a>
+                          <button type="button" class="flex h-8 items-center justify-center rounded-sm bg-navy px-3 text-base tracking-[0.014em] text-bg hover:bg-blue focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-bg">Thêm vào giỏ hàng</button>
+                        </div>
+                      </div>
                       <div class="flex flex-col gap-3 text-base leading-[22px] tracking-[0.014em] text-navy">
-                        <h3>Đang cập nhật</h3>
-                        <p class="text-sm leading-5 text-gray-66">Bước 04 · chờ danh sách sản phẩm</p>
+                        <h3>NeoBright Repair Cream</h3>
+                        <p>1,000,000 VNĐ</p>
                       </div>
                     </article>
                   </li>
@@ -824,42 +964,67 @@
                 </div>
                 </div>
                 <div data-tab-panel="sau-lieu-trinh-dem" hidden>
-                <!-- TODO placeholder: Figma chưa có chu trình ban đêm -->
                 <div class="swiper" data-swiper='{"slidesPerView":1.4,"spaceBetween":16,"breakpoints":{"640":{"slidesPerView":2.4,"spaceBetween":24},"1024":{"slidesPerView":2,"spaceBetween":24},"1280":{"slidesPerView":3,"spaceBetween":23.7}}}'>
                   <ul class="swiper-wrapper">
                   <li class="swiper-slide">
-                    <article class="flex flex-col gap-6">
-                      <div class="aspect-[196/284] border border-dashed border-[#ccc] bg-[#f5f3f1]"></div>
+                    <article class="group flex flex-col gap-6 transition-transform duration-300 hover:-translate-y-1">
+                      <div class="relative aspect-[196/284] overflow-hidden">
+                        <img src="assets/img/thau-hieu-da/nen-san-pham.png" alt="" width="1089" height="1445" class="absolute inset-0 size-full object-cover" loading="lazy" />
+                        <img src="assets/img/thau-hieu-da/sp-cleansing-gel.png" alt="Purifying Cleansing Gel" width="656" height="1338" class="absolute left-[27%] top-[17.6%] h-[64.4%] w-[46%] object-contain" loading="lazy" />
+                        <div class="absolute inset-x-[10px] bottom-[10px] flex flex-col gap-1 opacity-100 transition-opacity lg:opacity-0 lg:group-focus-within:opacity-100 lg:group-hover:opacity-100">
+                          <a href="#" class="flex h-8 items-center justify-center rounded-sm bg-bg px-3 text-base tracking-[0.014em] text-ink hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue">Xem chi tiết</a>
+                          <button type="button" class="flex h-8 items-center justify-center rounded-sm bg-navy px-3 text-base tracking-[0.014em] text-bg hover:bg-blue focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-bg">Thêm vào giỏ hàng</button>
+                        </div>
+                      </div>
                       <div class="flex flex-col gap-3 text-base leading-[22px] tracking-[0.014em] text-navy">
-                        <h3>Đang cập nhật</h3>
-                        <p class="text-sm leading-5 text-gray-66">Bước 01 · chờ danh sách sản phẩm</p>
+                        <h3>Purifying Cleansing Gel</h3>
+                        <p>1,000,000 VNĐ</p>
                       </div>
                     </article>
                   </li>
                   <li class="swiper-slide">
-                    <article class="flex flex-col gap-6">
-                      <div class="aspect-[196/284] border border-dashed border-[#ccc] bg-[#f5f3f1]"></div>
+                    <article class="group flex flex-col gap-6 transition-transform duration-300 hover:-translate-y-1">
+                      <div class="relative aspect-[196/284] overflow-hidden">
+                        <img src="assets/img/danh-muc-san-pham/photo-defense-brightening-serum.png" alt="Photo Defense Recovery Serum" width="1089" height="1445" class="absolute inset-0 size-full object-cover" loading="lazy" />
+                        <div class="absolute inset-x-[10px] bottom-[10px] flex flex-col gap-1 opacity-100 transition-opacity lg:opacity-0 lg:group-focus-within:opacity-100 lg:group-hover:opacity-100">
+                          <a href="#" class="flex h-8 items-center justify-center rounded-sm bg-bg px-3 text-base tracking-[0.014em] text-ink hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue">Xem chi tiết</a>
+                          <button type="button" class="flex h-8 items-center justify-center rounded-sm bg-navy px-3 text-base tracking-[0.014em] text-bg hover:bg-blue focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-bg">Thêm vào giỏ hàng</button>
+                        </div>
+                      </div>
                       <div class="flex flex-col gap-3 text-base leading-[22px] tracking-[0.014em] text-navy">
-                        <h3>Đang cập nhật</h3>
-                        <p class="text-sm leading-5 text-gray-66">Bước 02 · chờ danh sách sản phẩm</p>
+                        <h3>Photo Defense<br />Recovery Serum</h3>
+                        <p>1,000,000 VNĐ</p>
                       </div>
                     </article>
                   </li>
                   <li class="swiper-slide">
-                    <article class="flex flex-col gap-6">
-                      <div class="aspect-[196/284] border border-dashed border-[#ccc] bg-[#f5f3f1]"></div>
+                    <article class="group flex flex-col gap-6 transition-transform duration-300 hover:-translate-y-1">
+                      <div class="relative aspect-[196/284] overflow-hidden">
+                        <img src="assets/img/thau-hieu-da/sp-blemish-cream.png" alt="Blemish Recovery Hydrating Cream" width="1089" height="1445" class="absolute inset-0 size-full object-cover" loading="lazy" />
+                        <div class="absolute inset-x-[10px] bottom-[10px] flex flex-col gap-1 opacity-100 transition-opacity lg:opacity-0 lg:group-focus-within:opacity-100 lg:group-hover:opacity-100">
+                          <a href="#" class="flex h-8 items-center justify-center rounded-sm bg-bg px-3 text-base tracking-[0.014em] text-ink hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue">Xem chi tiết</a>
+                          <button type="button" class="flex h-8 items-center justify-center rounded-sm bg-navy px-3 text-base tracking-[0.014em] text-bg hover:bg-blue focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-bg">Thêm vào giỏ hàng</button>
+                        </div>
+                      </div>
                       <div class="flex flex-col gap-3 text-base leading-[22px] tracking-[0.014em] text-navy">
-                        <h3>Đang cập nhật</h3>
-                        <p class="text-sm leading-5 text-gray-66">Bước 03 · chờ danh sách sản phẩm</p>
+                        <h3>Blemish Recovery<br />Hydrating Cream</h3>
+                        <p>1,000,000 VNĐ</p>
                       </div>
                     </article>
                   </li>
                   <li class="swiper-slide">
-                    <article class="flex flex-col gap-6">
-                      <div class="aspect-[196/284] border border-dashed border-[#ccc] bg-[#f5f3f1]"></div>
+                    <article class="group flex flex-col gap-6 transition-transform duration-300 hover:-translate-y-1">
+                      <div class="relative aspect-[196/284] overflow-hidden">
+                        <img src="assets/img/thau-hieu-da/nen-san-pham.png" alt="" width="1089" height="1445" class="absolute inset-0 size-full object-cover" loading="lazy" />
+                        <img src="assets/img/thau-hieu-da/san-pham-3.png" alt="NeoBright Repair Cream" width="792" height="608" class="absolute left-[27%] top-[17.6%] h-[64.4%] w-[46%] object-contain" loading="lazy" />
+                        <div class="absolute inset-x-[10px] bottom-[10px] flex flex-col gap-1 opacity-100 transition-opacity lg:opacity-0 lg:group-focus-within:opacity-100 lg:group-hover:opacity-100">
+                          <a href="#" class="flex h-8 items-center justify-center rounded-sm bg-bg px-3 text-base tracking-[0.014em] text-ink hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue">Xem chi tiết</a>
+                          <button type="button" class="flex h-8 items-center justify-center rounded-sm bg-navy px-3 text-base tracking-[0.014em] text-bg hover:bg-blue focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-bg">Thêm vào giỏ hàng</button>
+                        </div>
+                      </div>
                       <div class="flex flex-col gap-3 text-base leading-[22px] tracking-[0.014em] text-navy">
-                        <h3>Đang cập nhật</h3>
-                        <p class="text-sm leading-5 text-gray-66">Bước 04 · chờ danh sách sản phẩm</p>
+                        <h3>NeoBright Repair Cream</h3>
+                        <p>1,000,000 VNĐ</p>
                       </div>
                     </article>
                   </li>
@@ -883,42 +1048,68 @@
               </div>
               <div class="mt-8 lg:mx-[49.8px] lg:mt-10">
                 <div data-tab-panel="ton-thuong-ngay" hidden>
-                <!-- TODO placeholder: Figma chưa có sản phẩm chu trình ban ngày cho tab này -->
                 <div class="swiper" data-swiper='{"slidesPerView":1.4,"spaceBetween":16,"breakpoints":{"640":{"slidesPerView":2.4,"spaceBetween":24},"1024":{"slidesPerView":2,"spaceBetween":24},"1280":{"slidesPerView":3,"spaceBetween":23.7}}}'>
                   <ul class="swiper-wrapper">
                   <li class="swiper-slide">
-                    <article class="flex flex-col gap-6">
-                      <div class="aspect-[196/284] border border-dashed border-[#ccc] bg-[#f5f3f1]"></div>
+                    <article class="group flex flex-col gap-6 transition-transform duration-300 hover:-translate-y-1">
+                      <div class="relative aspect-[196/284] overflow-hidden">
+                        <img src="assets/img/thau-hieu-da/nen-san-pham.png" alt="" width="1089" height="1445" class="absolute inset-0 size-full object-cover" loading="lazy" />
+                        <img src="assets/img/thau-hieu-da/sp-cleansing-gel.png" alt="Gentle Purifying Cleansing Gel" width="656" height="1338" class="absolute left-[27%] top-[17.6%] h-[64.4%] w-[46%] object-contain" loading="lazy" />
+                        <div class="absolute inset-x-[10px] bottom-[10px] flex flex-col gap-1 opacity-100 transition-opacity lg:opacity-0 lg:group-focus-within:opacity-100 lg:group-hover:opacity-100">
+                          <a href="#" class="flex h-8 items-center justify-center rounded-sm bg-bg px-3 text-base tracking-[0.014em] text-ink hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue">Xem chi tiết</a>
+                          <button type="button" class="flex h-8 items-center justify-center rounded-sm bg-navy px-3 text-base tracking-[0.014em] text-bg hover:bg-blue focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-bg">Thêm vào giỏ hàng</button>
+                        </div>
+                      </div>
                       <div class="flex flex-col gap-3 text-base leading-[22px] tracking-[0.014em] text-navy">
-                        <h3>Đang cập nhật</h3>
-                        <p class="text-sm leading-5 text-gray-66">Bước 01 · chờ danh sách sản phẩm</p>
+                        <h3>Gentle Purifying<br />Cleansing Gel</h3>
+                        <p>1,000,000 VNĐ</p>
                       </div>
                     </article>
                   </li>
                   <li class="swiper-slide">
-                    <article class="flex flex-col gap-6">
-                      <div class="aspect-[196/284] border border-dashed border-[#ccc] bg-[#f5f3f1]"></div>
+                    <article class="group flex flex-col gap-6 transition-transform duration-300 hover:-translate-y-1">
+                      <div class="relative aspect-[196/284] overflow-hidden">
+                        <img src="assets/img/thau-hieu-da/sp-zinc-serum.png" alt="Zinc Complex Serum" width="1089" height="1445" class="absolute inset-0 size-full object-cover" loading="lazy" />
+                        <div class="absolute inset-x-[10px] bottom-[10px] flex flex-col gap-1 opacity-100 transition-opacity lg:opacity-0 lg:group-focus-within:opacity-100 lg:group-hover:opacity-100">
+                          <a href="#" class="flex h-8 items-center justify-center rounded-sm bg-bg px-3 text-base tracking-[0.014em] text-ink hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue">Xem chi tiết</a>
+                          <button type="button" class="flex h-8 items-center justify-center rounded-sm bg-navy px-3 text-base tracking-[0.014em] text-bg hover:bg-blue focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-bg">Thêm vào giỏ hàng</button>
+                        </div>
+                      </div>
                       <div class="flex flex-col gap-3 text-base leading-[22px] tracking-[0.014em] text-navy">
-                        <h3>Đang cập nhật</h3>
-                        <p class="text-sm leading-5 text-gray-66">Bước 02 · chờ danh sách sản phẩm</p>
+                        <h3>Zinc Complex Serum</h3>
+                        <p>1,000,000 VNĐ</p>
                       </div>
                     </article>
                   </li>
                   <li class="swiper-slide">
-                    <article class="flex flex-col gap-6">
-                      <div class="aspect-[196/284] border border-dashed border-[#ccc] bg-[#f5f3f1]"></div>
+                    <article class="group flex flex-col gap-6 transition-transform duration-300 hover:-translate-y-1">
+                      <div class="relative aspect-[196/284] overflow-hidden">
+                        <img src="assets/img/thau-hieu-da/nen-san-pham.png" alt="" width="1089" height="1445" class="absolute inset-0 size-full object-cover" loading="lazy" />
+                        <img src="assets/img/thau-hieu-da/san-pham-3.png" alt="NeoBright Repair Cream" width="792" height="608" class="absolute left-[27%] top-[17.6%] h-[64.4%] w-[46%] object-contain" loading="lazy" />
+                        <div class="absolute inset-x-[10px] bottom-[10px] flex flex-col gap-1 opacity-100 transition-opacity lg:opacity-0 lg:group-focus-within:opacity-100 lg:group-hover:opacity-100">
+                          <a href="#" class="flex h-8 items-center justify-center rounded-sm bg-bg px-3 text-base tracking-[0.014em] text-ink hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue">Xem chi tiết</a>
+                          <button type="button" class="flex h-8 items-center justify-center rounded-sm bg-navy px-3 text-base tracking-[0.014em] text-bg hover:bg-blue focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-bg">Thêm vào giỏ hàng</button>
+                        </div>
+                      </div>
                       <div class="flex flex-col gap-3 text-base leading-[22px] tracking-[0.014em] text-navy">
-                        <h3>Đang cập nhật</h3>
-                        <p class="text-sm leading-5 text-gray-66">Bước 03 · chờ danh sách sản phẩm</p>
+                        <h3>NeoBright Repair Cream</h3>
+                        <p>1,000,000 VNĐ</p>
                       </div>
                     </article>
                   </li>
                   <li class="swiper-slide">
-                    <article class="flex flex-col gap-6">
-                      <div class="aspect-[196/284] border border-dashed border-[#ccc] bg-[#f5f3f1]"></div>
+                    <article class="group flex flex-col gap-6 transition-transform duration-300 hover:-translate-y-1">
+                      <div class="relative aspect-[196/284] overflow-hidden">
+                        <img src="assets/img/thau-hieu-da/nen-san-pham.png" alt="" width="1089" height="1445" class="absolute inset-0 size-full object-cover" loading="lazy" />
+                        <img src="assets/img/thau-hieu-da/sp-sunscreen.png" alt="Blue Light Shield Tone-up Fluid Sunscreen" width="486" height="1122" class="absolute left-[27%] top-[17.6%] h-[64.4%] w-[46%] object-contain" loading="lazy" />
+                        <div class="absolute inset-x-[10px] bottom-[10px] flex flex-col gap-1 opacity-100 transition-opacity lg:opacity-0 lg:group-focus-within:opacity-100 lg:group-hover:opacity-100">
+                          <a href="#" class="flex h-8 items-center justify-center rounded-sm bg-bg px-3 text-base tracking-[0.014em] text-ink hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue">Xem chi tiết</a>
+                          <button type="button" class="flex h-8 items-center justify-center rounded-sm bg-navy px-3 text-base tracking-[0.014em] text-bg hover:bg-blue focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-bg">Thêm vào giỏ hàng</button>
+                        </div>
+                      </div>
                       <div class="flex flex-col gap-3 text-base leading-[22px] tracking-[0.014em] text-navy">
-                        <h3>Đang cập nhật</h3>
-                        <p class="text-sm leading-5 text-gray-66">Bước 04 · chờ danh sách sản phẩm</p>
+                        <h3>Blue Light Shield<br />Tone-up Fluid Sunscreen</h3>
+                        <p>1,000,000 VNĐ</p>
                       </div>
                     </article>
                   </li>
@@ -926,42 +1117,67 @@
                 </div>
                 </div>
                 <div data-tab-panel="ton-thuong-dem" hidden>
-                <!-- TODO placeholder: Figma chưa có chu trình ban đêm -->
                 <div class="swiper" data-swiper='{"slidesPerView":1.4,"spaceBetween":16,"breakpoints":{"640":{"slidesPerView":2.4,"spaceBetween":24},"1024":{"slidesPerView":2,"spaceBetween":24},"1280":{"slidesPerView":3,"spaceBetween":23.7}}}'>
                   <ul class="swiper-wrapper">
                   <li class="swiper-slide">
-                    <article class="flex flex-col gap-6">
-                      <div class="aspect-[196/284] border border-dashed border-[#ccc] bg-[#f5f3f1]"></div>
+                    <article class="group flex flex-col gap-6 transition-transform duration-300 hover:-translate-y-1">
+                      <div class="relative aspect-[196/284] overflow-hidden">
+                        <img src="assets/img/thau-hieu-da/nen-san-pham.png" alt="" width="1089" height="1445" class="absolute inset-0 size-full object-cover" loading="lazy" />
+                        <img src="assets/img/thau-hieu-da/sp-cleansing-gel.png" alt="Gentle Purifying Cleansing Gel" width="656" height="1338" class="absolute left-[27%] top-[17.6%] h-[64.4%] w-[46%] object-contain" loading="lazy" />
+                        <div class="absolute inset-x-[10px] bottom-[10px] flex flex-col gap-1 opacity-100 transition-opacity lg:opacity-0 lg:group-focus-within:opacity-100 lg:group-hover:opacity-100">
+                          <a href="#" class="flex h-8 items-center justify-center rounded-sm bg-bg px-3 text-base tracking-[0.014em] text-ink hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue">Xem chi tiết</a>
+                          <button type="button" class="flex h-8 items-center justify-center rounded-sm bg-navy px-3 text-base tracking-[0.014em] text-bg hover:bg-blue focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-bg">Thêm vào giỏ hàng</button>
+                        </div>
+                      </div>
                       <div class="flex flex-col gap-3 text-base leading-[22px] tracking-[0.014em] text-navy">
-                        <h3>Đang cập nhật</h3>
-                        <p class="text-sm leading-5 text-gray-66">Bước 01 · chờ danh sách sản phẩm</p>
+                        <h3>Gentle Purifying<br />Cleansing Gel</h3>
+                        <p>1,000,000 VNĐ</p>
                       </div>
                     </article>
                   </li>
                   <li class="swiper-slide">
-                    <article class="flex flex-col gap-6">
-                      <div class="aspect-[196/284] border border-dashed border-[#ccc] bg-[#f5f3f1]"></div>
+                    <article class="group flex flex-col gap-6 transition-transform duration-300 hover:-translate-y-1">
+                      <div class="relative aspect-[196/284] overflow-hidden">
+                        <img src="assets/img/danh-muc-san-pham/zinc-complex-serum.png" alt="Zinc Complex Barrier Serum" width="1089" height="1445" class="absolute inset-0 size-full object-cover" loading="lazy" />
+                        <div class="absolute inset-x-[10px] bottom-[10px] flex flex-col gap-1 opacity-100 transition-opacity lg:opacity-0 lg:group-focus-within:opacity-100 lg:group-hover:opacity-100">
+                          <a href="#" class="flex h-8 items-center justify-center rounded-sm bg-bg px-3 text-base tracking-[0.014em] text-ink hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue">Xem chi tiết</a>
+                          <button type="button" class="flex h-8 items-center justify-center rounded-sm bg-navy px-3 text-base tracking-[0.014em] text-bg hover:bg-blue focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-bg">Thêm vào giỏ hàng</button>
+                        </div>
+                      </div>
                       <div class="flex flex-col gap-3 text-base leading-[22px] tracking-[0.014em] text-navy">
-                        <h3>Đang cập nhật</h3>
-                        <p class="text-sm leading-5 text-gray-66">Bước 02 · chờ danh sách sản phẩm</p>
+                        <h3>Zinc Complex<br />Barrier Serum</h3>
+                        <p>1,000,000 VNĐ</p>
                       </div>
                     </article>
                   </li>
                   <li class="swiper-slide">
-                    <article class="flex flex-col gap-6">
-                      <div class="aspect-[196/284] border border-dashed border-[#ccc] bg-[#f5f3f1]"></div>
+                    <article class="group flex flex-col gap-6 transition-transform duration-300 hover:-translate-y-1">
+                      <div class="relative aspect-[196/284] overflow-hidden">
+                        <img src="assets/img/thau-hieu-da/sp-blemish-cream.png" alt="Blemish Recovery Hydrating Cream" width="1089" height="1445" class="absolute inset-0 size-full object-cover" loading="lazy" />
+                        <div class="absolute inset-x-[10px] bottom-[10px] flex flex-col gap-1 opacity-100 transition-opacity lg:opacity-0 lg:group-focus-within:opacity-100 lg:group-hover:opacity-100">
+                          <a href="#" class="flex h-8 items-center justify-center rounded-sm bg-bg px-3 text-base tracking-[0.014em] text-ink hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue">Xem chi tiết</a>
+                          <button type="button" class="flex h-8 items-center justify-center rounded-sm bg-navy px-3 text-base tracking-[0.014em] text-bg hover:bg-blue focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-bg">Thêm vào giỏ hàng</button>
+                        </div>
+                      </div>
                       <div class="flex flex-col gap-3 text-base leading-[22px] tracking-[0.014em] text-navy">
-                        <h3>Đang cập nhật</h3>
-                        <p class="text-sm leading-5 text-gray-66">Bước 03 · chờ danh sách sản phẩm</p>
+                        <h3>Blemish Recovery<br />Hydrating Cream</h3>
+                        <p>1,000,000 VNĐ</p>
                       </div>
                     </article>
                   </li>
                   <li class="swiper-slide">
-                    <article class="flex flex-col gap-6">
-                      <div class="aspect-[196/284] border border-dashed border-[#ccc] bg-[#f5f3f1]"></div>
+                    <article class="group flex flex-col gap-6 transition-transform duration-300 hover:-translate-y-1">
+                      <div class="relative aspect-[196/284] overflow-hidden">
+                        <img src="assets/img/thau-hieu-da/nen-san-pham.png" alt="" width="1089" height="1445" class="absolute inset-0 size-full object-cover" loading="lazy" />
+                        <img src="assets/img/thau-hieu-da/san-pham-3.png" alt="NeoBright Night Repair Cream" width="792" height="608" class="absolute left-[27%] top-[17.6%] h-[64.4%] w-[46%] object-contain" loading="lazy" />
+                        <div class="absolute inset-x-[10px] bottom-[10px] flex flex-col gap-1 opacity-100 transition-opacity lg:opacity-0 lg:group-focus-within:opacity-100 lg:group-hover:opacity-100">
+                          <a href="#" class="flex h-8 items-center justify-center rounded-sm bg-bg px-3 text-base tracking-[0.014em] text-ink hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue">Xem chi tiết</a>
+                          <button type="button" class="flex h-8 items-center justify-center rounded-sm bg-navy px-3 text-base tracking-[0.014em] text-bg hover:bg-blue focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-bg">Thêm vào giỏ hàng</button>
+                        </div>
+                      </div>
                       <div class="flex flex-col gap-3 text-base leading-[22px] tracking-[0.014em] text-navy">
-                        <h3>Đang cập nhật</h3>
-                        <p class="text-sm leading-5 text-gray-66">Bước 04 · chờ danh sách sản phẩm</p>
+                        <h3>NeoBright<br />Night Repair Cream</h3>
+                        <p>1,000,000 VNĐ</p>
                       </div>
                     </article>
                   </li>
@@ -2093,7 +2309,7 @@
 <!-- ===== 13-he-thong-doi-tac.html ===== -->
 <!-- SECTION: Hệ thống đối tác -->
 <section id="he-thong-doi-tac" class="bg-bg py-16 lg:pt-[190.6px] lg:pb-[100px]" aria-labelledby="doi-tac-title">
-  <div class="max-w-site mx-auto px-4 md:px-8 xl:px-[72px]" data-tabs>
+  <div class="max-w-site mx-auto px-4 md:px-8 xl:px-[72px]" data-tabs data-store-locator>
     <header class="text-center" data-aos="fade-up">
       <p class="text-sm md:text-base leading-[22px] tracking-[4px] uppercase text-brown">Hệ thống phòng khám và điểm bán</p>
       <h2 id="doi-tac-title" class="mt-3 lg:mt-[11px] text-3xl md:text-5xl leading-[1.4] tracking-[0.624px] uppercase text-brown-dark">Tìm Dzentic tại hệ thống<br class="hidden md:block" /> đối tác được xác thực</h2>
@@ -2103,25 +2319,25 @@
       <div class="flex flex-col" data-aos="fade-up">
         <div class="relative overflow-hidden bg-[#f2f2f2] aspect-[4/3] lg:aspect-[856/591]">
           <img src="assets/img/he-thong-doi-tac/ban-do.jpg" alt="Bản đồ hệ thống đối tác Dzentic" width="1302" height="823" class="absolute inset-0 size-full object-cover" />
+          <iframe data-map-frame title="Vị trí điểm bán trên Google Maps" class="absolute inset-0 z-[5] size-full border-0 bg-[#f2f2f2]" hidden loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <button type="button" data-map-reset class="absolute left-3 top-3 z-[6] inline-flex h-10 items-center gap-2 rounded-sm bg-bg px-4 text-base text-navy shadow-popover hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy" hidden>← Bản đồ tổng</button>
           <div data-tab-panel="ha-noi" class="absolute inset-0">
-            <img src="assets/img/he-thong-doi-tac/marker.png" alt="Điểm bán Dzentic Hà Nội" width="36" height="36" class="absolute size-[35.5px] max-w-none" style="left:9.75%;top:4.67%" />
-            <img src="assets/img/he-thong-doi-tac/marker.png" alt="Điểm bán Dzentic Hà Nội" width="36" height="36" class="absolute size-[35.5px] max-w-none" style="left:40.01%;top:37.5%" />
-            <img src="assets/img/he-thong-doi-tac/marker.png" alt="Điểm bán Dzentic Hà Nội" width="36" height="36" class="absolute size-[35.5px] max-w-none" style="left:20.62%;top:59.49%" />
+            <button type="button" data-marker="hn-1" aria-label="Điểm bán Dzentic Hà Nội - điểm 1" class="absolute size-[35.5px] cursor-pointer transition-transform duration-200 hover:scale-125 focus-visible:scale-125 [&[aria-pressed=true]]:scale-150 [&[aria-pressed=true]]:z-10 focus-visible:outline-2 focus-visible:outline-brown rounded-full" style="left:9.75%;top:4.67%"><img src="assets/img/he-thong-doi-tac/marker.png" alt="" width="36" height="36" class="size-full max-w-none" /></button>
+            <button type="button" data-marker="hn-2" aria-label="Điểm bán Dzentic Hà Nội - điểm 2" class="absolute size-[35.5px] cursor-pointer transition-transform duration-200 hover:scale-125 focus-visible:scale-125 [&[aria-pressed=true]]:scale-150 [&[aria-pressed=true]]:z-10 focus-visible:outline-2 focus-visible:outline-brown rounded-full" style="left:40.01%;top:37.5%"><img src="assets/img/he-thong-doi-tac/marker.png" alt="" width="36" height="36" class="size-full max-w-none" /></button>
+            <button type="button" data-marker="hn-3" aria-label="Điểm bán Dzentic Hà Nội - điểm 3" class="absolute size-[35.5px] cursor-pointer transition-transform duration-200 hover:scale-125 focus-visible:scale-125 [&[aria-pressed=true]]:scale-150 [&[aria-pressed=true]]:z-10 focus-visible:outline-2 focus-visible:outline-brown rounded-full" style="left:20.62%;top:59.49%"><img src="assets/img/he-thong-doi-tac/marker.png" alt="" width="36" height="36" class="size-full max-w-none" /></button>
           </div>
           <div data-tab-panel="ho-chi-minh" class="absolute inset-0" hidden>
-            <!-- TODO placeholder: vị trí marker mẫu, Figma chưa dựng bản đồ thành phố này -->
-            <img src="assets/img/he-thong-doi-tac/marker.png" alt="Điểm bán Dzentic Hồ Chí Minh" width="36" height="36" class="absolute size-[35.5px] max-w-none" style="left:24%;top:18%" />
-            <img src="assets/img/he-thong-doi-tac/marker.png" alt="Điểm bán Dzentic Hồ Chí Minh" width="36" height="36" class="absolute size-[35.5px] max-w-none" style="left:52%;top:30%" />
-            <img src="assets/img/he-thong-doi-tac/marker.png" alt="Điểm bán Dzentic Hồ Chí Minh" width="36" height="36" class="absolute size-[35.5px] max-w-none" style="left:35%;top:52%" />
-            <img src="assets/img/he-thong-doi-tac/marker.png" alt="Điểm bán Dzentic Hồ Chí Minh" width="36" height="36" class="absolute size-[35.5px] max-w-none" style="left:68%;top:64%" />
+            <button type="button" data-marker="hcm-1" aria-label="Điểm bán Dzentic Hồ Chí Minh - điểm 1" class="absolute size-[35.5px] cursor-pointer transition-transform duration-200 hover:scale-125 focus-visible:scale-125 [&[aria-pressed=true]]:scale-150 [&[aria-pressed=true]]:z-10 focus-visible:outline-2 focus-visible:outline-brown rounded-full" style="left:24%;top:18%"><img src="assets/img/he-thong-doi-tac/marker.png" alt="" width="36" height="36" class="size-full max-w-none" /></button>
+            <button type="button" data-marker="hcm-2" aria-label="Điểm bán Dzentic Hồ Chí Minh - điểm 2" class="absolute size-[35.5px] cursor-pointer transition-transform duration-200 hover:scale-125 focus-visible:scale-125 [&[aria-pressed=true]]:scale-150 [&[aria-pressed=true]]:z-10 focus-visible:outline-2 focus-visible:outline-brown rounded-full" style="left:52%;top:30%"><img src="assets/img/he-thong-doi-tac/marker.png" alt="" width="36" height="36" class="size-full max-w-none" /></button>
+            <button type="button" data-marker="hcm-3" aria-label="Điểm bán Dzentic Hồ Chí Minh - điểm 3" class="absolute size-[35.5px] cursor-pointer transition-transform duration-200 hover:scale-125 focus-visible:scale-125 [&[aria-pressed=true]]:scale-150 [&[aria-pressed=true]]:z-10 focus-visible:outline-2 focus-visible:outline-brown rounded-full" style="left:35%;top:52%"><img src="assets/img/he-thong-doi-tac/marker.png" alt="" width="36" height="36" class="size-full max-w-none" /></button>
+            <button type="button" data-marker="hcm-4" aria-label="Điểm bán Dzentic Hồ Chí Minh - điểm 4" class="absolute size-[35.5px] cursor-pointer transition-transform duration-200 hover:scale-125 focus-visible:scale-125 [&[aria-pressed=true]]:scale-150 [&[aria-pressed=true]]:z-10 focus-visible:outline-2 focus-visible:outline-brown rounded-full" style="left:68%;top:64%"><img src="assets/img/he-thong-doi-tac/marker.png" alt="" width="36" height="36" class="size-full max-w-none" /></button>
           </div>
           <div data-tab-panel="da-nang" class="absolute inset-0" hidden>
-            <!-- TODO placeholder: vị trí marker mẫu, Figma chưa dựng bản đồ thành phố này -->
-            <img src="assets/img/he-thong-doi-tac/marker.png" alt="Điểm bán Dzentic Đà Nẵng" width="36" height="36" class="absolute size-[35.5px] max-w-none" style="left:30%;top:22%" />
-            <img src="assets/img/he-thong-doi-tac/marker.png" alt="Điểm bán Dzentic Đà Nẵng" width="36" height="36" class="absolute size-[35.5px] max-w-none" style="left:58%;top:40%" />
-            <img src="assets/img/he-thong-doi-tac/marker.png" alt="Điểm bán Dzentic Đà Nẵng" width="36" height="36" class="absolute size-[35.5px] max-w-none" style="left:44%;top:62%" />
+            <button type="button" data-marker="dn-1" aria-label="Điểm bán Dzentic Đà Nẵng - điểm 1" class="absolute size-[35.5px] cursor-pointer transition-transform duration-200 hover:scale-125 focus-visible:scale-125 [&[aria-pressed=true]]:scale-150 [&[aria-pressed=true]]:z-10 focus-visible:outline-2 focus-visible:outline-brown rounded-full" style="left:30%;top:22%"><img src="assets/img/he-thong-doi-tac/marker.png" alt="" width="36" height="36" class="size-full max-w-none" /></button>
+            <button type="button" data-marker="dn-2" aria-label="Điểm bán Dzentic Đà Nẵng - điểm 2" class="absolute size-[35.5px] cursor-pointer transition-transform duration-200 hover:scale-125 focus-visible:scale-125 [&[aria-pressed=true]]:scale-150 [&[aria-pressed=true]]:z-10 focus-visible:outline-2 focus-visible:outline-brown rounded-full" style="left:58%;top:40%"><img src="assets/img/he-thong-doi-tac/marker.png" alt="" width="36" height="36" class="size-full max-w-none" /></button>
+            <button type="button" data-marker="dn-3" aria-label="Điểm bán Dzentic Đà Nẵng - điểm 3" class="absolute size-[35.5px] cursor-pointer transition-transform duration-200 hover:scale-125 focus-visible:scale-125 [&[aria-pressed=true]]:scale-150 [&[aria-pressed=true]]:z-10 focus-visible:outline-2 focus-visible:outline-brown rounded-full" style="left:44%;top:62%"><img src="assets/img/he-thong-doi-tac/marker.png" alt="" width="36" height="36" class="size-full max-w-none" /></button>
           </div>
-          <div class="absolute inset-x-3 bottom-3 lg:inset-x-5 lg:bottom-5 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between bg-bg p-4">
+          <div class="absolute inset-x-3 bottom-3 z-[6] lg:inset-x-5 lg:bottom-5 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between bg-bg p-4">
             <div class="flex flex-col gap-2 text-text">
               <p class="text-xl leading-7 font-bold">Chưa có điểm gần bạn?</p>
               <p class="text-base leading-[22px] tracking-[0.224px]">Để lại khu vực để Dzentic gợi ý kênh mua phù hợp.</p>
@@ -2141,9 +2357,9 @@
           <li><button type="button" role="tab" data-tab="ho-chi-minh" aria-selected="false" class="h-[39px] px-3 bg-gray-ee text-navy hover:bg-brown-50 aria-selected:bg-brown aria-selected:text-bg aria-selected:hover:bg-brown-dark text-base leading-[22px] tracking-[0.224px] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Hồ Chí Minh</button></li>
           <li><button type="button" role="tab" data-tab="da-nang" aria-selected="false" class="h-[39px] px-3 bg-gray-ee text-navy hover:bg-brown-50 aria-selected:bg-brown aria-selected:text-bg aria-selected:hover:bg-brown-dark text-base leading-[22px] tracking-[0.224px] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Đà Nẵng</button></li>
         </ul>
-        <div class="mt-6 max-h-[420px] lg:max-h-[625px] overflow-y-auto -ml-3 pl-3 pr-3 [scrollbar-width:thin] [scrollbar-color:#494949_#ddd]">
+        <div class="scroll-thin mt-6 max-h-[420px] lg:max-h-[625px] overflow-y-auto -ml-3 pl-3 pr-4" data-clinic-list>
           <ul data-tab-panel="ha-noi" aria-label="Điểm bán tại Hà Nội">
-            <li class="-ml-3 flex flex-col gap-4 border-b border-gray-ee px-3 pb-[25px] pt-[23px] first:pt-0 transition-colors hover:bg-brown-50 group">
+            <li class="-ml-3 flex flex-col gap-4 border-b border-gray-ee px-3 pb-[25px] pt-[23px] first:pt-0 transition-colors hover:bg-brown-50 group cursor-pointer border-l-2 border-l-transparent [&[aria-current=true]]:bg-brown-50 [&[aria-current=true]]:border-l-brown focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-brown" role="button" tabindex="0" data-clinic="hn-1" data-q="Phòng khám Da liễu Hà Nội, 10 Trần Duy Hưng, Cầu Giấy, Hà Nội">
               <div class="flex flex-col gap-2">
                 <p class="flex items-center gap-2 text-xs leading-4 text-green"><img src="assets/img/he-thong-doi-tac/icon-check.svg" alt="" width="16" height="16" class="size-4" />Đối tác được xác thực</p>
                 <h3 class="text-xl leading-7 font-bold text-navy transition-colors group-hover:text-brown">Phòng khám Da liễu Hà Nội</h3>
@@ -2153,7 +2369,7 @@
                 <p class="flex items-center gap-2 text-ink"><img src="assets/img/he-thong-doi-tac/icon-clock.svg" alt="" width="16" height="16" class="size-4" />08:00 - 20:00</p>
               </div>
             </li>
-            <li class="-ml-3 flex flex-col gap-4 border-b border-gray-ee px-3 pb-[25px] pt-[23px] first:pt-0 transition-colors hover:bg-brown-50 group">
+            <li class="-ml-3 flex flex-col gap-4 border-b border-gray-ee px-3 pb-[25px] pt-[23px] first:pt-0 transition-colors hover:bg-brown-50 group cursor-pointer border-l-2 border-l-transparent [&[aria-current=true]]:bg-brown-50 [&[aria-current=true]]:border-l-brown focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-brown" role="button" tabindex="0" data-clinic="hn-2" data-q="Nhà thuốc Long Châu Tây Hồ, 45 Xuân Diệu, Tây Hồ, Hà Nội">
               <div class="flex flex-col gap-2">
                 <p class="flex items-center gap-2 text-xs leading-4 text-green"><img src="assets/img/he-thong-doi-tac/icon-check.svg" alt="" width="16" height="16" class="size-4" />Đối tác được xác thực</p>
                 <h3 class="text-xl leading-7 font-bold text-navy transition-colors group-hover:text-brown">Nhà thuốc Long Châu Tây Hồ</h3>
@@ -2163,7 +2379,7 @@
                 <p class="flex items-center gap-2 text-ink"><img src="assets/img/he-thong-doi-tac/icon-clock.svg" alt="" width="16" height="16" class="size-4" />07:00 - 22:00</p>
               </div>
             </li>
-            <li class="-ml-3 flex flex-col gap-4 border-b border-gray-ee px-3 pb-[25px] pt-[23px] first:pt-0 transition-colors hover:bg-brown-50 group">
+            <li class="-ml-3 flex flex-col gap-4 border-b border-gray-ee px-3 pb-[25px] pt-[23px] first:pt-0 transition-colors hover:bg-brown-50 group cursor-pointer border-l-2 border-l-transparent [&[aria-current=true]]:bg-brown-50 [&[aria-current=true]]:border-l-brown focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-brown" role="button" tabindex="0" data-clinic="hn-3" data-q="O2 Skin Clinic Hoàn Kiếm, 28 Lý Thường Kiệt, Hoàn Kiếm, Hà Nội">
               <div class="flex flex-col gap-2">
                 <p class="flex items-center gap-2 text-xs leading-4 text-green"><img src="assets/img/he-thong-doi-tac/icon-check.svg" alt="" width="16" height="16" class="size-4" />Đối tác được xác thực</p>
                 <h3 class="text-xl leading-7 font-bold text-navy transition-colors group-hover:text-brown">O2 Skin Clinic Hoàn Kiếm</h3>
@@ -2173,7 +2389,7 @@
                 <p class="flex items-center gap-2 text-ink"><img src="assets/img/he-thong-doi-tac/icon-clock.svg" alt="" width="16" height="16" class="size-4" />08:30 - 19:30</p>
               </div>
             </li>
-            <li class="-ml-3 flex flex-col gap-4 border-b border-gray-ee px-3 pb-[25px] pt-[23px] first:pt-0 transition-colors hover:bg-brown-50 group">
+            <li class="-ml-3 flex flex-col gap-4 border-b border-gray-ee px-3 pb-[25px] pt-[23px] first:pt-0 transition-colors hover:bg-brown-50 group cursor-pointer border-l-2 border-l-transparent [&[aria-current=true]]:bg-brown-50 [&[aria-current=true]]:border-l-brown focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-brown" role="button" tabindex="0" data-clinic="hn-4" data-q="Phòng khám Da liễu Thu Cúc, 286 Thụy Khuê, Tây Hồ, Hà Nội">
               <div class="flex flex-col gap-2">
                 <p class="flex items-center gap-2 text-xs leading-4 text-green"><img src="assets/img/he-thong-doi-tac/icon-check.svg" alt="" width="16" height="16" class="size-4" />Đối tác được xác thực</p>
                 <h3 class="text-xl leading-7 font-bold text-navy transition-colors group-hover:text-brown">Phòng khám Da liễu Thu Cúc</h3>
@@ -2183,7 +2399,7 @@
                 <p class="flex items-center gap-2 text-ink"><img src="assets/img/he-thong-doi-tac/icon-clock.svg" alt="" width="16" height="16" class="size-4" />08:00 - 17:30</p>
               </div>
             </li>
-            <li class="-ml-3 flex flex-col gap-4 border-b border-gray-ee px-3 pb-[25px] pt-[23px] first:pt-0 transition-colors hover:bg-brown-50 group">
+            <li class="-ml-3 flex flex-col gap-4 border-b border-gray-ee px-3 pb-[25px] pt-[23px] first:pt-0 transition-colors hover:bg-brown-50 group cursor-pointer border-l-2 border-l-transparent [&[aria-current=true]]:bg-brown-50 [&[aria-current=true]]:border-l-brown focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-brown" role="button" tabindex="0" data-clinic="hn-5" data-q="Nhà thuốc Pharmacity Ba Đình, 112 Đội Cấn, Ba Đình, Hà Nội">
               <div class="flex flex-col gap-2">
                 <p class="flex items-center gap-2 text-xs leading-4 text-green"><img src="assets/img/he-thong-doi-tac/icon-check.svg" alt="" width="16" height="16" class="size-4" />Đối tác được xác thực</p>
                 <h3 class="text-xl leading-7 font-bold text-navy transition-colors group-hover:text-brown">Nhà thuốc Pharmacity Ba Đình</h3>
@@ -2193,7 +2409,7 @@
                 <p class="flex items-center gap-2 text-ink"><img src="assets/img/he-thong-doi-tac/icon-clock.svg" alt="" width="16" height="16" class="size-4" />07:00 - 22:00</p>
               </div>
             </li>
-            <li class="-ml-3 flex flex-col gap-4 border-b border-gray-ee px-3 pb-[25px] pt-[23px] first:pt-0 transition-colors hover:bg-brown-50 group">
+            <li class="-ml-3 flex flex-col gap-4 border-b border-gray-ee px-3 pb-[25px] pt-[23px] first:pt-0 transition-colors hover:bg-brown-50 group cursor-pointer border-l-2 border-l-transparent [&[aria-current=true]]:bg-brown-50 [&[aria-current=true]]:border-l-brown focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-brown" role="button" tabindex="0" data-clinic="hn-6" data-q="Spa Linh Anh Skin Lab, 56 Nguyễn Chí Thanh, Đống Đa, Hà Nội">
               <div class="flex flex-col gap-2">
                 <p class="flex items-center gap-2 text-xs leading-4 text-green"><img src="assets/img/he-thong-doi-tac/icon-check.svg" alt="" width="16" height="16" class="size-4" />Đối tác được xác thực</p>
                 <h3 class="text-xl leading-7 font-bold text-navy transition-colors group-hover:text-brown">Spa Linh Anh Skin Lab</h3>
@@ -2203,7 +2419,7 @@
                 <p class="flex items-center gap-2 text-ink"><img src="assets/img/he-thong-doi-tac/icon-clock.svg" alt="" width="16" height="16" class="size-4" />09:00 - 21:00</p>
               </div>
             </li>
-            <li class="-ml-3 flex flex-col gap-4 border-b border-gray-ee px-3 pb-[25px] pt-[23px] first:pt-0 transition-colors hover:bg-brown-50 group">
+            <li class="-ml-3 flex flex-col gap-4 border-b border-gray-ee px-3 pb-[25px] pt-[23px] first:pt-0 transition-colors hover:bg-brown-50 group cursor-pointer border-l-2 border-l-transparent [&[aria-current=true]]:bg-brown-50 [&[aria-current=true]]:border-l-brown focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-brown" role="button" tabindex="0" data-clinic="hn-7" data-q="Bệnh viện Da liễu Trung ương, 15A Phương Mai, Đống Đa, Hà Nội">
               <div class="flex flex-col gap-2">
                 <p class="flex items-center gap-2 text-xs leading-4 text-green"><img src="assets/img/he-thong-doi-tac/icon-check.svg" alt="" width="16" height="16" class="size-4" />Đối tác được xác thực</p>
                 <h3 class="text-xl leading-7 font-bold text-navy transition-colors group-hover:text-brown">Bệnh viện Da liễu Trung ương</h3>
@@ -2215,8 +2431,7 @@
             </li>
           </ul>
           <ul data-tab-panel="ho-chi-minh" aria-label="Điểm bán tại Hồ Chí Minh" hidden>
-            <!-- TODO placeholder: dữ liệu mẫu, Figma chỉ có dữ liệu Hà Nội -->
-            <li class="-ml-3 flex flex-col gap-4 border-b border-gray-ee px-3 pb-[25px] pt-[23px] first:pt-0 transition-colors hover:bg-brown-50 group">
+            <li class="-ml-3 flex flex-col gap-4 border-b border-gray-ee px-3 pb-[25px] pt-[23px] first:pt-0 transition-colors hover:bg-brown-50 group cursor-pointer border-l-2 border-l-transparent [&[aria-current=true]]:bg-brown-50 [&[aria-current=true]]:border-l-brown focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-brown" role="button" tabindex="0" data-clinic="hcm-1" data-q="Phòng khám Da liễu Sài Gòn, 120 Nguyễn Thị Minh Khai, Quận 3, Hồ Chí Minh">
               <div class="flex flex-col gap-2">
                 <p class="flex items-center gap-2 text-xs leading-4 text-green"><img src="assets/img/he-thong-doi-tac/icon-check.svg" alt="" width="16" height="16" class="size-4" />Đối tác được xác thực</p>
                 <h3 class="text-xl leading-7 font-bold text-navy transition-colors group-hover:text-brown">Phòng khám Da liễu Sài Gòn</h3>
@@ -2226,7 +2441,7 @@
                 <p class="flex items-center gap-2 text-ink"><img src="assets/img/he-thong-doi-tac/icon-clock.svg" alt="" width="16" height="16" class="size-4" />08:00 - 20:00</p>
               </div>
             </li>
-            <li class="-ml-3 flex flex-col gap-4 border-b border-gray-ee px-3 pb-[25px] pt-[23px] first:pt-0 transition-colors hover:bg-brown-50 group">
+            <li class="-ml-3 flex flex-col gap-4 border-b border-gray-ee px-3 pb-[25px] pt-[23px] first:pt-0 transition-colors hover:bg-brown-50 group cursor-pointer border-l-2 border-l-transparent [&[aria-current=true]]:bg-brown-50 [&[aria-current=true]]:border-l-brown focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-brown" role="button" tabindex="0" data-clinic="hcm-2" data-q="Nhà thuốc Skin Care Quận 1, 25 Lê Thánh Tôn, Quận 1, Hồ Chí Minh">
               <div class="flex flex-col gap-2">
                 <p class="flex items-center gap-2 text-xs leading-4 text-green"><img src="assets/img/he-thong-doi-tac/icon-check.svg" alt="" width="16" height="16" class="size-4" />Đối tác được xác thực</p>
                 <h3 class="text-xl leading-7 font-bold text-navy transition-colors group-hover:text-brown">Nhà thuốc Skin Care Quận 1</h3>
@@ -2236,7 +2451,7 @@
                 <p class="flex items-center gap-2 text-ink"><img src="assets/img/he-thong-doi-tac/icon-clock.svg" alt="" width="16" height="16" class="size-4" />07:30 - 21:30</p>
               </div>
             </li>
-            <li class="-ml-3 flex flex-col gap-4 border-b border-gray-ee px-3 pb-[25px] pt-[23px] first:pt-0 transition-colors hover:bg-brown-50 group">
+            <li class="-ml-3 flex flex-col gap-4 border-b border-gray-ee px-3 pb-[25px] pt-[23px] first:pt-0 transition-colors hover:bg-brown-50 group cursor-pointer border-l-2 border-l-transparent [&[aria-current=true]]:bg-brown-50 [&[aria-current=true]]:border-l-brown focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-brown" role="button" tabindex="0" data-clinic="hcm-3" data-q="Thẩm mỹ da Bình Thạnh, 88 Điện Biên Phủ, Bình Thạnh, Hồ Chí Minh">
               <div class="flex flex-col gap-2">
                 <p class="flex items-center gap-2 text-xs leading-4 text-green"><img src="assets/img/he-thong-doi-tac/icon-check.svg" alt="" width="16" height="16" class="size-4" />Đối tác được xác thực</p>
                 <h3 class="text-xl leading-7 font-bold text-navy transition-colors group-hover:text-brown">Thẩm mỹ da Bình Thạnh</h3>
@@ -2246,7 +2461,7 @@
                 <p class="flex items-center gap-2 text-ink"><img src="assets/img/he-thong-doi-tac/icon-clock.svg" alt="" width="16" height="16" class="size-4" />08:30 - 19:30</p>
               </div>
             </li>
-            <li class="-ml-3 flex flex-col gap-4 border-b border-gray-ee px-3 pb-[25px] pt-[23px] first:pt-0 transition-colors hover:bg-brown-50 group">
+            <li class="-ml-3 flex flex-col gap-4 border-b border-gray-ee px-3 pb-[25px] pt-[23px] first:pt-0 transition-colors hover:bg-brown-50 group cursor-pointer border-l-2 border-l-transparent [&[aria-current=true]]:bg-brown-50 [&[aria-current=true]]:border-l-brown focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-brown" role="button" tabindex="0" data-clinic="hcm-4" data-q="Nhà thuốc Dzentic Phú Nhuận, 210 Phan Xích Long, Phú Nhuận, Hồ Chí Minh">
               <div class="flex flex-col gap-2">
                 <p class="flex items-center gap-2 text-xs leading-4 text-green"><img src="assets/img/he-thong-doi-tac/icon-check.svg" alt="" width="16" height="16" class="size-4" />Đối tác được xác thực</p>
                 <h3 class="text-xl leading-7 font-bold text-navy transition-colors group-hover:text-brown">Nhà thuốc Dzentic Phú Nhuận</h3>
@@ -2258,8 +2473,7 @@
             </li>
           </ul>
           <ul data-tab-panel="da-nang" aria-label="Điểm bán tại Đà Nẵng" hidden>
-            <!-- TODO placeholder: dữ liệu mẫu, Figma chỉ có dữ liệu Hà Nội -->
-            <li class="-ml-3 flex flex-col gap-4 border-b border-gray-ee px-3 pb-[25px] pt-[23px] first:pt-0 transition-colors hover:bg-brown-50 group">
+            <li class="-ml-3 flex flex-col gap-4 border-b border-gray-ee px-3 pb-[25px] pt-[23px] first:pt-0 transition-colors hover:bg-brown-50 group cursor-pointer border-l-2 border-l-transparent [&[aria-current=true]]:bg-brown-50 [&[aria-current=true]]:border-l-brown focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-brown" role="button" tabindex="0" data-clinic="dn-1" data-q="Phòng khám Da liễu Đà Nẵng, 76 Nguyễn Văn Linh, Hải Châu, Đà Nẵng">
               <div class="flex flex-col gap-2">
                 <p class="flex items-center gap-2 text-xs leading-4 text-green"><img src="assets/img/he-thong-doi-tac/icon-check.svg" alt="" width="16" height="16" class="size-4" />Đối tác được xác thực</p>
                 <h3 class="text-xl leading-7 font-bold text-navy transition-colors group-hover:text-brown">Phòng khám Da liễu Đà Nẵng</h3>
@@ -2269,7 +2483,7 @@
                 <p class="flex items-center gap-2 text-ink"><img src="assets/img/he-thong-doi-tac/icon-clock.svg" alt="" width="16" height="16" class="size-4" />08:00 - 19:00</p>
               </div>
             </li>
-            <li class="-ml-3 flex flex-col gap-4 border-b border-gray-ee px-3 pb-[25px] pt-[23px] first:pt-0 transition-colors hover:bg-brown-50 group">
+            <li class="-ml-3 flex flex-col gap-4 border-b border-gray-ee px-3 pb-[25px] pt-[23px] first:pt-0 transition-colors hover:bg-brown-50 group cursor-pointer border-l-2 border-l-transparent [&[aria-current=true]]:bg-brown-50 [&[aria-current=true]]:border-l-brown focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-brown" role="button" tabindex="0" data-clinic="dn-2" data-q="Nhà thuốc Skin Care Sơn Trà, 132 Ngô Quyền, Sơn Trà, Đà Nẵng">
               <div class="flex flex-col gap-2">
                 <p class="flex items-center gap-2 text-xs leading-4 text-green"><img src="assets/img/he-thong-doi-tac/icon-check.svg" alt="" width="16" height="16" class="size-4" />Đối tác được xác thực</p>
                 <h3 class="text-xl leading-7 font-bold text-navy transition-colors group-hover:text-brown">Nhà thuốc Skin Care Sơn Trà</h3>
@@ -2279,7 +2493,7 @@
                 <p class="flex items-center gap-2 text-ink"><img src="assets/img/he-thong-doi-tac/icon-clock.svg" alt="" width="16" height="16" class="size-4" />07:30 - 21:00</p>
               </div>
             </li>
-            <li class="-ml-3 flex flex-col gap-4 border-b border-gray-ee px-3 pb-[25px] pt-[23px] first:pt-0 transition-colors hover:bg-brown-50 group">
+            <li class="-ml-3 flex flex-col gap-4 border-b border-gray-ee px-3 pb-[25px] pt-[23px] first:pt-0 transition-colors hover:bg-brown-50 group cursor-pointer border-l-2 border-l-transparent [&[aria-current=true]]:bg-brown-50 [&[aria-current=true]]:border-l-brown focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-brown" role="button" tabindex="0" data-clinic="dn-3" data-q="Thẩm mỹ da Thanh Khê, 54 Hà Huy Tập, Thanh Khê, Đà Nẵng">
               <div class="flex flex-col gap-2">
                 <p class="flex items-center gap-2 text-xs leading-4 text-green"><img src="assets/img/he-thong-doi-tac/icon-check.svg" alt="" width="16" height="16" class="size-4" />Đối tác được xác thực</p>
                 <h3 class="text-xl leading-7 font-bold text-navy transition-colors group-hover:text-brown">Thẩm mỹ da Thanh Khê</h3>
@@ -2353,9 +2567,9 @@
         <div>
           <h3 class="text-xl leading-7 font-medium text-navy">Liên hệ</h3>
           <ul class="mt-6 flex flex-col gap-[10px] text-base leading-[22px] tracking-[0.224px] text-gray-49">
-            <li class="flex items-start gap-2"><img src="assets/img/footer/icon-phone.svg" alt="" width="20" height="20" class="shrink-0" /><span>Hotline: 1500 1515</span></li>
-            <li class="flex items-start gap-2"><img src="assets/img/footer/icon-mobile.svg" alt="" width="20" height="21" class="shrink-0" /><span>Điện thoại:<br />(+84) 123456789</span></li>
-            <li class="flex items-start gap-2"><img src="assets/img/footer/icon-pin.svg" alt="" width="20" height="21" class="shrink-0" /><span class="lg:max-w-[169px]">Tầng 4 Toà West Tower, 365 đường Cầu Giấy, Hà Nội</span></li>
+            <li class="flex items-start gap-2"><img src="assets/img/footer/icon-phone.svg" alt="" width="20" height="20" class="shrink-0" /><a href="tel:15001515" class="hover:text-brown hover:underline focus-visible:text-brown focus-visible:underline">Hotline: 1500 1515</a></li>
+            <li class="flex items-start gap-2"><img src="assets/img/footer/icon-mobile.svg" alt="" width="20" height="21" class="shrink-0" /><a href="tel:+84123456789" class="hover:text-brown hover:underline focus-visible:text-brown focus-visible:underline">Điện thoại:<br />(+84) 123456789</a></li>
+            <li class="flex items-start gap-2"><img src="assets/img/footer/icon-pin.svg" alt="" width="20" height="21" class="shrink-0" /><a href="https://www.google.com/maps/search/?api=1&amp;query=T%E1%BA%A7ng+4+To%C3%A0+West+Tower%2C+365+%C4%91%C6%B0%E1%BB%9Dng+C%E1%BA%A7u+Gi%E1%BA%A5y%2C+H%C3%A0+N%E1%BB%99i" target="_blank" rel="noopener" class="lg:max-w-[169px] hover:text-brown hover:underline focus-visible:text-brown focus-visible:underline">Tầng 4 Toà West Tower, 365 đường Cầu Giấy, Hà Nội</a></li>
           </ul>
         </div>
       </div>
