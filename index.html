@@ -1,1 +1,1181 @@
-<!doctype html><html><body class="p-4 text-xl">ok<span data-count="5">0</span></body></html>
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dzentic</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/app.css">
+</head>
+<body>
+<!-- ===== 01-topbar.html ===== -->
+<!-- SECTION: topbar -->
+<section aria-label="Thông báo" class="bg-navy text-bg">
+  <p class="max-w-site mx-auto px-4 py-3 md:py-4 text-center text-sm md:text-base leading-[22px] tracking-[0.224px]">
+    Nhận ưu đãi giảm tới 10% và miễn phí vận chuyển cho tất cả các đơn hàng. Cam kết 100% sản phẩm chính hãng.
+  </p>
+</section>
+
+<!-- ===== 02-hero-header.html ===== -->
+<!-- SECTION: hero-header -->
+<section class="relative bg-hero-fill text-navy">
+  <!-- Ảnh nền hero (Figma 2880x1692, gồm người mẫu ở bên phải) -->
+  <img src="assets/img/hero/hero-bg.jpg" alt="Người mẫu cầm sản phẩm Dzentic trên nền tia nắng vàng" width="2880" height="1692"
+       class="absolute inset-0 w-full h-full object-cover object-[75%_center] md:object-center" fetchpriority="high">
+  <!-- lớp phủ giúp đọc chữ trên mobile -->
+  <div class="absolute inset-0 bg-hero-fill/60 md:hidden" aria-hidden="true"></div>
+
+  <header class="relative z-20">
+    <div class="max-w-site mx-auto px-4 md:px-8 xl:px-[72px] h-20 xl:h-[120px] flex items-center justify-between xl:grid xl:grid-cols-[1fr_auto_1fr] xl:gap-6">
+      <nav class="hidden xl:flex items-center gap-6 text-base leading-[22px] tracking-[0.224px]" aria-label="Menu trái">
+        <a href="#" class="hover:text-brown">Khoa Học &amp; Bằng Chứng</a>
+        <a href="#" class="hover:text-brown">Sản Phẩm</a>
+      </nav>
+
+      <a href="/" class="block shrink-0 xl:justify-self-center" aria-label="Dzentic - Trang chủ">
+        <img src="assets/img/hero/logo-dzentic.png" alt="Dzentic - A brand by Sorai Beauty Engine" width="920" height="276"
+             class="h-14 xl:h-[92px] w-auto object-contain">
+      </a>
+
+      <div class="flex items-center gap-6 xl:justify-self-end">
+        <nav class="hidden xl:flex items-center gap-6 text-base leading-[22px] tracking-[0.224px]" aria-label="Menu phải">
+          <a href="#" class="hover:text-brown">Triết Lí Dzentic</a>
+          <a href="#" class="hover:text-brown">Giải Pháp Làn Da</a>
+          <a href="#" class="hover:text-brown">Liên Hệ</a>
+        </nav>
+        <div class="flex items-center gap-3">
+          <a href="#" aria-label="Tìm kiếm"><img src="assets/img/hero/icon-search.svg" alt="" width="20" height="20"></a>
+          <a href="#" class="flex items-center gap-2" aria-label="Giỏ hàng">
+            <img src="assets/img/hero/icon-cart.svg" alt="" width="20" height="20">
+            <span class="grid place-items-center size-5 rounded-[10px] bg-brown text-bg text-base leading-[22px]">0</span>
+          </a>
+          <button type="button" data-menu-toggle class="xl:hidden ml-2 p-1" aria-label="Mở menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Menu mobile -->
+    <nav data-menu class="hidden xl:hidden bg-bg border-t border-gray-dd px-4 md:px-8 py-4 text-base" aria-label="Menu chính">
+      <ul class="flex flex-col gap-4">
+        <li><a href="#">Khoa Học &amp; Bằng Chứng</a></li>
+        <li><a href="#">Sản Phẩm</a></li>
+        <li><a href="#">Triết Lí Dzentic</a></li>
+        <li><a href="#">Giải Pháp Làn Da</a></li>
+        <li><a href="#">Liên Hệ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="relative z-10" aria-label="Giới thiệu">
+    <div class="max-w-site mx-auto px-4 md:px-8 xl:px-[72px] pt-16 pb-28 md:pt-24 md:pb-32 xl:pt-[118px] xl:pb-[160px] min-h-[560px] xl:min-h-[727px] flex items-center">
+      <div class="flex flex-col gap-10 text-brown max-w-[620px]" data-aos="fade-up">
+        <div class="flex flex-col gap-6">
+          <div class="flex flex-col gap-3 uppercase">
+            <p class="text-sm md:text-base leading-[22px] tracking-[4px]">Japanese Premium Medical Skincare</p>
+            <h1 class="text-3xl md:text-4xl xl:text-5xl leading-[1.4] tracking-[0.624px]">
+              Chứng minh bằng khoa học<br class="hidden md:block"> Tin chọn bởi làn da
+            </h1>
+          </div>
+          <div class="text-base leading-[22px] tracking-[0.224px] max-w-[486px]">
+            <p>Proven by Science. Trusted by Skin.</p>
+            <p>Dzentic là thương hiệu chăm sóc da Nhật Bản, phát triển trên nền tảng khoa học da liễu và bằng chứng lâm sàng, đề cao hiệu quả được kiểm chứng, thành phần minh bạch và công thức đáng tin cậy.</p>
+          </div>
+        </div>
+        <div class="flex flex-wrap items-center gap-3">
+          <a href="#" class="inline-flex h-10 items-center justify-center gap-2 px-6 rounded-sm bg-brown text-bg text-base leading-[22px] tracking-[0.224px] hover:bg-brown-dark">Tìm Routine của bạn</a>
+          <a href="#" class="inline-flex h-10 items-center justify-center gap-2 px-6 rounded-sm border border-brown text-brown text-base leading-[22px] tracking-[0.224px] hover:bg-brown-50">
+            Xem sản phẩm
+            <img src="assets/img/hero/icon-arrow-up-right.svg" alt="" width="12" height="13">
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pager (placeholder tĩnh; nối với slider hero sau nếu cần) -->
+    <div class="absolute bottom-6 md:bottom-[52px] left-1/2 -translate-x-1/2 flex items-center gap-5 text-bg text-base leading-[22px] tracking-[0.224px]" aria-label="Trang chiếu">
+      <span>01</span>
+      <span class="relative block h-px w-10 bg-bg/40"><span class="absolute left-0 top-0 h-px w-[63%] bg-bg"></span></span>
+      <span>02</span>
+    </div>
+  </section>
+</section>
+
+<!-- ===== 03-usp-strip.html ===== -->
+<!-- SECTION: usp-strip -->
+<section class="bg-bg text-navy" aria-label="Điểm nổi bật">
+  <div class="max-w-site mx-auto px-4 md:px-8 xl:px-[77px] py-5 md:py-6">
+    <ul class="flex flex-col items-center gap-3 md:flex-row md:flex-wrap md:justify-center xl:justify-start text-base md:text-xl leading-7 text-center">
+      <li data-aos="fade-up">Nghiên cứu &amp; Sản xuất tại Nhật Bản</li>
+      <li class="hidden md:block" aria-hidden="true"><img src="assets/img/usp/icon-sun-ray.svg" alt="" width="24" height="24"></li>
+      <li data-aos="fade-up" data-aos-delay="100">Công thức kiểm chứng lâm sàng</li>
+      <li class="hidden md:block" aria-hidden="true"><img src="assets/img/usp/icon-sun-ray.svg" alt="" width="24" height="24"></li>
+      <li data-aos="fade-up" data-aos-delay="200">Khuyên dùng bởi bác sĩ da liễu</li>
+      <li class="hidden md:block" aria-hidden="true"><img src="assets/img/usp/icon-sun-ray.svg" alt="" width="24" height="24"></li>
+      <li data-aos="fade-up" data-aos-delay="300">Tối ưu cho cấu trúc da Châu Á</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ===== 04-thau-hieu-da.html ===== -->
+<!-- SECTION: Thấu hiểu làn da -->
+<section id="thau-hieu-da" class="bg-bg py-16 lg:py-24">
+  <div class="max-w-site mx-auto px-4 md:px-8 lg:px-[72px]">
+    <h2 class="text-center text-3xl leading-[1.4] tracking-[0.013em] text-brown-dark uppercase md:text-4xl lg:text-5xl" data-aos="fade-up">
+      Thấu hiểu làn da,<br class="hidden md:block" /> lựa chọn đúng giải pháp
+    </h2>
+
+    <!-- Tabs nhu cầu da (đổi tab: gắn JS/WordPress sau; tab đầu = Active) -->
+    <div class="mt-8 flex justify-start overflow-x-auto md:mt-12 lg:justify-center" role="tablist" aria-label="Loại da" data-aos="fade-up" data-aos-delay="100">
+      <div class="flex gap-6 lg:gap-10">
+        <button type="button" role="tab" aria-selected="false" class="shrink-0 whitespace-nowrap border-b border-gray-bb px-2 pb-2 text-lg leading-7 text-gray-99 lg:text-xl">Da mụn</button>
+        <button type="button" role="tab" aria-selected="true" class="shrink-0 whitespace-nowrap border-b border-navy px-2 pb-2 text-lg leading-7 text-navy lg:text-xl">Da nám &amp; lão hoá</button>
+        <button type="button" role="tab" aria-selected="false" class="shrink-0 whitespace-nowrap border-b border-gray-bb px-2 pb-2 text-lg leading-7 text-gray-99 lg:text-xl">Da nhạy cảm</button>
+        <button type="button" role="tab" aria-selected="false" class="shrink-0 whitespace-nowrap border-b border-gray-bb px-2 pb-2 text-lg leading-7 text-gray-99 lg:text-xl">Da điều trị</button>
+        <button type="button" role="tab" aria-selected="false" class="shrink-0 whitespace-nowrap border-b border-gray-bb px-2 pb-2 text-lg leading-7 text-gray-99 lg:text-xl">Da sau liệu trình</button>
+        <button type="button" role="tab" aria-selected="false" class="shrink-0 whitespace-nowrap border-b border-gray-bb px-2 pb-2 text-lg leading-7 text-gray-99 lg:text-xl">Da tổn thương</button>
+      </div>
+    </div>
+
+    <div class="mt-8 grid gap-8 lg:grid-cols-[526px_minmax(0,1fr)] lg:gap-[50px]">
+      <!-- Thẻ loại da -->
+      <article class="relative aspect-[526/640] overflow-hidden rounded-md" data-aos="fade-up">
+        <img src="assets/img/thau-hieu-da/the-da-nam-lao-hoa.jpg" alt="Làn da nám, không đều màu và có dấu hiệu lão hóa" width="1052" height="1280" class="absolute inset-0 size-full object-cover" />
+        <div class="absolute inset-x-0 bottom-0 flex flex-col items-center px-4 pb-10 text-center text-bg">
+          <h3 class="text-lg leading-7 md:text-xl">Da nám, không đều màu<br />&amp; có dấu hiệu lão hóa</h3>
+          <div class="mt-8 flex flex-wrap items-center justify-center gap-4">
+            <a href="#" class="inline-flex h-10 items-center gap-2 rounded-sm bg-brown px-6 text-base tracking-[0.014em] text-bg">
+              Xem cơ chế
+              <img src="assets/img/thau-hieu-da/icon-arrow-up-right-light.svg" alt="" width="12" height="13" />
+            </a>
+            <a href="#" class="inline-flex h-10 items-center gap-2 rounded-sm bg-bg px-6 text-base tracking-[0.014em] text-navy">
+              Xem bộ giải pháp
+              <img src="assets/img/thau-hieu-da/icon-arrow-up-right-navy.svg" alt="" width="12" height="13" />
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Chu trình + sản phẩm -->
+      <div class="min-w-0 lg:pt-[85px]" data-aos="fade-up" data-aos-delay="150">
+        <div class="flex flex-wrap justify-center gap-[10px]" role="tablist" aria-label="Chu trình">
+          <button type="button" role="tab" aria-selected="true" class="inline-flex h-11 items-center gap-2 rounded-sm bg-brown px-4 text-base leading-7 text-bg md:text-xl">
+            <img src="assets/img/thau-hieu-da/icon-ban-ngay.svg" alt="" width="18" height="18" />
+            Chu trình ban ngày
+          </button>
+          <button type="button" role="tab" aria-selected="false" class="inline-flex h-11 items-center gap-2 rounded-sm bg-gray-ee px-4 text-base leading-7 text-gray-66 md:text-xl">
+            <img src="assets/img/thau-hieu-da/icon-ban-dem.svg" alt="" width="18" height="18" />
+            Chu trình ban đêm
+          </button>
+        </div>
+
+        <div class="relative mt-8 lg:px-12">
+          <button type="button" class="swiper-prev absolute left-0 top-[142px] z-10 hidden size-5 lg:block" aria-label="Sản phẩm trước">
+            <img src="assets/img/thau-hieu-da/icon-chevron-left.svg" alt="" width="20" height="20" />
+          </button>
+          <button type="button" class="swiper-next absolute right-0 top-[142px] z-10 hidden size-5 lg:block" aria-label="Sản phẩm tiếp theo">
+            <img src="assets/img/thau-hieu-da/icon-chevron-right.svg" alt="" width="20" height="20" />
+          </button>
+
+          <div class="swiper" data-swiper='{"slidesPerView":1.4,"spaceBetween":16,"breakpoints":{"640":{"slidesPerView":2.4,"spaceBetween":24},"1024":{"slidesPerView":3,"spaceBetween":24}}}'>
+            <ul class="swiper-wrapper">
+              <!-- Lặp: mini product -->
+              <li class="swiper-slide">
+                <article class="group flex flex-col gap-6">
+                  <div class="relative aspect-[196/284] overflow-hidden">
+                    <img src="assets/img/thau-hieu-da/nen-san-pham.png" alt="" width="1089" height="1445" class="absolute inset-0 size-full object-cover" />
+                    <img src="assets/img/thau-hieu-da/san-pham-1.png" alt="Purifying Cleansing Gel" width="656" height="1338" class="absolute left-[27%] top-[17.6%] h-[64.4%] w-[46%] object-contain" />
+                    <div class="absolute inset-x-[10px] bottom-[10px] flex flex-col gap-1 opacity-100 transition-opacity lg:opacity-0 lg:group-hover:opacity-100">
+                      <a href="#" class="flex h-8 items-center justify-center rounded-sm bg-bg px-3 text-base tracking-[0.014em] text-ink">Xem chi tiết</a>
+                      <button type="button" class="flex h-8 items-center justify-center rounded-sm bg-navy px-3 text-base tracking-[0.014em] text-bg">Thêm vào giỏ hàng</button>
+                    </div>
+                  </div>
+                  <div class="flex flex-col gap-3 text-base leading-[22px] tracking-[0.014em] text-navy">
+                    <h3>Blue Light Shield<br />Tone-up Fluid Sunscreen</h3>
+                    <p>1,000,000 VNĐ</p>
+                  </div>
+                </article>
+              </li>
+              <li class="swiper-slide">
+                <article class="group flex flex-col gap-6">
+                  <div class="relative aspect-[196/284] overflow-hidden">
+                    <img src="assets/img/thau-hieu-da/nen-san-pham.png" alt="" width="1089" height="1445" class="absolute inset-0 size-full object-cover" />
+                    <img src="assets/img/thau-hieu-da/san-pham-2.png" alt="Blue Light Shield Tone-up Fluid Sunscreen" width="486" height="1122" class="absolute left-[27%] top-[17.6%] h-[64.4%] w-[46%] object-contain" />
+                    <div class="absolute inset-x-[10px] bottom-[10px] flex flex-col gap-1 opacity-100 transition-opacity lg:opacity-0 lg:group-hover:opacity-100">
+                      <a href="#" class="flex h-8 items-center justify-center rounded-sm bg-bg px-3 text-base tracking-[0.014em] text-ink">Xem chi tiết</a>
+                      <button type="button" class="flex h-8 items-center justify-center rounded-sm bg-navy px-3 text-base tracking-[0.014em] text-bg">Thêm vào giỏ hàng</button>
+                    </div>
+                  </div>
+                  <div class="flex flex-col gap-3 text-base leading-[22px] tracking-[0.014em] text-navy">
+                    <h3>Blue Light Shield<br />Tone-up Fluid Sunscreen</h3>
+                    <p>1,000,000 VNĐ</p>
+                  </div>
+                </article>
+              </li>
+              <li class="swiper-slide">
+                <article class="group flex flex-col gap-6">
+                  <div class="relative aspect-[196/284] overflow-hidden">
+                    <img src="assets/img/thau-hieu-da/nen-san-pham.png" alt="" width="1089" height="1445" class="absolute inset-0 size-full object-cover" />
+                    <img src="assets/img/thau-hieu-da/san-pham-3.png" alt="NeoBright Repair Cream" width="792" height="608" class="absolute left-[27%] top-[17.6%] h-[64.4%] w-[46%] object-contain" />
+                    <div class="absolute inset-x-[10px] bottom-[10px] flex flex-col gap-1 opacity-100 transition-opacity lg:opacity-0 lg:group-hover:opacity-100">
+                      <a href="#" class="flex h-8 items-center justify-center rounded-sm bg-bg px-3 text-base tracking-[0.014em] text-ink">Xem chi tiết</a>
+                      <button type="button" class="flex h-8 items-center justify-center rounded-sm bg-navy px-3 text-base tracking-[0.014em] text-bg">Thêm vào giỏ hàng</button>
+                    </div>
+                  </div>
+                  <div class="flex flex-col gap-3 text-base leading-[22px] tracking-[0.014em] text-navy">
+                    <h3>Blue Light Shield<br />Tone-up Fluid Sunscreen</h3>
+                    <p>1,000,000 VNĐ</p>
+                  </div>
+                </article>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 05-khoa-hoc-da-lieu.html ===== -->
+<!-- SECTION: Khoa học da liễu -->
+<section id="khoa-hoc-da-lieu" class="bg-bg py-16 lg:py-24">
+  <div class="max-w-site mx-auto px-4 md:px-8 lg:px-[72px]">
+    <h2 class="text-3xl leading-[1.4] tracking-[0.013em] text-brown-dark uppercase md:text-4xl lg:text-5xl" data-aos="fade-up">Khoa học da liễu làm nền tảng</h2>
+    <p class="mt-4 text-lg leading-7 text-navy lg:text-xl" data-aos="fade-up" data-aos-delay="100">Bốn nguyên tắc định hướng phát triển công thức Dzentic</p>
+
+    <img src="assets/img/khoa-hoc-da-lieu/thoa-kem-duong.jpg" alt="Thoa kem dưỡng lên da mặt" width="2592" height="1200" class="mt-8 aspect-[4/3] w-full rounded-md object-cover md:aspect-[2/1] lg:aspect-auto lg:h-[600px]" data-aos="fade-up" />
+
+    <ul class="mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-4 lg:gap-0">
+      <!-- Lặp: principle -->
+      <li class="flex flex-col gap-5 lg:pr-6" data-aos="fade-up">
+        <img src="assets/img/khoa-hoc-da-lieu/icon-nong-do.svg" alt="" width="40" height="40" />
+        <div class="flex flex-col gap-3">
+          <h3 class="text-xl leading-7 text-navy">Nồng độ phù hợp</h3>
+          <p class="text-base leading-[22px] tracking-[0.014em] text-gray-49">Cân nhắc trong toàn công thức, hướng tới hiệu quả và khả năng dung nạp.</p>
+        </div>
+      </li>
+      <li class="flex flex-col gap-5 lg:border-l lg:border-gray-bb lg:px-6" data-aos="fade-up" data-aos-delay="100">
+        <img src="assets/img/khoa-hoc-da-lieu/icon-hiep-dong.svg" alt="" width="40" height="40" />
+        <div class="flex flex-col gap-3">
+          <h3 class="text-xl leading-7 text-navy">Phối hợp hiệp đồng</h3>
+          <p class="text-base leading-[22px] tracking-[0.014em] text-gray-49">Kết hợp các thành phần bổ trợ ltheo mục tiêu chăm sóc da.</p>
+        </div>
+      </li>
+      <li class="flex flex-col gap-5 lg:border-l lg:border-gray-bb lg:px-6" data-aos="fade-up" data-aos-delay="200">
+        <img src="assets/img/khoa-hoc-da-lieu/icon-da-co-che.svg" alt="" width="40" height="40" />
+        <div class="flex flex-col gap-3">
+          <h3 class="text-xl leading-7 text-navy">Đa cơ chế, cùng một mục tiêu</h3>
+          <p class="text-base leading-[22px] tracking-[0.014em] text-gray-49">Tiếp cận nhu cầu làn da qua những cơ chế bổ trợ nhau.</p>
+        </div>
+      </li>
+      <li class="flex flex-col gap-5 lg:border-l lg:border-gray-bb lg:px-6" data-aos="fade-up" data-aos-delay="300">
+        <img src="assets/img/khoa-hoc-da-lieu/icon-chu-trinh.svg" alt="" width="40" height="40" />
+        <div class="flex flex-col gap-3">
+          <h3 class="text-xl leading-7 text-navy">Hỗ trợ chu trình chăm sóc</h3>
+          <p class="text-base leading-[22px] tracking-[0.014em] text-gray-49">Chú trọng dưỡng ẩm, hàng rào da và khả năng dung nạp.</p>
+        </div>
+      </li>
+    </ul>
+
+    <a href="#" class="mt-10 inline-flex h-10 items-center gap-2 rounded-sm border border-brown-dark px-6 text-base tracking-[0.014em] text-brown-dark" data-aos="fade-up">
+      Khám phá triết lý Dzentic
+      <img src="assets/img/khoa-hoc-da-lieu/icon-arrow-right-brown.svg" alt="" width="12" height="13" />
+    </a>
+  </div>
+</section>
+
+<!-- ===== 06-khoa-hoc-bang-chung.html ===== -->
+<!-- SECTION: Từ khoa học đến bằng chứng -->
+<section id="bang-chung" class="relative isolate overflow-hidden bg-[#f3f2f6] py-16 lg:py-[130px]">
+  <img src="assets/img/bang-chung/nen-phan-tu.jpg" alt="" width="2880" height="1662" class="absolute inset-0 -z-10 size-full object-cover" />
+  <div class="max-w-site mx-auto grid gap-10 px-4 md:px-8 lg:grid-cols-[minmax(0,1fr)_636px] lg:px-[72px]">
+    <div class="flex flex-col gap-10 lg:sticky lg:top-24 lg:self-start">
+      <div class="flex flex-col gap-6" data-aos="fade-up">
+        <h2 class="text-3xl leading-[1.4] tracking-[0.013em] text-brown-dark uppercase md:text-4xl lg:text-5xl">
+          từ Khoa học<br />đến bằng chứng<br />lâm sàng trên da
+        </h2>
+        <p class="max-w-[400px] text-base leading-[22px] tracking-[0.014em] text-gray-66">Dzentic xây dựng niềm tin theo một hành trình có hệ thống: từ lựa chọn hoạt chất, phát triển công thức, kiểm nghiệm sản phẩm đến đánh giá hiệu quả và khả năng dung nạp trên làn da người Việt.</p>
+      </div>
+      <a href="#" class="inline-flex h-10 w-fit items-center gap-2 rounded-sm bg-blue px-6 text-base tracking-[0.014em] text-bg" data-aos="fade-up" data-aos-delay="100">
+        Xem bằng chứng
+        <img src="assets/img/bang-chung/icon-arrow-up-right-light.svg" alt="" width="12" height="13" />
+      </a>
+    </div>
+
+    <!-- Các thẻ so le (desktop: lệch phải/trái như Figma) -->
+    <ol class="flex flex-col gap-6 lg:gap-8">
+      <!-- Lặp: proof card -->
+      <li class="rounded-md border border-gray-dd bg-white/80 px-6 pb-8 pt-[23px] lg:w-[416px] lg:self-end" data-aos="fade-up">
+        <img src="assets/img/bang-chung/icon-flask.svg" alt="" width="26" height="24" />
+        <div class="mt-[60px] flex flex-col gap-3">
+          <h3 class="text-xl leading-7 text-blue">Cơ sở khoa học của công thức</h3>
+          <p class="text-base leading-[22px] tracking-[0.014em] text-gray-66">Mỗi công thức được phát triển dựa trên vai trò của hoạt chất, nồng độ sử dụng, khả năng phối hợp và các bằng chứng khoa học liên quan đến nhu cầu của làn da. các nghiên cứu của hoạt chất được trình bày rõ ràng và phân biệt với nghiên cứu trực tiếp trên thành phẩm.</p>
+        </div>
+      </li>
+      <li class="rounded-md border border-gray-dd bg-white/80 px-6 pb-8 pt-[23px] lg:w-[416px] lg:self-start" data-aos="fade-up">
+        <img src="assets/img/bang-chung/icon-flask.svg" alt="" width="26" height="24" />
+        <div class="mt-[60px] flex flex-col gap-3">
+          <h3 class="text-xl leading-7 text-blue">Kiểm nghiệm và chất lượng sản phẩm</h3>
+          <p class="text-base leading-[22px] tracking-[0.014em] text-gray-66">Các sản phẩm Dzentic được kiểm soát thông qua hệ thống chỉ tiêu chất lượng và các đánh giá phù hợp đối với từng công thức, bao gồm độ ổn định, an toàn và khả năng dung nạp.<br /><br />Thông tin kiểm nghiệm được công bố theo từng sản phẩm và phạm vi tài liệu được phép chia sẻ.</p>
+        </div>
+      </li>
+      <li class="rounded-md border border-gray-dd bg-white/80 px-6 pb-8 pt-[23px] lg:w-[416px] lg:self-end" data-aos="fade-up">
+        <img src="assets/img/bang-chung/icon-flask.svg" alt="" width="26" height="24" />
+        <div class="mt-[60px] flex flex-col gap-3">
+          <h3 class="text-xl leading-7 text-blue">Đánh giá lâm sàng trên làn da người Việt</h3>
+          <p class="text-base leading-[22px] tracking-[0.014em] text-gray-66">Hiệu quả và khả năng dung nạp của giải pháp Dzentic được đánh giá trên làn da người Việt tại Bệnh viện Da liễu Hà Nội theo đề cương, tiêu chí và các mốc theo dõi được chuẩn hóa.</p>
+        </div>
+      </li>
+      <li class="rounded-md border border-gray-dd bg-white/80 px-6 pb-8 pt-[23px] lg:w-[416px] lg:self-start" data-aos="fade-up">
+        <img src="assets/img/bang-chung/icon-flask.svg" alt="" width="26" height="24" />
+        <div class="mt-[60px] flex flex-col gap-3">
+          <h3 class="text-xl leading-7 text-blue">Kết quả minh bạch- Kiểm chứng dữ liệu lâm sàng</h3>
+          <p class="text-base leading-[22px] tracking-[0.014em] text-gray-66">Công bố quá trình đánh giá kết quả chứng minh lâm sàng</p>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ===== 07-danh-muc-san-pham.html ===== -->
+<!-- SECTION: Danh mục sản phẩm -->
+<section id="danh-muc-san-pham" class="bg-bg pt-12 md:pt-24 pb-12 md:pb-24" aria-labelledby="danh-muc-san-pham-title">
+  <div class="max-w-site mx-auto px-5 md:px-10 xl:px-18">
+    <div class="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between" data-aos="fade-up">
+      <h2 id="danh-muc-san-pham-title" class="font-sans text-3xl md:text-5xl leading-[1.4] tracking-[0.624px] uppercase text-brown-dark">Danh mục sản phẩm</h2>
+      <div class="flex flex-wrap items-center gap-2">
+        <!-- Nút điều hướng slider: .swiper-prev / .swiper-next (Swiper gắn class swiper-button-disabled khi hết slide) -->
+        <button type="button" class="swiper-prev flex size-10 items-center justify-center bg-gray-ee cursor-pointer [&.swiper-button-disabled]:opacity-50 [&.swiper-button-disabled]:cursor-default" aria-label="Sản phẩm trước">
+          <img src="assets/img/danh-muc-san-pham/icon-chevron-left.svg" alt="" width="12" height="17">
+        </button>
+        <button type="button" class="swiper-next flex size-10 items-center justify-center bg-gray-ee cursor-pointer [&.swiper-button-disabled]:opacity-50 [&.swiper-button-disabled]:cursor-default" aria-label="Sản phẩm tiếp theo">
+          <img src="assets/img/danh-muc-san-pham/icon-chevron-right.svg" alt="" width="12" height="17">
+        </button>
+        <a href="#" class="inline-flex h-10 items-center gap-2 rounded-sm bg-brown px-6 text-base leading-[22px] tracking-[0.224px] text-bg whitespace-nowrap">
+          Xem toàn bộ 7 sản phẩm
+          <img src="assets/img/danh-muc-san-pham/icon-arrow-up-right.svg" alt="" width="12" height="13">
+        </a>
+      </div>
+    </div>
+
+    <div class="swiper mt-7" data-aos="fade-up" data-aos-delay="100" data-swiper='{"slidesPerView":1.15,"spaceBetween":12,"breakpoints":{"640":{"slidesPerView":2.1},"1024":{"slidesPerView":3,"spaceBetween":12}}}'>
+      <ul class="swiper-wrapper">
+        <!-- Lặp: product card -->
+        <li class="swiper-slide !h-auto">
+          <article class="group flex h-full flex-col">
+            <div class="relative aspect-[424/500] overflow-hidden rounded-[4px] bg-[#ecebec] transition-shadow duration-300 group-hover:shadow-popover">
+              <a href="#" class="block size-full" aria-label="Photo Defense Brightening Serum">
+                <img src="assets/img/danh-muc-san-pham/photo-defense-brightening-serum.png" alt="Lọ Photo Defense Brightening Serum của Dzentic" width="1089" height="1444" class="size-full object-cover transition-transform duration-500 group-hover:scale-[1.03]" loading="lazy">
+              </a>
+              <span class="absolute left-4 top-4 inline-flex h-[31px] items-center rounded-xs bg-white px-2 py-1 text-xs leading-4 tracking-[0.48px] text-ink">DAY SERUM</span>
+              <div class="absolute inset-x-4 bottom-4 flex gap-2 transition-opacity duration-300 lg:opacity-0 lg:group-hover:opacity-100">
+                <a href="#" class="flex h-11 flex-1 items-center justify-center rounded-sm bg-bg px-3 text-[15px] leading-5 tracking-[0.21px] text-ink">Xem chi tiết</a>
+                <a href="#" class="flex h-11 flex-1 items-center justify-center rounded-sm bg-navy px-3 text-[15px] leading-5 tracking-[0.21px] text-bg">Thêm vào giỏ hàng</a>
+              </div>
+            </div>
+            <div class="flex flex-col gap-5 pt-6">
+              <div class="flex flex-col gap-2">
+                <h3 class="text-xl leading-7 text-navy transition-colors group-hover:text-brown"><a href="#">Photo Defense Brightening Serum</a></h3>
+                <p class="text-sm leading-5 tracking-[0.14px] text-brown">Làm sáng ban ngày · Chống oxy hóa</p>
+              </div>
+              <p class="text-base leading-[22px] tracking-[0.224px] text-navy">1,000,000 VNĐ</p>
+            </div>
+          </article>
+        </li>
+        <li class="swiper-slide !h-auto">
+          <article class="group flex h-full flex-col">
+            <div class="relative aspect-[424/500] overflow-hidden rounded-[4px] bg-[#ecebec] transition-shadow duration-300 group-hover:shadow-popover">
+              <a href="#" class="block size-full" aria-label="Retino Renewal Brightening Serum">
+                <img src="assets/img/danh-muc-san-pham/retino-renewal-brightening-serum.png" alt="Lọ Retino Renewal Brightening Serum của Dzentic" width="1089" height="1445" class="size-full object-cover transition-transform duration-500 group-hover:scale-[1.03]" loading="lazy">
+              </a>
+              <span class="absolute left-4 top-4 inline-flex h-[31px] items-center rounded-xs bg-white px-2 py-1 text-xs leading-4 tracking-[0.48px] text-ink">NIGHT SERUM</span>
+              <div class="absolute inset-x-4 bottom-4 flex gap-2 transition-opacity duration-300 lg:opacity-0 lg:group-hover:opacity-100">
+                <a href="#" class="flex h-11 flex-1 items-center justify-center rounded-sm bg-bg px-3 text-[15px] leading-5 tracking-[0.21px] text-ink">Xem chi tiết</a>
+                <a href="#" class="flex h-11 flex-1 items-center justify-center rounded-sm bg-navy px-3 text-[15px] leading-5 tracking-[0.21px] text-bg">Thêm vào giỏ hàng</a>
+              </div>
+            </div>
+            <div class="flex flex-col gap-5 pt-6">
+              <div class="flex flex-col gap-2">
+                <h3 class="text-xl leading-7 text-navy transition-colors group-hover:text-brown"><a href="#">Retino Renewal Brightening Serum</a></h3>
+                <p class="text-sm leading-5 tracking-[0.14px] text-brown">Trẻ hóa ban đêm · Làm sáng đa cơ chế</p>
+              </div>
+              <p class="text-base leading-[22px] tracking-[0.224px] text-navy">1,000,000 VNĐ</p>
+            </div>
+          </article>
+        </li>
+        <li class="swiper-slide !h-auto">
+          <article class="group flex h-full flex-col">
+            <div class="relative aspect-[424/500] overflow-hidden rounded-[4px] bg-[#ecebec] transition-shadow duration-300 group-hover:shadow-popover">
+              <a href="#" class="block size-full" aria-label="Zinc Complex Serum">
+                <img src="assets/img/danh-muc-san-pham/zinc-complex-serum.png" alt="Lọ Zinc Complex Serum của Dzentic" width="1089" height="1445" class="size-full object-cover transition-transform duration-500 group-hover:scale-[1.03]" loading="lazy">
+              </a>
+              <div class="absolute inset-x-4 bottom-4 flex gap-2 transition-opacity duration-300 lg:opacity-0 lg:group-hover:opacity-100">
+                <a href="#" class="flex h-11 flex-1 items-center justify-center rounded-sm bg-bg px-3 text-[15px] leading-5 tracking-[0.21px] text-ink">Xem chi tiết</a>
+                <a href="#" class="flex h-11 flex-1 items-center justify-center rounded-sm bg-navy px-3 text-[15px] leading-5 tracking-[0.21px] text-bg">Liên hệ</a>
+              </div>
+            </div>
+            <div class="flex flex-col gap-5 pt-6">
+              <div class="flex flex-col gap-2">
+                <h3 class="text-xl leading-7 text-navy transition-colors group-hover:text-brown"><a href="#">Zinc Complex Serum</a></h3>
+                <p class="text-sm leading-5 tracking-[0.14px] text-brown">Cân bằng bã nhờn · Làm dịu · Hỗ trợ da dễ bít tắc</p>
+              </div>
+              <p class="text-base leading-[22px] tracking-[0.224px] text-navy">Giá đang cập nhật</p>
+            </div>
+          </article>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 08-routine-quiz.html ===== -->
+<!-- SECTION: Routine quiz — Bước 1 -->
+<section id="routine-quiz" class="bg-bg py-12 md:py-24" aria-labelledby="routine-quiz-title" data-routine-quiz>
+  <div class="max-w-site mx-auto px-5 md:px-10 xl:px-18">
+    <div class="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between" data-aos="fade-up">
+      <h2 id="routine-quiz-title" class="text-3xl md:text-5xl leading-[1.4] tracking-[0.624px] uppercase text-brown-dark">Da của bạn<br class="hidden md:block"> hợp routine nào?</h2>
+      <div class="flex flex-wrap gap-2 lg:pb-3">
+        <a href="#" class="inline-flex h-10 items-center gap-2 rounded-sm bg-brown px-6 text-base leading-[22px] tracking-[0.224px] text-bg whitespace-nowrap">
+          Hỗ trợ giải pháp
+          <img src="assets/img/routine-quiz/icon-arrow-up-right.svg" alt="" width="12" height="13">
+        </a>
+        <a href="#" class="inline-flex h-10 items-center rounded-sm border border-brown-dark px-6 text-base leading-[22px] tracking-[0.224px] text-brown-dark whitespace-nowrap">Tư vấn đồng hành 1-1</a>
+      </div>
+    </div>
+
+    <div class="mt-8 grid gap-10 lg:mt-12 lg:grid-cols-[480px_minmax(0,1fr)] lg:gap-12">
+      <!-- Cột câu hỏi -->
+      <div class="flex flex-col" data-aos="fade-up">
+        <!-- Stepper -->
+        <ol class="relative flex max-w-[416px] items-start justify-between" aria-label="Các bước của bài trắc nghiệm" data-quiz-stepper>
+          <li class="relative z-10 flex w-16 flex-col items-center gap-3" data-quiz-stepitem="1" aria-current="step">
+            <span class="flex size-8 items-center justify-center rounded-full bg-brown-dark text-xs leading-4 text-bg" data-quiz-dot>1</span>
+            <span class="text-base leading-[22px] tracking-[0.224px] text-brown-dark" data-quiz-steplabel>Bước 1</span>
+          </li>
+          <li class="relative z-10 flex w-16 flex-col items-center gap-3" data-quiz-stepitem="2">
+            <span class="flex size-8 items-center justify-center rounded-full bg-gray-bb text-xs leading-4 text-bg" data-quiz-dot>2</span>
+            <span class="text-base leading-[22px] tracking-[0.224px] text-gray-99" data-quiz-steplabel>Bước 2</span>
+          </li>
+          <li class="relative z-10 flex w-16 flex-col items-center gap-3" data-quiz-stepitem="3">
+            <span class="flex size-8 items-center justify-center rounded-full bg-gray-bb text-xs leading-4 text-bg" data-quiz-dot>3</span>
+            <span class="text-base leading-[22px] tracking-[0.224px] text-gray-99" data-quiz-steplabel>Bước 3</span>
+          </li>
+          <li class="absolute left-8 right-8 top-[15px] -z-0 h-[2px] bg-gray-bb" aria-hidden="true"></li>
+        </ol>
+
+        <!-- Bước 1 (các bước 2, 3 chưa có thiết kế: thêm <fieldset data-quiz-step="2" hidden> tương tự) -->
+        <fieldset class="mt-9 min-w-0 border-0 p-0" data-quiz-step="1">
+          <legend class="mb-5 w-full text-xl leading-7 font-bold text-brown-dark">Bạn đang quan tâm điều gì nhất?</legend>
+          <div class="flex flex-col gap-3">
+            <!-- Lặp: quiz option -->
+            <label class="group flex cursor-pointer items-start gap-4 rounded-[4px] border border-gray-dd bg-white px-[18px] py-[14px] has-[:checked]:border-brown-dark has-[:checked]:bg-brown-50 has-[:focus-visible]:outline-2 has-[:focus-visible]:outline-offset-2 has-[:focus-visible]:outline-navy">
+              <input type="radio" name="quiz-step-1" value="da-mun-tham-mun" class="peer sr-only">
+              <span class="mt-[3px] flex size-[18px] shrink-0 items-center justify-center rounded-[3px] border-[1.5px] border-navy bg-white peer-checked:bg-navy" aria-hidden="true">
+                <img src="assets/img/routine-quiz/icon-check.svg" alt="" width="12" height="12" class="hidden size-3 group-has-[:checked]:block">
+              </span>
+              <span class="flex min-w-0 flex-1 flex-col gap-[2px]">
+                <span class="text-base leading-[22px] tracking-[0.224px] text-navy">Da mụn và thâm mụn</span>
+                <span class="text-sm leading-5 tracking-[0.14px] text-gray-66">Da dễ nổi mụn hoặc có vết thâm sau mụn</span>
+              </span>
+            </label>
+            <label class="group flex cursor-pointer items-start gap-4 rounded-[4px] border border-gray-dd bg-white px-[18px] py-[14px] has-[:checked]:border-brown-dark has-[:checked]:bg-brown-50 has-[:focus-visible]:outline-2 has-[:focus-visible]:outline-offset-2 has-[:focus-visible]:outline-navy">
+              <input type="radio" name="quiz-step-1" value="da-nam-lao-hoa" class="peer sr-only" checked>
+              <span class="mt-[3px] flex size-[18px] shrink-0 items-center justify-center rounded-[3px] border-[1.5px] border-navy bg-white peer-checked:bg-navy" aria-hidden="true">
+                <img src="assets/img/routine-quiz/icon-check.svg" alt="" width="12" height="12" class="hidden size-3 group-has-[:checked]:block">
+              </span>
+              <span class="flex min-w-0 flex-1 flex-col gap-[2px]">
+                <span class="text-base leading-[22px] tracking-[0.224px] text-navy">Da nám và dấu hiệu lão hóa</span>
+                <span class="text-sm leading-5 tracking-[0.14px] text-gray-66">Màu da không đều, thâm nám, nếp nhăn hoặc da kém đàn hồi</span>
+              </span>
+            </label>
+            <label class="group flex cursor-pointer items-start gap-4 rounded-[4px] border border-gray-dd bg-white px-[18px] py-[14px] has-[:checked]:border-brown-dark has-[:checked]:bg-brown-50 has-[:focus-visible]:outline-2 has-[:focus-visible]:outline-offset-2 has-[:focus-visible]:outline-navy">
+              <input type="radio" name="quiz-step-1" value="da-nhay-cam" class="peer sr-only">
+              <span class="mt-[3px] flex size-[18px] shrink-0 items-center justify-center rounded-[3px] border-[1.5px] border-navy bg-white peer-checked:bg-navy" aria-hidden="true">
+                <img src="assets/img/routine-quiz/icon-check.svg" alt="" width="12" height="12" class="hidden size-3 group-has-[:checked]:block">
+              </span>
+              <span class="flex min-w-0 flex-1 flex-col gap-[2px]">
+                <span class="text-base leading-[22px] tracking-[0.224px] text-navy">Da nhạy cảm/ Đang treatment</span>
+                <span class="text-sm leading-5 tracking-[0.14px] text-gray-66">Da dễ châm chích, khô căng hoặc bong tróc</span>
+              </span>
+            </label>
+            <label class="group flex cursor-pointer items-start gap-4 rounded-[4px] border border-gray-dd bg-white px-[18px] py-[14px] has-[:checked]:border-brown-dark has-[:checked]:bg-brown-50 has-[:focus-visible]:outline-2 has-[:focus-visible]:outline-offset-2 has-[:focus-visible]:outline-navy">
+              <input type="radio" name="quiz-step-1" value="da-dieu-tri-phac-do" class="peer sr-only">
+              <span class="mt-[3px] flex size-[18px] shrink-0 items-center justify-center rounded-[3px] border-[1.5px] border-navy bg-white peer-checked:bg-navy" aria-hidden="true">
+                <img src="assets/img/routine-quiz/icon-check.svg" alt="" width="12" height="12" class="hidden size-3 group-has-[:checked]:block">
+              </span>
+              <span class="flex min-w-0 flex-1 flex-col gap-[2px]">
+                <span class="text-base leading-[22px] tracking-[0.224px] text-navy">Da đang điều trị theo phác đồ</span>
+                <span class="text-sm leading-5 tracking-[0.14px] text-gray-66">Đang dùng thuốc uống hoặc thuốc bôi theo chỉ định của bác sĩ</span>
+              </span>
+            </label>
+            <label class="group flex cursor-pointer items-start gap-4 rounded-[4px] border border-gray-dd bg-white px-[18px] py-[14px] has-[:checked]:border-brown-dark has-[:checked]:bg-brown-50 has-[:focus-visible]:outline-2 has-[:focus-visible]:outline-offset-2 has-[:focus-visible]:outline-navy">
+              <input type="radio" name="quiz-step-1" value="da-sau-peel-laser" class="peer sr-only">
+              <span class="mt-[3px] flex size-[18px] shrink-0 items-center justify-center rounded-[3px] border-[1.5px] border-navy bg-white peer-checked:bg-navy" aria-hidden="true">
+                <img src="assets/img/routine-quiz/icon-check.svg" alt="" width="12" height="12" class="hidden size-3 group-has-[:checked]:block">
+              </span>
+              <span class="flex min-w-0 flex-1 flex-col gap-[2px]">
+                <span class="text-base leading-[22px] tracking-[0.224px] text-navy">Da sau peel/ Laser hoặc lấy nhân mụn</span>
+                <span class="text-sm leading-5 tracking-[0.14px] text-gray-66">Vừa thực hiện thủ thuật chăm sóc hoặc điều trị da</span>
+              </span>
+            </label>
+            <label class="group flex cursor-pointer items-start gap-4 rounded-[4px] border border-gray-dd bg-white px-[18px] py-[14px] has-[:checked]:border-brown-dark has-[:checked]:bg-brown-50 has-[:focus-visible]:outline-2 has-[:focus-visible]:outline-offset-2 has-[:focus-visible]:outline-navy">
+              <input type="radio" name="quiz-step-1" value="chong-nang-hang-ngay" class="peer sr-only">
+              <span class="mt-[3px] flex size-[18px] shrink-0 items-center justify-center rounded-[3px] border-[1.5px] border-navy bg-white peer-checked:bg-navy" aria-hidden="true">
+                <img src="assets/img/routine-quiz/icon-check.svg" alt="" width="12" height="12" class="hidden size-3 group-has-[:checked]:block">
+              </span>
+              <span class="flex min-w-0 flex-1 flex-col gap-[2px]">
+                <span class="text-base leading-[22px] tracking-[0.224px] text-navy">Chống nắng hằng ngày</span>
+                <span class="text-sm leading-5 tracking-[0.14px] text-gray-66">Muốn bắt đầu với bước bảo vệ da cơ bản</span>
+              </span>
+            </label>
+          </div>
+        </fieldset>
+
+        <div class="mt-10 lg:mt-auto lg:pt-10">
+          <button type="button" class="inline-flex h-10 cursor-pointer items-center gap-2 rounded-sm border border-navy px-6 text-base leading-[22px] tracking-[0.224px] text-navy" data-quiz-next>
+            Tiếp theo
+            <img src="assets/img/routine-quiz/icon-arrow-right.svg" alt="" width="12" height="13">
+          </button>
+        </div>
+      </div>
+
+      <!-- Panel kết quả routine -->
+      <div class="relative min-w-0 rounded-[4px] border border-gray-dd bg-white lg:h-[808px] lg:overflow-hidden" data-aos="fade-up" data-aos-delay="100">
+        <div class="flex flex-col gap-6 px-5 py-6 md:px-10 md:py-10 lg:h-full lg:overflow-y-auto lg:pr-12 [scrollbar-width:thin] [scrollbar-color:#494949_#ddd]" tabindex="0" aria-label="Kết quả routine gợi ý">
+          <div class="flex flex-wrap gap-[10px]" role="tablist" aria-label="Chọn chu trình">
+            <button type="button" role="tab" id="routine-tab-day" aria-selected="true" aria-controls="routine-panel-day" data-routine-tab="day" class="inline-flex h-11 cursor-pointer items-center gap-2 rounded-sm bg-gray-ee px-4 text-xl leading-7 text-gray-66 aria-selected:bg-brown aria-selected:text-bg">
+              <img src="assets/img/routine-quiz/icon-day.svg" alt="" width="18" height="18">
+              Chu trình ban ngày
+            </button>
+            <button type="button" role="tab" id="routine-tab-night" aria-selected="false" aria-controls="routine-panel-night" data-routine-tab="night" class="inline-flex h-11 cursor-pointer items-center gap-2 rounded-sm bg-gray-ee px-4 text-xl leading-7 text-gray-66 aria-selected:bg-brown aria-selected:text-bg">
+              <img src="assets/img/routine-quiz/icon-night.svg" alt="" width="18" height="18">
+              Chu trình ban đêm
+            </button>
+          </div>
+
+          <div role="tabpanel" id="routine-panel-day" aria-labelledby="routine-tab-day" data-routine-panel="day" class="flex flex-col gap-3">
+            <!-- Lặp: routine result card -->
+            <article class="flex items-center gap-4 rounded-[4px] bg-gray-ee px-5 py-4 md:gap-6">
+              <div class="h-24 w-[88px] shrink-0 overflow-hidden rounded-[4px]">
+                <img src="assets/img/routine-quiz/purifying-cleansing-gel.png" alt="Tuýp Purifying Cleansing Gel" width="656" height="1338" class="size-full object-contain" loading="lazy">
+              </div>
+              <div class="flex min-w-0 flex-1 flex-col gap-1">
+                <p class="text-base leading-[22px] tracking-[4px] uppercase text-brown">Bước 1</p>
+                <h3 class="text-xl leading-7 font-medium text-navy">Purifying Cleansing Gel</h3>
+                <p class="text-sm leading-5 tracking-[0.14px] text-gray-66">Làm sạch dịu nhẹ, ít bọt, không xà phòng.</p>
+              </div>
+            </article>
+            <article class="flex items-center gap-4 rounded-[4px] bg-gray-ee px-5 py-4 md:gap-6">
+              <!-- Figma: ảnh sản phẩm bước 2 để trống, giữ khung -->
+              <div class="h-24 w-[88px] shrink-0 overflow-hidden rounded-[4px]" aria-hidden="true"></div>
+              <div class="flex min-w-0 flex-1 flex-col gap-1">
+                <p class="text-base leading-[22px] tracking-[4px] uppercase text-brown">Bước 2</p>
+                <h3 class="text-xl leading-7 font-medium text-navy">Photo Defense Brightening Serum</h3>
+                <p class="text-sm leading-5 tracking-[0.14px] text-gray-66">Serum ban ngày định hướng làm sáng và chống oxy hóa.</p>
+              </div>
+            </article>
+            <article class="flex items-center gap-4 rounded-[4px] bg-gray-ee px-5 py-4 md:gap-6">
+              <div class="h-24 w-[88px] shrink-0 overflow-hidden rounded-[4px]">
+                <img src="assets/img/routine-quiz/neobright-repair-cream.png" alt="Hũ NeoBright Repair Cream" width="792" height="608" class="size-full object-contain" loading="lazy">
+              </div>
+              <div class="flex min-w-0 flex-1 flex-col gap-1">
+                <p class="text-base leading-[22px] tracking-[4px] uppercase text-brown">Bước 3</p>
+                <h3 class="text-xl leading-7 font-medium text-navy">NeoBright Repair Cream</h3>
+                <p class="text-sm leading-5 tracking-[0.14px] text-gray-66">Dưỡng ẩm, hỗ trợ hàng rào da và chăm sóc dấu hiệu lão hóa.</p>
+              </div>
+            </article>
+            <article class="flex items-center gap-4 rounded-[4px] bg-gray-ee px-5 py-4 md:gap-6">
+              <div class="h-24 w-[88px] shrink-0 overflow-hidden rounded-[4px]">
+                <img src="assets/img/routine-quiz/blue-light-shield-sunscreen.png" alt="Chai Blue Light Shield Tone-up Fluid Sunscreen" width="486" height="1122" class="size-full object-contain" loading="lazy">
+              </div>
+              <div class="flex min-w-0 flex-1 flex-col gap-1">
+                <p class="text-base leading-[22px] tracking-[4px] uppercase text-brown">Bước 4</p>
+                <h3 class="text-xl leading-7 font-medium text-navy">Blue Light Shield Tone-up Fluid Sunscreen</h3>
+                <p class="text-sm leading-5 tracking-[0.14px] text-gray-66">Kem chống nắng bảo vệ da ban ngày</p>
+              </div>
+            </article>
+          </div>
+
+          <!-- Chu trình ban đêm: Figma chưa có nội dung, thay bằng danh sách card cùng cấu trúc ở trên -->
+          <div role="tabpanel" id="routine-panel-night" aria-labelledby="routine-tab-night" data-routine-panel="night" class="flex flex-col gap-3" hidden>
+            <p class="rounded-[4px] bg-gray-ee px-5 py-4 text-base leading-[22px] text-gray-66">Chu trình ban đêm đang được cập nhật.</p>
+          </div>
+
+          <hr class="border-0 h-px w-full bg-gray-dd">
+
+          <div class="flex flex-col gap-2">
+            <h3 class="text-xl leading-7 font-bold text-brown-dark">Vì sao routine này phù hợp với bạn?</h3>
+            <p class="text-base leading-[22px] tracking-[0.224px] text-gray-49">Bạn cho biết làn da hiện có nhu cầu chăm sóc <strong class="font-bold">DA NÁM / KHÔNG ĐỀU MÀU / DẤU HIỆU LÃO HÓA</strong>. Vì vậy Dzentic ưu tiên chăm sóc sắc tố ban ngày - chống oxy hóa - chăm sóc tái tạo ban đêm - phục hồi - chống nắng.</p>
+          </div>
+
+          <hr class="border-0 h-px w-full bg-gray-dd">
+
+          <div class="flex flex-col gap-2">
+            <h3 class="text-xl leading-7 font-bold text-brown-dark">Sử dụng:</h3>
+            <p class="text-base leading-[22px] tracking-[0.224px] text-gray-49">Bắt đầu với <strong class="font-bold">Retino Renewal Brightening Serum</strong> 2 tối mỗi tuần. Tăng lên cách tối, rồi mỗi tối nếu da dung nạp tốt, không dùng cùng buổi với retinoid hoặc acid tẩy tế bào chết khác.</p>
+          </div>
+
+          <div class="flex flex-col gap-3">
+            <p class="text-sm leading-5 font-medium tracking-[0.14px] text-gray-66">Bộ sản phẩm đề xuất</p>
+            <p class="text-xl leading-7 font-medium text-navy">Bộ giải pháp dưỡng sáng và chăm sóc da lão hoá</p>
+            <div>
+              <a href="#" class="inline-flex h-10 items-center rounded-sm bg-brown px-6 text-base leading-[22px] tracking-[0.224px] text-bg">Thêm bộ sản phẩm vào giỏ</a>
+            </div>
+          </div>
+
+          <p class="text-sm leading-5 tracking-[0.14px] text-gray-66 opacity-85">Routine trên được xây dựng dựa trên thông tin bạn cung cấp và mang tính định hướng chăm sóc. Sản phẩm Dzentic không thay thế thuốc hoặc phác đồ điều trị. Nếu bạn đang sử dụng thuốc, vừa thực hiện thủ thuật hoặc có tình trạng da đặc biệt, hãy tiếp tục tuân thủ hướng dẫn của bác sĩ, người có chuyên môn.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      var root = document.querySelector('[data-routine-quiz]');
+      if (!root) return;
+
+      // Chuyển chu trình ngày / đêm
+      var tabs = root.querySelectorAll('[data-routine-tab]');
+      var panels = root.querySelectorAll('[data-routine-panel]');
+      tabs.forEach(function (tab) {
+        tab.addEventListener('click', function () {
+          var key = tab.getAttribute('data-routine-tab');
+          tabs.forEach(function (t) { t.setAttribute('aria-selected', String(t === tab)); });
+          panels.forEach(function (p) { p.hidden = p.getAttribute('data-routine-panel') !== key; });
+        });
+      });
+
+      // Chuyển bước: chỉ chạy khi tồn tại fieldset [data-quiz-step] của bước kế tiếp
+      var steps = root.querySelectorAll('[data-quiz-step]');
+      var items = root.querySelectorAll('[data-quiz-stepitem]');
+      var next = root.querySelector('[data-quiz-next]');
+      var current = 1;
+
+      function paintStepper() {
+        items.forEach(function (li) {
+          var n = Number(li.getAttribute('data-quiz-stepitem'));
+          var active = n === current;
+          var dot = li.querySelector('[data-quiz-dot]');
+          var label = li.querySelector('[data-quiz-steplabel]');
+          dot.classList.toggle('bg-brown-dark', n <= current);
+          dot.classList.toggle('bg-gray-bb', n > current);
+          label.classList.toggle('text-brown-dark', active);
+          label.classList.toggle('text-gray-99', !active);
+          if (active) li.setAttribute('aria-current', 'step'); else li.removeAttribute('aria-current');
+        });
+      }
+
+      if (next) {
+        next.addEventListener('click', function () {
+          var target = root.querySelector('[data-quiz-step="' + (current + 1) + '"]');
+          if (!target) return;
+          steps.forEach(function (s) { s.hidden = true; });
+          target.hidden = false;
+          current += 1;
+          paintStepper();
+        });
+      }
+    })();
+  </script>
+</section>
+
+<!-- ===== 09-hanh-trinh-nhat-ban.html ===== -->
+<!-- SECTION: Hành trình Nhật Bản -->
+<section id="hanh-trinh-nhat-ban" class="relative isolate flex min-h-[640px] md:min-h-[800px] flex-col justify-between gap-12 overflow-hidden bg-[#7b5532] py-12 md:py-[72px] text-bg" aria-labelledby="hanh-trinh-title">
+  <img src="assets/img/hanh-trinh-nhat-ban/bg-hanh-trinh-nhat-ban.jpg" alt="" width="1440" height="800" class="absolute inset-0 -z-10 size-full object-cover" loading="lazy">
+  <!-- Lớp phủ nhẹ giúp chữ dễ đọc trên mobile (không có trong Figma) -->
+  <div class="absolute inset-0 -z-10 bg-black/25 md:bg-transparent" aria-hidden="true"></div>
+
+  <div class="max-w-site mx-auto w-full px-5 md:px-10 xl:px-18">
+    <div class="flex max-w-[640px] flex-col gap-6" data-aos="fade-up">
+      <h2 id="hanh-trinh-title" class="text-3xl md:text-5xl leading-[1.4] tracking-[0.624px] uppercase">Dzentic - Hành Trình Nghiên Cứu<br class="hidden md:block"> và Phát Triển Tại Nhật Bản</h2>
+      <p class="max-w-[560px] text-base leading-[22px] tracking-[0.224px]">Dzentic xây dựng niềm tin theo một hành trình có hệ thống: từ lựa chọn hoạt chất, phát triển công thức, kiểm nghiệm sản phẩm đến đánh giá hiệu quả và khả năng dung nạp trên làn da người Việt.</p>
+    </div>
+  </div>
+
+  <div class="max-w-site mx-auto w-full px-5 md:px-10 xl:px-18">
+    <ol class="grid grid-cols-2 gap-x-6 gap-y-8 md:grid-cols-3 xl:grid-cols-6 xl:gap-x-0">
+      <!-- Lặp: timeline item -->
+      <li class="flex flex-col gap-[6px] xl:w-[216px] xl:pr-4" data-aos="fade-up" data-aos-delay="0">
+        <span class="border-b border-gray-dd pb-2 text-base leading-[22px] tracking-[4px]">01</span>
+        <p class="text-base leading-[22px] tracking-[0.224px]">Thấu hiểu nhu cầu làn da Việt Nam</p>
+      </li>
+      <li class="flex flex-col gap-[6px] xl:w-[216px] xl:pr-4" data-aos="fade-up" data-aos-delay="80">
+        <span class="border-b border-gray-dd pb-2 text-base leading-[22px] tracking-[4px]">02</span>
+        <p class="text-base leading-[22px] tracking-[0.224px]">Bác sĩ da liễu Việt Nam tham gia tư vấn và đánh giá</p>
+      </li>
+      <li class="flex flex-col gap-[6px] xl:w-[216px] xl:pr-4" data-aos="fade-up" data-aos-delay="160">
+        <span class="border-b border-gray-dd pb-2 text-base leading-[22px] tracking-[4px]">03</span>
+        <p class="text-base leading-[22px] tracking-[0.224px]">Hai năm trao đổi, điều chỉnh và tối ưu công thức</p>
+      </li>
+      <li class="flex flex-col gap-[6px] xl:w-[216px] xl:pr-4" data-aos="fade-up" data-aos-delay="240">
+        <span class="border-b border-gray-dd pb-2 text-base leading-[22px] tracking-[4px]">04</span>
+        <p class="text-base leading-[22px] tracking-[0.224px]">Đánh giá kết cấu, độ ổn định và trải nghiệm sử dụng</p>
+      </li>
+      <li class="flex flex-col gap-[6px] xl:w-[216px] xl:pr-4" data-aos="fade-up" data-aos-delay="320">
+        <span class="border-b border-gray-dd pb-2 text-base leading-[22px] tracking-[4px]">05</span>
+        <p class="text-base leading-[22px] tracking-[0.224px]">Sản xuất, kiểm soát chất lượng tại Nhật Bản</p>
+      </li>
+      <li class="flex flex-col gap-[6px] xl:w-[216px] xl:pr-4" data-aos="fade-up" data-aos-delay="400">
+        <span class="border-b border-gray-dd pb-2 text-base leading-[22px] tracking-[4px]">06</span>
+        <p class="text-base leading-[22px] tracking-[0.224px]">Hoàn thiện hệ sản phẩm Dzentic</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ===== 10-goc-nhin-chuyen-mon.html ===== -->
+<!-- SECTION: Góc nhìn chuyên môn -->
+<section id="goc-nhin-chuyen-mon" class="bg-bg py-16 md:py-24 lg:pt-[127px] lg:pb-[100px]">
+  <div class="max-w-site mx-auto px-5 md:px-8 lg:px-[72px]">
+    <header class="max-w-[800px] mx-auto text-center flex flex-col items-center gap-3" data-aos="fade-up">
+      <p class="text-base leading-[22px] tracking-[4px] uppercase text-brown">Bác sĩ và Nghiên Cứu Viên</p>
+      <h2 class="text-3xl md:text-5xl leading-[1.4] tracking-[0.624px] uppercase text-brown-dark">Góc nhìn chuyên môn</h2>
+      <p class="mt-2 text-base leading-[22px] tracking-[0.224px] text-gray-66">Dzentic đồng hành cùng đội ngũ bác sĩ và nghiên cứu viên đầu ngành để mang đến những kiến thức da liễu chuẩn khoa học, dễ hiểu, giúp khách hàng hiểu đúng và chăm sóc da an toàn, hiệu quả hơn.</p>
+    </header>
+
+    <!-- Chuyên gia nổi bật -->
+    <article class="mt-12 lg:mt-[100px] border border-gray-bb rounded-md p-4 lg:p-[18px] flex flex-col lg:flex-row gap-8 lg:gap-[67px]" data-aos="fade-up">
+      <!-- Video chuyên gia: có thể bọc ảnh bằng <a data-fancybox="chuyen-gia" href="https://www.youtube.com/watch?v=PLACEHOLDER"> nếu cần -->
+      <div class="lg:w-[529px] shrink-0">
+        <img src="assets/img/goc-nhin-chuyen-mon/bs-ngo-hanh.jpg" alt="Bác sĩ Ngô Hạnh mặc áo blouse trắng, đeo ống nghe" width="1058" height="1638" class="w-full h-[480px] md:h-[640px] lg:h-[819px] object-cover rounded-md" loading="lazy">
+      </div>
+      <div class="flex flex-col gap-10 lg:pt-[40px] lg:pr-8 lg:max-w-[573px]">
+        <div class="flex flex-col gap-8">
+          <div class="flex flex-col gap-3 uppercase">
+            <p class="text-base leading-[22px] tracking-[4px] text-navy">Chuyên gia nổi bật</p>
+            <h3 class="text-3xl md:text-5xl leading-[1.4] tracking-[0.624px] text-navy">bs. Ngô Hạnh</h3>
+          </div>
+          <p class="text-base leading-[22px] tracking-[0.224px] text-gray-66">Thạc Sĩ - Bác sĩ nội trú chuyên ngành Da liễu Hơn 10 năm kinh nghiêm trong điều trị và tư vấn các vấn đề da liễu lâm sàng, da nhạy cảm.</p>
+        </div>
+
+        <div class="flex flex-col gap-6">
+          <div class="flex flex-col gap-5">
+            <div class="h-px bg-gray-bb"></div>
+            <h4 class="text-base leading-[22px] tracking-[4px] uppercase text-brown">Kinh Nghiệm Làm Việc</h4>
+          </div>
+          <ul class="flex flex-col sm:flex-row gap-6">
+            <li class="flex flex-col gap-2 sm:flex-1">
+              <p class="font-medium text-xl leading-7 text-navy">2020-2023</p>
+              <p class="text-base leading-[22px] tracking-[0.224px] text-gray-66">Bác sĩ nội trú tại bệnh viện Da liễu trung ương</p>
+            </li>
+            <li class="flex flex-col gap-2 sm:flex-1">
+              <p class="font-medium text-xl leading-7 text-navy">2024-Nay</p>
+              <p class="text-base leading-[22px] tracking-[0.224px] text-gray-66">Bác sĩ khoa Da liễu thẩm mỹ - Bệnh viện Da liễu Hà Nội</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="flex flex-col gap-6">
+          <h4 class="text-base leading-[22px] tracking-[4px] uppercase text-brown">học vấn và đào tạo</h4>
+          <ul class="flex flex-col gap-1 text-base leading-[22px] tracking-[0.224px] text-gray-66 list-disc pl-6 marker:text-gray-66">
+            <li>Tốt nghiệp bằng giỏi Bác sĩ đa khoa - Đại học Y Hà Nội</li>
+            <li>Á khoa Bác sĩ nội trú chuyên ngành Da Liễu - Đại học Y Hà Nội</li>
+            <li>Tốt nghiệp xuất sắc Thạc sĩ chuyên ngành Da liễu - Đại học Y Hà Nội</li>
+            <li>Nghiên cứu sinh tiến sĩ Quản lý y tế</li>
+          </ul>
+        </div>
+
+        <div class="flex flex-col gap-6">
+          <h4 class="text-base leading-[22px] tracking-[4px] uppercase text-brown">hoạt động chuyên môn</h4>
+          <ul class="flex flex-col gap-1 text-base leading-[22px] tracking-[0.224px] text-gray-66 list-disc pl-6 marker:text-gray-66">
+            <li>Thành viên Hội Da liễu Việt Nam</li>
+            <li>Giảng viên thỉnh giảng bộ môn Da liễu - Học viện Y dược học Cổ truyền Việt Nam</li>
+            <li>Báo cáo viên các Hội nghị Da liễu trong nước và quốc tế</li>
+            <li>Founder Da liễu An Bình và Da liễu thẩm mỹ Bs. Ngô Hạnh</li>
+          </ul>
+        </div>
+      </div>
+    </article>
+
+    <!-- Nghiên cứu viên (lặp: WordPress loop) -->
+    <ul class="mt-8 lg:mt-[49px] grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 xl:gap-3">
+      <li class="flex gap-6 items-start" data-aos="fade-up">
+        <img src="assets/img/goc-nhin-chuyen-mon/nghien-cuu-vien-le-duc.jpg" alt="Nghiên cứu viên Lê Đức" width="392" height="478" class="w-[140px] sm:w-[196px] h-[239px] shrink-0 object-cover rounded-md" loading="lazy">
+        <div class="flex flex-col justify-between self-stretch gap-4 min-w-0">
+          <div class="flex flex-col gap-1 text-navy">
+            <p class="text-xs leading-4 uppercase">Nghiên cứu viên</p>
+            <h3 class="font-medium text-xl leading-7">Lê Đức</h3>
+          </div>
+          <p class="text-base leading-[22px] tracking-[0.224px] text-gray-66">Bác sĩ da liễu<br>Hơn 10 năm kinh nghiêm trong điều trị và tư vấn các vấn đề da liễu lâm sàng, da nhạy cảm.</p>
+        </div>
+      </li>
+      <li class="flex gap-6 items-start" data-aos="fade-up" data-aos-delay="100">
+        <img src="assets/img/goc-nhin-chuyen-mon/nghien-cuu-vien-le-duc.jpg" alt="Nghiên cứu viên Lê Đức" width="392" height="478" class="w-[140px] sm:w-[196px] h-[239px] shrink-0 object-cover rounded-md" loading="lazy">
+        <div class="flex flex-col justify-between self-stretch gap-4 min-w-0">
+          <div class="flex flex-col gap-1 text-navy">
+            <p class="text-xs leading-4 uppercase">Nghiên cứu viên</p>
+            <h3 class="font-medium text-xl leading-7">Lê Đức</h3>
+          </div>
+          <p class="text-base leading-[22px] tracking-[0.224px] text-gray-66">Bác sĩ da liễu<br>Hơn 10 năm kinh nghiêm trong điều trị và tư vấn các vấn đề da liễu lâm sàng, da nhạy cảm.</p>
+        </div>
+      </li>
+      <li class="flex gap-6 items-start" data-aos="fade-up" data-aos-delay="200">
+        <img src="assets/img/goc-nhin-chuyen-mon/nghien-cuu-vien-le-duc.jpg" alt="Nghiên cứu viên Lê Đức" width="392" height="478" class="w-[140px] sm:w-[196px] h-[239px] shrink-0 object-cover rounded-md" loading="lazy">
+        <div class="flex flex-col justify-between self-stretch gap-4 min-w-0">
+          <div class="flex flex-col gap-1 text-navy">
+            <p class="text-xs leading-4 uppercase">Nghiên cứu viên</p>
+            <h3 class="font-medium text-xl leading-7">Lê Đức</h3>
+          </div>
+          <p class="text-base leading-[22px] tracking-[0.224px] text-gray-66">Bác sĩ da liễu<br>Hơn 10 năm kinh nghiêm trong điều trị và tư vấn các vấn đề da liễu lâm sàng, da nhạy cảm.</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ===== 11-trai-nghiem-thuc-te.html ===== -->
+<!-- SECTION: Trải nghiệm thực tế -->
+<section id="trai-nghiem-thuc-te" class="relative overflow-hidden bg-bg py-16 md:py-24 lg:pt-24 lg:pb-[100px]">
+  <img src="assets/img/trai-nghiem-thuc-te/rays-left.svg" alt="" width="272" height="544" class="hidden lg:block absolute left-0 top-0 w-[272px] h-[544px] pointer-events-none" aria-hidden="true">
+  <img src="assets/img/trai-nghiem-thuc-te/rays-right.svg" alt="" width="270" height="544" class="hidden lg:block absolute right-0 top-0 w-[270px] h-[544px] pointer-events-none" aria-hidden="true">
+  <div class="relative max-w-site mx-auto px-5 md:px-8 lg:px-[72px]">
+    <header class="max-w-[800px] mx-auto text-center flex flex-col items-center gap-6" data-aos="fade-up">
+      <h2 class="text-3xl md:text-5xl leading-[1.4] tracking-[0.624px] uppercase text-brown-dark">Trải nghiệm thực tế</h2>
+      <p class="text-base leading-[22px] tracking-[0.224px] text-gray-66">Những chia sẻ chân thực từ khách hàng và góc nhìn chuyên gia trong các video ngắn 45-90 giây, giúp bạn hiểu rõ hơn về hành trình chăm sóc da cùng Dzentic.</p>
+    </header>
+
+    <ul class="mt-10 lg:mt-[62px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+      <li data-aos="fade-up" data-aos-delay="0">
+        <!-- Video: thay href bằng link YouTube thật -->
+        <a data-fancybox="trai-nghiem" href="https://www.youtube.com/watch?v=PLACEHOLDER1" class="group relative block h-[520px] sm:h-[600px] lg:h-[700px] overflow-hidden rounded-md" aria-label="Xem video: Nám của tôi có dùng được không?">
+          <img src="assets/img/trai-nghiem-thuc-te/story-nam.jpg" alt="Cô gái chạm tay lên má, làn da sáng khỏe" width="848" height="1401" class="absolute inset-0 size-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy">
+          <span class="absolute inset-0 bg-gradient-to-t from-ink/70 via-transparent to-transparent" aria-hidden="true"></span>
+          <span class="absolute top-6 right-6 size-10 flex items-center justify-center bg-ink/30">
+            <img src="assets/img/trai-nghiem-thuc-te/icon-play.svg" alt="" width="20" height="21">
+          </span>
+          <span class="absolute left-6 right-6 bottom-6 flex flex-col gap-[11px] text-bg">
+            <span class="font-bold text-xl leading-7">Nám của tôi có dùng được không?</span>
+            <span class="text-base leading-[22px] tracking-[0.224px]">Bác sĩ giải đáp liệu trình phù hợp cho làn da nám, tàn nhang.</span>
+          </span>
+        </a>
+      </li>
+      <li data-aos="fade-up" data-aos-delay="100">
+        <!-- Video: thay href bằng link YouTube thật -->
+        <a data-fancybox="trai-nghiem" href="https://www.youtube.com/watch?v=PLACEHOLDER2" class="group relative block h-[520px] sm:h-[600px] lg:h-[700px] overflow-hidden rounded-md" aria-label="Xem video: Cảm nhận sau 14 ngày dùng kem phục hồi">
+          <img src="assets/img/trai-nghiem-thuc-te/story-kem-phuc-hoi.jpg" alt="Khách hàng cầm hũ kem phục hồi Dzentic Neobright" width="848" height="1401" class="absolute inset-0 size-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy">
+          <span class="absolute inset-0 bg-gradient-to-t from-ink/70 via-transparent to-transparent" aria-hidden="true"></span>
+          <span class="absolute top-6 right-6 size-10 flex items-center justify-center bg-ink/30">
+            <img src="assets/img/trai-nghiem-thuc-te/icon-play.svg" alt="" width="20" height="21">
+          </span>
+          <span class="absolute left-6 right-6 bottom-6 flex flex-col gap-[11px] text-bg">
+            <span class="font-bold text-xl leading-7">Cảm nhận sau 14 ngày dùng kem phục hồi</span>
+            <span class="text-base leading-[22px] tracking-[0.224px]">Khách hàng chia sẻ sự thay đổi của làn da sau liệu trình chăm sóc chuyên sâu.</span>
+          </span>
+        </a>
+      </li>
+      <li data-aos="fade-up" data-aos-delay="200">
+        <!-- Video: thay href bằng link YouTube thật -->
+        <a data-fancybox="trai-nghiem" href="https://www.youtube.com/watch?v=PLACEHOLDER3" class="group relative block h-[520px] sm:h-[600px] lg:h-[700px] overflow-hidden rounded-md" aria-label="Xem video: Da nhạy cảm, dễ kích ứng có dùng được Serum?">
+          <img src="assets/img/trai-nghiem-thuc-te/story-serum.jpg" alt="Nhỏ serum từ ống bóp lên mu bàn tay" width="848" height="1401" class="absolute inset-0 size-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy">
+          <span class="absolute inset-0 bg-gradient-to-t from-ink/70 via-transparent to-transparent" aria-hidden="true"></span>
+          <span class="absolute top-6 right-6 size-10 flex items-center justify-center bg-ink/30">
+            <img src="assets/img/trai-nghiem-thuc-te/icon-play.svg" alt="" width="20" height="21">
+          </span>
+          <span class="absolute left-6 right-6 bottom-6 flex flex-col gap-[11px] text-bg">
+            <span class="font-bold text-xl leading-7">Da nhạy cảm, dễ kích ứng có dùng được Serum?</span>
+            <span class="text-base leading-[22px] tracking-[0.224px]">Lựa chọn nồng độ hoạt chất an toàn cho làn da đang trong liệu trình treatment.</span>
+          </span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ===== 12-blog.html ===== -->
+<!-- SECTION: Blog -->
+<section id="blog" class="bg-bg py-16 md:py-24 lg:pt-[190px] lg:pb-[100px]">
+  <div class="max-w-site mx-auto px-5 md:px-8 lg:px-[72px]">
+    <header class="flex flex-col md:flex-row md:items-end md:justify-between gap-6" data-aos="fade-up">
+      <div class="flex flex-col gap-3 uppercase">
+        <p class="text-base leading-[22px] tracking-[4px] text-brown">blog</p>
+        <h2 class="text-3xl md:text-5xl leading-[1.4] tracking-[0.624px] text-brown-dark">Hiểu làn da trước khi chọn <br class="hidden md:block">sản phẩm</h2>
+      </div>
+      <a href="#" class="inline-flex w-fit h-10 items-center gap-2 px-6 rounded-sm bg-brown text-bg text-base leading-[22px] tracking-[0.224px] hover:bg-brown-dark transition-colors">
+        Xem tất cả bài viết
+        <img src="assets/img/blog/icon-arrow-up-right.svg" alt="" width="12" height="13">
+      </a>
+    </header>
+
+    <div class="mt-10 lg:mt-[48px] grid grid-cols-1 lg:grid-cols-[746px_1fr] gap-6">
+      <!-- Bài nổi bật (WordPress: bài sticky / mới nhất) -->
+      <article class="relative min-h-[480px] overflow-hidden rounded-md flex flex-col justify-end" data-aos="fade-up">
+        <img src="assets/img/blog/bai-noi-bat-nong-do.jpg" alt="Những giọt tinh chất màu vàng ánh kim" width="1492" height="961" class="absolute inset-0 size-full object-cover" loading="lazy">
+        <span class="absolute inset-0 bg-gradient-to-t from-ink/70 via-ink/20 to-transparent" aria-hidden="true"></span>
+        <span class="absolute left-6 top-6 h-[31px] px-1.5 flex items-center bg-white rounded-xs text-base leading-[22px] tracking-[0.224px] text-ink">Khoa học về da</span>
+        <div class="relative flex flex-col gap-5 p-6">
+          <div class="flex flex-col gap-3">
+            <h3 class="text-2xl md:text-[32px] leading-[1.4] tracking-[-0.512px] text-bg"><a href="#">Vì sao nồng độ cao hơn không phải lúc nào cũng tốt hơn cho làn da?</a></h3>
+            <p class="text-base leading-[22px] tracking-[0.224px] text-gray-dd">Lựa chọn nồng độ hoạt chất phù hợp với ngưỡng dung nạp của làn da là chìa khóa để đạt hiệu quả tối ưu mà không gây tổn thương hàng rào bảo vệ tự nhiên.</p>
+          </div>
+          <p class="flex flex-wrap items-center gap-x-4 gap-y-1 text-xs leading-4 tracking-[0.48px] uppercase text-gray-dd">
+              <time datetime="2026-08-28">28 tháng 8, 2026</time>
+              <span class="size-1 rounded-full bg-current" aria-hidden="true"></span>
+              <span>Dzentic Marketing team</span>
+            </p>
+        </div>
+      </article>
+
+      <!-- Danh sách bài viết (lặp: WordPress loop) -->
+      <ul class="flex flex-col gap-6">
+      <li data-aos="fade-up" data-aos-delay="0">
+        <article class="flex gap-4 sm:gap-6 items-start">
+          <a href="#" class="relative block w-[140px] sm:w-[196px] h-[144px] shrink-0 overflow-hidden rounded-md">
+            <img src="assets/img/blog/thumb-thanh-phan.jpg" alt="Lọ tinh chất cầm trên tay" width="392" height="289" class="size-full object-cover" loading="lazy">
+            <span class="absolute left-[10px] top-[10px] h-[31px] px-1.5 flex items-center bg-white rounded-xs text-xs leading-4 text-ink">Thành phần</span>
+          </a>
+          <div class="flex flex-col gap-[9px] min-w-0">
+            <h3 class="text-xl leading-6 tracking-[-1px] text-navy"><a href="#">Bảng thành phần tối giản và những hoạt chất "vàng" trong phục hồi da</a></h3>
+            <p class="flex flex-wrap items-center gap-x-4 gap-y-1 text-xs leading-4 tracking-[0.48px] uppercase text-gray-49">
+              <time datetime="2026-08-28">28 tháng 8, 2026</time>
+              <span class="size-1 rounded-full bg-current" aria-hidden="true"></span>
+              <span>Dzentic Marketing team</span>
+            </p>
+          </div>
+        </article>
+      </li>
+      <li data-aos="fade-up" data-aos-delay="100">
+        <article class="flex gap-4 sm:gap-6 items-start">
+          <a href="#" class="relative block w-[140px] sm:w-[196px] h-[144px] shrink-0 overflow-hidden rounded-md">
+            <img src="assets/img/blog/thumb-quy-trinh.jpg" alt="Ba cô gái đang chăm sóc da mặt" width="392" height="289" class="size-full object-cover" loading="lazy">
+            <span class="absolute left-[10px] top-[10px] h-[31px] px-1.5 flex items-center bg-white rounded-xs text-xs leading-4 text-ink">Quy trình chăm sóc</span>
+          </a>
+          <div class="flex flex-col gap-[9px] min-w-0">
+            <h3 class="text-xl leading-6 tracking-[-1px] text-navy"><a href="#">Tối giản quy trình skincare: 3 bước cốt lõi cho làn da khỏe mạnh</a></h3>
+            <p class="flex flex-wrap items-center gap-x-4 gap-y-1 text-xs leading-4 tracking-[0.48px] uppercase text-gray-49">
+              <time datetime="2026-08-28">28 tháng 8, 2026</time>
+              <span class="size-1 rounded-full bg-current" aria-hidden="true"></span>
+              <span>Dzentic Marketing team</span>
+            </p>
+          </div>
+        </article>
+      </li>
+      <li data-aos="fade-up" data-aos-delay="200">
+        <article class="flex gap-4 sm:gap-6 items-start">
+          <a href="#" class="relative block w-[140px] sm:w-[196px] h-[144px] shrink-0 overflow-hidden rounded-md">
+            <img src="assets/img/blog/thumb-da-nhay-cam.jpg" alt="Làn da má bị kích ứng, ửng đỏ" width="392" height="289" class="size-full object-cover" loading="lazy">
+            <span class="absolute left-[10px] top-[10px] h-[31px] px-1.5 flex items-center bg-white rounded-xs text-xs leading-4 text-ink">Da nhạy cảm</span>
+          </a>
+          <div class="flex flex-col gap-[9px] min-w-0">
+            <h3 class="text-xl leading-6 tracking-[-1px] text-navy"><a href="#">Dấu hiệu nhận biết hàng rào bảo vệ da bị tổn thương và cách xử lý</a></h3>
+            <p class="flex flex-wrap items-center gap-x-4 gap-y-1 text-xs leading-4 tracking-[0.48px] uppercase text-gray-49">
+              <time datetime="2026-08-28">28 tháng 8, 2026</time>
+              <span class="size-1 rounded-full bg-current" aria-hidden="true"></span>
+              <span>Dzentic Marketing team</span>
+            </p>
+          </div>
+        </article>
+      </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 13-he-thong-doi-tac.html ===== -->
+<!-- SECTION: Hệ thống đối tác -->
+<section id="he-thong-doi-tac" class="bg-bg py-16 lg:py-24" aria-labelledby="doi-tac-title">
+  <div class="max-w-site mx-auto px-4 md:px-8 xl:px-[72px]">
+    <header class="text-center" data-aos="fade-up">
+      <p class="text-sm md:text-base leading-[22px] tracking-[4px] uppercase text-brown">Hệ thống phòng khám và điểm bán</p>
+      <h2 id="doi-tac-title" class="mt-3 text-3xl md:text-5xl leading-[1.4] tracking-[0.624px] uppercase text-brown-dark">Tìm Dzentic tại hệ thống<br class="hidden md:block" /> đối tác được xác thực</h2>
+    </header>
+
+    <div class="mt-10 lg:mt-12 grid gap-8 lg:grid-cols-[minmax(0,856fr)_392fr] lg:gap-12">
+      <div class="flex flex-col" data-aos="fade-up">
+        <div class="relative overflow-hidden bg-[#f2f2f2] aspect-[856/591] min-h-[360px] lg:min-h-0">
+          <img src="assets/img/he-thong-doi-tac/ban-do.png" alt="Bản đồ hệ thống đối tác Dzentic tại Cầu Giấy, Hà Nội" width="856" height="591" class="absolute inset-0 size-full object-cover" />
+          <img src="assets/img/he-thong-doi-tac/marker.png" alt="Điểm bán Dzentic" width="36" height="36" class="absolute size-[35.5px] max-w-none" style="left:9.75%;top:4.67%" />
+          <img src="assets/img/he-thong-doi-tac/marker.png" alt="Điểm bán Dzentic" width="36" height="36" class="absolute size-[35.5px] max-w-none" style="left:40.01%;top:37.50%" />
+          <img src="assets/img/he-thong-doi-tac/marker.png" alt="Điểm bán Dzentic" width="36" height="36" class="absolute size-[35.5px] max-w-none" style="left:20.62%;top:59.49%" />
+          <div class="absolute inset-x-3 bottom-3 lg:inset-x-5 lg:bottom-5 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between bg-bg p-4">
+            <div class="flex flex-col gap-2 text-text">
+              <p class="text-xl leading-7 font-bold">Chưa có điểm gần bạn?</p>
+              <p class="text-base leading-[22px] tracking-[0.224px]">Để lại khu vực để Dzentic gợi ý kênh mua phù hợp.</p>
+            </div>
+            <a href="#" class="inline-flex h-10 shrink-0 items-center justify-center gap-2 rounded-sm border border-navy px-6 text-base leading-[22px] tracking-[0.224px] text-navy">Dẫn đường<img src="assets/img/he-thong-doi-tac/icon-arrow-navy.svg" alt="" width="12" height="13" /></a>
+          </div>
+        </div>
+        <div class="mt-6 flex flex-col items-end gap-2 text-right">
+          <p class="text-base leading-[22px] tracking-[0.224px] text-gray-66">Bạn là bác sĩ, phòng khám hoặc nhà thuốc?</p>
+          <a href="#" class="inline-flex h-10 items-center justify-center gap-2 rounded-sm bg-brown px-6 text-base leading-[22px] tracking-[0.224px] text-bg">Đăng ký hợp tác phân phối<img src="assets/img/he-thong-doi-tac/icon-arrow-light.svg" alt="" width="12" height="13" /></a>
+        </div>
+      </div>
+
+      <div class="flex flex-col" data-aos="fade-up" data-aos-delay="100">
+        <ul class="flex flex-wrap gap-2" role="tablist" aria-label="Chọn thành phố">
+          <li><button type="button" role="tab" aria-selected="true" class="h-[39px] px-3 bg-brown text-base leading-[22px] tracking-[0.224px] text-bg">Hà Nội</button></li>
+          <li><button type="button" role="tab" aria-selected="false" class="h-[39px] px-3 bg-gray-ee text-base leading-[22px] tracking-[0.224px] text-navy">Hồ Chí Minh</button></li>
+          <li><button type="button" role="tab" aria-selected="false" class="h-[39px] px-3 bg-gray-ee text-base leading-[22px] tracking-[0.224px] text-navy">Đà Nẵng</button></li>
+        </ul>
+        <ul class="mt-6 max-h-[420px] lg:max-h-[629px] overflow-y-auto pr-3">
+          <li class="flex flex-col gap-4 border-b border-gray-ee py-6">
+            <div class="flex flex-col gap-2">
+              <p class="flex items-center gap-2 text-xs leading-4 text-green"><img src="assets/img/he-thong-doi-tac/icon-check.svg" alt="" width="16" height="16" class="size-4" />Đối tác được xác thực</p>
+              <h3 class="text-xl leading-7 font-bold text-navy">Phòng khám da liễu Hà Nội</h3>
+            </div>
+            <div class="flex flex-col gap-2 text-base leading-[22px] tracking-[0.224px]">
+              <p class="text-text">10 Trần Duy Hưng, Cầu giấy</p>
+              <p class="flex items-center gap-2 text-ink"><img src="assets/img/he-thong-doi-tac/icon-clock.svg" alt="" width="16" height="16" class="size-4" />08:00 - 20:00</p>
+            </div>
+          </li>
+          <li class="flex flex-col gap-4 border-b border-gray-ee py-6">
+            <div class="flex flex-col gap-2">
+              <p class="flex items-center gap-2 text-xs leading-4 text-green"><img src="assets/img/he-thong-doi-tac/icon-check.svg" alt="" width="16" height="16" class="size-4" />Đối tác được xác thực</p>
+              <h3 class="text-xl leading-7 font-bold text-navy">Phòng khám da liễu Hà Nội</h3>
+            </div>
+            <div class="flex flex-col gap-2 text-base leading-[22px] tracking-[0.224px]">
+              <p class="text-text">10 Trần Duy Hưng, Cầu giấy</p>
+              <p class="flex items-center gap-2 text-ink"><img src="assets/img/he-thong-doi-tac/icon-clock.svg" alt="" width="16" height="16" class="size-4" />08:00 - 20:00</p>
+            </div>
+          </li>
+          <li class="flex flex-col gap-4 border-b border-gray-ee py-6">
+            <div class="flex flex-col gap-2">
+              <p class="flex items-center gap-2 text-xs leading-4 text-green"><img src="assets/img/he-thong-doi-tac/icon-check.svg" alt="" width="16" height="16" class="size-4" />Đối tác được xác thực</p>
+              <h3 class="text-xl leading-7 font-bold text-navy">Phòng khám da liễu Hà Nội</h3>
+            </div>
+            <div class="flex flex-col gap-2 text-base leading-[22px] tracking-[0.224px]">
+              <p class="text-text">10 Trần Duy Hưng, Cầu giấy</p>
+              <p class="flex items-center gap-2 text-ink"><img src="assets/img/he-thong-doi-tac/icon-clock.svg" alt="" width="16" height="16" class="size-4" />08:00 - 20:00</p>
+            </div>
+          </li>
+          <li class="flex flex-col gap-4 border-b border-gray-ee py-6">
+            <div class="flex flex-col gap-2">
+              <p class="flex items-center gap-2 text-xs leading-4 text-green"><img src="assets/img/he-thong-doi-tac/icon-check.svg" alt="" width="16" height="16" class="size-4" />Đối tác được xác thực</p>
+              <h3 class="text-xl leading-7 font-bold text-navy">Phòng khám da liễu Hà Nội</h3>
+            </div>
+            <div class="flex flex-col gap-2 text-base leading-[22px] tracking-[0.224px]">
+              <p class="text-text">10 Trần Duy Hưng, Cầu giấy</p>
+              <p class="flex items-center gap-2 text-ink"><img src="assets/img/he-thong-doi-tac/icon-clock.svg" alt="" width="16" height="16" class="size-4" />08:00 - 20:00</p>
+            </div>
+          </li>
+          <li class="flex flex-col gap-4 border-b border-gray-ee py-6">
+            <div class="flex flex-col gap-2">
+              <p class="flex items-center gap-2 text-xs leading-4 text-green"><img src="assets/img/he-thong-doi-tac/icon-check.svg" alt="" width="16" height="16" class="size-4" />Đối tác được xác thực</p>
+              <h3 class="text-xl leading-7 font-bold text-navy">Phòng khám da liễu Hà Nội</h3>
+            </div>
+            <div class="flex flex-col gap-2 text-base leading-[22px] tracking-[0.224px]">
+              <p class="text-text">10 Trần Duy Hưng, Cầu giấy</p>
+              <p class="flex items-center gap-2 text-ink"><img src="assets/img/he-thong-doi-tac/icon-clock.svg" alt="" width="16" height="16" class="size-4" />08:00 - 20:00</p>
+            </div>
+          </li>
+          <li class="flex flex-col gap-4 border-b border-gray-ee py-6">
+            <div class="flex flex-col gap-2">
+              <p class="flex items-center gap-2 text-xs leading-4 text-green"><img src="assets/img/he-thong-doi-tac/icon-check.svg" alt="" width="16" height="16" class="size-4" />Đối tác được xác thực</p>
+              <h3 class="text-xl leading-7 font-bold text-navy">Phòng khám da liễu Hà Nội</h3>
+            </div>
+            <div class="flex flex-col gap-2 text-base leading-[22px] tracking-[0.224px]">
+              <p class="text-text">10 Trần Duy Hưng, Cầu giấy</p>
+              <p class="flex items-center gap-2 text-ink"><img src="assets/img/he-thong-doi-tac/icon-clock.svg" alt="" width="16" height="16" class="size-4" />08:00 - 20:00</p>
+            </div>
+          </li>
+          <li class="flex flex-col gap-4 border-b border-gray-ee py-6">
+            <div class="flex flex-col gap-2">
+              <p class="flex items-center gap-2 text-xs leading-4 text-green"><img src="assets/img/he-thong-doi-tac/icon-check.svg" alt="" width="16" height="16" class="size-4" />Đối tác được xác thực</p>
+              <h3 class="text-xl leading-7 font-bold text-navy">Phòng khám da liễu Hà Nội</h3>
+            </div>
+            <div class="flex flex-col gap-2 text-base leading-[22px] tracking-[0.224px]">
+              <p class="text-text">10 Trần Duy Hưng, Cầu giấy</p>
+              <p class="flex items-center gap-2 text-ink"><img src="assets/img/he-thong-doi-tac/icon-clock.svg" alt="" width="16" height="16" class="size-4" />08:00 - 20:00</p>
+            </div>
+          </li>
+          <li class="flex flex-col gap-4 border-b border-gray-ee py-6">
+            <div class="flex flex-col gap-2">
+              <p class="flex items-center gap-2 text-xs leading-4 text-green"><img src="assets/img/he-thong-doi-tac/icon-check.svg" alt="" width="16" height="16" class="size-4" />Đối tác được xác thực</p>
+              <h3 class="text-xl leading-7 font-bold text-navy">Phòng khám da liễu Hà Nội</h3>
+            </div>
+            <div class="flex flex-col gap-2 text-base leading-[22px] tracking-[0.224px]">
+              <p class="text-text">10 Trần Duy Hưng, Cầu giấy</p>
+              <p class="flex items-center gap-2 text-ink"><img src="assets/img/he-thong-doi-tac/icon-clock.svg" alt="" width="16" height="16" class="size-4" />08:00 - 20:00</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 14-cta.html ===== -->
+<!-- SECTION: CTA -->
+<section id="cta" class="relative overflow-hidden bg-[#6f3d16] text-bg">
+  <img src="assets/img/cta/cta-nen.jpg" alt="Bộ sản phẩm Dzentic trên bục vàng" width="1440" height="500" class="absolute inset-0 size-full object-cover object-right" />
+  <div class="absolute inset-0 bg-gradient-to-r from-[#6f3d16]/80 to-transparent md:hidden" aria-hidden="true"></div>
+  <div class="relative max-w-site mx-auto px-4 md:px-8 xl:px-[69px] py-16 lg:py-[110px]">
+    <div class="flex flex-col gap-8" data-aos="fade-up">
+      <div class="flex flex-col gap-4">
+        <h2 class="text-3xl md:text-5xl leading-[1.4] tracking-[0.624px] uppercase">Routine tốt<br />không cần nhiều bước.<br />Cần đúng với làn da của bạn.</h2>
+        <p class="text-base leading-[22px] tracking-[0.224px]">Phần lớn thay đổi cần 8–12 tuần để đánh giá</p>
+      </div>
+      <div class="flex flex-wrap items-center gap-3">
+        <a href="#" class="inline-flex h-10 items-center justify-center rounded-sm bg-bg px-6 text-base leading-[22px] tracking-[0.224px] text-navy">Tìm Routine của bạn</a>
+        <a href="#" class="inline-flex h-10 items-center justify-center gap-2 rounded-sm border border-bg px-6 text-base leading-[22px] tracking-[0.224px] text-bg">Xem sản phẩm<img src="assets/img/cta/icon-arrow-light.svg" alt="" width="12" height="13" /></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 15-footer.html ===== -->
+<!-- SECTION: Footer -->
+<footer id="footer" class="bg-bg text-navy">
+  <div class="max-w-site mx-auto px-4 md:px-8 xl:px-[72px]">
+    <div class="grid gap-10 pt-12 pb-10 lg:grid-cols-[minmax(0,1fr)_auto] lg:gap-16 lg:pt-24 lg:pb-[60px]">
+      <div>
+        <a href="/" class="block max-w-[507px]"><img src="assets/img/footer/logo-dzentic.png" alt="Dzentic - A brand by Sorai Beauty Engine" width="507" height="157" class="h-auto w-full" /></a>
+        <ul class="mt-6 flex items-center gap-2" aria-label="Mạng xã hội">
+          <li><a href="#" aria-label="Facebook" class="flex size-8 items-center justify-center rounded-sm border border-gray-bb"><img src="assets/img/footer/icon-facebook.svg" alt="" width="16" height="18" /></a></li>
+          <li><a href="#" aria-label="Instagram" class="flex size-8 items-center justify-center rounded-sm border border-gray-bb"><img src="assets/img/footer/icon-instagram.svg" alt="" width="16" height="18" /></a></li>
+          <li><a href="#" aria-label="TikTok" class="flex size-8 items-center justify-center rounded-sm border border-gray-bb"><img src="assets/img/footer/icon-tiktok.svg" alt="" width="16" height="18" /></a></li>
+        </ul>
+      </div>
+
+      <div class="grid gap-8 sm:grid-cols-2 md:grid-cols-3 md:gap-0">
+        <nav class="md:w-[220px]" aria-label="Sản phẩm và dịch vụ">
+          <h3 class="text-xl leading-7 font-medium text-navy">Sản phẩm và dịch vụ</h3>
+          <ul class="mt-6 flex flex-col gap-[10px] text-base leading-[22px] tracking-[0.224px] text-gray-49">
+            <li><a href="#" class="hover:text-navy">Brightening Serum</a></li>
+            <li><a href="#" class="hover:text-navy">Repair Cream</a></li>
+            <li><a href="#" class="hover:text-navy">Hydrating Cream</a></li>
+            <li><a href="#" class="hover:text-navy">Cleansing Gel</a></li>
+            <li><a href="#" class="hover:text-navy">Sunscreen</a></li>
+          </ul>
+        </nav>
+        <nav class="md:w-[220px]" aria-label="Liên kết">
+          <h3 class="text-xl leading-7 font-medium text-navy">Liên kết</h3>
+          <ul class="mt-6 flex flex-col gap-[10px] text-base leading-[22px] tracking-[0.224px] text-gray-49">
+            <li><a href="#" class="hover:text-navy">Giải Pháp Làn Da</a></li>
+            <li><a href="#" class="hover:text-navy">Khoa Học &amp; Bằng Chứng</a></li>
+            <li><a href="#" class="hover:text-navy">Triết Lý Dzentic</a></li>
+            <li><a href="#" class="hover:text-navy">Blog</a></li>
+            <li><a href="#" class="hover:text-navy">Liên hệ</a></li>
+          </ul>
+        </nav>
+        <div>
+          <h3 class="text-xl leading-7 font-medium text-navy">Liên hệ</h3>
+          <ul class="mt-6 flex flex-col gap-[10px] text-base leading-[22px] tracking-[0.224px] text-gray-49">
+            <li class="flex items-start gap-2"><img src="assets/img/footer/icon-phone.svg" alt="" width="20" height="20" class="shrink-0" /><span>Hotline: 1500 1515</span></li>
+            <li class="flex items-start gap-2"><img src="assets/img/footer/icon-mobile.svg" alt="" width="20" height="21" class="shrink-0" /><span>Điện thoại:<br />(+84) 123456789</span></li>
+            <li class="flex items-start gap-2"><img src="assets/img/footer/icon-pin.svg" alt="" width="20" height="21" class="shrink-0" /><span>Tầng 4 Toà West Tower, 365 đường Cầu Giấy, Hà Nội</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <hr class="border-0 h-px bg-gray-dd" />
+
+    <div class="flex flex-col gap-6 py-8 text-base leading-[22px] tracking-[0.224px] lg:flex-row lg:items-center lg:justify-between lg:py-10">
+      <ul class="flex flex-wrap gap-x-10 gap-y-2">
+        <li><a href="#">An toàn &amp; Bảo mật</a></li>
+        <li><a href="#">Điều khoản sử dụng</a></li>
+      </ul>
+      <div class="flex flex-col gap-4 sm:flex-row sm:items-center sm:gap-8">
+        <a href="#" class="block"><img src="assets/img/footer/badge-bo-cong-thuong.png" alt="Đã thông báo Bộ Công Thương" width="131" height="40" class="h-10 w-auto" /></a>
+        <p>© Bản quyền 2026 thuộc về Dzentic.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="assets/js/app.js"></script>
+</body>
+</html>

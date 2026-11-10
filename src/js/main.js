@@ -47,8 +47,9 @@ document.querySelectorAll('[data-menu-toggle]').forEach((btn) => {
 document.querySelectorAll('[data-swiper]').forEach((el) => {
   let opts = {};
   try { opts = JSON.parse(el.dataset.swiper); } catch (e) {}
+  const scope = el.closest('section') || el.parentElement;
   new Swiper(el, {
-    navigation: { nextEl: el.querySelector('.swiper-next') || el.parentElement.querySelector('.swiper-next'), prevEl: el.querySelector('.swiper-prev') || el.parentElement.querySelector('.swiper-prev') },
+    navigation: { nextEl: scope.querySelector('.swiper-next'), prevEl: scope.querySelector('.swiper-prev') },
     pagination: { el: el.querySelector('.swiper-pagination'), clickable: true },
     ...opts,
   });
