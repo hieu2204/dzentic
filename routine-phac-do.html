@@ -1,0 +1,414 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Routine &amp; hướng dẫn phối hợp | Dzentic</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/app.css">
+</head>
+<body>
+<!-- SECTION: topbar -->
+<section aria-label="Thông báo" class="bg-navy text-bg">
+  <p class="max-w-site mx-auto px-4 py-3 md:py-4 text-center text-sm md:text-base leading-[22px] tracking-[0.224px]">
+    Nhận ưu đãi giảm tới 10% và miễn phí vận chuyển cho tất cả các đơn hàng. Cam kết 100% sản phẩm chính hãng.
+  </p>
+</section>
+
+<header class="sticky top-0 z-50 border-b border-gray-ee bg-bg">
+    <div class="max-w-site mx-auto px-4 md:px-8 xl:px-[72px] h-20 xl:h-[120px] flex items-center justify-between xl:grid xl:grid-cols-[1fr_auto_1fr] xl:gap-6">
+      <nav class="hidden xl:flex items-center gap-6 text-base leading-[22px] tracking-[0.224px]" aria-label="Menu trái">
+        <a href="thu-vien-hoat-chat.html" class="hover:text-brown focus-visible:text-brown focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brown">Khoa Học &amp; Bằng Chứng</a>
+        <a href="san-pham.html" class="hover:text-brown focus-visible:text-brown focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brown">Sản Phẩm</a>
+      </nav>
+
+      <a href="index.html" class="block shrink-0 xl:justify-self-center hover:opacity-80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brown" aria-label="Dzentic - Trang chủ">
+        <img src="assets/img/hero/logo-dzentic.png" alt="Dzentic - A brand by Sorai Beauty Engine" width="920" height="276"
+             class="h-14 xl:h-[92px] w-auto object-contain">
+      </a>
+
+      <div class="flex items-center gap-6 xl:justify-self-end">
+        <nav class="hidden xl:flex items-center gap-6 text-base leading-[22px] tracking-[0.224px]" aria-label="Menu phải">
+          <a href="cau-chuyen-thuong-hieu.html" class="hover:text-brown focus-visible:text-brown focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brown">Triết Lí Dzentic</a>
+          <a href="routine-phac-do.html" class="hover:text-brown focus-visible:text-brown focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brown">Giải Pháp Làn Da</a>
+          <a href="lien-he.html" class="hover:text-brown focus-visible:text-brown focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brown">Liên Hệ</a>
+        </nav>
+        <div class="flex items-center gap-3 xl:gap-[14px]">
+          <a href="tim-kiem.html" class="hover:opacity-70 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brown" aria-label="Tìm kiếm"><img src="assets/img/hero/icon-search.svg" alt="" width="20" height="20"></a>
+          <a href="gio-hang.html" class="group flex items-center gap-2 xl:gap-0.5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brown" aria-label="Giỏ hàng">
+            <img src="assets/img/hero/icon-cart.svg" alt="" width="20" height="20" class="group-hover:opacity-70">
+            <span class="grid place-items-center size-5 rounded-[10px] bg-brown text-bg text-base leading-[22px] group-hover:bg-brown-dark">0</span>
+          </a>
+          <button type="button" data-menu-toggle class="xl:hidden ml-2 p-1 hover:text-brown focus-visible:text-brown focus-visible:outline focus-visible:outline-2 focus-visible:outline-brown" aria-label="Mở menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Menu mobile -->
+    <nav data-menu class="hidden xl:hidden bg-bg border-t border-gray-dd px-4 md:px-8 py-4 text-base" aria-label="Menu chính">
+      <ul class="flex flex-col gap-4">
+        <li><a href="thu-vien-hoat-chat.html" class="hover:text-brown focus-visible:text-brown">Khoa Học &amp; Bằng Chứng</a></li>
+        <li><a href="san-pham.html" class="hover:text-brown focus-visible:text-brown">Sản Phẩm</a></li>
+        <li><a href="cau-chuyen-thuong-hieu.html" class="hover:text-brown focus-visible:text-brown">Triết Lí Dzentic</a></li>
+        <li><a href="routine-phac-do.html" class="hover:text-brown focus-visible:text-brown">Giải Pháp Làn Da</a></li>
+        <li><a href="lien-he.html" class="hover:text-brown focus-visible:text-brown">Liên Hệ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<!-- SECTION: Subpage hero (dùng chung cho mọi trang con). Chỉ đổi breadcrumb, tiêu đề, mô tả. -->
+<section class="relative overflow-hidden bg-gradient-to-r from-bg to-[#f6eadf]">
+  <div class="pointer-events-none absolute inset-0 hidden lg:block" aria-hidden="true">
+    <div class="relative mx-auto h-full max-w-site">
+      <img src="assets/img/subhero/glow.svg" alt="" width="600" height="600" class="absolute left-[850px] top-[-20px] size-[600px] max-w-none">
+      <div class="absolute left-[830px] top-[-40px] size-[640px] opacity-[0.08]">
+        <img src="assets/img/subhero/rays-left.svg" alt="" class="absolute left-0 top-0 h-[640px] w-[342px] max-w-none">
+        <img src="assets/img/subhero/rays-right.svg" alt="" class="absolute left-[320px] top-0 h-[640px] w-[342px] max-w-none">
+      </div>
+      <img src="assets/img/subhero/sun-core.svg" alt="" width="150" height="150" class="absolute left-[1075px] top-[205px] size-[150px] max-w-none">
+    </div>
+  </div>
+  <div class="relative mx-auto max-w-site px-4 pb-10 pt-7 md:px-8 xl:px-[72px] lg:h-[420px] lg:pb-0">
+    <nav aria-label="Breadcrumb" class="flex flex-wrap items-center gap-2 text-sm leading-5 tracking-[0.14px]">
+      <a href="index.html" class="text-gray-66 hover:text-brown">Trang chủ</a>
+      <span class="text-gray-99" aria-hidden="true">/</span>
+      <a href="bo-giai-phap.html" class="text-gray-66 hover:text-brown">Giải pháp làn da</a>
+      <span class="text-gray-99" aria-hidden="true">/</span>
+      <span class="text-navy" aria-current="page">Routine &amp; hướng dẫn phối hợp</span>
+    </nav>
+    <div class="mt-10 flex flex-col gap-4 lg:mt-[69px]">
+      <h1 class="text-3xl uppercase leading-[1.4] tracking-[0.624px] text-brown-dark md:text-5xl lg:max-w-[640px]">Routine &amp;<br>hướng dẫn phối hợp</h1>
+      <div class="flex max-w-[560px] flex-col text-base leading-[22px] tracking-[0.224px] text-gray-66"><p>Hiểu làn da. Chọn đúng bước. Xây dựng chu trình phù hợp.</p><p>Dzentic định hướng routine dựa trên nhu cầu chính, trạng thái hiện tại và khả năng dung nạp của làn da – từ chăm sóc hằng ngày đến cách phối hợp khi đang sử dụng hoạt chất chuyên sâu.</p></div>
+    </div>
+  </div>
+</section>
+
+
+<main>
+<!-- SECTION: USP strip -->
+<section aria-label="Nội dung chính">
+  <ul class="mx-auto flex max-w-site flex-wrap items-center justify-center gap-x-8 gap-y-3 px-5 py-6 md:px-10 lg:gap-x-[69px] xl:px-18"><li class="text-lg leading-7 text-navy md:text-xl">Theo tình trạng da</li><li aria-hidden="true"><img src="assets/img/routine-phac-do/icon-sun-ray.svg" alt="" width="24" height="24" class="size-6"></li><li class="text-lg leading-7 text-navy md:text-xl">Chu trình sáng & tối</li><li aria-hidden="true"><img src="assets/img/routine-phac-do/icon-sun-ray.svg" alt="" width="24" height="24" class="size-6"></li><li class="text-lg leading-7 text-navy md:text-xl">Khi đang treatment</li><li aria-hidden="true"><img src="assets/img/routine-phac-do/icon-sun-ray.svg" alt="" width="24" height="24" class="size-6"></li><li class="text-lg leading-7 text-navy md:text-xl">Sau thủ thuật</li></ul>
+</section>
+
+<!-- SECTION: Nguyên tắc nền tảng -->
+<section class="mx-auto max-w-site px-5 pb-16 pt-12 md:px-10 md:pb-24 md:pt-[72px] xl:px-18" aria-labelledby="nguyen-tac-title">
+  <div class="flex flex-col gap-10 md:gap-12" data-aos="fade-up">
+    <div class="flex flex-col gap-3">
+      <h2 id="nguyen-tac-title" class="text-3xl uppercase leading-[1.4] tracking-[0.624px] text-brown-dark md:text-5xl">4 bước nền tảng của một routine</h2>
+      <p class="max-w-[720px] text-base leading-[22px] tracking-[0.224px] text-navy">Mỗi bước giữ một vai trò riêng. Khi đặt đúng thứ tự, các sản phẩm bổ trợ nhau thay vì cạnh tranh hay gây kích ứng.</p>
+    </div>
+    <ul class="grid gap-8 sm:grid-cols-2 sm:gap-y-10 lg:grid-cols-4 lg:gap-0">
+        <li class="flex flex-col gap-3 sm:pr-6">
+          <img src="assets/img/routine-phac-do/icon-feature-1.svg" alt="" width="40" height="40" class="size-10">
+          <p class="text-xs uppercase leading-4 tracking-[0.48px] text-brown">BƯỚC 01</p>
+          <h3 class="text-base font-medium leading-[22px] tracking-[0.224px] text-navy">Làm sạch dịu nhẹ</h3>
+          <p class="text-sm leading-5 tracking-[0.14px] text-gray-49">Loại bỏ bã nhờn và kem chống nắng mà không làm mất độ ẩm tự nhiên.</p>
+        </li>
+        <li class="flex flex-col gap-3 sm:border-l sm:border-gray-dd sm:pl-6">
+          <img src="assets/img/routine-phac-do/icon-feature-2.svg" alt="" width="40" height="40" class="size-10">
+          <p class="text-xs uppercase leading-4 tracking-[0.48px] text-brown">BƯỚC 02</p>
+          <h3 class="text-base font-medium leading-[22px] tracking-[0.224px] text-navy">Chăm sóc chuyên sâu</h3>
+          <p class="text-sm leading-5 tracking-[0.14px] text-gray-49">Hoạt chất chọn theo tình trạng da — đúng nồng độ, đúng thời điểm.</p>
+        </li>
+        <li class="flex flex-col gap-3 sm:border-l sm:border-gray-dd sm:pl-6">
+          <img src="assets/img/routine-phac-do/icon-feature-3.svg" alt="" width="40" height="40" class="size-10">
+          <p class="text-xs uppercase leading-4 tracking-[0.48px] text-brown">BƯỚC 03</p>
+          <h3 class="text-base font-medium leading-[22px] tracking-[0.224px] text-navy">Phục hồi hàng rào</h3>
+          <p class="text-sm leading-5 tracking-[0.14px] text-gray-49">Dưỡng ẩm, làm dịu và củng cố hàng rào bảo vệ để da dung nạp tốt hơn.</p>
+        </li>
+        <li class="flex flex-col gap-3 sm:border-l sm:border-gray-dd sm:pl-6">
+          <img src="assets/img/routine-phac-do/icon-feature-4.svg" alt="" width="40" height="40" class="size-10">
+          <p class="text-xs uppercase leading-4 tracking-[0.48px] text-brown">BƯỚC 04</p>
+          <h3 class="text-base font-medium leading-[22px] tracking-[0.224px] text-navy">Bảo vệ mỗi ngày</h3>
+          <p class="text-sm leading-5 tracking-[0.14px] text-gray-49">Chống nắng phổ rộng — bước giữ lại toàn bộ hiệu quả của routine.</p>
+        </li>
+        
+    </ul>
+  </div>
+</section>
+
+<!-- SECTION: Routine theo tình trạng da -->
+<section id="routine" class="bg-brown-50 py-16 md:py-24" aria-labelledby="routine-title">
+  <div class="mx-auto flex max-w-site flex-col gap-10 px-5 md:px-10 xl:px-18">
+    <h2 id="routine-title" class="text-center text-3xl uppercase leading-[1.4] tracking-[0.624px] text-brown-dark md:text-5xl" data-aos="fade-up">Routine theo tình trạng da</h2>
+    <div class="flex flex-col gap-10 lg:flex-row lg:items-start lg:gap-12">
+      <div class="flex w-full flex-col gap-10 lg:w-[480px] lg:shrink-0 lg:gap-[66px]">
+        <div class="flex flex-col">
+          <ol class="relative flex h-[66px] w-full max-w-[416px] justify-between" aria-label="Các bước">
+            <li class="absolute left-[25px] right-[25px] top-[15px] h-[2px] bg-gray-bb" aria-hidden="true"></li>
+            <li class="relative flex w-16 flex-col items-center gap-3 text-brown-dark" aria-current="step"><span class="flex size-8 items-center justify-center rounded-full bg-brown-dark text-xs text-bg">1</span><span class="text-base leading-[22px] tracking-[0.224px]">Bước 1</span></li>
+            <li class="relative flex w-16 flex-col items-center gap-3 text-gray-99"><span class="flex size-8 items-center justify-center rounded-full bg-gray-bb text-xs text-bg">2</span><span class="text-base leading-[22px] tracking-[0.224px]">Bước 2</span></li>
+            <li class="relative flex w-16 flex-col items-center gap-3 text-gray-99"><span class="flex size-8 items-center justify-center rounded-full bg-gray-bb text-xs text-bg">3</span><span class="text-base leading-[22px] tracking-[0.224px]">Bước 3</span></li>
+          </ol>
+          <fieldset class="mt-9 min-w-0">
+            <legend class="mb-5 text-xl font-bold leading-7 text-brown-dark">Bạn đang quan tâm điều gì nhất?</legend>
+            <div class="flex flex-col gap-3">
+          <label class="group flex cursor-pointer items-start gap-4 rounded-[4px] border border-gray-dd bg-white px-[18px] py-[14px] has-[:checked]:border-brown-dark has-[:checked]:bg-brown-50 hover:border-brown has-[:focus-visible]:outline-2 has-[:focus-visible]:outline-offset-2 has-[:focus-visible]:outline-navy">
+            <span class="flex pt-[3px]"><input type="radio" name="tinh-trang" value="mun" class="peer sr-only"><span class="flex size-[18px] items-center justify-center rounded-[3px] border-[1.5px] border-navy bg-white group-has-[:checked]:bg-navy"><img src="assets/img/routine-phac-do/icon-check-white.svg" alt="" width="12" height="12" class="hidden size-3 group-has-[:checked]:block"></span></span>
+            <span class="flex min-w-0 flex-1 flex-col gap-[2px]"><span class="text-base leading-[22px] tracking-[0.224px] text-navy">Da mụn và thâm mụn</span><span class="text-sm leading-5 tracking-[0.14px] text-gray-66">Da dễ nổi mụn hoặc có vết thâm sau mụn</span></span>
+          </label>
+          <label class="group flex cursor-pointer items-start gap-4 rounded-[4px] border border-gray-dd bg-white px-[18px] py-[14px] has-[:checked]:border-brown-dark has-[:checked]:bg-brown-50 hover:border-brown has-[:focus-visible]:outline-2 has-[:focus-visible]:outline-offset-2 has-[:focus-visible]:outline-navy">
+            <span class="flex pt-[3px]"><input type="radio" name="tinh-trang" value="nam" class="peer sr-only" checked><span class="flex size-[18px] items-center justify-center rounded-[3px] border-[1.5px] border-navy bg-white group-has-[:checked]:bg-navy"><img src="assets/img/routine-phac-do/icon-check-white.svg" alt="" width="12" height="12" class="hidden size-3 group-has-[:checked]:block"></span></span>
+            <span class="flex min-w-0 flex-1 flex-col gap-[2px]"><span class="text-base leading-[22px] tracking-[0.224px] text-navy">Da nám và dấu hiệu lão hóa</span><span class="text-sm leading-5 tracking-[0.14px] text-gray-66">Màu da không đều, thâm nám, nếp nhăn hoặc da kém đàn hồi</span></span>
+          </label>
+          <label class="group flex cursor-pointer items-start gap-4 rounded-[4px] border border-gray-dd bg-white px-[18px] py-[14px] has-[:checked]:border-brown-dark has-[:checked]:bg-brown-50 hover:border-brown has-[:focus-visible]:outline-2 has-[:focus-visible]:outline-offset-2 has-[:focus-visible]:outline-navy">
+            <span class="flex pt-[3px]"><input type="radio" name="tinh-trang" value="nhaycam" class="peer sr-only"><span class="flex size-[18px] items-center justify-center rounded-[3px] border-[1.5px] border-navy bg-white group-has-[:checked]:bg-navy"><img src="assets/img/routine-phac-do/icon-check-white.svg" alt="" width="12" height="12" class="hidden size-3 group-has-[:checked]:block"></span></span>
+            <span class="flex min-w-0 flex-1 flex-col gap-[2px]"><span class="text-base leading-[22px] tracking-[0.224px] text-navy">Da nhạy cảm/ Đang treatment</span><span class="text-sm leading-5 tracking-[0.14px] text-gray-66">Da dễ châm chích, khô căng hoặc bong tróc</span></span>
+          </label>
+          <label class="group flex cursor-pointer items-start gap-4 rounded-[4px] border border-gray-dd bg-white px-[18px] py-[14px] has-[:checked]:border-brown-dark has-[:checked]:bg-brown-50 hover:border-brown has-[:focus-visible]:outline-2 has-[:focus-visible]:outline-offset-2 has-[:focus-visible]:outline-navy">
+            <span class="flex pt-[3px]"><input type="radio" name="tinh-trang" value="dieutri" class="peer sr-only"><span class="flex size-[18px] items-center justify-center rounded-[3px] border-[1.5px] border-navy bg-white group-has-[:checked]:bg-navy"><img src="assets/img/routine-phac-do/icon-check-white.svg" alt="" width="12" height="12" class="hidden size-3 group-has-[:checked]:block"></span></span>
+            <span class="flex min-w-0 flex-1 flex-col gap-[2px]"><span class="text-base leading-[22px] tracking-[0.224px] text-navy">Da đang điều trị theo phác đồ</span><span class="text-sm leading-5 tracking-[0.14px] text-gray-66">Đang dùng thuốc uống hoặc thuốc bôi theo chỉ định của bác sĩ</span></span>
+          </label>
+          <label class="group flex cursor-pointer items-start gap-4 rounded-[4px] border border-gray-dd bg-white px-[18px] py-[14px] has-[:checked]:border-brown-dark has-[:checked]:bg-brown-50 hover:border-brown has-[:focus-visible]:outline-2 has-[:focus-visible]:outline-offset-2 has-[:focus-visible]:outline-navy">
+            <span class="flex pt-[3px]"><input type="radio" name="tinh-trang" value="peel" class="peer sr-only"><span class="flex size-[18px] items-center justify-center rounded-[3px] border-[1.5px] border-navy bg-white group-has-[:checked]:bg-navy"><img src="assets/img/routine-phac-do/icon-check-white.svg" alt="" width="12" height="12" class="hidden size-3 group-has-[:checked]:block"></span></span>
+            <span class="flex min-w-0 flex-1 flex-col gap-[2px]"><span class="text-base leading-[22px] tracking-[0.224px] text-navy">Da sau peel/ Laser hoặc lấy nhân mụn</span><span class="text-sm leading-5 tracking-[0.14px] text-gray-66">Vừa thực hiện thủ thuật chăm sóc hoặc điều trị da</span></span>
+          </label>
+          <label class="group flex cursor-pointer items-start gap-4 rounded-[4px] border border-gray-dd bg-white px-[18px] py-[14px] has-[:checked]:border-brown-dark has-[:checked]:bg-brown-50 hover:border-brown has-[:focus-visible]:outline-2 has-[:focus-visible]:outline-offset-2 has-[:focus-visible]:outline-navy">
+            <span class="flex pt-[3px]"><input type="radio" name="tinh-trang" value="nang" class="peer sr-only"><span class="flex size-[18px] items-center justify-center rounded-[3px] border-[1.5px] border-navy bg-white group-has-[:checked]:bg-navy"><img src="assets/img/routine-phac-do/icon-check-white.svg" alt="" width="12" height="12" class="hidden size-3 group-has-[:checked]:block"></span></span>
+            <span class="flex min-w-0 flex-1 flex-col gap-[2px]"><span class="text-base leading-[22px] tracking-[0.224px] text-navy">Chống nắng hằng ngày</span><span class="text-sm leading-5 tracking-[0.14px] text-gray-66">Muốn bắt đầu với bước bảo vệ da cơ bản</span></span>
+          </label>
+          
+            </div>
+          </fieldset>
+        </div>
+        <div>
+          <a href="#ket-qua" data-next class="inline-flex h-10 items-center gap-2 rounded-sm border border-navy px-6 text-base leading-[22px] tracking-[0.224px] text-navy hover:bg-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy">Tiếp theo<img src="assets/img/routine-phac-do/icon-arrow-right.svg" alt="" width="12" height="13"></a>
+        </div>
+      </div>
+
+      <div id="ket-qua" class="min-w-0 flex-1 scroll-mt-32 rounded-[4px] border border-gray-dd bg-white lg:h-[808px] lg:max-w-[768px] lg:overflow-hidden" aria-live="polite">
+        <div data-result class="flex flex-col gap-6 px-5 py-8 md:pl-10 md:pr-12 md:py-10 lg:h-full lg:overflow-y-auto [scrollbar-color:#494949_#ddd] [scrollbar-width:thin]"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION: Nên và tránh -->
+<section class="mx-auto max-w-site px-5 py-16 md:px-10 md:py-[72px] xl:px-18" aria-labelledby="nen-tranh-title">
+  <div class="flex flex-col gap-10 md:gap-12" data-aos="fade-up">
+    <h2 id="nen-tranh-title" class="text-3xl uppercase leading-[1.4] tracking-[0.624px] text-brown-dark md:text-5xl">Nên và tránh</h2>
+    <div class="grid gap-10 md:grid-cols-2 md:gap-12">
+      <div>
+        <h3 class="border-b-2 border-brown pb-4 text-xl font-medium leading-7 text-brown">Nên</h3>
+        <ul>
+          <li class="flex items-center gap-[14px] border-b border-gray-dd py-[18px]"><img src="assets/img/routine-phac-do/icon-check.svg" alt="Nên" width="16" height="16" class="size-4 shrink-0"><span class="text-base leading-[22px] tracking-[0.224px] text-gray-49">Thử sản phẩm mới trên vùng da nhỏ trong 24–48 giờ</span></li>
+          <li class="flex items-center gap-[14px] border-b border-gray-dd py-[18px]"><img src="assets/img/routine-phac-do/icon-check.svg" alt="Nên" width="16" height="16" class="size-4 shrink-0"><span class="text-base leading-[22px] tracking-[0.224px] text-gray-49">Thêm từng sản phẩm một, cách nhau ít nhất 1 tuần</span></li>
+          <li class="flex items-center gap-[14px] border-b border-gray-dd py-[18px]"><img src="assets/img/routine-phac-do/icon-check.svg" alt="Nên" width="16" height="16" class="size-4 shrink-0"><span class="text-base leading-[22px] tracking-[0.224px] text-gray-49">Thoa kem chống nắng đủ lượng và thoa lại sau 2–3 giờ</span></li>
+          
+        </ul>
+      </div>
+      <div>
+        <h3 class="border-b-2 border-navy pb-4 text-xl font-medium leading-7 text-navy">Tránh</h3>
+        <ul>
+          <li class="flex items-center gap-[14px] border-b border-gray-dd py-[18px]"><img src="assets/img/routine-phac-do/icon-x.svg" alt="Tránh" width="16" height="16" class="size-4 shrink-0"><span class="text-base leading-[22px] tracking-[0.224px] text-gray-49">Kết hợp retinoid và AHA/BHA trong cùng một tối</span></li>
+          <li class="flex items-center gap-[14px] border-b border-gray-dd py-[18px]"><img src="assets/img/routine-phac-do/icon-x.svg" alt="Tránh" width="16" height="16" class="size-4 shrink-0"><span class="text-base leading-[22px] tracking-[0.224px] text-gray-49">Tăng nồng độ khi da đang châm chích hoặc bong tróc</span></li>
+          <li class="flex items-center gap-[14px] border-b border-gray-dd py-[18px]"><img src="assets/img/routine-phac-do/icon-x.svg" alt="Tránh" width="16" height="16" class="size-4 shrink-0"><span class="text-base leading-[22px] tracking-[0.224px] text-gray-49">Dùng hoạt chất đặc trị ngay sau peel, laser</span></li>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION: Câu hỏi thường gặp -->
+<section class="mx-auto max-w-site px-5 py-12 md:px-10 md:py-[72px] xl:px-18" aria-labelledby="faq-title">
+  <div class="flex flex-col gap-10 lg:flex-row lg:gap-24" data-aos="fade-up">
+    <div class="flex flex-col items-start gap-4 lg:w-[400px] lg:shrink-0">
+      <h2 id="faq-title" class="text-3xl uppercase leading-[1.4] tracking-[0.624px] text-brown-dark md:text-5xl">Câu hỏi<br>thường gặp</h2>
+      <p class="text-base leading-[22px] tracking-[0.224px] text-navy">Chưa tìm thấy câu trả lời? Chuyên gia Dzentic luôn sẵn sàng đồng hành cùng bạn.</p>
+      <a href="lien-he.html" class="mt-2 inline-flex h-10 items-center gap-2 rounded-sm border border-brown px-6 text-base leading-[22px] tracking-[0.224px] text-brown hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy">Tư vấn đồng hành 1-1<img src="assets/img/routine-phac-do/icon-arrow-up-right.svg" alt="" width="12" height="13"></a>
+    </div>
+    <div class="min-w-0 flex-1 border-t border-gray-dd">
+      <details class="group border-b border-gray-dd" open>
+            <summary class="flex cursor-pointer list-none items-center justify-between gap-4 py-6 text-lg leading-7 text-navy marker:hidden group-open:text-brown hover:text-brown md:text-xl [&::-webkit-details-marker]:hidden focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy">
+              <span>Bao lâu thì thấy routine có hiệu quả?</span><span class="text-2xl text-brown" aria-hidden="true"><span class="group-open:hidden">+</span><span class="hidden group-open:inline">−</span></span>
+            </summary>
+            <p class="pb-6 text-base leading-[26px] tracking-[0.224px] text-gray-49">Phần lớn làn da cần 4–6 tuần để thích nghi và bắt đầu thay đổi rõ rệt. Hãy duy trì đều đặn và đánh giá lại cùng chuyên gia Dzentic khi cần điều chỉnh routine.</p>
+          </details>
+          <details class="group border-b border-gray-dd">
+            <summary class="flex cursor-pointer list-none items-center justify-between gap-4 py-6 text-lg leading-7 text-navy marker:hidden group-open:text-brown hover:text-brown md:text-xl [&::-webkit-details-marker]:hidden focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy">
+              <span>Có thể dùng routine cùng thuốc bác sĩ kê đơn không?</span><span class="text-2xl text-brown" aria-hidden="true"><span class="group-open:hidden">+</span><span class="hidden group-open:inline">−</span></span>
+            </summary>
+            <p class="pb-6 text-base leading-[26px] tracking-[0.224px] text-gray-49">Routine Dzentic hỗ trợ chăm sóc hằng ngày và không thay thế thuốc. Nếu đang dùng thuốc theo chỉ định, hãy hỏi ý kiến bác sĩ điều trị trước khi thêm sản phẩm mới.</p>
+          </details>
+          <details class="group border-b border-gray-dd">
+            <summary class="flex cursor-pointer list-none items-center justify-between gap-4 py-6 text-lg leading-7 text-navy marker:hidden group-open:text-brown hover:text-brown md:text-xl [&::-webkit-details-marker]:hidden focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy">
+              <span>Da nhạy cảm nên bắt đầu từ bước nào?</span><span class="text-2xl text-brown" aria-hidden="true"><span class="group-open:hidden">+</span><span class="hidden group-open:inline">−</span></span>
+            </summary>
+            <p class="pb-6 text-base leading-[26px] tracking-[0.224px] text-gray-49">Bắt đầu với làm sạch dịu nhẹ, phục hồi hàng rào và chống nắng. Chỉ thêm hoạt chất chuyên sâu khi da đã ổn định, mỗi lần một sản phẩm.</p>
+          </details>
+          <details class="group border-b border-gray-dd">
+            <summary class="flex cursor-pointer list-none items-center justify-between gap-4 py-6 text-lg leading-7 text-navy marker:hidden group-open:text-brown hover:text-brown md:text-xl [&::-webkit-details-marker]:hidden focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy">
+              <span>Có cần dùng đủ tất cả sản phẩm trong bộ không?</span><span class="text-2xl text-brown" aria-hidden="true"><span class="group-open:hidden">+</span><span class="hidden group-open:inline">−</span></span>
+            </summary>
+            <p class="pb-6 text-base leading-[26px] tracking-[0.224px] text-gray-49">Không bắt buộc. Bộ sản phẩm là gợi ý đầy đủ nhất, bạn có thể bắt đầu với các bước cốt lõi rồi bổ sung dần theo khả năng dung nạp của da.</p>
+          </details>
+          <details class="group border-b border-gray-dd">
+            <summary class="flex cursor-pointer list-none items-center justify-between gap-4 py-6 text-lg leading-7 text-navy marker:hidden group-open:text-brown hover:text-brown md:text-xl [&::-webkit-details-marker]:hidden focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy">
+              <span>Khi nào nên chuyển sang routine khác?</span><span class="text-2xl text-brown" aria-hidden="true"><span class="group-open:hidden">+</span><span class="hidden group-open:inline">−</span></span>
+            </summary>
+            <p class="pb-6 text-base leading-[26px] tracking-[0.224px] text-gray-49">Khi tình trạng da thay đổi, sau một liệu trình chuyên môn hoặc sau 8–12 tuần cần tái đánh giá. Chuyên gia Dzentic có thể giúp bạn điều chỉnh.</p>
+          </details>
+          
+    </div>
+  </div>
+</section>
+
+<!-- SECTION: Góc nhìn chuyên môn -->
+<section class="bg-brown-50" aria-labelledby="goc-nhin-title">
+  <div class="mx-auto flex max-w-site flex-col gap-10 px-5 py-16 md:px-10 md:py-24 lg:flex-row lg:items-center lg:gap-[72px] xl:px-18" data-aos="fade-up">
+    <article class="flex w-full max-w-[416px] shrink-0 flex-col gap-5 lg:w-[416px]">
+      <div class="relative h-[400px] overflow-hidden rounded-[4px] bg-brown-50 md:h-[480px]">
+        <div class="pointer-events-none absolute -left-[52px] top-[260px] size-[520px] opacity-[0.12]" aria-hidden="true">
+          <img src="assets/img/subhero/rays-left.svg" alt="" class="absolute left-0 top-0 h-[520px] w-[278px] max-w-none">
+          <img src="assets/img/subhero/rays-right.svg" alt="" class="absolute left-[260px] top-0 h-[520px] w-[278px] max-w-none">
+        </div>
+        <img src="assets/img/routine-phac-do/expert.png" alt="BS. Ngô Hạnh, bác sĩ da liễu" width="416" height="480" class="absolute inset-0 size-full object-cover">
+      </div>
+      <div class="flex flex-col gap-2">
+        <p class="text-sm leading-5 tracking-[0.14px] text-navy">Cố vấn chuyên môn</p>
+        <p class="text-xl font-medium leading-7 text-navy">BS. Ngô Hạnh</p>
+        <p class="text-base leading-[22px] tracking-[0.224px] text-gray-66">Thạc sĩ, Bác sĩ nội trú Da liễu - Bệnh viện Da liễu Hà Nội</p>
+        <span class="inline-flex w-fit rounded-xs bg-gray-ee px-[10px] py-1 text-xs leading-4 text-gray-49">Nám &amp; da nhạy cảm</span>
+      </div>
+      <a href="san-pham.html" class="inline-flex h-10 w-fit items-center gap-2 rounded-sm border border-brown px-6 text-base leading-[22px] tracking-[0.224px] text-brown hover:bg-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy">Xem sản phẩm<img src="assets/img/routine-phac-do/icon-arrow-up-right.svg" alt="" width="12" height="13"></a>
+    </article>
+    <div class="flex min-w-0 flex-1 flex-col gap-7">
+      <h2 id="goc-nhin-title" class="text-base uppercase leading-[22px] tracking-[4px] text-brown">Góc nhìn chuyên môn</h2>
+      <blockquote class="text-2xl leading-9 tracking-[-0.512px] text-brown-dark md:text-[32px] md:leading-[44px]">“Một phác đồ tốt không bắt đầu bằng hoạt chất mạnh nhất, mà bằng việc giúp làn da đủ ổn định để tiếp nhận chúng.”</blockquote>
+      <p class="text-xs uppercase leading-4 tracking-[0.48px] text-gray-66">BS. Ngô Hạnh — Bác sĩ da liễu</p>
+      <dl class="flex border-t border-gray-dd pt-7">
+        <div class="flex flex-1 flex-col gap-[6px] pr-6"><dd class="order-1 text-sm leading-5 tracking-[0.14px] text-gray-49">bước nền tảng trong mọi routine</dd><dt class="text-5xl leading-[60px] tracking-[0.728px] text-brown md:text-[56px]">4</dt></div>
+        <div class="flex flex-1 flex-col gap-[6px] border-l border-gray-dd px-6"><dd class="order-1 text-sm leading-5 tracking-[0.14px] text-gray-49">lần tái đánh giá cùng chuyên gia</dd><dt class="text-5xl leading-[60px] tracking-[0.728px] text-brown md:text-[56px]">2</dt></div>
+      </dl>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- SECTION: Footer -->
+<footer id="footer" class="bg-bg text-navy">
+  <div class="max-w-site mx-auto px-4 md:px-8 xl:px-[72px]">
+    <div class="grid gap-10 pt-12 pb-10 lg:grid-cols-[minmax(0,1fr)_auto] lg:gap-16 lg:pt-24 lg:pb-12">
+      <div>
+        <a href="index.html" class="block max-w-[507px] lg:ml-[9px] lg:mt-[7.4px] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown"><img src="assets/img/footer/logo-dzentic.webp" alt="Dzentic - A brand by Sorai Beauty Engine" width="507" height="157" class="block h-auto w-full" /></a>
+        <ul class="mt-6 lg:mt-[18.4px] flex items-center gap-2" aria-label="Mạng xã hội">
+          <li><a href="#" aria-label="Facebook" class="flex size-8 items-center justify-center rounded-sm border border-gray-bb transition hover:-translate-y-0.5 hover:border-brown hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown"><img src="assets/img/footer/icon-facebook.svg" alt="" width="16" height="18" /></a></li>
+          <li><a href="#" aria-label="Instagram" class="flex size-8 items-center justify-center rounded-sm border border-gray-bb transition hover:-translate-y-0.5 hover:border-brown hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown"><img src="assets/img/footer/icon-instagram.svg" alt="" width="16" height="18" /></a></li>
+          <li><a href="#" aria-label="TikTok" class="flex size-8 items-center justify-center rounded-sm border border-gray-bb transition hover:-translate-y-0.5 hover:border-brown hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown"><img src="assets/img/footer/icon-tiktok.svg" alt="" width="16" height="18" /></a></li>
+        </ul>
+      </div>
+
+      <div class="grid gap-8 sm:grid-cols-2 md:grid-cols-3 md:gap-0">
+        <nav class="md:w-[220px]" aria-label="Sản phẩm và dịch vụ">
+          <h3 class="text-xl leading-7 font-medium text-navy">Sản phẩm và dịch vụ</h3>
+          <ul class="mt-6 flex flex-col gap-[10px] text-base leading-[22px] tracking-[0.224px] text-gray-49">
+            <li><a href="san-pham.html" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Brightening Serum</a></li>
+            <li><a href="san-pham.html" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Repair Cream</a></li>
+            <li><a href="san-pham.html" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Hydrating Cream</a></li>
+            <li><a href="san-pham.html" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Cleansing Gel</a></li>
+            <li><a href="san-pham.html" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Sunscreen</a></li>
+          </ul>
+        </nav>
+        <nav class="md:w-[220px]" aria-label="Liên kết">
+          <h3 class="text-xl leading-7 font-medium text-navy">Liên kết</h3>
+          <ul class="mt-6 flex flex-col gap-[10px] text-base leading-[22px] tracking-[0.224px] text-gray-49">
+            <li><a href="routine-phac-do.html" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Giải Pháp Làn Da</a></li>
+            <li><a href="thu-vien-hoat-chat.html" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Khoa Học &amp; Bằng Chứng</a></li>
+            <li><a href="cau-chuyen-thuong-hieu.html" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Triết Lý Dzentic</a></li>
+            <li><a href="bai-viet.html" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Blog</a></li>
+            <li><a href="lien-he.html" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Liên hệ</a></li>
+          </ul>
+        </nav>
+        <div>
+          <h3 class="text-xl leading-7 font-medium text-navy">Liên hệ</h3>
+          <ul class="mt-6 flex flex-col gap-[10px] text-base leading-[22px] tracking-[0.224px] text-gray-49">
+            <li class="flex items-start gap-2"><img src="assets/img/footer/icon-phone.svg" alt="" width="20" height="20" class="shrink-0" /><a href="tel:15001515" class="hover:text-brown hover:underline focus-visible:text-brown focus-visible:underline">Hotline: 1500 1515</a></li>
+            <li class="flex items-start gap-2"><img src="assets/img/footer/icon-mobile.svg" alt="" width="20" height="21" class="shrink-0" /><a href="tel:+84123456789" class="hover:text-brown hover:underline focus-visible:text-brown focus-visible:underline">Điện thoại:<br />(+84) 123456789</a></li>
+            <li class="flex items-start gap-2"><img src="assets/img/footer/icon-pin.svg" alt="" width="20" height="21" class="shrink-0" /><a href="https://www.google.com/maps/search/?api=1&amp;query=T%E1%BA%A7ng+4+To%C3%A0+West+Tower%2C+365+%C4%91%C6%B0%E1%BB%9Dng+C%E1%BA%A7u+Gi%E1%BA%A5y%2C+H%C3%A0+N%E1%BB%99i" target="_blank" rel="noopener" class="lg:max-w-[169px] hover:text-brown hover:underline focus-visible:text-brown focus-visible:underline">Tầng 4 Toà West Tower, 365 đường Cầu Giấy, Hà Nội</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <hr class="border-0 h-px bg-gray-dd" />
+
+    <div class="flex flex-col gap-6 py-8 text-base leading-[22px] tracking-[0.224px] lg:flex-row lg:items-center lg:justify-between lg:pt-[39px] lg:pb-[55px]">
+      <ul class="flex flex-wrap gap-x-10 gap-y-2">
+        <li><a href="chinh-sach-bao-mat.html" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">An toàn &amp; Bảo mật</a></li>
+        <li><a href="#" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Điều khoản sử dụng</a></li>
+      </ul>
+      <div class="flex flex-col gap-4 sm:flex-row sm:items-center sm:gap-8">
+        <a href="#" class="block transition-opacity hover:opacity-80 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown"><img src="assets/img/footer/badge-bo-cong-thuong.webp" alt="Đã thông báo Bộ Công Thương" width="131" height="40" class="h-10 w-auto" /></a>
+        <p>© Bản quyền 2026 thuộc về Dzentic.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/app.js"></script>
+<script>
+(function () {
+  var P = 'assets/img/routine-phac-do/', D = 'assets/img/danh-muc-san-pham/';
+  var IMG = {
+    gel: [P + 'step-cleansing-gel.png', 'Purifying Cleansing Gel', 'Làm sạch dịu nhẹ, ít bọt, không xà phòng.'],
+    photo: [D + 'photo-defense-brightening-serum.webp', 'Photo Defense Brightening Serum', 'Serum ban ngày định hướng làm sáng và chống oxy hóa.'],
+    retino: [D + 'retino-renewal-brightening-serum.webp', 'Retino Renewal Brightening Serum', 'Serum ban đêm trẻ hóa, làm sáng đa cơ chế.'],
+    zinc: [D + 'zinc-complex-serum.webp', 'Zinc Complex Serum', 'Cân bằng bã nhờn, làm dịu, hỗ trợ da dễ bít tắc.'],
+    repair: [P + 'step-repair-cream.png', 'NeoBright Repair Cream', 'Dưỡng ẩm, hỗ trợ hàng rào da và chăm sóc dấu hiệu lão hóa.'],
+    hyd: [P + 'step-hydrating-cream.png', 'Blemish Recovery Hydrating Cream', 'Làm dịu, cấp ẩm và hỗ trợ hàng rào bảo vệ da.'],
+    sun: [P + 'step-sunscreen.png', 'Blue Light Shield Tone-up Fluid Sunscreen', 'Kem chống nắng bảo vệ da ban ngày']
+  };
+  var DATA = {
+    mun: { label: 'DA MỤN / THÂM MỤN', day: ['gel', 'zinc', 'hyd', 'sun'], night: ['gel', 'zinc', 'hyd'], tail: '. Vì vậy Dzentic ưu tiên làm sạch dịu nhẹ - kiểm soát bã nhờn - làm dịu và phục hồi - chống nắng.', use: ['Bắt đầu với ', 'Zinc Complex Serum', ' mỗi tối, thoa lượng nhỏ lên vùng da dễ nổi mụn. Giảm tần suất nếu da khô căng hoặc châm chích.'], set: 'Bộ giải pháp da mụn và dễ bít tắc' },
+    nam: { label: 'DA NÁM / KHÔNG ĐỀU MÀU / DẤU HIỆU LÃO HÓA', day: ['gel', 'photo', 'repair', 'sun'], night: ['gel', 'retino', 'repair'], tail: '. Vì vậy Dzentic ưu tiên chăm sóc sắc tố ban ngày - chống oxy hóa - chăm sóc tái tạo ban đêm - phục hồi - chống nắng.', use: ['Bắt đầu với ', 'Retino Renewal Brightening Serum', ' 2 tối mỗi tuần. Tăng lên cách tối, rồi mỗi tối nếu da dung nạp tốt, không dùng cùng buổi với retinoid hoặc acid tẩy tế bào chết khác.'], set: 'Bộ giải pháp dưỡng sáng và chăm sóc da lão hoá' },
+    nhaycam: { label: 'DA NHẠY CẢM / ĐANG TREATMENT', day: ['gel', 'hyd', 'sun'], night: ['gel', 'hyd'], tail: '. Vì vậy Dzentic ưu tiên làm dịu - phục hồi hàng rào - chống nắng, tạm hoãn hoạt chất mạnh.', use: ['Bắt đầu với ', 'Blemish Recovery Hydrating Cream', ' sáng và tối. Chỉ thêm serum khi da hết châm chích và đã ổn định tối thiểu 1 tuần.'], set: 'Bộ giải pháp làm dịu và phục hồi' },
+    dieutri: { label: 'DA ĐANG ĐIỀU TRỊ THEO PHÁC ĐỒ', day: ['gel', 'hyd', 'sun'], night: ['gel', 'hyd'], tail: '. Routine chỉ mang tính hỗ trợ, hãy ưu tiên hướng dẫn của bác sĩ điều trị.', use: ['Ưu tiên ', 'Purifying Cleansing Gel', ' và kem dưỡng phục hồi. Không tự ý thêm hoạt chất đặc trị khi chưa hỏi ý kiến bác sĩ.'], set: 'Bộ giải pháp hỗ trợ da đang điều trị' },
+    peel: { label: 'DA SAU PEEL / LASER / LẤY NHÂN MỤN', day: ['gel', 'hyd', 'sun'], night: ['gel', 'hyd'], tail: '. Vì vậy Dzentic ưu tiên làm dịu - cấp ẩm - bảo vệ nghiêm ngặt, tránh hoạt chất đặc trị.', use: ['Dùng ', 'Blemish Recovery Hydrating Cream', ' 2 lần mỗi ngày trong giai đoạn phục hồi và thoa lại kem chống nắng sau 2–3 giờ. Không dùng hoạt chất đặc trị cho đến khi da ổn định.'], set: 'Bộ giải pháp phục hồi sau thủ thuật' },
+    nang: { label: 'CHỐNG NẮNG HẰNG NGÀY', day: ['gel', 'photo', 'sun'], night: ['gel', 'hyd'], tail: '. Vì vậy Dzentic ưu tiên bảo vệ da trước UV, ánh sáng xanh và tác nhân môi trường mỗi ngày.', use: ['Thoa ', 'Blue Light Shield Tone-up Fluid Sunscreen', ' đủ lượng vào bước cuối buổi sáng và thoa lại sau 2–3 giờ khi ở ngoài trời.'], set: 'Bộ giải pháp bảo vệ da hằng ngày' }
+  };
+  var root = document.querySelector('[data-result]');
+  var FOC = 'focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy';
+  var mode = 'day', cond = 'nam';
+  function card(k, i) {
+    var p = IMG[k];
+    return '<li class="flex items-center gap-4 rounded-[4px] bg-gray-ee px-4 py-4 sm:gap-6 sm:px-5"><span class="h-24 w-[88px] shrink-0 overflow-hidden rounded-[4px]"><img src="' + p[0] + '" alt="" width="88" height="96" class="size-full object-contain" loading="lazy"></span><span class="flex min-w-0 flex-1 flex-col gap-1"><span class="text-base uppercase leading-[22px] tracking-[4px] text-brown">Bước ' + (i + 1) + '</span><span class="text-lg font-medium leading-7 text-navy sm:text-xl">' + p[1] + '</span><span class="text-sm leading-5 tracking-[0.14px] text-gray-66">' + p[2] + '</span></span></li>';
+  }
+  function tog(id, label, icon) {
+    var on = mode === id;
+    return '<button type="button" data-mode="' + id + '" aria-pressed="' + on + '" class="flex h-11 items-center gap-2 rounded-sm px-4 text-lg ' + FOC + ' ' + (on ? 'bg-brown text-bg hover:bg-brown-dark' : 'bg-gray-ee text-gray-66 hover:bg-gray-dd') + '"><img src="' + P + icon + '" alt="" width="18" height="18" class="size-[18px]' + (on ? '' : '') + '">' + label + '</button>';
+  }
+  function render() {
+    var d = DATA[cond], list = (mode === 'day' ? d.day : d.night).map(card).join('');
+    root.innerHTML =
+      '<div class="flex flex-wrap gap-[10px]">' + tog('day', 'Chu trình ban ngày', 'icon-day.svg') + tog('night', 'Chu trình ban đêm', 'icon-night.svg') + '</div>' +
+      '<ul class="flex flex-col gap-3">' + list + '</ul>' +
+      '<hr class="border-gray-dd">' +
+      '<div class="flex flex-col gap-2"><h3 class="text-xl font-bold leading-7 text-brown-dark">Vì sao routine này phù hợp với bạn?</h3><p class="text-base leading-[22px] tracking-[0.224px] text-gray-49">Bạn cho biết làn da hiện có nhu cầu chăm sóc <strong class="font-bold">' + d.label + '</strong>' + d.tail + '</p></div>' +
+      '<hr class="border-gray-dd">' +
+      '<div class="flex flex-col gap-2"><h3 class="text-xl font-bold leading-7 text-brown-dark">Sử dụng:</h3><p class="text-base leading-[22px] tracking-[0.224px] text-gray-49">' + d.use[0] + '<strong class="font-bold">' + d.use[1] + '</strong>' + d.use[2] + '</p></div>' +
+      '<div class="flex flex-col gap-3"><p class="text-sm font-medium leading-5 tracking-[0.14px] text-gray-66">Bộ sản phẩm đề xuất</p><p class="text-xl font-medium leading-7 text-navy">' + d.set + '</p><div><button type="button" class="inline-flex h-10 items-center rounded-sm bg-brown px-6 text-base leading-[22px] tracking-[0.224px] text-bg hover:bg-brown-dark ' + FOC + '">Thêm bộ sản phẩm vào giỏ</button></div></div>' +
+      '<p class="text-sm leading-5 tracking-[0.14px] text-gray-66 opacity-85">Routine trên được xây dựng dựa trên thông tin bạn cung cấp và mang tính định hướng chăm sóc. Sản phẩm Dzentic không thay thế thuốc hoặc phác đồ điều trị. Nếu bạn đang sử dụng thuốc, vừa thực hiện thủ thuật hoặc có tình trạng da đặc biệt, hãy tiếp tục tuân thủ hướng dẫn của bác sĩ, người có chuyên môn.</p>';
+  }
+  root.addEventListener('click', function (e) {
+    var b = e.target.closest('[data-mode]');
+    if (!b) return;
+    mode = b.dataset.mode; render();
+    var nb = root.querySelector('[data-mode="' + mode + '"]'); if (nb) nb.focus();
+  });
+  document.querySelectorAll('input[name="tinh-trang"]').forEach(function (r) {
+    r.addEventListener('change', function () { cond = r.value; render(); root.scrollTop = 0; });
+  });
+  var next = document.querySelector('[data-next]');
+  if (next) next.addEventListener('click', function (e) {
+    if (matchMedia('(min-width:1024px)').matches) { e.preventDefault(); root.scrollTo({ top: root.scrollHeight, behavior: 'smooth' }); }
+  });
+  render();
+})();
+</script>
+</body>
+</html>

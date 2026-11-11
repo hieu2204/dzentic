@@ -1,0 +1,497 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bản đồ điểm bán & phòng khám | Dzentic</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/app.css">
+</head>
+<body>
+<!-- SECTION: topbar -->
+<section aria-label="Thông báo" class="bg-navy text-bg">
+  <p class="max-w-site mx-auto px-4 py-3 md:py-4 text-center text-sm md:text-base leading-[22px] tracking-[0.224px]">
+    Nhận ưu đãi giảm tới 10% và miễn phí vận chuyển cho tất cả các đơn hàng. Cam kết 100% sản phẩm chính hãng.
+  </p>
+</section>
+<header class="sticky top-0 z-50 border-b border-gray-ee bg-bg">
+    <div class="max-w-site mx-auto px-4 md:px-8 xl:px-[72px] h-20 xl:h-[120px] flex items-center justify-between xl:grid xl:grid-cols-[1fr_auto_1fr] xl:gap-6">
+      <nav class="hidden xl:flex items-center gap-6 text-base leading-[22px] tracking-[0.224px]" aria-label="Menu trái">
+        <a href="thu-vien-hoat-chat.html" class="hover:text-brown focus-visible:text-brown focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brown">Khoa Học &amp; Bằng Chứng</a>
+        <a href="san-pham.html" class="hover:text-brown focus-visible:text-brown focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brown">Sản Phẩm</a>
+      </nav>
+
+      <a href="index.html" class="block shrink-0 xl:justify-self-center hover:opacity-80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brown" aria-label="Dzentic - Trang chủ">
+        <img src="assets/img/hero/logo-dzentic.png" alt="Dzentic - A brand by Sorai Beauty Engine" width="920" height="276"
+             class="h-14 xl:h-[92px] w-auto object-contain">
+      </a>
+
+      <div class="flex items-center gap-6 xl:justify-self-end">
+        <nav class="hidden xl:flex items-center gap-6 text-base leading-[22px] tracking-[0.224px]" aria-label="Menu phải">
+          <a href="cau-chuyen-thuong-hieu.html" class="hover:text-brown focus-visible:text-brown focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brown">Triết Lí Dzentic</a>
+          <a href="routine-phac-do.html" class="hover:text-brown focus-visible:text-brown focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brown">Giải Pháp Làn Da</a>
+          <a href="lien-he.html" class="hover:text-brown focus-visible:text-brown focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brown">Liên Hệ</a>
+        </nav>
+        <div class="flex items-center gap-3 xl:gap-[14px]">
+          <a href="tim-kiem.html" class="hover:opacity-70 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brown" aria-label="Tìm kiếm"><img src="assets/img/hero/icon-search.svg" alt="" width="20" height="20"></a>
+          <a href="gio-hang.html" class="group flex items-center gap-2 xl:gap-0.5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brown" aria-label="Giỏ hàng">
+            <img src="assets/img/hero/icon-cart.svg" alt="" width="20" height="20" class="group-hover:opacity-70">
+            <span class="grid place-items-center size-5 rounded-[10px] bg-brown text-bg text-base leading-[22px] group-hover:bg-brown-dark">0</span>
+          </a>
+          <button type="button" data-menu-toggle class="xl:hidden ml-2 p-1 hover:text-brown focus-visible:text-brown focus-visible:outline focus-visible:outline-2 focus-visible:outline-brown" aria-label="Mở menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Menu mobile -->
+    <nav data-menu class="hidden xl:hidden bg-bg border-t border-gray-dd px-4 md:px-8 py-4 text-base" aria-label="Menu chính">
+      <ul class="flex flex-col gap-4">
+        <li><a href="thu-vien-hoat-chat.html" class="hover:text-brown focus-visible:text-brown">Khoa Học &amp; Bằng Chứng</a></li>
+        <li><a href="san-pham.html" class="hover:text-brown focus-visible:text-brown">Sản Phẩm</a></li>
+        <li><a href="cau-chuyen-thuong-hieu.html" class="hover:text-brown focus-visible:text-brown">Triết Lí Dzentic</a></li>
+        <li><a href="routine-phac-do.html" class="hover:text-brown focus-visible:text-brown">Giải Pháp Làn Da</a></li>
+        <li><a href="lien-he.html" class="hover:text-brown focus-visible:text-brown">Liên Hệ</a></li>
+      </ul>
+    </nav>
+  </header>
+<!-- SECTION: Page hero -->
+<section class="bg-bg" aria-labelledby="page-title">
+  <div class="max-w-site mx-auto px-4 md:px-8 xl:px-[72px] pb-8 pt-7 lg:pb-10 lg:pt-8">
+    <nav aria-label="Breadcrumb" class="flex flex-wrap items-center gap-2 text-sm leading-5 tracking-[0.14px]">
+      <a href="index.html" class="text-gray-66 hover:text-brown">Trang chủ</a>
+      <span class="text-gray-99" aria-hidden="true">/</span>
+      <span class="text-navy" aria-current="page">Hệ thống điểm bán</span>
+    </nav>
+    <div class="mt-10 flex flex-col gap-8 lg:mt-[60px] lg:gap-10">
+      <div class="flex flex-col">
+        <h1 id="page-title" class="text-3xl uppercase leading-[1.4] tracking-[0.624px] text-brown-dark md:text-5xl">Tìm Dzentic gần bạn</h1>
+        <p class="max-w-[760px] text-base leading-[22px] tracking-[0.224px] text-gray-66">32 đối tác được xác thực tại 3 thành phố · Phòng khám da liễu, nhà thuốc và spa đạt chuẩn tư vấn của Dzentic.</p>
+      </div>
+      <div class="-mx-4 overflow-x-auto px-4 md:mx-0 md:px-0">
+        <div class="flex gap-4 md:gap-10" role="tablist" aria-label="Loại địa điểm" data-cat-tabs>
+          <button type="button" role="tab" data-cat="all" aria-selected="true" class="border-b border-gray-bb px-2 pb-2 text-xl leading-7 text-gray-99 hover:text-navy aria-selected:border-navy aria-selected:text-navy focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown whitespace-nowrap">Tất cả địa điểm (32)</button>
+          <button type="button" role="tab" data-cat="clinic" aria-selected="false" class="border-b border-gray-bb px-2 pb-2 text-xl leading-7 text-gray-99 hover:text-navy aria-selected:border-navy aria-selected:text-navy focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown whitespace-nowrap">Phòng khám da liễu (14)</button>
+          <button type="button" role="tab" data-cat="pharmacy" aria-selected="false" class="border-b border-gray-bb px-2 pb-2 text-xl leading-7 text-gray-99 hover:text-navy aria-selected:border-navy aria-selected:text-navy focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown whitespace-nowrap">Nhà thuốc (12)</button>
+          <button type="button" role="tab" data-cat="spa" aria-selected="false" class="border-b border-gray-bb px-2 pb-2 text-xl leading-7 text-gray-99 hover:text-navy aria-selected:border-navy aria-selected:text-navy focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown whitespace-nowrap">Spa &amp; thẩm mỹ viện (6)</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<main>
+<!-- SECTION: Locator -->
+<section class="pb-16 lg:pb-24" aria-label="Bản đồ điểm bán">
+  <div class="max-w-site mx-auto px-4 md:px-8 xl:px-[72px]" data-tabs data-store-locator data-locator>
+    <div class="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
+      <div class="flex flex-col gap-4 lg:flex-row lg:items-center">
+        <label class="flex h-12 w-full items-center gap-3 rounded-md border border-gray-dd bg-white px-4 focus-within:border-blue lg:w-[440px]">
+          <img src="assets/img/ban-do-diem-ban/icon-search.svg" alt="" width="20" height="20" class="size-5 shrink-0" />
+          <span class="sr-only">Nhập quận, huyện hoặc địa chỉ của bạn</span>
+          <input type="search" data-locator-search placeholder="Nhập quận, huyện hoặc địa chỉ của bạn" class="min-w-0 flex-1 bg-transparent text-sm leading-5 tracking-[0.14px] text-ink placeholder:text-gray-66 focus:outline-none" />
+        </label>
+        <ul class="flex flex-wrap gap-2" role="tablist" aria-label="Chọn thành phố">
+          <li><button type="button" role="tab" data-tab="ha-noi" data-city="Hà Nội" aria-selected="true" class="h-[39px] px-3 bg-gray-ee text-navy hover:bg-brown-50 aria-selected:bg-brown aria-selected:text-bg aria-selected:hover:bg-brown-dark text-base leading-[22px] tracking-[0.224px] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Hà Nội</button></li>
+            <li><button type="button" role="tab" data-tab="ho-chi-minh" data-city="Hồ Chí Minh" aria-selected="false" class="h-[39px] px-3 bg-gray-ee text-navy hover:bg-brown-50 aria-selected:bg-brown aria-selected:text-bg aria-selected:hover:bg-brown-dark text-base leading-[22px] tracking-[0.224px] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Hồ Chí Minh</button></li>
+            <li><button type="button" role="tab" data-tab="da-nang" data-city="Đà Nẵng" aria-selected="false" class="h-[39px] px-3 bg-gray-ee text-navy hover:bg-brown-50 aria-selected:bg-brown aria-selected:text-bg aria-selected:hover:bg-brown-dark text-base leading-[22px] tracking-[0.224px] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Đà Nẵng</button></li>
+        </ul>
+      </div>
+      <button type="button" data-locate class="inline-flex h-10 items-center justify-center gap-2 rounded-sm border border-navy px-6 text-base leading-[22px] tracking-[0.224px] text-navy hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown self-start">Dùng vị trí của tôi<img src="assets/img/ban-do-diem-ban/icon-location.svg" alt="" width="12" height="13" /></button>
+    </div>
+
+    <div class="mt-6 grid gap-8 lg:grid-cols-[440px_minmax(0,1fr)]">
+      <div class="flex min-w-0 flex-col gap-4 lg:h-[760px]">
+        <div class="flex items-center text-sm leading-5 tracking-[0.14px]">
+          <p class="flex-1 font-medium text-brown-dark" data-locator-count aria-live="polite">7 địa điểm tại Hà Nội</p>
+          <p class="text-gray-66">Sắp xếp: Gần nhất</p>
+        </div>
+        <div class="scroll-thin max-h-[480px] overflow-y-auto lg:max-h-none lg:min-h-0 lg:flex-1" data-clinic-list>
+          <ul data-tab-panel="ha-noi" aria-label="Điểm bán tại Hà Nội">
+            <li class="group flex cursor-pointer flex-col gap-4 border-b border-l-[3px] border-gray-ee border-l-transparent px-4 pb-[25px] pt-[23px] transition-colors hover:bg-brown-50 aria-[current=true]:border-l-brown aria-[current=true]:bg-brown-50 focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-brown" role="button" tabindex="0" data-clinic="hn-1" data-type="clinic" data-q="Phòng khám Da liễu Hà Nội, 10 Trần Duy Hưng, Cầu Giấy, Hà Nội" aria-current="true">
+              <div class="flex flex-col gap-2">
+                <p class="flex items-center gap-2 text-xs leading-4 text-green"><img src="assets/img/ban-do-diem-ban/icon-check.svg" alt="" width="16" height="16" class="size-4" />Đối tác được xác thực</p>
+                <h3 class="text-xl leading-7 font-bold text-navy transition-colors group-hover:text-brown">Phòng khám Da liễu Hà Nội</h3>
+              </div>
+              <div class="flex flex-col gap-2 text-base leading-[22px] tracking-[0.224px]">
+                <p class="text-text">10 Trần Duy Hưng, Cầu Giấy · 1,2 km</p>
+                <div class="flex items-center justify-between gap-2">
+                  <p class="flex items-center gap-2 text-ink"><img src="assets/img/ban-do-diem-ban/icon-clock.svg" alt="" width="16" height="16" class="size-4" />08:00 - 20:00</p>
+                  <a href="chi-tiet-diem-ban.html" class="text-sm leading-5 tracking-[0.14px] text-brown underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Xem chi tiết</a>
+                </div>
+              </div>
+            </li>
+            <li class="group flex cursor-pointer flex-col gap-4 border-b border-l-[3px] border-gray-ee border-l-transparent px-4 pb-[25px] pt-[23px] transition-colors hover:bg-brown-50 aria-[current=true]:border-l-brown aria-[current=true]:bg-brown-50 focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-brown" role="button" tabindex="0" data-clinic="hn-2" data-type="pharmacy" data-q="Nhà thuốc Long Châu Tây Hồ, 45 Xuân Diệu, Tây Hồ, Hà Nội">
+              <div class="flex flex-col gap-2">
+                <p class="flex items-center gap-2 text-xs leading-4 text-green"><img src="assets/img/ban-do-diem-ban/icon-check.svg" alt="" width="16" height="16" class="size-4" />Đối tác được xác thực</p>
+                <h3 class="text-xl leading-7 font-bold text-navy transition-colors group-hover:text-brown">Nhà thuốc Long Châu Tây Hồ</h3>
+              </div>
+              <div class="flex flex-col gap-2 text-base leading-[22px] tracking-[0.224px]">
+                <p class="text-text">45 Xuân Diệu, Tây Hồ · 2,4 km</p>
+                <div class="flex items-center justify-between gap-2">
+                  <p class="flex items-center gap-2 text-ink"><img src="assets/img/ban-do-diem-ban/icon-clock.svg" alt="" width="16" height="16" class="size-4" />07:00 - 22:00</p>
+                  <a href="chi-tiet-diem-ban.html" class="text-sm leading-5 tracking-[0.14px] text-brown underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Xem chi tiết</a>
+                </div>
+              </div>
+            </li>
+            <li class="group flex cursor-pointer flex-col gap-4 border-b border-l-[3px] border-gray-ee border-l-transparent px-4 pb-[25px] pt-[23px] transition-colors hover:bg-brown-50 aria-[current=true]:border-l-brown aria-[current=true]:bg-brown-50 focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-brown" role="button" tabindex="0" data-clinic="hn-3" data-type="spa" data-q="O2 Skin Clinic Hoàn Kiếm, 28 Lý Thường Kiệt, Hoàn Kiếm, Hà Nội">
+              <div class="flex flex-col gap-2">
+                <p class="flex items-center gap-2 text-xs leading-4 text-green"><img src="assets/img/ban-do-diem-ban/icon-check.svg" alt="" width="16" height="16" class="size-4" />Đối tác được xác thực</p>
+                <h3 class="text-xl leading-7 font-bold text-navy transition-colors group-hover:text-brown">O2 Skin Clinic Hoàn Kiếm</h3>
+              </div>
+              <div class="flex flex-col gap-2 text-base leading-[22px] tracking-[0.224px]">
+                <p class="text-text">28 Lý Thường Kiệt, Hoàn Kiếm · 3,1 km</p>
+                <div class="flex items-center justify-between gap-2">
+                  <p class="flex items-center gap-2 text-ink"><img src="assets/img/ban-do-diem-ban/icon-clock.svg" alt="" width="16" height="16" class="size-4" />08:30 - 19:30</p>
+                  <a href="chi-tiet-diem-ban.html" class="text-sm leading-5 tracking-[0.14px] text-brown underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Xem chi tiết</a>
+                </div>
+              </div>
+            </li>
+            <li class="group flex cursor-pointer flex-col gap-4 border-b border-l-[3px] border-gray-ee border-l-transparent px-4 pb-[25px] pt-[23px] transition-colors hover:bg-brown-50 aria-[current=true]:border-l-brown aria-[current=true]:bg-brown-50 focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-brown" role="button" tabindex="0" data-clinic="hn-4" data-type="clinic" data-q="Phòng khám Da liễu Thu Cúc, 286 Thụy Khuê, Tây Hồ, Hà Nội">
+              <div class="flex flex-col gap-2">
+                <p class="flex items-center gap-2 text-xs leading-4 text-green"><img src="assets/img/ban-do-diem-ban/icon-check.svg" alt="" width="16" height="16" class="size-4" />Đối tác được xác thực</p>
+                <h3 class="text-xl leading-7 font-bold text-navy transition-colors group-hover:text-brown">Phòng khám Da liễu Thu Cúc</h3>
+              </div>
+              <div class="flex flex-col gap-2 text-base leading-[22px] tracking-[0.224px]">
+                <p class="text-text">286 Thụy Khuê, Tây Hồ · 3,8 km</p>
+                <div class="flex items-center justify-between gap-2">
+                  <p class="flex items-center gap-2 text-ink"><img src="assets/img/ban-do-diem-ban/icon-clock.svg" alt="" width="16" height="16" class="size-4" />08:00 - 17:30</p>
+                  <a href="chi-tiet-diem-ban.html" class="text-sm leading-5 tracking-[0.14px] text-brown underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Xem chi tiết</a>
+                </div>
+              </div>
+            </li>
+            <li class="group flex cursor-pointer flex-col gap-4 border-b border-l-[3px] border-gray-ee border-l-transparent px-4 pb-[25px] pt-[23px] transition-colors hover:bg-brown-50 aria-[current=true]:border-l-brown aria-[current=true]:bg-brown-50 focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-brown" role="button" tabindex="0" data-clinic="hn-5" data-type="pharmacy" data-q="Nhà thuốc Pharmacity Ba Đình, 112 Đội Cấn, Ba Đình, Hà Nội">
+              <div class="flex flex-col gap-2">
+                <p class="flex items-center gap-2 text-xs leading-4 text-green"><img src="assets/img/ban-do-diem-ban/icon-check.svg" alt="" width="16" height="16" class="size-4" />Đối tác được xác thực</p>
+                <h3 class="text-xl leading-7 font-bold text-navy transition-colors group-hover:text-brown">Nhà thuốc Pharmacity Ba Đình</h3>
+              </div>
+              <div class="flex flex-col gap-2 text-base leading-[22px] tracking-[0.224px]">
+                <p class="text-text">112 Đội Cấn, Ba Đình · 4,0 km</p>
+                <div class="flex items-center justify-between gap-2">
+                  <p class="flex items-center gap-2 text-ink"><img src="assets/img/ban-do-diem-ban/icon-clock.svg" alt="" width="16" height="16" class="size-4" />07:00 - 22:00</p>
+                  <a href="chi-tiet-diem-ban.html" class="text-sm leading-5 tracking-[0.14px] text-brown underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Xem chi tiết</a>
+                </div>
+              </div>
+            </li>
+            <li class="group flex cursor-pointer flex-col gap-4 border-b border-l-[3px] border-gray-ee border-l-transparent px-4 pb-[25px] pt-[23px] transition-colors hover:bg-brown-50 aria-[current=true]:border-l-brown aria-[current=true]:bg-brown-50 focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-brown" role="button" tabindex="0" data-clinic="hn-6" data-type="spa" data-q="Spa Linh Anh Skin Lab, 56 Nguyễn Chí Thanh, Đống Đa, Hà Nội">
+              <div class="flex flex-col gap-2">
+                <p class="flex items-center gap-2 text-xs leading-4 text-green"><img src="assets/img/ban-do-diem-ban/icon-check.svg" alt="" width="16" height="16" class="size-4" />Đối tác được xác thực</p>
+                <h3 class="text-xl leading-7 font-bold text-navy transition-colors group-hover:text-brown">Spa Linh Anh Skin Lab</h3>
+              </div>
+              <div class="flex flex-col gap-2 text-base leading-[22px] tracking-[0.224px]">
+                <p class="text-text">56 Nguyễn Chí Thanh, Đống Đa · 4,6 km</p>
+                <div class="flex items-center justify-between gap-2">
+                  <p class="flex items-center gap-2 text-ink"><img src="assets/img/ban-do-diem-ban/icon-clock.svg" alt="" width="16" height="16" class="size-4" />09:00 - 21:00</p>
+                  <a href="chi-tiet-diem-ban.html" class="text-sm leading-5 tracking-[0.14px] text-brown underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Xem chi tiết</a>
+                </div>
+              </div>
+            </li>
+            <li class="group flex cursor-pointer flex-col gap-4 border-b border-l-[3px] border-gray-ee border-l-transparent px-4 pb-[25px] pt-[23px] transition-colors hover:bg-brown-50 aria-[current=true]:border-l-brown aria-[current=true]:bg-brown-50 focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-brown" role="button" tabindex="0" data-clinic="hn-7" data-type="clinic" data-q="Bệnh viện Da liễu Trung ương, 15A Phương Mai, Đống Đa, Hà Nội">
+              <div class="flex flex-col gap-2">
+                <p class="flex items-center gap-2 text-xs leading-4 text-green"><img src="assets/img/ban-do-diem-ban/icon-check.svg" alt="" width="16" height="16" class="size-4" />Đối tác được xác thực</p>
+                <h3 class="text-xl leading-7 font-bold text-navy transition-colors group-hover:text-brown">Bệnh viện Da liễu Trung ương</h3>
+              </div>
+              <div class="flex flex-col gap-2 text-base leading-[22px] tracking-[0.224px]">
+                <p class="text-text">15A Phương Mai, Đống Đa · 6,2 km</p>
+                <div class="flex items-center justify-between gap-2">
+                  <p class="flex items-center gap-2 text-ink"><img src="assets/img/ban-do-diem-ban/icon-clock.svg" alt="" width="16" height="16" class="size-4" />07:30 - 16:30</p>
+                  <a href="chi-tiet-diem-ban.html" class="text-sm leading-5 tracking-[0.14px] text-brown underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Xem chi tiết</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <ul data-tab-panel="ho-chi-minh" aria-label="Điểm bán tại Hồ Chí Minh" hidden>
+            <li class="group flex cursor-pointer flex-col gap-4 border-b border-l-[3px] border-gray-ee border-l-transparent px-4 pb-[25px] pt-[23px] transition-colors hover:bg-brown-50 aria-[current=true]:border-l-brown aria-[current=true]:bg-brown-50 focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-brown" role="button" tabindex="0" data-clinic="hcm-1" data-type="clinic" data-q="Phòng khám Da liễu Sài Gòn, 120 Nguyễn Thị Minh Khai, Quận 3, Hồ Chí Minh">
+              <div class="flex flex-col gap-2">
+                <p class="flex items-center gap-2 text-xs leading-4 text-green"><img src="assets/img/ban-do-diem-ban/icon-check.svg" alt="" width="16" height="16" class="size-4" />Đối tác được xác thực</p>
+                <h3 class="text-xl leading-7 font-bold text-navy transition-colors group-hover:text-brown">Phòng khám Da liễu Sài Gòn</h3>
+              </div>
+              <div class="flex flex-col gap-2 text-base leading-[22px] tracking-[0.224px]">
+                <p class="text-text">120 Nguyễn Thị Minh Khai, Quận 3</p>
+                <div class="flex items-center justify-between gap-2">
+                  <p class="flex items-center gap-2 text-ink"><img src="assets/img/ban-do-diem-ban/icon-clock.svg" alt="" width="16" height="16" class="size-4" />08:00 - 20:00</p>
+                  <a href="chi-tiet-diem-ban.html" class="text-sm leading-5 tracking-[0.14px] text-brown underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Xem chi tiết</a>
+                </div>
+              </div>
+            </li>
+            <li class="group flex cursor-pointer flex-col gap-4 border-b border-l-[3px] border-gray-ee border-l-transparent px-4 pb-[25px] pt-[23px] transition-colors hover:bg-brown-50 aria-[current=true]:border-l-brown aria-[current=true]:bg-brown-50 focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-brown" role="button" tabindex="0" data-clinic="hcm-2" data-type="pharmacy" data-q="Nhà thuốc Skin Care Quận 1, 25 Lê Thánh Tôn, Quận 1, Hồ Chí Minh">
+              <div class="flex flex-col gap-2">
+                <p class="flex items-center gap-2 text-xs leading-4 text-green"><img src="assets/img/ban-do-diem-ban/icon-check.svg" alt="" width="16" height="16" class="size-4" />Đối tác được xác thực</p>
+                <h3 class="text-xl leading-7 font-bold text-navy transition-colors group-hover:text-brown">Nhà thuốc Skin Care Quận 1</h3>
+              </div>
+              <div class="flex flex-col gap-2 text-base leading-[22px] tracking-[0.224px]">
+                <p class="text-text">25 Lê Thánh Tôn, Quận 1</p>
+                <div class="flex items-center justify-between gap-2">
+                  <p class="flex items-center gap-2 text-ink"><img src="assets/img/ban-do-diem-ban/icon-clock.svg" alt="" width="16" height="16" class="size-4" />07:30 - 21:30</p>
+                  <a href="chi-tiet-diem-ban.html" class="text-sm leading-5 tracking-[0.14px] text-brown underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Xem chi tiết</a>
+                </div>
+              </div>
+            </li>
+            <li class="group flex cursor-pointer flex-col gap-4 border-b border-l-[3px] border-gray-ee border-l-transparent px-4 pb-[25px] pt-[23px] transition-colors hover:bg-brown-50 aria-[current=true]:border-l-brown aria-[current=true]:bg-brown-50 focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-brown" role="button" tabindex="0" data-clinic="hcm-3" data-type="spa" data-q="Thẩm mỹ da Bình Thạnh, 88 Điện Biên Phủ, Bình Thạnh, Hồ Chí Minh">
+              <div class="flex flex-col gap-2">
+                <p class="flex items-center gap-2 text-xs leading-4 text-green"><img src="assets/img/ban-do-diem-ban/icon-check.svg" alt="" width="16" height="16" class="size-4" />Đối tác được xác thực</p>
+                <h3 class="text-xl leading-7 font-bold text-navy transition-colors group-hover:text-brown">Thẩm mỹ da Bình Thạnh</h3>
+              </div>
+              <div class="flex flex-col gap-2 text-base leading-[22px] tracking-[0.224px]">
+                <p class="text-text">88 Điện Biên Phủ, Bình Thạnh</p>
+                <div class="flex items-center justify-between gap-2">
+                  <p class="flex items-center gap-2 text-ink"><img src="assets/img/ban-do-diem-ban/icon-clock.svg" alt="" width="16" height="16" class="size-4" />08:30 - 19:30</p>
+                  <a href="chi-tiet-diem-ban.html" class="text-sm leading-5 tracking-[0.14px] text-brown underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Xem chi tiết</a>
+                </div>
+              </div>
+            </li>
+            <li class="group flex cursor-pointer flex-col gap-4 border-b border-l-[3px] border-gray-ee border-l-transparent px-4 pb-[25px] pt-[23px] transition-colors hover:bg-brown-50 aria-[current=true]:border-l-brown aria-[current=true]:bg-brown-50 focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-brown" role="button" tabindex="0" data-clinic="hcm-4" data-type="pharmacy" data-q="Nhà thuốc Dzentic Phú Nhuận, 210 Phan Xích Long, Phú Nhuận, Hồ Chí Minh">
+              <div class="flex flex-col gap-2">
+                <p class="flex items-center gap-2 text-xs leading-4 text-green"><img src="assets/img/ban-do-diem-ban/icon-check.svg" alt="" width="16" height="16" class="size-4" />Đối tác được xác thực</p>
+                <h3 class="text-xl leading-7 font-bold text-navy transition-colors group-hover:text-brown">Nhà thuốc Dzentic Phú Nhuận</h3>
+              </div>
+              <div class="flex flex-col gap-2 text-base leading-[22px] tracking-[0.224px]">
+                <p class="text-text">210 Phan Xích Long, Phú Nhuận</p>
+                <div class="flex items-center justify-between gap-2">
+                  <p class="flex items-center gap-2 text-ink"><img src="assets/img/ban-do-diem-ban/icon-clock.svg" alt="" width="16" height="16" class="size-4" />07:00 - 22:00</p>
+                  <a href="chi-tiet-diem-ban.html" class="text-sm leading-5 tracking-[0.14px] text-brown underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Xem chi tiết</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <ul data-tab-panel="da-nang" aria-label="Điểm bán tại Đà Nẵng" hidden>
+            <li class="group flex cursor-pointer flex-col gap-4 border-b border-l-[3px] border-gray-ee border-l-transparent px-4 pb-[25px] pt-[23px] transition-colors hover:bg-brown-50 aria-[current=true]:border-l-brown aria-[current=true]:bg-brown-50 focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-brown" role="button" tabindex="0" data-clinic="dn-1" data-type="clinic" data-q="Phòng khám Da liễu Đà Nẵng, 76 Nguyễn Văn Linh, Hải Châu, Đà Nẵng">
+              <div class="flex flex-col gap-2">
+                <p class="flex items-center gap-2 text-xs leading-4 text-green"><img src="assets/img/ban-do-diem-ban/icon-check.svg" alt="" width="16" height="16" class="size-4" />Đối tác được xác thực</p>
+                <h3 class="text-xl leading-7 font-bold text-navy transition-colors group-hover:text-brown">Phòng khám Da liễu Đà Nẵng</h3>
+              </div>
+              <div class="flex flex-col gap-2 text-base leading-[22px] tracking-[0.224px]">
+                <p class="text-text">76 Nguyễn Văn Linh, Hải Châu</p>
+                <div class="flex items-center justify-between gap-2">
+                  <p class="flex items-center gap-2 text-ink"><img src="assets/img/ban-do-diem-ban/icon-clock.svg" alt="" width="16" height="16" class="size-4" />08:00 - 19:00</p>
+                  <a href="chi-tiet-diem-ban.html" class="text-sm leading-5 tracking-[0.14px] text-brown underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Xem chi tiết</a>
+                </div>
+              </div>
+            </li>
+            <li class="group flex cursor-pointer flex-col gap-4 border-b border-l-[3px] border-gray-ee border-l-transparent px-4 pb-[25px] pt-[23px] transition-colors hover:bg-brown-50 aria-[current=true]:border-l-brown aria-[current=true]:bg-brown-50 focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-brown" role="button" tabindex="0" data-clinic="dn-2" data-type="pharmacy" data-q="Nhà thuốc Skin Care Sơn Trà, 132 Ngô Quyền, Sơn Trà, Đà Nẵng">
+              <div class="flex flex-col gap-2">
+                <p class="flex items-center gap-2 text-xs leading-4 text-green"><img src="assets/img/ban-do-diem-ban/icon-check.svg" alt="" width="16" height="16" class="size-4" />Đối tác được xác thực</p>
+                <h3 class="text-xl leading-7 font-bold text-navy transition-colors group-hover:text-brown">Nhà thuốc Skin Care Sơn Trà</h3>
+              </div>
+              <div class="flex flex-col gap-2 text-base leading-[22px] tracking-[0.224px]">
+                <p class="text-text">132 Ngô Quyền, Sơn Trà</p>
+                <div class="flex items-center justify-between gap-2">
+                  <p class="flex items-center gap-2 text-ink"><img src="assets/img/ban-do-diem-ban/icon-clock.svg" alt="" width="16" height="16" class="size-4" />07:30 - 21:00</p>
+                  <a href="chi-tiet-diem-ban.html" class="text-sm leading-5 tracking-[0.14px] text-brown underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Xem chi tiết</a>
+                </div>
+              </div>
+            </li>
+            <li class="group flex cursor-pointer flex-col gap-4 border-b border-l-[3px] border-gray-ee border-l-transparent px-4 pb-[25px] pt-[23px] transition-colors hover:bg-brown-50 aria-[current=true]:border-l-brown aria-[current=true]:bg-brown-50 focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-brown" role="button" tabindex="0" data-clinic="dn-3" data-type="spa" data-q="Thẩm mỹ da Thanh Khê, 54 Hà Huy Tập, Thanh Khê, Đà Nẵng">
+              <div class="flex flex-col gap-2">
+                <p class="flex items-center gap-2 text-xs leading-4 text-green"><img src="assets/img/ban-do-diem-ban/icon-check.svg" alt="" width="16" height="16" class="size-4" />Đối tác được xác thực</p>
+                <h3 class="text-xl leading-7 font-bold text-navy transition-colors group-hover:text-brown">Thẩm mỹ da Thanh Khê</h3>
+              </div>
+              <div class="flex flex-col gap-2 text-base leading-[22px] tracking-[0.224px]">
+                <p class="text-text">54 Hà Huy Tập, Thanh Khê</p>
+                <div class="flex items-center justify-between gap-2">
+                  <p class="flex items-center gap-2 text-ink"><img src="assets/img/ban-do-diem-ban/icon-clock.svg" alt="" width="16" height="16" class="size-4" />08:30 - 18:30</p>
+                  <a href="chi-tiet-diem-ban.html" class="text-sm leading-5 tracking-[0.14px] text-brown underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Xem chi tiết</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <p data-locator-empty class="py-10 text-center text-base text-gray-66" hidden>Không tìm thấy địa điểm phù hợp. Hãy thử từ khoá hoặc bộ lọc khác.</p>
+        </div>
+      </div>
+
+      <div class="relative h-[420px] overflow-hidden bg-[#f2f2f2] sm:h-[520px] lg:h-[760px]">
+        <img src="assets/img/ban-do-diem-ban/ban-do.webp" alt="Bản đồ hệ thống điểm bán Dzentic" width="1712" height="1183" class="absolute inset-0 size-full object-cover" />
+        <iframe data-map-frame title="Vị trí điểm bán trên Google Maps" class="absolute inset-0 z-[5] size-full border-0 bg-[#f2f2f2]" hidden loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <button type="button" data-map-reset class="absolute left-3 top-3 z-[6] inline-flex h-10 items-center gap-2 rounded-sm bg-bg px-4 text-base text-navy shadow-popover hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy" hidden>← Bản đồ tổng</button>
+          <div data-tab-panel="ha-noi" class="absolute inset-0">
+            <button type="button" data-marker="hn-1" aria-label="Điểm bán Dzentic Hà Nội - điểm 1" aria-pressed="true" class="absolute size-[35.5px] cursor-pointer rounded-full transition-transform duration-200 hover:scale-125 focus-visible:scale-125 focus-visible:outline-2 focus-visible:outline-brown [&[aria-pressed=true]]:z-10 [&[aria-pressed=true]]:scale-150" style="left:14.56%;top:11.84%"><img src="assets/img/ban-do-diem-ban/marker.png" alt="" width="36" height="36" class="size-full max-w-none" /></button>
+            <button type="button" data-marker="hn-2" aria-label="Điểm bán Dzentic Hà Nội - điểm 2" class="absolute size-[35.5px] cursor-pointer rounded-full transition-transform duration-200 hover:scale-125 focus-visible:scale-125 focus-visible:outline-2 focus-visible:outline-brown [&[aria-pressed=true]]:z-10 [&[aria-pressed=true]]:scale-150" style="left:73.54%;top:18.42%"><img src="assets/img/ban-do-diem-ban/marker.png" alt="" width="36" height="36" class="size-full max-w-none" /></button>
+            <button type="button" data-marker="hn-3" aria-label="Điểm bán Dzentic Hà Nội - điểm 3" class="absolute size-[35.5px] cursor-pointer rounded-full transition-transform duration-200 hover:scale-125 focus-visible:scale-125 focus-visible:outline-2 focus-visible:outline-brown [&[aria-pressed=true]]:z-10 [&[aria-pressed=true]]:scale-150" style="left:24.27%;top:50.00%"><img src="assets/img/ban-do-diem-ban/marker.png" alt="" width="36" height="36" class="size-full max-w-none" /></button>
+            <button type="button" data-marker="hn-4" aria-label="Điểm bán Dzentic Hà Nội - điểm 4" class="absolute size-[35.5px] cursor-pointer rounded-full transition-transform duration-200 hover:scale-125 focus-visible:scale-125 focus-visible:outline-2 focus-visible:outline-brown [&[aria-pressed=true]]:z-10 [&[aria-pressed=true]]:scale-150" style="left:43.69%;top:43.42%"><img src="assets/img/ban-do-diem-ban/marker.png" alt="" width="36" height="36" class="size-full max-w-none" /></button>
+            <button type="button" data-marker="hn-5" aria-label="Điểm bán Dzentic Hà Nội - điểm 5" class="absolute size-[35.5px] cursor-pointer rounded-full transition-transform duration-200 hover:scale-125 focus-visible:scale-125 focus-visible:outline-2 focus-visible:outline-brown [&[aria-pressed=true]]:z-10 [&[aria-pressed=true]]:scale-150" style="left:72.82%;top:43.42%"><img src="assets/img/ban-do-diem-ban/marker.png" alt="" width="36" height="36" class="size-full max-w-none" /></button>
+            <button type="button" data-marker="hn-6" aria-label="Điểm bán Dzentic Hà Nội - điểm 6" class="absolute size-[35.5px] cursor-pointer rounded-full transition-transform duration-200 hover:scale-125 focus-visible:scale-125 focus-visible:outline-2 focus-visible:outline-brown [&[aria-pressed=true]]:z-10 [&[aria-pressed=true]]:scale-150" style="left:36.41%;top:68.42%"><img src="assets/img/ban-do-diem-ban/marker.png" alt="" width="36" height="36" class="size-full max-w-none" /></button>
+            <button type="button" data-marker="hn-7" aria-label="Điểm bán Dzentic Hà Nội - điểm 7" class="absolute size-[35.5px] cursor-pointer rounded-full transition-transform duration-200 hover:scale-125 focus-visible:scale-125 focus-visible:outline-2 focus-visible:outline-brown [&[aria-pressed=true]]:z-10 [&[aria-pressed=true]]:scale-150" style="left:84.95%;top:61.84%"><img src="assets/img/ban-do-diem-ban/marker.png" alt="" width="36" height="36" class="size-full max-w-none" /></button>
+          </div>
+          <div data-tab-panel="ho-chi-minh" class="absolute inset-0" hidden>
+            <button type="button" data-marker="hcm-1" aria-label="Điểm bán Dzentic Hồ Chí Minh - điểm 1" class="absolute size-[35.5px] cursor-pointer rounded-full transition-transform duration-200 hover:scale-125 focus-visible:scale-125 focus-visible:outline-2 focus-visible:outline-brown [&[aria-pressed=true]]:z-10 [&[aria-pressed=true]]:scale-150" style="left:24%;top:18%"><img src="assets/img/ban-do-diem-ban/marker.png" alt="" width="36" height="36" class="size-full max-w-none" /></button>
+            <button type="button" data-marker="hcm-2" aria-label="Điểm bán Dzentic Hồ Chí Minh - điểm 2" class="absolute size-[35.5px] cursor-pointer rounded-full transition-transform duration-200 hover:scale-125 focus-visible:scale-125 focus-visible:outline-2 focus-visible:outline-brown [&[aria-pressed=true]]:z-10 [&[aria-pressed=true]]:scale-150" style="left:52%;top:30%"><img src="assets/img/ban-do-diem-ban/marker.png" alt="" width="36" height="36" class="size-full max-w-none" /></button>
+            <button type="button" data-marker="hcm-3" aria-label="Điểm bán Dzentic Hồ Chí Minh - điểm 3" class="absolute size-[35.5px] cursor-pointer rounded-full transition-transform duration-200 hover:scale-125 focus-visible:scale-125 focus-visible:outline-2 focus-visible:outline-brown [&[aria-pressed=true]]:z-10 [&[aria-pressed=true]]:scale-150" style="left:35%;top:52%"><img src="assets/img/ban-do-diem-ban/marker.png" alt="" width="36" height="36" class="size-full max-w-none" /></button>
+            <button type="button" data-marker="hcm-4" aria-label="Điểm bán Dzentic Hồ Chí Minh - điểm 4" class="absolute size-[35.5px] cursor-pointer rounded-full transition-transform duration-200 hover:scale-125 focus-visible:scale-125 focus-visible:outline-2 focus-visible:outline-brown [&[aria-pressed=true]]:z-10 [&[aria-pressed=true]]:scale-150" style="left:68%;top:64%"><img src="assets/img/ban-do-diem-ban/marker.png" alt="" width="36" height="36" class="size-full max-w-none" /></button>
+          </div>
+          <div data-tab-panel="da-nang" class="absolute inset-0" hidden>
+            <button type="button" data-marker="dn-1" aria-label="Điểm bán Dzentic Đà Nẵng - điểm 1" class="absolute size-[35.5px] cursor-pointer rounded-full transition-transform duration-200 hover:scale-125 focus-visible:scale-125 focus-visible:outline-2 focus-visible:outline-brown [&[aria-pressed=true]]:z-10 [&[aria-pressed=true]]:scale-150" style="left:30%;top:22%"><img src="assets/img/ban-do-diem-ban/marker.png" alt="" width="36" height="36" class="size-full max-w-none" /></button>
+            <button type="button" data-marker="dn-2" aria-label="Điểm bán Dzentic Đà Nẵng - điểm 2" class="absolute size-[35.5px] cursor-pointer rounded-full transition-transform duration-200 hover:scale-125 focus-visible:scale-125 focus-visible:outline-2 focus-visible:outline-brown [&[aria-pressed=true]]:z-10 [&[aria-pressed=true]]:scale-150" style="left:58%;top:40%"><img src="assets/img/ban-do-diem-ban/marker.png" alt="" width="36" height="36" class="size-full max-w-none" /></button>
+            <button type="button" data-marker="dn-3" aria-label="Điểm bán Dzentic Đà Nẵng - điểm 3" class="absolute size-[35.5px] cursor-pointer rounded-full transition-transform duration-200 hover:scale-125 focus-visible:scale-125 focus-visible:outline-2 focus-visible:outline-brown [&[aria-pressed=true]]:z-10 [&[aria-pressed=true]]:scale-150" style="left:44%;top:62%"><img src="assets/img/ban-do-diem-ban/marker.png" alt="" width="36" height="36" class="size-full max-w-none" /></button>
+          </div>
+        <div class="absolute inset-x-3 bottom-3 z-[6] flex flex-col gap-4 bg-bg p-4 sm:flex-row sm:items-center sm:justify-between lg:inset-x-5 lg:bottom-5">
+          <div class="flex flex-col gap-2 text-text">
+            <p class="text-xl font-bold leading-7">Chưa có điểm gần bạn?</p>
+            <p class="text-base leading-[22px] tracking-[0.224px]">Để lại khu vực để Dzentic gợi ý kênh mua phù hợp.</p>
+          </div>
+          <a href="lien-he.html" class="inline-flex h-10 items-center justify-center gap-2 rounded-sm border border-navy px-6 text-base leading-[22px] tracking-[0.224px] text-navy hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown shrink-0">Dẫn đường<img src="assets/img/ban-do-diem-ban/icon-arrow-navy.svg" alt="" width="12" height="13" /></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION: Vì sao mua tại đối tác -->
+<section class="relative overflow-hidden bg-white py-16 lg:py-24" aria-labelledby="cam-ket-title">
+  <img src="assets/img/ban-do-diem-ban/rays.svg" alt="" width="549" height="1026" class="pointer-events-none absolute right-[-49px] top-[70px] hidden max-w-none lg:block" aria-hidden="true" />
+  <div class="max-w-site mx-auto px-4 md:px-8 xl:px-[72px] relative flex flex-col items-center gap-10">
+    <header class="flex flex-col items-center gap-4 text-center" data-aos="fade-up">
+      <p class="text-sm md:text-base leading-[22px] tracking-[4px] uppercase text-brown">Cam kết từ Dzentic</p>
+      <h2 id="cam-ket-title" class="uppercase text-3xl md:text-5xl leading-[1.4] tracking-[0.624px] text-brown-dark">Vì sao nên mua tại<br class="hidden md:block" /> đối tác được xác thực</h2>
+    </header>
+    <div class="grid w-full gap-8 lg:grid-cols-[1fr_1px_1fr_1px_1fr] lg:gap-6" data-aos="fade-up" data-aos-delay="100">
+      <article class="flex flex-col gap-5">
+        <img src="assets/img/ban-do-diem-ban/icon-feature-1.svg" alt="" width="40" height="40" class="size-10" />
+        <div class="flex flex-col gap-3"><h3 class="text-xl leading-7 text-navy">Sản phẩm chính hãng</h3><p class="text-base leading-[22px] tracking-[0.224px] text-gray-49">Mỗi sản phẩm có tem truy xuất nguồn gốc, phân phối trực tiếp từ Dzentic — không qua trung gian.</p></div>
+      </article>
+      <div class="hidden h-[165px] bg-gray-bb lg:block" aria-hidden="true"></div>
+      <article class="flex flex-col gap-5">
+        <img src="assets/img/ban-do-diem-ban/icon-feature-2.svg" alt="" width="40" height="40" class="size-10" />
+        <div class="flex flex-col gap-3"><h3 class="text-xl leading-7 text-navy">Tư vấn bởi chuyên gia</h3><p class="text-base leading-[22px] tracking-[0.224px] text-gray-49">Bác sĩ và dược sĩ tại điểm bán được đào tạo về hoạt chất và routine Dzentic để chọn đúng cho làn da bạn</p></div>
+      </article>
+      <div class="hidden h-[165px] bg-gray-bb lg:block" aria-hidden="true"></div>
+      <article class="flex flex-col gap-5">
+        <img src="assets/img/ban-do-diem-ban/icon-feature-3.svg" alt="" width="40" height="40" class="size-10" />
+        <div class="flex flex-col gap-3"><h3 class="text-xl leading-7 text-navy">Theo dõi kết quả</h3><p class="text-base leading-[22px] tracking-[0.224px] text-gray-49">Đặt lịch tái khám, soi da định kỳ và điều chỉnh routine sau 8–12 tuần sử dụng.</p></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION: Đăng ký đối tác -->
+<section class="relative overflow-hidden text-bg" aria-labelledby="dang-ky-title">
+  <img src="assets/img/ban-do-diem-ban/bg-doi-tac.jpg" alt="" width="1584" height="672" class="absolute inset-0 size-full object-cover" aria-hidden="true" />
+  <div class="absolute inset-0 bg-[rgba(80,40,11,0.75)]" aria-hidden="true"></div>
+  <div class="max-w-site mx-auto px-4 md:px-8 xl:px-[72px] relative grid gap-12 py-16 lg:grid-cols-[minmax(0,1fr)_520px] lg:items-center lg:gap-24 lg:py-24">
+    <div class="flex flex-col items-start gap-4">
+      <p class="text-sm md:text-base leading-[22px] tracking-[4px] uppercase text-bg opacity-80">Dành cho bác sĩ, phòng khám &amp; nhà thuốc</p>
+      <h2 id="dang-ky-title" class="uppercase text-3xl md:text-5xl leading-[1.4] tracking-[0.624px]">Trở thành đối tác<br class="hidden md:block" /> phân phối Dzentic</h2>
+      <p class="text-base leading-[22px] tracking-[0.224px]">Cùng Dzentic mang giải pháp da liễu chuẩn Nhật Bản đến gần hơn với khách hàng của bạn. Nhận đào tạo chuyên môn, tài liệu lâm sàng và chính sách giá dành riêng cho đối tác.</p>
+      <div class="flex flex-wrap gap-3 pt-4">
+        <a href="cong-chuyen-mon.html" class="inline-flex h-10 items-center justify-center gap-2 rounded-sm bg-bg px-6 text-base leading-[22px] tracking-[0.224px] text-navy hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-bg">Đăng ký hợp tác phân phối<img src="assets/img/ban-do-diem-ban/icon-arrow-navy.svg" alt="" width="12" height="13" /></a>
+        <a href="thu-vien-tai-lieu.html" class="inline-flex h-10 items-center justify-center gap-2 rounded-sm border border-bg px-6 text-base leading-[22px] tracking-[0.224px] text-bg hover:bg-bg/15 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-bg">Tải hồ sơ năng lực<img src="assets/img/ban-do-diem-ban/icon-arrow-light.svg" alt="" width="12" height="13" /></a>
+      </div>
+    </div>
+    <ol class="flex flex-col">
+      <li class="flex gap-6 py-6"><span class="text-[32px] leading-[1.4] tracking-[-0.512px] opacity-60">01</span><div class="flex flex-1 flex-col gap-1.5"><h3 class="text-xl font-medium leading-7">Gửi thông tin</h3><p class="text-sm leading-5 tracking-[0.14px] opacity-85">Điền form đăng ký kèm giấy phép hoạt động của cơ sở.</p></div></li>
+      <li class="flex gap-6 border-t border-bg py-6"><span class="text-[32px] leading-[1.4] tracking-[-0.512px] opacity-60">02</span><div class="flex flex-1 flex-col gap-1.5"><h3 class="text-xl font-medium leading-7">Xác minh &amp; đào tạo</h3><p class="text-sm leading-5 tracking-[0.14px] opacity-85">Dzentic thẩm định trong 5 ngày làm việc và đào tạo chuyên môn.</p></div></li>
+      <li class="flex gap-6 border-t border-bg py-6"><span class="text-[32px] leading-[1.4] tracking-[-0.512px] opacity-60">03</span><div class="flex flex-1 flex-col gap-1.5"><h3 class="text-xl font-medium leading-7">Lên bản đồ</h3><p class="text-sm leading-5 tracking-[0.14px] opacity-85">Cơ sở của bạn xuất hiện trên bản đồ với huy hiệu “Đối tác được xác thực”.</p></div></li>
+    </ol>
+  </div>
+</section>
+
+</main>
+<!-- SECTION: Footer -->
+<footer id="footer" class="bg-bg text-navy">
+  <div class="max-w-site mx-auto px-4 md:px-8 xl:px-[72px]">
+    <div class="grid gap-10 pt-12 pb-10 lg:grid-cols-[minmax(0,1fr)_auto] lg:gap-16 lg:pt-24 lg:pb-12">
+      <div>
+        <a href="index.html" class="block max-w-[507px] lg:ml-[9px] lg:mt-[7.4px] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown"><img src="assets/img/footer/logo-dzentic.webp" alt="Dzentic - A brand by Sorai Beauty Engine" width="507" height="157" class="block h-auto w-full" /></a>
+        <ul class="mt-6 lg:mt-[18.4px] flex items-center gap-2" aria-label="Mạng xã hội">
+          <li><a href="#" aria-label="Facebook" class="flex size-8 items-center justify-center rounded-sm border border-gray-bb transition hover:-translate-y-0.5 hover:border-brown hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown"><img src="assets/img/footer/icon-facebook.svg" alt="" width="16" height="18" /></a></li>
+          <li><a href="#" aria-label="Instagram" class="flex size-8 items-center justify-center rounded-sm border border-gray-bb transition hover:-translate-y-0.5 hover:border-brown hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown"><img src="assets/img/footer/icon-instagram.svg" alt="" width="16" height="18" /></a></li>
+          <li><a href="#" aria-label="TikTok" class="flex size-8 items-center justify-center rounded-sm border border-gray-bb transition hover:-translate-y-0.5 hover:border-brown hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown"><img src="assets/img/footer/icon-tiktok.svg" alt="" width="16" height="18" /></a></li>
+        </ul>
+      </div>
+
+      <div class="grid gap-8 sm:grid-cols-2 md:grid-cols-3 md:gap-0">
+        <nav class="md:w-[220px]" aria-label="Sản phẩm và dịch vụ">
+          <h3 class="text-xl leading-7 font-medium text-navy">Sản phẩm và dịch vụ</h3>
+          <ul class="mt-6 flex flex-col gap-[10px] text-base leading-[22px] tracking-[0.224px] text-gray-49">
+            <li><a href="san-pham.html" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Brightening Serum</a></li>
+            <li><a href="san-pham.html" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Repair Cream</a></li>
+            <li><a href="san-pham.html" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Hydrating Cream</a></li>
+            <li><a href="san-pham.html" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Cleansing Gel</a></li>
+            <li><a href="san-pham.html" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Sunscreen</a></li>
+          </ul>
+        </nav>
+        <nav class="md:w-[220px]" aria-label="Liên kết">
+          <h3 class="text-xl leading-7 font-medium text-navy">Liên kết</h3>
+          <ul class="mt-6 flex flex-col gap-[10px] text-base leading-[22px] tracking-[0.224px] text-gray-49">
+            <li><a href="routine-phac-do.html" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Giải Pháp Làn Da</a></li>
+            <li><a href="thu-vien-hoat-chat.html" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Khoa Học &amp; Bằng Chứng</a></li>
+            <li><a href="cau-chuyen-thuong-hieu.html" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Triết Lý Dzentic</a></li>
+            <li><a href="bai-viet.html" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Blog</a></li>
+            <li><a href="lien-he.html" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Liên hệ</a></li>
+          </ul>
+        </nav>
+        <div>
+          <h3 class="text-xl leading-7 font-medium text-navy">Liên hệ</h3>
+          <ul class="mt-6 flex flex-col gap-[10px] text-base leading-[22px] tracking-[0.224px] text-gray-49">
+            <li class="flex items-start gap-2"><img src="assets/img/footer/icon-phone.svg" alt="" width="20" height="20" class="shrink-0" /><a href="tel:15001515" class="hover:text-brown hover:underline focus-visible:text-brown focus-visible:underline">Hotline: 1500 1515</a></li>
+            <li class="flex items-start gap-2"><img src="assets/img/footer/icon-mobile.svg" alt="" width="20" height="21" class="shrink-0" /><a href="tel:+84123456789" class="hover:text-brown hover:underline focus-visible:text-brown focus-visible:underline">Điện thoại:<br />(+84) 123456789</a></li>
+            <li class="flex items-start gap-2"><img src="assets/img/footer/icon-pin.svg" alt="" width="20" height="21" class="shrink-0" /><a href="https://www.google.com/maps/search/?api=1&amp;query=T%E1%BA%A7ng+4+To%C3%A0+West+Tower%2C+365+%C4%91%C6%B0%E1%BB%9Dng+C%E1%BA%A7u+Gi%E1%BA%A5y%2C+H%C3%A0+N%E1%BB%99i" target="_blank" rel="noopener" class="lg:max-w-[169px] hover:text-brown hover:underline focus-visible:text-brown focus-visible:underline">Tầng 4 Toà West Tower, 365 đường Cầu Giấy, Hà Nội</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <hr class="border-0 h-px bg-gray-dd" />
+
+    <div class="flex flex-col gap-6 py-8 text-base leading-[22px] tracking-[0.224px] lg:flex-row lg:items-center lg:justify-between lg:pt-[39px] lg:pb-[55px]">
+      <ul class="flex flex-wrap gap-x-10 gap-y-2">
+        <li><a href="chinh-sach-bao-mat.html" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">An toàn &amp; Bảo mật</a></li>
+        <li><a href="#" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Điều khoản sử dụng</a></li>
+      </ul>
+      <div class="flex flex-col gap-4 sm:flex-row sm:items-center sm:gap-8">
+        <a href="#" class="block transition-opacity hover:opacity-80 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown"><img src="assets/img/footer/badge-bo-cong-thuong.webp" alt="Đã thông báo Bộ Công Thương" width="131" height="40" class="h-10 w-auto" /></a>
+        <p>© Bản quyền 2026 thuộc về Dzentic.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="assets/js/app.js"></script>
+<script>
+(function () {
+  var root = document.querySelector('[data-locator]');
+  if (!root) return;
+  var norm = function (s) { return String(s).normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/đ/g, 'd').replace(/Đ/g, 'D').toLowerCase(); };
+  var search = root.querySelector('[data-locator-search]');
+  var countEl = root.querySelector('[data-locator-count]');
+  var empty = root.querySelector('[data-locator-empty]');
+  var catTabs = [].slice.call(document.querySelectorAll('[data-cat]'));
+  var cat = 'all';
+  function apply() {
+    var q = norm(search.value.trim());
+    var cityBtn = root.querySelector('[data-tab][aria-selected="true"]');
+    var shown = 0;
+    [].forEach.call(root.querySelectorAll('[data-clinic]'), function (li) {
+      var ok = (cat === 'all' || li.dataset.type === cat) && (!q || norm(li.dataset.q).indexOf(q) > -1);
+      li.hidden = !ok;
+      var mk = root.querySelector('[data-marker="' + li.dataset.clinic + '"]');
+      if (mk) mk.hidden = !ok;
+      if (ok && li.closest('[data-tab-panel]') && !li.closest('[data-tab-panel]').hidden) shown++;
+    });
+    countEl.textContent = shown + ' địa điểm tại ' + (cityBtn ? cityBtn.dataset.city : '');
+    empty.hidden = shown > 0;
+  }
+  catTabs.forEach(function (b) {
+    b.addEventListener('click', function () {
+      cat = b.dataset.cat;
+      catTabs.forEach(function (x) { x.setAttribute('aria-selected', x === b ? 'true' : 'false'); });
+      apply();
+    });
+  });
+  search.addEventListener('input', apply);
+  root.addEventListener('click', function (e) { if (e.target.closest('[data-tab]')) requestAnimationFrame(apply); });
+  var locate = root.querySelector('[data-locate]');
+  var frame = root.querySelector('[data-map-frame]');
+  var back = root.querySelector('[data-map-reset]');
+  if (locate) locate.addEventListener('click', function () {
+    if (!navigator.geolocation) { search.focus(); return; }
+    navigator.geolocation.getCurrentPosition(function (p) {
+      frame.src = 'https://www.google.com/maps?q=' + encodeURIComponent('phòng khám da liễu') + '&ll=' + p.coords.latitude + ',' + p.coords.longitude + '&z=14&hl=vi&output=embed';
+      frame.hidden = false; back.hidden = false;
+    }, function () { search.focus(); });
+  });
+  apply();
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dzentic · Hồ sơ chuyên gia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/app.css">
+</head>
+<body>
+<!-- SECTION: topbar -->
+<section aria-label="Thông báo" class="bg-navy text-bg">
+  <p class="max-w-site mx-auto px-4 py-3 md:py-4 text-center text-sm md:text-base leading-[22px] tracking-[0.224px]">
+    Nhận ưu đãi giảm tới 10% và miễn phí vận chuyển cho tất cả các đơn hàng. Cam kết 100% sản phẩm chính hãng.
+  </p>
+</section>
+
+<header class="sticky top-0 z-50 border-b border-gray-ee bg-bg">
+    <div class="max-w-site mx-auto px-4 md:px-8 xl:px-[72px] h-20 xl:h-[120px] flex items-center justify-between xl:grid xl:grid-cols-[1fr_auto_1fr] xl:gap-6">
+      <nav class="hidden xl:flex items-center gap-6 text-base leading-[22px] tracking-[0.224px]" aria-label="Menu trái">
+        <a href="thu-vien-hoat-chat.html" class="hover:text-brown focus-visible:text-brown focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brown">Khoa Học &amp; Bằng Chứng</a>
+        <a href="san-pham.html" class="hover:text-brown focus-visible:text-brown focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brown">Sản Phẩm</a>
+      </nav>
+
+      <a href="index.html" class="block shrink-0 xl:justify-self-center hover:opacity-80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brown" aria-label="Dzentic - Trang chủ">
+        <img src="assets/img/hero/logo-dzentic.png" alt="Dzentic - A brand by Sorai Beauty Engine" width="920" height="276"
+             class="h-14 xl:h-[92px] w-auto object-contain">
+      </a>
+
+      <div class="flex items-center gap-6 xl:justify-self-end">
+        <nav class="hidden xl:flex items-center gap-6 text-base leading-[22px] tracking-[0.224px]" aria-label="Menu phải">
+          <a href="cau-chuyen-thuong-hieu.html" class="hover:text-brown focus-visible:text-brown focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brown">Triết Lí Dzentic</a>
+          <a href="routine-phac-do.html" class="hover:text-brown focus-visible:text-brown focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brown">Giải Pháp Làn Da</a>
+          <a href="lien-he.html" class="hover:text-brown focus-visible:text-brown focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brown">Liên Hệ</a>
+        </nav>
+        <div class="flex items-center gap-3 xl:gap-[14px]">
+          <a href="tim-kiem.html" class="hover:opacity-70 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brown" aria-label="Tìm kiếm"><img src="assets/img/hero/icon-search.svg" alt="" width="20" height="20"></a>
+          <a href="gio-hang.html" class="group flex items-center gap-2 xl:gap-0.5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brown" aria-label="Giỏ hàng">
+            <img src="assets/img/hero/icon-cart.svg" alt="" width="20" height="20" class="group-hover:opacity-70">
+            <span class="grid place-items-center size-5 rounded-[10px] bg-brown text-bg text-base leading-[22px] group-hover:bg-brown-dark">0</span>
+          </a>
+          <button type="button" data-menu-toggle class="xl:hidden ml-2 p-1 hover:text-brown focus-visible:text-brown focus-visible:outline focus-visible:outline-2 focus-visible:outline-brown" aria-label="Mở menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Menu mobile -->
+    <nav data-menu class="hidden xl:hidden bg-bg border-t border-gray-dd px-4 md:px-8 py-4 text-base" aria-label="Menu chính">
+      <ul class="flex flex-col gap-4">
+        <li><a href="thu-vien-hoat-chat.html" class="hover:text-brown focus-visible:text-brown">Khoa Học &amp; Bằng Chứng</a></li>
+        <li><a href="san-pham.html" class="hover:text-brown focus-visible:text-brown">Sản Phẩm</a></li>
+        <li><a href="cau-chuyen-thuong-hieu.html" class="hover:text-brown focus-visible:text-brown">Triết Lí Dzentic</a></li>
+        <li><a href="routine-phac-do.html" class="hover:text-brown focus-visible:text-brown">Giải Pháp Làn Da</a></li>
+        <li><a href="lien-he.html" class="hover:text-brown focus-visible:text-brown">Liên Hệ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<!-- SECTION: Subpage hero (dùng chung cho mọi trang con). Chỉ đổi breadcrumb, tiêu đề, mô tả. -->
+<section class="relative overflow-hidden bg-gradient-to-r from-bg to-[#f6eadf]">
+  <div class="pointer-events-none absolute inset-0 hidden lg:block" aria-hidden="true">
+    <div class="relative mx-auto h-full max-w-site">
+      <img src="assets/img/subhero/glow.svg" alt="" width="600" height="600" class="absolute left-[850px] top-[-20px] size-[600px] max-w-none">
+      <div class="absolute left-[830px] top-[-40px] size-[640px] opacity-[0.08]">
+        <img src="assets/img/subhero/rays-left.svg" alt="" class="absolute left-0 top-0 h-[640px] w-[342px] max-w-none">
+        <img src="assets/img/subhero/rays-right.svg" alt="" class="absolute left-[320px] top-0 h-[640px] w-[342px] max-w-none">
+      </div>
+      <img src="assets/img/subhero/sun-core.svg" alt="" width="150" height="150" class="absolute left-[1075px] top-[205px] size-[150px] max-w-none">
+    </div>
+  </div>
+  <div class="relative mx-auto max-w-site px-4 pb-10 pt-7 md:px-8 xl:px-[72px] lg:h-[280px] lg:pb-0">
+    <nav aria-label="Breadcrumb" class="flex flex-wrap items-center gap-2 text-sm leading-5 tracking-[0.14px]">
+      <a href="index.html" class="text-gray-66 hover:text-brown">Trang chủ</a>
+      <span class="text-gray-99" aria-hidden="true">/</span>
+      <a href="thu-vien-hoat-chat.html" class="text-gray-66 hover:text-brown">Khoa học &amp; Bằng chứng</a>
+      <span class="text-gray-99" aria-hidden="true">/</span>
+      <span class="text-navy" aria-current="page">Hồ sơ chuyên gia</span>
+    </nav>
+    <div class="mt-10 flex flex-col gap-4 lg:mt-[69px]">
+      <h1 class="text-3xl uppercase leading-[1.4] tracking-[0.624px] text-brown-dark md:text-5xl lg:max-w-[640px]">Hồ sơ chuyên gia</h1>
+      <p class="max-w-[560px] text-base leading-[22px] tracking-[0.224px] text-gray-66">Đội ngũ bác sĩ da liễu và nghiên cứu viên đồng hành cùng Dzentic từ công thức đến tư vấn.</p>
+    </div>
+  </div>
+</section>
+
+<main>
+<!-- SECTION: Chuyên gia nổi bật -->
+<section class="bg-bg py-16 md:py-24" aria-labelledby="chuyen-gia-noi-bat-title">
+  <div class="max-w-site mx-auto px-5 md:px-8 xl:px-[72px]">
+    <article class="flex flex-col gap-8 rounded-md border border-gray-bb p-4 sm:p-5 lg:flex-row lg:items-center lg:gap-[86px]" data-aos="fade-up">
+      <img src="assets/img/ho-so-chuyen-gia/bs-ngo-hanh.jpg" alt="Bác sĩ Ngô Hạnh mặc áo blouse trắng, đeo ống nghe" width="1058" height="1638" class="h-[480px] w-full shrink-0 rounded-md object-cover md:h-[640px] lg:h-[819px] lg:w-[529px]">
+      <div class="flex flex-col gap-10 lg:w-[573px] lg:shrink-0">
+        <div class="flex flex-col gap-8">
+          <div class="flex flex-col gap-3 uppercase text-navy">
+            <p class="text-base leading-[22px] tracking-[4px]">Cố vấn chuyên môn chính</p>
+            <h2 id="chuyen-gia-noi-bat-title" class="text-3xl md:text-5xl leading-[1.4] tracking-[0.624px]">bs. Ngô Hạnh</h2>
+          </div>
+          <p class="text-base leading-[22px] tracking-[0.224px] text-gray-66">Thạc Sĩ - Bác sĩ nội trú chuyên ngành Da liễu Hơn 10 năm kinh nghiêm trong điều trị và tư vấn các vấn đề da liễu lâm sàng, da nhạy cảm.</p>
+        </div>
+        <div class="flex flex-col gap-6">
+          <div class="flex flex-col gap-5">
+            <div class="h-px bg-gray-bb"></div>
+            <p class="text-base leading-[22px] tracking-[4px] uppercase text-brown">Kinh Nghiệm Làm Việc</p>
+          </div>
+          <ul class="flex flex-col gap-6 sm:flex-row">
+            <li class="flex flex-col gap-2 sm:flex-1"><p class="text-xl font-medium leading-7 text-navy">2020-2023</p><p class="text-base leading-[22px] tracking-[0.224px] text-gray-66">Bác sĩ nội trú tại bệnh viện Da liễu trung ương</p></li>
+            <li class="flex flex-col gap-2 sm:flex-1"><p class="text-xl font-medium leading-7 text-navy">2024-Nay</p><p class="text-base leading-[22px] tracking-[0.224px] text-gray-66">Bác sĩ khoa Da liễu thẩm mỹ - Bệnh viện Da liễu Hà Nội</p></li>
+          </ul>
+        </div>
+        <div class="flex flex-col gap-6">
+          <p class="text-base leading-[22px] tracking-[4px] uppercase text-brown">học vấn và đào tạo</p>
+          <ul class="flex list-disc flex-col gap-1 pl-6 text-base leading-[22px] tracking-[0.224px] text-gray-66 marker:text-gray-66">
+<li>Tốt nghiệp bằng giỏi Bác sĩ đa khoa - Đại học Y Hà Nội</li>
+<li>Á khoa Bác sĩ nội trú chuyên ngành Da Liễu - Đại học Y Hà Nội</li>
+<li>Tốt nghiệp xuất sắc Thạc sĩ chuyên ngành Da liễu - Đại học Y Hà Nội</li>
+<li>Nghiên cứu sinh tiến sĩ Quản lý y tế</li>
+          </ul>
+        </div>
+        <div class="flex flex-col gap-6">
+          <p class="text-base leading-[22px] tracking-[4px] uppercase text-brown">hoạt động chuyên môn</p>
+          <ul class="flex list-disc flex-col gap-1 pl-6 text-base leading-[22px] tracking-[0.224px] text-gray-66 marker:text-gray-66">
+<li>Thành viên Hội Da liễu Việt Nam</li>
+<li>Giảng viên thỉnh giảng bộ môn Da liễu - Học viện Y dược học Cổ truyền Việt Nam</li>
+<li>Báo cáo viên các Hội nghị Da liễu trong nước và quốc tế</li>
+<li>Founder Da liễu An Bình và Da liễu thẩm mỹ Bs. Ngô Hạnh</li>
+          </ul>
+        </div>
+        <div class="flex flex-wrap gap-3">
+          <a href="chi-tiet-chuyen-gia.html" class="group inline-flex h-10 items-center gap-2 rounded-sm bg-brown px-6 text-base leading-[22px] tracking-[0.224px] text-bg whitespace-nowrap hover:bg-brown-dark focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy">Xem hồ sơ chi tiết<img src="assets/img/ho-so-chuyen-gia/arrow-light.svg" alt="" width="12" height="13" class="transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"></a>
+          <a href="lien-he.html" class="group inline-flex h-10 items-center gap-2 rounded-sm border border-brown px-6 text-base leading-[22px] tracking-[0.224px] text-brown whitespace-nowrap hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy">Đặt lịch tư vấn</a>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- SECTION: Đội ngũ chuyên gia (bộ lọc JS thuần) -->
+<section class="bg-white py-16 md:py-24" aria-labelledby="doi-ngu-title">
+  <div class="max-w-site mx-auto px-5 md:px-8 xl:px-[72px] flex flex-col gap-10">
+    <header class="flex flex-col gap-3" data-aos="fade-up">
+      <p class="text-base leading-[22px] tracking-[4px] uppercase text-brown">Đội ngũ chuyên gia</p>
+      <h2 id="doi-ngu-title" class="text-3xl md:text-5xl leading-[1.4] tracking-[0.624px] uppercase text-brown-dark">Bác sĩ &amp; nghiên cứu viên</h2>
+    </header>
+    <div role="tablist" aria-label="Bộ lọc" data-filter-tabs="doi-ngu-grid" class="flex flex-wrap gap-x-6 gap-y-4 md:gap-x-10">
+          <button type="button" role="tab" data-filter="all" aria-selected="true" tabindex="0" class="border-b border-gray-bb px-2 pb-2 text-lg leading-7 text-gray-99 hover:text-navy aria-selected:border-navy aria-selected:text-navy md:text-xl focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy">Tất cả</button>
+          <button type="button" role="tab" data-filter="bac-si" aria-selected="false" tabindex="-1" class="border-b border-gray-bb px-2 pb-2 text-lg leading-7 text-gray-99 hover:text-navy aria-selected:border-navy aria-selected:text-navy md:text-xl focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy">Bác sĩ da liễu</button>
+          <button type="button" role="tab" data-filter="nghien-cuu" aria-selected="false" tabindex="-1" class="border-b border-gray-bb px-2 pb-2 text-lg leading-7 text-gray-99 hover:text-navy aria-selected:border-navy aria-selected:text-navy md:text-xl focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy">Nghiên cứu viên</button>
+          <button type="button" role="tab" data-filter="duoc-si" aria-selected="false" tabindex="-1" class="border-b border-gray-bb px-2 pb-2 text-lg leading-7 text-gray-99 hover:text-navy aria-selected:border-navy aria-selected:text-navy md:text-xl focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy">Dược sĩ</button>
+        </div>
+    <ul id="doi-ngu-grid" class="grid grid-cols-1 gap-x-6 gap-y-12 md:grid-cols-2 lg:grid-cols-3">
+      <li>
+        <article class="group flex h-full flex-col items-start gap-5" data-cat="bac-si">
+          <a href="chi-tiet-chuyen-gia.html" class="relative block h-[420px] w-full overflow-hidden rounded-md bg-brown-50 sm:h-[480px] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy" aria-label="BS. Ngô Hạnh">
+            <div class="pointer-events-none absolute left-[-52px] top-[260px]" style="width:520px;height:520px" aria-hidden="true"><div class="absolute left-0 top-0 size-[640px] origin-top-left opacity-12" style="transform:scale(0.8125)"><div class="absolute left-0 top-0 h-[640px] w-[320px]"><span class="absolute inset-[0_-7.04%_0_0]"><img src="assets/img/ho-so-chuyen-gia/rays-left-half.svg" alt="" class="block size-full max-w-none"></span></div><div class="absolute left-[320px] top-0 h-[640px] w-[320px]"><span class="absolute inset-[0_0_0_-6.62%]"><img src="assets/img/ho-so-chuyen-gia/rays-right-half.svg" alt="" class="block size-full max-w-none"></span></div></div></div>
+            <img src="assets/img/ho-so-chuyen-gia/bs-ngo-hanh.jpg" alt="BS. Ngô Hạnh" width="1058" height="1638" class="absolute inset-0 size-full object-cover transition-transform duration-500 group-hover:scale-[1.03]" loading="lazy">
+          </a>
+          <div class="flex w-full flex-col items-start gap-2">
+            <p class="text-sm leading-5 tracking-[0.14px] text-navy">Bác sĩ da liễu · Cố vấn chính</p>
+            <h3 class="text-xl font-medium leading-7 text-navy transition-colors group-hover:text-brown">BS. Ngô Hạnh</h3>
+            <p class="text-base leading-[22px] tracking-[0.224px] text-gray-66">Thạc sĩ, Bác sĩ nội trú Da liễu · Bệnh viện Da liễu Hà Nội</p>
+            <span class="rounded-sm bg-gray-ee px-2.5 py-1 text-xs leading-4 text-gray-49">Nám &amp; da nhạy cảm</span>
+          </div>
+          <a href="chi-tiet-chuyen-gia.html" class="group inline-flex h-10 items-center gap-2 rounded-sm border border-brown px-6 text-base leading-[22px] tracking-[0.224px] text-brown whitespace-nowrap hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy">Xem hồ sơ chi tiết<img src="assets/img/ho-so-chuyen-gia/arrow-brown.svg" alt="" width="12" height="13" class="transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"></a>
+        </article>
+      </li>
+      <li>
+        <article class="group flex h-full flex-col items-start gap-5" data-cat="bac-si">
+          <a href="chi-tiet-chuyen-gia.html" class="relative block h-[420px] w-full overflow-hidden rounded-md bg-brown-50 sm:h-[480px] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy" aria-label="BS. Lê Đức">
+            <div class="pointer-events-none absolute left-[-52px] top-[260px]" style="width:520px;height:520px" aria-hidden="true"><div class="absolute left-0 top-0 size-[640px] origin-top-left opacity-12" style="transform:scale(0.8125)"><div class="absolute left-0 top-0 h-[640px] w-[320px]"><span class="absolute inset-[0_-7.04%_0_0]"><img src="assets/img/ho-so-chuyen-gia/rays-left-half.svg" alt="" class="block size-full max-w-none"></span></div><div class="absolute left-[320px] top-0 h-[640px] w-[320px]"><span class="absolute inset-[0_0_0_-6.62%]"><img src="assets/img/ho-so-chuyen-gia/rays-right-half.svg" alt="" class="block size-full max-w-none"></span></div></div></div>
+            <img src="assets/img/ho-so-chuyen-gia/bs-le-duc.jpg" alt="BS. Lê Đức" width="392" height="478" class="absolute inset-0 size-full object-cover transition-transform duration-500 group-hover:scale-[1.03]" loading="lazy">
+          </a>
+          <div class="flex w-full flex-col items-start gap-2">
+            <p class="text-sm leading-5 tracking-[0.14px] text-navy">Bác sĩ da liễu</p>
+            <h3 class="text-xl font-medium leading-7 text-navy transition-colors group-hover:text-brown">BS. Lê Đức</h3>
+            <p class="text-base leading-[22px] tracking-[0.224px] text-gray-66">Bác sĩ CKI Da liễu · 10+ năm kinh nghiệm lâm sàng</p>
+            <span class="rounded-sm bg-gray-ee px-2.5 py-1 text-xs leading-4 text-gray-49">Mụn &amp; phục hồi hàng rào da</span>
+          </div>
+          <a href="chi-tiet-chuyen-gia.html" class="group inline-flex h-10 items-center gap-2 rounded-sm border border-brown px-6 text-base leading-[22px] tracking-[0.224px] text-brown whitespace-nowrap hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy">Xem hồ sơ chi tiết<img src="assets/img/ho-so-chuyen-gia/arrow-brown.svg" alt="" width="12" height="13" class="transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"></a>
+        </article>
+      </li>
+      <li>
+        <article class="group flex h-full flex-col items-start gap-5" data-cat="nghien-cuu">
+          <a href="chi-tiet-chuyen-gia.html" class="relative block h-[420px] w-full overflow-hidden rounded-md bg-brown-50 sm:h-[480px] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy" aria-label="ThS. Nguyễn Minh Thư">
+            <div class="pointer-events-none absolute left-[-52px] top-[260px]" style="width:520px;height:520px" aria-hidden="true"><div class="absolute left-0 top-0 size-[640px] origin-top-left opacity-12" style="transform:scale(0.8125)"><div class="absolute left-0 top-0 h-[640px] w-[320px]"><span class="absolute inset-[0_-7.04%_0_0]"><img src="assets/img/ho-so-chuyen-gia/rays-left-half.svg" alt="" class="block size-full max-w-none"></span></div><div class="absolute left-[320px] top-0 h-[640px] w-[320px]"><span class="absolute inset-[0_0_0_-6.62%]"><img src="assets/img/ho-so-chuyen-gia/rays-right-half.svg" alt="" class="block size-full max-w-none"></span></div></div></div>
+            <img src="assets/img/ho-so-chuyen-gia/bs-ngo-hanh.jpg" alt="ThS. Nguyễn Minh Thư" width="1058" height="1638" class="absolute inset-0 size-full object-cover transition-transform duration-500 group-hover:scale-[1.03]" loading="lazy">
+          </a>
+          <div class="flex w-full flex-col items-start gap-2">
+            <p class="text-sm leading-5 tracking-[0.14px] text-navy">Nghiên cứu viên</p>
+            <h3 class="text-xl font-medium leading-7 text-navy transition-colors group-hover:text-brown">ThS. Nguyễn Minh Thư</h3>
+            <p class="text-base leading-[22px] tracking-[0.224px] text-gray-66">Thạc sĩ Hoá dược · Phụ trách phát triển công thức</p>
+            <span class="rounded-sm bg-gray-ee px-2.5 py-1 text-xs leading-4 text-gray-49">Hoạt chất &amp; độ ổn định</span>
+          </div>
+          <a href="chi-tiet-chuyen-gia.html" class="group inline-flex h-10 items-center gap-2 rounded-sm border border-brown px-6 text-base leading-[22px] tracking-[0.224px] text-brown whitespace-nowrap hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy">Xem hồ sơ chi tiết<img src="assets/img/ho-so-chuyen-gia/arrow-brown.svg" alt="" width="12" height="13" class="transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"></a>
+        </article>
+      </li>
+      <li>
+        <article class="group flex h-full flex-col items-start gap-5" data-cat="nghien-cuu">
+          <a href="chi-tiet-chuyen-gia.html" class="relative block h-[420px] w-full overflow-hidden rounded-md bg-brown-50 sm:h-[480px] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy" aria-label="TS. Trần Quốc Bảo">
+            <div class="pointer-events-none absolute left-[-52px] top-[260px]" style="width:520px;height:520px" aria-hidden="true"><div class="absolute left-0 top-0 size-[640px] origin-top-left opacity-12" style="transform:scale(0.8125)"><div class="absolute left-0 top-0 h-[640px] w-[320px]"><span class="absolute inset-[0_-7.04%_0_0]"><img src="assets/img/ho-so-chuyen-gia/rays-left-half.svg" alt="" class="block size-full max-w-none"></span></div><div class="absolute left-[320px] top-0 h-[640px] w-[320px]"><span class="absolute inset-[0_0_0_-6.62%]"><img src="assets/img/ho-so-chuyen-gia/rays-right-half.svg" alt="" class="block size-full max-w-none"></span></div></div></div>
+            <img src="assets/img/ho-so-chuyen-gia/bs-le-duc.jpg" alt="TS. Trần Quốc Bảo" width="392" height="478" class="absolute inset-0 size-full object-cover transition-transform duration-500 group-hover:scale-[1.03]" loading="lazy">
+          </a>
+          <div class="flex w-full flex-col items-start gap-2">
+            <p class="text-sm leading-5 tracking-[0.14px] text-navy">Nghiên cứu viên</p>
+            <h3 class="text-xl font-medium leading-7 text-navy transition-colors group-hover:text-brown">TS. Trần Quốc Bảo</h3>
+            <p class="text-base leading-[22px] tracking-[0.224px] text-gray-66">Tiến sĩ Sinh học da · Nghiên cứu sau tiến sĩ tại Nhật Bản</p>
+            <span class="rounded-sm bg-gray-ee px-2.5 py-1 text-xs leading-4 text-gray-49">Chống nắng &amp; ánh sáng xanh</span>
+          </div>
+          <a href="chi-tiet-chuyen-gia.html" class="group inline-flex h-10 items-center gap-2 rounded-sm border border-brown px-6 text-base leading-[22px] tracking-[0.224px] text-brown whitespace-nowrap hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy">Xem hồ sơ chi tiết<img src="assets/img/ho-so-chuyen-gia/arrow-brown.svg" alt="" width="12" height="13" class="transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"></a>
+        </article>
+      </li>
+      <li>
+        <article class="group flex h-full flex-col items-start gap-5" data-cat="bac-si">
+          <a href="chi-tiet-chuyen-gia.html" class="relative block h-[420px] w-full overflow-hidden rounded-md bg-brown-50 sm:h-[480px] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy" aria-label="BS. Phạm Thu Hà">
+            <div class="pointer-events-none absolute left-[-52px] top-[260px]" style="width:520px;height:520px" aria-hidden="true"><div class="absolute left-0 top-0 size-[640px] origin-top-left opacity-12" style="transform:scale(0.8125)"><div class="absolute left-0 top-0 h-[640px] w-[320px]"><span class="absolute inset-[0_-7.04%_0_0]"><img src="assets/img/ho-so-chuyen-gia/rays-left-half.svg" alt="" class="block size-full max-w-none"></span></div><div class="absolute left-[320px] top-0 h-[640px] w-[320px]"><span class="absolute inset-[0_0_0_-6.62%]"><img src="assets/img/ho-so-chuyen-gia/rays-right-half.svg" alt="" class="block size-full max-w-none"></span></div></div></div>
+            <img src="assets/img/ho-so-chuyen-gia/bs-ngo-hanh.jpg" alt="BS. Phạm Thu Hà" width="1058" height="1638" class="absolute inset-0 size-full object-cover transition-transform duration-500 group-hover:scale-[1.03]" loading="lazy">
+          </a>
+          <div class="flex w-full flex-col items-start gap-2">
+            <p class="text-sm leading-5 tracking-[0.14px] text-navy">Bác sĩ da liễu</p>
+            <h3 class="text-xl font-medium leading-7 text-navy transition-colors group-hover:text-brown">BS. Phạm Thu Hà</h3>
+            <p class="text-base leading-[22px] tracking-[0.224px] text-gray-66">Bác sĩ nội trú Da liễu · Bệnh viện Da liễu TP.HCM</p>
+            <span class="rounded-sm bg-gray-ee px-2.5 py-1 text-xs leading-4 text-gray-49">Mụn viêm &amp; sẹo</span>
+          </div>
+          <a href="chi-tiet-chuyen-gia.html" class="group inline-flex h-10 items-center gap-2 rounded-sm border border-brown px-6 text-base leading-[22px] tracking-[0.224px] text-brown whitespace-nowrap hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy">Xem hồ sơ chi tiết<img src="assets/img/ho-so-chuyen-gia/arrow-brown.svg" alt="" width="12" height="13" class="transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"></a>
+        </article>
+      </li>
+      <li>
+        <article class="group flex h-full flex-col items-start gap-5" data-cat="duoc-si">
+          <a href="chi-tiet-chuyen-gia.html" class="relative block h-[420px] w-full overflow-hidden rounded-md bg-brown-50 sm:h-[480px] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy" aria-label="DS. Trần Minh Anh">
+            <div class="pointer-events-none absolute left-[-52px] top-[260px]" style="width:520px;height:520px" aria-hidden="true"><div class="absolute left-0 top-0 size-[640px] origin-top-left opacity-12" style="transform:scale(0.8125)"><div class="absolute left-0 top-0 h-[640px] w-[320px]"><span class="absolute inset-[0_-7.04%_0_0]"><img src="assets/img/ho-so-chuyen-gia/rays-left-half.svg" alt="" class="block size-full max-w-none"></span></div><div class="absolute left-[320px] top-0 h-[640px] w-[320px]"><span class="absolute inset-[0_0_0_-6.62%]"><img src="assets/img/ho-so-chuyen-gia/rays-right-half.svg" alt="" class="block size-full max-w-none"></span></div></div></div>
+            <img src="assets/img/ho-so-chuyen-gia/bs-le-duc.jpg" alt="DS. Trần Minh Anh" width="392" height="478" class="absolute inset-0 size-full object-cover transition-transform duration-500 group-hover:scale-[1.03]" loading="lazy">
+          </a>
+          <div class="flex w-full flex-col items-start gap-2">
+            <p class="text-sm leading-5 tracking-[0.14px] text-navy">Dược sĩ tư vấn</p>
+            <h3 class="text-xl font-medium leading-7 text-navy transition-colors group-hover:text-brown">DS. Trần Minh Anh</h3>
+            <p class="text-base leading-[22px] tracking-[0.224px] text-gray-66">Dược sĩ đại học · Phụ trách đào tạo đối tác</p>
+            <span class="rounded-sm bg-gray-ee px-2.5 py-1 text-xs leading-4 text-gray-49">Routine &amp; kết hợp hoạt chất</span>
+          </div>
+          <a href="chi-tiet-chuyen-gia.html" class="group inline-flex h-10 items-center gap-2 rounded-sm border border-brown px-6 text-base leading-[22px] tracking-[0.224px] text-brown whitespace-nowrap hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy">Xem hồ sơ chi tiết<img src="assets/img/ho-so-chuyen-gia/arrow-brown.svg" alt="" width="12" height="13" class="transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"></a>
+        </article>
+      </li>
+    </ul>
+    <p data-empty="doi-ngu-grid" hidden class="text-base text-gray-66">Chưa có chuyên gia trong nhóm này.</p>
+  </div>
+</section>
+
+<!-- SECTION: Cách chuyên gia đồng hành -->
+<section class="bg-bg py-16 md:py-24" aria-labelledby="vai-tro-title">
+  <div class="max-w-site mx-auto px-5 md:px-8 xl:px-[72px] flex flex-col gap-12">
+    <header class="flex flex-col gap-3" data-aos="fade-up">
+      <p class="text-base leading-[22px] tracking-[4px] uppercase text-brown">Vai trò của hội đồng chuyên môn</p>
+      <h2 id="vai-tro-title" class="text-3xl md:text-5xl leading-[1.4] tracking-[0.624px] uppercase text-brown-dark">Từ công thức đến lời khuyên cho bạn</h2>
+    </header>
+    <ul class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4 lg:gap-6">
+      <li class="flex flex-col gap-5" data-aos="fade-up" data-aos-delay="0">
+        <span class="relative block size-10" aria-hidden="true"><span class="absolute inset-[10%_35%_10%_13.66%]"><span class="absolute inset-[-2.5%_-3.9%]"><img src="assets/img/ho-so-chuyen-gia/pr-1.svg" alt="" class="block size-full max-w-none"></span></span><span class="absolute inset-[52.5%_7.5%_7.5%_52.5%]"><span class="absolute inset-[-5%]"><img src="assets/img/ho-so-chuyen-gia/pr-2.svg" alt="" class="block size-full max-w-none"></span></span></span>
+        <div class="flex flex-col gap-3">
+          <h3 class="text-xl leading-7 text-navy">Thẩm định công thức</h3>
+          <p class="text-base leading-[22px] tracking-[0.224px] text-gray-49">Rà soát nồng độ, độ tương thích và mức độ dịu nhẹ của từng hoạt chất trước khi ra mắt.</p>
+        </div>
+      </li>
+      <li class="flex flex-col gap-5" data-aos="fade-up" data-aos-delay="100">
+        <span class="relative block size-10" aria-hidden="true"><span class="absolute inset-[10%_20%_10%_17.5%]"><span class="absolute inset-[-2.5%_-3.2%]"><img src="assets/img/ho-so-chuyen-gia/pr-3.svg" alt="" class="block size-full max-w-none"></span></span><span class="absolute inset-[50%_7.5%_7.5%_50%]"><span class="absolute inset-[-4.71%]"><img src="assets/img/ho-so-chuyen-gia/pr-4.svg" alt="" class="block size-full max-w-none"></span></span></span>
+        <div class="flex flex-col gap-3">
+          <h3 class="text-xl leading-7 text-navy">Kiểm chứng bằng chứng</h3>
+          <p class="text-base leading-[22px] tracking-[0.224px] text-gray-49">Đối chiếu tuyên bố sản phẩm với nghiên cứu lâm sàng và tài liệu khoa học được công bố.</p>
+        </div>
+      </li>
+      <li class="flex flex-col gap-5" data-aos="fade-up" data-aos-delay="200">
+        <span class="relative block size-10" aria-hidden="true"><span class="absolute inset-[7.5%_7.5%_35%_7.5%]"><span class="absolute inset-[-3.48%_-2.35%]"><img src="assets/img/ho-so-chuyen-gia/pr-5.svg" alt="" class="block size-full max-w-none"></span></span><span class="absolute inset-[58.75%_2.44%_5%_40%]"><span class="absolute inset-[-5.52%_-3.47%]"><img src="assets/img/ho-so-chuyen-gia/pr-6.svg" alt="" class="block size-full max-w-none"></span></span></span>
+        <div class="flex flex-col gap-3">
+          <h3 class="text-xl leading-7 text-navy">Đào tạo đối tác</h3>
+          <p class="text-base leading-[22px] tracking-[0.224px] text-gray-49">Đào tạo bác sĩ, dược sĩ tại điểm bán để tư vấn routine đúng với tình trạng da.</p>
+        </div>
+      </li>
+      <li class="flex flex-col gap-5" data-aos="fade-up" data-aos-delay="300">
+        <span class="relative block size-10" aria-hidden="true"><span class="absolute inset-[15%_7.5%_10%_7.5%]"><span class="absolute inset-[-2.67%_-2.35%]"><img src="assets/img/ho-so-chuyen-gia/pr-7.svg" alt="" class="block size-full max-w-none"></span></span><span class="absolute inset-[0_10%_45%_55%]"><span class="absolute inset-[-3.64%_-5.71%]"><img src="assets/img/ho-so-chuyen-gia/pr-8.svg" alt="" class="block size-full max-w-none"></span></span></span>
+        <div class="flex flex-col gap-3">
+          <h3 class="text-xl leading-7 text-navy">Chia sẻ kiến thức</h3>
+          <p class="text-base leading-[22px] tracking-[0.224px] text-gray-49">Viết và kiểm duyệt bài viết da liễu dễ hiểu, chuẩn khoa học cho cộng đồng.</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- SECTION: CTA tư vấn chuyên gia -->
+<section class="relative isolate overflow-hidden bg-brown-dark py-16 md:py-24 lg:py-[120px]" aria-labelledby="cta-tu-van-title">
+  <div class="pointer-events-none absolute inset-0 -z-10" aria-hidden="true">
+    <div class="absolute inset-0 overflow-hidden"><img src="assets/img/ho-so-chuyen-gia/cta-bg.jpg" alt="" width="1584" height="672" class="absolute inset-y-0 right-0 h-full w-auto max-w-none lg:left-[17.74%] lg:right-auto lg:w-[86.76%]"></div>
+    <div class="absolute inset-0 bg-[#5e371a]/60 lg:hidden"></div>
+    <div class="absolute inset-0 hidden bg-gradient-to-l from-[rgba(94,55,26,0)] to-[#5e371a] to-[56.15%] lg:block"></div>
+  </div>
+  <div class="max-w-site mx-auto px-5 md:px-8 xl:px-[72px] flex flex-col items-start gap-6" data-aos="fade-up">
+    <p class="text-base leading-[22px] tracking-[4px] uppercase text-bg opacity-80">Tư vấn 1:1 miễn phí</p>
+    <h2 id="cta-tu-van-title" class="text-3xl md:text-5xl leading-[1.4] tracking-[0.624px] uppercase text-bg">Đặt lịch tư vấn<br>cùng chuyên gia Dzentic</h2>
+    <p class="max-w-[900px] text-base leading-[22px] tracking-[0.224px] text-bg opacity-85">Bác sĩ phân tích tình trạng da và đề xuất routine phù hợp, tại phòng khám đối tác hoặc trực tuyến.</p>
+    <a href="lien-he.html" class="group inline-flex h-10 items-center gap-2 rounded-sm bg-bg px-6 text-base leading-[22px] tracking-[0.224px] text-navy whitespace-nowrap hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-bg">Đặt lịch tư vấn<img src="assets/img/ho-so-chuyen-gia/arrow-navy.svg" alt="" width="12" height="13" class="transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"></a>
+  </div>
+</section>
+</main>
+<!-- SECTION: Footer -->
+<footer id="footer" class="bg-bg text-navy">
+  <div class="max-w-site mx-auto px-4 md:px-8 xl:px-[72px]">
+    <div class="grid gap-10 pt-12 pb-10 lg:grid-cols-[minmax(0,1fr)_auto] lg:gap-16 lg:pt-24 lg:pb-12">
+      <div>
+        <a href="index.html" class="block max-w-[507px] lg:ml-[9px] lg:mt-[7.4px] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown"><img src="assets/img/footer/logo-dzentic.webp" alt="Dzentic - A brand by Sorai Beauty Engine" width="507" height="157" class="block h-auto w-full" /></a>
+        <ul class="mt-6 lg:mt-[18.4px] flex items-center gap-2" aria-label="Mạng xã hội">
+          <li><a href="#" aria-label="Facebook" class="flex size-8 items-center justify-center rounded-sm border border-gray-bb transition hover:-translate-y-0.5 hover:border-brown hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown"><img src="assets/img/footer/icon-facebook.svg" alt="" width="16" height="18" /></a></li>
+          <li><a href="#" aria-label="Instagram" class="flex size-8 items-center justify-center rounded-sm border border-gray-bb transition hover:-translate-y-0.5 hover:border-brown hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown"><img src="assets/img/footer/icon-instagram.svg" alt="" width="16" height="18" /></a></li>
+          <li><a href="#" aria-label="TikTok" class="flex size-8 items-center justify-center rounded-sm border border-gray-bb transition hover:-translate-y-0.5 hover:border-brown hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown"><img src="assets/img/footer/icon-tiktok.svg" alt="" width="16" height="18" /></a></li>
+        </ul>
+      </div>
+
+      <div class="grid gap-8 sm:grid-cols-2 md:grid-cols-3 md:gap-0">
+        <nav class="md:w-[220px]" aria-label="Sản phẩm và dịch vụ">
+          <h3 class="text-xl leading-7 font-medium text-navy">Sản phẩm và dịch vụ</h3>
+          <ul class="mt-6 flex flex-col gap-[10px] text-base leading-[22px] tracking-[0.224px] text-gray-49">
+            <li><a href="san-pham.html" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Brightening Serum</a></li>
+            <li><a href="san-pham.html" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Repair Cream</a></li>
+            <li><a href="san-pham.html" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Hydrating Cream</a></li>
+            <li><a href="san-pham.html" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Cleansing Gel</a></li>
+            <li><a href="san-pham.html" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Sunscreen</a></li>
+          </ul>
+        </nav>
+        <nav class="md:w-[220px]" aria-label="Liên kết">
+          <h3 class="text-xl leading-7 font-medium text-navy">Liên kết</h3>
+          <ul class="mt-6 flex flex-col gap-[10px] text-base leading-[22px] tracking-[0.224px] text-gray-49">
+            <li><a href="routine-phac-do.html" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Giải Pháp Làn Da</a></li>
+            <li><a href="thu-vien-hoat-chat.html" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Khoa Học &amp; Bằng Chứng</a></li>
+            <li><a href="cau-chuyen-thuong-hieu.html" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Triết Lý Dzentic</a></li>
+            <li><a href="bai-viet.html" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Blog</a></li>
+            <li><a href="lien-he.html" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Liên hệ</a></li>
+          </ul>
+        </nav>
+        <div>
+          <h3 class="text-xl leading-7 font-medium text-navy">Liên hệ</h3>
+          <ul class="mt-6 flex flex-col gap-[10px] text-base leading-[22px] tracking-[0.224px] text-gray-49">
+            <li class="flex items-start gap-2"><img src="assets/img/footer/icon-phone.svg" alt="" width="20" height="20" class="shrink-0" /><a href="tel:15001515" class="hover:text-brown hover:underline focus-visible:text-brown focus-visible:underline">Hotline: 1500 1515</a></li>
+            <li class="flex items-start gap-2"><img src="assets/img/footer/icon-mobile.svg" alt="" width="20" height="21" class="shrink-0" /><a href="tel:+84123456789" class="hover:text-brown hover:underline focus-visible:text-brown focus-visible:underline">Điện thoại:<br />(+84) 123456789</a></li>
+            <li class="flex items-start gap-2"><img src="assets/img/footer/icon-pin.svg" alt="" width="20" height="21" class="shrink-0" /><a href="https://www.google.com/maps/search/?api=1&amp;query=T%E1%BA%A7ng+4+To%C3%A0+West+Tower%2C+365+%C4%91%C6%B0%E1%BB%9Dng+C%E1%BA%A7u+Gi%E1%BA%A5y%2C+H%C3%A0+N%E1%BB%99i" target="_blank" rel="noopener" class="lg:max-w-[169px] hover:text-brown hover:underline focus-visible:text-brown focus-visible:underline">Tầng 4 Toà West Tower, 365 đường Cầu Giấy, Hà Nội</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <hr class="border-0 h-px bg-gray-dd" />
+
+    <div class="flex flex-col gap-6 py-8 text-base leading-[22px] tracking-[0.224px] lg:flex-row lg:items-center lg:justify-between lg:pt-[39px] lg:pb-[55px]">
+      <ul class="flex flex-wrap gap-x-10 gap-y-2">
+        <li><a href="chinh-sach-bao-mat.html" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">An toàn &amp; Bảo mật</a></li>
+        <li><a href="#" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Điều khoản sử dụng</a></li>
+      </ul>
+      <div class="flex flex-col gap-4 sm:flex-row sm:items-center sm:gap-8">
+        <a href="#" class="block transition-opacity hover:opacity-80 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown"><img src="assets/img/footer/badge-bo-cong-thuong.webp" alt="Đã thông báo Bộ Công Thương" width="131" height="40" class="h-10 w-auto" /></a>
+        <p>© Bản quyền 2026 thuộc về Dzentic.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/app.js"></script>
+<script>
+(function () {
+  document.querySelectorAll('[data-filter-tabs]').forEach(function (list) {
+    var target = document.getElementById(list.getAttribute('data-filter-tabs'));
+    if (!target) return;
+    var tabs = Array.prototype.slice.call(list.querySelectorAll('[role="tab"]'));
+    var items = Array.prototype.slice.call(target.querySelectorAll('[data-cat]'));
+    var empty = document.querySelector('[data-empty="' + target.id + '"]');
+    function apply(tab) {
+      var key = tab.getAttribute('data-filter'), shown = 0;
+      tabs.forEach(function (t) { var on = t === tab; t.setAttribute('aria-selected', on ? 'true' : 'false'); t.tabIndex = on ? 0 : -1; });
+      items.forEach(function (el) {
+        var ok = key === 'all' || el.getAttribute('data-cat') === key;
+        var host = el.closest('li') || el;
+        host.hidden = !ok;
+        if (ok) { shown++; host.classList.remove('tab-in'); void host.offsetWidth; host.classList.add('tab-in'); }
+      });
+      if (empty) empty.hidden = shown !== 0;
+    }
+    tabs.forEach(function (tab, i) {
+      tab.addEventListener('click', function () { apply(tab); });
+      tab.addEventListener('keydown', function (e) {
+        var n = e.key === 'ArrowRight' ? i + 1 : e.key === 'ArrowLeft' ? i - 1 : null;
+        if (n === null) return;
+        e.preventDefault();
+        var t = tabs[(n + tabs.length) % tabs.length]; t.focus(); apply(t);
+      });
+    });
+  });
+})();
+</script>
+</body>
+</html>

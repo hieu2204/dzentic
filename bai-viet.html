@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bài viết | Dzentic</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/app.css">
+</head>
+<body>
+<!-- SECTION: topbar -->
+<section aria-label="Thông báo" class="bg-navy text-bg">
+  <p class="max-w-site mx-auto px-4 py-3 md:py-4 text-center text-sm md:text-base leading-[22px] tracking-[0.224px]">
+    Nhận ưu đãi giảm tới 10% và miễn phí vận chuyển cho tất cả các đơn hàng. Cam kết 100% sản phẩm chính hãng.
+  </p>
+</section>
+<header class="sticky top-0 z-50 border-b border-gray-ee bg-bg">
+    <div class="max-w-site mx-auto px-4 md:px-8 xl:px-[72px] h-20 xl:h-[120px] flex items-center justify-between xl:grid xl:grid-cols-[1fr_auto_1fr] xl:gap-6">
+      <nav class="hidden xl:flex items-center gap-6 text-base leading-[22px] tracking-[0.224px]" aria-label="Menu trái">
+        <a href="thu-vien-hoat-chat.html" class="hover:text-brown focus-visible:text-brown focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brown">Khoa Học &amp; Bằng Chứng</a>
+        <a href="san-pham.html" class="hover:text-brown focus-visible:text-brown focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brown">Sản Phẩm</a>
+      </nav>
+
+      <a href="index.html" class="block shrink-0 xl:justify-self-center hover:opacity-80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brown" aria-label="Dzentic - Trang chủ">
+        <img src="assets/img/hero/logo-dzentic.png" alt="Dzentic - A brand by Sorai Beauty Engine" width="920" height="276"
+             class="h-14 xl:h-[92px] w-auto object-contain">
+      </a>
+
+      <div class="flex items-center gap-6 xl:justify-self-end">
+        <nav class="hidden xl:flex items-center gap-6 text-base leading-[22px] tracking-[0.224px]" aria-label="Menu phải">
+          <a href="cau-chuyen-thuong-hieu.html" class="hover:text-brown focus-visible:text-brown focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brown">Triết Lí Dzentic</a>
+          <a href="routine-phac-do.html" class="hover:text-brown focus-visible:text-brown focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brown">Giải Pháp Làn Da</a>
+          <a href="lien-he.html" class="hover:text-brown focus-visible:text-brown focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brown">Liên Hệ</a>
+        </nav>
+        <div class="flex items-center gap-3 xl:gap-[14px]">
+          <a href="tim-kiem.html" class="hover:opacity-70 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brown" aria-label="Tìm kiếm"><img src="assets/img/hero/icon-search.svg" alt="" width="20" height="20"></a>
+          <a href="gio-hang.html" class="group flex items-center gap-2 xl:gap-0.5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brown" aria-label="Giỏ hàng">
+            <img src="assets/img/hero/icon-cart.svg" alt="" width="20" height="20" class="group-hover:opacity-70">
+            <span class="grid place-items-center size-5 rounded-[10px] bg-brown text-bg text-base leading-[22px] group-hover:bg-brown-dark">0</span>
+          </a>
+          <button type="button" data-menu-toggle class="xl:hidden ml-2 p-1 hover:text-brown focus-visible:text-brown focus-visible:outline focus-visible:outline-2 focus-visible:outline-brown" aria-label="Mở menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Menu mobile -->
+    <nav data-menu class="hidden xl:hidden bg-bg border-t border-gray-dd px-4 md:px-8 py-4 text-base" aria-label="Menu chính">
+      <ul class="flex flex-col gap-4">
+        <li><a href="thu-vien-hoat-chat.html" class="hover:text-brown focus-visible:text-brown">Khoa Học &amp; Bằng Chứng</a></li>
+        <li><a href="san-pham.html" class="hover:text-brown focus-visible:text-brown">Sản Phẩm</a></li>
+        <li><a href="cau-chuyen-thuong-hieu.html" class="hover:text-brown focus-visible:text-brown">Triết Lí Dzentic</a></li>
+        <li><a href="routine-phac-do.html" class="hover:text-brown focus-visible:text-brown">Giải Pháp Làn Da</a></li>
+        <li><a href="lien-he.html" class="hover:text-brown focus-visible:text-brown">Liên Hệ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<main>
+<!-- SECTION: Subpage hero (dùng chung cho mọi trang con). Chỉ đổi breadcrumb, tiêu đề, mô tả. -->
+<section class="relative overflow-hidden bg-gradient-to-r from-bg to-[#f6eadf]">
+  <div class="pointer-events-none absolute inset-0 hidden lg:block" aria-hidden="true">
+    <div class="relative mx-auto h-full max-w-site">
+      <img src="assets/img/subhero/glow.svg" alt="" width="600" height="600" class="absolute left-[850px] top-[-20px] size-[600px] max-w-none">
+      <div class="absolute left-[830px] top-[-40px] size-[640px] opacity-[0.08]">
+        <img src="assets/img/subhero/rays-left.svg" alt="" class="absolute left-0 top-0 h-[640px] w-[342px] max-w-none">
+        <img src="assets/img/subhero/rays-right.svg" alt="" class="absolute left-[320px] top-0 h-[640px] w-[342px] max-w-none">
+      </div>
+      <img src="assets/img/subhero/sun-core.svg" alt="" width="150" height="150" class="absolute left-[1075px] top-[205px] size-[150px] max-w-none">
+    </div>
+  </div>
+  <div class="relative mx-auto max-w-site px-4 pb-10 pt-7 md:px-8 xl:px-[72px] lg:h-[280px] lg:pb-0">
+    <nav aria-label="Breadcrumb" class="flex flex-wrap items-center gap-2 text-sm leading-5 tracking-[0.14px]">
+      <a href="index.html" class="text-gray-66 hover:text-brown focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Trang chủ</a>
+      <span class="text-gray-99" aria-hidden="true">/</span>
+      <a href="thu-vien-hoat-chat.html" class="text-gray-66 hover:text-brown focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Khoa học &amp; Bằng chứng</a>
+      <span class="text-gray-99" aria-hidden="true">/</span>
+      <span class="text-navy" aria-current="page">Bài viết</span>
+      </nav>
+    <div class="mt-10 flex flex-col gap-4 lg:mt-[69px]">
+      <h1 class="text-3xl uppercase leading-[1.4] tracking-[0.624px] text-brown-dark md:text-5xl lg:max-w-[640px]">Bài viết</h1>
+      <p class="max-w-[560px] text-base leading-[22px] tracking-[0.224px] text-gray-66">Kiến thức da liễu được biên tập và thẩm định bởi đội ngũ chuyên môn Dzentic — để bạn hiểu làn da trước khi chọn sản phẩm.</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- SECTION: Nổi bật -->
+<section aria-labelledby="noi-bat-title" class="pt-10 pb-16 md:pt-14 md:pb-24">
+  <div class="max-w-site mx-auto px-4 md:px-8 xl:px-[72px]">
+    <header class="flex flex-col gap-3">
+      <h2 id="noi-bat-title" class="uppercase text-3xl md:text-5xl leading-[1.4] tracking-[0.624px] text-brown-dark">Nổi bật</h2>
+      <p class="max-w-[720px] text-base leading-[22px] tracking-[0.224px] text-navy">Những bài viết được đội ngũ chuyên môn Dzentic chọn lọc.</p>
+    </header>
+    <div class="mt-8 grid gap-6 md:mt-10 lg:grid-cols-[minmax(0,728px)_minmax(0,1fr)]">
+      <article class="group relative isolate flex min-h-[420px] flex-col justify-between overflow-hidden rounded-xs p-6 md:p-8 lg:h-[520px]">
+        <img src="assets/img/bai-viet/noi-bat.png" alt="Những giọt tinh chất màu vàng ánh kim" width="1492" height="961" class="absolute inset-0 -z-10 size-full object-cover transition-transform duration-500 group-hover:scale-105">
+        <span class="absolute inset-0 -z-10 bg-gradient-to-b from-transparent from-45% to-black/55" aria-hidden="true"></span>
+        <span class="inline-flex h-[31px] w-fit items-center rounded-xs bg-white px-1.5 text-base leading-[22px] tracking-[0.224px] text-ink">Khoa học về da</span>
+        <div class="flex flex-col gap-3">
+          <h3 class="max-w-[620px] text-2xl leading-[1.3] tracking-[-0.512px] text-white md:text-[32px] md:leading-[42px]"><a href="chi-tiet-bai-viet.html" class="outline-offset-[-4px] hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-white after:absolute after:inset-0 after:content-['']">Vì sao nồng độ cao hơn không phải lúc nào cũng tốt hơn cho làn da?</a></h3>
+          <p class="max-w-[600px] text-sm leading-5 tracking-[0.14px] text-white/85">Lựa chọn nồng độ hoạt chất phù hợp với ngưỡng dung nạp của làn da là chìa khóa để đạt hiệu quả tối ưu mà không gây tổn thương hàng rào bảo vệ tự nhiên.</p>
+          <p class="text-xs leading-4 tracking-[0.48px] uppercase text-white/80"><time>28 tháng 8, 2026</time> &nbsp;•&nbsp; BS. Ngô Hạnh</p>
+        </div>
+      </article>
+      <ul class="flex flex-col justify-between gap-6">
+        <li><article class="group flex gap-4 sm:gap-6 items-start"><a href="chi-tiet-bai-viet.html" class="relative block w-[140px] sm:w-[196px] h-[144px] shrink-0 overflow-hidden rounded-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown" aria-hidden="true" tabindex="-1"><img src="assets/img/bai-viet/thumb-1.png" alt="" width="392" height="289" class="size-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy"><span class="absolute left-[10px] top-[10px] inline-flex h-[31px] items-center rounded-xs bg-white px-1.5 text-xs leading-4 text-ink">Thành phần</span></a><div class="flex min-w-0 flex-col gap-[9px]"><h3 class="max-w-[300px] text-xl leading-6 tracking-[-1px] text-navy"><a href="chi-tiet-bai-viet.html" class="transition-colors hover:text-brown focus-visible:text-brown focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Bảng thành phần tối giản và những hoạt chất “vàng” trong phục hồi da</a></h3><p class="flex flex-wrap items-center gap-x-4 gap-y-1 text-xs leading-4 tracking-[0.48px] uppercase text-gray-49"><time>28 tháng 8, 2026</time><span class="size-1 rounded-full bg-current" aria-hidden="true"></span><span>Dzentic Marketing team</span></p></div></article></li>
+        <li><article class="group flex gap-4 sm:gap-6 items-start"><a href="chi-tiet-bai-viet.html" class="relative block w-[140px] sm:w-[196px] h-[144px] shrink-0 overflow-hidden rounded-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown" aria-hidden="true" tabindex="-1"><img src="assets/img/bai-viet/thumb-2.png" alt="" width="392" height="289" class="size-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy"><span class="absolute left-[10px] top-[10px] inline-flex h-[31px] items-center rounded-xs bg-white px-1.5 text-xs leading-4 text-ink">Quy trình chăm sóc</span></a><div class="flex min-w-0 flex-col gap-[9px]"><h3 class="max-w-[300px] text-xl leading-6 tracking-[-1px] text-navy"><a href="chi-tiet-bai-viet.html" class="transition-colors hover:text-brown focus-visible:text-brown focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Tối giản quy trình skincare: 3 bước cốt lõi cho làn da khỏe mạnh</a></h3><p class="flex flex-wrap items-center gap-x-4 gap-y-1 text-xs leading-4 tracking-[0.48px] uppercase text-gray-49"><time>28 tháng 8, 2026</time><span class="size-1 rounded-full bg-current" aria-hidden="true"></span><span>Dzentic Marketing team</span></p></div></article></li>
+        <li><article class="group flex gap-4 sm:gap-6 items-start"><a href="chi-tiet-bai-viet.html" class="relative block w-[140px] sm:w-[196px] h-[144px] shrink-0 overflow-hidden rounded-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown" aria-hidden="true" tabindex="-1"><img src="assets/img/bai-viet/thumb-3.png" alt="" width="392" height="289" class="size-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy"><span class="absolute left-[10px] top-[10px] inline-flex h-[31px] items-center rounded-xs bg-white px-1.5 text-xs leading-4 text-ink">Da nhạy cảm</span></a><div class="flex min-w-0 flex-col gap-[9px]"><h3 class="max-w-[300px] text-xl leading-6 tracking-[-1px] text-navy"><a href="chi-tiet-bai-viet.html" class="transition-colors hover:text-brown focus-visible:text-brown focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Dấu hiệu nhận biết hàng rào bảo vệ da bị tổn thương và cách xử lý</a></h3><p class="flex flex-wrap items-center gap-x-4 gap-y-1 text-xs leading-4 tracking-[0.48px] uppercase text-gray-49"><time>28 tháng 8, 2026</time><span class="size-1 rounded-full bg-current" aria-hidden="true"></span><span>Dzentic Marketing team</span></p></div></article></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION: Bài viết mới nhất (lọc theo chủ đề + tìm kiếm + phân trang bằng JS) -->
+<section aria-labelledby="moi-nhat-title" class="pb-16 md:pb-24" data-posts>
+  <div class="max-w-site mx-auto px-4 md:px-8 xl:px-[72px]">
+    <header class="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+      <div class="flex flex-col gap-3">
+        <h2 id="moi-nhat-title" class="uppercase text-3xl md:text-5xl leading-[1.4] tracking-[0.624px] text-brown-dark">Bài viết mới nhất</h2>
+        <p class="max-w-[720px] text-base leading-[22px] tracking-[0.224px] text-navy">Cập nhật hằng tuần từ đội ngũ chuyên môn Dzentic.</p>
+      </div>
+      <p class="text-sm leading-5 tracking-[0.14px] text-gray-66" aria-live="polite" data-post-count>Hiển thị 6 / 18 bài viết</p>
+    </header>
+
+    <div class="mt-8 flex flex-col gap-5 scroll-mt-40 lg:mt-10 lg:flex-row lg:items-center lg:justify-between" data-post-filter>
+      <div class="-mx-4 overflow-x-auto px-4 md:mx-0 md:px-0">
+        <div class="flex gap-1" role="tablist" aria-label="Chủ đề bài viết">
+          <button type="button" role="tab" data-cat-tab="all" aria-selected="true" class="shrink-0 whitespace-nowrap border-b border-gray-bb px-2 pb-2 text-lg leading-7 text-gray-99 aria-selected:border-navy aria-selected:text-navy aria-[selected=false]:hover:border-gray-99 aria-[selected=false]:hover:text-gray-66 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue lg:text-xl">Tất cả</button>
+          <button type="button" role="tab" data-cat-tab="sci" aria-selected="false" class="shrink-0 whitespace-nowrap border-b border-gray-bb px-2 pb-2 text-lg leading-7 text-gray-99 aria-selected:border-navy aria-selected:text-navy aria-[selected=false]:hover:border-gray-99 aria-[selected=false]:hover:text-gray-66 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue lg:text-xl">Khoa học về da</button>
+          <button type="button" role="tab" data-cat-tab="ing" aria-selected="false" class="shrink-0 whitespace-nowrap border-b border-gray-bb px-2 pb-2 text-lg leading-7 text-gray-99 aria-selected:border-navy aria-selected:text-navy aria-[selected=false]:hover:border-gray-99 aria-[selected=false]:hover:text-gray-66 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue lg:text-xl">Thành phần</button>
+          <button type="button" role="tab" data-cat-tab="routine" aria-selected="false" class="shrink-0 whitespace-nowrap border-b border-gray-bb px-2 pb-2 text-lg leading-7 text-gray-99 aria-selected:border-navy aria-selected:text-navy aria-[selected=false]:hover:border-gray-99 aria-[selected=false]:hover:text-gray-66 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue lg:text-xl">Quy trình chăm sóc</button>
+          <button type="button" role="tab" data-cat-tab="sens" aria-selected="false" class="shrink-0 whitespace-nowrap border-b border-gray-bb px-2 pb-2 text-lg leading-7 text-gray-99 aria-selected:border-navy aria-selected:text-navy aria-[selected=false]:hover:border-gray-99 aria-[selected=false]:hover:text-gray-66 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue lg:text-xl">Da nhạy cảm</button>
+          <button type="button" role="tab" data-cat-tab="nam" aria-selected="false" class="shrink-0 whitespace-nowrap border-b border-gray-bb px-2 pb-2 text-lg leading-7 text-gray-99 aria-selected:border-navy aria-selected:text-navy aria-[selected=false]:hover:border-gray-99 aria-[selected=false]:hover:text-gray-66 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue lg:text-xl">Nám &amp; lão hoá</button>
+          <button type="button" role="tab" data-cat-tab="mun" aria-selected="false" class="shrink-0 whitespace-nowrap border-b border-gray-bb px-2 pb-2 text-lg leading-7 text-gray-99 aria-selected:border-navy aria-selected:text-navy aria-[selected=false]:hover:border-gray-99 aria-[selected=false]:hover:text-gray-66 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue lg:text-xl">Mụn</button>
+        </div>
+      </div>
+      <form role="search" class="flex h-10 w-full items-center gap-[10px] rounded-sm border border-gray-dd bg-white px-[14px] focus-within:border-blue lg:w-[280px]" onsubmit="return false">
+        <img src="assets/img/bai-viet/icon-search.svg" alt="" width="20" height="20" class="shrink-0">
+        <label class="sr-only" for="tim-bai-viet">Tìm bài viết</label>
+        <input id="tim-bai-viet" type="search" placeholder="Tìm bài viết…" autocomplete="off" data-post-search class="min-w-0 flex-1 bg-transparent text-sm leading-5 tracking-[0.14px] text-navy placeholder:text-gray-66 focus:outline-none">
+      </form>
+    </div>
+
+    <ul class="mt-8 grid gap-x-6 gap-y-10 sm:grid-cols-2 lg:mt-10 lg:grid-cols-3 lg:gap-y-12" data-post-grid>
+      <li data-cat="nam"><article class="group flex flex-col gap-[14px]"><a href="chi-tiet-bai-viet.html" class="relative block aspect-[416/264] overflow-hidden rounded-xs focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown" tabindex="-1" aria-hidden="true"><img src="assets/img/bai-viet/card-1.png" alt="" width="832" height="528" class="size-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy"><span class="absolute left-4 top-4 inline-flex h-[31px] items-center rounded-xs bg-white px-1.5 text-base leading-[22px] tracking-[0.224px] text-ink">Nám & lão hoá</span></a><h3 class="text-xl font-medium leading-7 text-navy"><a href="chi-tiet-bai-viet.html" class="transition-colors hover:text-brown focus-visible:text-brown focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Chống oxy hoá ban ngày: vì sao serum làm sáng cần đi cùng kem chống nắng</a></h3><p class="text-sm leading-5 tracking-[0.14px] text-gray-66">Hoạt chất chống oxy hoá và màng lọc UV bổ trợ nhau để bảo vệ làn da trước ánh sáng.</p><p class="flex flex-wrap items-center gap-x-4 gap-y-1 text-xs leading-4 tracking-[0.48px] uppercase text-gray-49"><time>28 tháng 8, 2026</time><span class="size-1 rounded-full bg-current" aria-hidden="true"></span><span>Dzentic Marketing team</span></p></article></li>
+      <li data-cat="sci"><article class="group flex flex-col gap-[14px]"><a href="chi-tiet-bai-viet.html" class="relative block aspect-[416/264] overflow-hidden rounded-xs focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown" tabindex="-1" aria-hidden="true"><img src="assets/img/bai-viet/card-2.png" alt="" width="832" height="528" class="size-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy"><span class="absolute left-4 top-4 inline-flex h-[31px] items-center rounded-xs bg-white px-1.5 text-base leading-[22px] tracking-[0.224px] text-ink">Khoa học về da</span></a><h3 class="text-xl font-medium leading-7 text-navy"><a href="chi-tiet-bai-viet.html" class="transition-colors hover:text-brown focus-visible:text-brown focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Đọc hiểu nghiên cứu lâm sàng: con số nào thực sự có ý nghĩa?</a></h3><p class="text-sm leading-5 tracking-[0.14px] text-gray-66">Cỡ mẫu, nhóm đối chứng, thời gian theo dõi — cách đánh giá một tuyên bố hiệu quả.</p><p class="flex flex-wrap items-center gap-x-4 gap-y-1 text-xs leading-4 tracking-[0.48px] uppercase text-gray-49"><time>28 tháng 8, 2026</time><span class="size-1 rounded-full bg-current" aria-hidden="true"></span><span>Dzentic Marketing team</span></p></article></li>
+      <li data-cat="mun"><article class="group flex flex-col gap-[14px]"><a href="chi-tiet-bai-viet.html" class="relative block aspect-[416/264] overflow-hidden rounded-xs focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown" tabindex="-1" aria-hidden="true"><img src="assets/img/bai-viet/card-3.webp" alt="" width="832" height="528" class="size-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy"><span class="absolute left-4 top-4 inline-flex h-[31px] items-center rounded-xs bg-white px-1.5 text-base leading-[22px] tracking-[0.224px] text-ink">Mụn</span></a><h3 class="text-xl font-medium leading-7 text-navy"><a href="chi-tiet-bai-viet.html" class="transition-colors hover:text-brown focus-visible:text-brown focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Zinc PCA và kiểm soát dầu: cơ chế, nồng độ và cách dùng</a></h3><p class="text-sm leading-5 tracking-[0.14px] text-gray-66">Kiểm soát bã nhờn mà không làm khô căng — hướng dẫn đưa Zinc PCA vào routine.</p><p class="flex flex-wrap items-center gap-x-4 gap-y-1 text-xs leading-4 tracking-[0.48px] uppercase text-gray-49"><time>28 tháng 8, 2026</time><span class="size-1 rounded-full bg-current" aria-hidden="true"></span><span>Dzentic Marketing team</span></p></article></li>
+      <li data-cat="nam"><article class="group flex flex-col gap-[14px]"><a href="chi-tiet-bai-viet.html" class="relative block aspect-[416/264] overflow-hidden rounded-xs focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown" tabindex="-1" aria-hidden="true"><img src="assets/img/bai-viet/card-4.png" alt="" width="832" height="528" class="size-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy"><span class="absolute left-4 top-4 inline-flex h-[31px] items-center rounded-xs bg-white px-1.5 text-base leading-[22px] tracking-[0.224px] text-ink">Nám & lão hoá</span></a><h3 class="text-xl font-medium leading-7 text-navy"><a href="chi-tiet-bai-viet.html" class="transition-colors hover:text-brown focus-visible:text-brown focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Nám của tôi có dùng được sản phẩm làm sáng không?</a></h3><p class="text-sm leading-5 tracking-[0.14px] text-gray-66">Bác sĩ giải đáp cách chọn routine phù hợp cho làn da nám, tàn nhang.</p><p class="flex flex-wrap items-center gap-x-4 gap-y-1 text-xs leading-4 tracking-[0.48px] uppercase text-gray-49"><time>28 tháng 8, 2026</time><span class="size-1 rounded-full bg-current" aria-hidden="true"></span><span>Dzentic Marketing team</span></p></article></li>
+      <li data-cat="ing"><article class="group flex flex-col gap-[14px]"><a href="chi-tiet-bai-viet.html" class="relative block aspect-[416/264] overflow-hidden rounded-xs focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown" tabindex="-1" aria-hidden="true"><img src="assets/img/bai-viet/card-5.png" alt="" width="832" height="528" class="size-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy"><span class="absolute left-4 top-4 inline-flex h-[31px] items-center rounded-xs bg-white px-1.5 text-base leading-[22px] tracking-[0.224px] text-ink">Thành phần</span></a><h3 class="text-xl font-medium leading-7 text-navy"><a href="chi-tiet-bai-viet.html" class="transition-colors hover:text-brown focus-visible:text-brown focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Retinoid cho người mới: bắt đầu thế nào để không kích ứng?</a></h3><p class="text-sm leading-5 tracking-[0.14px] text-gray-66">Tần suất, lượng dùng và cách kết hợp để làn da thích nghi dần.</p><p class="flex flex-wrap items-center gap-x-4 gap-y-1 text-xs leading-4 tracking-[0.48px] uppercase text-gray-49"><time>28 tháng 8, 2026</time><span class="size-1 rounded-full bg-current" aria-hidden="true"></span><span>Dzentic Marketing team</span></p></article></li>
+      <li data-cat="routine"><article class="group flex flex-col gap-[14px]"><a href="chi-tiet-bai-viet.html" class="relative block aspect-[416/264] overflow-hidden rounded-xs focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown" tabindex="-1" aria-hidden="true"><img src="assets/img/bai-viet/card-6.png" alt="" width="832" height="528" class="size-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy"><span class="absolute left-4 top-4 inline-flex h-[31px] items-center rounded-xs bg-white px-1.5 text-base leading-[22px] tracking-[0.224px] text-ink">Quy trình chăm sóc</span></a><h3 class="text-xl font-medium leading-7 text-navy"><a href="chi-tiet-bai-viet.html" class="transition-colors hover:text-brown focus-visible:text-brown focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Kem chống nắng phổ rộng: đọc nhãn SPF và PA đúng cách</a></h3><p class="text-sm leading-5 tracking-[0.14px] text-gray-66">Hiểu đúng chỉ số để chọn kem chống nắng phù hợp với nhu cầu hằng ngày.</p><p class="flex flex-wrap items-center gap-x-4 gap-y-1 text-xs leading-4 tracking-[0.48px] uppercase text-gray-49"><time>28 tháng 8, 2026</time><span class="size-1 rounded-full bg-current" aria-hidden="true"></span><span>Dzentic Marketing team</span></p></article></li>
+      <li data-cat="sens"><article class="group flex flex-col gap-[14px]"><a href="chi-tiet-bai-viet.html" class="relative block aspect-[416/264] overflow-hidden rounded-xs focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown" tabindex="-1" aria-hidden="true"><img src="assets/img/bai-viet/card-1.png" alt="" width="832" height="528" class="size-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy"><span class="absolute left-4 top-4 inline-flex h-[31px] items-center rounded-xs bg-white px-1.5 text-base leading-[22px] tracking-[0.224px] text-ink">Da nhạy cảm</span></a><h3 class="text-xl font-medium leading-7 text-navy"><a href="chi-tiet-bai-viet.html" class="transition-colors hover:text-brown focus-visible:text-brown focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Hàng rào bảo vệ da hoạt động như thế nào?</a></h3><p class="text-sm leading-5 tracking-[0.14px] text-gray-66">Cấu trúc “gạch – vữa” của lớp sừng và lý do da mất nước khi hàng rào suy yếu.</p><p class="flex flex-wrap items-center gap-x-4 gap-y-1 text-xs leading-4 tracking-[0.48px] uppercase text-gray-49"><time>28 tháng 8, 2026</time><span class="size-1 rounded-full bg-current" aria-hidden="true"></span><span>Dzentic Marketing team</span></p></article></li>
+      <li data-cat="sci"><article class="group flex flex-col gap-[14px]"><a href="chi-tiet-bai-viet.html" class="relative block aspect-[416/264] overflow-hidden rounded-xs focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown" tabindex="-1" aria-hidden="true"><img src="assets/img/bai-viet/card-2.png" alt="" width="832" height="528" class="size-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy"><span class="absolute left-4 top-4 inline-flex h-[31px] items-center rounded-xs bg-white px-1.5 text-base leading-[22px] tracking-[0.224px] text-ink">Khoa học về da</span></a><h3 class="text-xl font-medium leading-7 text-navy"><a href="chi-tiet-bai-viet.html" class="transition-colors hover:text-brown focus-visible:text-brown focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">pH của da và vì sao sữa rửa mặt dịu nhẹ lại quan trọng</a></h3><p class="text-sm leading-5 tracking-[0.14px] text-gray-66">Lớp màng axit pH 4.5–5.5 ảnh hưởng thế nào đến hệ vi sinh và độ ẩm của da.</p><p class="flex flex-wrap items-center gap-x-4 gap-y-1 text-xs leading-4 tracking-[0.48px] uppercase text-gray-49"><time>28 tháng 8, 2026</time><span class="size-1 rounded-full bg-current" aria-hidden="true"></span><span>Dzentic Marketing team</span></p></article></li>
+      <li data-cat="ing"><article class="group flex flex-col gap-[14px]"><a href="chi-tiet-bai-viet.html" class="relative block aspect-[416/264] overflow-hidden rounded-xs focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown" tabindex="-1" aria-hidden="true"><img src="assets/img/bai-viet/card-3.webp" alt="" width="832" height="528" class="size-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy"><span class="absolute left-4 top-4 inline-flex h-[31px] items-center rounded-xs bg-white px-1.5 text-base leading-[22px] tracking-[0.224px] text-ink">Thành phần</span></a><h3 class="text-xl font-medium leading-7 text-navy"><a href="chi-tiet-bai-viet.html" class="transition-colors hover:text-brown focus-visible:text-brown focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Niacinamide & Zinc: cơ chế kiểm soát bã nhờn</a></h3><p class="text-sm leading-5 tracking-[0.14px] text-gray-66">Vì sao bộ đôi này giúp giảm dầu mà không làm khô căng da.</p><p class="flex flex-wrap items-center gap-x-4 gap-y-1 text-xs leading-4 tracking-[0.48px] uppercase text-gray-49"><time>28 tháng 8, 2026</time><span class="size-1 rounded-full bg-current" aria-hidden="true"></span><span>Dzentic Marketing team</span></p></article></li>
+      <li data-cat="mun"><article class="group flex flex-col gap-[14px]"><a href="chi-tiet-bai-viet.html" class="relative block aspect-[416/264] overflow-hidden rounded-xs focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown" tabindex="-1" aria-hidden="true"><img src="assets/img/bai-viet/card-4.png" alt="" width="832" height="528" class="size-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy"><span class="absolute left-4 top-4 inline-flex h-[31px] items-center rounded-xs bg-white px-1.5 text-base leading-[22px] tracking-[0.224px] text-ink">Mụn</span></a><h3 class="text-xl font-medium leading-7 text-navy"><a href="chi-tiet-bai-viet.html" class="transition-colors hover:text-brown focus-visible:text-brown focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Mụn ẩn và mụn viêm: nhận biết đúng để chăm sóc đúng</a></h3><p class="text-sm leading-5 tracking-[0.14px] text-gray-66">Phân biệt các loại tổn thương mụn và nguyên tắc chọn hoạt chất phù hợp.</p><p class="flex flex-wrap items-center gap-x-4 gap-y-1 text-xs leading-4 tracking-[0.48px] uppercase text-gray-49"><time>28 tháng 8, 2026</time><span class="size-1 rounded-full bg-current" aria-hidden="true"></span><span>Dzentic Marketing team</span></p></article></li>
+      <li data-cat="routine"><article class="group flex flex-col gap-[14px]"><a href="chi-tiet-bai-viet.html" class="relative block aspect-[416/264] overflow-hidden rounded-xs focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown" tabindex="-1" aria-hidden="true"><img src="assets/img/bai-viet/card-5.png" alt="" width="832" height="528" class="size-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy"><span class="absolute left-4 top-4 inline-flex h-[31px] items-center rounded-xs bg-white px-1.5 text-base leading-[22px] tracking-[0.224px] text-ink">Quy trình chăm sóc</span></a><h3 class="text-xl font-medium leading-7 text-navy"><a href="chi-tiet-bai-viet.html" class="transition-colors hover:text-brown focus-visible:text-brown focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Tối giản quy trình skincare: 3 bước cốt lõi cho làn da khỏe</a></h3><p class="text-sm leading-5 tracking-[0.14px] text-gray-66">Làm sạch, dưỡng ẩm, chống nắng — nền tảng của mọi routine hiệu quả.</p><p class="flex flex-wrap items-center gap-x-4 gap-y-1 text-xs leading-4 tracking-[0.48px] uppercase text-gray-49"><time>28 tháng 8, 2026</time><span class="size-1 rounded-full bg-current" aria-hidden="true"></span><span>Dzentic Marketing team</span></p></article></li>
+      <li data-cat="sens"><article class="group flex flex-col gap-[14px]"><a href="chi-tiet-bai-viet.html" class="relative block aspect-[416/264] overflow-hidden rounded-xs focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown" tabindex="-1" aria-hidden="true"><img src="assets/img/bai-viet/card-6.png" alt="" width="832" height="528" class="size-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy"><span class="absolute left-4 top-4 inline-flex h-[31px] items-center rounded-xs bg-white px-1.5 text-base leading-[22px] tracking-[0.224px] text-ink">Da nhạy cảm</span></a><h3 class="text-xl font-medium leading-7 text-navy"><a href="chi-tiet-bai-viet.html" class="transition-colors hover:text-brown focus-visible:text-brown focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Dấu hiệu nhận biết hàng rào bảo vệ da bị tổn thương</a></h3><p class="text-sm leading-5 tracking-[0.14px] text-gray-66">Châm chích, bong tróc, ửng đỏ — khi nào cần tạm dừng hoạt chất và phục hồi.</p><p class="flex flex-wrap items-center gap-x-4 gap-y-1 text-xs leading-4 tracking-[0.48px] uppercase text-gray-49"><time>28 tháng 8, 2026</time><span class="size-1 rounded-full bg-current" aria-hidden="true"></span><span>Dzentic Marketing team</span></p></article></li>
+      <li data-cat="nam"><article class="group flex flex-col gap-[14px]"><a href="chi-tiet-bai-viet.html" class="relative block aspect-[416/264] overflow-hidden rounded-xs focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown" tabindex="-1" aria-hidden="true"><img src="assets/img/bai-viet/card-1.png" alt="" width="832" height="528" class="size-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy"><span class="absolute left-4 top-4 inline-flex h-[31px] items-center rounded-xs bg-white px-1.5 text-base leading-[22px] tracking-[0.224px] text-ink">Nám & lão hoá</span></a><h3 class="text-xl font-medium leading-7 text-navy"><a href="chi-tiet-bai-viet.html" class="transition-colors hover:text-brown focus-visible:text-brown focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Tranexamic Acid: hoạt chất làm sáng được nghiên cứu nhiều</a></h3><p class="text-sm leading-5 tracking-[0.14px] text-gray-66">Cơ chế tác động lên sắc tố và cách kết hợp an toàn trong routine hằng ngày.</p><p class="flex flex-wrap items-center gap-x-4 gap-y-1 text-xs leading-4 tracking-[0.48px] uppercase text-gray-49"><time>28 tháng 8, 2026</time><span class="size-1 rounded-full bg-current" aria-hidden="true"></span><span>Dzentic Marketing team</span></p></article></li>
+      <li data-cat="ing"><article class="group flex flex-col gap-[14px]"><a href="chi-tiet-bai-viet.html" class="relative block aspect-[416/264] overflow-hidden rounded-xs focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown" tabindex="-1" aria-hidden="true"><img src="assets/img/bai-viet/card-2.png" alt="" width="832" height="528" class="size-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy"><span class="absolute left-4 top-4 inline-flex h-[31px] items-center rounded-xs bg-white px-1.5 text-base leading-[22px] tracking-[0.224px] text-ink">Thành phần</span></a><h3 class="text-xl font-medium leading-7 text-navy"><a href="chi-tiet-bai-viet.html" class="transition-colors hover:text-brown focus-visible:text-brown focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Bảng thành phần tối giản và những hoạt chất “vàng” trong phục hồi da</a></h3><p class="text-sm leading-5 tracking-[0.14px] text-gray-66">Panthenol, Ceramide, Allantoin — vì sao ít thành phần nhưng đúng mục tiêu.</p><p class="flex flex-wrap items-center gap-x-4 gap-y-1 text-xs leading-4 tracking-[0.48px] uppercase text-gray-49"><time>28 tháng 8, 2026</time><span class="size-1 rounded-full bg-current" aria-hidden="true"></span><span>Dzentic Marketing team</span></p></article></li>
+      <li data-cat="mun"><article class="group flex flex-col gap-[14px]"><a href="chi-tiet-bai-viet.html" class="relative block aspect-[416/264] overflow-hidden rounded-xs focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown" tabindex="-1" aria-hidden="true"><img src="assets/img/bai-viet/card-3.webp" alt="" width="832" height="528" class="size-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy"><span class="absolute left-4 top-4 inline-flex h-[31px] items-center rounded-xs bg-white px-1.5 text-base leading-[22px] tracking-[0.224px] text-ink">Mụn</span></a><h3 class="text-xl font-medium leading-7 text-navy"><a href="chi-tiet-bai-viet.html" class="transition-colors hover:text-brown focus-visible:text-brown focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Da dầu có cần dưỡng ẩm không? Hiểu đúng để không bít tắc</a></h3><p class="text-sm leading-5 tracking-[0.14px] text-gray-66">Dưỡng ẩm đúng kết cấu giúp cân bằng bã nhờn thay vì làm da dầu hơn.</p><p class="flex flex-wrap items-center gap-x-4 gap-y-1 text-xs leading-4 tracking-[0.48px] uppercase text-gray-49"><time>28 tháng 8, 2026</time><span class="size-1 rounded-full bg-current" aria-hidden="true"></span><span>Dzentic Marketing team</span></p></article></li>
+      <li data-cat="sci"><article class="group flex flex-col gap-[14px]"><a href="chi-tiet-bai-viet.html" class="relative block aspect-[416/264] overflow-hidden rounded-xs focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown" tabindex="-1" aria-hidden="true"><img src="assets/img/bai-viet/card-4.png" alt="" width="832" height="528" class="size-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy"><span class="absolute left-4 top-4 inline-flex h-[31px] items-center rounded-xs bg-white px-1.5 text-base leading-[22px] tracking-[0.224px] text-ink">Khoa học về da</span></a><h3 class="text-xl font-medium leading-7 text-navy"><a href="chi-tiet-bai-viet.html" class="transition-colors hover:text-brown focus-visible:text-brown focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Chu kỳ tái tạo da 28 ngày: điều gì thực sự xảy ra?</a></h3><p class="text-sm leading-5 tracking-[0.14px] text-gray-66">Hành trình của tế bào từ lớp đáy đến lớp sừng và ý nghĩa với routine.</p><p class="flex flex-wrap items-center gap-x-4 gap-y-1 text-xs leading-4 tracking-[0.48px] uppercase text-gray-49"><time>28 tháng 8, 2026</time><span class="size-1 rounded-full bg-current" aria-hidden="true"></span><span>Dzentic Marketing team</span></p></article></li>
+      <li data-cat="routine"><article class="group flex flex-col gap-[14px]"><a href="chi-tiet-bai-viet.html" class="relative block aspect-[416/264] overflow-hidden rounded-xs focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown" tabindex="-1" aria-hidden="true"><img src="assets/img/bai-viet/card-5.png" alt="" width="832" height="528" class="size-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy"><span class="absolute left-4 top-4 inline-flex h-[31px] items-center rounded-xs bg-white px-1.5 text-base leading-[22px] tracking-[0.224px] text-ink">Quy trình chăm sóc</span></a><h3 class="text-xl font-medium leading-7 text-navy"><a href="chi-tiet-bai-viet.html" class="transition-colors hover:text-brown focus-visible:text-brown focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Routine sau liệu trình: ưu tiên phục hồi trước hoạt chất</a></h3><p class="text-sm leading-5 tracking-[0.14px] text-gray-66">Hướng dẫn chăm sóc da trong 2 tuần đầu sau các thủ thuật thẩm mỹ.</p><p class="flex flex-wrap items-center gap-x-4 gap-y-1 text-xs leading-4 tracking-[0.48px] uppercase text-gray-49"><time>28 tháng 8, 2026</time><span class="size-1 rounded-full bg-current" aria-hidden="true"></span><span>Dzentic Marketing team</span></p></article></li>
+      <li data-cat="nam"><article class="group flex flex-col gap-[14px]"><a href="chi-tiet-bai-viet.html" class="relative block aspect-[416/264] overflow-hidden rounded-xs focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown" tabindex="-1" aria-hidden="true"><img src="assets/img/bai-viet/card-6.png" alt="" width="832" height="528" class="size-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy"><span class="absolute left-4 top-4 inline-flex h-[31px] items-center rounded-xs bg-white px-1.5 text-base leading-[22px] tracking-[0.224px] text-ink">Nám & lão hoá</span></a><h3 class="text-xl font-medium leading-7 text-navy"><a href="chi-tiet-bai-viet.html" class="transition-colors hover:text-brown focus-visible:text-brown focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Chống nắng cho da nám: những sai lầm thường gặp</a></h3><p class="text-sm leading-5 tracking-[0.14px] text-gray-66">Thoa thiếu lượng, quên thoa lại — các lỗi khiến nám khó cải thiện.</p><p class="flex flex-wrap items-center gap-x-4 gap-y-1 text-xs leading-4 tracking-[0.48px] uppercase text-gray-49"><time>28 tháng 8, 2026</time><span class="size-1 rounded-full bg-current" aria-hidden="true"></span><span>Dzentic Marketing team</span></p></article></li>
+    </ul>
+    <p class="mt-10 rounded-md border border-gray-dd bg-white px-6 py-10 text-center text-base leading-[22px] text-gray-49" data-post-empty hidden>Không tìm thấy bài viết phù hợp. Hãy thử từ khoá hoặc chủ đề khác.</p>
+
+    <nav aria-label="Phân trang" class="mt-12 flex justify-center"><ul class="flex flex-wrap justify-center gap-2" data-pagination></ul></nav>
+  </div>
+</section>
+
+<!-- SECTION: Newsletter -->
+<section aria-labelledby="newsletter-title" class="relative isolate overflow-hidden bg-[#7b5532] py-16 md:py-28">
+  <img src="assets/img/bai-viet/newsletter.webp" alt="" width="2880" height="1000" class="absolute inset-0 -z-20 size-full object-cover" loading="lazy">
+  <span class="absolute inset-0 -z-10 bg-gradient-to-r from-[rgba(74,42,16,0.85)] via-[rgba(74,42,16,0.45)] via-50% to-[rgba(74,42,16,0)] to-75%" aria-hidden="true"></span>
+  <div class="max-w-site mx-auto px-4 md:px-8 xl:px-[72px]">
+    <h2 id="newsletter-title" class="uppercase text-3xl md:text-5xl leading-[1.4] tracking-[0.624px] text-white">Nhận kiến thức da liễu<br class="hidden md:block"> mỗi tháng</h2>
+    <p class="mt-6 max-w-[480px] text-base leading-[22px] tracking-[0.224px] text-white/85">Một email mỗi tháng — tổng hợp nghiên cứu mới, giải đáp từ bác sĩ và routine theo mùa.</p>
+    <form class="mt-6 flex max-w-[520px] flex-col gap-3 pt-2 sm:flex-row" data-newsletter>
+      <label class="sr-only" for="newsletter-email">Email của bạn</label>
+      <input id="newsletter-email" type="email" required placeholder="Email của bạn" class="h-10 w-full rounded-sm bg-white px-4 text-sm leading-5 tracking-[0.14px] text-navy placeholder:text-gray-66 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white sm:w-80">
+      <button type="submit" class="inline-flex h-10 items-center gap-2 rounded-sm bg-brown px-6 text-base leading-[22px] tracking-[0.224px] text-bg whitespace-nowrap hover:bg-brown-dark focus-visible:bg-brown-dark focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown justify-center">Đăng ký <img src="assets/img/bai-viet/icon-arrow-light.svg" alt="" width="12" height="13"></button>
+    </form>
+    <p class="mt-3 text-sm leading-5 text-white" role="status" data-newsletter-msg hidden>Cảm ơn bạn! Chúng tôi đã ghi nhận email đăng ký.</p>
+  </div>
+</section>
+</main>
+<!-- SECTION: Footer -->
+<footer id="footer" class="bg-bg text-navy">
+  <div class="max-w-site mx-auto px-4 md:px-8 xl:px-[72px]">
+    <div class="grid gap-10 pt-12 pb-10 lg:grid-cols-[minmax(0,1fr)_auto] lg:gap-16 lg:pt-24 lg:pb-12">
+      <div>
+        <a href="index.html" class="block max-w-[507px] lg:ml-[9px] lg:mt-[7.4px] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown"><img src="assets/img/footer/logo-dzentic.webp" alt="Dzentic - A brand by Sorai Beauty Engine" width="507" height="157" class="block h-auto w-full" /></a>
+        <ul class="mt-6 lg:mt-[18.4px] flex items-center gap-2" aria-label="Mạng xã hội">
+          <li><a href="#" aria-label="Facebook" class="flex size-8 items-center justify-center rounded-sm border border-gray-bb transition hover:-translate-y-0.5 hover:border-brown hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown"><img src="assets/img/footer/icon-facebook.svg" alt="" width="16" height="18" /></a></li>
+          <li><a href="#" aria-label="Instagram" class="flex size-8 items-center justify-center rounded-sm border border-gray-bb transition hover:-translate-y-0.5 hover:border-brown hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown"><img src="assets/img/footer/icon-instagram.svg" alt="" width="16" height="18" /></a></li>
+          <li><a href="#" aria-label="TikTok" class="flex size-8 items-center justify-center rounded-sm border border-gray-bb transition hover:-translate-y-0.5 hover:border-brown hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown"><img src="assets/img/footer/icon-tiktok.svg" alt="" width="16" height="18" /></a></li>
+        </ul>
+      </div>
+
+      <div class="grid gap-8 sm:grid-cols-2 md:grid-cols-3 md:gap-0">
+        <nav class="md:w-[220px]" aria-label="Sản phẩm và dịch vụ">
+          <h3 class="text-xl leading-7 font-medium text-navy">Sản phẩm và dịch vụ</h3>
+          <ul class="mt-6 flex flex-col gap-[10px] text-base leading-[22px] tracking-[0.224px] text-gray-49">
+            <li><a href="san-pham.html" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Brightening Serum</a></li>
+            <li><a href="san-pham.html" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Repair Cream</a></li>
+            <li><a href="san-pham.html" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Hydrating Cream</a></li>
+            <li><a href="san-pham.html" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Cleansing Gel</a></li>
+            <li><a href="san-pham.html" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Sunscreen</a></li>
+          </ul>
+        </nav>
+        <nav class="md:w-[220px]" aria-label="Liên kết">
+          <h3 class="text-xl leading-7 font-medium text-navy">Liên kết</h3>
+          <ul class="mt-6 flex flex-col gap-[10px] text-base leading-[22px] tracking-[0.224px] text-gray-49">
+            <li><a href="routine-phac-do.html" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Giải Pháp Làn Da</a></li>
+            <li><a href="thu-vien-hoat-chat.html" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Khoa Học &amp; Bằng Chứng</a></li>
+            <li><a href="cau-chuyen-thuong-hieu.html" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Triết Lý Dzentic</a></li>
+            <li><a href="bai-viet.html" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Blog</a></li>
+            <li><a href="lien-he.html" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Liên hệ</a></li>
+          </ul>
+        </nav>
+        <div>
+          <h3 class="text-xl leading-7 font-medium text-navy">Liên hệ</h3>
+          <ul class="mt-6 flex flex-col gap-[10px] text-base leading-[22px] tracking-[0.224px] text-gray-49">
+            <li class="flex items-start gap-2"><img src="assets/img/footer/icon-phone.svg" alt="" width="20" height="20" class="shrink-0" /><a href="tel:15001515" class="hover:text-brown hover:underline focus-visible:text-brown focus-visible:underline">Hotline: 1500 1515</a></li>
+            <li class="flex items-start gap-2"><img src="assets/img/footer/icon-mobile.svg" alt="" width="20" height="21" class="shrink-0" /><a href="tel:+84123456789" class="hover:text-brown hover:underline focus-visible:text-brown focus-visible:underline">Điện thoại:<br />(+84) 123456789</a></li>
+            <li class="flex items-start gap-2"><img src="assets/img/footer/icon-pin.svg" alt="" width="20" height="21" class="shrink-0" /><a href="https://www.google.com/maps/search/?api=1&amp;query=T%E1%BA%A7ng+4+To%C3%A0+West+Tower%2C+365+%C4%91%C6%B0%E1%BB%9Dng+C%E1%BA%A7u+Gi%E1%BA%A5y%2C+H%C3%A0+N%E1%BB%99i" target="_blank" rel="noopener" class="lg:max-w-[169px] hover:text-brown hover:underline focus-visible:text-brown focus-visible:underline">Tầng 4 Toà West Tower, 365 đường Cầu Giấy, Hà Nội</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <hr class="border-0 h-px bg-gray-dd" />
+
+    <div class="flex flex-col gap-6 py-8 text-base leading-[22px] tracking-[0.224px] lg:flex-row lg:items-center lg:justify-between lg:pt-[39px] lg:pb-[55px]">
+      <ul class="flex flex-wrap gap-x-10 gap-y-2">
+        <li><a href="chinh-sach-bao-mat.html" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">An toàn &amp; Bảo mật</a></li>
+        <li><a href="#" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Điều khoản sử dụng</a></li>
+      </ul>
+      <div class="flex flex-col gap-4 sm:flex-row sm:items-center sm:gap-8">
+        <a href="#" class="block transition-opacity hover:opacity-80 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown"><img src="assets/img/footer/badge-bo-cong-thuong.webp" alt="Đã thông báo Bộ Công Thương" width="131" height="40" class="h-10 w-auto" /></a>
+        <p>© Bản quyền 2026 thuộc về Dzentic.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/app.js"></script>
+<script>
+(function () {
+  function fold(s){return String(s).split('').map(function(c){var b=c.normalize('NFD').charAt(0).toLowerCase();return b==='đ'?'d':b}).join('')}
+  var root = document.querySelector('[data-posts]'); if (!root) return;
+  var cards = Array.prototype.slice.call(root.querySelectorAll('[data-post-grid] > li'));
+  var tabs = Array.prototype.slice.call(root.querySelectorAll('[data-cat-tab]'));
+  var input = root.querySelector('[data-post-search]');
+  var count = root.querySelector('[data-post-count]');
+  var empty = root.querySelector('[data-post-empty]');
+  var pag = root.querySelector('[data-pagination]');
+  var bar = root.querySelector('[data-post-filter]');
+  var PER = 6, cat = 'all', page = 1;
+  var base = 'flex size-10 items-center justify-center rounded-sm text-sm font-medium leading-5 tracking-[0.14px] transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown ';
+  function btn(label, p, opts) {
+    var b = document.createElement('button'); b.type = 'button'; b.textContent = label;
+    var cur = opts && opts.current;
+    b.className = base + (cur ? 'bg-brown text-white' : 'bg-gray-ee text-navy hover:bg-gray-dd') + (opts && opts.disabled ? ' opacity-50 pointer-events-none' : '');
+    if (cur) b.setAttribute('aria-current', 'page');
+    if (opts && opts.label) b.setAttribute('aria-label', opts.label);
+    if (opts && opts.disabled) b.disabled = true;
+    b.addEventListener('click', function () { page = p; render(true); });
+    var li = document.createElement('li'); li.appendChild(b); return li;
+  }
+  function render(scroll) {
+    var term = fold(input.value.trim());
+    var list = cards.filter(function (c) {
+      return (cat === 'all' || c.getAttribute('data-cat') === cat) && (!term || fold(c.textContent).indexOf(term) > -1);
+    });
+    var pages = Math.max(1, Math.ceil(list.length / PER));
+    if (page > pages) page = pages;
+    cards.forEach(function (c) { c.hidden = true; });
+    var shown = list.slice((page - 1) * PER, page * PER);
+    shown.forEach(function (c) { c.hidden = false; });
+    count.textContent = 'Hiển thị ' + shown.length + ' / ' + list.length + ' bài viết';
+    empty.hidden = list.length > 0;
+    pag.innerHTML = '';
+    if (pages > 1) {
+      pag.appendChild(btn('‹', page - 1, { disabled: page === 1, label: 'Trang trước' }));
+      for (var i = 1; i <= pages; i++) pag.appendChild(btn(String(i), i, { current: i === page, label: 'Trang ' + i }));
+      pag.appendChild(btn('›', page + 1, { disabled: page === pages, label: 'Trang sau' }));
+    }
+    if (scroll) bar.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+  tabs.forEach(function (t) {
+    t.addEventListener('click', function () {
+      cat = t.getAttribute('data-cat-tab'); page = 1;
+      tabs.forEach(function (x) { x.setAttribute('aria-selected', x === t ? 'true' : 'false'); });
+      render(false);
+    });
+  });
+  input.addEventListener('input', function () { page = 1; render(false); });
+  render(false);
+
+  var nl = document.querySelector('[data-newsletter]');
+  if (nl) nl.addEventListener('submit', function (e) {
+    e.preventDefault(); nl.hidden = true;
+    document.querySelector('[data-newsletter-msg]').hidden = false;
+  });
+})();
+</script>
+</body>
+</html>

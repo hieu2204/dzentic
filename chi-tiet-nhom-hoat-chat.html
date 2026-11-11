@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hoạt chất làm sáng da · Dzentic</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/app.css">
+</head>
+<body>
+<!-- SECTION: topbar -->
+<section aria-label="Thông báo" class="bg-navy text-bg">
+  <p class="max-w-site mx-auto px-4 py-3 md:py-4 text-center text-sm md:text-base leading-[22px] tracking-[0.224px]">
+    Nhận ưu đãi giảm tới 10% và miễn phí vận chuyển cho tất cả các đơn hàng. Cam kết 100% sản phẩm chính hãng.
+  </p>
+</section>
+
+<header class="sticky top-0 z-50 border-b border-gray-ee bg-bg">
+    <div class="max-w-site mx-auto px-4 md:px-8 xl:px-[72px] h-20 xl:h-[120px] flex items-center justify-between xl:grid xl:grid-cols-[1fr_auto_1fr] xl:gap-6">
+      <nav class="hidden xl:flex items-center gap-6 text-base leading-[22px] tracking-[0.224px]" aria-label="Menu trái">
+        <a href="thu-vien-hoat-chat.html" class="hover:text-brown focus-visible:text-brown focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brown">Khoa Học &amp; Bằng Chứng</a>
+        <a href="san-pham.html" class="hover:text-brown focus-visible:text-brown focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brown">Sản Phẩm</a>
+      </nav>
+
+      <a href="index.html" class="block shrink-0 xl:justify-self-center hover:opacity-80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brown" aria-label="Dzentic - Trang chủ">
+        <img src="assets/img/hero/logo-dzentic.png" alt="Dzentic - A brand by Sorai Beauty Engine" width="920" height="276"
+             class="h-14 xl:h-[92px] w-auto object-contain">
+      </a>
+
+      <div class="flex items-center gap-6 xl:justify-self-end">
+        <nav class="hidden xl:flex items-center gap-6 text-base leading-[22px] tracking-[0.224px]" aria-label="Menu phải">
+          <a href="cau-chuyen-thuong-hieu.html" class="hover:text-brown focus-visible:text-brown focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brown">Triết Lí Dzentic</a>
+          <a href="routine-phac-do.html" class="hover:text-brown focus-visible:text-brown focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brown">Giải Pháp Làn Da</a>
+          <a href="lien-he.html" class="hover:text-brown focus-visible:text-brown focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brown">Liên Hệ</a>
+        </nav>
+        <div class="flex items-center gap-3 xl:gap-[14px]">
+          <a href="tim-kiem.html" class="hover:opacity-70 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brown" aria-label="Tìm kiếm"><img src="assets/img/hero/icon-search.svg" alt="" width="20" height="20"></a>
+          <a href="gio-hang.html" class="group flex items-center gap-2 xl:gap-0.5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brown" aria-label="Giỏ hàng">
+            <img src="assets/img/hero/icon-cart.svg" alt="" width="20" height="20" class="group-hover:opacity-70">
+            <span class="grid place-items-center size-5 rounded-[10px] bg-brown text-bg text-base leading-[22px] group-hover:bg-brown-dark">0</span>
+          </a>
+          <button type="button" data-menu-toggle class="xl:hidden ml-2 p-1 hover:text-brown focus-visible:text-brown focus-visible:outline focus-visible:outline-2 focus-visible:outline-brown" aria-label="Mở menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Menu mobile -->
+    <nav data-menu class="hidden xl:hidden bg-bg border-t border-gray-dd px-4 md:px-8 py-4 text-base" aria-label="Menu chính">
+      <ul class="flex flex-col gap-4">
+        <li><a href="thu-vien-hoat-chat.html" class="hover:text-brown focus-visible:text-brown">Khoa Học &amp; Bằng Chứng</a></li>
+        <li><a href="san-pham.html" class="hover:text-brown focus-visible:text-brown">Sản Phẩm</a></li>
+        <li><a href="cau-chuyen-thuong-hieu.html" class="hover:text-brown focus-visible:text-brown">Triết Lí Dzentic</a></li>
+        <li><a href="routine-phac-do.html" class="hover:text-brown focus-visible:text-brown">Giải Pháp Làn Da</a></li>
+        <li><a href="lien-he.html" class="hover:text-brown focus-visible:text-brown">Liên Hệ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<!-- SECTION: Subpage hero (dùng chung cho mọi trang con). Chỉ đổi breadcrumb, tiêu đề, mô tả. -->
+<section class="relative overflow-hidden bg-gradient-to-r from-bg to-[#f6eadf]">
+  <div class="pointer-events-none absolute inset-0 hidden lg:block" aria-hidden="true">
+    <div class="relative mx-auto h-full max-w-site">
+      <img src="assets/img/subhero/glow.svg" alt="" width="600" height="600" class="absolute left-[850px] top-[-20px] size-[600px] max-w-none">
+      <div class="absolute left-[830px] top-[-40px] size-[640px] opacity-[0.08]">
+        <img src="assets/img/subhero/rays-left.svg" alt="" class="absolute left-0 top-0 h-[640px] w-[342px] max-w-none">
+        <img src="assets/img/subhero/rays-right.svg" alt="" class="absolute left-[320px] top-0 h-[640px] w-[342px] max-w-none">
+      </div>
+      <img src="assets/img/subhero/sun-core.svg" alt="" width="150" height="150" class="absolute left-[1075px] top-[205px] size-[150px] max-w-none">
+    </div>
+  </div>
+  <div class="relative mx-auto max-w-site px-4 pb-10 pt-7 md:px-8 xl:px-[72px] lg:h-[280px] lg:pb-0">
+    <nav aria-label="Breadcrumb" class="flex flex-wrap items-center gap-2 text-sm leading-5 tracking-[0.14px]">
+      <a href="index.html" class="text-gray-66 hover:text-brown">Trang chủ</a>
+      <span class="text-gray-99" aria-hidden="true">/</span>
+      <a href="thu-vien-hoat-chat.html" class="text-gray-66 hover:text-brown">Thư viện hoạt chất</a>
+      <span class="text-gray-99" aria-hidden="true">/</span>
+      <span class="text-navy" aria-current="page">Làm sáng da</span>
+    </nav>
+    <div class="mt-10 flex flex-col gap-4 lg:mt-[69px]">
+      <h1 class="text-3xl uppercase leading-[1.4] tracking-[0.624px] text-brown-dark md:text-5xl lg:max-w-[640px]">Hoạt chất làm sáng da</h1>
+      <p class="max-w-[560px] text-base leading-[22px] tracking-[0.224px] text-gray-66">6 hoạt chất phối hợp, tác động lên 3 giai đoạn hình thành sắc tố – giúp da đều màu, hạn chế thâm nám mà vẫn dịu nhẹ.</p>
+    </div>
+  </div>
+</section>
+
+<main>
+<!-- SECTION: Cơ chế · 3 giai đoạn -->
+<section class="bg-white" aria-labelledby="co-che">
+  <div class="mx-auto max-w-site px-4 py-16 md:px-8 xl:px-[72px] xl:py-24">
+    <div class="flex flex-col gap-4 lg:flex-row lg:items-end lg:gap-[60px]" data-aos="fade-up">
+      <div class="flex flex-col gap-3 uppercase lg:flex-1">
+        <p class="text-sm leading-[22px] tracking-[4px] text-brown md:text-base">Nhóm 01 · 6 hoạt chất</p>
+        <h2 id="co-che" class="text-3xl leading-[1.4] tracking-[0.624px] text-brown-dark md:text-5xl">3 giai đoạn tạo sắc tố</h2>
+      </div>
+      <p class="text-base leading-[22px] tracking-[0.224px] text-gray-49 lg:flex-1">Thay vì dồn một hoạt chất ở nồng độ cao, Dzentic phối hợp nhiều hoạt chất ở nồng độ có bằng chứng, mỗi chất chặn một bước của quá trình tạo sắc tố.</p>
+    </div>
+    <ol class="mt-10 grid gap-4 md:grid-cols-3 lg:mt-12 lg:gap-6">
+      <li class="relative flex flex-col gap-4 overflow-hidden rounded-md border border-gray-ee bg-bg p-8 lg:min-h-[337px]" data-aos="fade-up">
+        <div class="pointer-events-none absolute left-[175px] top-[-201px] size-[420px]" aria-hidden="true"><div class="absolute left-0 top-0 size-[640px] opacity-[0.07]">
+            <img src="assets/img/subhero/rays-left.svg" alt="" class="absolute left-0 top-0 h-[640px] w-[342px] max-w-none">
+            <img src="assets/img/subhero/rays-right.svg" alt="" class="absolute left-[320px] top-0 h-[640px] w-[342px] max-w-none">
+          </div></div>
+        <p class="relative text-[32px] leading-[1.4] tracking-[-0.512px] text-brown">01</p>
+        <h3 class="relative text-xl font-medium leading-7 text-blue">Tín hiệu kích hoạt</h3>
+        <p class="relative text-sm leading-5 tracking-[0.14px] text-gray-49">Giảm các tín hiệu khiến tế bào hắc tố bắt đầu sản xuất sắc tố.</p>
+        <ul class="relative mt-auto flex flex-wrap gap-2 border-t border-gray-ee pt-4"><li class="rounded-full border border-gray-ee bg-white px-3 py-1.5 text-sm font-medium leading-5 tracking-[0.14px] text-brown">Tranexamic Acid</li><li class="rounded-full border border-gray-ee bg-white px-3 py-1.5 text-sm font-medium leading-5 tracking-[0.14px] text-brown">AGBA</li></ul>
+      </li>
+      <li class="relative flex flex-col gap-4 overflow-hidden rounded-md border border-gray-ee bg-bg p-8 lg:min-h-[337px]" data-aos="fade-up">
+        <div class="pointer-events-none absolute left-[175px] top-[-201px] size-[420px]" aria-hidden="true"><div class="absolute left-0 top-0 size-[640px] opacity-[0.07]">
+            <img src="assets/img/subhero/rays-left.svg" alt="" class="absolute left-0 top-0 h-[640px] w-[342px] max-w-none">
+            <img src="assets/img/subhero/rays-right.svg" alt="" class="absolute left-[320px] top-0 h-[640px] w-[342px] max-w-none">
+          </div></div>
+        <p class="relative text-[32px] leading-[1.4] tracking-[-0.512px] text-brown">02</p>
+        <h3 class="relative text-xl font-medium leading-7 text-blue">Tổng hợp melanin</h3>
+        <p class="relative text-sm leading-5 tracking-[0.14px] text-gray-49">Làm enzyme tyrosinase hoạt động kém đi, melanin được tạo ra ít hơn.</p>
+        <ul class="relative mt-auto flex flex-wrap gap-2 border-t border-gray-ee pt-4"><li class="rounded-full border border-gray-ee bg-white px-3 py-1.5 text-sm font-medium leading-5 tracking-[0.14px] text-brown">Phenylethyl Resorcinol</li><li class="rounded-full border border-gray-ee bg-white px-3 py-1.5 text-sm font-medium leading-5 tracking-[0.14px] text-brown">Alpha-Arbutin</li><li class="rounded-full border border-gray-ee bg-white px-3 py-1.5 text-sm font-medium leading-5 tracking-[0.14px] text-brown">N-Acetyl Glucosamine</li></ul>
+      </li>
+      <li class="relative flex flex-col gap-4 overflow-hidden rounded-md border border-gray-ee bg-bg p-8 lg:min-h-[337px]" data-aos="fade-up">
+        <div class="pointer-events-none absolute left-[175px] top-[-201px] size-[420px]" aria-hidden="true"><div class="absolute left-0 top-0 size-[640px] opacity-[0.07]">
+            <img src="assets/img/subhero/rays-left.svg" alt="" class="absolute left-0 top-0 h-[640px] w-[342px] max-w-none">
+            <img src="assets/img/subhero/rays-right.svg" alt="" class="absolute left-[320px] top-0 h-[640px] w-[342px] max-w-none">
+          </div></div>
+        <p class="relative text-[32px] leading-[1.4] tracking-[-0.512px] text-brown">03</p>
+        <h3 class="relative text-xl font-medium leading-7 text-blue">Vận chuyển melanin</h3>
+        <p class="relative text-sm leading-5 tracking-[0.14px] text-gray-49">Hạn chế sắc tố di chuyển lên bề mặt da, giúp màu da đều hơn.</p>
+        <ul class="relative mt-auto flex flex-wrap gap-2 border-t border-gray-ee pt-4"><li class="rounded-full border border-gray-ee bg-white px-3 py-1.5 text-sm font-medium leading-5 tracking-[0.14px] text-brown">Niacinamide</li></ul>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- SECTION: 6 hoạt chất trong nhóm · Ingredient Tab Panel -->
+<section class="bg-bg" aria-labelledby="hoat-chat-nhom">
+  <div class="mx-auto max-w-site px-4 py-16 md:px-8 xl:px-[72px] xl:py-24">
+    <div class="flex flex-col gap-3 uppercase">
+      <p class="text-sm leading-[22px] tracking-[4px] text-brown md:text-base">Hoạt chất trong nhóm</p>
+      <h2 id="hoat-chat-nhom" class="text-3xl leading-[1.4] tracking-[0.624px] text-brown-dark md:text-5xl">Chi tiết từng hoạt chất</h2>
+    </div>
+    <div data-tabs class="mt-10 overflow-hidden rounded-md border border-gray-dd bg-white">
+      <div class="flex gap-2 overflow-x-auto border-b border-gray-ee px-4 pt-4 md:px-10" role="tablist" aria-label="Hoạt chất trong nhóm Làm sáng da"><button type="button" role="tab" data-tab="txa" aria-selected="true" class="shrink-0 whitespace-nowrap border-b border-gray-bb px-2 pb-2 text-lg leading-7 text-gray-99 hover:border-gray-99 hover:text-gray-66 aria-selected:border-navy aria-selected:text-navy md:text-xl focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue">Tranexamic Acid</button><button type="button" role="tab" data-tab="agba" aria-selected="false" class="shrink-0 whitespace-nowrap border-b border-gray-bb px-2 pb-2 text-lg leading-7 text-gray-99 hover:border-gray-99 hover:text-gray-66 aria-selected:border-navy aria-selected:text-navy md:text-xl focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue">AGBA</button><button type="button" role="tab" data-tab="prs" aria-selected="false" class="shrink-0 whitespace-nowrap border-b border-gray-bb px-2 pb-2 text-lg leading-7 text-gray-99 hover:border-gray-99 hover:text-gray-66 aria-selected:border-navy aria-selected:text-navy md:text-xl focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue">Phenylethyl Resorcinol</button><button type="button" role="tab" data-tab="arb" aria-selected="false" class="shrink-0 whitespace-nowrap border-b border-gray-bb px-2 pb-2 text-lg leading-7 text-gray-99 hover:border-gray-99 hover:text-gray-66 aria-selected:border-navy aria-selected:text-navy md:text-xl focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue">Alpha-Arbutin</button><button type="button" role="tab" data-tab="nag" aria-selected="false" class="shrink-0 whitespace-nowrap border-b border-gray-bb px-2 pb-2 text-lg leading-7 text-gray-99 hover:border-gray-99 hover:text-gray-66 aria-selected:border-navy aria-selected:text-navy md:text-xl focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue">NAG</button><button type="button" role="tab" data-tab="nia" aria-selected="false" class="shrink-0 whitespace-nowrap border-b border-gray-bb px-2 pb-2 text-lg leading-7 text-gray-99 hover:border-gray-99 hover:text-gray-66 aria-selected:border-navy aria-selected:text-navy md:text-xl focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue">Niacinamide</button></div>
+      <div data-tab-panel="txa" role="tabpanel">
+        <div class="flex flex-col gap-8 px-4 pb-8 pt-8 md:px-10 lg:flex-row lg:gap-12 lg:pb-10 lg:pt-12">
+          <div class="flex flex-col gap-5 rounded-md bg-bg px-6 py-8 lg:w-[440px] lg:shrink-0 lg:self-start">
+            <div class="flex items-center justify-between gap-3"><span class="inline-flex w-fit rounded-full px-3 py-1.5 text-xs leading-4 bg-brown-50 text-brown">Tín hiệu kích hoạt</span><p class="text-right text-xs leading-4 text-gray-66">Cấp 2 · trên người</p></div>
+            <div class="flex flex-col gap-1"><h3 class="text-[28px] leading-[1.4] tracking-[-0.512px] text-blue md:text-[32px]">Tranexamic Acid</h3></div>
+            <p class="text-base leading-[22px] tracking-[0.224px] text-gray-49">Hoạt chất làm sáng có dữ liệu trên nám má.</p>
+            <div class="flex flex-col gap-2"><p class="text-xs uppercase leading-4 tracking-[0.48px] text-gray-66">Có trong</p><ul class="flex flex-wrap gap-1.5"><li class="rounded-full border border-gray-ee bg-white px-3 py-1.5 text-sm leading-5 tracking-[0.14px] text-brown-dark">Photo Defense Serum 3%</li><li class="rounded-full border border-gray-ee bg-white px-3 py-1.5 text-sm leading-5 tracking-[0.14px] text-brown-dark">Retino Renewal Serum 3%</li><li class="rounded-full border border-gray-ee bg-white px-3 py-1.5 text-sm leading-5 tracking-[0.14px] text-brown-dark">NeoBright Repair Cream</li></ul></div>
+          </div>
+          <div class="flex min-w-0 flex-1 flex-col">
+            <div class="flex flex-col gap-3 pb-6"><h4 class="text-xl leading-7 text-brown-dark">Vai trò trong công thức</h4><p class="text-base leading-[22px] tracking-[0.224px] text-navy">Hướng vào giai đoạn kích hoạt tế bào hắc tố, giai đoạn đầu của quá trình tạo sắc tố.</p></div>
+            <div class="flex flex-col gap-3 border-t border-gray-ee py-6"><h4 class="text-xl leading-7 text-brown-dark">Cơ chế</h4><p class="text-base leading-[22px] tracking-[0.224px] text-navy">Ức chế plasmin → giảm giải phóng acid arachidonic và PGE2 → giảm α-MSH; đồng thời ức chế tín hiệu VEGF và endothelin-1 từ nội mô mạch máu, nên tác động cả thành phần mạch máu của nám má (Maeda, Cosmetics 2022).</p></div>
+          </div>
+        </div>
+        <div class="flex flex-col gap-6 px-4 pb-8 md:px-10 lg:pb-12">
+          <div class="flex flex-wrap items-center gap-3 border-t border-gray-ee pt-8"><h4 class="text-xl leading-7 text-brown-dark">Bằng chứng hiện có</h4><span class="inline-flex w-fit rounded-full px-3 py-1.5 text-xs leading-4 bg-brown-50 text-brown">Cấp 2 – trên người</span></div>
+          <p class="text-base leading-[22px] tracking-[0.224px] text-navy">Tranexamic acid bôi ngoài da (3–5%) đã được đánh giá trên người có nám trong một số thử nghiệm ngẫu nhiên, với cỡ mẫu từ 20 đến 100 người.</p><div class="flex flex-col gap-3"><p class="text-base leading-[22px] tracking-[0.224px] text-brown-dark">Ba thử nghiệm lâm sàng đối đầu của tranexamic acid 3–5% với hydroquinone 2–4%</p>
+          <div class="overflow-x-auto rounded-md border border-gray-ee"><table class="w-full min-w-[900px] table-fixed border-collapse text-sm leading-5 tracking-[0.14px]"><colgroup><col style="width:182px"><col style="width:64px"><col style="width:96px"><col style="width:206px"><col style="width:96px"><col style="width:96px"><col></colgroup><thead class="border-b border-gray-ee bg-bg text-gray-66"><tr><th scope="col" class="py-3 pl-4 text-left font-normal">Nghiên cứu</th><th scope="col" class="py-3  text-left font-normal">TXA</th><th scope="col" class="py-3  text-left font-normal">Số người</th><th scope="col" class="py-3  text-left font-normal">Thiết kế</th><th scope="col" class="py-3  text-left font-normal">Đối chứng</th><th scope="col" class="py-3  text-left font-normal">Thời gian</th><th scope="col" class="py-3  text-left font-normal">Kết luận</th></tr></thead><tbody><tr class="border-b border-gray-ee last:border-b-0"><th scope="row" class="py-3 pl-4 text-left align-top font-medium text-brown-dark">Yasnova và cs. 2024</th><td class="py-3 align-top text-gray-49">3%</td><td class="py-3 align-top text-gray-49">20</td><td class="py-3 align-top text-gray-49">RCT mù đôi, chia đôi mặt</td><td class="py-3 align-top text-gray-49">HQ 4%</td><td class="py-3 align-top text-gray-49">8 tuần</td><td class="py-3 align-top text-brown pr-4">mMASI giảm có ý nghĩa ở tuần 4 và tuần 8 ở cả 2 bên: TXA 3% hiệu quả tương đương HQ 4%</td></tr><tr class="border-b border-gray-ee last:border-b-0"><th scope="row" class="py-3 pl-4 text-left align-top font-medium text-brown-dark">Janney và cs. 2019</th><td class="py-3 align-top text-gray-49">5%</td><td class="py-3 align-top text-gray-49">100</td><td class="py-3 align-top text-gray-49">RCT mù đơn</td><td class="py-3 align-top text-gray-49">HQ 3%</td><td class="py-3 align-top text-gray-49">12 tuần</td><td class="py-3 align-top text-brown pr-4">MASI giảm 27% so với 26,7%, không khác biệt giữa 2 nhóm; kích ứng 6% so với 38% ở nhóm HQ</td></tr><tr class="border-b border-gray-ee last:border-b-0"><th scope="row" class="py-3 pl-4 text-left align-top font-medium text-brown-dark">Atefi và cs. 2017</th><td class="py-3 align-top text-gray-49">5%</td><td class="py-3 align-top text-gray-49">60</td><td class="py-3 align-top text-gray-49">RCT mù đôi</td><td class="py-3 align-top text-gray-49">HQ 2%</td><td class="py-3 align-top text-gray-49">12 tuần</td><td class="py-3 align-top text-brown pr-4">MASI 4,80 → 2,33 (p&lt;0,001), hiệu quả không khác HQ (p=0,850); tác dụng phụ 0% so với 10%</td></tr></tbody></table></div></div><p class="border-l-[3px] border-brown bg-brown-50 px-5 py-4 text-base leading-[22px] tracking-[0.224px] text-brown-dark">Tranexamic acid 3% hiệu quả tương đương hydroquinone 4% trong điều trị nám má với tỷ lệ tác dụng không mong muốn thấp hơn rõ rệt.</p>
+        </div>
+      </div>
+      <div data-tab-panel="agba" role="tabpanel" hidden>
+        <div class="flex flex-col gap-8 px-4 pb-8 pt-8 md:px-10 lg:flex-row lg:gap-12 lg:pb-10 lg:pt-12">
+          <div class="flex flex-col gap-5 rounded-md bg-bg px-6 py-8 lg:w-[440px] lg:shrink-0 lg:self-start">
+            <div class="flex items-center justify-between gap-3"><span class="inline-flex w-fit rounded-full px-3 py-1.5 text-xs leading-4 bg-brown-50 text-brown">Tín hiệu kích hoạt</span><p class="text-right text-xs leading-4 text-gray-66">Cấp 2 · nhãn mở</p></div>
+            <div class="flex flex-col gap-1"><h3 class="text-[28px] leading-[1.4] tracking-[-0.512px] text-blue md:text-[32px]">Acetyl Glycyl Beta-Alanine</h3><p class="text-sm leading-5 tracking-[0.14px] text-gray-66">AGBA</p></div>
+            <p class="text-base leading-[22px] tracking-[0.224px] text-gray-49">Chặn tín hiệu đầu nguồn sinh melanin.</p>
+            <div class="flex flex-col gap-2"><p class="text-xs uppercase leading-4 tracking-[0.48px] text-gray-66">Có trong</p><ul class="flex flex-wrap gap-1.5"><li class="rounded-full border border-gray-ee bg-white px-3 py-1.5 text-sm leading-5 tracking-[0.14px] text-brown-dark">Photo Defense Serum 0,1%</li><li class="rounded-full border border-gray-ee bg-white px-3 py-1.5 text-sm leading-5 tracking-[0.14px] text-brown-dark">Retino Renewal Serum 0,1%</li></ul></div>
+          </div>
+          <div class="flex min-w-0 flex-1 flex-col">
+            <div class="flex flex-col gap-3 pb-6"><h4 class="text-xl leading-7 text-brown-dark">Vai trò trong công thức</h4><p class="text-base leading-[22px] tracking-[0.224px] text-navy">Hướng vào giai đoạn tín hiệu kích hoạt tế bào hắc tố. AGBA là điểm chặn đầu tiên trên trục sinh melanin – bổ sung cho tranexamic acid (trục viêm – mạch), nhóm resorcinol và arbutin (ức chế tyrosinase), niacinamide + NAG (chuyển melanosome).</p></div>
+            <div class="flex flex-col gap-3 border-t border-gray-ee py-6"><h4 class="text-xl leading-7 text-brown-dark">Cơ chế</h4><p class="text-base leading-[22px] tracking-[0.224px] text-navy">Có cấu trúc mô phỏng β-endorphin, cạnh tranh với tín hiệu α-MSH tại thụ thể MC1R.</p></div>
+          </div>
+        </div>
+        <div class="flex flex-col gap-6 px-4 pb-8 md:px-10 lg:pb-12">
+          <div class="flex flex-wrap items-center gap-3 border-t border-gray-ee pt-8"><h4 class="text-xl leading-7 text-brown-dark">Bằng chứng hiện có</h4><span class="inline-flex w-fit rounded-full px-3 py-1.5 text-xs leading-4 bg-brown-50 text-brown">Nghiên cứu nhãn mở</span></div>
+          
+        </div>
+      </div>
+      <div data-tab-panel="prs" role="tabpanel" hidden>
+        <div class="flex flex-col gap-8 px-4 pb-8 pt-8 md:px-10 lg:flex-row lg:gap-12 lg:pb-10 lg:pt-12">
+          <div class="flex flex-col gap-5 rounded-md bg-bg px-6 py-8 lg:w-[440px] lg:shrink-0 lg:self-start">
+            <div class="flex items-center justify-between gap-3"><span class="inline-flex w-fit rounded-full px-3 py-1.5 text-xs leading-4 bg-brown-50 text-brown">Tổng hợp melanin</span><p class="text-right text-xs leading-4 text-gray-66">Cấp 1 · phòng thí nghiệm</p></div>
+            <div class="flex flex-col gap-1"><h3 class="text-[28px] leading-[1.4] tracking-[-0.512px] text-blue md:text-[32px]">Phenylethyl Resorcinol</h3><p class="text-sm leading-5 tracking-[0.14px] text-gray-66">SymWhite® 377</p></div>
+            <p class="text-base leading-[22px] tracking-[0.224px] text-gray-49">Dẫn xuất resorcinol mới an toàn, hiệu quả.</p>
+            <div class="flex flex-col gap-2"><p class="text-xs uppercase leading-4 tracking-[0.48px] text-gray-66">Có trong</p><ul class="flex flex-wrap gap-1.5"><li class="rounded-full border border-gray-ee bg-white px-3 py-1.5 text-sm leading-5 tracking-[0.14px] text-brown-dark">Photo Defense Serum 0,5%</li><li class="rounded-full border border-gray-ee bg-white px-3 py-1.5 text-sm leading-5 tracking-[0.14px] text-brown-dark">Retino Renewal Serum 0,5%</li></ul></div>
+          </div>
+          <div class="flex min-w-0 flex-1 flex-col">
+            <div class="flex flex-col gap-3 pb-6"><h4 class="text-xl leading-7 text-brown-dark">Vai trò trong công thức</h4><p class="text-base leading-[22px] tracking-[0.224px] text-navy">Hướng vào giai đoạn tổng hợp melanin.</p></div>
+            <div class="flex flex-col gap-3 border-t border-gray-ee py-6"><h4 class="text-xl leading-7 text-brown-dark">Cơ chế</h4><p class="text-base leading-[22px] tracking-[0.224px] text-navy">Cấp 1: Ức chế hoạt tính enzyme tyrosinase.</p></div>
+          </div>
+        </div>
+        <div class="flex flex-col gap-6 px-4 pb-8 md:px-10 lg:pb-12">
+          <div class="flex flex-wrap items-center gap-3 border-t border-gray-ee pt-8"><h4 class="text-xl leading-7 text-brown-dark">Bằng chứng hiện có</h4><span class="inline-flex w-fit rounded-full px-3 py-1.5 text-xs leading-4 bg-brown-50 text-brown">Cấp 1 – phòng thí nghiệm &amp; lâm sàng</span></div>
+          <ul class="flex flex-col gap-3"><li class="flex items-start gap-3"><img src="assets/img/chi-tiet-nhom-hoat-chat/icon-bullet.svg" alt="" width="6" height="14" class="mt-0 h-[14px] w-[6px] shrink-0"><p class="text-base leading-[22px] tracking-[0.224px] text-navy">Phenylethyl resorcinol có khả năng ức chế enzyme tyrosinase từ nấm mạnh gấp 22 lần so với acid kojic.</p></li><li class="flex items-start gap-3"><img src="assets/img/chi-tiet-nhom-hoat-chat/icon-bullet.svg" alt="" width="6" height="14" class="mt-0 h-[14px] w-[6px] shrink-0"><p class="text-base leading-[22px] tracking-[0.224px] text-navy">Thử nghiệm trên tế bào u hắc tố B16V: phenylethyl resorcinol là chất ức chế quá trình tổng hợp melanin mạnh nhất trong số các hợp chất được nghiên cứu, với giá trị IC50 là 2 μM.</p></li><li class="flex items-start gap-3"><img src="assets/img/chi-tiet-nhom-hoat-chat/icon-bullet.svg" alt="" width="6" height="14" class="mt-0 h-[14px] w-[6px] shrink-0"><p class="text-base leading-[22px] tracking-[0.224px] text-navy">Hiệu quả làm sáng da an toàn, do không gây chết tế bào sắc tố – đã được chứng minh qua thử nghiệm MTT trên tế bào B16V.</p></li><li class="flex items-start gap-3"><img src="assets/img/chi-tiet-nhom-hoat-chat/icon-bullet.svg" alt="" width="6" height="14" class="mt-0 h-[14px] w-[6px] shrink-0"><p class="text-base leading-[22px] tracking-[0.224px] text-navy">Trên các mô hình biểu bì 3D có sắc tố, nồng độ 0,1% đã dẫn đến ức chế gần như hoàn toàn quá trình tổng hợp melanin sau 14 ngày nuôi cấy.</p></li><li class="flex items-start gap-3"><img src="assets/img/chi-tiet-nhom-hoat-chat/icon-bullet.svg" alt="" width="6" height="14" class="mt-0 h-[14px] w-[6px] shrink-0"><p class="text-base leading-[22px] tracking-[0.224px] text-navy">Nghiên cứu trên các đối tượng người châu Á đã chứng minh 4-(1-phenylethyl)1,3-benzenediol có khả năng làm sáng da hiệu quả ở nồng độ 0,5%.</p></li></ul><div class="grid gap-6 lg:grid-cols-2"><div class="flex flex-col gap-4 rounded-md border border-gray-ee bg-bg p-6">
+            <span class="inline-flex w-fit rounded-full px-3 py-1.5 text-xs leading-4 bg-brown-50 text-brown">Kiểm chứng bằng đa phương pháp</span>
+            <div class="flex flex-col gap-1.5"><p class="text-xl font-medium leading-7 text-blue">Brightening and Anti-Hyperpigmentation Efficacy Validation of the Formulation with Phenylethyl Resorcinol Using Multi-Methodology: In Vitro 3D Skin Model and Clinical Trial</p><p class="text-xs leading-4 text-gray-66">Liu Y, Fu Y, Li XJ, Li X, Tan Y, Liu TY, Du A · Abstract 50644 · J Am Acad Dermatol 2024 · doi:10.1016/j.jaad.2024.07.593</p></div>
+            <hr class="border-0 border-t border-gray-ee">
+            <ul class="flex flex-col gap-3"><li class="flex items-start gap-3"><img src="assets/img/chi-tiet-nhom-hoat-chat/icon-bullet.svg" alt="" width="6" height="14" class="mt-0 h-[14px] w-[6px] shrink-0"><p class="text-sm leading-5 tracking-[0.14px] text-gray-49">Báo cáo tại Hội nghị thường niên Viện Da liễu Hoa Kỳ (AAD) năm 2024, đăng trong phụ trương tóm tắt của J Am Acad Dermatol.</p></li><li class="flex items-start gap-3"><img src="assets/img/chi-tiet-nhom-hoat-chat/icon-bullet.svg" alt="" width="6" height="14" class="mt-0 h-[14px] w-[6px] shrink-0"><p class="text-sm leading-5 tracking-[0.14px] text-gray-49">Thiết kế đa phương pháp: kết hợp mô hình da người tái tạo ba chiều in vitro với một thử nghiệm lâm sàng.</p></li><li class="flex items-start gap-3"><img src="assets/img/chi-tiet-nhom-hoat-chat/icon-bullet.svg" alt="" width="6" height="14" class="mt-0 h-[14px] w-[6px] shrink-0"><p class="text-sm leading-5 tracking-[0.14px] text-gray-49">Mục tiêu: kiểm chứng hiệu quả làm sáng và chống tăng sắc tố của công thức chứa phenylethyl resorcinol.</p></li><li class="flex items-start gap-3"><img src="assets/img/chi-tiet-nhom-hoat-chat/icon-bullet.svg" alt="" width="6" height="14" class="mt-0 h-[14px] w-[6px] shrink-0"><p class="text-sm leading-5 tracking-[0.14px] text-gray-49">Nhóm tác giả trùng với nhóm thực hiện báo cáo IMCAS Asia 2025 – nghiên cứu do công ty tài trợ.</p></li></ul>
+            <p class="border-l-[3px] border-brown bg-brown-50 px-5 py-4 text-base leading-[22px] tracking-[0.224px] text-brown-dark">Nồng độ 0,1% của phenylethyl resorcinol đã dẫn đến việc ức chế gần như hoàn toàn quá trình tổng hợp melanin sau 14 ngày nuôi cấy.</p>
+          </div><div class="flex flex-col gap-4 rounded-md border border-gray-ee bg-bg p-6">
+            <span class="inline-flex w-fit rounded-full px-3 py-1.5 text-xs leading-4 bg-brown-50 text-brown">Phối hợp với vitamin C sau IPL</span>
+            <div class="flex flex-col gap-1.5"><p class="text-xl font-medium leading-7 text-blue">Hiệu quả của serum chứa phenylethyl resorcinol phối hợp với vitamin C dùng bổ trợ sau IPL trên da châu Á</p><p class="text-xs leading-4 text-gray-66">Fu Y và cộng sự · IMCAS Asia 2025, Bangkok, 6–8/6/2025</p></div>
+            <hr class="border-0 border-t border-gray-ee">
+            <ul class="flex flex-col gap-3"><li class="flex items-start gap-3"><img src="assets/img/chi-tiet-nhom-hoat-chat/icon-bullet.svg" alt="" width="6" height="14" class="mt-0 h-[14px] w-[6px] shrink-0"><div class="flex flex-col gap-0.5 text-sm leading-5 tracking-[0.14px]"><p class="font-medium text-brown-dark">Thiết kế</p><p class="text-gray-49">Ngẫu nhiên có đối chứng, chia đôi mặt, người đánh giá làm mù.</p></div></li><li class="flex items-start gap-3"><img src="assets/img/chi-tiet-nhom-hoat-chat/icon-bullet.svg" alt="" width="6" height="14" class="mt-0 h-[14px] w-[6px] shrink-0"><div class="flex flex-col gap-0.5 text-sm leading-5 tracking-[0.14px]"><p class="font-medium text-brown-dark">Cỡ mẫu</p><p class="text-gray-49">50 phụ nữ Trung Quốc – 25 người có đốm nâu, 25 người có nám má biểu bì ổn định.</p></div></li><li class="flex items-start gap-3"><img src="assets/img/chi-tiet-nhom-hoat-chat/icon-bullet.svg" alt="" width="6" height="14" class="mt-0 h-[14px] w-[6px] shrink-0"><div class="flex flex-col gap-0.5 text-sm leading-5 tracking-[0.14px]"><p class="font-medium text-brown-dark">Can thiệp</p><p class="text-gray-49">Serum chứa phenylethyl resorcinol phối hợp vitamin C, dùng bổ trợ sau IPL; nhóm chứng chỉ điều trị IPL.</p></div></li><li class="flex items-start gap-3"><img src="assets/img/chi-tiet-nhom-hoat-chat/icon-bullet.svg" alt="" width="6" height="14" class="mt-0 h-[14px] w-[6px] shrink-0"><div class="flex flex-col gap-0.5 text-sm leading-5 tracking-[0.14px]"><p class="font-medium text-brown-dark">Thời gian</p><p class="text-gray-49">5 tuần, kết quả báo cáo ở tuần 4.</p></div></li><li class="flex items-start gap-3"><img src="assets/img/chi-tiet-nhom-hoat-chat/icon-bullet.svg" alt="" width="6" height="14" class="mt-0 h-[14px] w-[6px] shrink-0"><div class="flex flex-col gap-0.5 text-sm leading-5 tracking-[0.14px]"><p class="font-medium text-brown-dark">Kết quả</p><p class="text-gray-49">MASI cải thiện 31,88% so với 8,92%; mức tăng sắc tố cải thiện 22,13% so với 8,52% (p&lt;0,05).</p></div></li></ul>
+            
+          </div></div>
+        </div>
+      </div>
+      <div data-tab-panel="arb" role="tabpanel" hidden>
+        <div class="flex flex-col gap-8 px-4 pb-8 pt-8 md:px-10 lg:flex-row lg:gap-12 lg:pb-10 lg:pt-12">
+          <div class="flex flex-col gap-5 rounded-md bg-bg px-6 py-8 lg:w-[440px] lg:shrink-0 lg:self-start">
+            <div class="flex items-center justify-between gap-3"><span class="inline-flex w-fit rounded-full px-3 py-1.5 text-xs leading-4 bg-brown-50 text-brown">Tổng hợp melanin</span><p class="text-right text-xs leading-4 text-gray-66">Cấp 2 · trên người</p></div>
+            <div class="flex flex-col gap-1"><h3 class="text-[28px] leading-[1.4] tracking-[-0.512px] text-blue md:text-[32px]">Alpha-Arbutin</h3></div>
+            <p class="text-base leading-[22px] tracking-[0.224px] text-gray-49">Giảm hoạt tính tyrosinase, không gây chết tế bào.</p>
+            <div class="flex flex-col gap-2"><p class="text-xs uppercase leading-4 tracking-[0.48px] text-gray-66">Có trong</p><ul class="flex flex-wrap gap-1.5"><li class="rounded-full border border-gray-ee bg-white px-3 py-1.5 text-sm leading-5 tracking-[0.14px] text-brown-dark">Photo Defense Serum 1%</li><li class="rounded-full border border-gray-ee bg-white px-3 py-1.5 text-sm leading-5 tracking-[0.14px] text-brown-dark">Retino Renewal Serum 1%</li></ul></div>
+          </div>
+          <div class="flex min-w-0 flex-1 flex-col">
+            <div class="flex flex-col gap-3 pb-6"><h4 class="text-xl leading-7 text-brown-dark">Vai trò trong công thức</h4><p class="text-base leading-[22px] tracking-[0.224px] text-navy">Hướng vào giai đoạn tổng hợp melanin.</p></div>
+            <div class="flex flex-col gap-3 border-t border-gray-ee py-6"><h4 class="text-xl leading-7 text-brown-dark">Cơ chế</h4><p class="text-base leading-[22px] tracking-[0.224px] text-navy">Cấp 1: Cạnh tranh với cơ chất tại vị trí hoạt động của tyrosinase, làm enzyme hoạt động kém đi. Trên tế bào nuôi cấy, alpha-arbutin giảm hoạt tính enzyme nhưng không làm thay đổi biểu hiện gen tyrosinase và không gây độc cho tế bào hắc tố.</p></div>
+          </div>
+        </div>
+        <div class="flex flex-col gap-6 px-4 pb-8 md:px-10 lg:pb-12">
+          <div class="flex flex-wrap items-center gap-3 border-t border-gray-ee pt-8"><h4 class="text-xl leading-7 text-brown-dark">Bằng chứng hiện có</h4><span class="inline-flex w-fit rounded-full px-3 py-1.5 text-xs leading-4 bg-brown-50 text-brown">Cấp 1 – phòng thí nghiệm &amp; Cấp 2 – trên người</span></div>
+          <div class="grid gap-6 lg:grid-cols-[560px_minmax(0,1fr)] lg:gap-10"><div class="flex flex-col gap-3 overflow-hidden rounded-md border border-gray-ee bg-white p-5">
+            <svg viewBox="0 0 520 230" class="h-auto w-full" role="img" aria-label="Sơ đồ cơ chế: alpha-arbutin cạnh tranh với cơ chất tại vị trí hoạt động của tyrosinase, làm giảm tạo melanin" font-family="inherit" font-size="14">
+              <defs><marker id="aa-arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#1a2d70"/></marker></defs>
+              <g fill="#fff" stroke="#1a2d70" stroke-width="1.5">
+                <rect x="0.75" y="64.75" width="94.5" height="34.5" rx="4"/><rect x="180.75" y="64.75" width="78.5" height="34.5" rx="4"/>
+                <rect x="344.75" y="64.75" width="134.5" height="34.5" rx="4"/><rect x="362.75" y="178.75" width="98.5" height="34.5" rx="4"/>
+              </g>
+              <rect x="70" y="182" width="170" height="40" rx="4" fill="#7e3f11"/>
+              <g fill="#1a2d70" text-anchor="middle" font-weight="500">
+                <text x="48" y="87">Tyrosine</text><text x="220" y="87">Dopa</text><text x="412" y="87">Dopaquinone</text><text x="412" y="201">Melanin</text>
+              </g>
+              <text x="155" y="207" fill="#fff" text-anchor="middle" font-weight="500">Alpha-Arbutin</text>
+              <g fill="#1a2d70" text-anchor="middle"><text x="138" y="46">Tyrosinase</text><text x="302" y="46">Tyrosinase</text></g>
+              <g stroke="#1a2d70" stroke-width="1.5" fill="none">
+                <path d="M96 82H178" marker-end="url(#aa-arr)"/><path d="M260 82H342" marker-end="url(#aa-arr)"/><path d="M412 100V176" marker-end="url(#aa-arr)"/>
+                <path d="M138 106C150 130 140 160 134 180" stroke-dasharray="4 3" marker-end="url(#aa-arr)"/><path d="M200 182C230 150 270 130 302 106" stroke-dasharray="4 3" marker-end="url(#aa-arr)"/>
+              </g>
+              <g fill="#b3261e"><rect x="132.75" y="71" width="2.5" height="22"/><rect x="140.75" y="71" width="2.5" height="22"/><rect x="296.75" y="71" width="2.5" height="22"/><rect x="304.75" y="71" width="2.5" height="22"/></g>
+            </svg>
+            <p class="text-xs leading-4 text-gray-66">Sơ đồ cơ chế · Sugimoto, Biol Pharm Bull 2004 — Alpha-arbutin cạnh tranh với cơ chất tại vị trí hoạt động của tyrosinase → hoạt tính enzyme giảm, melanin tạo ra ít đi.</p>
+          </div><ul class="flex flex-col gap-3"><li class="flex items-start gap-3"><img src="assets/img/chi-tiet-nhom-hoat-chat/icon-bullet.svg" alt="" width="6" height="14" class="mt-0 h-[14px] w-[6px] shrink-0"><div class="flex flex-col gap-0.5 text-sm leading-5 tracking-[0.14px]"><p class="font-medium text-brown-dark">Ức chế hoạt tính, không ức chế gen</p><p class="text-gray-49">Trên tế bào hắc tố người HMV-II, alpha-arbutin 0,5 mM làm tổng hợp melanin giảm còn 76% so với nhóm không điều trị; hoạt tính tyrosinase trong tế bào giảm rõ rệt trong khi biểu hiện mRNA không đổi.</p></div></li><li class="flex items-start gap-3"><img src="assets/img/chi-tiet-nhom-hoat-chat/icon-bullet.svg" alt="" width="6" height="14" class="mt-0 h-[14px] w-[6px] shrink-0"><div class="flex flex-col gap-0.5 text-sm leading-5 tracking-[0.14px]"><p class="font-medium text-brown-dark">Hiệu quả rõ rệt hơn trên mô hình ba chiều</p><p class="text-gray-49">Trên mô hình da người tái tạo 3D, 25 μg alpha-arbutin làm tổng hợp melanin giảm còn 40% so với chứng – mức giảm lớn hơn nhiều so với trên tế bào nuôi cấy đơn lớp.</p></div></li><li class="flex items-start gap-3"><img src="assets/img/chi-tiet-nhom-hoat-chat/icon-bullet.svg" alt="" width="6" height="14" class="mt-0 h-[14px] w-[6px] shrink-0"><div class="flex flex-col gap-0.5 text-sm leading-5 tracking-[0.14px]"><p class="font-medium text-brown-dark">Không độc với tế bào hắc tố</p><p class="text-gray-49">Không ức chế tăng trưởng tế bào HMV-II ở nồng độ dưới 1,0 mM và không ảnh hưởng khả năng sống của tế bào trên mô hình da ba chiều. Đây là khác biệt cơ bản so với hydroquinone vốn gây độc tế bào hắc tố.</p></div></li><li class="flex items-start gap-3"><img src="assets/img/chi-tiet-nhom-hoat-chat/icon-bullet.svg" alt="" width="6" height="14" class="mt-0 h-[14px] w-[6px] shrink-0"><div class="flex flex-col gap-0.5 text-sm leading-5 tracking-[0.14px]"><p class="font-medium text-brown-dark">An toàn theo đánh giá của hội đồng châu Âu</p><p class="text-gray-49">SCCS (SCCS/1642/22, kết luận cuối 2/2023) xác định alpha-arbutin an toàn tới 2% trong kem dùng cho mặt và 0,5% trong sữa dưỡng thể, với điều kiện hydroquinone tự do trong công thức chỉ ở mức vết, không vượt ngưỡng định lượng 3 ppm.</p></div></li><li class="flex items-start gap-3"><img src="assets/img/chi-tiet-nhom-hoat-chat/icon-bullet.svg" alt="" width="6" height="14" class="mt-0 h-[14px] w-[6px] shrink-0"><div class="flex flex-col gap-0.5 text-sm leading-5 tracking-[0.14px]"><p class="font-medium text-brown-dark">Trong công thức Dzentic</p><p class="text-gray-49">Alpha-arbutin 1% – nồng độ hiệu quả nhưng vẫn nằm trong ngưỡng an toàn mà SCCS đưa ra cho sản phẩm dùng vùng mặt.</p></div></li></ul></div>
+        </div>
+      </div>
+      <div data-tab-panel="nag" role="tabpanel" hidden>
+        <div class="flex flex-col gap-8 px-4 pb-8 pt-8 md:px-10 lg:flex-row lg:gap-12 lg:pb-10 lg:pt-12">
+          <div class="flex flex-col gap-5 rounded-md bg-bg px-6 py-8 lg:w-[440px] lg:shrink-0 lg:self-start">
+            <div class="flex items-center justify-between gap-3"><span class="inline-flex w-fit rounded-full px-3 py-1.5 text-xs leading-4 bg-brown-50 text-brown">Tổng hợp melanin</span><p class="text-right text-xs leading-4 text-gray-66">Cấp 2 · RCT</p></div>
+            <div class="flex flex-col gap-1"><h3 class="text-[28px] leading-[1.4] tracking-[-0.512px] text-blue md:text-[32px]">N-Acetyl Glucosamine</h3><p class="text-sm leading-5 tracking-[0.14px] text-gray-66">NAG</p></div>
+            <p class="text-base leading-[22px] tracking-[0.224px] text-gray-49">Phối hợp cùng niacinamide trên hai bước tạo và vận chuyển melanin.</p>
+            <div class="flex flex-col gap-2"><p class="text-xs uppercase leading-4 tracking-[0.48px] text-gray-66">Có trong</p><ul class="flex flex-wrap gap-1.5"><li class="rounded-full border border-gray-ee bg-white px-3 py-1.5 text-sm leading-5 tracking-[0.14px] text-brown-dark">Photo Defense Serum 1%</li><li class="rounded-full border border-gray-ee bg-white px-3 py-1.5 text-sm leading-5 tracking-[0.14px] text-brown-dark">Retino Renewal Serum 1%</li></ul></div>
+          </div>
+          <div class="flex min-w-0 flex-1 flex-col">
+            <div class="flex flex-col gap-3 pb-6"><h4 class="text-xl leading-7 text-brown-dark">Vai trò trong công thức</h4><p class="text-base leading-[22px] tracking-[0.224px] text-navy">Phối hợp với niacinamide để tác động lên hai bước khác nhau của quá trình tạo và vận chuyển melanin.</p></div>
+            <div class="flex flex-col gap-3 border-t border-gray-ee py-6"><h4 class="text-xl leading-7 text-brown-dark">Cơ chế</h4><p class="text-base leading-[22px] tracking-[0.224px] text-navy">Can thiệp vào quá trình glycosyl hoá, bước cần thiết để tyrosinase trưởng thành và hoạt động.</p></div>
+          </div>
+        </div>
+        <div class="flex flex-col gap-6 px-4 pb-8 md:px-10 lg:pb-12">
+          <div class="flex flex-wrap items-center gap-3 border-t border-gray-ee pt-8"><h4 class="text-xl leading-7 text-brown-dark">Bằng chứng hiện có</h4><span class="inline-flex w-fit rounded-full px-3 py-1.5 text-xs leading-4 bg-brown-50 text-brown">Cấp 2 – RCT đối chứng giả dược</span></div>
+          <p class="text-base leading-[22px] tracking-[0.224px] text-navy">Nghiên cứu lâm sàng lớn nhất của cặp phối hợp Niacinamide 4% + NAG 2%: RCT đối chứng giả dược.</p><div class="grid items-start gap-6 lg:grid-cols-2"><div class="flex flex-col gap-4 rounded-md border border-gray-ee bg-bg p-6">
+            
+            <div class="flex flex-col gap-1.5"><p class="text-xl font-medium leading-7 text-blue">Reduction in the appearance of facial hyperpigmentation after use of moisturizers with a combination of topical niacinamide and N-acetyl glucosamine: results of a randomized, double-blind, vehicle-controlled trial</p><p class="text-xs leading-4 text-gray-66">Kimball AB, Kaczvinsky JR, Li J, Robinson LR, Matts PJ, Berge CA, Miyamoto K, Bissett DL · Br J Dermatol 2010;162(2):435–441 · doi:10.1111/j.1365-2133.2009.09477.x · Nghiên cứu do Procter &amp; Gamble tài trợ</p></div>
+            <hr class="border-0 border-t border-gray-ee">
+            <ul class="flex flex-col gap-3"><li class="flex items-start gap-3"><img src="assets/img/chi-tiet-nhom-hoat-chat/icon-bullet.svg" alt="" width="6" height="14" class="mt-0 h-[14px] w-[6px] shrink-0"><div class="flex flex-col gap-0.5 text-sm leading-5 tracking-[0.14px]"><p class="font-medium text-brown-dark">Thiết kế</p><p class="text-gray-49">RCT đôi mù, đối chứng vehicle, toàn mặt, nhóm song song – 2 tuần rửa trôi rồi 8 tuần dùng sản phẩm.</p></div></li><li class="flex items-start gap-3"><img src="assets/img/chi-tiet-nhom-hoat-chat/icon-bullet.svg" alt="" width="6" height="14" class="mt-0 h-[14px] w-[6px] shrink-0"><div class="flex flex-col gap-0.5 text-sm leading-5 tracking-[0.14px]"><p class="font-medium text-brown-dark">Đối tượng</p><p class="text-gray-49">202 phụ nữ da trắng 40–60 tuổi, tăng sắc tố mặt không đều mức trung bình đến nặng; 188 người hoàn thành.</p></div></li><li class="flex items-start gap-3"><img src="assets/img/chi-tiet-nhom-hoat-chat/icon-bullet.svg" alt="" width="6" height="14" class="mt-0 h-[14px] w-[6px] shrink-0"><div class="flex flex-col gap-0.5 text-sm leading-5 tracking-[0.14px]"><p class="font-medium text-brown-dark">Can thiệp</p><p class="text-gray-49">Lotion chống nắng SPF 15 buổi sáng và kem dưỡng buổi tối, cả hai chứa niacinamide 4% + NAG 2% (n=101); nhóm chứng dùng giả dược (n=101) – tức là cả hai nhóm đều được chống nắng SPF 15.</p></div></li><li class="flex items-start gap-3"><img src="assets/img/chi-tiet-nhom-hoat-chat/icon-bullet.svg" alt="" width="6" height="14" class="mt-0 h-[14px] w-[6px] shrink-0"><div class="flex flex-col gap-0.5 text-sm leading-5 tracking-[0.14px]"><p class="font-medium text-brown-dark">Đánh giá</p><p class="text-gray-49">Phân tích ảnh số theo thuật toán, chấm điểm bởi chuyên gia, và SIAscopy đo riêng sắc tố melanin.</p></div></li><li class="flex items-start gap-3"><img src="assets/img/chi-tiet-nhom-hoat-chat/icon-bullet.svg" alt="" width="6" height="14" class="mt-0 h-[14px] w-[6px] shrink-0"><div class="flex flex-col gap-0.5 text-sm leading-5 tracking-[0.14px]"><p class="font-medium text-brown-dark">Kết quả</p><p class="text-gray-49">Nhóm niacinamide 4% + NAG 2% vượt trội giả dược trên cả bốn phương pháp đo (p&lt;0,05).</p></div></li></ul>
+            
+          </div><div class="flex flex-col gap-3"><p class="text-base leading-[22px] tracking-[0.224px] text-brown-dark">Kết quả theo từng phương pháp đo</p>
+          <div class="overflow-x-auto rounded-md border border-gray-ee"><table class="w-full  table-fixed border-collapse text-sm leading-5 tracking-[0.14px]"><colgroup><col><col style="width:136px"></colgroup><thead class="border-b border-gray-ee bg-bg text-gray-66"><tr><th scope="col" class="py-3 pl-4 text-left font-normal">Phương pháp đo</th><th scope="col" class="py-3  text-left font-normal">p (toàn nghiên cứu)</th></tr></thead><tbody><tr class="border-b border-gray-ee last:border-b-0"><th scope="row" class="py-3 pl-4 text-left align-top font-medium text-brown-dark">Diện tích đốm nâu – phân tích ảnh</th><td class="py-3 align-top text-gray-49">0,031</td></tr><tr class="border-b border-gray-ee last:border-b-0"><th scope="row" class="py-3 pl-4 text-left align-top font-medium text-brown-dark">Diện tích đốm sắc tố – SIAscopy</th><td class="py-3 align-top text-gray-49">0,049</td></tr><tr class="border-b border-gray-ee last:border-b-0"><th scope="row" class="py-3 pl-4 text-left align-top font-medium text-brown-dark">Độ đều melanin – SIAscopy</th><td class="py-3 align-top text-gray-49">0,028</td></tr><tr class="border-b border-gray-ee last:border-b-0"><th scope="row" class="py-3 pl-4 text-left align-top font-medium text-brown-dark">Chấm điểm bởi chuyên gia</th><td class="py-3 align-top text-gray-49">0,041</td></tr></tbody></table></div></div></div>
+        </div>
+      </div>
+      <div data-tab-panel="nia" role="tabpanel" hidden>
+        <div class="flex flex-col gap-8 px-4 pb-8 pt-8 md:px-10 lg:flex-row lg:gap-12 lg:pb-10 lg:pt-12">
+          <div class="flex flex-col gap-5 rounded-md bg-bg px-6 py-8 lg:w-[440px] lg:shrink-0 lg:self-start">
+            <div class="flex items-center justify-between gap-3"><span class="inline-flex w-fit rounded-full px-3 py-1.5 text-xs leading-4 bg-brown-50 text-brown">Vận chuyển melanin</span><p class="text-right text-xs leading-4 text-gray-66">Cấp 2 · trên người</p></div>
+            <div class="flex flex-col gap-1"><h3 class="text-[28px] leading-[1.4] tracking-[-0.512px] text-blue md:text-[32px]">Niacinamide</h3><p class="text-sm leading-5 tracking-[0.14px] text-gray-66">Vitamin B3</p></div>
+            <p class="text-base leading-[22px] tracking-[0.224px] text-gray-49">Tác động lên giai đoạn vận chuyển melanin và hỗ trợ giữ ẩm.</p>
+            <div class="flex flex-col gap-2"><p class="text-xs uppercase leading-4 tracking-[0.48px] text-gray-66">Có trong</p><ul class="flex flex-wrap gap-1.5"><li class="rounded-full border border-gray-ee bg-white px-3 py-1.5 text-sm leading-5 tracking-[0.14px] text-brown-dark">Photo Defense Serum 4%</li><li class="rounded-full border border-gray-ee bg-white px-3 py-1.5 text-sm leading-5 tracking-[0.14px] text-brown-dark">Retino Renewal Serum 4%</li><li class="rounded-full border border-gray-ee bg-white px-3 py-1.5 text-sm leading-5 tracking-[0.14px] text-brown-dark">Blemish Recovery Cream 4%</li><li class="rounded-full border border-gray-ee bg-white px-3 py-1.5 text-sm leading-5 tracking-[0.14px] text-brown-dark">Zinc Complex Serum 2%</li><li class="rounded-full border border-gray-ee bg-white px-3 py-1.5 text-sm leading-5 tracking-[0.14px] text-brown-dark">NeoBright Repair Cream</li></ul></div>
+          </div>
+          <div class="flex min-w-0 flex-1 flex-col">
+            <div class="flex flex-col gap-3 pb-6"><h4 class="text-xl leading-7 text-brown-dark">Vai trò trong công thức</h4><ul class="flex flex-col gap-3"><li class="flex items-start gap-3"><img src="assets/img/chi-tiet-nhom-hoat-chat/icon-bullet.svg" alt="" width="6" height="14" class="mt-0 h-[14px] w-[6px] shrink-0"><div class="flex flex-col gap-0.5 text-sm leading-5 tracking-[0.14px]"><p class="font-medium text-brown-dark">Trong serum làm sáng</p><p class="text-gray-49">Hướng vào giai đoạn vận chuyển melanin.</p></div></li><li class="flex items-start gap-3"><img src="assets/img/chi-tiet-nhom-hoat-chat/icon-bullet.svg" alt="" width="6" height="14" class="mt-0 h-[14px] w-[6px] shrink-0"><div class="flex flex-col gap-0.5 text-sm leading-5 tracking-[0.14px]"><p class="font-medium text-brown-dark">Trong sản phẩm cho da dễ nổi mụn</p><p class="text-gray-49">Hỗ trợ chăm sóc da mụn và vết thâm mụn.</p></div></li></ul></div>
+            <div class="flex flex-col gap-3 border-t border-gray-ee py-6"><h4 class="text-xl leading-7 text-brown-dark">Cơ chế</h4><ul class="flex flex-col gap-3"><li class="flex items-start gap-3"><img src="assets/img/chi-tiet-nhom-hoat-chat/icon-bullet.svg" alt="" width="6" height="14" class="mt-0 h-[14px] w-[6px] shrink-0"><p class="text-base leading-[22px] tracking-[0.224px] text-navy">Giảm quá trình chuyển melanosome từ tế bào hắc tố sang tế bào sừng.</p></li><li class="flex items-start gap-3"><img src="assets/img/chi-tiet-nhom-hoat-chat/icon-bullet.svg" alt="" width="6" height="14" class="mt-0 h-[14px] w-[6px] shrink-0"><p class="text-base leading-[22px] tracking-[0.224px] text-navy">Tăng tổng hợp ceramide ở lớp sừng, hỗ trợ giữ ẩm.</p></li></ul></div>
+          </div>
+        </div>
+        <div class="flex flex-col gap-6 px-4 pb-8 md:px-10 lg:pb-12">
+          <div class="flex flex-wrap items-center gap-3 border-t border-gray-ee pt-8"><h4 class="text-xl leading-7 text-brown-dark">Bằng chứng hiện có</h4><span class="inline-flex w-fit rounded-full px-3 py-1.5 text-xs leading-4 bg-brown-50 text-brown">Cấp 2 – trên người</span></div>
+          <ul class="flex flex-col gap-3"><li class="flex items-start gap-3"><img src="assets/img/chi-tiet-nhom-hoat-chat/icon-bullet.svg" alt="" width="6" height="14" class="mt-0 h-[14px] w-[6px] shrink-0"><p class="text-base leading-[22px] tracking-[0.224px] text-navy">Niacinamide 4% đã được đánh giá trên người có nám trong một thử nghiệm chia đôi mặt, 27 người.</p></li><li class="flex items-start gap-3"><img src="assets/img/chi-tiet-nhom-hoat-chat/icon-bullet.svg" alt="" width="6" height="14" class="mt-0 h-[14px] w-[6px] shrink-0"><p class="text-base leading-[22px] tracking-[0.224px] text-navy">Trong nghiên cứu phòng thí nghiệm, niacinamide ức chế 35–68% quá trình chuyển melanosome.</p></li><li class="flex items-start gap-3"><img src="assets/img/chi-tiet-nhom-hoat-chat/icon-bullet.svg" alt="" width="6" height="14" class="mt-0 h-[14px] w-[6px] shrink-0"><p class="text-base leading-[22px] tracking-[0.224px] text-navy">Niacinamide 2% đã được đánh giá về tốc độ tiết bã trên phụ nữ Nhật Bản, có đối chứng giả dược.</p></li><li class="flex items-start gap-3"><img src="assets/img/chi-tiet-nhom-hoat-chat/icon-bullet.svg" alt="" width="6" height="14" class="mt-0 h-[14px] w-[6px] shrink-0"><p class="text-base leading-[22px] tracking-[0.224px] text-navy">Niacinamide 2% làm tăng ceramide lớp sừng và giảm mất nước qua da so với kem nền.</p></li></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION: Bằng chứng nổi bật -->
+<section class="bg-white" aria-labelledby="bang-chung">
+  <div class="mx-auto max-w-site px-4 py-16 md:px-8 xl:px-[72px] xl:py-24">
+    <div class="flex flex-col gap-3 uppercase">
+      <p class="text-sm leading-[22px] tracking-[4px] text-brown md:text-base">Bằng chứng nổi bật</p>
+      <h2 id="bang-chung" class="text-3xl leading-[1.4] tracking-[0.624px] text-brown-dark md:text-5xl">Dữ liệu đáng chú ý trong nhóm</h2>
+    </div>
+    <div class="mt-10 grid gap-6 lg:grid-cols-2">
+      <article class="flex min-w-0 flex-col gap-6 rounded-md border border-gray-ee bg-bg p-6 md:p-10" data-aos="fade-up">
+        <div class="flex flex-col items-start gap-2"><span class="inline-flex w-fit rounded-full px-3 py-1.5 text-xs leading-4 bg-brown-50 text-brown">Tranexamic Acid</span><h3 class="text-xl font-medium leading-7 text-brown-dark">TXA 3–5% làm giảm nám tương đương hydroquinone, nhưng ít kích ứng hơn</h3></div>
+        <div class="overflow-x-auto"><table class="w-full min-w-[460px] border-collapse text-left">
+          <thead><tr class="h-[41px] border-b border-gray-dd text-xs uppercase leading-4 tracking-[0.48px] text-gray-66"><th scope="col" class="w-[188px] py-3 pr-3 font-normal">Nghiên cứu</th><th scope="col" class="w-20 py-3 pr-3 font-normal">Số người</th><th scope="col" class="w-[76px] py-3 pr-3 font-normal">Thời gian</th><th scope="col" class="py-3 font-normal">Kết quả</th></tr></thead>
+          <tbody>
+            <tr class="border-b border-gray-ee"><th scope="row" class="py-3 pr-3 text-left font-normal"><span class="block text-sm font-medium leading-5 tracking-[0.14px] text-brown-dark">Yasnova 2024</span><span class="mt-0.5 block text-xs leading-4 text-gray-66">TXA 3% vs HQ 4%</span></th><td class="py-3 pr-3 text-sm leading-5 tracking-[0.14px] text-gray-49">20</td><td class="py-3 pr-3 text-sm leading-5 tracking-[0.14px] text-gray-49">8 tuần</td><td class="py-3 text-sm font-medium leading-5 tracking-[0.14px] text-brown">Hiệu quả tương đương</td></tr>
+            <tr class="border-b border-gray-ee"><th scope="row" class="py-3 pr-3 text-left font-normal"><span class="block text-sm font-medium leading-5 tracking-[0.14px] text-brown-dark">Janney 2019</span><span class="mt-0.5 block text-xs leading-4 text-gray-66">TXA 5% vs HQ 3%</span></th><td class="py-3 pr-3 text-sm leading-5 tracking-[0.14px] text-gray-49">100</td><td class="py-3 pr-3 text-sm leading-5 tracking-[0.14px] text-gray-49">12 tuần</td><td class="py-3 text-sm font-medium leading-5 tracking-[0.14px] text-brown">Kích ứng 6% vs 38%</td></tr>
+            <tr class="border-b border-gray-ee"><th scope="row" class="py-3 pr-3 text-left font-normal"><span class="block text-sm font-medium leading-5 tracking-[0.14px] text-brown-dark">Atefi 2017</span><span class="mt-0.5 block text-xs leading-4 text-gray-66">TXA 5% vs HQ 2%</span></th><td class="py-3 pr-3 text-sm leading-5 tracking-[0.14px] text-gray-49">60</td><td class="py-3 pr-3 text-sm leading-5 tracking-[0.14px] text-gray-49">12 tuần</td><td class="py-3 text-sm font-medium leading-5 tracking-[0.14px] text-brown">Tác dụng phụ 0% vs 10%</td></tr>
+          </tbody></table></div>
+        <p class="text-xs leading-4 text-gray-66">Thử nghiệm ngẫu nhiên có đối chứng trên người có nám má · HQ: hydroquinone</p>
+      </article>
+      <article class="flex min-w-0 flex-col gap-6 rounded-md border border-gray-ee bg-bg p-6 md:p-10" data-aos="fade-up" data-aos-delay="100">
+        <div class="flex flex-col items-start gap-2"><span class="inline-flex w-fit rounded-full px-3 py-1.5 text-xs leading-4 bg-brown-50 text-brown">Alpha-Arbutin</span><h3 class="text-xl font-medium leading-7 text-brown-dark">Alpha-arbutin 1% làm sáng nhiều nhất trong 4 hoạt chất so sánh</h3></div>
+        <ul class="flex flex-col gap-[14px]" aria-label="Mức làm sáng (%) sau 1 tháng">
+            <li class="flex items-center gap-4"><span class="w-[112px] shrink-0 text-sm leading-5 tracking-[0.14px] font-medium text-brown-dark">Alpha-Arbutin</span><span class="h-6 w-[300px] max-w-[45%] shrink grow-0 basis-[300px] overflow-hidden"><span class="block h-6 rounded-r-[4px] bg-brown" style="width:88%"></span></span><span class="whitespace-nowrap text-sm font-medium leading-5 tracking-[0.14px] text-brown-dark">≈0,9%</span></li>
+            <li class="flex items-center gap-4"><span class="w-[112px] shrink-0 text-sm leading-5 tracking-[0.14px] text-gray-49">Kojic acid</span><span class="h-6 w-[300px] max-w-[45%] shrink grow-0 basis-[300px] overflow-hidden"><span class="block h-6 rounded-r-[4px] bg-[#d9a066]" style="width:61%"></span></span><span class="whitespace-nowrap text-sm font-medium leading-5 tracking-[0.14px] text-brown-dark">≈0,6%</span></li>
+            <li class="flex items-center gap-4"><span class="w-[112px] shrink-0 text-sm leading-5 tracking-[0.14px] text-gray-49">Hydroquinone</span><span class="h-6 w-[300px] max-w-[45%] shrink grow-0 basis-[300px] overflow-hidden"><span class="block h-6 rounded-r-[4px] bg-[#d9a066]" style="width:26%"></span></span><span class="whitespace-nowrap text-sm font-medium leading-5 tracking-[0.14px] text-brown-dark">≈0,3%</span></li>
+            <li class="flex items-center gap-4"><span class="w-[112px] shrink-0 text-sm leading-5 tracking-[0.14px] text-gray-49">Beta-Arbutin</span><span class="h-6 w-[300px] max-w-[45%] shrink grow-0 basis-[300px] overflow-hidden"><span class="block h-6 rounded-r-[4px] bg-[#d9a066]" style="width:1.7%"></span></span><span class="whitespace-nowrap text-sm font-medium leading-5 tracking-[0.14px] text-brown-dark">&lt;0,1%</span></li>
+        </ul>
+        <p class="text-xs leading-4 text-gray-66">Mức làm sáng (%) sau 1 tháng, đo trục L* bằng chromameter · 80 phụ nữ, nồng độ 1%, bôi 2 lần/ngày · Nguồn: DSM Personal Care (2021)</p>
+      </article>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- SECTION: Footer -->
+<footer id="footer" class="bg-bg text-navy">
+  <div class="max-w-site mx-auto px-4 md:px-8 xl:px-[72px]">
+    <div class="grid gap-10 pt-12 pb-10 lg:grid-cols-[minmax(0,1fr)_auto] lg:gap-16 lg:pt-24 lg:pb-12">
+      <div>
+        <a href="index.html" class="block max-w-[507px] lg:ml-[9px] lg:mt-[7.4px] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown"><img src="assets/img/footer/logo-dzentic.webp" alt="Dzentic - A brand by Sorai Beauty Engine" width="507" height="157" class="block h-auto w-full" /></a>
+        <ul class="mt-6 lg:mt-[18.4px] flex items-center gap-2" aria-label="Mạng xã hội">
+          <li><a href="#" aria-label="Facebook" class="flex size-8 items-center justify-center rounded-sm border border-gray-bb transition hover:-translate-y-0.5 hover:border-brown hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown"><img src="assets/img/footer/icon-facebook.svg" alt="" width="16" height="18" /></a></li>
+          <li><a href="#" aria-label="Instagram" class="flex size-8 items-center justify-center rounded-sm border border-gray-bb transition hover:-translate-y-0.5 hover:border-brown hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown"><img src="assets/img/footer/icon-instagram.svg" alt="" width="16" height="18" /></a></li>
+          <li><a href="#" aria-label="TikTok" class="flex size-8 items-center justify-center rounded-sm border border-gray-bb transition hover:-translate-y-0.5 hover:border-brown hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown"><img src="assets/img/footer/icon-tiktok.svg" alt="" width="16" height="18" /></a></li>
+        </ul>
+      </div>
+
+      <div class="grid gap-8 sm:grid-cols-2 md:grid-cols-3 md:gap-0">
+        <nav class="md:w-[220px]" aria-label="Sản phẩm và dịch vụ">
+          <h3 class="text-xl leading-7 font-medium text-navy">Sản phẩm và dịch vụ</h3>
+          <ul class="mt-6 flex flex-col gap-[10px] text-base leading-[22px] tracking-[0.224px] text-gray-49">
+            <li><a href="san-pham.html" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Brightening Serum</a></li>
+            <li><a href="san-pham.html" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Repair Cream</a></li>
+            <li><a href="san-pham.html" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Hydrating Cream</a></li>
+            <li><a href="san-pham.html" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Cleansing Gel</a></li>
+            <li><a href="san-pham.html" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Sunscreen</a></li>
+          </ul>
+        </nav>
+        <nav class="md:w-[220px]" aria-label="Liên kết">
+          <h3 class="text-xl leading-7 font-medium text-navy">Liên kết</h3>
+          <ul class="mt-6 flex flex-col gap-[10px] text-base leading-[22px] tracking-[0.224px] text-gray-49">
+            <li><a href="routine-phac-do.html" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Giải Pháp Làn Da</a></li>
+            <li><a href="thu-vien-hoat-chat.html" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Khoa Học &amp; Bằng Chứng</a></li>
+            <li><a href="cau-chuyen-thuong-hieu.html" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Triết Lý Dzentic</a></li>
+            <li><a href="bai-viet.html" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Blog</a></li>
+            <li><a href="lien-he.html" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Liên hệ</a></li>
+          </ul>
+        </nav>
+        <div>
+          <h3 class="text-xl leading-7 font-medium text-navy">Liên hệ</h3>
+          <ul class="mt-6 flex flex-col gap-[10px] text-base leading-[22px] tracking-[0.224px] text-gray-49">
+            <li class="flex items-start gap-2"><img src="assets/img/footer/icon-phone.svg" alt="" width="20" height="20" class="shrink-0" /><a href="tel:15001515" class="hover:text-brown hover:underline focus-visible:text-brown focus-visible:underline">Hotline: 1500 1515</a></li>
+            <li class="flex items-start gap-2"><img src="assets/img/footer/icon-mobile.svg" alt="" width="20" height="21" class="shrink-0" /><a href="tel:+84123456789" class="hover:text-brown hover:underline focus-visible:text-brown focus-visible:underline">Điện thoại:<br />(+84) 123456789</a></li>
+            <li class="flex items-start gap-2"><img src="assets/img/footer/icon-pin.svg" alt="" width="20" height="21" class="shrink-0" /><a href="https://www.google.com/maps/search/?api=1&amp;query=T%E1%BA%A7ng+4+To%C3%A0+West+Tower%2C+365+%C4%91%C6%B0%E1%BB%9Dng+C%E1%BA%A7u+Gi%E1%BA%A5y%2C+H%C3%A0+N%E1%BB%99i" target="_blank" rel="noopener" class="lg:max-w-[169px] hover:text-brown hover:underline focus-visible:text-brown focus-visible:underline">Tầng 4 Toà West Tower, 365 đường Cầu Giấy, Hà Nội</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <hr class="border-0 h-px bg-gray-dd" />
+
+    <div class="flex flex-col gap-6 py-8 text-base leading-[22px] tracking-[0.224px] lg:flex-row lg:items-center lg:justify-between lg:pt-[39px] lg:pb-[55px]">
+      <ul class="flex flex-wrap gap-x-10 gap-y-2">
+        <li><a href="chinh-sach-bao-mat.html" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">An toàn &amp; Bảo mật</a></li>
+        <li><a href="#" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Điều khoản sử dụng</a></li>
+      </ul>
+      <div class="flex flex-col gap-4 sm:flex-row sm:items-center sm:gap-8">
+        <a href="#" class="block transition-opacity hover:opacity-80 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown"><img src="assets/img/footer/badge-bo-cong-thuong.webp" alt="Đã thông báo Bộ Công Thương" width="131" height="40" class="h-10 w-auto" /></a>
+        <p>© Bản quyền 2026 thuộc về Dzentic.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/app.js"></script>
+</body>
+</html>

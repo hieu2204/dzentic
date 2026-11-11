@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dzentic · Thanh toán</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/app.css">
+</head>
+<body>
+<!-- SECTION: topbar -->
+<section aria-label="Thông báo" class="bg-navy text-bg">
+  <p class="max-w-site mx-auto px-4 py-3 md:py-4 text-center text-sm md:text-base leading-[22px] tracking-[0.224px]">
+    Nhận ưu đãi giảm tới 10% và miễn phí vận chuyển cho tất cả các đơn hàng. Cam kết 100% sản phẩm chính hãng.
+  </p>
+</section>
+
+<header class="sticky top-0 z-50 border-b border-gray-ee bg-bg">
+    <div class="max-w-site mx-auto px-4 md:px-8 xl:px-[72px] h-20 xl:h-[120px] flex items-center justify-between xl:grid xl:grid-cols-[1fr_auto_1fr] xl:gap-6">
+      <nav class="hidden xl:flex items-center gap-6 text-base leading-[22px] tracking-[0.224px]" aria-label="Menu trái">
+        <a href="thu-vien-hoat-chat.html" class="hover:text-brown focus-visible:text-brown focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brown">Khoa Học &amp; Bằng Chứng</a>
+        <a href="san-pham.html" aria-current="true" class="text-brown hover:text-brown focus-visible:text-brown focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brown">Sản Phẩm</a>
+      </nav>
+
+      <a href="index.html" class="block shrink-0 xl:justify-self-center hover:opacity-80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brown" aria-label="Dzentic - Trang chủ">
+        <img src="assets/img/hero/logo-dzentic.png" alt="Dzentic - A brand by Sorai Beauty Engine" width="920" height="276"
+             class="h-14 xl:h-[92px] w-auto object-contain">
+      </a>
+
+      <div class="flex items-center gap-6 xl:justify-self-end">
+        <nav class="hidden xl:flex items-center gap-6 text-base leading-[22px] tracking-[0.224px]" aria-label="Menu phải">
+          <a href="cau-chuyen-thuong-hieu.html" class="hover:text-brown focus-visible:text-brown focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brown">Triết Lí Dzentic</a>
+          <a href="routine-phac-do.html" class="hover:text-brown focus-visible:text-brown focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brown">Giải Pháp Làn Da</a>
+          <a href="lien-he.html" class="hover:text-brown focus-visible:text-brown focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brown">Liên Hệ</a>
+        </nav>
+        <div class="flex items-center gap-3 xl:gap-[14px]">
+          <a href="tim-kiem.html" class="hover:opacity-70 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brown" aria-label="Tìm kiếm"><img src="assets/img/hero/icon-search.svg" alt="" width="20" height="20"></a>
+          <a href="gio-hang.html" class="group flex items-center gap-2 xl:gap-0.5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brown" aria-label="Giỏ hàng">
+            <img src="assets/img/hero/icon-cart.svg" alt="" width="20" height="20" class="group-hover:opacity-70">
+            <span class="grid place-items-center size-5 rounded-[10px] bg-brown text-bg text-base leading-[22px] group-hover:bg-brown-dark" data-cart-count>4</span>
+          </a>
+          <button type="button" data-menu-toggle class="xl:hidden ml-2 p-1 hover:text-brown focus-visible:text-brown focus-visible:outline focus-visible:outline-2 focus-visible:outline-brown" aria-label="Mở menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Menu mobile -->
+    <nav data-menu class="hidden xl:hidden bg-bg border-t border-gray-dd px-4 md:px-8 py-4 text-base" aria-label="Menu chính">
+      <ul class="flex flex-col gap-4">
+        <li><a href="thu-vien-hoat-chat.html" class="hover:text-brown focus-visible:text-brown">Khoa Học &amp; Bằng Chứng</a></li>
+        <li><a href="san-pham.html" class="hover:text-brown focus-visible:text-brown">Sản Phẩm</a></li>
+        <li><a href="cau-chuyen-thuong-hieu.html" class="hover:text-brown focus-visible:text-brown">Triết Lí Dzentic</a></li>
+        <li><a href="routine-phac-do.html" class="hover:text-brown focus-visible:text-brown">Giải Pháp Làn Da</a></li>
+        <li><a href="lien-he.html" class="hover:text-brown focus-visible:text-brown">Liên Hệ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<section class="bg-bg" aria-labelledby="page-title">
+  <div class="mx-auto flex max-w-site flex-col gap-6 px-4 pt-8 md:px-8 xl:px-[72px]">
+    <nav aria-label="Breadcrumb" class="flex flex-wrap items-center gap-2 text-sm leading-5 tracking-[0.14px]">
+      <a href="index.html" class="text-gray-66 hover:text-brown focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy">Trang chủ</a>
+      <span class="text-gray-99" aria-hidden="true">/</span>
+      <a href="gio-hang.html" class="text-gray-66 hover:text-brown focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy">Giỏ hàng</a>
+      <span class="text-gray-99" aria-hidden="true">/</span>
+      <span class="text-navy" aria-current="page">Thanh toán</span>
+    </nav>
+    <div class="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
+      <div class="flex flex-col gap-2">
+        <h1 id="page-title" class="text-3xl uppercase leading-[1.4] tracking-[0.624px] text-brown-dark md:text-5xl">THANH TOÁN</h1>
+        <p class="text-base leading-[22px] tracking-[0.224px] text-gray-49">Hoàn tất thông tin để Dzentic giao routine đến bạn sớm nhất</p>
+      </div>
+      <ol class="checkout-stepper relative h-[66px] w-full max-w-[480px] shrink-0 list-none" aria-label="Tiến trình đặt hàng">
+  <span class="absolute left-[56px] right-[calc(50%+16px)] top-[15px] h-0.5 bg-green" aria-hidden="true"></span>
+  <span class="absolute left-[calc(50%+16px)] right-[56px] top-[15px] h-0.5 bg-gray-bb" aria-hidden="true"></span>
+  <li class="absolute top-0 flex w-16 flex-col items-center gap-3 left-2"><span class="grid size-8 place-items-center rounded-full bg-green text-xs leading-4 text-bg"><img src="assets/img/thanh-toan/icon-step-done.svg" alt="" width="16" height="16"></span><span class="whitespace-nowrap text-base leading-[22px] tracking-[0.224px] text-green">Giỏ hàng</span></li><li aria-current="step" class="absolute top-0 flex w-16 flex-col items-center gap-3 left-1/2 -translate-x-1/2"><span class="grid size-8 place-items-center rounded-full bg-brown-dark text-xs leading-4 text-bg">2</span><span class="whitespace-nowrap text-base leading-[22px] tracking-[0.224px] text-brown-dark">Thanh toán</span></li><li class="absolute top-0 flex w-16 flex-col items-center gap-3 right-2"><span class="grid size-8 place-items-center rounded-full bg-gray-bb text-xs leading-4 text-bg">3</span><span class="whitespace-nowrap text-base leading-[22px] tracking-[0.224px] text-gray-99">Hoàn tất</span></li>
+</ol>
+    </div>
+  </div>
+</section>
+<main>
+  <section class="bg-bg" aria-label="Thông tin thanh toán">
+    <div class="mx-auto flex max-w-site flex-col gap-6 px-4 pb-16 pt-10 md:px-8 lg:flex-row lg:items-start xl:px-[72px] xl:pb-24">
+      <form id="checkout-form" novalidate class="flex min-w-0 flex-1 flex-col gap-6">
+      <section id="thong-tin-lien-he" class="flex scroll-mt-40 flex-col gap-6 rounded-md border border-gray-dd bg-white p-5 md:p-8" aria-labelledby="thong-tin-lien-he-h">
+  <div class="flex items-center gap-3"><span class="grid size-7 shrink-0 place-items-center rounded-full bg-navy text-sm font-medium leading-5 tracking-[0.14px] text-bg">1</span><h2 id="thong-tin-lien-he-h" class="min-w-0 flex-1 text-xl font-medium leading-7 text-navy">Thông tin liên hệ</h2></div>
+<div class="grid gap-4 md:grid-cols-2"><div class="flex min-w-0 flex-col gap-2 " data-field><label for="f-name" class="flex gap-1 text-sm font-medium leading-5 tracking-[0.14px] text-navy">Họ và tên<span class="text-[#b3261e]" aria-hidden="true">*</span></label><input id="f-name" name="name" type="text" value="Nguyễn Minh Anh" placeholder="Nhập họ và tên" required aria-required="true" autocomplete="name" class="h-12 w-full rounded-sm border border-gray-dd bg-white px-4 text-base leading-[22px] tracking-[0.224px] text-navy placeholder:text-gray-99 hover:border-gray-bb focus:border-navy focus:shadow-[0_0_0_0.5px_var(--color-navy)] focus:outline-none aria-[invalid=true]:border-[#b3261e]"><p data-error class="hidden text-xs leading-4 text-[#b3261e]" role="alert"></p></div><div class="flex min-w-0 flex-col gap-2 " data-field><label for="f-phone" class="flex gap-1 text-sm font-medium leading-5 tracking-[0.14px] text-navy">Số điện thoại<span class="text-[#b3261e]" aria-hidden="true">*</span></label><input id="f-phone" name="phone" type="tel" value="0912 345 678" placeholder="Nhập số điện thoại" required aria-required="true" autocomplete="tel" class="h-12 w-full rounded-sm border border-gray-dd bg-white px-4 text-base leading-[22px] tracking-[0.224px] text-navy placeholder:text-gray-99 hover:border-gray-bb focus:border-navy focus:shadow-[0_0_0_0.5px_var(--color-navy)] focus:outline-none aria-[invalid=true]:border-[#b3261e]"><p data-error class="hidden text-xs leading-4 text-[#b3261e]" role="alert"></p></div></div><div class="flex min-w-0 flex-col gap-2 " data-field><label for="f-email" class="flex gap-1 text-sm font-medium leading-5 tracking-[0.14px] text-navy">Email</label><input id="f-email" name="email" type="email" value="minhanh.nguyen@email.com" placeholder="Nhập địa chỉ email" autocomplete="email" class="h-12 w-full rounded-sm border border-gray-dd bg-white px-4 text-base leading-[22px] tracking-[0.224px] text-navy placeholder:text-gray-99 hover:border-gray-bb focus:border-navy focus:shadow-[0_0_0_0.5px_var(--color-navy)] focus:outline-none aria-[invalid=true]:border-[#b3261e]"><p data-error class="hidden text-xs leading-4 text-[#b3261e]" role="alert"></p></div><label class="inline-flex cursor-pointer items-center gap-3 "><input type="checkbox" class="peer sr-only" name="promo" checked><span class="grid size-5 shrink-0 place-items-center rounded-sm border-[1.5px] border-navy bg-white peer-checked:bg-navy peer-focus-visible:outline-2 peer-focus-visible:outline-offset-2 peer-focus-visible:outline-navy [&>img]:opacity-0 peer-checked:[&>img]:opacity-100"><img src="assets/img/thanh-toan/icon-check-box.svg" alt="" width="14" height="14"></span><span class="text-sm leading-5 tracking-[0.14px] text-gray-49">Nhận thông tin routine &amp; ưu đãi dành riêng từ Dzentic</span></label>
+</section>
+      <section id="dia-chi-giao-hang" class="flex scroll-mt-40 flex-col gap-6 rounded-md border border-gray-dd bg-white p-5 md:p-8" aria-labelledby="dia-chi-giao-hang-h">
+  <div class="flex items-center gap-3"><span class="grid size-7 shrink-0 place-items-center rounded-full bg-navy text-sm font-medium leading-5 tracking-[0.14px] text-bg">2</span><h2 id="dia-chi-giao-hang-h" class="min-w-0 flex-1 text-xl font-medium leading-7 text-navy">Địa chỉ giao hàng</h2></div>
+<div class="grid gap-4 md:grid-cols-2"><div class="flex min-w-0 flex-col gap-2" data-field><label for="f-province" class="flex gap-1 text-sm font-medium leading-5 tracking-[0.14px] text-navy">Tỉnh / Thành phố<span class="text-[#b3261e]" aria-hidden="true">*</span></label><div class="relative"><select id="f-province" name="province" required aria-required="true" autocomplete="address-level1" class="h-12 w-full rounded-sm border border-gray-dd bg-white px-4 text-base leading-[22px] tracking-[0.224px] text-navy placeholder:text-gray-99 hover:border-gray-bb focus:border-navy focus:shadow-[0_0_0_0.5px_var(--color-navy)] focus:outline-none aria-[invalid=true]:border-[#b3261e] cursor-pointer appearance-none pr-12"><option value="Hà Nội" selected>Hà Nội</option><option value="TP. Hồ Chí Minh">TP. Hồ Chí Minh</option><option value="Đà Nẵng">Đà Nẵng</option><option value="Hải Phòng">Hải Phòng</option><option value="Cần Thơ">Cần Thơ</option><option value="Huế">Huế</option></select><img src="assets/img/thanh-toan/icon-chevron.svg" alt="" width="20" height="20" class="pointer-events-none absolute right-4 top-1/2 size-5 -translate-y-1/2"></div><p data-error class="hidden text-xs leading-4 text-[#b3261e]" role="alert"></p></div><div class="flex min-w-0 flex-col gap-2" data-field><label for="f-ward" class="flex gap-1 text-sm font-medium leading-5 tracking-[0.14px] text-navy">Phường / Xã<span class="text-[#b3261e]" aria-hidden="true">*</span></label><div class="relative"><select id="f-ward" name="ward" required aria-required="true" autocomplete="address-level2" class="h-12 w-full rounded-sm border border-gray-dd bg-white px-4 text-base leading-[22px] tracking-[0.224px] text-navy placeholder:text-gray-99 hover:border-gray-bb focus:border-navy focus:shadow-[0_0_0_0.5px_var(--color-navy)] focus:outline-none aria-[invalid=true]:border-[#b3261e] cursor-pointer appearance-none pr-12"><option value="Dịch Vọng Hậu" selected>Dịch Vọng Hậu</option><option value="Dịch Vọng">Dịch Vọng</option><option value="Mai Dịch">Mai Dịch</option><option value="Nghĩa Đô">Nghĩa Đô</option><option value="Quan Hoa">Quan Hoa</option><option value="Yên Hòa">Yên Hòa</option></select><img src="assets/img/thanh-toan/icon-chevron.svg" alt="" width="20" height="20" class="pointer-events-none absolute right-4 top-1/2 size-5 -translate-y-1/2"></div><p data-error class="hidden text-xs leading-4 text-[#b3261e]" role="alert"></p></div></div><div class="flex min-w-0 flex-col gap-2 " data-field><label for="f-street" class="flex gap-1 text-sm font-medium leading-5 tracking-[0.14px] text-navy">Địa chỉ cụ thể<span class="text-[#b3261e]" aria-hidden="true">*</span></label><input id="f-street" name="street" type="text" value="Số 12, ngõ 68 Trần Thái Tông" placeholder="Số nhà, tên đường" required aria-required="true" autocomplete="street-address" class="h-12 w-full rounded-sm border border-gray-dd bg-white px-4 text-base leading-[22px] tracking-[0.224px] text-navy placeholder:text-gray-99 hover:border-gray-bb focus:border-navy focus:shadow-[0_0_0_0.5px_var(--color-navy)] focus:outline-none aria-[invalid=true]:border-[#b3261e]"><p data-error class="hidden text-xs leading-4 text-[#b3261e]" role="alert"></p></div><div class="flex flex-col gap-2"><label for="f-note" class="text-sm font-medium leading-5 tracking-[0.14px] text-navy">Ghi chú cho đơn hàng (không bắt buộc)</label><textarea id="f-note" name="note" rows="4" placeholder="Ví dụ: Giao trong giờ hành chính, gọi trước khi giao…" class="h-28 w-full resize-y rounded-sm border border-gray-dd bg-white px-4 py-3 text-base leading-[22px] tracking-[0.224px] text-navy placeholder:text-gray-99 hover:border-gray-bb focus:border-navy focus:shadow-[0_0_0_0.5px_var(--color-navy)] focus:outline-none"></textarea></div>
+</section>
+      <section id="van-chuyen" class="flex scroll-mt-40 flex-col gap-6 rounded-md border border-gray-dd bg-white p-5 md:p-8" aria-labelledby="van-chuyen-h">
+  <div class="flex items-center gap-3"><span class="grid size-7 shrink-0 place-items-center rounded-full bg-navy text-sm font-medium leading-5 tracking-[0.14px] text-bg">3</span><h2 id="van-chuyen-h" class="min-w-0 flex-1 text-xl font-medium leading-7 text-navy">Phương thức vận chuyển</h2></div>
+<div class="flex flex-col gap-3" role="radiogroup" aria-label="Phương thức vận chuyển"><label class="group flex cursor-pointer flex-wrap items-center gap-x-4 gap-y-2 rounded-md border border-gray-dd bg-white px-4 py-4 transition-colors hover:border-gray-bb md:px-6 md:py-5 has-[:checked]:border-brown has-[:checked]:bg-brown-50 has-[:focus-visible]:outline-2 has-[:focus-visible]:outline-offset-2 has-[:focus-visible]:outline-navy" data-radio-option><input type="radio" name="shipping" value="standard" class="peer sr-only" checked><span class="grid size-5 shrink-0 place-items-center rounded-full border-[1.5px] border-gray-bb bg-white transition-colors group-has-[:checked]:border-brown"><span class="size-2.5 scale-0 rounded-full bg-brown transition-transform group-has-[:checked]:scale-100"></span></span><span class="flex min-w-0 flex-1 basis-[180px] flex-col gap-1"><span class="text-base leading-[22px] tracking-[0.224px] text-navy">Giao hàng tiêu chuẩn</span><span class="text-sm leading-5 tracking-[0.14px] text-gray-66">Nhận hàng trong 2–4 ngày làm việc</span></span><span class="flex items-center gap-4 text-base leading-[22px] tracking-[0.224px] whitespace-nowrap"><span class="text-gray-99 line-through">30.000 VNĐ</span><span class="text-navy">Miễn phí</span></span></label><label class="group flex cursor-pointer flex-wrap items-center gap-x-4 gap-y-2 rounded-md border border-gray-dd bg-white px-4 py-4 transition-colors hover:border-gray-bb md:px-6 md:py-5 has-[:checked]:border-brown has-[:checked]:bg-brown-50 has-[:focus-visible]:outline-2 has-[:focus-visible]:outline-offset-2 has-[:focus-visible]:outline-navy" data-radio-option><input type="radio" name="shipping" value="express" class="peer sr-only"><span class="grid size-5 shrink-0 place-items-center rounded-full border-[1.5px] border-gray-bb bg-white transition-colors group-has-[:checked]:border-brown"><span class="size-2.5 scale-0 rounded-full bg-brown transition-transform group-has-[:checked]:scale-100"></span></span><span class="flex min-w-0 flex-1 basis-[180px] flex-col gap-1"><span class="text-base leading-[22px] tracking-[0.224px] text-navy">Giao hàng nhanh</span><span class="text-sm leading-5 tracking-[0.14px] text-gray-66">Nhận trong 24 giờ – áp dụng nội thành Hà Nội &amp; TP.HCM</span></span><span class="text-base leading-[22px] tracking-[0.224px] whitespace-nowrap text-navy">50.000 VNĐ</span></label></div>
+</section>
+      <section id="thanh-toan" class="flex scroll-mt-40 flex-col gap-6 rounded-md border border-gray-dd bg-white p-5 md:p-8" aria-labelledby="thanh-toan-h">
+  <div class="flex items-center gap-3"><span class="grid size-7 shrink-0 place-items-center rounded-full bg-navy text-sm font-medium leading-5 tracking-[0.14px] text-bg">4</span><h2 id="thanh-toan-h" class="min-w-0 flex-1 text-xl font-medium leading-7 text-navy">Phương thức thanh toán</h2></div>
+<div class="flex flex-col gap-3" role="radiogroup" aria-label="Phương thức thanh toán"><label class="group flex cursor-pointer flex-wrap items-center gap-x-4 gap-y-2 rounded-md border border-gray-dd bg-white px-4 py-4 transition-colors hover:border-gray-bb md:px-6 md:py-5 has-[:checked]:border-brown has-[:checked]:bg-brown-50 has-[:focus-visible]:outline-2 has-[:focus-visible]:outline-offset-2 has-[:focus-visible]:outline-navy" data-radio-option><input type="radio" name="payment" value="cod" class="peer sr-only"><span class="grid size-5 shrink-0 place-items-center rounded-full border-[1.5px] border-gray-bb bg-white transition-colors group-has-[:checked]:border-brown"><span class="size-2.5 scale-0 rounded-full bg-brown transition-transform group-has-[:checked]:scale-100"></span></span><span class="flex min-w-0 flex-1 basis-[180px] flex-col gap-1"><span class="text-base leading-[22px] tracking-[0.224px] text-navy">Thanh toán khi nhận hàng (COD)</span><span class="text-sm leading-5 tracking-[0.14px] text-gray-66">Kiểm tra sản phẩm trước khi thanh toán cho nhân viên giao hàng</span></span></label><label class="group flex cursor-pointer flex-wrap items-center gap-x-4 gap-y-2 rounded-md border border-gray-dd bg-white px-4 py-4 transition-colors hover:border-gray-bb md:px-6 md:py-5 has-[:checked]:border-brown has-[:checked]:bg-brown-50 has-[:focus-visible]:outline-2 has-[:focus-visible]:outline-offset-2 has-[:focus-visible]:outline-navy" data-radio-option><input type="radio" name="payment" value="vietqr" class="peer sr-only" checked><span class="grid size-5 shrink-0 place-items-center rounded-full border-[1.5px] border-gray-bb bg-white transition-colors group-has-[:checked]:border-brown"><span class="size-2.5 scale-0 rounded-full bg-brown transition-transform group-has-[:checked]:scale-100"></span></span><span class="flex min-w-0 flex-1 basis-[180px] flex-col gap-1"><span class="text-base leading-[22px] tracking-[0.224px] text-navy">Chuyển khoản ngân hàng / VietQR</span><span class="text-sm leading-5 tracking-[0.14px] text-gray-66">Quét mã QR hoặc chuyển khoản theo thông tin bên dưới.</span></span></label><div class="flex items-center gap-3 rounded-sm bg-brown-50 px-5 py-4"><img src="assets/img/thanh-toan/icon-qr.svg" alt="" width="24" height="24" class="size-6 shrink-0"><p class="min-w-0 flex-1 text-sm leading-5 text-brown-dark">Mã QR thanh toán tự động sẽ được hiển thị ngay sau khi bạn bấm Đặt hàng.</p></div></div><div class="flex flex-col gap-4"><label class="inline-flex cursor-pointer items-center gap-3 self-start"><input type="checkbox" class="peer sr-only" name="vat" data-vat-toggle><span class="grid size-5 shrink-0 place-items-center rounded-sm border-[1.5px] border-navy bg-white peer-checked:bg-navy peer-focus-visible:outline-2 peer-focus-visible:outline-offset-2 peer-focus-visible:outline-navy [&>img]:opacity-0 peer-checked:[&>img]:opacity-100"><img src="assets/img/thanh-toan/icon-check-box.svg" alt="" width="14" height="14"></span><span class="text-sm leading-5 tracking-[0.14px] text-gray-49">Xuất hóa đơn VAT cho công ty</span></label><div data-vat-panel class="hidden flex-col gap-4 rounded-md bg-brown-50 p-5 md:p-6"><div class="flex min-w-0 flex-col gap-2 " data-field><label for="f-vatCompany" class="flex gap-1 text-sm font-medium leading-5 tracking-[0.14px] text-navy">Tên công ty<span class="text-[#b3261e]" aria-hidden="true">*</span></label><input id="f-vatCompany" name="vatCompany" type="text" value="" placeholder="Nhập tên công ty theo đăng ký kinh doanh" required aria-required="true" class="h-12 w-full rounded-sm border border-gray-dd bg-white px-4 text-base leading-[22px] tracking-[0.224px] text-navy placeholder:text-gray-99 hover:border-gray-bb focus:border-navy focus:shadow-[0_0_0_0.5px_var(--color-navy)] focus:outline-none aria-[invalid=true]:border-[#b3261e]"><p data-error class="hidden text-xs leading-4 text-[#b3261e]" role="alert"></p></div><div class="grid gap-4 md:grid-cols-2"><div class="flex min-w-0 flex-col gap-2 " data-field><label for="f-vatTax" class="flex gap-1 text-sm font-medium leading-5 tracking-[0.14px] text-navy">Mã số thuế<span class="text-[#b3261e]" aria-hidden="true">*</span></label><input id="f-vatTax" name="vatTax" type="text" value="" placeholder="Nhập mã số thuế" required aria-required="true" class="h-12 w-full rounded-sm border border-gray-dd bg-white px-4 text-base leading-[22px] tracking-[0.224px] text-navy placeholder:text-gray-99 hover:border-gray-bb focus:border-navy focus:shadow-[0_0_0_0.5px_var(--color-navy)] focus:outline-none aria-[invalid=true]:border-[#b3261e]"><p data-error class="hidden text-xs leading-4 text-[#b3261e]" role="alert"></p></div><div class="flex min-w-0 flex-col gap-2 " data-field><label for="f-vatEmail" class="flex gap-1 text-sm font-medium leading-5 tracking-[0.14px] text-navy">Email nhận hóa đơn<span class="text-[#b3261e]" aria-hidden="true">*</span></label><input id="f-vatEmail" name="vatEmail" type="email" value="" placeholder="Nhập email nhận hóa đơn điện tử" required aria-required="true" class="h-12 w-full rounded-sm border border-gray-dd bg-white px-4 text-base leading-[22px] tracking-[0.224px] text-navy placeholder:text-gray-99 hover:border-gray-bb focus:border-navy focus:shadow-[0_0_0_0.5px_var(--color-navy)] focus:outline-none aria-[invalid=true]:border-[#b3261e]"><p data-error class="hidden text-xs leading-4 text-[#b3261e]" role="alert"></p></div></div><div class="flex min-w-0 flex-col gap-2 " data-field><label for="f-vatAddress" class="flex gap-1 text-sm font-medium leading-5 tracking-[0.14px] text-navy">Địa chỉ công ty<span class="text-[#b3261e]" aria-hidden="true">*</span></label><input id="f-vatAddress" name="vatAddress" type="text" value="" placeholder="Nhập địa chỉ theo đăng ký kinh doanh" required aria-required="true" class="h-12 w-full rounded-sm border border-gray-dd bg-white px-4 text-base leading-[22px] tracking-[0.224px] text-navy placeholder:text-gray-99 hover:border-gray-bb focus:border-navy focus:shadow-[0_0_0_0.5px_var(--color-navy)] focus:outline-none aria-[invalid=true]:border-[#b3261e]"><p data-error class="hidden text-xs leading-4 text-[#b3261e]" role="alert"></p></div><p class="text-xs leading-4 text-gray-66">Hóa đơn điện tử sẽ được gửi tới email trên trong vòng 7 ngày kể từ khi đơn hàng giao thành công.</p></div></div>
+</section>
+        <div class="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+          <a href="gio-hang.html" class="inline-flex h-10 items-center gap-2 rounded-sm border border-navy px-6 text-base leading-[22px] tracking-[0.224px] text-navy whitespace-nowrap hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy">&larr; Quay lại giỏ hàng</a>
+          <p class="text-xs leading-4 text-gray-66">Các trường có dấu * là bắt buộc</p>
+        </div>
+      </form>
+      <aside class="flex w-full shrink-0 flex-col gap-5 rounded-md border border-gray-dd bg-white p-5 md:p-8 lg:w-[424px]" aria-labelledby="order-h" data-order-summary>
+    <div class="flex items-center justify-between gap-4">
+      <h2 id="order-h" class="text-xl font-medium leading-7 text-navy">ĐƠN HÀNG (<span data-sum-count>4</span>)</h2>
+      <a href="gio-hang.html" class="shrink-0 text-sm font-medium leading-5 tracking-[0.14px] text-brown underline underline-offset-2 hover:text-brown-dark focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy">Chỉnh sửa</a>
+    </div>
+    <ul class="flex flex-col gap-5 pt-2" data-lines>
+      <li data-line="blue-light" data-price="1000000" data-qty="1" class="flex items-center gap-4"><div class="relative h-20 w-16 shrink-0"><img src="assets/img/thanh-toan/sp-1.webp" alt="Blue Light Shield Tone-Up Fluid Sunscreen" width="486" height="1122" class="size-full rounded-sm object-contain"><span data-line-qty class="absolute -top-2 left-[52px] grid size-[22px] place-items-center rounded-full bg-navy text-xs leading-4 text-bg">1</span></div><div class="flex min-w-0 flex-1 flex-col gap-1"><p class="text-sm font-medium leading-5 tracking-[0.14px] text-navy">Blue Light Shield Tone-Up Fluid Sunscreen</p><p class="text-xs leading-4 text-gray-66">50 g</p></div><p data-line-total class="whitespace-nowrap text-sm font-medium leading-5 tracking-[0.14px] text-navy">1.000.000 VNĐ</p></li>
+      <li data-line="neobright" data-price="890000" data-qty="1" class="flex items-center gap-4"><div class="relative h-20 w-16 shrink-0"><img src="assets/img/thanh-toan/sp-2.webp" alt="NeoBright Repair Cream" width="792" height="608" class="size-full rounded-sm object-contain"><span data-line-qty class="absolute -top-2 left-[52px] grid size-[22px] place-items-center rounded-full bg-navy text-xs leading-4 text-bg">1</span></div><div class="flex min-w-0 flex-1 flex-col gap-1"><p class="text-sm font-medium leading-5 tracking-[0.14px] text-navy">NeoBright Repair Cream</p><p class="text-xs leading-4 text-gray-66">50 g</p></div><p data-line-total class="whitespace-nowrap text-sm font-medium leading-5 tracking-[0.14px] text-navy">890.000 VNĐ</p></li>
+      <li data-line="cleansing" data-price="450000" data-qty="2" class="flex items-center gap-4"><div class="relative h-20 w-16 shrink-0"><img src="assets/img/thanh-toan/sp-3.webp" alt="Purifying Cleansing Gel" width="656" height="1338" class="size-full rounded-sm object-contain"><span data-line-qty class="absolute -top-2 left-[52px] grid size-[22px] place-items-center rounded-full bg-navy text-xs leading-4 text-bg">2</span></div><div class="flex min-w-0 flex-1 flex-col gap-1"><p class="text-sm font-medium leading-5 tracking-[0.14px] text-navy">Purifying Cleansing Gel</p><p class="text-xs leading-4 text-gray-66">150 ml</p></div><p data-line-total class="whitespace-nowrap text-sm font-medium leading-5 tracking-[0.14px] text-navy">900.000 VNĐ</p></li>
+    </ul>
+    <p data-empty class="hidden text-sm leading-5 text-gray-66">Chưa có sản phẩm nào được chọn. <a href="gio-hang.html" class="text-brown underline hover:text-brown-dark">Quay lại giỏ hàng</a></p>
+    <hr class="border-gray-dd">
+    <dl class="flex flex-col gap-3 text-sm leading-5 tracking-[0.14px]">
+      <div class="flex items-start justify-between gap-4"><dt class="text-gray-49">Tạm tính</dt><dd data-sum-sub class="font-medium text-navy">2.790.000 VNĐ</dd></div>
+      <div class="flex items-start justify-between gap-4"><dt class="text-gray-49">Phí vận chuyển (<span data-ship-name>Tiêu chuẩn</span>)</dt><dd data-ship-fee class="font-medium text-navy">Miễn phí</dd></div>
+    </dl>
+    <hr class="border-gray-dd">
+    <div class="flex flex-col gap-1">
+      <div class="flex items-center justify-between gap-4 text-xl leading-7"><span class="font-medium text-navy">Tổng thanh toán</span><span data-sum-total class="font-bold text-brown">2.790.000 VNĐ</span></div>
+      <p class="text-right text-xs leading-4 text-gray-66">Đã bao gồm VAT</p>
+    </div>
+    <div class="flex items-start gap-3"><label class="mt-px inline-flex shrink-0 cursor-pointer"><input type="checkbox" id="terms" class="peer sr-only" aria-describedby="terms-text"><span class="grid size-5 place-items-center rounded-sm border-[1.5px] border-navy bg-white peer-checked:bg-navy peer-focus-visible:outline-2 peer-focus-visible:outline-offset-2 peer-focus-visible:outline-navy [&>img]:opacity-0 peer-checked:[&>img]:opacity-100"><img src="assets/img/thanh-toan/icon-check-box.svg" alt="" width="14" height="14"></span><span class="sr-only">Đồng ý điều khoản</span></label><p id="terms-text" class="min-w-0 flex-1 text-xs leading-4 text-gray-66">Tôi đã đọc và đồng ý với <a href="chinh-sach-bao-mat.html" class="text-navy underline hover:text-brown">Điều khoản sử dụng</a> và <a href="chinh-sach-bao-mat.html" class="text-navy underline hover:text-brown">Chính sách bảo mật</a> của Dzentic.</p></div><button type="submit" form="checkout-form" id="place-order" disabled class="inline-flex h-10 w-full items-center justify-center gap-2 rounded-sm bg-brown px-6 text-base leading-[22px] tracking-[0.224px] text-bg hover:bg-brown-dark focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy disabled:cursor-not-allowed disabled:opacity-40 disabled:hover:bg-brown">Đặt hàng ngay<img src="assets/img/thanh-toan/icon-btn-arrow.svg" alt="" width="12" height="13"></button>
+    <div class="flex items-center gap-2 rounded-sm bg-[#e7f7ed] px-4 py-3"><img src="assets/img/thanh-toan/icon-secure.svg" alt="" width="16" height="16" class="size-4 shrink-0"><p class="text-xs leading-4 text-navy">Thông tin của bạn được mã hóa và bảo mật tuyệt đối</p></div>
+  </aside>
+    </div>
+  </section>
+</main>
+<!-- SECTION: Footer -->
+<footer id="footer" class="bg-bg text-navy">
+  <div class="max-w-site mx-auto px-4 md:px-8 xl:px-[72px]">
+    <div class="grid gap-10 pt-12 pb-10 lg:grid-cols-[minmax(0,1fr)_auto] lg:gap-16 lg:pt-24 lg:pb-12">
+      <div>
+        <a href="index.html" class="block max-w-[507px] lg:ml-[9px] lg:mt-[7.4px] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown"><img src="assets/img/footer/logo-dzentic.webp" alt="Dzentic - A brand by Sorai Beauty Engine" width="507" height="157" class="block h-auto w-full" /></a>
+        <ul class="mt-6 lg:mt-[18.4px] flex items-center gap-2" aria-label="Mạng xã hội">
+          <li><a href="#" aria-label="Facebook" class="flex size-8 items-center justify-center rounded-sm border border-gray-bb transition hover:-translate-y-0.5 hover:border-brown hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown"><img src="assets/img/footer/icon-facebook.svg" alt="" width="16" height="18" /></a></li>
+          <li><a href="#" aria-label="Instagram" class="flex size-8 items-center justify-center rounded-sm border border-gray-bb transition hover:-translate-y-0.5 hover:border-brown hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown"><img src="assets/img/footer/icon-instagram.svg" alt="" width="16" height="18" /></a></li>
+          <li><a href="#" aria-label="TikTok" class="flex size-8 items-center justify-center rounded-sm border border-gray-bb transition hover:-translate-y-0.5 hover:border-brown hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown"><img src="assets/img/footer/icon-tiktok.svg" alt="" width="16" height="18" /></a></li>
+        </ul>
+      </div>
+
+      <div class="grid gap-8 sm:grid-cols-2 md:grid-cols-3 md:gap-0">
+        <nav class="md:w-[220px]" aria-label="Sản phẩm và dịch vụ">
+          <h3 class="text-xl leading-7 font-medium text-navy">Sản phẩm và dịch vụ</h3>
+          <ul class="mt-6 flex flex-col gap-[10px] text-base leading-[22px] tracking-[0.224px] text-gray-49">
+            <li><a href="san-pham.html" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Brightening Serum</a></li>
+            <li><a href="san-pham.html" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Repair Cream</a></li>
+            <li><a href="san-pham.html" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Hydrating Cream</a></li>
+            <li><a href="san-pham.html" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Cleansing Gel</a></li>
+            <li><a href="san-pham.html" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Sunscreen</a></li>
+          </ul>
+        </nav>
+        <nav class="md:w-[220px]" aria-label="Liên kết">
+          <h3 class="text-xl leading-7 font-medium text-navy">Liên kết</h3>
+          <ul class="mt-6 flex flex-col gap-[10px] text-base leading-[22px] tracking-[0.224px] text-gray-49">
+            <li><a href="routine-phac-do.html" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Giải Pháp Làn Da</a></li>
+            <li><a href="thu-vien-hoat-chat.html" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Khoa Học &amp; Bằng Chứng</a></li>
+            <li><a href="cau-chuyen-thuong-hieu.html" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Triết Lý Dzentic</a></li>
+            <li><a href="bai-viet.html" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Blog</a></li>
+            <li><a href="lien-he.html" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Liên hệ</a></li>
+          </ul>
+        </nav>
+        <div>
+          <h3 class="text-xl leading-7 font-medium text-navy">Liên hệ</h3>
+          <ul class="mt-6 flex flex-col gap-[10px] text-base leading-[22px] tracking-[0.224px] text-gray-49">
+            <li class="flex items-start gap-2"><img src="assets/img/footer/icon-phone.svg" alt="" width="20" height="20" class="shrink-0" /><a href="tel:15001515" class="hover:text-brown hover:underline focus-visible:text-brown focus-visible:underline">Hotline: 1500 1515</a></li>
+            <li class="flex items-start gap-2"><img src="assets/img/footer/icon-mobile.svg" alt="" width="20" height="21" class="shrink-0" /><a href="tel:+84123456789" class="hover:text-brown hover:underline focus-visible:text-brown focus-visible:underline">Điện thoại:<br />(+84) 123456789</a></li>
+            <li class="flex items-start gap-2"><img src="assets/img/footer/icon-pin.svg" alt="" width="20" height="21" class="shrink-0" /><a href="https://www.google.com/maps/search/?api=1&amp;query=T%E1%BA%A7ng+4+To%C3%A0+West+Tower%2C+365+%C4%91%C6%B0%E1%BB%9Dng+C%E1%BA%A7u+Gi%E1%BA%A5y%2C+H%C3%A0+N%E1%BB%99i" target="_blank" rel="noopener" class="lg:max-w-[169px] hover:text-brown hover:underline focus-visible:text-brown focus-visible:underline">Tầng 4 Toà West Tower, 365 đường Cầu Giấy, Hà Nội</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <hr class="border-0 h-px bg-gray-dd" />
+
+    <div class="flex flex-col gap-6 py-8 text-base leading-[22px] tracking-[0.224px] lg:flex-row lg:items-center lg:justify-between lg:pt-[39px] lg:pb-[55px]">
+      <ul class="flex flex-wrap gap-x-10 gap-y-2">
+        <li><a href="chinh-sach-bao-mat.html" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">An toàn &amp; Bảo mật</a></li>
+        <li><a href="#" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Điều khoản sử dụng</a></li>
+      </ul>
+      <div class="flex flex-col gap-4 sm:flex-row sm:items-center sm:gap-8">
+        <a href="#" class="block transition-opacity hover:opacity-80 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown"><img src="assets/img/footer/badge-bo-cong-thuong.webp" alt="Đã thông báo Bộ Công Thương" width="131" height="40" class="h-10 w-auto" /></a>
+        <p>© Bản quyền 2026 thuộc về Dzentic.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/app.js"></script>
+<script>
+(function () {
+  'use strict';
+  var KEY = 'dz-cart';
+  function fmt(n) { return String(Math.round(n)).replace(/\B(?=(\d{3})+(?!\d))/g, '.') + ' VNĐ'; }
+  function loadCart() { try { return JSON.parse(sessionStorage.getItem(KEY)) || {}; } catch (e) { return {}; } }
+  function saveCart(c) { try { sessionStorage.setItem(KEY, JSON.stringify(c)); } catch (e) {} }
+  function setHeaderCount(n) { document.querySelectorAll('[data-cart-count]').forEach(function (el) { el.textContent = n; }); }
+
+  var SHIP = { standard: { name: 'Tiêu chuẩn', fee: 0 }, express: { name: 'Nhanh', fee: 50000 } };
+  function renderSummary(shipKey) {
+    var cart = loadCart(), count = 0, sub = 0, all = 0, shown = 0;
+    document.querySelectorAll('[data-lines] [data-line]').forEach(function (li) {
+      var st = cart[li.dataset.line], q = st ? st.q : +li.dataset.qty, sel = st ? st.s !== false : true;
+      if (q > 0) all += q;
+      if (q <= 0 || !sel) { li.classList.add('hidden'); return; }
+      li.classList.remove('hidden'); shown++;
+      li.querySelector('[data-line-qty]').textContent = q;
+      li.querySelector('[data-line-total]').textContent = fmt(q * +li.dataset.price);
+      count += q; sub += q * +li.dataset.price;
+    });
+    var ship = SHIP[shipKey] || SHIP.standard;
+    document.querySelectorAll('[data-sum-count]').forEach(function (el) { el.textContent = count; });
+    document.querySelector('[data-sum-sub]').textContent = fmt(sub);
+    document.querySelector('[data-ship-name]').textContent = ship.name;
+    document.querySelector('[data-ship-fee]').textContent = ship.fee ? fmt(ship.fee) : 'Miễn phí';
+    document.querySelector('[data-sum-total]').textContent = fmt(sub + ship.fee);
+    var empty = document.querySelector('[data-empty]'); if (empty) empty.classList.toggle('hidden', shown > 0);
+    if (st0(cart)) setHeaderCount(all);
+    return { count: count, sub: sub, ship: ship, total: sub + ship.fee, shown: shown };
+  }
+  function st0(c) { return Object.keys(c).length > 0; }
+
+  var CK = 'dz-checkout';
+  var form = document.getElementById('checkout-form');
+  var terms = document.getElementById('terms');
+  var btn = document.getElementById('place-order');
+
+  // khôi phục dữ liệu khi quay lại từ trang xem lại
+  try {
+    var data = JSON.parse(sessionStorage.getItem(CK));
+    if (data) Object.keys(data).forEach(function (k) {
+      var els = form.querySelectorAll('[name="' + k + '"]'); if (!els.length) return;
+      els.forEach(function (el) {
+        if (el.type === 'radio') el.checked = el.value === data[k];
+        else if (el.type === 'checkbox') el.checked = !!data[k];
+        else el.value = data[k];
+      });
+    });
+  } catch (e) {}
+
+  function shipKey() { var r = form.querySelector('[name="shipping"]:checked'); return r ? r.value : 'standard'; }
+  function vatOn() { return form.querySelector('[data-vat-toggle]').checked; }
+  function syncVat() {
+    var p = form.querySelector('[data-vat-panel]'), on = vatOn();
+    p.classList.toggle('hidden', !on); p.classList.toggle('flex', on);
+  }
+  function refresh() { var s = renderSummary(shipKey()); btn.disabled = !terms.checked || s.shown === 0; }
+
+  form.addEventListener('change', function (e) {
+    if (e.target.name === 'shipping') refresh();
+    if (e.target.matches('[data-vat-toggle]')) syncVat();
+  });
+  terms.addEventListener('change', refresh);
+  syncVat(); refresh();
+
+  // validate
+  var RULES = {
+    name: function (v) { return v.trim().length >= 2 || 'Vui lòng nhập họ và tên'; },
+    phone: function (v) { return /^(0|\+84)\d{9}$/.test(v.replace(/[\s.\-]/g, '')) || 'Số điện thoại không hợp lệ'; },
+    email: function (v) { return v.trim() === '' || /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v) || 'Email không hợp lệ'; },
+    province: function (v) { return !!v || 'Vui lòng chọn tỉnh / thành phố'; },
+    ward: function (v) { return !!v || 'Vui lòng chọn phường / xã'; },
+    street: function (v) { return v.trim().length >= 3 || 'Vui lòng nhập địa chỉ cụ thể'; },
+    vatCompany: function (v) { return v.trim() !== '' || 'Vui lòng nhập tên công ty'; },
+    vatTax: function (v) { return /^\d{10}(-?\d{3})?$/.test(v.trim()) || 'Mã số thuế gồm 10 hoặc 13 chữ số'; },
+    vatEmail: function (v) { return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v) || 'Email không hợp lệ'; },
+    vatAddress: function (v) { return v.trim() !== '' || 'Vui lòng nhập địa chỉ công ty'; }
+  };
+  function check(el) {
+    var rule = RULES[el.name]; if (!rule) return true;
+    if (el.name.indexOf('vat') === 0 && !vatOn()) return true;
+    var r = rule(el.value), wrap = el.closest('[data-field]'), err = wrap.querySelector('[data-error]');
+    var ok = r === true;
+    el.setAttribute('aria-invalid', ok ? 'false' : 'true');
+    err.textContent = ok ? '' : r; err.classList.toggle('hidden', ok);
+    return ok;
+  }
+  form.addEventListener('focusout', function (e) { if (e.target.matches('input,select') && e.target.getAttribute('aria-invalid')) check(e.target); });
+  form.addEventListener('input', function (e) { if (e.target.getAttribute && e.target.getAttribute('aria-invalid') === 'true') check(e.target); });
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var first = null;
+    form.querySelectorAll('input[name],select[name]').forEach(function (el) { if (!check(el) && !first) first = el; });
+    if (first) { first.scrollIntoView({ behavior: 'smooth', block: 'center' }); first.focus({ preventScroll: true }); return; }
+    var s = renderSummary(shipKey()); if (!s.shown) return;
+    var out = {};
+    form.querySelectorAll('[name]').forEach(function (el) {
+      if (el.type === 'radio') { if (el.checked) out[el.name] = el.value; }
+      else if (el.type === 'checkbox') out[el.name] = el.checked;
+      else out[el.name] = el.value;
+    });
+    try { sessionStorage.setItem(CK, JSON.stringify(out)); } catch (err) {}
+    location.href = 'xem-lai-don-hang.html';
+  });
+})();
+</script>
+</body>
+</html>

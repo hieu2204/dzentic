@@ -1,0 +1,720 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Danh mục sản phẩm — Serum | Dzentic</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/app.css">
+</head>
+<body>
+<!-- SECTION: topbar -->
+<section aria-label="Thông báo" class="bg-navy text-bg">
+  <p class="max-w-site mx-auto px-4 py-3 md:py-4 text-center text-sm md:text-base leading-[22px] tracking-[0.224px]">
+    Nhận ưu đãi giảm tới 10% và miễn phí vận chuyển cho tất cả các đơn hàng. Cam kết 100% sản phẩm chính hãng.
+  </p>
+</section>
+
+<header class="sticky top-0 z-50 border-b border-gray-ee bg-bg">
+    <div class="max-w-site mx-auto px-4 md:px-8 xl:px-[72px] h-20 xl:h-[120px] flex items-center justify-between xl:grid xl:grid-cols-[1fr_auto_1fr] xl:gap-6">
+      <nav class="hidden xl:flex items-center gap-6 text-base leading-[22px] tracking-[0.224px]" aria-label="Menu trái">
+        <a href="thu-vien-hoat-chat.html" class="hover:text-brown focus-visible:text-brown focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brown">Khoa Học &amp; Bằng Chứng</a>
+        <a href="san-pham.html" class="hover:text-brown focus-visible:text-brown focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brown">Sản Phẩm</a>
+      </nav>
+
+      <a href="index.html" class="block shrink-0 xl:justify-self-center hover:opacity-80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brown" aria-label="Dzentic - Trang chủ">
+        <img src="assets/img/hero/logo-dzentic.png" alt="Dzentic - A brand by Sorai Beauty Engine" width="920" height="276"
+             class="h-14 xl:h-[92px] w-auto object-contain">
+      </a>
+
+      <div class="flex items-center gap-6 xl:justify-self-end">
+        <nav class="hidden xl:flex items-center gap-6 text-base leading-[22px] tracking-[0.224px]" aria-label="Menu phải">
+          <a href="cau-chuyen-thuong-hieu.html" class="hover:text-brown focus-visible:text-brown focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brown">Triết Lí Dzentic</a>
+          <a href="routine-phac-do.html" class="hover:text-brown focus-visible:text-brown focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brown">Giải Pháp Làn Da</a>
+          <a href="lien-he.html" class="hover:text-brown focus-visible:text-brown focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brown">Liên Hệ</a>
+        </nav>
+        <div class="flex items-center gap-3 xl:gap-[14px]">
+          <a href="tim-kiem.html" class="hover:opacity-70 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brown" aria-label="Tìm kiếm"><img src="assets/img/hero/icon-search.svg" alt="" width="20" height="20"></a>
+          <a href="gio-hang.html" class="group flex items-center gap-2 xl:gap-0.5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brown" aria-label="Giỏ hàng">
+            <img src="assets/img/hero/icon-cart.svg" alt="" width="20" height="20" class="group-hover:opacity-70">
+            <span class="grid place-items-center size-5 rounded-[10px] bg-brown text-bg text-base leading-[22px] group-hover:bg-brown-dark">0</span>
+          </a>
+          <button type="button" data-menu-toggle class="xl:hidden ml-2 p-1 hover:text-brown focus-visible:text-brown focus-visible:outline focus-visible:outline-2 focus-visible:outline-brown" aria-label="Mở menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Menu mobile -->
+    <nav data-menu class="hidden xl:hidden bg-bg border-t border-gray-dd px-4 md:px-8 py-4 text-base" aria-label="Menu chính">
+      <ul class="flex flex-col gap-4">
+        <li><a href="thu-vien-hoat-chat.html" class="hover:text-brown focus-visible:text-brown">Khoa Học &amp; Bằng Chứng</a></li>
+        <li><a href="san-pham.html" class="hover:text-brown focus-visible:text-brown">Sản Phẩm</a></li>
+        <li><a href="cau-chuyen-thuong-hieu.html" class="hover:text-brown focus-visible:text-brown">Triết Lí Dzentic</a></li>
+        <li><a href="routine-phac-do.html" class="hover:text-brown focus-visible:text-brown">Giải Pháp Làn Da</a></li>
+        <li><a href="lien-he.html" class="hover:text-brown focus-visible:text-brown">Liên Hệ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<!-- SECTION: Subpage hero (dùng chung cho mọi trang con). Chỉ đổi breadcrumb, tiêu đề, mô tả. -->
+<section class="relative overflow-hidden bg-gradient-to-r from-bg to-[#f6eadf]">
+  <div class="pointer-events-none absolute inset-0 hidden lg:block" aria-hidden="true">
+    <div class="relative mx-auto h-full max-w-site">
+      <img src="assets/img/subhero/glow.svg" alt="" width="600" height="600" class="absolute left-[850px] top-[-20px] size-[600px] max-w-none">
+      <div class="absolute left-[830px] top-[-40px] size-[640px] opacity-[0.08]">
+        <img src="assets/img/subhero/rays-left.svg" alt="" class="absolute left-0 top-0 h-[640px] w-[342px] max-w-none">
+        <img src="assets/img/subhero/rays-right.svg" alt="" class="absolute left-[320px] top-0 h-[640px] w-[342px] max-w-none">
+      </div>
+      <img src="assets/img/subhero/sun-core.svg" alt="" width="150" height="150" class="absolute left-[1075px] top-[205px] size-[150px] max-w-none">
+      <div class="absolute left-[900px] top-0 h-[280px] w-[480px] overflow-hidden" role="img" aria-label="Bộ sản phẩm Dzentic trên bục vàng: NeoBright Repair Cream, Blue Light Shield và Purifying Cleansing Gel">
+        <img src="assets/img/san-pham/hero/glow.svg" alt="" class="absolute max-w-none left-[70px] top-[-50px] size-[340px]" >
+        <img src="assets/img/san-pham/hero/orbit.svg" alt="" class="absolute max-w-none left-[90px] top-[-36px] size-[300px]" >
+        <img src="assets/img/san-pham/hero/orbit-inner.png" alt="" class="absolute max-w-none left-[122px] top-[-4px] size-[236px]" width="236" height="236">
+        <img src="assets/img/san-pham/hero/orbit-dot.svg" alt="" class="absolute max-w-none left-[382px] top-[52px] size-2" >
+        <div class="absolute left-[172px] top-[14px] h-[200px] w-[136px] rounded-t-[68px] bg-gradient-to-b from-[#fecc88] via-[rgba(253,227,192,0.85)] via-65% to-[rgba(250,246,245,0.4)]"></div>
+        <div class="absolute bg-gradient-to-r from-[#e6d4c3] via-[#fbf6f1] via-45% to-[#dcc5b0] left-[172px] top-[210px] h-[70px] w-[136px]"></div>
+        <img src="assets/img/san-pham/hero/pedestal-center-top.svg" alt="" class="absolute max-w-none left-[172px] top-[200px] h-5 w-[136px]" >
+        <img src="assets/img/san-pham/hero/shadow-center.svg" alt="" class="absolute max-w-none left-[195px] top-[198px] h-[22px] w-[90px]" >
+        <img src="assets/img/san-pham/step-sunscreen.webp" alt="" class="absolute max-w-none left-[199px] top-[22px] h-[190px] w-[82px] object-contain" >
+        <div class="absolute bg-gradient-to-r from-[#e6d4c3] via-[#fbf6f1] via-45% to-[#dcc5b0] left-[300px] top-[228px] h-[52px] w-[118px]"></div>
+        <img src="assets/img/san-pham/hero/pedestal-right-top.svg" alt="" class="absolute max-w-none left-[300px] top-[218px] h-5 w-[118px]" >
+        <img src="assets/img/san-pham/hero/shadow-right.svg" alt="" class="absolute max-w-none left-[318px] top-[216px] h-[22px] w-[78px]" >
+        <img src="assets/img/san-pham/step-cleansing-gel.webp" alt="" class="absolute max-w-none left-[322px] top-[80px] h-[150px] w-[74px] object-contain" >
+        <div class="absolute bg-gradient-to-r from-[#e6d4c3] via-[#fbf6f1] via-45% to-[#dcc5b0] left-[52px] top-[242px] h-[38px] w-[130px]"></div>
+        <img src="assets/img/san-pham/hero/pedestal-left-top.svg" alt="" class="absolute max-w-none left-[52px] top-[232px] h-5 w-[130px]" >
+        <img src="assets/img/san-pham/hero/shadow-left.svg" alt="" class="absolute max-w-none left-[57px] top-[230px] h-[22px] w-[118px]" >
+        <img src="assets/img/san-pham/step-neobright.webp" alt="" class="absolute max-w-none left-[55px] top-[151px] h-[95px] w-[124px] object-contain" >
+        <img src="assets/img/san-pham/hero/sparkle-1.svg" alt="" class="absolute max-w-none left-[330px] top-[30px] size-[14px]" >
+        <img src="assets/img/san-pham/hero/sparkle-2.svg" alt="" class="absolute max-w-none left-[140px] top-[64px] size-2.5" >
+        <img src="assets/img/san-pham/hero/sparkle-3.svg" alt="" class="absolute max-w-none left-[418px] top-[140px] size-[9px]" >
+        <img src="assets/img/san-pham/hero/sparkle-4.svg" alt="" class="absolute max-w-none left-[48px] top-[150px] size-[7px]" >
+      </div>
+    </div>
+  </div>
+  <div class="relative mx-auto max-w-site px-4 pb-10 pt-7 md:px-8 xl:px-[72px] lg:h-[280px] lg:pb-0">
+    <nav aria-label="Breadcrumb" class="flex flex-wrap items-center gap-2 text-sm leading-5 tracking-[0.14px]">
+      <a href="index.html" class="text-gray-66 hover:text-brown">Trang chủ</a>
+      <span class="text-gray-99" aria-hidden="true">/</span>
+      <a href="san-pham.html" class="text-gray-66 hover:text-brown">Sản phẩm</a>
+      <span class="text-gray-99" aria-hidden="true">/</span>
+      <span class="text-navy" aria-current="page">Serum</span>
+    </nav>
+    <div class="mt-10 flex flex-col gap-4 lg:mt-[69px]">
+      <h1 class="text-3xl uppercase leading-[1.4] tracking-[0.624px] text-brown-dark md:text-5xl lg:max-w-[640px]">Danh mục sản phẩm</h1>
+      <p class="max-w-[560px] text-base leading-[22px] tracking-[0.224px] text-gray-66">Serum ban ngày, serum ban đêm và serum cân bằng bã nhờn. Mỗi sản phẩm giữ một vị trí trong routine.</p>
+    </div>
+  </div>
+</section>
+
+<main>
+<!-- SECTION: Category nav -->
+<section aria-label="Nhóm sản phẩm" class="bg-bg">
+  <div class="mx-auto max-w-site px-4 pt-8 md:px-8 xl:px-[72px]">
+    <div class="-mx-4 overflow-x-auto px-4 md:mx-0 md:px-0">
+      <div role="tablist" aria-label="Lọc theo nhóm sản phẩm" data-nhom-tabs class="mx-auto flex w-max items-end gap-6 border-gray-dd">
+        <button type="button" role="tab" data-nhom="tat-ca" data-ten="Tất cả" data-sl="7" aria-selected="false" class="group/tab flex w-[120px] shrink-0 cursor-pointer flex-col items-center gap-1.5 border-b-2 border-transparent pb-2.5 text-center text-gray-66 aria-selected:border-navy aria-selected:text-navy hover:text-brown focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy">
+          <span class="flex size-16 items-center justify-center overflow-hidden rounded-full border border-gray-dd group-aria-selected/tab:border-2 group-aria-selected/tab:border-brown"><img src="assets/img/san-pham/nav-tat-ca.png" alt="" width="54" height="54" class="size-[54px]"></span>
+          <span class="text-base leading-[22px] tracking-[0.224px]">Tất cả</span>
+          <span class="text-xs leading-4 text-gray-66">7 sản phẩm</span>
+        </button>
+        <button type="button" role="tab" data-nhom="lam-sach" data-ten="Làm sạch" data-sl="1" aria-selected="false" class="group/tab flex w-[200px] shrink-0 cursor-pointer flex-col items-center gap-1.5 border-b-2 border-transparent pb-2.5 text-center text-gray-66 aria-selected:border-navy aria-selected:text-navy hover:text-brown focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy">
+          <span class="flex size-16 items-center justify-center overflow-hidden rounded-full border border-gray-dd group-aria-selected/tab:border-2 group-aria-selected/tab:border-brown"><img src="assets/img/san-pham/nav-lam-sach.png" alt="" width="54" height="54" class="size-[54px]"></span>
+          <span class="text-base leading-[22px] tracking-[0.224px]">Làm sạch</span>
+          <span class="text-xs leading-4 text-gray-66">1 sản phẩm</span>
+        </button>
+        <button type="button" role="tab" data-nhom="cham-soc-chuyen-sau" data-ten="Chăm sóc chuyên sâu" data-sl="3" aria-selected="true" class="group/tab flex w-[200px] shrink-0 cursor-pointer flex-col items-center gap-1.5 border-b-2 border-transparent pb-2.5 text-center text-gray-66 aria-selected:border-navy aria-selected:text-navy hover:text-brown focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy">
+          <span class="flex size-16 items-center justify-center overflow-hidden rounded-full border border-gray-dd group-aria-selected/tab:border-2 group-aria-selected/tab:border-brown"><img src="assets/img/san-pham/nav-cham-soc-chuyen-sau.png" alt="" width="54" height="54" class="size-[54px]"></span>
+          <span class="text-base leading-[22px] tracking-[0.224px]">Chăm sóc chuyên sâu</span>
+          <span class="text-xs leading-4 text-gray-66">3 sản phẩm</span>
+        </button>
+        <button type="button" role="tab" data-nhom="phuc-hoi" data-ten="Phục hồi" data-sl="2" aria-selected="false" class="group/tab flex w-[200px] shrink-0 cursor-pointer flex-col items-center gap-1.5 border-b-2 border-transparent pb-2.5 text-center text-gray-66 aria-selected:border-navy aria-selected:text-navy hover:text-brown focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy">
+          <span class="flex size-16 items-center justify-center overflow-hidden rounded-full border border-gray-dd group-aria-selected/tab:border-2 group-aria-selected/tab:border-brown"><img src="assets/img/san-pham/nav-phuc-hoi.png" alt="" width="54" height="54" class="size-[54px]"></span>
+          <span class="text-base leading-[22px] tracking-[0.224px]">Phục hồi</span>
+          <span class="text-xs leading-4 text-gray-66">2 sản phẩm</span>
+        </button>
+        <button type="button" role="tab" data-nhom="bao-ve" data-ten="Bảo vệ" data-sl="1" aria-selected="false" class="group/tab flex w-[200px] shrink-0 cursor-pointer flex-col items-center gap-1.5 border-b-2 border-transparent pb-2.5 text-center text-gray-66 aria-selected:border-navy aria-selected:text-navy hover:text-brown focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy">
+          <span class="flex size-16 items-center justify-center overflow-hidden rounded-full border border-gray-dd group-aria-selected/tab:border-2 group-aria-selected/tab:border-brown"><img src="assets/img/san-pham/nav-bao-ve.png" alt="" width="54" height="54" class="size-[54px]"></span>
+          <span class="text-base leading-[22px] tracking-[0.224px]">Bảo vệ</span>
+          <span class="text-xs leading-4 text-gray-66">1 sản phẩm</span>
+        </button>
+      </div>
+    </div>
+    <div class="h-px bg-gray-dd"></div>
+  </div>
+</section>
+
+<!-- SECTION: Danh sách sản phẩm -->
+<section id="san-pham" class="bg-bg" aria-labelledby="san-pham-title">
+  <div class="mx-auto max-w-site px-4 pt-10 md:px-8 md:pt-14 xl:px-[72px]">
+    <div class="flex flex-col gap-3" data-aos="fade-up">
+      <p class="text-sm tracking-[4px] uppercase text-brown md:text-base md:leading-[22px]" data-sl><span data-sl-num>3</span> sản phẩm</p>
+      <h2 id="san-pham-title" class="text-3xl uppercase leading-[1.4] tracking-[0.624px] text-brown-dark md:text-5xl" data-ten>Serum Dzentic</h2>
+    </div>
+    <ul class="mt-8 grid gap-x-3 gap-y-10 sm:grid-cols-2 lg:mt-10 lg:grid-cols-3" data-grid>
+<li class="min-w-0" data-nhom="cham-soc-chuyen-sau">
+  <article class="group flex h-full flex-col">
+    <div class="relative aspect-[424/500] overflow-hidden rounded-[4px] bg-[#ecebec] transition-shadow duration-300 group-hover:shadow-popover">
+      <a href="chi-tiet-san-pham.html" class="block size-full focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy focus-visible:-outline-offset-2" aria-label="Photo Defense Brightening Serum">
+        <img src="assets/img/san-pham/photo-defense-brightening-serum.webp" alt="Lọ Photo Defense Brightening Serum của Dzentic" width="1089" height="1444" class="size-full object-cover transition-transform duration-500 group-hover:scale-[1.03]" loading="lazy">
+      </a>
+      <span class="absolute left-4 top-4 inline-flex h-[31px] items-center rounded-xs bg-white px-2 py-1 text-xs leading-4 tracking-[0.48px] text-ink">DAY SERUM</span>
+      <div class="absolute inset-x-4 bottom-4 flex gap-2 transition-opacity duration-300 lg:opacity-0 lg:group-hover:opacity-100 lg:group-focus-within:opacity-100">
+        <a href="chi-tiet-san-pham.html" class="flex h-11 flex-1 items-center justify-center rounded-sm bg-bg px-3 text-[15px] leading-5 tracking-[0.21px] text-ink hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy">Xem chi tiết</a>
+        <button type="button" data-add-to-cart class="flex h-11 flex-1 cursor-pointer items-center justify-center rounded-sm bg-navy px-3 text-[15px] leading-5 tracking-[0.21px] text-bg hover:bg-blue focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy">Thêm vào giỏ hàng</button>
+      </div>
+    </div>
+    <div class="flex flex-1 flex-col gap-5 pt-6">
+      <div class="flex flex-col gap-2">
+        <h3 class="text-xl leading-7 text-navy transition-colors group-hover:text-brown"><a href="chi-tiet-san-pham.html" class="hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy">Photo Defense Brightening Serum</a></h3>
+        <p class="text-sm leading-5 tracking-[0.14px] text-brown">Làm sáng ban ngày · Chống oxy hóa</p>
+      </div>
+      <div class="flex min-h-[92px] gap-3 border-y border-gray-dd py-3"><div class="min-w-0 flex-1"><p class="text-base font-medium leading-[22px] text-brown">4%</p><p class="mt-0.5 text-xs leading-4 tracking-[0.12px] text-gray-66">Niacinamide</p></div><div class="min-w-0 flex-1"><p class="text-base font-medium leading-[22px] text-brown">3%</p><p class="mt-0.5 text-xs leading-4 tracking-[0.12px] text-gray-66">Tranexamic Acid</p></div><div class="min-w-0 flex-1"><p class="text-base font-medium leading-[22px] text-brown">1%</p><p class="mt-0.5 text-xs leading-4 tracking-[0.12px] text-gray-66">Alpha-Arbutin</p></div></div>
+      <p class="mt-auto text-base leading-[22px] tracking-[0.224px] text-navy">Giá đang cập nhật</p>
+    </div>
+  </article>
+</li>
+<li class="min-w-0" data-nhom="cham-soc-chuyen-sau">
+  <article class="group flex h-full flex-col">
+    <div class="relative aspect-[424/500] overflow-hidden rounded-[4px] bg-[#ecebec] transition-shadow duration-300 group-hover:shadow-popover">
+      <a href="chi-tiet-san-pham.html" class="block size-full focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy focus-visible:-outline-offset-2" aria-label="Retino Renewal Brightening Serum">
+        <img src="assets/img/san-pham/retino-renewal-brightening-serum.webp" alt="Lọ Retino Renewal Brightening Serum của Dzentic" width="1089" height="1444" class="size-full object-cover transition-transform duration-500 group-hover:scale-[1.03]" loading="lazy">
+      </a>
+      <span class="absolute left-4 top-4 inline-flex h-[31px] items-center rounded-xs bg-white px-2 py-1 text-xs leading-4 tracking-[0.48px] text-ink">NIGHT SERUM</span>
+      <div class="absolute inset-x-4 bottom-4 flex gap-2 transition-opacity duration-300 lg:opacity-0 lg:group-hover:opacity-100 lg:group-focus-within:opacity-100">
+        <a href="chi-tiet-san-pham.html" class="flex h-11 flex-1 items-center justify-center rounded-sm bg-bg px-3 text-[15px] leading-5 tracking-[0.21px] text-ink hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy">Xem chi tiết</a>
+        <button type="button" data-add-to-cart class="flex h-11 flex-1 cursor-pointer items-center justify-center rounded-sm bg-navy px-3 text-[15px] leading-5 tracking-[0.21px] text-bg hover:bg-blue focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy">Thêm vào giỏ hàng</button>
+      </div>
+    </div>
+    <div class="flex flex-1 flex-col gap-5 pt-6">
+      <div class="flex flex-col gap-2">
+        <h3 class="text-xl leading-7 text-navy transition-colors group-hover:text-brown"><a href="chi-tiet-san-pham.html" class="hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy">Retino Renewal Brightening Serum</a></h3>
+        <p class="text-sm leading-5 tracking-[0.14px] text-brown">Trẻ hóa ban đêm · Làm sáng đa cơ chế</p>
+      </div>
+      <div class="flex min-h-[92px] gap-3 border-y border-gray-dd py-3"><div class="min-w-0 flex-1"><p class="text-base font-medium leading-[22px] text-brown">0,2%</p><p class="mt-0.5 text-xs leading-4 tracking-[0.12px] text-gray-66">HPR (Hydroxypinacolone Retinoate)</p></div><div class="min-w-0 flex-1"><p class="text-base font-medium leading-[22px] text-brown">3%</p><p class="mt-0.5 text-xs leading-4 tracking-[0.12px] text-gray-66">Tranexamic Acid</p></div><div class="min-w-0 flex-1"><p class="text-base font-medium leading-[22px] text-brown">4%</p><p class="mt-0.5 text-xs leading-4 tracking-[0.12px] text-gray-66">Niacinamide</p></div></div>
+      <p class="mt-auto text-base leading-[22px] tracking-[0.224px] text-navy">Giá đang cập nhật</p>
+    </div>
+  </article>
+</li>
+<li class="min-w-0" data-nhom="cham-soc-chuyen-sau">
+  <article class="group flex h-full flex-col">
+    <div class="relative aspect-[424/500] overflow-hidden rounded-[4px] bg-[#ecebec] transition-shadow duration-300 group-hover:shadow-popover">
+      <a href="chi-tiet-san-pham.html" class="block size-full focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy focus-visible:-outline-offset-2" aria-label="Zinc Complex Serum">
+        <img src="assets/img/san-pham/zinc-complex-serum.webp" alt="Lọ Zinc Complex Serum của Dzentic" width="1089" height="1444" class="size-full object-cover transition-transform duration-500 group-hover:scale-[1.03]" loading="lazy">
+      </a>
+      
+      <div class="absolute inset-x-4 bottom-4 flex gap-2 transition-opacity duration-300 lg:opacity-0 lg:group-hover:opacity-100 lg:group-focus-within:opacity-100">
+        <a href="chi-tiet-san-pham.html" class="flex h-11 flex-1 items-center justify-center rounded-sm bg-bg px-3 text-[15px] leading-5 tracking-[0.21px] text-ink hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy">Xem chi tiết</a>
+        <a href="lien-he.html" class="flex h-11 flex-1 items-center justify-center rounded-sm bg-navy px-3 text-[15px] leading-5 tracking-[0.21px] text-bg hover:bg-blue focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy">Liên hệ</a>
+      </div>
+    </div>
+    <div class="flex flex-1 flex-col gap-5 pt-6">
+      <div class="flex flex-col gap-2">
+        <h3 class="text-xl leading-7 text-navy transition-colors group-hover:text-brown"><a href="chi-tiet-san-pham.html" class="hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy">Zinc Complex Serum</a></h3>
+        <p class="text-sm leading-5 tracking-[0.14px] text-brown">Cân bằng bã nhờn · Làm dịu · Hỗ trợ da dễ bít tắc</p>
+      </div>
+      <div class="flex min-h-[92px] gap-3 border-y border-gray-dd py-3"><div class="min-w-0 flex-1"><p class="text-base font-medium leading-[22px] text-brown">1%</p><p class="mt-0.5 text-xs leading-4 tracking-[0.12px] text-gray-66">Zinc PCA</p></div><div class="min-w-0 flex-1"><p class="text-base font-medium leading-[22px] text-brown">2%</p><p class="mt-0.5 text-xs leading-4 tracking-[0.12px] text-gray-66">Niacinamide</p></div><div class="min-w-0 flex-1"><p class="text-base font-medium leading-[22px] text-brown">0,01%</p><p class="mt-0.5 text-xs leading-4 tracking-[0.12px] text-gray-66">Salicylic Acid</p></div></div>
+      <p class="mt-auto text-base leading-[22px] tracking-[0.224px] text-navy">Giá đang cập nhật</p>
+    </div>
+  </article>
+</li>
+<li class="min-w-0" data-nhom="lam-sach" hidden>
+  <article class="group flex h-full flex-col">
+    <div class="relative aspect-[424/500] overflow-hidden rounded-[4px] bg-[#ecebec] transition-shadow duration-300 group-hover:shadow-popover">
+      <a href="chi-tiet-san-pham.html" class="block size-full focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy focus-visible:-outline-offset-2" aria-label="Purifying Cleansing Gel">
+        <img src="assets/img/san-pham/cleansing-gel.webp" alt="Tuýp Purifying Cleansing Gel của Dzentic" width="656" height="1338" class="size-full object-contain p-3 transition-transform duration-500 group-hover:scale-[1.03]" loading="lazy">
+      </a>
+      <span class="absolute left-4 top-4 inline-flex h-[31px] items-center rounded-xs bg-white px-2 py-1 text-xs leading-4 tracking-[0.48px] text-ink">CLEANSER</span>
+      <div class="absolute inset-x-4 bottom-4 flex gap-2 transition-opacity duration-300 lg:opacity-0 lg:group-hover:opacity-100 lg:group-focus-within:opacity-100">
+        <a href="chi-tiet-san-pham.html" class="flex h-11 flex-1 items-center justify-center rounded-sm bg-bg px-3 text-[15px] leading-5 tracking-[0.21px] text-ink hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy">Xem chi tiết</a>
+        <button type="button" data-add-to-cart class="flex h-11 flex-1 cursor-pointer items-center justify-center rounded-sm bg-navy px-3 text-[15px] leading-5 tracking-[0.21px] text-bg hover:bg-blue focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy">Thêm vào giỏ hàng</button>
+      </div>
+    </div>
+    <div class="flex flex-1 flex-col gap-5 pt-6">
+      <div class="flex flex-col gap-2">
+        <h3 class="text-xl leading-7 text-navy transition-colors group-hover:text-brown"><a href="chi-tiet-san-pham.html" class="hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy">Purifying Cleansing Gel</a></h3>
+        <p class="text-sm leading-5 tracking-[0.14px] text-brown">Gel rửa mặt ít tạo bọt, không xà phòng · Mọi loại da</p>
+      </div>
+      <div class="flex min-h-[92px] gap-3 border-y border-gray-dd py-3"><p class="text-base font-medium leading-[22px] text-brown">Panthenol (B5) - Allantoin - Hệ surfactant</p></div>
+      <p class="mt-auto text-base leading-[22px] tracking-[0.224px] text-navy">Giá đang cập nhật</p>
+    </div>
+  </article>
+</li>
+<li class="min-w-0" data-nhom="phuc-hoi" hidden>
+  <article class="group flex h-full flex-col">
+    <div class="relative aspect-[424/500] overflow-hidden rounded-[4px] bg-[#ecebec] transition-shadow duration-300 group-hover:shadow-popover">
+      <a href="chi-tiet-san-pham.html" class="block size-full focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy focus-visible:-outline-offset-2" aria-label="NeoBright Repair Cream">
+        <img src="assets/img/san-pham/neobright-repair-cream.webp" alt="Hũ NeoBright Repair Cream của Dzentic" width="1089" height="1444" class="size-full object-cover transition-transform duration-500 group-hover:scale-[1.03]" loading="lazy">
+      </a>
+      <span class="absolute left-4 top-4 inline-flex h-[31px] items-center rounded-xs bg-white px-2 py-1 text-xs leading-4 tracking-[0.48px] text-ink">REPAIR CREAM</span>
+      <div class="absolute inset-x-4 bottom-4 flex gap-2 transition-opacity duration-300 lg:opacity-0 lg:group-hover:opacity-100 lg:group-focus-within:opacity-100">
+        <a href="chi-tiet-san-pham.html" class="flex h-11 flex-1 items-center justify-center rounded-sm bg-bg px-3 text-[15px] leading-5 tracking-[0.21px] text-ink hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy">Xem chi tiết</a>
+        <button type="button" data-add-to-cart class="flex h-11 flex-1 cursor-pointer items-center justify-center rounded-sm bg-navy px-3 text-[15px] leading-5 tracking-[0.21px] text-bg hover:bg-blue focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy">Thêm vào giỏ hàng</button>
+      </div>
+    </div>
+    <div class="flex flex-1 flex-col gap-5 pt-6">
+      <div class="flex flex-col gap-2">
+        <h3 class="text-xl leading-7 text-navy transition-colors group-hover:text-brown"><a href="chi-tiet-san-pham.html" class="hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy">NeoBright Repair Cream</a></h3>
+        <p class="text-sm leading-5 tracking-[0.14px] text-brown">Dưỡng ẩm · Hỗ trợ hàng rào da · Chăm sóc dấu hiệu lão hóa</p>
+      </div>
+      <div class="flex min-h-[92px] gap-3 border-y border-gray-dd py-3"><p class="text-base font-medium leading-[22px] text-brown">Argireline® - Neodermyl® - Niacinamide - TXA</p></div>
+      <p class="mt-auto text-base leading-[22px] tracking-[0.224px] text-navy">Giá đang cập nhật</p>
+    </div>
+  </article>
+</li>
+<li class="min-w-0" data-nhom="phuc-hoi" hidden>
+  <article class="group flex h-full flex-col">
+    <div class="relative aspect-[424/500] overflow-hidden rounded-[4px] bg-[#ecebec] transition-shadow duration-300 group-hover:shadow-popover">
+      <a href="chi-tiet-san-pham.html" class="block size-full focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy focus-visible:-outline-offset-2" aria-label="Blemish Recovery Hydrating Cream">
+        <img src="assets/img/san-pham/step-blemish-cream.webp" alt="Tuýp Blemish Recovery Hydrating Cream của Dzentic" width="656" height="1338" class="size-full object-contain p-3 transition-transform duration-500 group-hover:scale-[1.03]" loading="lazy">
+      </a>
+      <span class="absolute left-4 top-4 inline-flex h-[31px] items-center rounded-xs bg-white px-2 py-1 text-xs leading-4 tracking-[0.48px] text-ink">RECOVERY CREAM</span>
+      <div class="absolute inset-x-4 bottom-4 flex gap-2 transition-opacity duration-300 lg:opacity-0 lg:group-hover:opacity-100 lg:group-focus-within:opacity-100">
+        <a href="chi-tiet-san-pham.html" class="flex h-11 flex-1 items-center justify-center rounded-sm bg-bg px-3 text-[15px] leading-5 tracking-[0.21px] text-ink hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy">Xem chi tiết</a>
+        <button type="button" data-add-to-cart class="flex h-11 flex-1 cursor-pointer items-center justify-center rounded-sm bg-navy px-3 text-[15px] leading-5 tracking-[0.21px] text-bg hover:bg-blue focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy">Thêm vào giỏ hàng</button>
+      </div>
+    </div>
+    <div class="flex flex-1 flex-col gap-5 pt-6">
+      <div class="flex flex-col gap-2">
+        <h3 class="text-xl leading-7 text-navy transition-colors group-hover:text-brown"><a href="chi-tiet-san-pham.html" class="hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy">Blemish Recovery Hydrating Cream</a></h3>
+        <p class="text-sm leading-5 tracking-[0.14px] text-brown">Phục hồi · Dưỡng ẩm · Làm dịu da mụn</p>
+      </div>
+      <div class="flex min-h-[92px] gap-3 border-y border-gray-dd py-3"><p class="text-base font-medium leading-[22px] text-brown">Niacinamide 4% - Ectoin 0,3% - Allantoin 0,3%</p></div>
+      <p class="mt-auto text-base leading-[22px] tracking-[0.224px] text-navy">Giá đang cập nhật</p>
+    </div>
+  </article>
+</li>
+<li class="min-w-0" data-nhom="bao-ve" hidden>
+  <article class="group flex h-full flex-col">
+    <div class="relative aspect-[424/500] overflow-hidden rounded-[4px] bg-[#ecebec] transition-shadow duration-300 group-hover:shadow-popover">
+      <a href="chi-tiet-san-pham.html" class="block size-full focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy focus-visible:-outline-offset-2" aria-label="Blue Light Shield Tone-Up Fluid Sunscreen">
+        <img src="assets/img/san-pham/blue-light-shield.webp" alt="Chai Blue Light Shield Tone-Up Fluid Sunscreen của Dzentic" width="1089" height="1444" class="size-full object-cover transition-transform duration-500 group-hover:scale-[1.03]" loading="lazy">
+      </a>
+      <span class="absolute left-4 top-4 inline-flex h-[31px] items-center rounded-xs bg-white px-2 py-1 text-xs leading-4 tracking-[0.48px] text-ink">DAILY PROTECTION</span>
+      <div class="absolute inset-x-4 bottom-4 flex gap-2 transition-opacity duration-300 lg:opacity-0 lg:group-hover:opacity-100 lg:group-focus-within:opacity-100">
+        <a href="chi-tiet-san-pham.html" class="flex h-11 flex-1 items-center justify-center rounded-sm bg-bg px-3 text-[15px] leading-5 tracking-[0.21px] text-ink hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy">Xem chi tiết</a>
+        <button type="button" data-add-to-cart class="flex h-11 flex-1 cursor-pointer items-center justify-center rounded-sm bg-navy px-3 text-[15px] leading-5 tracking-[0.21px] text-bg hover:bg-blue focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy">Thêm vào giỏ hàng</button>
+      </div>
+    </div>
+    <div class="flex flex-1 flex-col gap-5 pt-6">
+      <div class="flex flex-col gap-2">
+        <h3 class="text-xl leading-7 text-navy transition-colors group-hover:text-brown"><a href="chi-tiet-san-pham.html" class="hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy">Blue Light Shield Tone-Up Fluid Sunscreen</a></h3>
+        <p class="text-sm leading-5 tracking-[0.14px] text-brown">Chống nắng nâng tông · SPF50+ PA++++ · Eye-safe</p>
+      </div>
+      <div class="flex min-h-[92px] gap-3 border-y border-gray-dd py-3"><p class="text-base font-medium leading-[22px] text-brown">Zinc Oxide - Titanium Dioxide - Iron Oxides - Ectoin</p></div>
+      <p class="mt-auto text-base leading-[22px] tracking-[0.224px] text-navy">720,000 VND</p>
+    </div>
+  </article>
+</li>
+    </ul>
+  </div>
+</section>
+
+<!-- SECTION: Overview · Bộ giải pháp -->
+<section class="bg-bg" aria-labelledby="overview-title">
+  <div class="mx-auto flex max-w-site flex-col items-center gap-10 px-4 pb-16 pt-16 md:px-8 md:pb-[120px] md:pt-24 xl:px-[72px] xl:gap-12">
+    <h2 id="overview-title" class="text-center text-3xl uppercase leading-[1.4] tracking-[0.624px] text-brown-dark md:text-5xl" data-aos="fade-up">Từ sản phẩm đơn lẻ đến<br class="hidden md:block"> một chu trình có logic</h2>
+    <div class="grid w-full gap-6 lg:grid-cols-2">
+      <article class="flex flex-col overflow-hidden rounded-[4px] border border-gray-dd bg-white" data-aos="fade-up">
+        <div class="aspect-[636/460] overflow-hidden bg-[#ecebec]"><img src="assets/img/san-pham/bo-tre-hoa-lam-sang.webp" alt="Bộ Trẻ hóa – Làm sáng: Photo Defense, Retino Renewal, Blue Light Shield và NeoBright" width="1556" height="1126" class="size-full object-cover" loading="lazy"></div>
+        <div class="flex flex-1 flex-col px-5 pb-8 pt-7 md:px-8">
+          <p class="text-sm tracking-[4px] uppercase text-brown md:text-base md:leading-[22px]">Bộ giải pháp</p>
+          <h3 class="mt-2 text-2xl leading-[1.4] tracking-[-0.512px] text-navy md:text-[32px]">Trẻ hóa – Làm sáng</h3>
+          <p class="mt-2 text-base leading-[22px] tracking-[0.224px] text-brown">Ban ngày bảo vệ. Ban đêm tái tạo. Luôn song hành cùng phục hồi.</p>
+          <p class="mt-4 text-base leading-[22px] tracking-[0.224px] text-gray-66">Một chu trình được thiết kế cho làn da quan tâm đến sắc tố, độ rạng rỡ, bề mặt da và các dấu hiệu lão hóa.</p>
+          <p class="mt-6 text-sm leading-5 text-gray-66">Giá bộ đang cập nhật</p>
+          <div class="mt-4 flex flex-col gap-3 sm:flex-row">
+            <a href="bo-giai-phap.html" class="inline-flex h-10 items-center justify-center gap-2 rounded-sm bg-brown px-6 text-base leading-[22px] tracking-[0.224px] text-bg hover:bg-brown-dark focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy sm:flex-1 whitespace-nowrap">Khám phá bộ giải pháp <img src="assets/img/san-pham/icon-arrow-up-right.svg" alt="" width="12" height="13"></a>
+            <button type="button" data-add-to-cart data-add-set class="inline-flex h-10 items-center justify-center gap-2 rounded-sm border border-brown px-6 text-base leading-[22px] tracking-[0.224px] text-brown hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy cursor-pointer sm:flex-1 whitespace-nowrap"><span data-label-text>Thêm bộ sản phẩm vào giỏ hàng</span></button>
+          </div>
+        </div>
+      </article>
+      <article class="flex flex-col overflow-hidden rounded-[4px] border border-gray-dd bg-white" data-aos="fade-up">
+        <div class="aspect-[636/460] overflow-hidden bg-[#ecebec]"><img src="assets/img/san-pham/bo-da-mun.webp" alt="Bộ giải pháp cho da mụn: Purifying Cleansing Gel, Zinc Complex Serum và Blemish Recovery Hydrating Cream" width="1556" height="1126" class="size-full object-cover" loading="lazy"></div>
+        <div class="flex flex-1 flex-col px-5 pb-8 pt-7 md:px-8">
+          <p class="text-sm tracking-[4px] uppercase text-brown md:text-base md:leading-[22px]">Bộ giải pháp</p>
+          <h3 class="mt-2 text-2xl leading-[1.4] tracking-[-0.512px] text-navy md:text-[32px]">Dành cho da mụn</h3>
+          <p class="mt-2 text-base leading-[22px] tracking-[0.224px] text-brown">Kiểm soát dầu, giảm viêm nhưng không bỏ quên phục hồi và làm dịu.</p>
+          <p class="mt-4 text-base leading-[22px] tracking-[0.224px] text-gray-66">Routine dành cho làn da mụn có xu hướng tiết dầu, dễ xuất hiện khuyết điểm, nhạy cảm hoặc đang sử dụng các sản phẩm chăm sóc chuyên sâu.</p>
+          <p class="mt-6 text-sm leading-5 text-gray-66">Giá bộ đang cập nhật</p>
+          <div class="mt-4 flex flex-col gap-3 sm:flex-row">
+            <a href="bo-giai-phap.html" class="inline-flex h-10 items-center justify-center gap-2 rounded-sm bg-brown px-6 text-base leading-[22px] tracking-[0.224px] text-bg hover:bg-brown-dark focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy sm:flex-1 whitespace-nowrap">Khám phá bộ giải pháp <img src="assets/img/san-pham/icon-arrow-up-right.svg" alt="" width="12" height="13"></a>
+            <button type="button" data-add-to-cart data-add-set class="inline-flex h-10 items-center justify-center gap-2 rounded-sm border border-brown px-6 text-base leading-[22px] tracking-[0.224px] text-brown hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy cursor-pointer sm:flex-1 whitespace-nowrap"><span data-label-text>Thêm bộ sản phẩm vào giỏ hàng</span></button>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION: CTA · Tư vấn chuyên gia -->
+<section class="relative overflow-hidden bg-[#5e371a] text-bg" aria-label="Tư vấn chuyên gia">
+  <img src="assets/img/san-pham/cta-nen.webp" alt="" width="1156" height="737" class="pointer-events-none absolute inset-y-0 right-0 hidden h-[117.45%] w-[42.99%] max-w-none -translate-y-[4.6%] object-cover lg:block" loading="lazy">
+  <div class="pointer-events-none absolute inset-0 bg-gradient-to-l from-[#5e371a]/0 to-[#5e371a] to-[42.39%]" aria-hidden="true"></div>
+  <div class="relative mx-auto flex max-w-site flex-col justify-center gap-5 px-4 py-16 md:px-8 lg:h-[336px] lg:py-0 xl:px-[72px]" data-aos="fade-up">
+    <h2 class="text-2xl uppercase leading-[1.3] tracking-[0.403px] md:text-[31px]">Niềm tin không bắt đầu từ lời hứa.<br>Niềm tin bắt đầu từ bằng chứng khoa học.</h2>
+    <p class="max-w-[600px] text-base leading-[22px] tracking-[0.224px] opacity-85">Giá trị của một hoạt chất không chỉ nằm ở riêng nó, mà còn ở cách hoạt chất đó được lựa chọn và phối hợp trong tổng thể công thức.</p>
+  </div>
+</section>
+
+<!-- SECTION: Serum trong routine -->
+<section class="bg-white" aria-labelledby="routine-title">
+  <div class="mx-auto flex max-w-site flex-col items-center gap-10 px-4 py-16 md:px-8 md:py-24 xl:gap-12 xl:px-[72px] xl:py-[120px]">
+    <div class="flex flex-col items-center gap-3 text-center" data-aos="fade-up">
+      <p class="text-sm tracking-[4px] uppercase text-brown md:text-base md:leading-[22px]">Serum trong routine</p>
+      <h2 id="routine-title" class="text-3xl uppercase leading-[1.4] tracking-[0.624px] text-brown-dark md:text-5xl">Mỗi sản phẩm giữ một<br class="hidden md:block"> vị trí trong routine</h2>
+    </div>
+    <div class="flex w-full flex-col gap-4" data-accs>
+      <div class="bg-bg rounded-[4px]" data-acc>
+        <div class="flex items-start gap-4 p-5 md:px-10 md:py-7">
+          <div class="min-w-0 flex-1">
+            <div data-acc-summary class="flex flex-col gap-4 lg:min-h-[100px] lg:flex-row lg:items-center lg:gap-10 hidden">
+              <div class="flex items-center gap-3"><img src="assets/img/san-pham/icon-day.svg" alt="" width="28" height="28" class="size-7"><h3 class="text-xl leading-7 text-navy">Bộ Trẻ hóa – Làm sáng</h3><span class="text-sm leading-5 text-gray-66">Buổi sáng</span></div>
+              <div class="flex"></div>
+              <p class="text-sm leading-5 tracking-[0.14px] text-gray-66 lg:flex-1">Purifying Cleansing Gel &nbsp;→&nbsp; Photo Defense Brightening Serum &nbsp;→&nbsp; NeoBright Repair Cream &nbsp;→&nbsp; Blue Light Shield</p>
+            </div>
+            <div data-acc-panel class="md:py-3">
+              <div class="flex flex-col gap-6 lg:flex-row lg:gap-10">
+                <div class="flex shrink-0 flex-col gap-3 lg:w-[220px]"><img src="assets/img/san-pham/icon-day.svg" alt="" width="28" height="28" class="size-7"><h3 class="text-xl leading-7 text-navy">Bộ Trẻ hóa – Làm sáng</h3><p class="text-sm leading-5 text-gray-66">Buổi sáng</p></div>
+                <div class="relative flex-1">
+                  <div class="pointer-events-none absolute left-[100px] right-[100px] top-12 hidden h-px bg-gray-dd lg:block" aria-hidden="true"></div>
+                  <ol class="relative grid grid-cols-2 gap-x-4 gap-y-8 lg:flex lg:justify-between"><li class="mx-auto flex w-full max-w-[200px] flex-col items-center gap-3 text-center lg:mx-0 lg:w-[200px]">
+  <div class="relative size-24 shrink-0">
+    <div class="relative size-full overflow-hidden rounded-full border border-gray-dd bg-white">
+      <img src="assets/img/san-pham/step-cleansing-gel.webp" alt="" class="size-full object-contain p-2" loading="lazy">
+    </div>
+    
+    <span class="absolute -right-1 top-0 grid size-7 place-items-center rounded-full bg-navy text-white text-xs leading-4">01</span>
+    
+  </div>
+  <div class="flex flex-col gap-2 pt-1">
+    <p class="text-base leading-[22px] tracking-[0.224px] text-navy">Purifying Cleansing Gel</p>
+    <p class="text-sm leading-5 tracking-[0.14px] text-gray-66">Làm sạch dịu nhẹ.</p>
+  </div>
+</li><li class="mx-auto flex w-full max-w-[200px] flex-col items-center gap-3 text-center lg:mx-0 lg:w-[200px]">
+  <div class="relative size-24 shrink-0">
+    <div class="relative size-full overflow-hidden rounded-full border border-gray-dd bg-brown-50">
+      <img src="assets/img/san-pham/step-photo-defense.webp" alt="" class="size-full object-contain p-2" loading="lazy">
+    </div>
+    <img src="assets/img/san-pham/ring.svg" alt="" width="96" height="96" class="pointer-events-none absolute inset-0 size-full max-w-none">
+    <span class="absolute -right-1 top-0 grid size-7 place-items-center rounded-full bg-white text-brown text-xs leading-4">02</span>
+    <span class="absolute -bottom-2 left-1/2 inline-flex h-[18px] -translate-x-1/2 items-center whitespace-nowrap rounded-full bg-brown px-2 text-[11px] leading-4 text-bg">4% Nia</span>
+  </div>
+  <div class="flex flex-col gap-2 pt-1">
+    <p class="text-base leading-[22px] tracking-[0.224px] text-brown">Photo Defense Brightening Serum</p>
+    <p class="text-sm leading-5 tracking-[0.14px] text-gray-66">Làm sáng + chống oxy hóa.</p>
+  </div>
+</li><li class="mx-auto flex w-full max-w-[200px] flex-col items-center gap-3 text-center lg:mx-0 lg:w-[200px]">
+  <div class="relative size-24 shrink-0">
+    <div class="relative size-full overflow-hidden rounded-full border border-gray-dd bg-white">
+      <img src="assets/img/san-pham/step-neobright.webp" alt="" class="size-full object-contain p-2" loading="lazy">
+    </div>
+    
+    <span class="absolute -right-1 top-0 grid size-7 place-items-center rounded-full bg-navy text-white text-xs leading-4">03</span>
+    
+  </div>
+  <div class="flex flex-col gap-2 pt-1">
+    <p class="text-base leading-[22px] tracking-[0.224px] text-navy">NeoBright Repair Cream</p>
+    <p class="text-sm leading-5 tracking-[0.14px] text-gray-66">Dưỡng ẩm + hỗ trợ hàng rào bảo vệ da.</p>
+  </div>
+</li><li class="mx-auto flex w-full max-w-[200px] flex-col items-center gap-3 text-center lg:mx-0 lg:w-[200px]">
+  <div class="relative size-24 shrink-0">
+    <div class="relative size-full overflow-hidden rounded-full border border-gray-dd bg-white">
+      <img src="assets/img/san-pham/step-sunscreen.webp" alt="" class="size-full object-contain p-2" loading="lazy">
+    </div>
+    
+    <span class="absolute -right-1 top-0 grid size-7 place-items-center rounded-full bg-navy text-white text-xs leading-4">04</span>
+    
+  </div>
+  <div class="flex flex-col gap-2 pt-1">
+    <p class="text-base leading-[22px] tracking-[0.224px] text-navy">Blue Light Shield Tone-Up Fluid Sunscreen</p>
+    <p class="text-sm leading-5 tracking-[0.14px] text-gray-66">Bảo vệ da ban ngày.</p>
+  </div>
+</li></ol>
+                </div>
+              </div>
+              <div class="mt-6 flex flex-col gap-4 border-t border-gray-dd pt-5 md:flex-row md:items-center md:justify-between">
+              <p class="text-sm leading-5 tracking-[0.14px] text-gray-49">Trọn bộ 4 sản phẩm theo đúng thứ tự routine</p>
+              <div class="flex flex-wrap items-center gap-x-6 gap-y-3">
+                <a href="routine-phac-do.html" class="inline-flex items-center gap-2 text-sm font-medium leading-5 text-brown hover:text-brown-dark focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy">Xem bộ giải pháp <img src="assets/img/san-pham/icon-arrow-right.svg" alt="" width="16" height="16"></a>
+                <button type="button" data-add-to-cart data-add-set class="inline-flex h-10 items-center justify-center gap-2 rounded-sm bg-brown px-6 text-base leading-[22px] tracking-[0.224px] text-bg hover:bg-brown-dark focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy cursor-pointer"><span data-label-text>Thêm cả bộ vào giỏ hàng</span> <img src="assets/img/san-pham/icon-bag.svg" alt="" width="12" height="13"></button>
+              </div>
+            </div>
+            </div>
+          </div>
+          <button type="button" data-acc-toggle aria-expanded="true" aria-label="Thu gọn Bộ Trẻ hóa – Làm sáng · Buổi sáng" class="grid size-9 shrink-0 self-start aria-[expanded=false]:self-center cursor-pointer place-items-center rounded-full border border-brown text-xl leading-none text-brown hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy"><span aria-hidden="true">−</span></button>
+        </div>
+      </div>
+      <div class="bg-bg rounded-[4px]" data-acc>
+        <div class="flex items-start gap-4 p-5 md:px-10 md:py-7">
+          <div class="min-w-0 flex-1">
+            <div data-acc-summary class="flex flex-col gap-4 lg:min-h-[100px] lg:flex-row lg:items-center lg:gap-10">
+              <div class="flex items-center gap-3"><img src="assets/img/san-pham/icon-night.svg" alt="" width="28" height="28" class="size-7"><h3 class="text-xl leading-7 text-navy">Bộ Trẻ hóa – Làm sáng</h3><span class="text-sm leading-5 text-gray-66">Buổi tối</span></div>
+              <div class="flex"><span class="relative -ml-3.5 first:ml-0 size-[52px] shrink-0 overflow-hidden rounded-full bg-white"><img src="assets/img/san-pham/step-cleansing-gel.webp" alt="" class="size-full object-contain p-1"><img src="assets/img/san-pham/border.svg" alt="" width="52" height="52" class="absolute inset-0 size-full max-w-none"></span><span class="relative -ml-3.5 first:ml-0 size-[52px] shrink-0 overflow-hidden rounded-full bg-white"><img src="assets/img/san-pham/retino-renewal-brightening-serum.webp" alt="" class="size-full object-cover"><img src="assets/img/san-pham/border.svg" alt="" width="52" height="52" class="absolute inset-0 size-full max-w-none"></span><span class="relative -ml-3.5 first:ml-0 size-[52px] shrink-0 overflow-hidden rounded-full bg-white"><img src="assets/img/san-pham/step-neobright.webp" alt="" class="size-full object-contain p-1"><img src="assets/img/san-pham/border.svg" alt="" width="52" height="52" class="absolute inset-0 size-full max-w-none"></span></div>
+              <p class="text-sm leading-5 tracking-[0.14px] text-gray-66 lg:flex-1">Purifying Cleansing Gel &nbsp;→&nbsp; Retino Renewal Brightening Serum &nbsp;→&nbsp; NeoBright Repair Cream</p>
+            </div>
+            <div data-acc-panel class="md:py-3" hidden>
+              <div class="flex flex-col gap-6 lg:flex-row lg:gap-10">
+                <div class="flex shrink-0 flex-col gap-3 lg:w-[220px]"><img src="assets/img/san-pham/icon-night.svg" alt="" width="28" height="28" class="size-7"><h3 class="text-xl leading-7 text-navy">Bộ Trẻ hóa – Làm sáng</h3><p class="text-sm leading-5 text-gray-66">Buổi tối</p></div>
+                <div class="relative flex-1">
+                  <div class="pointer-events-none absolute left-[100px] right-[100px] top-12 hidden h-px bg-gray-dd lg:block" aria-hidden="true"></div>
+                  <ol class="relative grid grid-cols-2 gap-x-4 gap-y-8 lg:flex lg:justify-between"><li class="mx-auto flex w-full max-w-[200px] flex-col items-center gap-3 text-center lg:mx-0 lg:w-[200px]">
+  <div class="relative size-24 shrink-0">
+    <div class="relative size-full overflow-hidden rounded-full border border-gray-dd bg-white">
+      <img src="assets/img/san-pham/step-cleansing-gel.webp" alt="" class="size-full object-contain p-2" loading="lazy">
+    </div>
+    
+    <span class="absolute -right-1 top-0 grid size-7 place-items-center rounded-full bg-navy text-white text-xs leading-4">01</span>
+    
+  </div>
+  <div class="flex flex-col gap-2 pt-1">
+    <p class="text-base leading-[22px] tracking-[0.224px] text-navy">Purifying Cleansing Gel</p>
+    <p class="text-sm leading-5 tracking-[0.14px] text-gray-66">Làm sạch dịu nhẹ.</p>
+  </div>
+</li><li class="mx-auto flex w-full max-w-[200px] flex-col items-center gap-3 text-center lg:mx-0 lg:w-[200px]">
+  <div class="relative size-24 shrink-0">
+    <div class="relative size-full overflow-hidden rounded-full border border-gray-dd bg-brown-50">
+      <img src="assets/img/san-pham/retino-renewal-brightening-serum.webp" alt="" class="size-full object-cover" loading="lazy">
+    </div>
+    <img src="assets/img/san-pham/ring.svg" alt="" width="96" height="96" class="pointer-events-none absolute inset-0 size-full max-w-none">
+    <span class="absolute -right-1 top-0 grid size-7 place-items-center rounded-full bg-white text-brown text-xs leading-4">02</span>
+    <span class="absolute -bottom-2 left-1/2 inline-flex h-[18px] -translate-x-1/2 items-center whitespace-nowrap rounded-full bg-brown px-2 text-[11px] leading-4 text-bg">0,2% HPR</span>
+  </div>
+  <div class="flex flex-col gap-2 pt-1">
+    <p class="text-base leading-[22px] tracking-[0.224px] text-brown">Retino Renewal Brightening Serum</p>
+    <p class="text-sm leading-5 tracking-[0.14px] text-gray-66">Trẻ hóa + làm sáng đa cơ chế.</p>
+  </div>
+</li><li class="mx-auto flex w-full max-w-[200px] flex-col items-center gap-3 text-center lg:mx-0 lg:w-[200px]">
+  <div class="relative size-24 shrink-0">
+    <div class="relative size-full overflow-hidden rounded-full border border-gray-dd bg-white">
+      <img src="assets/img/san-pham/step-neobright.webp" alt="" class="size-full object-contain p-2" loading="lazy">
+    </div>
+    
+    <span class="absolute -right-1 top-0 grid size-7 place-items-center rounded-full bg-navy text-white text-xs leading-4">03</span>
+    
+  </div>
+  <div class="flex flex-col gap-2 pt-1">
+    <p class="text-base leading-[22px] tracking-[0.224px] text-navy">NeoBright Repair Cream</p>
+    <p class="text-sm leading-5 tracking-[0.14px] text-gray-66">Dưỡng ẩm + hỗ trợ hàng rào bảo vệ da.</p>
+  </div>
+</li></ol>
+                </div>
+              </div>
+              <div class="mt-6 flex flex-col gap-4 border-t border-gray-dd pt-5 md:flex-row md:items-center md:justify-between">
+              <p class="text-sm leading-5 tracking-[0.14px] text-gray-49">Trọn bộ 3 sản phẩm theo đúng thứ tự routine</p>
+              <div class="flex flex-wrap items-center gap-x-6 gap-y-3">
+                <a href="routine-phac-do.html" class="inline-flex items-center gap-2 text-sm font-medium leading-5 text-brown hover:text-brown-dark focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy">Xem bộ giải pháp <img src="assets/img/san-pham/icon-arrow-right.svg" alt="" width="16" height="16"></a>
+                <button type="button" data-add-to-cart data-add-set class="inline-flex h-10 items-center justify-center gap-2 rounded-sm bg-brown px-6 text-base leading-[22px] tracking-[0.224px] text-bg hover:bg-brown-dark focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy cursor-pointer"><span data-label-text>Thêm cả bộ vào giỏ hàng</span> <img src="assets/img/san-pham/icon-bag.svg" alt="" width="12" height="13"></button>
+              </div>
+            </div>
+            </div>
+          </div>
+          <button type="button" data-acc-toggle aria-expanded="false" aria-label="Mở rộng Bộ Trẻ hóa – Làm sáng · Buổi tối" class="grid size-9 shrink-0 self-start aria-[expanded=false]:self-center cursor-pointer place-items-center rounded-full border border-brown text-xl leading-none text-brown hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy"><span aria-hidden="true">+</span></button>
+        </div>
+      </div>
+      <div class="bg-bg rounded-[4px]" data-acc>
+        <div class="flex items-start gap-4 p-5 md:px-10 md:py-7">
+          <div class="min-w-0 flex-1">
+            <div data-acc-summary class="flex flex-col gap-4 lg:min-h-[128px] lg:flex-row lg:items-center lg:gap-10">
+              <div class="flex items-center gap-3"><img src="assets/img/san-pham/icon-feature-4.svg" alt="" width="28" height="28" class="size-7"><h3 class="text-xl leading-7 text-navy">Bộ giải pháp cho da mụn</h3><span class="text-sm leading-5 text-gray-66">Routine 4 bước</span></div>
+              <div class="flex"><span class="relative -ml-3.5 first:ml-0 size-[52px] shrink-0 overflow-hidden rounded-full bg-white"><img src="assets/img/san-pham/step-cleansing-gel.webp" alt="" class="size-full object-contain p-1"><img src="assets/img/san-pham/border.svg" alt="" width="52" height="52" class="absolute inset-0 size-full max-w-none"></span><span class="relative -ml-3.5 first:ml-0 size-[52px] shrink-0 overflow-hidden rounded-full bg-white"><img src="assets/img/san-pham/zinc-complex-serum.webp" alt="" class="size-full object-cover"><img src="assets/img/san-pham/border.svg" alt="" width="52" height="52" class="absolute inset-0 size-full max-w-none"></span><span class="relative -ml-3.5 first:ml-0 size-[52px] shrink-0 overflow-hidden rounded-full bg-white"><img src="assets/img/san-pham/step-blemish-cream.webp" alt="" class="size-full object-contain p-1"><img src="assets/img/san-pham/border.svg" alt="" width="52" height="52" class="absolute inset-0 size-full max-w-none"></span><span class="relative -ml-3.5 first:ml-0 size-[52px] shrink-0 overflow-hidden rounded-full bg-white"><img src="assets/img/san-pham/step-sunscreen.webp" alt="" class="size-full object-contain p-1"><img src="assets/img/san-pham/border.svg" alt="" width="52" height="52" class="absolute inset-0 size-full max-w-none"></span></div>
+              <p class="text-sm leading-5 tracking-[0.14px] text-gray-66 lg:flex-1">Purifying Cleansing Gel &nbsp;→&nbsp; Zinc Complex Serum &nbsp;→&nbsp; Blemish Recovery Hydrating Cream &nbsp;→&nbsp; Blue Light Shield Tone-Up Fluid Sunscreen</p>
+            </div>
+            <div data-acc-panel class="md:py-3" hidden>
+              <div class="flex flex-col gap-6 lg:flex-row lg:gap-10">
+                <div class="flex shrink-0 flex-col gap-3 lg:w-[220px]"><img src="assets/img/san-pham/icon-feature-4.svg" alt="" width="28" height="28" class="size-7"><h3 class="text-xl leading-7 text-navy">Bộ giải pháp cho da mụn</h3><p class="text-sm leading-5 text-gray-66">Routine 4 bước</p></div>
+                <div class="relative flex-1">
+                  <div class="pointer-events-none absolute left-[100px] right-[100px] top-12 hidden h-px bg-gray-dd lg:block" aria-hidden="true"></div>
+                  <ol class="relative grid grid-cols-2 gap-x-4 gap-y-8 lg:flex lg:justify-between"><li class="mx-auto flex w-full max-w-[200px] flex-col items-center gap-3 text-center lg:mx-0 lg:w-[200px]">
+  <div class="relative size-24 shrink-0">
+    <div class="relative size-full overflow-hidden rounded-full border border-gray-dd bg-white">
+      <img src="assets/img/san-pham/step-cleansing-gel.webp" alt="" class="size-full object-contain p-2" loading="lazy">
+    </div>
+    
+    <span class="absolute -right-1 top-0 grid size-7 place-items-center rounded-full bg-navy text-white text-xs leading-4">01</span>
+    
+  </div>
+  <div class="flex flex-col gap-2 pt-1">
+    <p class="text-base leading-[22px] tracking-[0.224px] text-navy">Purifying Cleansing Gel</p>
+    <p class="text-sm leading-5 tracking-[0.14px] text-gray-66">Làm sạch dịu nhẹ, ít tạo bọt.</p>
+  </div>
+</li><li class="mx-auto flex w-full max-w-[200px] flex-col items-center gap-3 text-center lg:mx-0 lg:w-[200px]">
+  <div class="relative size-24 shrink-0">
+    <div class="relative size-full overflow-hidden rounded-full border border-gray-dd bg-brown-50">
+      <img src="assets/img/san-pham/zinc-complex-serum.webp" alt="" class="size-full object-cover" loading="lazy">
+    </div>
+    <img src="assets/img/san-pham/ring.svg" alt="" width="96" height="96" class="pointer-events-none absolute inset-0 size-full max-w-none">
+    <span class="absolute -right-1 top-0 grid size-7 place-items-center rounded-full bg-white text-brown text-xs leading-4">02</span>
+    <span class="absolute -bottom-2 left-1/2 inline-flex h-[18px] -translate-x-1/2 items-center whitespace-nowrap rounded-full bg-brown px-2 text-[11px] leading-4 text-bg">1% Zinc PCA</span>
+  </div>
+  <div class="flex flex-col gap-2 pt-1">
+    <p class="text-base leading-[22px] tracking-[0.224px] text-brown">Zinc Complex Serum</p>
+    <p class="text-sm leading-5 tracking-[0.14px] text-gray-66">Zinc PCA 1% + Niacinamide 2%.</p>
+  </div>
+</li><li class="mx-auto flex w-full max-w-[200px] flex-col items-center gap-3 text-center lg:mx-0 lg:w-[200px]">
+  <div class="relative size-24 shrink-0">
+    <div class="relative size-full overflow-hidden rounded-full border border-gray-dd bg-white">
+      <img src="assets/img/san-pham/step-blemish-cream.webp" alt="" class="size-full object-contain p-2" loading="lazy">
+    </div>
+    
+    <span class="absolute -right-1 top-0 grid size-7 place-items-center rounded-full bg-navy text-white text-xs leading-4">03</span>
+    
+  </div>
+  <div class="flex flex-col gap-2 pt-1">
+    <p class="text-base leading-[22px] tracking-[0.224px] text-navy">Blemish Recovery Hydrating Cream</p>
+    <p class="text-sm leading-5 tracking-[0.14px] text-gray-66">Niacinamide 4% + Ectoin 0,3% + Allantoin 0,3%.</p>
+  </div>
+</li><li class="mx-auto flex w-full max-w-[200px] flex-col items-center gap-3 text-center lg:mx-0 lg:w-[200px]">
+  <div class="relative size-24 shrink-0">
+    <div class="relative size-full overflow-hidden rounded-full border border-gray-dd bg-white">
+      <img src="assets/img/san-pham/step-sunscreen.webp" alt="" class="size-full object-contain p-2" loading="lazy">
+    </div>
+    
+    <span class="absolute -right-1 top-0 grid size-7 place-items-center rounded-full bg-navy text-white text-xs leading-4">04</span>
+    
+  </div>
+  <div class="flex flex-col gap-2 pt-1">
+    <p class="text-base leading-[22px] tracking-[0.224px] text-navy">Blue Light Shield Tone-Up Fluid Sunscreen</p>
+    <p class="text-sm leading-5 tracking-[0.14px] text-gray-66">Bảo vệ da ban ngày.</p>
+  </div>
+</li></ol>
+                </div>
+              </div>
+              <div class="mt-6 flex flex-col gap-4 border-t border-gray-dd pt-5 md:flex-row md:items-center md:justify-between">
+              <p class="text-sm leading-5 tracking-[0.14px] text-gray-49">Trọn bộ 4 sản phẩm theo đúng thứ tự routine</p>
+              <div class="flex flex-wrap items-center gap-x-6 gap-y-3">
+                <a href="routine-phac-do.html" class="inline-flex items-center gap-2 text-sm font-medium leading-5 text-brown hover:text-brown-dark focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy">Xem bộ giải pháp <img src="assets/img/san-pham/icon-arrow-right.svg" alt="" width="16" height="16"></a>
+                <button type="button" data-add-to-cart data-add-set class="inline-flex h-10 items-center justify-center gap-2 rounded-sm bg-brown px-6 text-base leading-[22px] tracking-[0.224px] text-bg hover:bg-brown-dark focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy cursor-pointer"><span data-label-text>Thêm cả bộ vào giỏ hàng</span> <img src="assets/img/san-pham/icon-bag.svg" alt="" width="12" height="13"></button>
+              </div>
+            </div>
+            </div>
+          </div>
+          <button type="button" data-acc-toggle aria-expanded="false" aria-label="Mở rộng Bộ giải pháp cho da mụn · Routine 4 bước" class="grid size-9 shrink-0 self-start aria-[expanded=false]:self-center cursor-pointer place-items-center rounded-full border border-brown text-xl leading-none text-brown hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy"><span aria-hidden="true">+</span></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- SECTION: Footer -->
+<footer id="footer" class="bg-bg text-navy">
+  <div class="max-w-site mx-auto px-4 md:px-8 xl:px-[72px]">
+    <div class="grid gap-10 pt-12 pb-10 lg:grid-cols-[minmax(0,1fr)_auto] lg:gap-16 lg:pt-24 lg:pb-12">
+      <div>
+        <a href="index.html" class="block max-w-[507px] lg:ml-[9px] lg:mt-[7.4px] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown"><img src="assets/img/footer/logo-dzentic.webp" alt="Dzentic - A brand by Sorai Beauty Engine" width="507" height="157" class="block h-auto w-full" /></a>
+        <ul class="mt-6 lg:mt-[18.4px] flex items-center gap-2" aria-label="Mạng xã hội">
+          <li><a href="#" aria-label="Facebook" class="flex size-8 items-center justify-center rounded-sm border border-gray-bb transition hover:-translate-y-0.5 hover:border-brown hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown"><img src="assets/img/footer/icon-facebook.svg" alt="" width="16" height="18" /></a></li>
+          <li><a href="#" aria-label="Instagram" class="flex size-8 items-center justify-center rounded-sm border border-gray-bb transition hover:-translate-y-0.5 hover:border-brown hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown"><img src="assets/img/footer/icon-instagram.svg" alt="" width="16" height="18" /></a></li>
+          <li><a href="#" aria-label="TikTok" class="flex size-8 items-center justify-center rounded-sm border border-gray-bb transition hover:-translate-y-0.5 hover:border-brown hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown"><img src="assets/img/footer/icon-tiktok.svg" alt="" width="16" height="18" /></a></li>
+        </ul>
+      </div>
+
+      <div class="grid gap-8 sm:grid-cols-2 md:grid-cols-3 md:gap-0">
+        <nav class="md:w-[220px]" aria-label="Sản phẩm và dịch vụ">
+          <h3 class="text-xl leading-7 font-medium text-navy">Sản phẩm và dịch vụ</h3>
+          <ul class="mt-6 flex flex-col gap-[10px] text-base leading-[22px] tracking-[0.224px] text-gray-49">
+            <li><a href="san-pham.html" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Brightening Serum</a></li>
+            <li><a href="san-pham.html" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Repair Cream</a></li>
+            <li><a href="san-pham.html" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Hydrating Cream</a></li>
+            <li><a href="san-pham.html" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Cleansing Gel</a></li>
+            <li><a href="san-pham.html" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Sunscreen</a></li>
+          </ul>
+        </nav>
+        <nav class="md:w-[220px]" aria-label="Liên kết">
+          <h3 class="text-xl leading-7 font-medium text-navy">Liên kết</h3>
+          <ul class="mt-6 flex flex-col gap-[10px] text-base leading-[22px] tracking-[0.224px] text-gray-49">
+            <li><a href="routine-phac-do.html" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Giải Pháp Làn Da</a></li>
+            <li><a href="thu-vien-hoat-chat.html" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Khoa Học &amp; Bằng Chứng</a></li>
+            <li><a href="cau-chuyen-thuong-hieu.html" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Triết Lý Dzentic</a></li>
+            <li><a href="bai-viet.html" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Blog</a></li>
+            <li><a href="lien-he.html" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Liên hệ</a></li>
+          </ul>
+        </nav>
+        <div>
+          <h3 class="text-xl leading-7 font-medium text-navy">Liên hệ</h3>
+          <ul class="mt-6 flex flex-col gap-[10px] text-base leading-[22px] tracking-[0.224px] text-gray-49">
+            <li class="flex items-start gap-2"><img src="assets/img/footer/icon-phone.svg" alt="" width="20" height="20" class="shrink-0" /><a href="tel:15001515" class="hover:text-brown hover:underline focus-visible:text-brown focus-visible:underline">Hotline: 1500 1515</a></li>
+            <li class="flex items-start gap-2"><img src="assets/img/footer/icon-mobile.svg" alt="" width="20" height="21" class="shrink-0" /><a href="tel:+84123456789" class="hover:text-brown hover:underline focus-visible:text-brown focus-visible:underline">Điện thoại:<br />(+84) 123456789</a></li>
+            <li class="flex items-start gap-2"><img src="assets/img/footer/icon-pin.svg" alt="" width="20" height="21" class="shrink-0" /><a href="https://www.google.com/maps/search/?api=1&amp;query=T%E1%BA%A7ng+4+To%C3%A0+West+Tower%2C+365+%C4%91%C6%B0%E1%BB%9Dng+C%E1%BA%A7u+Gi%E1%BA%A5y%2C+H%C3%A0+N%E1%BB%99i" target="_blank" rel="noopener" class="lg:max-w-[169px] hover:text-brown hover:underline focus-visible:text-brown focus-visible:underline">Tầng 4 Toà West Tower, 365 đường Cầu Giấy, Hà Nội</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <hr class="border-0 h-px bg-gray-dd" />
+
+    <div class="flex flex-col gap-6 py-8 text-base leading-[22px] tracking-[0.224px] lg:flex-row lg:items-center lg:justify-between lg:pt-[39px] lg:pb-[55px]">
+      <ul class="flex flex-wrap gap-x-10 gap-y-2">
+        <li><a href="chinh-sach-bao-mat.html" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">An toàn &amp; Bảo mật</a></li>
+        <li><a href="#" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Điều khoản sử dụng</a></li>
+      </ul>
+      <div class="flex flex-col gap-4 sm:flex-row sm:items-center sm:gap-8">
+        <a href="#" class="block transition-opacity hover:opacity-80 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown"><img src="assets/img/footer/badge-bo-cong-thuong.webp" alt="Đã thông báo Bộ Công Thương" width="131" height="40" class="h-10 w-auto" /></a>
+        <p>© Bản quyền 2026 thuộc về Dzentic.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/app.js"></script>
+<script>
+(function () {
+  // Lọc sản phẩm theo nhóm (thanh nhóm phía trên lưới)
+  var tabs = [].slice.call(document.querySelectorAll('[data-nhom-tabs] [data-nhom]'));
+  var items = [].slice.call(document.querySelectorAll('[data-grid] > li'));
+  var num = document.querySelector('[data-sl-num]');
+  var ten = document.querySelector('[data-ten]');
+  var names = { 'tat-ca': 'Tất cả sản phẩm', 'lam-sach': 'Làm sạch', 'cham-soc-chuyen-sau': 'Serum Dzentic', 'phuc-hoi': 'Phục hồi', 'bao-ve': 'Bảo vệ' };
+  function pick(id) {
+    var n = 0;
+    tabs.forEach(function (t) { t.setAttribute('aria-selected', String(t.dataset.nhom === id)); });
+    items.forEach(function (li) { var on = id === 'tat-ca' || li.dataset.nhom === id; li.hidden = !on; if (on) n++; });
+    num.textContent = n; ten.textContent = names[id];
+  }
+  tabs.forEach(function (t, i) {
+    t.addEventListener('click', function () { pick(t.dataset.nhom); });
+    t.addEventListener('keydown', function (e) {
+      var d = e.key === 'ArrowRight' ? 1 : e.key === 'ArrowLeft' ? -1 : 0;
+      if (!d) return; var n = tabs[(i + d + tabs.length) % tabs.length]; n.focus(); n.click(); e.preventDefault();
+    });
+  });
+
+  // Accordion routine: chỉ mở một bộ tại một thời điểm
+  var accs = [].slice.call(document.querySelectorAll('[data-acc]'));
+  function setAcc(a, open) {
+    var b = a.querySelector('[data-acc-toggle]');
+    a.querySelector('[data-acc-panel]').hidden = !open;
+    a.querySelector('[data-acc-summary]').hidden = open;
+    b.setAttribute('aria-expanded', String(open));
+    b.firstElementChild.textContent = open ? '\u2212' : '+';
+    b.setAttribute('aria-label', (open ? 'Thu gọn ' : 'Mở rộng ') + a.querySelector('h3').textContent);
+  }
+  accs.forEach(function (a) {
+    a.querySelector('[data-acc-toggle]').addEventListener('click', function () {
+      var open = this.getAttribute('aria-expanded') !== 'true';
+      accs.forEach(function (o) { setAcc(o, o === a ? open : false); });
+    });
+  });
+
+  // Thêm vào giỏ (mẫu): tăng số trên biểu tượng giỏ ở header
+  var badge = document.querySelector('a[aria-label="Giỏ hàng"] span');
+  document.querySelectorAll('[data-add-to-cart]').forEach(function (btn) {
+    var t = btn.querySelector('[data-label-text]') || btn;
+    btn.addEventListener('click', function () {
+      var q = 1, box = btn.closest('[data-qty-scope]');
+      if (box && !btn.hasAttribute('data-add-set')) { var v = box.querySelector('[data-qty-value]'); if (v) q = parseInt(v.textContent, 10) || 1; }
+      if (badge) badge.textContent = (parseInt(badge.textContent, 10) || 0) + q;
+      if (!t.dataset.l) t.dataset.l = t.textContent;
+      t.textContent = 'Đã thêm vào giỏ';
+      clearTimeout(btn._t);
+      btn._t = setTimeout(function () { t.textContent = t.dataset.l; }, 1400);
+    });
+  });
+})();
+</script>
+</body>
+</html>

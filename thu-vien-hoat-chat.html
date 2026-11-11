@@ -1,0 +1,435 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Thư viện hoạt chất · Dzentic</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/app.css">
+</head>
+<body>
+<!-- SECTION: topbar -->
+<section aria-label="Thông báo" class="bg-navy text-bg">
+  <p class="max-w-site mx-auto px-4 py-3 md:py-4 text-center text-sm md:text-base leading-[22px] tracking-[0.224px]">
+    Nhận ưu đãi giảm tới 10% và miễn phí vận chuyển cho tất cả các đơn hàng. Cam kết 100% sản phẩm chính hãng.
+  </p>
+</section>
+
+<header class="sticky top-0 z-50 border-b border-gray-ee bg-bg">
+    <div class="max-w-site mx-auto px-4 md:px-8 xl:px-[72px] h-20 xl:h-[120px] flex items-center justify-between xl:grid xl:grid-cols-[1fr_auto_1fr] xl:gap-6">
+      <nav class="hidden xl:flex items-center gap-6 text-base leading-[22px] tracking-[0.224px]" aria-label="Menu trái">
+        <a href="thu-vien-hoat-chat.html" class="hover:text-brown focus-visible:text-brown focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brown">Khoa Học &amp; Bằng Chứng</a>
+        <a href="san-pham.html" class="hover:text-brown focus-visible:text-brown focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brown">Sản Phẩm</a>
+      </nav>
+
+      <a href="index.html" class="block shrink-0 xl:justify-self-center hover:opacity-80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brown" aria-label="Dzentic - Trang chủ">
+        <img src="assets/img/hero/logo-dzentic.png" alt="Dzentic - A brand by Sorai Beauty Engine" width="920" height="276"
+             class="h-14 xl:h-[92px] w-auto object-contain">
+      </a>
+
+      <div class="flex items-center gap-6 xl:justify-self-end">
+        <nav class="hidden xl:flex items-center gap-6 text-base leading-[22px] tracking-[0.224px]" aria-label="Menu phải">
+          <a href="cau-chuyen-thuong-hieu.html" class="hover:text-brown focus-visible:text-brown focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brown">Triết Lí Dzentic</a>
+          <a href="routine-phac-do.html" class="hover:text-brown focus-visible:text-brown focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brown">Giải Pháp Làn Da</a>
+          <a href="lien-he.html" class="hover:text-brown focus-visible:text-brown focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brown">Liên Hệ</a>
+        </nav>
+        <div class="flex items-center gap-3 xl:gap-[14px]">
+          <a href="tim-kiem.html" class="hover:opacity-70 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brown" aria-label="Tìm kiếm"><img src="assets/img/hero/icon-search.svg" alt="" width="20" height="20"></a>
+          <a href="gio-hang.html" class="group flex items-center gap-2 xl:gap-0.5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brown" aria-label="Giỏ hàng">
+            <img src="assets/img/hero/icon-cart.svg" alt="" width="20" height="20" class="group-hover:opacity-70">
+            <span class="grid place-items-center size-5 rounded-[10px] bg-brown text-bg text-base leading-[22px] group-hover:bg-brown-dark">0</span>
+          </a>
+          <button type="button" data-menu-toggle class="xl:hidden ml-2 p-1 hover:text-brown focus-visible:text-brown focus-visible:outline focus-visible:outline-2 focus-visible:outline-brown" aria-label="Mở menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Menu mobile -->
+    <nav data-menu class="hidden xl:hidden bg-bg border-t border-gray-dd px-4 md:px-8 py-4 text-base" aria-label="Menu chính">
+      <ul class="flex flex-col gap-4">
+        <li><a href="thu-vien-hoat-chat.html" class="hover:text-brown focus-visible:text-brown">Khoa Học &amp; Bằng Chứng</a></li>
+        <li><a href="san-pham.html" class="hover:text-brown focus-visible:text-brown">Sản Phẩm</a></li>
+        <li><a href="cau-chuyen-thuong-hieu.html" class="hover:text-brown focus-visible:text-brown">Triết Lí Dzentic</a></li>
+        <li><a href="routine-phac-do.html" class="hover:text-brown focus-visible:text-brown">Giải Pháp Làn Da</a></li>
+        <li><a href="lien-he.html" class="hover:text-brown focus-visible:text-brown">Liên Hệ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<!-- SECTION: Subpage hero (dùng chung cho mọi trang con). Chỉ đổi breadcrumb, tiêu đề, mô tả. -->
+<section class="relative overflow-hidden bg-gradient-to-r from-bg to-[#f6eadf]">
+  <div class="pointer-events-none absolute inset-0 hidden lg:block" aria-hidden="true">
+    <div class="relative mx-auto h-full max-w-site">
+      <img src="assets/img/subhero/glow.svg" alt="" width="600" height="600" class="absolute left-[850px] top-[-20px] size-[600px] max-w-none">
+      <div class="absolute left-[830px] top-[-40px] size-[640px] opacity-[0.08]">
+        <img src="assets/img/subhero/rays-left.svg" alt="" class="absolute left-0 top-0 h-[640px] w-[342px] max-w-none">
+        <img src="assets/img/subhero/rays-right.svg" alt="" class="absolute left-[320px] top-0 h-[640px] w-[342px] max-w-none">
+      </div>
+      <img src="assets/img/subhero/sun-core.svg" alt="" width="150" height="150" class="absolute left-[1075px] top-[205px] size-[150px] max-w-none">
+    </div>
+  </div>
+  <div class="relative mx-auto max-w-site px-4 pb-10 pt-7 md:px-8 xl:px-[72px] lg:h-[280px] lg:pb-0">
+    <nav aria-label="Breadcrumb" class="flex flex-wrap items-center gap-2 text-sm leading-5 tracking-[0.14px]">
+      <a href="index.html" class="text-gray-66 hover:text-brown">Trang chủ</a>
+      <span class="text-gray-99" aria-hidden="true">/</span>
+      <a href="thu-vien-hoat-chat.html" class="text-gray-66 hover:text-brown">Khoa học &amp; Bằng chứng</a>
+      <span class="text-gray-99" aria-hidden="true">/</span>
+      <span class="text-navy" aria-current="page">Thư viện hoạt chất</span>
+    </nav>
+    <div class="mt-10 flex flex-col gap-4 lg:mt-[69px]">
+      <h1 class="text-3xl uppercase leading-[1.4] tracking-[0.624px] text-brown-dark md:text-5xl lg:max-w-[640px]">Thư viện hoạt chất</h1>
+      <p class="max-w-[560px] text-base leading-[22px] tracking-[0.224px] text-gray-66">Nồng độ, vai trò, cơ chế và mức bằng chứng của từng hoạt chất trong công thức Dzentic.</p>
+    </div>
+  </div>
+</section>
+
+<main>
+<!-- SECTION: Mở đầu · Minh bạch thành phần -->
+<section class="bg-bg" aria-labelledby="mo-dau">
+  <div class="mx-auto flex max-w-site flex-col items-center gap-8 px-4 pt-16 md:px-8 lg:flex-row lg:gap-[60px] xl:px-[72px] xl:pt-24">
+    <img src="assets/img/thu-vien-hoat-chat/mo-dau.jpg" alt="Ống nhỏ giọt và dụng cụ thí nghiệm trên mặt bàn" width="1264" height="848" class="aspect-[636/417] w-full rounded-md object-cover lg:w-[636px] lg:shrink-0">
+    <div class="flex flex-col gap-4" data-aos="fade-up">
+      <div class="flex max-w-[520px] flex-col gap-3 uppercase">
+        <p class="text-sm leading-[22px] tracking-[4px] text-brown md:text-base">Minh bạch thành phần</p>
+        <h2 id="mo-dau" class="text-3xl leading-[1.4] tracking-[0.624px] text-brown-dark md:text-5xl">Biết mình đang dùng gì &amp; vì sao</h2>
+      </div>
+      <p class="text-base leading-[22px] tracking-[0.224px] text-gray-49">Dzentic công khai nồng độ của các hoạt chất chính để bạn biết mình đang dùng gì và vì sao thành phần đó có mặt trong công thức. Mỗi hoạt chất được trình bày theo cùng một cấu trúc: sản phẩm có chứa, vai trò trong công thức, cơ chế và mức bằng chứng hiện có.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION: Hoạt chất gốc có thương hiệu -->
+<section class="bg-bg" aria-labelledby="hoat-chat-goc">
+  <div class="mx-auto max-w-site px-4 py-16 md:px-8 xl:px-[72px] xl:py-24">
+    <h2 id="hoat-chat-goc" class="mx-auto text-center text-3xl uppercase leading-[1.4] tracking-[0.624px] text-brown-dark md:text-5xl">6 hoạt chất gốc có thương hiệu<br class="hidden md:block"> trong Dzentic®</h2>
+    <div class="mt-10 grid gap-4 md:grid-cols-2 lg:grid-cols-3 lg:gap-6">
+      <article class="flex flex-col gap-[10px] rounded-md border border-[#e6d6c8] bg-brown-50 p-7 lg:min-h-[263px]" data-aos="fade-up">
+        <h3 class="text-2xl font-medium leading-8 text-navy">SymWhite® 377</h3>
+        <p class="text-sm leading-5 text-gray-66">Symrise AG · Đức</p>
+        <p class="mt-1 text-sm leading-5 text-gray-49"><span class="text-brown">INCI:</span> Phenylethyl resorcinol</p>
+        <p class="text-base leading-6 text-navy">Ức chế tyrosinase mạnh gấp 22 lần kojic acid (in vitro)</p>
+        <hr class="border-0 border-t border-[#e6d6c8]">
+        <p class="text-sm font-medium leading-5 text-brown">Photo Defense · Retino Renewal</p>
+      </article>
+      <article class="flex flex-col gap-[10px] rounded-md border border-[#e6d6c8] bg-brown-50 p-7 lg:min-h-[263px]" data-aos="fade-up">
+        <h3 class="text-2xl font-medium leading-8 text-navy">GENOWHITE™</h3>
+        <p class="text-sm leading-5 text-gray-66">Corum Inc. · Đài Loan</p>
+        <p class="mt-1 text-sm leading-5 text-gray-49"><span class="text-brown">INCI:</span> Acetyl glycyl beta-alanine (AGBA)</p>
+        <p class="text-base leading-6 text-navy">Chặn tín hiệu đầu nguồn kích hoạt sinh sắc tố</p>
+        <hr class="border-0 border-t border-[#e6d6c8]">
+        <p class="text-sm font-medium leading-5 text-brown">Photo Defense · Retino Renewal</p>
+      </article>
+      <article class="flex flex-col gap-[10px] rounded-md border border-[#e6d6c8] bg-brown-50 p-7 lg:min-h-[263px]" data-aos="fade-up">
+        <h3 class="text-2xl font-medium leading-8 text-navy">Radical Sponge®</h3>
+        <p class="text-sm leading-5 text-gray-66">Vitamin C60 BioResearch · Nhật Bản</p>
+        <p class="mt-1 text-sm leading-5 text-gray-49"><span class="text-brown">INCI:</span> Fullerene C60</p>
+        <p class="text-base leading-6 text-navy">“Bọt biển” thu gom gốc tự do, không bị tiêu hao</p>
+        <hr class="border-0 border-t border-[#e6d6c8]">
+        <p class="text-sm font-medium leading-5 text-brown">Photo Defense</p>
+      </article>
+      <article class="flex flex-col gap-[10px] rounded-md border border-[#e6d6c8] bg-brown-50 p-7 lg:min-h-[263px]" data-aos="fade-up">
+        <h3 class="text-2xl font-medium leading-8 text-navy">Argireline®</h3>
+        <p class="text-sm leading-5 text-gray-66">Lipotec / Lubrizol · Tây Ban Nha</p>
+        <p class="mt-1 text-sm leading-5 text-gray-49"><span class="text-brown">INCI:</span> Acetyl hexapeptide-8</p>
+        <p class="text-base leading-6 text-navy">“Botox-like peptide” – giảm co cơ gây nếp nhăn động</p>
+        <hr class="border-0 border-t border-[#e6d6c8]">
+        <p class="text-sm font-medium leading-5 text-brown">NeoBright Repair Cream</p>
+      </article>
+      <article class="flex flex-col gap-[10px] rounded-md border border-[#e6d6c8] bg-brown-50 p-7 lg:min-h-[263px]" data-aos="fade-up">
+        <h3 class="text-2xl font-medium leading-8 text-navy">Neodermyl®</h3>
+        <p class="text-sm leading-5 text-gray-66">Givaudan Active Beauty · Thụy Sĩ</p>
+        <p class="mt-1 text-sm leading-5 text-gray-49"><span class="text-brown">INCI:</span> Methylglucoside phosphate + copper lysinate/prolinate</p>
+        <p class="text-base leading-6 text-navy">Kích hoạt nguyên bào sợi, tăng collagen, elastin</p>
+        <hr class="border-0 border-t border-[#e6d6c8]">
+        <p class="text-sm font-medium leading-5 text-brown">NeoBright Repair Cream</p>
+      </article>
+      <article class="flex flex-col gap-[10px] rounded-md border border-[#e6d6c8] bg-brown-50 p-7 lg:min-h-[263px]" data-aos="fade-up">
+        <h3 class="text-2xl font-medium leading-8 text-navy">Ectoin®</h3>
+        <p class="text-sm leading-5 text-gray-66">bitop AG · Đức</p>
+        <p class="mt-1 text-sm leading-5 text-gray-49"><span class="text-brown">INCI:</span> Ectoin</p>
+        <p class="text-base leading-6 text-navy">Bảo vệ tế bào trước stress, giữ ẩm, làm dịu</p>
+        <hr class="border-0 border-t border-[#e6d6c8]">
+        <p class="text-sm font-medium leading-5 text-brown">Blemish Recovery · Blue Light Shield</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION: Bảng tra nhanh -->
+<section class="bg-bg" aria-labelledby="bang-tra-nhanh">
+  <div class="mx-auto max-w-site px-4 py-16 md:px-8 xl:px-[72px] xl:py-24">
+    <div class="flex flex-col items-center gap-3 text-center uppercase" data-aos="fade-up">
+      <p class="text-sm leading-[22px] tracking-[4px] text-brown md:text-base">Bảng tra nhanh</p>
+      <h2 id="bang-tra-nhanh" class="text-3xl leading-[1.4] tracking-[0.624px] text-brown-dark md:text-5xl">Hoạt chất trong từng sản phẩm</h2>
+    </div>
+    <div class="relative mt-8 max-h-[555px] overflow-auto rounded-md border border-gray-dd bg-bg [scrollbar-color:#8a4f25_#eeeeee] [scrollbar-width:thin]" tabindex="0" role="region" aria-label="Bảng tra nhanh hoạt chất theo sản phẩm">
+      <table class="w-full min-w-[1000px] border-collapse">
+        <thead class="sticky top-0 z-10 bg-gray-ee text-brown-dark">
+          <tr>
+            <th scope="col" class="w-[314px] py-4 pl-6 pr-2 text-left text-sm font-medium leading-5 tracking-[0.14px]">Hoạt chất (INCI)</th><th scope="col" class="w-[136px] px-1 py-4 text-center text-xs font-normal leading-4">Photo Defense Serum</th><th scope="col" class="w-[136px] px-1 py-4 text-center text-xs font-normal leading-4">Retino Renewal Serum</th><th scope="col" class="w-[136px] px-1 py-4 text-center text-xs font-normal leading-4">NeoBright Cream</th><th scope="col" class="w-[136px] px-1 py-4 text-center text-xs font-normal leading-4">Zinc Complex Serum</th><th scope="col" class="w-[136px] px-1 py-4 text-center text-xs font-normal leading-4">Blemish Recovery Cream</th><th scope="col" class="w-[136px] px-1 py-4 text-center text-xs font-normal leading-4">Cleansing Gel</th><th scope="col" class="w-[136px] px-1 py-4 text-center text-xs font-normal leading-4">Sunscreen</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-t border-gray-ee">
+            <th scope="row" class="py-3 pl-6 pr-2 text-left align-middle text-sm font-medium leading-5 tracking-[0.14px] text-brown-dark">Tranexamic Acid</th><td class="px-1 py-3 text-center align-middle"><span class="inline-block rounded-full bg-brown-50 px-[10px] py-0.5 text-xs leading-4 text-brown">3%</span></td><td class="px-1 py-3 text-center align-middle"><span class="inline-block rounded-full bg-brown-50 px-[10px] py-0.5 text-xs leading-4 text-brown">3%</span></td><td class="px-1 py-3 text-center align-middle"><img src="assets/img/thu-vien-hoat-chat/icon-check.svg" alt="Có" width="14" height="14" class="mx-auto size-[14px]"></td><td class="px-1 py-3 text-center align-middle text-xs leading-4 text-gray-99"><span aria-hidden="true">—</span><span class="sr-only">Không có</span></td><td class="px-1 py-3 text-center align-middle text-xs leading-4 text-gray-99"><span aria-hidden="true">—</span><span class="sr-only">Không có</span></td><td class="px-1 py-3 text-center align-middle text-xs leading-4 text-gray-99"><span aria-hidden="true">—</span><span class="sr-only">Không có</span></td><td class="px-1 py-3 text-center align-middle text-xs leading-4 text-gray-99"><span aria-hidden="true">—</span><span class="sr-only">Không có</span></td>
+          </tr>
+          <tr class="border-t border-gray-ee">
+            <th scope="row" class="py-3 pl-6 pr-2 text-left align-middle text-sm font-medium leading-5 tracking-[0.14px] text-brown-dark">Phenylethyl Resorcinol</th><td class="px-1 py-3 text-center align-middle"><span class="inline-block rounded-full bg-brown-50 px-[10px] py-0.5 text-xs leading-4 text-brown">0,5%</span></td><td class="px-1 py-3 text-center align-middle"><span class="inline-block rounded-full bg-brown-50 px-[10px] py-0.5 text-xs leading-4 text-brown">0,5%</span></td><td class="px-1 py-3 text-center align-middle text-xs leading-4 text-gray-99"><span aria-hidden="true">—</span><span class="sr-only">Không có</span></td><td class="px-1 py-3 text-center align-middle text-xs leading-4 text-gray-99"><span aria-hidden="true">—</span><span class="sr-only">Không có</span></td><td class="px-1 py-3 text-center align-middle text-xs leading-4 text-gray-99"><span aria-hidden="true">—</span><span class="sr-only">Không có</span></td><td class="px-1 py-3 text-center align-middle text-xs leading-4 text-gray-99"><span aria-hidden="true">—</span><span class="sr-only">Không có</span></td><td class="px-1 py-3 text-center align-middle text-xs leading-4 text-gray-99"><span aria-hidden="true">—</span><span class="sr-only">Không có</span></td>
+          </tr>
+          <tr class="border-t border-gray-ee">
+            <th scope="row" class="py-3 pl-6 pr-2 text-left align-middle text-sm font-medium leading-5 tracking-[0.14px] text-brown-dark">Alpha-Arbutin</th><td class="px-1 py-3 text-center align-middle"><span class="inline-block rounded-full bg-brown-50 px-[10px] py-0.5 text-xs leading-4 text-brown">1%</span></td><td class="px-1 py-3 text-center align-middle"><span class="inline-block rounded-full bg-brown-50 px-[10px] py-0.5 text-xs leading-4 text-brown">1%</span></td><td class="px-1 py-3 text-center align-middle text-xs leading-4 text-gray-99"><span aria-hidden="true">—</span><span class="sr-only">Không có</span></td><td class="px-1 py-3 text-center align-middle text-xs leading-4 text-gray-99"><span aria-hidden="true">—</span><span class="sr-only">Không có</span></td><td class="px-1 py-3 text-center align-middle text-xs leading-4 text-gray-99"><span aria-hidden="true">—</span><span class="sr-only">Không có</span></td><td class="px-1 py-3 text-center align-middle text-xs leading-4 text-gray-99"><span aria-hidden="true">—</span><span class="sr-only">Không có</span></td><td class="px-1 py-3 text-center align-middle text-xs leading-4 text-gray-99"><span aria-hidden="true">—</span><span class="sr-only">Không có</span></td>
+          </tr>
+          <tr class="border-t border-gray-ee">
+            <th scope="row" class="py-3 pl-6 pr-2 text-left align-middle text-sm font-medium leading-5 tracking-[0.14px] text-brown-dark">Acetyl Glycyl Beta-Alanine</th><td class="px-1 py-3 text-center align-middle"><span class="inline-block rounded-full bg-brown-50 px-[10px] py-0.5 text-xs leading-4 text-brown">0,1%</span></td><td class="px-1 py-3 text-center align-middle"><span class="inline-block rounded-full bg-brown-50 px-[10px] py-0.5 text-xs leading-4 text-brown">0,1%</span></td><td class="px-1 py-3 text-center align-middle text-xs leading-4 text-gray-99"><span aria-hidden="true">—</span><span class="sr-only">Không có</span></td><td class="px-1 py-3 text-center align-middle text-xs leading-4 text-gray-99"><span aria-hidden="true">—</span><span class="sr-only">Không có</span></td><td class="px-1 py-3 text-center align-middle text-xs leading-4 text-gray-99"><span aria-hidden="true">—</span><span class="sr-only">Không có</span></td><td class="px-1 py-3 text-center align-middle text-xs leading-4 text-gray-99"><span aria-hidden="true">—</span><span class="sr-only">Không có</span></td><td class="px-1 py-3 text-center align-middle text-xs leading-4 text-gray-99"><span aria-hidden="true">—</span><span class="sr-only">Không có</span></td>
+          </tr>
+          <tr class="border-t border-gray-ee">
+            <th scope="row" class="py-3 pl-6 pr-2 text-left align-middle text-sm font-medium leading-5 tracking-[0.14px] text-brown-dark">Niacinamide</th><td class="px-1 py-3 text-center align-middle"><span class="inline-block rounded-full bg-brown-50 px-[10px] py-0.5 text-xs leading-4 text-brown">4%</span></td><td class="px-1 py-3 text-center align-middle"><span class="inline-block rounded-full bg-brown-50 px-[10px] py-0.5 text-xs leading-4 text-brown">4%</span></td><td class="px-1 py-3 text-center align-middle"><img src="assets/img/thu-vien-hoat-chat/icon-check.svg" alt="Có" width="14" height="14" class="mx-auto size-[14px]"></td><td class="px-1 py-3 text-center align-middle"><span class="inline-block rounded-full bg-brown-50 px-[10px] py-0.5 text-xs leading-4 text-brown">2%</span></td><td class="px-1 py-3 text-center align-middle"><span class="inline-block rounded-full bg-brown-50 px-[10px] py-0.5 text-xs leading-4 text-brown">4%</span></td><td class="px-1 py-3 text-center align-middle text-xs leading-4 text-gray-99"><span aria-hidden="true">—</span><span class="sr-only">Không có</span></td><td class="px-1 py-3 text-center align-middle text-xs leading-4 text-gray-99"><span aria-hidden="true">—</span><span class="sr-only">Không có</span></td>
+          </tr>
+          <tr class="border-t border-gray-ee">
+            <th scope="row" class="py-3 pl-6 pr-2 text-left align-middle text-sm font-medium leading-5 tracking-[0.14px] text-brown-dark">N-Acetyl Glucosamine</th><td class="px-1 py-3 text-center align-middle"><span class="inline-block rounded-full bg-brown-50 px-[10px] py-0.5 text-xs leading-4 text-brown">1%</span></td><td class="px-1 py-3 text-center align-middle"><span class="inline-block rounded-full bg-brown-50 px-[10px] py-0.5 text-xs leading-4 text-brown">1%</span></td><td class="px-1 py-3 text-center align-middle text-xs leading-4 text-gray-99"><span aria-hidden="true">—</span><span class="sr-only">Không có</span></td><td class="px-1 py-3 text-center align-middle text-xs leading-4 text-gray-99"><span aria-hidden="true">—</span><span class="sr-only">Không có</span></td><td class="px-1 py-3 text-center align-middle text-xs leading-4 text-gray-99"><span aria-hidden="true">—</span><span class="sr-only">Không có</span></td><td class="px-1 py-3 text-center align-middle text-xs leading-4 text-gray-99"><span aria-hidden="true">—</span><span class="sr-only">Không có</span></td><td class="px-1 py-3 text-center align-middle text-xs leading-4 text-gray-99"><span aria-hidden="true">—</span><span class="sr-only">Không có</span></td>
+          </tr>
+          <tr class="border-t border-gray-ee">
+            <th scope="row" class="py-3 pl-6 pr-2 text-left align-middle text-sm font-medium leading-5 tracking-[0.14px] text-brown-dark">Hydroxypinacolone Retinoate</th><td class="px-1 py-3 text-center align-middle text-xs leading-4 text-gray-99"><span aria-hidden="true">—</span><span class="sr-only">Không có</span></td><td class="px-1 py-3 text-center align-middle"><span class="inline-block rounded-full bg-brown-50 px-[10px] py-0.5 text-xs leading-4 text-brown">0,2%</span></td><td class="px-1 py-3 text-center align-middle text-xs leading-4 text-gray-99"><span aria-hidden="true">—</span><span class="sr-only">Không có</span></td><td class="px-1 py-3 text-center align-middle text-xs leading-4 text-gray-99"><span aria-hidden="true">—</span><span class="sr-only">Không có</span></td><td class="px-1 py-3 text-center align-middle text-xs leading-4 text-gray-99"><span aria-hidden="true">—</span><span class="sr-only">Không có</span></td><td class="px-1 py-3 text-center align-middle text-xs leading-4 text-gray-99"><span aria-hidden="true">—</span><span class="sr-only">Không có</span></td><td class="px-1 py-3 text-center align-middle text-xs leading-4 text-gray-99"><span aria-hidden="true">—</span><span class="sr-only">Không có</span></td>
+          </tr>
+          <tr class="border-t border-gray-ee">
+            <th scope="row" class="py-3 pl-6 pr-2 text-left align-middle text-sm font-medium leading-5 tracking-[0.14px] text-brown-dark">Mandelic Acid</th><td class="px-1 py-3 text-center align-middle text-xs leading-4 text-gray-99"><span aria-hidden="true">—</span><span class="sr-only">Không có</span></td><td class="px-1 py-3 text-center align-middle"><img src="assets/img/thu-vien-hoat-chat/icon-check.svg" alt="Có" width="14" height="14" class="mx-auto size-[14px]"></td><td class="px-1 py-3 text-center align-middle text-xs leading-4 text-gray-99"><span aria-hidden="true">—</span><span class="sr-only">Không có</span></td><td class="px-1 py-3 text-center align-middle"><img src="assets/img/thu-vien-hoat-chat/icon-check.svg" alt="Có" width="14" height="14" class="mx-auto size-[14px]"></td><td class="px-1 py-3 text-center align-middle text-xs leading-4 text-gray-99"><span aria-hidden="true">—</span><span class="sr-only">Không có</span></td><td class="px-1 py-3 text-center align-middle text-xs leading-4 text-gray-99"><span aria-hidden="true">—</span><span class="sr-only">Không có</span></td><td class="px-1 py-3 text-center align-middle text-xs leading-4 text-gray-99"><span aria-hidden="true">—</span><span class="sr-only">Không có</span></td>
+          </tr>
+          <tr class="border-t border-gray-ee">
+            <th scope="row" class="py-3 pl-6 pr-2 text-left align-middle text-sm font-medium leading-5 tracking-[0.14px] text-brown-dark">Ascorbyl Tetraisopalmitate</th><td class="px-1 py-3 text-center align-middle"><span class="inline-block rounded-full bg-brown-50 px-[10px] py-0.5 text-xs leading-4 text-brown">0,2%</span></td><td class="px-1 py-3 text-center align-middle text-xs leading-4 text-gray-99"><span aria-hidden="true">—</span><span class="sr-only">Không có</span></td><td class="px-1 py-3 text-center align-middle text-xs leading-4 text-gray-99"><span aria-hidden="true">—</span><span class="sr-only">Không có</span></td><td class="px-1 py-3 text-center align-middle text-xs leading-4 text-gray-99"><span aria-hidden="true">—</span><span class="sr-only">Không có</span></td><td class="px-1 py-3 text-center align-middle text-xs leading-4 text-gray-99"><span aria-hidden="true">—</span><span class="sr-only">Không có</span></td><td class="px-1 py-3 text-center align-middle text-xs leading-4 text-gray-99"><span aria-hidden="true">—</span><span class="sr-only">Không có</span></td><td class="px-1 py-3 text-center align-middle text-xs leading-4 text-gray-99"><span aria-hidden="true">—</span><span class="sr-only">Không có</span></td>
+          </tr>
+          <tr class="border-t border-gray-ee">
+            <th scope="row" class="py-3 pl-6 pr-2 text-left align-middle text-sm font-medium leading-5 tracking-[0.14px] text-brown-dark">Tocopheryl Acetate</th><td class="px-1 py-3 text-center align-middle"><span class="inline-block rounded-full bg-brown-50 px-[10px] py-0.5 text-xs leading-4 text-brown">0,1%</span></td><td class="px-1 py-3 text-center align-middle text-xs leading-4 text-gray-99"><span aria-hidden="true">—</span><span class="sr-only">Không có</span></td><td class="px-1 py-3 text-center align-middle text-xs leading-4 text-gray-99"><span aria-hidden="true">—</span><span class="sr-only">Không có</span></td><td class="px-1 py-3 text-center align-middle text-xs leading-4 text-gray-99"><span aria-hidden="true">—</span><span class="sr-only">Không có</span></td><td class="px-1 py-3 text-center align-middle text-xs leading-4 text-gray-99"><span aria-hidden="true">—</span><span class="sr-only">Không có</span></td><td class="px-1 py-3 text-center align-middle text-xs leading-4 text-gray-99"><span aria-hidden="true">—</span><span class="sr-only">Không có</span></td><td class="px-1 py-3 text-center align-middle text-xs leading-4 text-gray-99"><span aria-hidden="true">—</span><span class="sr-only">Không có</span></td>
+          </tr>
+          <tr class="border-t border-gray-ee">
+            <th scope="row" class="py-3 pl-6 pr-2 text-left align-middle text-sm font-medium leading-5 tracking-[0.14px] text-brown-dark">Fullerenes</th><td class="px-1 py-3 text-center align-middle"><span class="inline-block rounded-full bg-brown-50 px-[10px] py-0.5 text-xs leading-4 text-brown">0,1%</span></td><td class="px-1 py-3 text-center align-middle text-xs leading-4 text-gray-99"><span aria-hidden="true">—</span><span class="sr-only">Không có</span></td><td class="px-1 py-3 text-center align-middle text-xs leading-4 text-gray-99"><span aria-hidden="true">—</span><span class="sr-only">Không có</span></td><td class="px-1 py-3 text-center align-middle text-xs leading-4 text-gray-99"><span aria-hidden="true">—</span><span class="sr-only">Không có</span></td><td class="px-1 py-3 text-center align-middle text-xs leading-4 text-gray-99"><span aria-hidden="true">—</span><span class="sr-only">Không có</span></td><td class="px-1 py-3 text-center align-middle text-xs leading-4 text-gray-99"><span aria-hidden="true">—</span><span class="sr-only">Không có</span></td><td class="px-1 py-3 text-center align-middle text-xs leading-4 text-gray-99"><span aria-hidden="true">—</span><span class="sr-only">Không có</span></td>
+          </tr>
+          <tr class="border-t border-gray-ee">
+            <th scope="row" class="py-3 pl-6 pr-2 text-left align-middle text-sm font-medium leading-5 tracking-[0.14px] text-brown-dark">Acetyl Hexapeptide-8</th><td class="px-1 py-3 text-center align-middle text-xs leading-4 text-gray-99"><span aria-hidden="true">—</span><span class="sr-only">Không có</span></td><td class="px-1 py-3 text-center align-middle text-xs leading-4 text-gray-99"><span aria-hidden="true">—</span><span class="sr-only">Không có</span></td><td class="px-1 py-3 text-center align-middle"><span class="inline-block rounded-full bg-brown-50 px-[10px] py-0.5 text-xs leading-4 text-brown">0,5%</span></td><td class="px-1 py-3 text-center align-middle text-xs leading-4 text-gray-99"><span aria-hidden="true">—</span><span class="sr-only">Không có</span></td><td class="px-1 py-3 text-center align-middle text-xs leading-4 text-gray-99"><span aria-hidden="true">—</span><span class="sr-only">Không có</span></td><td class="px-1 py-3 text-center align-middle text-xs leading-4 text-gray-99"><span aria-hidden="true">—</span><span class="sr-only">Không có</span></td><td class="px-1 py-3 text-center align-middle text-xs leading-4 text-gray-99"><span aria-hidden="true">—</span><span class="sr-only">Không có</span></td>
+          </tr>
+          <tr class="border-t border-gray-ee">
+            <th scope="row" class="py-3 pl-6 pr-2 text-left align-middle text-sm font-medium leading-5 tracking-[0.14px] text-brown-dark">Methylglucoside Phosphate (và) Copper Lysinate/Prolinate</th><td class="px-1 py-3 text-center align-middle text-xs leading-4 text-gray-99"><span aria-hidden="true">—</span><span class="sr-only">Không có</span></td><td class="px-1 py-3 text-center align-middle text-xs leading-4 text-gray-99"><span aria-hidden="true">—</span><span class="sr-only">Không có</span></td><td class="px-1 py-3 text-center align-middle"><span class="inline-block rounded-full bg-brown-50 px-[10px] py-0.5 text-xs leading-4 text-brown">0,5%</span></td><td class="px-1 py-3 text-center align-middle text-xs leading-4 text-gray-99"><span aria-hidden="true">—</span><span class="sr-only">Không có</span></td><td class="px-1 py-3 text-center align-middle text-xs leading-4 text-gray-99"><span aria-hidden="true">—</span><span class="sr-only">Không có</span></td><td class="px-1 py-3 text-center align-middle text-xs leading-4 text-gray-99"><span aria-hidden="true">—</span><span class="sr-only">Không có</span></td><td class="px-1 py-3 text-center align-middle text-xs leading-4 text-gray-99"><span aria-hidden="true">—</span><span class="sr-only">Không có</span></td>
+          </tr>
+          <tr class="border-t border-gray-ee">
+            <th scope="row" class="py-3 pl-6 pr-2 text-left align-middle text-sm font-medium leading-5 tracking-[0.14px] text-brown-dark">Ceramide · Cholesterol</th><td class="px-1 py-3 text-center align-middle text-xs leading-4 text-gray-99"><span aria-hidden="true">—</span><span class="sr-only">Không có</span></td><td class="px-1 py-3 text-center align-middle text-xs leading-4 text-gray-99"><span aria-hidden="true">—</span><span class="sr-only">Không có</span></td><td class="px-1 py-3 text-center align-middle"><img src="assets/img/thu-vien-hoat-chat/icon-check.svg" alt="Có" width="14" height="14" class="mx-auto size-[14px]"></td><td class="px-1 py-3 text-center align-middle text-xs leading-4 text-gray-99"><span aria-hidden="true">—</span><span class="sr-only">Không có</span></td><td class="px-1 py-3 text-center align-middle text-xs leading-4 text-gray-99"><span aria-hidden="true">—</span><span class="sr-only">Không có</span></td><td class="px-1 py-3 text-center align-middle text-xs leading-4 text-gray-99"><span aria-hidden="true">—</span><span class="sr-only">Không có</span></td><td class="px-1 py-3 text-center align-middle text-xs leading-4 text-gray-99"><span aria-hidden="true">—</span><span class="sr-only">Không có</span></td>
+          </tr>
+          <tr class="border-t border-gray-ee">
+            <th scope="row" class="py-3 pl-6 pr-2 text-left align-middle text-sm font-medium leading-5 tracking-[0.14px] text-brown-dark">Zinc PCA</th><td class="px-1 py-3 text-center align-middle text-xs leading-4 text-gray-99"><span aria-hidden="true">—</span><span class="sr-only">Không có</span></td><td class="px-1 py-3 text-center align-middle text-xs leading-4 text-gray-99"><span aria-hidden="true">—</span><span class="sr-only">Không có</span></td><td class="px-1 py-3 text-center align-middle text-xs leading-4 text-gray-99"><span aria-hidden="true">—</span><span class="sr-only">Không có</span></td><td class="px-1 py-3 text-center align-middle"><span class="inline-block rounded-full bg-brown-50 px-[10px] py-0.5 text-xs leading-4 text-brown">1%</span></td><td class="px-1 py-3 text-center align-middle"><img src="assets/img/thu-vien-hoat-chat/icon-check.svg" alt="Có" width="14" height="14" class="mx-auto size-[14px]"></td><td class="px-1 py-3 text-center align-middle"><img src="assets/img/thu-vien-hoat-chat/icon-check.svg" alt="Có" width="14" height="14" class="mx-auto size-[14px]"></td><td class="px-1 py-3 text-center align-middle text-xs leading-4 text-gray-99"><span aria-hidden="true">—</span><span class="sr-only">Không có</span></td>
+          </tr>
+          <tr class="border-t border-gray-ee">
+            <th scope="row" class="py-3 pl-6 pr-2 text-left align-middle text-sm font-medium leading-5 tracking-[0.14px] text-brown-dark">Ectoin</th><td class="px-1 py-3 text-center align-middle text-xs leading-4 text-gray-99"><span aria-hidden="true">—</span><span class="sr-only">Không có</span></td><td class="px-1 py-3 text-center align-middle text-xs leading-4 text-gray-99"><span aria-hidden="true">—</span><span class="sr-only">Không có</span></td><td class="px-1 py-3 text-center align-middle text-xs leading-4 text-gray-99"><span aria-hidden="true">—</span><span class="sr-only">Không có</span></td><td class="px-1 py-3 text-center align-middle text-xs leading-4 text-gray-99"><span aria-hidden="true">—</span><span class="sr-only">Không có</span></td><td class="px-1 py-3 text-center align-middle"><span class="inline-block rounded-full bg-brown-50 px-[10px] py-0.5 text-xs leading-4 text-brown">0,3%</span></td><td class="px-1 py-3 text-center align-middle text-xs leading-4 text-gray-99"><span aria-hidden="true">—</span><span class="sr-only">Không có</span></td><td class="px-1 py-3 text-center align-middle"><img src="assets/img/thu-vien-hoat-chat/icon-check.svg" alt="Có" width="14" height="14" class="mx-auto size-[14px]"></td>
+          </tr>
+          <tr class="border-t border-gray-ee">
+            <th scope="row" class="py-3 pl-6 pr-2 text-left align-middle text-sm font-medium leading-5 tracking-[0.14px] text-brown-dark">Allantoin</th><td class="px-1 py-3 text-center align-middle text-xs leading-4 text-gray-99"><span aria-hidden="true">—</span><span class="sr-only">Không có</span></td><td class="px-1 py-3 text-center align-middle text-xs leading-4 text-gray-99"><span aria-hidden="true">—</span><span class="sr-only">Không có</span></td><td class="px-1 py-3 text-center align-middle text-xs leading-4 text-gray-99"><span aria-hidden="true">—</span><span class="sr-only">Không có</span></td><td class="px-1 py-3 text-center align-middle text-xs leading-4 text-gray-99"><span aria-hidden="true">—</span><span class="sr-only">Không có</span></td><td class="px-1 py-3 text-center align-middle"><span class="inline-block rounded-full bg-brown-50 px-[10px] py-0.5 text-xs leading-4 text-brown">0,3%</span></td><td class="px-1 py-3 text-center align-middle"><img src="assets/img/thu-vien-hoat-chat/icon-check.svg" alt="Có" width="14" height="14" class="mx-auto size-[14px]"></td><td class="px-1 py-3 text-center align-middle text-xs leading-4 text-gray-99"><span aria-hidden="true">—</span><span class="sr-only">Không có</span></td>
+          </tr>
+          <tr class="border-t border-gray-ee">
+            <th scope="row" class="py-3 pl-6 pr-2 text-left align-middle text-sm font-medium leading-5 tracking-[0.14px] text-brown-dark">Panthenol</th><td class="px-1 py-3 text-center align-middle text-xs leading-4 text-gray-99"><span aria-hidden="true">—</span><span class="sr-only">Không có</span></td><td class="px-1 py-3 text-center align-middle text-xs leading-4 text-gray-99"><span aria-hidden="true">—</span><span class="sr-only">Không có</span></td><td class="px-1 py-3 text-center align-middle text-xs leading-4 text-gray-99"><span aria-hidden="true">—</span><span class="sr-only">Không có</span></td><td class="px-1 py-3 text-center align-middle"><img src="assets/img/thu-vien-hoat-chat/icon-check.svg" alt="Có" width="14" height="14" class="mx-auto size-[14px]"></td><td class="px-1 py-3 text-center align-middle text-xs leading-4 text-gray-99"><span aria-hidden="true">—</span><span class="sr-only">Không có</span></td><td class="px-1 py-3 text-center align-middle"><img src="assets/img/thu-vien-hoat-chat/icon-check.svg" alt="Có" width="14" height="14" class="mx-auto size-[14px]"></td><td class="px-1 py-3 text-center align-middle text-xs leading-4 text-gray-99"><span aria-hidden="true">—</span><span class="sr-only">Không có</span></td>
+          </tr>
+          <tr class="border-t border-gray-ee">
+            <th scope="row" class="py-3 pl-6 pr-2 text-left align-middle text-sm font-medium leading-5 tracking-[0.14px] text-brown-dark">Hyaluronic Acid</th><td class="px-1 py-3 text-center align-middle text-xs leading-4 text-gray-99"><span aria-hidden="true">—</span><span class="sr-only">Không có</span></td><td class="px-1 py-3 text-center align-middle text-xs leading-4 text-gray-99"><span aria-hidden="true">—</span><span class="sr-only">Không có</span></td><td class="px-1 py-3 text-center align-middle"><img src="assets/img/thu-vien-hoat-chat/icon-check.svg" alt="Có" width="14" height="14" class="mx-auto size-[14px]"></td><td class="px-1 py-3 text-center align-middle"><img src="assets/img/thu-vien-hoat-chat/icon-check.svg" alt="Có" width="14" height="14" class="mx-auto size-[14px]"></td><td class="px-1 py-3 text-center align-middle"><img src="assets/img/thu-vien-hoat-chat/icon-check.svg" alt="Có" width="14" height="14" class="mx-auto size-[14px]"></td><td class="px-1 py-3 text-center align-middle text-xs leading-4 text-gray-99"><span aria-hidden="true">—</span><span class="sr-only">Không có</span></td><td class="px-1 py-3 text-center align-middle text-xs leading-4 text-gray-99"><span aria-hidden="true">—</span><span class="sr-only">Không có</span></td>
+          </tr>
+          <tr class="border-t border-gray-ee">
+            <th scope="row" class="py-3 pl-6 pr-2 text-left align-middle text-sm font-medium leading-5 tracking-[0.14px] text-brown-dark">Zinc Oxide · Titanium Dioxide</th><td class="px-1 py-3 text-center align-middle text-xs leading-4 text-gray-99"><span aria-hidden="true">—</span><span class="sr-only">Không có</span></td><td class="px-1 py-3 text-center align-middle text-xs leading-4 text-gray-99"><span aria-hidden="true">—</span><span class="sr-only">Không có</span></td><td class="px-1 py-3 text-center align-middle text-xs leading-4 text-gray-99"><span aria-hidden="true">—</span><span class="sr-only">Không có</span></td><td class="px-1 py-3 text-center align-middle text-xs leading-4 text-gray-99"><span aria-hidden="true">—</span><span class="sr-only">Không có</span></td><td class="px-1 py-3 text-center align-middle text-xs leading-4 text-gray-99"><span aria-hidden="true">—</span><span class="sr-only">Không có</span></td><td class="px-1 py-3 text-center align-middle text-xs leading-4 text-gray-99"><span aria-hidden="true">—</span><span class="sr-only">Không có</span></td><td class="px-1 py-3 text-center align-middle"><img src="assets/img/thu-vien-hoat-chat/icon-check.svg" alt="Có" width="14" height="14" class="mx-auto size-[14px]"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION: Nhóm hoạt chất -->
+<section class="bg-bg" aria-labelledby="nhom-hoat-chat">
+  <div class="mx-auto max-w-site px-4 py-16 md:px-8 xl:px-[72px] xl:py-24">
+    <div class="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+      <div class="flex flex-col gap-3 uppercase">
+        <p class="text-sm leading-[22px] tracking-[4px] text-brown md:text-base">6 nhóm hoạt chất</p>
+        <h2 id="nhom-hoat-chat" class="text-3xl leading-[1.4] tracking-[0.624px] text-brown-dark md:text-5xl">Khám phá theo nhóm hoạt chất</h2>
+      </div>
+      <p class="text-sm leading-5 tracking-[0.14px] text-gray-66">20 hoạt chất · Công khai nồng độ &amp; mức bằng chứng</p>
+    </div>
+    <div class="mt-10 grid gap-4 md:grid-cols-2 lg:grid-cols-3 lg:gap-6">
+      <article class="group relative flex min-h-[380px] flex-col justify-between overflow-hidden rounded-md border p-8 lg:aspect-square lg:min-h-0 border-gray-dd bg-white" data-aos="fade-up">
+        <div class="pointer-events-none absolute left-[149px] top-[-171px] size-[560px] max-sm:left-[100px]" aria-hidden="true">
+          <div class="absolute left-0 top-0 size-[640px] opacity-[0.07]">
+            <img src="assets/img/subhero/rays-left.svg" alt="" class="absolute left-0 top-0 h-[640px] w-[342px] max-w-none">
+            <img src="assets/img/subhero/rays-right.svg" alt="" class="absolute left-[320px] top-0 h-[640px] w-[342px] max-w-none">
+          </div>
+        </div>
+        <div class="relative flex items-start justify-between">
+          <p class="text-7xl uppercase leading-[1.4] tracking-[0.936px] text-brown">01</p>
+          <span class="rounded-full px-3 py-1.5 text-xs leading-4 text-brown bg-brown-50">6 hoạt chất</span>
+        </div>
+        <div class="relative flex flex-col gap-6">
+          <div class="flex flex-col gap-4">
+            <h3 class="text-[28px] leading-[1.4] tracking-[-0.512px] text-blue md:text-[32px]">Làm sáng da</h3>
+            <p class="text-sm leading-5 tracking-[0.14px] text-gray-49">Tác động lên 3 giai đoạn tạo sắc tố – tín hiệu kích hoạt, tổng hợp và vận chuyển melanin – giúp da đều màu, hạn chế thâm nám.</p>
+          </div>
+          <a href="chi-tiet-nhom-hoat-chat.html" class="inline-flex h-10 w-fit items-center gap-2 rounded-sm bg-brown px-6 text-base leading-[22px] tracking-[0.224px] text-bg hover:bg-brown-dark focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Xem chi tiết<img src="assets/img/thu-vien-hoat-chat/icon-arrow-light.svg" alt="" width="12" height="13"></a>
+        </div>
+      </article>
+      <article class="group relative flex min-h-[380px] flex-col justify-between overflow-hidden rounded-md border p-8 lg:aspect-square lg:min-h-0 border-gray-ee bg-brown-50" data-aos="fade-up">
+        <div class="pointer-events-none absolute left-[149px] top-[-171px] size-[560px] max-sm:left-[100px]" aria-hidden="true">
+          <div class="absolute left-0 top-0 size-[640px] opacity-10">
+            <img src="assets/img/subhero/rays-left.svg" alt="" class="absolute left-0 top-0 h-[640px] w-[342px] max-w-none">
+            <img src="assets/img/subhero/rays-right.svg" alt="" class="absolute left-[320px] top-0 h-[640px] w-[342px] max-w-none">
+          </div>
+        </div>
+        <div class="relative flex items-start justify-between">
+          <p class="text-7xl uppercase leading-[1.4] tracking-[0.936px] text-brown">02</p>
+          <span class="rounded-full px-3 py-1.5 text-xs leading-4 text-brown bg-white">2 hoạt chất</span>
+        </div>
+        <div class="relative flex flex-col gap-6">
+          <div class="flex flex-col gap-4">
+            <h3 class="text-[28px] leading-[1.4] tracking-[-0.512px] text-blue md:text-[32px]">Đổi mới bề mặt da</h3>
+            <p class="text-sm leading-5 tracking-[0.14px] text-gray-49">Làm mềm lớp sừng và hỗ trợ đổi mới bề mặt, giúp da mịn màng hơn với mức kích ứng được kiểm soát.</p>
+          </div>
+          <a href="chi-tiet-nhom-hoat-chat.html" class="inline-flex h-10 w-fit items-center gap-2 rounded-sm bg-brown px-6 text-base leading-[22px] tracking-[0.224px] text-bg hover:bg-brown-dark focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Xem chi tiết<img src="assets/img/thu-vien-hoat-chat/icon-arrow-light.svg" alt="" width="12" height="13"></a>
+        </div>
+      </article>
+      <article class="group relative flex min-h-[380px] flex-col justify-between overflow-hidden rounded-md border p-8 lg:aspect-square lg:min-h-0 border-gray-dd bg-white" data-aos="fade-up">
+        <div class="pointer-events-none absolute left-[149px] top-[-171px] size-[560px] max-sm:left-[100px]" aria-hidden="true">
+          <div class="absolute left-0 top-0 size-[640px] opacity-[0.07]">
+            <img src="assets/img/subhero/rays-left.svg" alt="" class="absolute left-0 top-0 h-[640px] w-[342px] max-w-none">
+            <img src="assets/img/subhero/rays-right.svg" alt="" class="absolute left-[320px] top-0 h-[640px] w-[342px] max-w-none">
+          </div>
+        </div>
+        <div class="relative flex items-start justify-between">
+          <p class="text-7xl uppercase leading-[1.4] tracking-[0.936px] text-brown">03</p>
+          <span class="rounded-full px-3 py-1.5 text-xs leading-4 text-brown bg-brown-50">2 hoạt chất</span>
+        </div>
+        <div class="relative flex flex-col gap-6">
+          <div class="flex flex-col gap-4">
+            <h3 class="text-[28px] leading-[1.4] tracking-[-0.512px] text-blue md:text-[32px]">Hệ chống oxy hoá</h3>
+            <p class="text-sm leading-5 tracking-[0.14px] text-gray-49">Vitamin C, vitamin E và fullerene phối hợp ở cả pha nước và pha dầu để thu gom gốc tự do.</p>
+          </div>
+          <a href="chi-tiet-nhom-hoat-chat.html" class="inline-flex h-10 w-fit items-center gap-2 rounded-sm bg-brown px-6 text-base leading-[22px] tracking-[0.224px] text-bg hover:bg-brown-dark focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Xem chi tiết<img src="assets/img/thu-vien-hoat-chat/icon-arrow-light.svg" alt="" width="12" height="13"></a>
+        </div>
+      </article>
+      <article class="group relative flex min-h-[380px] flex-col justify-between overflow-hidden rounded-md border p-8 lg:aspect-square lg:min-h-0 border-gray-ee bg-brown-50" data-aos="fade-up">
+        <div class="pointer-events-none absolute left-[149px] top-[-171px] size-[560px] max-sm:left-[100px]" aria-hidden="true">
+          <div class="absolute left-0 top-0 size-[640px] opacity-10">
+            <img src="assets/img/subhero/rays-left.svg" alt="" class="absolute left-0 top-0 h-[640px] w-[342px] max-w-none">
+            <img src="assets/img/subhero/rays-right.svg" alt="" class="absolute left-[320px] top-0 h-[640px] w-[342px] max-w-none">
+          </div>
+        </div>
+        <div class="relative flex items-start justify-between">
+          <p class="text-7xl uppercase leading-[1.4] tracking-[0.936px] text-brown">04</p>
+          <span class="rounded-full px-3 py-1.5 text-xs leading-4 text-brown bg-white">4 hoạt chất</span>
+        </div>
+        <div class="relative flex flex-col gap-6">
+          <div class="flex flex-col gap-4">
+            <h3 class="text-[28px] leading-[1.4] tracking-[-0.512px] text-blue md:text-[32px]">Peptide &amp; lipid giữ ẩm</h3>
+            <p class="text-sm leading-5 tracking-[0.14px] text-gray-49">Hướng vào hai yếu tố góp phần tạo nếp nhăn, bổ sung lipid tương đồng lớp sừng và giữ nước cho da.</p>
+          </div>
+          <a href="chi-tiet-nhom-hoat-chat.html" class="inline-flex h-10 w-fit items-center gap-2 rounded-sm bg-brown px-6 text-base leading-[22px] tracking-[0.224px] text-bg hover:bg-brown-dark focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Xem chi tiết<img src="assets/img/thu-vien-hoat-chat/icon-arrow-light.svg" alt="" width="12" height="13"></a>
+        </div>
+      </article>
+      <article class="group relative flex min-h-[380px] flex-col justify-between overflow-hidden rounded-md border p-8 lg:aspect-square lg:min-h-0 border-gray-dd bg-white" data-aos="fade-up">
+        <div class="pointer-events-none absolute left-[149px] top-[-171px] size-[560px] max-sm:left-[100px]" aria-hidden="true">
+          <div class="absolute left-0 top-0 size-[640px] opacity-[0.07]">
+            <img src="assets/img/subhero/rays-left.svg" alt="" class="absolute left-0 top-0 h-[640px] w-[342px] max-w-none">
+            <img src="assets/img/subhero/rays-right.svg" alt="" class="absolute left-[320px] top-0 h-[640px] w-[342px] max-w-none">
+          </div>
+        </div>
+        <div class="relative flex items-start justify-between">
+          <p class="text-7xl uppercase leading-[1.4] tracking-[0.936px] text-brown">05</p>
+          <span class="rounded-full px-3 py-1.5 text-xs leading-4 text-brown bg-brown-50">3 hoạt chất</span>
+        </div>
+        <div class="relative flex flex-col gap-6">
+          <div class="flex flex-col gap-4">
+            <h3 class="text-[28px] leading-[1.4] tracking-[-0.512px] text-blue md:text-[32px]">Da dễ nổi mụn &amp; làm dịu</h3>
+            <p class="text-sm leading-5 tracking-[0.14px] text-gray-49">Chăm sóc làn da dễ nổi mụn, làm dịu và hỗ trợ giữ ẩm cho làn da nhạy cảm.</p>
+          </div>
+          <a href="chi-tiet-nhom-hoat-chat.html" class="inline-flex h-10 w-fit items-center gap-2 rounded-sm bg-brown px-6 text-base leading-[22px] tracking-[0.224px] text-bg hover:bg-brown-dark focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Xem chi tiết<img src="assets/img/thu-vien-hoat-chat/icon-arrow-light.svg" alt="" width="12" height="13"></a>
+        </div>
+      </article>
+      <article class="group relative flex min-h-[380px] flex-col justify-between overflow-hidden rounded-md border p-8 lg:aspect-square lg:min-h-0 border-gray-ee bg-brown-50" data-aos="fade-up">
+        <div class="pointer-events-none absolute left-[149px] top-[-171px] size-[560px] max-sm:left-[100px]" aria-hidden="true">
+          <div class="absolute left-0 top-0 size-[640px] opacity-10">
+            <img src="assets/img/subhero/rays-left.svg" alt="" class="absolute left-0 top-0 h-[640px] w-[342px] max-w-none">
+            <img src="assets/img/subhero/rays-right.svg" alt="" class="absolute left-[320px] top-0 h-[640px] w-[342px] max-w-none">
+          </div>
+        </div>
+        <div class="relative flex items-start justify-between">
+          <p class="text-7xl uppercase leading-[1.4] tracking-[0.936px] text-brown">06</p>
+          <span class="rounded-full px-3 py-1.5 text-xs leading-4 text-brown bg-white">3 hoạt chất</span>
+        </div>
+        <div class="relative flex flex-col gap-6">
+          <div class="flex flex-col gap-4">
+            <h3 class="text-[28px] leading-[1.4] tracking-[-0.512px] text-blue md:text-[32px]">Làm sạch &amp; chống nắng</h3>
+            <p class="text-sm leading-5 tracking-[0.14px] text-gray-49">Làm sạch không xà phòng, dịu nhẹ và bộ lọc UV vô cơ cho bảo vệ hằng ngày.</p>
+          </div>
+          <a href="chi-tiet-nhom-hoat-chat.html" class="inline-flex h-10 w-fit items-center gap-2 rounded-sm bg-brown px-6 text-base leading-[22px] tracking-[0.224px] text-bg hover:bg-brown-dark focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Xem chi tiết<img src="assets/img/thu-vien-hoat-chat/icon-arrow-light.svg" alt="" width="12" height="13"></a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- SECTION: Footer -->
+<footer id="footer" class="bg-bg text-navy">
+  <div class="max-w-site mx-auto px-4 md:px-8 xl:px-[72px]">
+    <div class="grid gap-10 pt-12 pb-10 lg:grid-cols-[minmax(0,1fr)_auto] lg:gap-16 lg:pt-24 lg:pb-12">
+      <div>
+        <a href="index.html" class="block max-w-[507px] lg:ml-[9px] lg:mt-[7.4px] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown"><img src="assets/img/footer/logo-dzentic.webp" alt="Dzentic - A brand by Sorai Beauty Engine" width="507" height="157" class="block h-auto w-full" /></a>
+        <ul class="mt-6 lg:mt-[18.4px] flex items-center gap-2" aria-label="Mạng xã hội">
+          <li><a href="#" aria-label="Facebook" class="flex size-8 items-center justify-center rounded-sm border border-gray-bb transition hover:-translate-y-0.5 hover:border-brown hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown"><img src="assets/img/footer/icon-facebook.svg" alt="" width="16" height="18" /></a></li>
+          <li><a href="#" aria-label="Instagram" class="flex size-8 items-center justify-center rounded-sm border border-gray-bb transition hover:-translate-y-0.5 hover:border-brown hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown"><img src="assets/img/footer/icon-instagram.svg" alt="" width="16" height="18" /></a></li>
+          <li><a href="#" aria-label="TikTok" class="flex size-8 items-center justify-center rounded-sm border border-gray-bb transition hover:-translate-y-0.5 hover:border-brown hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown"><img src="assets/img/footer/icon-tiktok.svg" alt="" width="16" height="18" /></a></li>
+        </ul>
+      </div>
+
+      <div class="grid gap-8 sm:grid-cols-2 md:grid-cols-3 md:gap-0">
+        <nav class="md:w-[220px]" aria-label="Sản phẩm và dịch vụ">
+          <h3 class="text-xl leading-7 font-medium text-navy">Sản phẩm và dịch vụ</h3>
+          <ul class="mt-6 flex flex-col gap-[10px] text-base leading-[22px] tracking-[0.224px] text-gray-49">
+            <li><a href="san-pham.html" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Brightening Serum</a></li>
+            <li><a href="san-pham.html" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Repair Cream</a></li>
+            <li><a href="san-pham.html" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Hydrating Cream</a></li>
+            <li><a href="san-pham.html" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Cleansing Gel</a></li>
+            <li><a href="san-pham.html" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Sunscreen</a></li>
+          </ul>
+        </nav>
+        <nav class="md:w-[220px]" aria-label="Liên kết">
+          <h3 class="text-xl leading-7 font-medium text-navy">Liên kết</h3>
+          <ul class="mt-6 flex flex-col gap-[10px] text-base leading-[22px] tracking-[0.224px] text-gray-49">
+            <li><a href="routine-phac-do.html" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Giải Pháp Làn Da</a></li>
+            <li><a href="thu-vien-hoat-chat.html" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Khoa Học &amp; Bằng Chứng</a></li>
+            <li><a href="cau-chuyen-thuong-hieu.html" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Triết Lý Dzentic</a></li>
+            <li><a href="bai-viet.html" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Blog</a></li>
+            <li><a href="lien-he.html" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Liên hệ</a></li>
+          </ul>
+        </nav>
+        <div>
+          <h3 class="text-xl leading-7 font-medium text-navy">Liên hệ</h3>
+          <ul class="mt-6 flex flex-col gap-[10px] text-base leading-[22px] tracking-[0.224px] text-gray-49">
+            <li class="flex items-start gap-2"><img src="assets/img/footer/icon-phone.svg" alt="" width="20" height="20" class="shrink-0" /><a href="tel:15001515" class="hover:text-brown hover:underline focus-visible:text-brown focus-visible:underline">Hotline: 1500 1515</a></li>
+            <li class="flex items-start gap-2"><img src="assets/img/footer/icon-mobile.svg" alt="" width="20" height="21" class="shrink-0" /><a href="tel:+84123456789" class="hover:text-brown hover:underline focus-visible:text-brown focus-visible:underline">Điện thoại:<br />(+84) 123456789</a></li>
+            <li class="flex items-start gap-2"><img src="assets/img/footer/icon-pin.svg" alt="" width="20" height="21" class="shrink-0" /><a href="https://www.google.com/maps/search/?api=1&amp;query=T%E1%BA%A7ng+4+To%C3%A0+West+Tower%2C+365+%C4%91%C6%B0%E1%BB%9Dng+C%E1%BA%A7u+Gi%E1%BA%A5y%2C+H%C3%A0+N%E1%BB%99i" target="_blank" rel="noopener" class="lg:max-w-[169px] hover:text-brown hover:underline focus-visible:text-brown focus-visible:underline">Tầng 4 Toà West Tower, 365 đường Cầu Giấy, Hà Nội</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <hr class="border-0 h-px bg-gray-dd" />
+
+    <div class="flex flex-col gap-6 py-8 text-base leading-[22px] tracking-[0.224px] lg:flex-row lg:items-center lg:justify-between lg:pt-[39px] lg:pb-[55px]">
+      <ul class="flex flex-wrap gap-x-10 gap-y-2">
+        <li><a href="chinh-sach-bao-mat.html" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">An toàn &amp; Bảo mật</a></li>
+        <li><a href="#" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Điều khoản sử dụng</a></li>
+      </ul>
+      <div class="flex flex-col gap-4 sm:flex-row sm:items-center sm:gap-8">
+        <a href="#" class="block transition-opacity hover:opacity-80 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown"><img src="assets/img/footer/badge-bo-cong-thuong.webp" alt="Đã thông báo Bộ Công Thương" width="131" height="40" class="h-10 w-auto" /></a>
+        <p>© Bản quyền 2026 thuộc về Dzentic.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/app.js"></script>
+</body>
+</html>

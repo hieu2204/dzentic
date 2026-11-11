@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dzentic · Popup VietQR</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/app.css">
+</head>
+<body>
+<!-- SECTION: topbar -->
+<section aria-label="Thông báo" class="bg-navy text-bg">
+  <p class="max-w-site mx-auto px-4 py-3 md:py-4 text-center text-sm md:text-base leading-[22px] tracking-[0.224px]">
+    Nhận ưu đãi giảm tới 10% và miễn phí vận chuyển cho tất cả các đơn hàng. Cam kết 100% sản phẩm chính hãng.
+  </p>
+</section>
+
+<header class="sticky top-0 z-50 border-b border-gray-ee bg-bg">
+    <div class="max-w-site mx-auto px-4 md:px-8 xl:px-[72px] h-20 xl:h-[120px] flex items-center justify-between xl:grid xl:grid-cols-[1fr_auto_1fr] xl:gap-6">
+      <nav class="hidden xl:flex items-center gap-6 text-base leading-[22px] tracking-[0.224px]" aria-label="Menu trái">
+        <a href="thu-vien-hoat-chat.html" class="hover:text-brown focus-visible:text-brown focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brown">Khoa Học &amp; Bằng Chứng</a>
+        <a href="san-pham.html" class="hover:text-brown focus-visible:text-brown focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brown">Sản Phẩm</a>
+      </nav>
+
+      <a href="index.html" class="block shrink-0 xl:justify-self-center hover:opacity-80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brown" aria-label="Dzentic - Trang chủ">
+        <img src="assets/img/hero/logo-dzentic.png" alt="Dzentic - A brand by Sorai Beauty Engine" width="920" height="276"
+             class="h-14 xl:h-[92px] w-auto object-contain">
+      </a>
+
+      <div class="flex items-center gap-6 xl:justify-self-end">
+        <nav class="hidden xl:flex items-center gap-6 text-base leading-[22px] tracking-[0.224px]" aria-label="Menu phải">
+          <a href="cau-chuyen-thuong-hieu.html" class="hover:text-brown focus-visible:text-brown focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brown">Triết Lí Dzentic</a>
+          <a href="routine-phac-do.html" class="hover:text-brown focus-visible:text-brown focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brown">Giải Pháp Làn Da</a>
+          <a href="lien-he.html" class="hover:text-brown focus-visible:text-brown focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brown">Liên Hệ</a>
+        </nav>
+        <div class="flex items-center gap-3 xl:gap-[14px]">
+          <a href="tim-kiem.html" class="hover:opacity-70 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brown" aria-label="Tìm kiếm"><img src="assets/img/hero/icon-search.svg" alt="" width="20" height="20"></a>
+          <a href="gio-hang.html" class="group flex items-center gap-2 xl:gap-0.5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brown" aria-label="Giỏ hàng">
+            <img src="assets/img/hero/icon-cart.svg" alt="" width="20" height="20" class="group-hover:opacity-70">
+            <span class="grid place-items-center size-5 rounded-[10px] bg-brown text-bg text-base leading-[22px] group-hover:bg-brown-dark">0</span>
+          </a>
+          <button type="button" data-menu-toggle class="xl:hidden ml-2 p-1 hover:text-brown focus-visible:text-brown focus-visible:outline focus-visible:outline-2 focus-visible:outline-brown" aria-label="Mở menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Menu mobile -->
+    <nav data-menu class="hidden xl:hidden bg-bg border-t border-gray-dd px-4 md:px-8 py-4 text-base" aria-label="Menu chính">
+      <ul class="flex flex-col gap-4">
+        <li><a href="thu-vien-hoat-chat.html" class="hover:text-brown focus-visible:text-brown">Khoa Học &amp; Bằng Chứng</a></li>
+        <li><a href="san-pham.html" class="hover:text-brown focus-visible:text-brown">Sản Phẩm</a></li>
+        <li><a href="cau-chuyen-thuong-hieu.html" class="hover:text-brown focus-visible:text-brown">Triết Lí Dzentic</a></li>
+        <li><a href="routine-phac-do.html" class="hover:text-brown focus-visible:text-brown">Giải Pháp Làn Da</a></li>
+        <li><a href="lien-he.html" class="hover:text-brown focus-visible:text-brown">Liên Hệ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<main>
+  <!-- Trang nền: bước thanh toán rút gọn -->
+  <section class="max-w-site mx-auto px-4 pb-16 pt-8 md:px-8 lg:pb-24 xl:px-[72px]" aria-labelledby="bg-title">
+    <nav aria-label="Breadcrumb" class="flex flex-wrap items-center gap-2 text-sm leading-5 tracking-[0.14px]">
+      <a href="index.html" class="text-gray-66 hover:text-brown">Trang chủ</a>
+      <span class="text-gray-99" aria-hidden="true">/</span>
+      <a href="gio-hang.html" class="text-gray-66 hover:text-brown">Giỏ hàng</a>
+      <span class="text-gray-99" aria-hidden="true">/</span>
+      <span class="text-navy" aria-current="page">Thanh toán</span>
+    </nav>
+    <h1 id="bg-title" class="mt-6 text-3xl uppercase leading-[1.4] tracking-[0.624px] text-brown-dark md:text-5xl">Thanh toán</h1>
+
+    <div class="mt-8 flex flex-col gap-6 lg:flex-row lg:items-start">
+      <div class="flex min-w-0 flex-1 flex-col gap-5 rounded-md border border-gray-dd bg-white p-5 md:p-8">
+        <h2 class="text-xl font-medium uppercase leading-7 text-navy">Phương thức thanh toán</h2>
+        <fieldset class="flex flex-col gap-3">
+          <legend class="sr-only">Chọn phương thức thanh toán</legend>
+          <label class="flex cursor-pointer items-center gap-3 rounded-sm border border-gray-dd px-4 py-4 text-base leading-[22px] tracking-[0.224px] text-navy has-[:checked]:border-brown has-[:checked]:bg-brown-50">
+            <input type="radio" name="pay" value="cod" class="size-4 accent-brown"> Thanh toán khi nhận hàng (COD)
+          </label>
+          <label class="flex cursor-pointer items-center gap-3 rounded-sm border border-gray-dd px-4 py-4 text-base leading-[22px] tracking-[0.224px] text-navy has-[:checked]:border-brown has-[:checked]:bg-brown-50">
+            <input type="radio" name="pay" value="vietqr" checked class="size-4 accent-brown"> Chuyển khoản ngân hàng (VietQR)
+          </label>
+        </fieldset>
+      </div>
+
+      <aside class="flex flex-col gap-5 rounded-md border border-gray-dd bg-white p-5 md:p-8 lg:w-[424px] lg:shrink-0" aria-label="Tóm tắt đơn hàng">
+        <h2 class="text-xl font-medium uppercase leading-7 text-navy">Tóm tắt đơn hàng</h2>
+        <dl class="flex flex-col gap-3 text-sm leading-5 tracking-[0.14px]">
+          <div class="flex items-start justify-between gap-4"><dt class="text-gray-49">Tạm tính</dt><dd class="font-medium text-navy">2.790.000 VNĐ</dd></div>
+          <div class="flex items-start justify-between gap-4"><dt class="text-gray-49">Phí vận chuyển (Tiêu chuẩn)</dt><dd class="font-medium text-navy">Miễn phí</dd></div>
+        </dl>
+        <hr class="h-px border-0 bg-gray-dd">
+        <div class="flex items-center justify-between gap-4 text-xl leading-7"><span class="font-medium text-navy">Tổng thanh toán</span><span class="font-bold text-brown">2.790.000 VNĐ</span></div>
+        <button type="button" data-modal-open="vietqr-modal" aria-haspopup="dialog" class="inline-flex h-12 w-full items-center justify-center rounded-sm bg-brown px-6 text-base leading-[22px] tracking-[0.224px] text-bg hover:bg-brown-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Đặt hàng và thanh toán VietQR</button>
+      </aside>
+    </div>
+  </section>
+</main>
+
+<!-- Popup VietQR (overlay + modal) -->
+<div id="vietqr-modal" class="group invisible fixed inset-0 z-[100] flex items-center justify-center p-4 transition-[visibility] duration-200 [&.is-open]:visible" aria-hidden="true">
+  <div data-modal-close class="absolute inset-0 bg-navy/55 opacity-0 transition-opacity duration-200 group-[.is-open]:opacity-100"></div>
+  <div role="dialog" aria-modal="true" aria-labelledby="vietqr-title" tabindex="-1" class="relative flex max-h-full w-full max-w-[840px] scale-95 flex-col gap-5 overflow-y-auto rounded-md bg-white p-5 opacity-0 shadow-[0_16px_48px_rgba(0,0,0,0.2)] transition duration-200 focus:outline-none group-[.is-open]:scale-100 group-[.is-open]:opacity-100 md:p-8">
+    <div class="flex items-start gap-4">
+      <div class="flex min-w-0 flex-1 flex-col gap-1.5 font-medium">
+        <p class="text-sm text-[#2f5d3a]">Đơn hàng DZ240512 đã được ghi nhận</p>
+        <h2 id="vietqr-title" class="text-xl leading-8 text-navy md:text-2xl">Quét mã VietQR để hoàn tất thanh toán</h2>
+      </div>
+      <button type="button" data-modal-close class="grid size-8 shrink-0 place-items-center rounded-sm hover:bg-brown-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-brown" aria-label="Đóng"><img src="assets/img/popup-vietqr/icon-x.svg" alt="" width="20" height="20"></button>
+    </div>
+
+    <div class="flex flex-col gap-5 rounded-md bg-brown-50 p-4 md:p-6">
+      <div class="flex flex-col gap-6 md:flex-row md:gap-8">
+        <div class="flex shrink-0 flex-col items-center gap-3 self-center rounded-md border border-gray-dd bg-white p-4 md:self-start">
+          <div class="relative size-[152px]">
+            <img src="assets/img/popup-vietqr/vietqr-code.svg" alt="Mã VietQR thanh toán đơn hàng DZ240512" width="152" height="152" class="size-full">
+            <span class="absolute left-1/2 top-1/2 flex h-5 w-[36.7px] -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-[4px] bg-brown text-sm font-medium leading-5 tracking-[0.14px] text-white" aria-hidden="true">DZ</span>
+          </div>
+          <p class="text-xs leading-4 text-gray-66">Mở app ngân hàng để quét mã</p>
+          <p class="text-xs leading-4 text-gray-66" aria-live="off">Mã hết hạn sau <span data-countdown="900" class="font-medium text-brown">15:00</span></p>
+        </div>
+
+        <div class="flex min-w-0 flex-1 flex-col">
+          <p class="text-sm font-medium leading-5 tracking-[0.14px] text-brown-dark">Thông tin chuyển khoản</p>
+          <dl class="flex flex-col pt-2 text-sm leading-5 tracking-[0.14px]">
+            <div class="flex items-center gap-4 border-b border-gray-dd py-2.5"><dt class="w-[120px] shrink-0 text-gray-66">Ngân hàng</dt><dd class="min-w-0 flex-1 font-medium text-brown-dark">Vietcombank – CN Hà Nội</dd></div>
+            <div class="flex items-center gap-4 border-b border-gray-dd py-2.5"><dt class="w-[120px] shrink-0 text-gray-66">Số tài khoản</dt><dd class="min-w-0 flex-1 font-medium text-brown-dark">1023 4567 89</dd><dd><button type="button" data-copy="1023456789" class="rounded-md border border-brown bg-white px-2.5 py-1 text-xs leading-4 text-brown hover:bg-brown hover:text-bg focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Sao chép</button></dd></div>
+            <div class="flex items-center gap-4 border-b border-gray-dd py-2.5"><dt class="w-[120px] shrink-0 text-gray-66">Chủ tài khoản</dt><dd class="min-w-0 flex-1 font-medium text-brown-dark">CÔNG TY TNHH DZENTIC VIỆT NAM</dd></div>
+            <div class="flex items-center gap-4 border-b border-gray-dd py-2.5"><dt class="w-[120px] shrink-0 text-gray-66">Số tiền</dt><dd class="min-w-0 flex-1 font-medium text-brown">2.790.000 VNĐ</dd><dd><button type="button" data-copy="2790000" class="rounded-md border border-brown bg-white px-2.5 py-1 text-xs leading-4 text-brown hover:bg-brown hover:text-bg focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Sao chép</button></dd></div>
+            <div class="flex items-center gap-4 py-2.5"><dt class="w-[120px] shrink-0 text-gray-66">Nội dung CK</dt><dd class="min-w-0 flex-1 font-medium text-brown-dark">DZ240512</dd><dd><button type="button" data-copy="DZ240512" class="rounded-md border border-brown bg-white px-2.5 py-1 text-xs leading-4 text-brown hover:bg-brown hover:text-bg focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Sao chép</button></dd></div>
+          </dl>
+        </div>
+      </div>
+      <p class="rounded-md bg-white px-4 py-3 text-xs leading-4 text-gray-49">Vui lòng ghi đúng nội dung chuyển khoản. Đơn hàng sẽ được xác nhận khi Dzentic nhận được thanh toán.</p>
+    </div>
+
+    <div class="flex justify-center">
+      <a href="xac-nhan-don-hang.html" class="inline-flex h-12 w-full items-center justify-center rounded-sm bg-brown px-6 text-base leading-[22px] tracking-[0.224px] text-bg hover:bg-brown-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown sm:w-[300px]">Tôi đã chuyển khoản</a>
+    </div>
+  </div>
+</div>
+
+<script>
+(function () {
+  var modal = document.getElementById('vietqr-modal');
+  var panel = modal.querySelector('[role="dialog"]');
+  var lastFocus = null, timer = null;
+  var FOCUSABLE = 'a[href], button:not([disabled]), input:not([disabled]), [tabindex]:not([tabindex="-1"])';
+  var cd = modal.querySelector('[data-countdown]');
+  var total = parseInt(cd.getAttribute('data-countdown'), 10), left = total;
+
+  function fmt(s) { var m = Math.floor(s / 60), r = s % 60; return (m < 10 ? '0' : '') + m + ':' + (r < 10 ? '0' : '') + r; }
+  function tick() {
+    left = Math.max(0, left - 1);
+    cd.textContent = left ? fmt(left) : 'đã hết';
+    if (!left) { clearInterval(timer); timer = null; }
+  }
+  function startTimer() { clearInterval(timer); left = total; cd.textContent = fmt(left); timer = setInterval(tick, 1000); }
+
+  function openModal(trigger) {
+    lastFocus = trigger || document.activeElement;
+    modal.classList.add('is-open');
+    modal.setAttribute('aria-hidden', 'false');
+    document.documentElement.classList.add('overflow-hidden');
+    startTimer();
+    setTimeout(function () { panel.focus(); }, 50);
+  }
+  function closeModal() {
+    if (!modal.classList.contains('is-open')) return;
+    modal.classList.remove('is-open');
+    modal.setAttribute('aria-hidden', 'true');
+    document.documentElement.classList.remove('overflow-hidden');
+    clearInterval(timer);
+    if (lastFocus && lastFocus.focus) lastFocus.focus();
+  }
+  document.querySelectorAll('[data-modal-open="vietqr-modal"]').forEach(function (b) { b.addEventListener('click', function () { openModal(b); }); });
+  modal.querySelectorAll('[data-modal-close]').forEach(function (b) { b.addEventListener('click', closeModal); });
+  document.addEventListener('keydown', function (e) {
+    if (!modal.classList.contains('is-open')) return;
+    if (e.key === 'Escape') { e.preventDefault(); closeModal(); return; }
+    if (e.key !== 'Tab') return;
+    var items = Array.prototype.filter.call(panel.querySelectorAll(FOCUSABLE), function (el) { return el.offsetParent !== null; });
+    if (!items.length) return;
+    var first = items[0], last = items[items.length - 1];
+    if (e.shiftKey && (document.activeElement === first || document.activeElement === panel)) { e.preventDefault(); last.focus(); }
+    else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+  });
+
+  // Sao chép
+  modal.querySelectorAll('[data-copy]').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var text = btn.getAttribute('data-copy');
+      function done() { var old = btn.getAttribute('data-label') || btn.textContent; btn.setAttribute('data-label', old); btn.textContent = 'Đã sao chép'; setTimeout(function () { btn.textContent = old; }, 1500); }
+      if (navigator.clipboard && navigator.clipboard.writeText) { navigator.clipboard.writeText(text).then(done, done); }
+      else { var t = document.createElement('textarea'); t.value = text; document.body.appendChild(t); t.select(); try { document.execCommand('copy'); } catch (e) {} document.body.removeChild(t); done(); }
+    });
+  });
+
+  if (location.hash === '#mo-vietqr') openModal();
+})();
+</script>
+
+<!-- SECTION: Footer -->
+<footer id="footer" class="bg-bg text-navy">
+  <div class="max-w-site mx-auto px-4 md:px-8 xl:px-[72px]">
+    <div class="grid gap-10 pt-12 pb-10 lg:grid-cols-[minmax(0,1fr)_auto] lg:gap-16 lg:pt-24 lg:pb-12">
+      <div>
+        <a href="index.html" class="block max-w-[507px] lg:ml-[9px] lg:mt-[7.4px] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown"><img src="assets/img/footer/logo-dzentic.webp" alt="Dzentic - A brand by Sorai Beauty Engine" width="507" height="157" class="block h-auto w-full" /></a>
+        <ul class="mt-6 lg:mt-[18.4px] flex items-center gap-2" aria-label="Mạng xã hội">
+          <li><a href="#" aria-label="Facebook" class="flex size-8 items-center justify-center rounded-sm border border-gray-bb transition hover:-translate-y-0.5 hover:border-brown hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown"><img src="assets/img/footer/icon-facebook.svg" alt="" width="16" height="18" /></a></li>
+          <li><a href="#" aria-label="Instagram" class="flex size-8 items-center justify-center rounded-sm border border-gray-bb transition hover:-translate-y-0.5 hover:border-brown hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown"><img src="assets/img/footer/icon-instagram.svg" alt="" width="16" height="18" /></a></li>
+          <li><a href="#" aria-label="TikTok" class="flex size-8 items-center justify-center rounded-sm border border-gray-bb transition hover:-translate-y-0.5 hover:border-brown hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown"><img src="assets/img/footer/icon-tiktok.svg" alt="" width="16" height="18" /></a></li>
+        </ul>
+      </div>
+
+      <div class="grid gap-8 sm:grid-cols-2 md:grid-cols-3 md:gap-0">
+        <nav class="md:w-[220px]" aria-label="Sản phẩm và dịch vụ">
+          <h3 class="text-xl leading-7 font-medium text-navy">Sản phẩm và dịch vụ</h3>
+          <ul class="mt-6 flex flex-col gap-[10px] text-base leading-[22px] tracking-[0.224px] text-gray-49">
+            <li><a href="san-pham.html" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Brightening Serum</a></li>
+            <li><a href="san-pham.html" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Repair Cream</a></li>
+            <li><a href="san-pham.html" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Hydrating Cream</a></li>
+            <li><a href="san-pham.html" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Cleansing Gel</a></li>
+            <li><a href="san-pham.html" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Sunscreen</a></li>
+          </ul>
+        </nav>
+        <nav class="md:w-[220px]" aria-label="Liên kết">
+          <h3 class="text-xl leading-7 font-medium text-navy">Liên kết</h3>
+          <ul class="mt-6 flex flex-col gap-[10px] text-base leading-[22px] tracking-[0.224px] text-gray-49">
+            <li><a href="routine-phac-do.html" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Giải Pháp Làn Da</a></li>
+            <li><a href="thu-vien-hoat-chat.html" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Khoa Học &amp; Bằng Chứng</a></li>
+            <li><a href="cau-chuyen-thuong-hieu.html" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Triết Lý Dzentic</a></li>
+            <li><a href="bai-viet.html" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Blog</a></li>
+            <li><a href="lien-he.html" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Liên hệ</a></li>
+          </ul>
+        </nav>
+        <div>
+          <h3 class="text-xl leading-7 font-medium text-navy">Liên hệ</h3>
+          <ul class="mt-6 flex flex-col gap-[10px] text-base leading-[22px] tracking-[0.224px] text-gray-49">
+            <li class="flex items-start gap-2"><img src="assets/img/footer/icon-phone.svg" alt="" width="20" height="20" class="shrink-0" /><a href="tel:15001515" class="hover:text-brown hover:underline focus-visible:text-brown focus-visible:underline">Hotline: 1500 1515</a></li>
+            <li class="flex items-start gap-2"><img src="assets/img/footer/icon-mobile.svg" alt="" width="20" height="21" class="shrink-0" /><a href="tel:+84123456789" class="hover:text-brown hover:underline focus-visible:text-brown focus-visible:underline">Điện thoại:<br />(+84) 123456789</a></li>
+            <li class="flex items-start gap-2"><img src="assets/img/footer/icon-pin.svg" alt="" width="20" height="21" class="shrink-0" /><a href="https://www.google.com/maps/search/?api=1&amp;query=T%E1%BA%A7ng+4+To%C3%A0+West+Tower%2C+365+%C4%91%C6%B0%E1%BB%9Dng+C%E1%BA%A7u+Gi%E1%BA%A5y%2C+H%C3%A0+N%E1%BB%99i" target="_blank" rel="noopener" class="lg:max-w-[169px] hover:text-brown hover:underline focus-visible:text-brown focus-visible:underline">Tầng 4 Toà West Tower, 365 đường Cầu Giấy, Hà Nội</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <hr class="border-0 h-px bg-gray-dd" />
+
+    <div class="flex flex-col gap-6 py-8 text-base leading-[22px] tracking-[0.224px] lg:flex-row lg:items-center lg:justify-between lg:pt-[39px] lg:pb-[55px]">
+      <ul class="flex flex-wrap gap-x-10 gap-y-2">
+        <li><a href="chinh-sach-bao-mat.html" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">An toàn &amp; Bảo mật</a></li>
+        <li><a href="#" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Điều khoản sử dụng</a></li>
+      </ul>
+      <div class="flex flex-col gap-4 sm:flex-row sm:items-center sm:gap-8">
+        <a href="#" class="block transition-opacity hover:opacity-80 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown"><img src="assets/img/footer/badge-bo-cong-thuong.webp" alt="Đã thông báo Bộ Công Thương" width="131" height="40" class="h-10 w-auto" /></a>
+        <p>© Bản quyền 2026 thuộc về Dzentic.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/app.js"></script>
+</body>
+</html>
