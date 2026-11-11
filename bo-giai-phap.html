@@ -61,19 +61,38 @@
   </header>
 
 
-<!-- SECTION: Hero giải pháp làn da -->
-<section class="relative isolate flex min-h-[520px] items-center justify-center overflow-hidden lg:h-[720px]" aria-label="Giải pháp theo làn da">
+<!-- SECTION: Hero giải pháp làn da (Swiper: 4 thông điệp, tự chạy 3 giây, chấm tròn bấm được) -->
+<section class="relative isolate flex min-h-[520px] items-center justify-center overflow-hidden lg:h-[720px]" aria-label="Giải pháp theo làn da" aria-roledescription="carousel">
   <img src="assets/img/bo-giai-phap/hero.png" alt="" class="absolute inset-0 -z-10 size-full object-cover">
   <div class="absolute inset-0 -z-10 bg-gradient-to-b from-[rgba(31,18,8,0.15)] to-[rgba(31,18,8,0.6)]" aria-hidden="true"></div>
-  <div class="flex max-w-[1100px] flex-col items-center gap-6 px-5 py-16 text-center">
-    <p class="text-sm uppercase tracking-[4px] text-bg md:text-base">Giải pháp theo làn da</p>
-    <h1 data-hl class="text-3xl leading-[1.25] text-white md:text-5xl lg:text-[56px]">Da của bạn không hề <span class="text-[#fecc88]">Mụn</span>.<br>Nó chỉ chưa được chăm sóc đúng cách.</h1>
-    <div class="flex items-center gap-2" role="group" aria-label="Chọn thông điệp">
-      <button type="button" data-hl-dot class="h-2 w-8 rounded-[4px] bg-white transition-all focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy" aria-label="Thông điệp 1"></button>
-      <button type="button" data-hl-dot class="size-2 rounded-[4px] bg-white/45 transition-all hover:bg-white/80 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy" aria-label="Thông điệp 2"></button>
-      <button type="button" data-hl-dot class="size-2 rounded-[4px] bg-white/45 transition-all hover:bg-white/80 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy" aria-label="Thông điệp 3"></button>
-      <button type="button" data-hl-dot class="size-2 rounded-[4px] bg-white/45 transition-all hover:bg-white/80 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy" aria-label="Thông điệp 4"></button>
+  <div class="swiper w-full" data-swiper='{"effect":"fade","fadeEffect":{"crossFade":true},"speed":700,"rewind":true,"autoplay":{"delay":3000,"disableOnInteraction":false,"waitForTransition":false}}'>
+    <div class="swiper-wrapper">
+        <div class="swiper-slide !flex !h-auto items-center justify-center">
+          <div class="flex max-w-[1100px] flex-col items-center gap-6 px-5 py-16 text-center">
+            <p class="text-sm uppercase tracking-[4px] text-bg md:text-base">Giải pháp theo làn da</p>
+            <h1 class="text-3xl leading-[1.25] text-white md:text-5xl lg:text-[56px]">Da của bạn không hề <span class="text-[#fecc88]">Mụn</span>.<br>Nó chỉ chưa được chăm sóc đúng cách.</h1>
+          </div>
+        </div>
+        <div class="swiper-slide !flex !h-auto items-center justify-center">
+          <div class="flex max-w-[1100px] flex-col items-center gap-6 px-5 py-16 text-center">
+            <p class="text-sm uppercase tracking-[4px] text-bg md:text-base">Phác đồ cá nhân hóa</p>
+            <h2 class="text-3xl leading-[1.25] text-white md:text-5xl lg:text-[56px]">Mỗi làn da cần <span class="text-[#fecc88]">một phác đồ</span><br>riêng, không phải một công thức chung.</h2>
+          </div>
+        </div>
+        <div class="swiper-slide !flex !h-auto items-center justify-center">
+          <div class="flex max-w-[1100px] flex-col items-center gap-6 px-5 py-16 text-center">
+            <p class="text-sm uppercase tracking-[4px] text-bg md:text-base">Routine 4 bước</p>
+            <h2 class="text-3xl leading-[1.25] text-white md:text-5xl lg:text-[56px]">Làm sạch, chăm sóc, phục hồi, bảo vệ.<br>Đủ <span class="text-[#fecc88]">4 bước</span>, đúng thứ tự.</h2>
+          </div>
+        </div>
+        <div class="swiper-slide !flex !h-auto items-center justify-center">
+          <div class="flex max-w-[1100px] flex-col items-center gap-6 px-5 py-16 text-center">
+            <p class="text-sm uppercase tracking-[4px] text-bg md:text-base">Lộ trình kiên trì</p>
+            <h2 class="text-3xl leading-[1.25] text-white md:text-5xl lg:text-[56px]">Thay đổi thật cần <span class="text-[#fecc88]">8 tuần</span><br>kiên trì và đúng cách.</h2>
+          </div>
+        </div>
     </div>
+    <div class="swiper-pagination !static mt-2 flex items-center justify-center gap-2 pb-12 [&_.swiper-pagination-bullet]:m-0 [&_.swiper-pagination-bullet]:!h-2 [&_.swiper-pagination-bullet]:!w-2 [&_.swiper-pagination-bullet]:rounded-[4px] [&_.swiper-pagination-bullet]:!bg-white/45 [&_.swiper-pagination-bullet]:!opacity-100 [&_.swiper-pagination-bullet]:transition-all [&_.swiper-pagination-bullet]:hover:!bg-white/80 [&_.swiper-pagination-bullet-active]:!w-8 [&_.swiper-pagination-bullet-active]:!bg-white"></div>
   </div>
 </section>
 
@@ -451,27 +470,5 @@
 </footer>
 
 <script src="assets/js/app.js"></script>
-<script>
-(function () {
-  var hl = document.querySelector('[data-hl]'), dots = [].slice.call(document.querySelectorAll('[data-hl-dot]'));
-  if (!hl || !dots.length) return;
-  var msgs = [
-    'Da của bạn không hề <span class="text-[#fecc88]">Mụn</span>.<br>Nó chỉ chưa được chăm sóc đúng cách.',
-    'Mỗi làn da cần <span class="text-[#fecc88]">một phác đồ</span><br>riêng, không phải một công thức chung.',
-    'Làm sạch, chăm sóc, phục hồi, bảo vệ.<br>Đủ <span class="text-[#fecc88]">4 bước</span>, đúng thứ tự.',
-    'Thay đổi thật cần <span class="text-[#fecc88]">8 tuần</span><br>kiên trì và đúng cách.'
-  ], cur = 0, timer;
-  function show(i) {
-    cur = i; hl.innerHTML = msgs[i];
-    dots.forEach(function (d, k) {
-      d.classList.toggle('h-2', k === i); d.classList.toggle('w-8', k === i); d.classList.toggle('bg-white', k === i);
-      d.classList.toggle('size-2', k !== i); d.classList.toggle('bg-white/45', k !== i);
-    });
-  }
-  function start() { clearInterval(timer); if (!matchMedia('(prefers-reduced-motion: reduce)').matches) timer = setInterval(function () { show((cur + 1) % msgs.length); }, 6000); }
-  dots.forEach(function (d, k) { d.addEventListener('click', function () { show(k); start(); }); });
-  start();
-})();
-</script>
 </body>
 </html>

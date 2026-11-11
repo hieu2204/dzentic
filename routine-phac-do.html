@@ -371,7 +371,7 @@
   }
   function tog(id, label, icon) {
     var on = mode === id;
-    return '<button type="button" data-mode="' + id + '" aria-pressed="' + on + '" class="flex h-11 items-center gap-2 rounded-sm px-4 text-lg ' + FOC + ' ' + (on ? 'bg-brown text-bg hover:bg-brown-dark' : 'bg-gray-ee text-gray-66 hover:bg-gray-dd') + '"><img src="' + P + icon + '" alt="" width="18" height="18" class="size-[18px]' + (on ? '' : '') + '">' + label + '</button>';
+    return '<button type="button" data-mode="' + id + '" aria-pressed="' + on + '" class="flex h-11 items-center gap-2 rounded-sm px-4 text-xl leading-7 ' + FOC + ' ' + (on ? 'bg-brown text-bg hover:bg-brown-dark' : 'bg-gray-ee text-gray-66 hover:bg-gray-dd') + '"><img src="' + P + icon + '" alt="" width="18" height="18" class="size-[18px]' + (on ? '' : '') + '">' + label + '</button>';
   }
   function render() {
     var d = DATA[cond], list = (mode === 'day' ? d.day : d.night).map(card).join('');
