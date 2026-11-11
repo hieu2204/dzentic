@@ -75,3 +75,58 @@
   .marquee-track { animation: none; }
   .marquee { overflow: auto; }
 }
+
+/* ========== Hiệu ứng hover cho nút và link (phong cách A) ==========
+   - .btn          : nhấc 2px + đổ bóng mềm khi hover, nhấn xuống khi bấm, mũi tên dịch sang phải 3px
+   - .btn-outline  : nền quét từ trái sang phải (màu theo .btn-fill-*), chữ/viền đổi bằng class hover:text-* / hover:border-* sẵn có
+   - .btn-icon     : nút icon tròn phóng nhẹ
+   - .link-u       : gạch chân chạy từ trái sang phải
+   Chỉ chạy trên thiết bị có hover. Chuyển động chỉ dùng transform/scale/background-size nên không làm lệch layout. */
+:root { --ease-out: cubic-bezier(.2, .7, .2, 1); }
+
+.btn { transition: transform .25s var(--ease-out), box-shadow .25s var(--ease-out), background-color .2s ease, color .2s ease, border-color .2s ease, opacity .2s ease; }
+.btn > img, .btn > svg { transition: transform .25s var(--ease-out), filter .2s ease; }
+@media (hover: hover) {
+  .btn:hover { transform: translateY(-2px); box-shadow: 0 10px 22px -8px rgb(16 27 59 / .35); }
+  .btn:hover > img[src*="arrow"], .btn:hover > svg { transform: translateX(3px); }
+}
+.btn:active { transform: translateY(0); scale: .98; box-shadow: 0 3px 8px -4px rgb(16 27 59 / .35); }
+.btn:focus-visible { box-shadow: 0 10px 22px -8px rgb(16 27 59 / .35); }
+
+.btn-outline {
+  --btn-fill: var(--color-brown-50);
+  background-image: linear-gradient(var(--btn-fill), var(--btn-fill));
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 0% 100%;
+  transition: background-size .35s var(--ease-out), transform .25s var(--ease-out), box-shadow .25s var(--ease-out), color .2s ease, border-color .2s ease;
+}
+@media (hover: hover) { .btn-outline:hover { background-size: 100% 100%; } }
+.btn-outline:focus-visible { background-size: 100% 100%; }
+.btn-fill-brown-50 { --btn-fill: var(--color-brown-50); }
+.btn-fill-brown { --btn-fill: var(--color-brown); }
+.btn-fill-brown-dark { --btn-fill: var(--color-brown-dark); }
+.btn-fill-white { --btn-fill: #fff; }
+.btn-fill-bg-15 { --btn-fill: color-mix(in oklab, var(--color-bg) 15%, transparent); }
+
+.btn-icon { transition: scale .25s var(--ease-out), background-color .2s ease, box-shadow .25s var(--ease-out), opacity .2s ease; }
+@media (hover: hover) { .btn-icon:hover { scale: 1.08; } }
+.btn-icon:active { scale: .96; }
+
+.link-u {
+  background-image: linear-gradient(currentColor, currentColor);
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  background-size: 0% 1px;
+  transition: background-size .3s var(--ease-out), color .2s ease;
+}
+@media (hover: hover) { .link-u:hover { background-size: 100% 1px; } }
+.link-u:focus-visible { background-size: 100% 1px; }
+
+@media (prefers-reduced-motion: reduce) {
+  .btn, .btn:hover, .btn:active, .btn:focus-visible { transform: none; scale: none; box-shadow: none; transition: color .2s ease, background-color .2s ease, border-color .2s ease; }
+  .btn > img, .btn > svg { transition: none; transform: none !important; }
+  .btn-outline, .btn-outline:hover { transition: color .2s ease, border-color .2s ease; }
+  .btn-icon, .btn-icon:hover { scale: none; transition: background-color .2s ease; }
+  .link-u { transition: color .2s ease; }
+}
