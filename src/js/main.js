@@ -187,4 +187,41 @@ if (flipCards.length) {
   });
 }
 
+// Video MP4 phát tại chỗ: <div data-video-card data-video-src="file.mp4" data-video-title="..."> chứa nút [data-video-play].
+// Bấm nút -> thay ảnh bìa bằng <video controls autoplay playsinline>; chỉ một video phát tại một thời điểm; hết video hoặc lỗi -> trả về ảnh bìa.
+const videoCards = [...document.querySelectorAll('[data-video-card]')];
+if (videoCards.length) {
+  const stop = (card) => {
+    const v = card.querySelector('video'); if (!v) return;
+    v.pause(); v.remove();
+    const msg = card.querySelector('[data-video-error]'); if (msg) msg.remove();
+    [...card.children].forEach((c) => { if (c._hidden) { c.style.display = c._hidden === '-' ? '' : c._hidden; delete c._hidden; } });
+    card.classList.remove('is-playing');
+  };
+  const play = (card) => {
+    videoCards.forEach((o) => { if (o !== card) stop(o); });
+    if (card.querySelector('video')) return;
+    const poster = card.querySelector('img'); 
+    [...card.children].forEach((c) => { c._hidden = c.style.display || '-'; c.style.display = 'none'; });
+    const v = document.createElement('video');
+    v.src = card.dataset.videoSrc; v.controls = true; v.autoplay = true; v.playsInline = true; v.preload = 'auto';
+    if (poster) v.poster = poster.currentSrc || poster.src;
+    v.setAttribute('aria-label', card.dataset.videoTitle || 'Video');
+    v.className = 'absolute inset-0 z-20 size-full bg-ink object-cover';
+    v.addEventListener('ended', () => stop(card));
+    v.addEventListener('error', () => {
+      const e = document.createElement('p'); e.setAttribute('data-video-error', '');
+      e.className = 'absolute inset-x-6 bottom-6 z-20 rounded-sm bg-ink/70 px-4 py-3 text-sm text-bg';
+      e.textContent = 'Không tải được video. Vui lòng thử lại sau.'; card.appendChild(e);
+      setTimeout(() => stop(card), 2500);
+    });
+    card.classList.add('is-playing'); card.appendChild(v);
+    const pr = v.play(); if (pr && pr.catch) pr.catch(() => {});
+  };
+  videoCards.forEach((card) => {
+    card.querySelectorAll('[data-video-play]').forEach((b) => b.addEventListener('click', () => play(card)));
+  });
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') videoCards.forEach(stop); });
+}
+
 initCart();
