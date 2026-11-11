@@ -62,12 +62,19 @@ document.querySelectorAll('[data-tabs]').forEach((root) => {
     });
     // Swiper trong panel vừa hiện: cập nhật kích thước + trạng thái nút prev/next dùng chung
     requestAnimationFrame(() => {
-      document.querySelectorAll('[data-swiper]').forEach((el) => {
-        if (el.swiper && !el.offsetParent) el.swiper.navigation && el.swiper.navigation.update();
+      // Nút prev/next dùng chung cho nhiều slider trong các panel tab (có cả tab lồng nhau):
+      // chỉ slider đang thật sự hiển thị (offsetParent) mới được điều khiển nút, slider ẩn thì ngắt điều khiển.
+      document.querySelectorAll('[data-tab-panel] [data-swiper]').forEach((el) => {
+        const s = el.swiper; if (!s || !s.navigation) return;
+        const visible = el.offsetParent !== null;
+        if (!visible) { if (!s._navOff) { s.navigation.destroy(); s._navOff = true; } }
       });
-      panels.filter((p) => !p.hidden).forEach((p) => p.querySelectorAll('[data-swiper]').forEach((el) => {
-        if (el.swiper) { el.swiper.update(); el.swiper.navigation && el.swiper.navigation.update(); }
-      }));
+      document.querySelectorAll('[data-tab-panel] [data-swiper]').forEach((el) => {
+        const s = el.swiper; if (!s || !s.navigation || el.offsetParent === null) return;
+        s.update();
+        if (s._navOff) { s.navigation.init(); s._navOff = false; }
+        s.navigation.update();
+      });
       AOS.refresh();
     });
   };
@@ -107,6 +114,8 @@ document.querySelectorAll('[data-swiper]').forEach((el) => {
   if (clones) {
     sw.on('transitionEnd', () => { if (sw.activeIndex >= clones) sw.slideTo(sw.activeIndex - clones, 0, false); });
   }
+  // Slider nằm trong panel tab (đang ẩn lúc khởi tạo) không được giữ điều khiển nút dùng chung; tab sẽ bật lại khi panel hiện.
+  if (el.closest('[data-tab-panel]') && sw.navigation && sw.params.navigation && sw.params.navigation.nextEl) { sw.navigation.destroy(); sw._navOff = true; }
   el.swiper = sw;
 });
 
