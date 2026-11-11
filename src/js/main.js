@@ -157,3 +157,31 @@ document.querySelectorAll('[data-store-locator]').forEach((root) => {
     if (li && (e.key === 'Enter' || e.key === ' ')) { e.preventDefault(); select(li.dataset.clinic, false); }
   });
 });
+
+// Flip card: <li data-flip aria-pressed="false"> chứa lớp [data-flip-back].
+// Desktop (có hover): hover bằng CSS (group-hover, Tailwind v4 chỉ áp dụng trên thiết bị có hover). Mobile/cảm ứng: chạm để lật, chạm lại hoặc chạm ra ngoài để đóng.
+// Bàn phím: Enter/Space lật.
+const flipCards = [...document.querySelectorAll('[data-flip]')];
+if (flipCards.length) {
+  const touch = window.matchMedia('(hover: none)');
+  const set = (el, on) => {
+    el.setAttribute('aria-pressed', String(on));
+    const b = el.querySelector('[data-flip-back]'); if (b) b.setAttribute('aria-hidden', String(!on));
+  };
+  flipCards.forEach((el) => {
+    el.addEventListener('click', () => {
+      if (!touch.matches) return;
+      const on = el.getAttribute('aria-pressed') !== 'true';
+      flipCards.forEach((o) => set(o, o === el ? on : false));
+    });
+    el.addEventListener('keydown', (e) => {
+      if (e.key !== 'Enter' && e.key !== ' ') return;
+      e.preventDefault();
+      set(el, el.getAttribute('aria-pressed') !== 'true');
+    });
+    el.addEventListener('blur', () => { if (!touch.matches) set(el, false); });
+  });
+  document.addEventListener('click', (e) => {
+    if (touch.matches && !e.target.closest('[data-flip]')) flipCards.forEach((o) => set(o, false));
+  });
+}
