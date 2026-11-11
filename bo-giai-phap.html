@@ -61,38 +61,44 @@
   </header>
 
 
-<!-- SECTION: Hero giải pháp làn da (Swiper: 4 thông điệp, tự chạy 3 giây, chấm tròn bấm được) -->
-<section class="relative isolate flex min-h-[520px] items-center justify-center overflow-hidden lg:h-[720px]" aria-label="Giải pháp theo làn da" aria-roledescription="carousel">
-  <img src="assets/img/bo-giai-phap/hero.png" alt="" class="absolute inset-0 -z-10 size-full object-cover">
-  <div class="absolute inset-0 -z-10 bg-gradient-to-b from-[rgba(31,18,8,0.15)] to-[rgba(31,18,8,0.6)]" aria-hidden="true"></div>
-  <div class="swiper w-full" data-swiper='{"effect":"fade","fadeEffect":{"crossFade":true},"speed":700,"rewind":true,"autoplay":{"delay":3000,"disableOnInteraction":false,"waitForTransition":false}}'>
+<!-- SECTION: Hero giải pháp làn da (Swiper: 4 slide, mỗi slide có ảnh nền + thông điệp riêng, tự chạy 3 giây, chấm tròn bấm được) -->
+<section class="relative isolate flex min-h-[520px] items-stretch overflow-hidden bg-[#3a2410] lg:h-[720px]" aria-label="Giải pháp theo làn da" aria-roledescription="carousel">
+  <div class="swiper h-full min-h-[520px] w-full" data-swiper='{"effect":"fade","fadeEffect":{"crossFade":true},"speed":800,"rewind":true,"autoplay":{"delay":3000,"disableOnInteraction":false,"waitForTransition":false}}'>
     <div class="swiper-wrapper">
-        <div class="swiper-slide !flex !h-auto items-center justify-center">
-          <div class="flex max-w-[1100px] flex-col items-center gap-6 px-5 py-16 text-center">
-            <p class="text-sm uppercase tracking-[4px] text-bg md:text-base">Giải pháp theo làn da</p>
-            <h1 class="text-3xl leading-[1.25] text-white md:text-5xl lg:text-[56px]">Da của bạn không hề <span class="text-[#fecc88]">Mụn</span>.<br>Nó chỉ chưa được chăm sóc đúng cách.</h1>
-          </div>
+      <div class="swiper-slide relative !flex !h-auto items-center justify-center overflow-hidden">
+        <img src="assets/img/bo-giai-phap/hero-1.webp" alt="Da mặt cận cảnh, làn da có mụn và thâm" class="absolute inset-0 size-full object-cover">
+        <div class="absolute inset-0 bg-gradient-to-b from-[rgba(31,18,8,0.15)] to-[rgba(31,18,8,0.6)]" aria-hidden="true"></div>
+        <div class="relative flex max-w-[1100px] flex-col items-center gap-6 px-5 pb-24 pt-16 text-center">
+          <p class="text-sm uppercase tracking-[4px] text-bg md:text-base">Giải pháp theo làn da</p>
+          <h1 class="text-3xl leading-[1.25] text-white md:text-5xl lg:text-[56px]">Da của bạn không hề <span class="text-[#fecc88]">Mụn</span>.<br>Nó chỉ chưa được chăm sóc đúng cách.</h1>
         </div>
-        <div class="swiper-slide !flex !h-auto items-center justify-center">
-          <div class="flex max-w-[1100px] flex-col items-center gap-6 px-5 py-16 text-center">
-            <p class="text-sm uppercase tracking-[4px] text-bg md:text-base">Phác đồ cá nhân hóa</p>
-            <h2 class="text-3xl leading-[1.25] text-white md:text-5xl lg:text-[56px]">Mỗi làn da cần <span class="text-[#fecc88]">một phác đồ</span><br>riêng, không phải một công thức chung.</h2>
-          </div>
+      </div>
+      <div class="swiper-slide relative !flex !h-auto items-center justify-center overflow-hidden">
+        <img src="assets/img/bo-giai-phap/hero-2.webp" alt="Bác sĩ da liễu tư vấn trực tiếp cho khách hàng" class="absolute inset-0 size-full object-cover" loading="lazy">
+        <div class="absolute inset-0 bg-gradient-to-b from-[rgba(31,18,8,0.15)] to-[rgba(31,18,8,0.6)]" aria-hidden="true"></div>
+        <div class="relative flex max-w-[1100px] flex-col items-center gap-6 px-5 pb-24 pt-16 text-center">
+          <p class="text-sm uppercase tracking-[4px] text-bg md:text-base">Phác đồ cá nhân hóa</p>
+          <h2 class="text-3xl leading-[1.25] text-white md:text-5xl lg:text-[56px]">Mỗi làn da cần <span class="text-[#fecc88]">một phác đồ</span><br>riêng, không phải một công thức chung.</h2>
         </div>
-        <div class="swiper-slide !flex !h-auto items-center justify-center">
-          <div class="flex max-w-[1100px] flex-col items-center gap-6 px-5 py-16 text-center">
-            <p class="text-sm uppercase tracking-[4px] text-bg md:text-base">Routine 4 bước</p>
-            <h2 class="text-3xl leading-[1.25] text-white md:text-5xl lg:text-[56px]">Làm sạch, chăm sóc, phục hồi, bảo vệ.<br>Đủ <span class="text-[#fecc88]">4 bước</span>, đúng thứ tự.</h2>
-          </div>
+      </div>
+      <div class="swiper-slide relative !flex !h-auto items-center justify-center overflow-hidden">
+        <img src="assets/img/bo-giai-phap/hero-3.webp" alt="Bộ sản phẩm Dzentic trên bục gỗ nền nâu" class="absolute inset-0 size-full object-cover" loading="lazy">
+        <div class="absolute inset-0 bg-gradient-to-b from-[rgba(31,18,8,0.15)] to-[rgba(31,18,8,0.6)]" aria-hidden="true"></div>
+        <div class="relative flex max-w-[1100px] flex-col items-center gap-6 px-5 pb-24 pt-16 text-center">
+          <p class="text-sm uppercase tracking-[4px] text-bg md:text-base">Routine 4 bước</p>
+          <h2 class="text-3xl leading-[1.25] text-white md:text-5xl lg:text-[56px]">Làm sạch, chăm sóc, phục hồi, bảo vệ.<br>Đủ <span class="text-[#fecc88]">4 bước</span>, đúng thứ tự.</h2>
         </div>
-        <div class="swiper-slide !flex !h-auto items-center justify-center">
-          <div class="flex max-w-[1100px] flex-col items-center gap-6 px-5 py-16 text-center">
-            <p class="text-sm uppercase tracking-[4px] text-bg md:text-base">Lộ trình kiên trì</p>
-            <h2 class="text-3xl leading-[1.25] text-white md:text-5xl lg:text-[56px]">Thay đổi thật cần <span class="text-[#fecc88]">8 tuần</span><br>kiên trì và đúng cách.</h2>
-          </div>
+      </div>
+      <div class="swiper-slide relative !flex !h-auto items-center justify-center overflow-hidden">
+        <img src="assets/img/bo-giai-phap/hero-4.webp" alt="Giọt tinh chất vàng trong suốt" class="absolute inset-0 size-full object-cover" loading="lazy">
+        <div class="absolute inset-0 bg-gradient-to-b from-[rgba(31,18,8,0.15)] to-[rgba(31,18,8,0.6)]" aria-hidden="true"></div>
+        <div class="relative flex max-w-[1100px] flex-col items-center gap-6 px-5 pb-24 pt-16 text-center">
+          <p class="text-sm uppercase tracking-[4px] text-bg md:text-base">Lộ trình kiên trì</p>
+          <h2 class="text-3xl leading-[1.25] text-white md:text-5xl lg:text-[56px]">Thay đổi thật cần <span class="text-[#fecc88]">8 tuần</span><br>kiên trì và đúng cách.</h2>
         </div>
+      </div>
     </div>
-    <div class="swiper-pagination !static mt-2 flex items-center justify-center gap-2 pb-12 [&_.swiper-pagination-bullet]:m-0 [&_.swiper-pagination-bullet]:!h-2 [&_.swiper-pagination-bullet]:!w-2 [&_.swiper-pagination-bullet]:!rounded-[4px] [&_.swiper-pagination-bullet]:!bg-white/45 [&_.swiper-pagination-bullet]:!opacity-100 [&_.swiper-pagination-bullet]:transition-all [&_.swiper-pagination-bullet]:hover:!bg-white/80 [&_.swiper-pagination-bullet-active]:!w-8 [&_.swiper-pagination-bullet-active]:!bg-white"></div>
+    <div class="swiper-pagination !absolute !bottom-8 !left-0 z-10 flex w-full items-center justify-center gap-2 [&_.swiper-pagination-bullet]:m-0 [&_.swiper-pagination-bullet]:!h-2 [&_.swiper-pagination-bullet]:!w-2 [&_.swiper-pagination-bullet]:rounded-[4px] [&_.swiper-pagination-bullet]:!bg-white/45 [&_.swiper-pagination-bullet]:!opacity-100 [&_.swiper-pagination-bullet]:transition-all [&_.swiper-pagination-bullet]:hover:!bg-white/80 [&_.swiper-pagination-bullet-active]:!w-8 [&_.swiper-pagination-bullet-active]:!bg-white"></div>
   </div>
 </section>
 
