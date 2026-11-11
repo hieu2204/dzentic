@@ -116,7 +116,7 @@
   <div class="mx-auto max-w-site px-4 pt-8 md:px-8 xl:px-[72px]">
     <div class="-mx-4 overflow-x-auto px-4 md:mx-0 md:px-0">
       <div role="tablist" aria-label="Lọc theo nhóm sản phẩm" data-nhom-tabs class="mx-auto flex w-max items-end gap-6 border-gray-dd">
-        <button type="button" role="tab" data-nhom="tat-ca" data-ten="Tất cả" data-sl="7" aria-selected="false" class="group/tab flex w-[120px] shrink-0 cursor-pointer flex-col items-center gap-1.5 border-b-2 border-transparent pb-2.5 text-center text-gray-66 aria-selected:border-navy aria-selected:text-navy hover:text-brown focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy">
+        <button type="button" role="tab" data-nhom="tat-ca" data-ten="Tất cả" data-sl="7" aria-selected="true" class="group/tab flex w-[120px] shrink-0 cursor-pointer flex-col items-center gap-1.5 border-b-2 border-transparent pb-2.5 text-center text-gray-66 aria-selected:border-navy aria-selected:text-navy hover:text-brown focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy">
           <span class="flex size-16 items-center justify-center overflow-hidden rounded-full border border-gray-dd group-aria-selected/tab:border-2 group-aria-selected/tab:border-brown"><img src="assets/img/san-pham/nav-tat-ca.png" alt="" width="54" height="54" class="size-[54px]"></span>
           <span class="text-base leading-[22px] tracking-[0.224px]">Tất cả</span>
           <span class="text-xs leading-4 text-gray-66">7 sản phẩm</span>
@@ -126,7 +126,7 @@
           <span class="text-base leading-[22px] tracking-[0.224px]">Làm sạch</span>
           <span class="text-xs leading-4 text-gray-66">1 sản phẩm</span>
         </button>
-        <button type="button" role="tab" data-nhom="cham-soc-chuyen-sau" data-ten="Chăm sóc chuyên sâu" data-sl="3" aria-selected="true" class="group/tab flex w-[200px] shrink-0 cursor-pointer flex-col items-center gap-1.5 border-b-2 border-transparent pb-2.5 text-center text-gray-66 aria-selected:border-navy aria-selected:text-navy hover:text-brown focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy">
+        <button type="button" role="tab" data-nhom="cham-soc-chuyen-sau" data-ten="Chăm sóc chuyên sâu" data-sl="3" aria-selected="false" class="group/tab flex w-[200px] shrink-0 cursor-pointer flex-col items-center gap-1.5 border-b-2 border-transparent pb-2.5 text-center text-gray-66 aria-selected:border-navy aria-selected:text-navy hover:text-brown focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy">
           <span class="flex size-16 items-center justify-center overflow-hidden rounded-full border border-gray-dd group-aria-selected/tab:border-2 group-aria-selected/tab:border-brown"><img src="assets/img/san-pham/nav-cham-soc-chuyen-sau.png" alt="" width="54" height="54" class="size-[54px]"></span>
           <span class="text-base leading-[22px] tracking-[0.224px]">Chăm sóc chuyên sâu</span>
           <span class="text-xs leading-4 text-gray-66">3 sản phẩm</span>
@@ -151,8 +151,8 @@
 <section id="san-pham" class="bg-bg" aria-labelledby="san-pham-title">
   <div class="mx-auto max-w-site px-4 pt-10 md:px-8 md:pt-14 xl:px-[72px]">
     <div class="flex flex-col gap-3" data-aos="fade-up">
-      <p class="text-sm tracking-[4px] uppercase text-brown md:text-base md:leading-[22px]" data-sl><span data-sl-num>3</span> sản phẩm</p>
-      <h2 id="san-pham-title" class="text-3xl uppercase leading-[1.4] tracking-[0.624px] text-brown-dark md:text-5xl" data-ten>Serum Dzentic</h2>
+      <p class="text-sm tracking-[4px] uppercase text-brown md:text-base md:leading-[22px]" data-sl><span data-sl-num>7</span> sản phẩm</p>
+      <h2 id="san-pham-title" class="text-3xl uppercase leading-[1.4] tracking-[0.624px] text-brown-dark md:text-5xl" >Tất cả sản phẩm</h2>
     </div>
     <ul class="mt-8 grid gap-x-3 gap-y-10 sm:grid-cols-2 lg:mt-10 lg:grid-cols-3" data-grid>
 <li class="min-w-0" data-nhom="cham-soc-chuyen-sau">
@@ -221,7 +221,7 @@
     </div>
   </article>
 </li>
-<li class="min-w-0" data-nhom="lam-sach" hidden>
+<li class="min-w-0" data-nhom="lam-sach">
   <article class="group flex h-full flex-col">
     <div class="relative aspect-[424/500] overflow-hidden rounded-[4px] bg-[#ecebec] transition-shadow duration-300 group-hover:shadow-popover">
       <a href="chi-tiet-san-pham.html" class="block size-full focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy focus-visible:-outline-offset-2" aria-label="Purifying Cleansing Gel">
@@ -243,7 +243,7 @@
     </div>
   </article>
 </li>
-<li class="min-w-0" data-nhom="phuc-hoi" hidden>
+<li class="min-w-0" data-nhom="phuc-hoi">
   <article class="group flex h-full flex-col">
     <div class="relative aspect-[424/500] overflow-hidden rounded-[4px] bg-[#ecebec] transition-shadow duration-300 group-hover:shadow-popover">
       <a href="chi-tiet-san-pham.html" class="block size-full focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy focus-visible:-outline-offset-2" aria-label="NeoBright Repair Cream">
@@ -265,7 +265,7 @@
     </div>
   </article>
 </li>
-<li class="min-w-0" data-nhom="phuc-hoi" hidden>
+<li class="min-w-0" data-nhom="phuc-hoi">
   <article class="group flex h-full flex-col">
     <div class="relative aspect-[424/500] overflow-hidden rounded-[4px] bg-[#ecebec] transition-shadow duration-300 group-hover:shadow-popover">
       <a href="chi-tiet-san-pham.html" class="block size-full focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy focus-visible:-outline-offset-2" aria-label="Blemish Recovery Hydrating Cream">
@@ -287,7 +287,7 @@
     </div>
   </article>
 </li>
-<li class="min-w-0" data-nhom="bao-ve" hidden>
+<li class="min-w-0" data-nhom="bao-ve">
   <article class="group flex h-full flex-col">
     <div class="relative aspect-[424/500] overflow-hidden rounded-[4px] bg-[#ecebec] transition-shadow duration-300 group-hover:shadow-popover">
       <a href="chi-tiet-san-pham.html" class="block size-full focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy focus-visible:-outline-offset-2" aria-label="Blue Light Shield Tone-Up Fluid Sunscreen">
@@ -667,7 +667,7 @@
   var tabs = [].slice.call(document.querySelectorAll('[data-nhom-tabs] [data-nhom]'));
   var items = [].slice.call(document.querySelectorAll('[data-grid] > li'));
   var num = document.querySelector('[data-sl-num]');
-  var ten = document.querySelector('[data-ten]');
+  var ten = document.getElementById('san-pham-title');
   var names = { 'tat-ca': 'Tất cả sản phẩm', 'lam-sach': 'Làm sạch', 'cham-soc-chuyen-sau': 'Serum Dzentic', 'phuc-hoi': 'Phục hồi', 'bao-ve': 'Bảo vệ' };
   function pick(id) {
     var n = 0;
@@ -675,6 +675,7 @@
     items.forEach(function (li) { var on = id === 'tat-ca' || li.dataset.nhom === id; li.hidden = !on; if (on) n++; });
     num.textContent = n; ten.textContent = names[id];
   }
+  pick('tat-ca');
   tabs.forEach(function (t, i) {
     t.addEventListener('click', function () { pick(t.dataset.nhom); });
     t.addEventListener('keydown', function (e) {
