@@ -1,0 +1,575 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bằng chứng &amp; dữ liệu · Dzentic</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/app.css">
+</head>
+<body>
+<!-- SECTION: topbar -->
+<section aria-label="Thông báo" class="bg-navy text-bg">
+  <p class="max-w-site mx-auto px-4 py-3 md:py-4 text-center text-sm md:text-base leading-[22px] tracking-[0.224px]">
+    Nhận ưu đãi giảm tới 10% và miễn phí vận chuyển cho tất cả các đơn hàng. Cam kết 100% sản phẩm chính hãng.
+  </p>
+</section>
+
+<header class="sticky top-0 z-50 border-b border-gray-ee bg-bg">
+    <div class="max-w-site mx-auto px-4 md:px-8 xl:px-[72px] h-20 xl:h-[120px] flex items-center justify-between xl:grid xl:grid-cols-[1fr_auto_1fr] xl:gap-6">
+      <nav class="hidden xl:flex items-center gap-6 text-base leading-[22px] tracking-[0.224px]" aria-label="Menu trái">
+        <a href="thu-vien-hoat-chat.html" aria-current="page" class="aria-[current=page]:text-brown hover:text-brown focus-visible:text-brown focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brown link-u">Khoa Học &amp; Bằng Chứng</a>
+        <a href="san-pham.html" class="hover:text-brown focus-visible:text-brown focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brown link-u">Sản Phẩm</a>
+      </nav>
+
+      <a href="index.html" class="block shrink-0 xl:justify-self-center hover:opacity-80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brown" aria-label="Dzentic - Trang chủ">
+        <img src="assets/img/hero/logo-dzentic.png" alt="Dzentic - A brand by Sorai Beauty Engine"
+             class="h-14 xl:h-[92px] w-auto object-contain">
+      </a>
+
+      <div class="flex items-center gap-6 xl:justify-self-end">
+        <nav class="hidden xl:flex items-center gap-6 text-base leading-[22px] tracking-[0.224px]" aria-label="Menu phải">
+          <a href="cau-chuyen-thuong-hieu.html" class="hover:text-brown focus-visible:text-brown focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brown link-u">Triết Lí Dzentic</a>
+          <a href="routine-phac-do.html" class="hover:text-brown focus-visible:text-brown focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brown link-u">Giải Pháp Làn Da</a>
+          <a href="lien-he.html" class="hover:text-brown focus-visible:text-brown focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brown link-u">Liên Hệ</a>
+        </nav>
+        <div class="flex items-center gap-3 xl:gap-[14px]">
+          <a href="tim-kiem.html" class="hover:opacity-70 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brown" aria-label="Tìm kiếm"><img src="assets/img/hero/icon-search.svg" alt="" width="20" height="20"></a>
+          <a href="gio-hang.html" class="group flex items-center gap-2 xl:gap-0.5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brown" aria-label="Giỏ hàng">
+            <img src="assets/img/hero/icon-cart.svg" alt="" width="20" height="20" class="group-hover:opacity-70">
+            <span data-cart-count class="grid place-items-center size-5 rounded-[10px] bg-brown text-bg text-base leading-[22px] group-hover:bg-brown-dark">0</span>
+          </a>
+          <button type="button" data-menu-toggle class="xl:hidden ml-2 p-1 hover:text-brown focus-visible:text-brown focus-visible:outline focus-visible:outline-2 focus-visible:outline-brown" aria-label="Mở menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Menu mobile -->
+    <nav data-menu class="hidden xl:hidden bg-bg border-t border-gray-dd px-4 md:px-8 py-4 text-base" aria-label="Menu chính">
+      <ul class="flex flex-col gap-4">
+        <li><a href="thu-vien-hoat-chat.html" aria-current="page" class="aria-[current=page]:text-brown hover:text-brown focus-visible:text-brown link-u">Khoa Học &amp; Bằng Chứng</a></li>
+        <li><a href="san-pham.html" class="hover:text-brown focus-visible:text-brown link-u">Sản Phẩm</a></li>
+        <li><a href="cau-chuyen-thuong-hieu.html" class="hover:text-brown focus-visible:text-brown link-u">Triết Lí Dzentic</a></li>
+        <li><a href="routine-phac-do.html" class="hover:text-brown focus-visible:text-brown link-u">Giải Pháp Làn Da</a></li>
+        <li><a href="lien-he.html" class="hover:text-brown focus-visible:text-brown link-u">Liên Hệ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<!-- SECTION: Subpage hero (biến thể ảnh, cao 340). Chỉ đổi breadcrumb, tiêu đề, mô tả. -->
+<section class="relative isolate overflow-hidden bg-[#4f290a]">
+  <img src="assets/img/bang-chung-du-lieu/hero.webp" alt="" aria-hidden="true" class="pointer-events-none absolute inset-0 -z-20 size-full max-w-none object-cover object-right lg:object-center">
+  <div class="pointer-events-none absolute inset-0 -z-10 bg-[rgba(42,22,8,0.7)] lg:hidden" aria-hidden="true"></div>
+  <div class="pointer-events-none absolute inset-0 -z-10 hidden bg-gradient-to-r from-[rgba(42,22,8,0.88)] via-[rgba(51,28,10,0.55)] via-[42%] to-[rgba(51,28,10,0)] to-[70%] lg:block" aria-hidden="true"></div>
+  <div class="relative mx-auto max-w-site px-4 pb-10 pt-7 md:px-8 xl:px-[72px] lg:h-[340px] lg:pb-0">
+    <nav aria-label="Breadcrumb" class="flex flex-wrap items-center gap-2 text-sm leading-5 tracking-[0.14px] text-bg">
+      <a href="index.html" class="hover:text-brown-50 link-u">Trang chủ</a>
+      <span aria-hidden="true">/</span>
+      <a href="thu-vien-hoat-chat.html" class="hover:text-brown-50 link-u">Khoa học &amp; Bằng chứng</a>
+      <span aria-hidden="true">/</span>
+      <span aria-current="page">Bằng chứng &amp; dữ liệu</span>
+    </nav>
+    <div class="mt-10 flex flex-col gap-4 lg:mt-[69px]">
+      <h1 class="text-3xl uppercase leading-[1.4] tracking-[0.624px] text-bg md:text-5xl lg:max-w-[640px]">Bằng chứng &amp; dữ liệu</h1>
+      <p class="max-w-[560px] text-base leading-[22px] tracking-[0.224px] text-bg">Danh mục các nghiên cứu làm cơ sở cho việc lựa chọn hoạt chất trong công thức Dzentic — ghi rõ hoạt chất, nồng độ, đối tượng, thiết kế, đơn vị tài trợ và giới hạn, kể cả khi kết quả chưa thuận lợi.</p>
+    </div>
+  </div>
+</section>
+
+<main>
+<!-- SECTION: Lưu ý khi đọc -->
+<section class="bg-bg" aria-labelledby="luu-y">
+  <div class="mx-auto max-w-site px-4 py-10 md:px-8 xl:px-[72px] xl:py-[60px]">
+    <div class="flex items-start gap-4 rounded-md border-l-4 border-brown bg-brown-50 py-6 pl-5 pr-5 md:gap-5 md:py-8 md:pl-8 md:pr-10" data-aos="fade-up">
+      <img src="assets/img/bang-chung-du-lieu/icon-info.svg" alt="" class="size-7 shrink-0">
+      <div class="flex min-w-0 flex-1 flex-col gap-3">
+        <h2 id="luu-y" class="text-xl font-medium leading-7 text-brown-dark">Lưu ý khi đọc</h2>
+        <ul class="flex flex-col gap-3 text-base leading-[22px] tracking-[0.224px] text-gray-49">
+          <li class="flex items-start gap-3"><img src="assets/img/bang-chung-du-lieu/dot.svg" alt="" class="h-6 w-1.5 shrink-0"><span class="min-w-0 flex-1">Các nghiên cứu dưới đây thực hiện trên hoạt chất hoặc tổ hợp hoạt chất, không phải trên thành phẩm Dzentic.</span></li>
+          <li class="flex items-start gap-3"><img src="assets/img/bang-chung-du-lieu/dot.svg" alt="" class="h-6 w-1.5 shrink-0"><span class="min-w-0 flex-1">Dạng hoạt chất, nồng độ và công thức trong nghiên cứu có thể khác với sản phẩm Dzentic. Vì vậy, kết quả nghiên cứu không phải là kết quả của sản phẩm.</span></li>
+          <li class="flex items-start gap-3"><img src="assets/img/bang-chung-du-lieu/dot.svg" alt="" class="h-6 w-1.5 shrink-0"><span class="min-w-0 flex-1">Một số nghiên cứu được thực hiện trên người có tình trạng da cần chăm sóc y khoa. Việc liệt kê nhằm minh bạch cơ sở khoa học, không có nghĩa sản phẩm Dzentic có công dụng điều trị.</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION: Evidence Group Tabs (E0–E8). Tab: data-tabs / data-tab / data-tab-panel (main.js) -->
+<section class="bg-bg" aria-label="Bằng chứng theo nhóm">
+  <div data-tabs>
+    <div class="mx-auto max-w-site">
+      <div role="tablist" aria-label="Nhóm bằng chứng" class="flex items-end gap-4 overflow-x-auto border-b border-gray-dd px-4 pt-2 [scrollbar-width:none] md:px-8 xl:justify-between xl:px-[72px] [&::-webkit-scrollbar]:hidden">
+        <button type="button" role="tab" id="tab-e0" data-tab="e0" aria-selected="true" aria-controls="panel-e0" class="shrink-0 whitespace-nowrap border-b border-gray-bb px-2 pb-2 text-lg leading-7 text-gray-99 hover:border-gray-99 hover:text-gray-66 aria-selected:border-navy aria-selected:text-navy md:text-xl focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-brown">Thành phẩm</button>
+        <button type="button" role="tab" id="tab-e1" data-tab="e1" aria-selected="false" aria-controls="panel-e1" class="shrink-0 whitespace-nowrap border-b border-gray-bb px-2 pb-2 text-lg leading-7 text-gray-99 hover:border-gray-99 hover:text-gray-66 aria-selected:border-navy aria-selected:text-navy md:text-xl focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-brown">Làm sáng</button>
+        <button type="button" role="tab" id="tab-e2" data-tab="e2" aria-selected="false" aria-controls="panel-e2" class="shrink-0 whitespace-nowrap border-b border-gray-bb px-2 pb-2 text-lg leading-7 text-gray-99 hover:border-gray-99 hover:text-gray-66 aria-selected:border-navy aria-selected:text-navy md:text-xl focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-brown">Chống oxy hóa</button>
+        <button type="button" role="tab" id="tab-e3" data-tab="e3" aria-selected="false" aria-controls="panel-e3" class="shrink-0 whitespace-nowrap border-b border-gray-bb px-2 pb-2 text-lg leading-7 text-gray-99 hover:border-gray-99 hover:text-gray-66 aria-selected:border-navy aria-selected:text-navy md:text-xl focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-brown">Bề mặt da</button>
+        <button type="button" role="tab" id="tab-e4" data-tab="e4" aria-selected="false" aria-controls="panel-e4" class="shrink-0 whitespace-nowrap border-b border-gray-bb px-2 pb-2 text-lg leading-7 text-gray-99 hover:border-gray-99 hover:text-gray-66 aria-selected:border-navy aria-selected:text-navy md:text-xl focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-brown">Peptide</button>
+        <button type="button" role="tab" id="tab-e5" data-tab="e5" aria-selected="false" aria-controls="panel-e5" class="shrink-0 whitespace-nowrap border-b border-gray-bb px-2 pb-2 text-lg leading-7 text-gray-99 hover:border-gray-99 hover:text-gray-66 aria-selected:border-navy aria-selected:text-navy md:text-xl focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-brown">Giữ ẩm</button>
+        <button type="button" role="tab" id="tab-e6" data-tab="e6" aria-selected="false" aria-controls="panel-e6" class="shrink-0 whitespace-nowrap border-b border-gray-bb px-2 pb-2 text-lg leading-7 text-gray-99 hover:border-gray-99 hover:text-gray-66 aria-selected:border-navy aria-selected:text-navy md:text-xl focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-brown">Mụn &amp; làm sạch</button>
+        <button type="button" role="tab" id="tab-e7" data-tab="e7" aria-selected="false" aria-controls="panel-e7" class="shrink-0 whitespace-nowrap border-b border-gray-bb px-2 pb-2 text-lg leading-7 text-gray-99 hover:border-gray-99 hover:text-gray-66 aria-selected:border-navy aria-selected:text-navy md:text-xl focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-brown">Chống nắng</button>
+        <button type="button" role="tab" id="tab-e8" data-tab="e8" aria-selected="false" aria-controls="panel-e8" class="shrink-0 whitespace-nowrap border-b border-gray-bb px-2 pb-2 text-lg leading-7 text-gray-99 hover:border-gray-99 hover:text-gray-66 aria-selected:border-navy aria-selected:text-navy md:text-xl focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-brown">Nghiên cứu y khoa</button>
+      </div>
+      <div data-tab-panel="e0" role="tabpanel" id="panel-e0" aria-labelledby="tab-e0" tabindex="0" class="flex flex-col gap-6 px-4 pb-12 pt-8 md:px-8 xl:px-[72px] xl:pb-[72px] xl:pt-12 focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-brown">
+        <div class="flex flex-col gap-2 uppercase">
+          <p class="text-sm leading-[22px] tracking-[4px] text-brown md:text-base">E0</p>
+          <h3 class="text-3xl leading-[1.4] tracking-[0.624px] text-brown-dark md:text-5xl">Nghiên cứu trên thành phẩm Dzentic</h3>
+        </div>
+        <div class="flex items-start gap-2 rounded-md border-l-4 border-brown bg-brown-50 px-5 py-4" role="status">
+          <img src="assets/img/bang-chung-du-lieu/icon-clock.svg" alt="" class="size-5 shrink-0">
+          <p class="text-base leading-[22px] tracking-[0.224px] text-brown-dark">Đang chờ cập nhật kết quả lâm sàng tại Bệnh viện Da liễu Hà Nội.</p>
+        </div>
+        <div role="table" aria-label="Chương trình nghiên cứu trên thành phẩm" class="overflow-hidden rounded-md border border-gray-dd bg-white">
+          <div role="row" class="hidden gap-6 bg-gray-ee px-6 py-4 text-base font-medium leading-[22px] tracking-[0.192px] text-brown-dark lg:grid lg:grid-cols-[minmax(0,520fr)_minmax(0,240fr)_minmax(0,436fr)]">
+            <p role="columnheader">Chương trình</p><p role="columnheader">Trạng thái</p><p role="columnheader">Kết quả</p>
+          </div>
+          <div role="row" class="grid gap-3 border-t border-gray-ee px-4 py-5 text-sm leading-5 tracking-[0.14px] lg:grid-cols-[minmax(0,520fr)_minmax(0,240fr)_minmax(0,436fr)] lg:gap-6 lg:px-6">
+            <p role="cell" class="font-medium text-brown-dark"><span class="mb-1 block text-xs leading-4 text-gray-66 lg:hidden">Chương trình</span>Đánh giá khả năng dung nạp và mức độ cải thiện khi dùng sản phẩm Dzentic trên người Việt Nam</p>
+            <p role="cell" class="text-brown"><span class="mb-1 block text-xs leading-4 text-gray-66 lg:hidden">Trạng thái</span>Đang hoàn thiện hồ sơ</p>
+            <p role="cell" class="text-gray-49"><span class="mb-1 block text-xs leading-4 text-gray-66 lg:hidden">Kết quả</span>Chưa có. Sẽ cập nhật sau khi đánh giá hoàn tất.</p>
+          </div>
+          <div role="row" class="grid gap-3 border-t border-gray-ee px-4 py-5 text-sm leading-5 tracking-[0.14px] lg:grid-cols-[minmax(0,520fr)_minmax(0,240fr)_minmax(0,436fr)] lg:gap-6 lg:px-6">
+            <p role="cell" class="font-medium text-brown-dark"><span class="mb-1 block text-xs leading-4 text-gray-66 lg:hidden">Chương trình</span>Kiểm nghiệm thành phẩm</p>
+            <p role="cell" class="text-brown"><span class="mb-1 block text-xs leading-4 text-gray-66 lg:hidden">Trạng thái</span>Đang cập nhật</p>
+            <p role="cell" class="text-gray-49"><span class="mb-1 block text-xs leading-4 text-gray-66 lg:hidden">Kết quả</span>—</p>
+          </div>
+        </div>
+      </div>
+      <div data-tab-panel="e1" role="tabpanel" id="panel-e1" aria-labelledby="tab-e1" tabindex="0" hidden class="flex flex-col gap-6 px-4 pb-12 pt-8 md:px-8 xl:px-[72px] xl:pb-[72px] xl:pt-12 focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-brown">
+        <div class="flex flex-wrap items-end gap-x-4 gap-y-3">
+          <div class="flex min-w-0 flex-1 basis-full flex-col gap-2 uppercase sm:basis-0">
+            <p class="text-sm leading-[22px] tracking-[4px] text-brown md:text-base">E1</p>
+            <h3 class="text-3xl leading-[1.4] tracking-[0.624px] text-brown-dark md:text-5xl">Làm sáng da</h3>
+          </div>
+          <span class="rounded-full bg-brown-50 px-[14px] py-1.5 text-sm leading-5 tracking-[0.14px] text-brown">Làm sáng</span>
+          <p class="text-sm leading-5 tracking-[0.14px] text-gray-66">5 nghiên cứu</p>
+        </div>
+        <div role="table" aria-label="Nghiên cứu nhóm Làm sáng" class="overflow-hidden rounded-md border border-gray-dd bg-white">
+            <div role="row" class="hidden gap-6 bg-gray-ee px-6 py-4 text-base font-medium leading-[22px] tracking-[0.192px] text-brown-dark lg:grid lg:grid-cols-[minmax(0,236fr)_minmax(0,356fr)_minmax(0,320fr)_minmax(0,264fr)]">
+              <p role="columnheader">Nghiên cứu</p><p role="columnheader">Hoạt chất · thiết kế · đối tượng</p><p role="columnheader">Kết quả chính</p><p role="columnheader">Mức bằng chứng · giới hạn</p>
+            </div>
+            <div role="row" class="grid gap-3 border-t border-gray-ee px-4 py-5 text-sm leading-5 tracking-[0.14px] lg:grid-cols-[minmax(0,236fr)_minmax(0,356fr)_minmax(0,320fr)_minmax(0,264fr)] lg:gap-6 lg:px-6 max-lg:[&:nth-child(2)]:border-t-0">
+              <p role="cell" class="font-medium text-brown-dark">Kimball AB và cs. Br J Dermatol 2010;162(2):435–441</p>
+              <p role="cell" class="text-gray-49"><span class="mb-1 block text-xs leading-4 text-gray-66 lg:hidden">Hoạt chất · thiết kế · đối tượng</span>Niacinamide 4% + N-acetyl glucosamine 2%. Ngẫu nhiên, mù đôi, đối chứng kem nền. 202 phụ nữ da trắng 40–60 tuổi, 8 tuần. Cả hai nhóm đều dùng kem chống nắng SPF 15.</p>
+              <p role="cell" class="text-navy"><span class="mb-1 block text-xs leading-4 text-gray-66 lg:hidden">Kết quả chính</span>Nhóm hoạt chất cho kết quả tốt hơn kem nền trên cả bốn phương pháp đo sắc tố (p&lt;0,05). 3,5% người tham gia có tác dụng không mong muốn liên quan đến sản phẩm.</p>
+              <p role="cell"><span class="mb-1 block text-xs leading-4 text-gray-66 lg:hidden">Mức bằng chứng · giới hạn</span><span class="font-medium text-brown">Cấp 2 – trên người.</span> <span class="text-gray-66">Nghiên cứu diễn ra vào mùa xuân – hè: sắc tố tăng ở cả hai nhóm, nhóm hoạt chất tăng ít hơn. Nồng độ NAG cao hơn Dzentic (1%). Do Procter &amp; Gamble tài trợ.</span></p>
+            </div>
+            <div role="row" class="grid gap-3 border-t border-gray-ee px-4 py-5 text-sm leading-5 tracking-[0.14px] lg:grid-cols-[minmax(0,236fr)_minmax(0,356fr)_minmax(0,320fr)_minmax(0,264fr)] lg:gap-6 lg:px-6">
+              <p role="cell" class="font-medium text-brown-dark">Hakozaki T và cs. Br J Dermatol 2002</p>
+              <p role="cell" class="text-gray-49"><span class="mb-1 block text-xs leading-4 text-gray-66 lg:hidden">Hoạt chất · thiết kế · đối tượng</span>Niacinamide. Mô hình nuôi cấy chung tế bào hắc tố và tế bào sừng.</p>
+              <p role="cell" class="text-navy"><span class="mb-1 block text-xs leading-4 text-gray-66 lg:hidden">Kết quả chính</span>Ức chế 35–68% quá trình chuyển melanosome. Không ức chế hoạt tính tyrosinase trong điều kiện nghiên cứu.</p>
+              <p role="cell"><span class="mb-1 block text-xs leading-4 text-gray-66 lg:hidden">Mức bằng chứng · giới hạn</span><span class="font-medium text-brown">Cấp 2 – phòng thí nghiệm.</span> <span class="text-gray-66">Các nghiên cứu sau này có kết quả không đồng nhất về tác động lên tyrosinase.</span></p>
+            </div>
+            <div role="row" class="grid gap-3 border-t border-gray-ee px-4 py-5 text-sm leading-5 tracking-[0.14px] lg:grid-cols-[minmax(0,236fr)_minmax(0,356fr)_minmax(0,320fr)_minmax(0,264fr)] lg:gap-6 lg:px-6">
+              <p role="cell" class="font-medium text-brown-dark">Sugimoto K và cs. Biol Pharm Bull 2004</p>
+              <p role="cell" class="text-gray-49"><span class="mb-1 block text-xs leading-4 text-gray-66 lg:hidden">Hoạt chất · thiết kế · đối tượng</span>Alpha-arbutin. Tế bào hắc tố người và mô hình da tái tạo ba chiều.</p>
+              <p role="cell" class="text-navy"><span class="mb-1 block text-xs leading-4 text-gray-66 lg:hidden">Kết quả chính</span>Tổng hợp melanin giảm còn 76% (tế bào nuôi cấy) và 40% (mô hình ba chiều) so với nhóm chứng. Không gây độc tế bào ở nồng độ dưới 1,0 mM.</p>
+              <p role="cell"><span class="mb-1 block text-xs leading-4 text-gray-66 lg:hidden">Mức bằng chứng · giới hạn</span><span class="font-medium text-brown">Cấp 2 – phòng thí nghiệm.</span> <span class="text-gray-66">Nồng độ trong ống nghiệm không quy đổi trực tiếp sang nồng độ 1% trong sản phẩm.</span></p>
+            </div>
+            <div role="row" class="grid gap-3 border-t border-gray-ee px-4 py-5 text-sm leading-5 tracking-[0.14px] lg:grid-cols-[minmax(0,236fr)_minmax(0,356fr)_minmax(0,320fr)_minmax(0,264fr)] lg:gap-6 lg:px-6">
+              <p role="cell" class="font-medium text-brown-dark">Tài liệu kỹ thuật alpha-arbutin, DSM Personal Care, 2021</p>
+              <p role="cell" class="text-gray-49"><span class="mb-1 block text-xs leading-4 text-gray-66 lg:hidden">Hoạt chất · thiết kế · đối tượng</span>Alpha-arbutin 1%. Hai nghiên cứu trên người: 80 phụ nữ trong 1 tháng; 26 phụ nữ có đốm nâu trong 3 tháng.</p>
+              <p role="cell" class="text-navy"><span class="mb-1 block text-xs leading-4 text-gray-66 lg:hidden">Kết quả chính</span>Tỷ lệ cải thiện đốm nâu: 53,7% với alpha-arbutin so với 30,6% với beta-arbutin.</p>
+              <p role="cell"><span class="mb-1 block text-xs leading-4 text-gray-66 lg:hidden">Mức bằng chứng · giới hạn</span><span class="font-medium text-brown">Cấp 2 – dữ liệu nhà cung cấp.</span> <span class="text-gray-66">Chưa đăng trên tạp chí bình duyệt. Không công bố giá trị p và phương pháp ngẫu nhiên hóa.</span></p>
+            </div>
+            <div role="row" class="grid gap-3 border-t border-gray-ee px-4 py-5 text-sm leading-5 tracking-[0.14px] lg:grid-cols-[minmax(0,236fr)_minmax(0,356fr)_minmax(0,320fr)_minmax(0,264fr)] lg:gap-6 lg:px-6">
+              <p role="cell" class="font-medium text-brown-dark">SCCS/1642/22 (Ủy ban Khoa học về An toàn Người tiêu dùng, EU), bản cuối 2023</p>
+              <p role="cell" class="text-gray-49"><span class="mb-1 block text-xs leading-4 text-gray-66 lg:hidden">Hoạt chất · thiết kế · đối tượng</span>Đánh giá an toàn alpha-arbutin.</p>
+              <p role="cell" class="text-navy"><span class="mb-1 block text-xs leading-4 text-gray-66 lg:hidden">Kết quả chính</span>An toàn đến 2% trong kem dùng cho mặt, với điều kiện hydroquinone tồn dư ở mức vết.</p>
+              <p role="cell"><span class="mb-1 block text-xs leading-4 text-gray-66 lg:hidden">Mức bằng chứng · giới hạn</span><span class="font-medium text-brown">Đánh giá an toàn của cơ quan khoa học.</span></p>
+            </div>
+        </div>
+      </div>
+      <div data-tab-panel="e2" role="tabpanel" id="panel-e2" aria-labelledby="tab-e2" tabindex="0" hidden class="flex flex-col gap-6 px-4 pb-12 pt-8 md:px-8 xl:px-[72px] xl:pb-[72px] xl:pt-12 focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-brown">
+        <div class="flex flex-wrap items-end gap-x-4 gap-y-3">
+          <div class="flex min-w-0 flex-1 basis-full flex-col gap-2 uppercase sm:basis-0">
+            <p class="text-sm leading-[22px] tracking-[4px] text-brown md:text-base">E2</p>
+            <h3 class="text-3xl leading-[1.4] tracking-[0.624px] text-brown-dark md:text-5xl">Chống oxy hóa</h3>
+          </div>
+          <span class="rounded-full bg-brown-50 px-[14px] py-1.5 text-sm leading-5 tracking-[0.14px] text-brown">Chống oxy hóa</span>
+          <p class="text-sm leading-5 tracking-[0.14px] text-gray-66">3 nghiên cứu</p>
+        </div>
+        <div role="table" aria-label="Nghiên cứu nhóm Chống oxy hóa" class="overflow-hidden rounded-md border border-gray-dd bg-white">
+            <div role="row" class="hidden gap-6 bg-gray-ee px-6 py-4 text-base font-medium leading-[22px] tracking-[0.192px] text-brown-dark lg:grid lg:grid-cols-[minmax(0,236fr)_minmax(0,356fr)_minmax(0,320fr)_minmax(0,264fr)]">
+              <p role="columnheader">Nghiên cứu</p><p role="columnheader">Hoạt chất · thiết kế · đối tượng</p><p role="columnheader">Kết quả chính</p><p role="columnheader">Mức bằng chứng · giới hạn</p>
+            </div>
+            <div role="row" class="grid gap-3 border-t border-gray-ee px-4 py-5 text-sm leading-5 tracking-[0.14px] lg:grid-cols-[minmax(0,236fr)_minmax(0,356fr)_minmax(0,320fr)_minmax(0,264fr)] lg:gap-6 lg:px-6 max-lg:[&:nth-child(2)]:border-t-0">
+              <p role="cell" class="font-medium text-brown-dark">Lin JY và cs. J Am Acad Dermatol 2003</p>
+              <p role="cell" class="text-gray-49"><span class="mb-1 block text-xs leading-4 text-gray-66 lg:hidden">Hoạt chất · thiết kế · đối tượng</span>L-ascorbic acid 15% và α-tocopherol 1%, dùng riêng và phối hợp. Da lợn, chiếu tia mô phỏng ánh nắng.</p>
+              <p role="cell" class="text-navy"><span class="mb-1 block text-xs leading-4 text-gray-66 lg:hidden">Kết quả chính</span>Mỗi vitamin dùng riêng cho mức bảo vệ gấp khoảng 2 lần kem nền. Phối hợp hai vitamin cho mức bảo vệ gấp khoảng 4 lần.</p>
+              <p role="cell"><span class="mb-1 block text-xs leading-4 text-gray-66 lg:hidden">Mức bằng chứng · giới hạn</span><span class="font-medium text-brown">Cấp 2 – phòng thí nghiệm.</span> <span class="text-gray-66">Dạng vitamin và nồng độ khác với Photo Defense Serum (dạng ester, 0,2% và 0,1%). Kết quả là cơ sở cho nguyên lý phối hợp, không phải mức bảo vệ của sản phẩm.</span></p>
+            </div>
+            <div role="row" class="grid gap-3 border-t border-gray-ee px-4 py-5 text-sm leading-5 tracking-[0.14px] lg:grid-cols-[minmax(0,236fr)_minmax(0,356fr)_minmax(0,320fr)_minmax(0,264fr)] lg:gap-6 lg:px-6">
+              <p role="cell" class="font-medium text-brown-dark">Krusic PJ và cs. Science 1991</p>
+              <p role="cell" class="text-gray-49"><span class="mb-1 block text-xs leading-4 text-gray-66 lg:hidden">Hoạt chất · thiết kế · đối tượng</span>Fullerene C60. Thí nghiệm hóa học, đo bằng khối phổ.</p>
+              <p role="cell" class="text-navy"><span class="mb-1 block text-xs leading-4 text-gray-66 lg:hidden">Kết quả chính</span>Một phân tử C60 gắn được ít nhất 34 gốc methyl.</p>
+              <p role="cell"><span class="mb-1 block text-xs leading-4 text-gray-66 lg:hidden">Mức bằng chứng · giới hạn</span><span class="font-medium text-brown">Cấp 1 – hóa học.</span> <span class="text-gray-66">Không phản ánh số gốc tự do được thu gom trên da người.</span></p>
+            </div>
+            <div role="row" class="grid gap-3 border-t border-gray-ee px-4 py-5 text-sm leading-5 tracking-[0.14px] lg:grid-cols-[minmax(0,236fr)_minmax(0,356fr)_minmax(0,320fr)_minmax(0,264fr)] lg:gap-6 lg:px-6">
+              <p role="cell" class="font-medium text-brown-dark">Inui S và cs. J Nanobiotechnology 2014;12:6</p>
+              <p role="cell" class="text-gray-49"><span class="mb-1 block text-xs leading-4 text-gray-66 lg:hidden">Hoạt chất · thiết kế · đối tượng</span>Lotion fullerene 1%. 10 phụ nữ Nhật Bản, nhãn mở, 8 tuần. Kèm thí nghiệm trên mô hình biểu bì.</p>
+              <p role="cell" class="text-navy"><span class="mb-1 block text-xs leading-4 text-gray-66 lg:hidden">Kết quả chính</span>Số lỗ chân lông thấy rõ trên ảnh chuẩn hóa giảm 17,6% (p&lt;0,05).</p>
+              <p role="cell"><span class="mb-1 block text-xs leading-4 text-gray-66 lg:hidden">Mức bằng chứng · giới hạn</span><span class="font-medium text-brown">Cấp 2 – trên người, bằng chứng thấp.</span> <span class="text-gray-66">Không có nhóm chứng, không làm mù, cỡ mẫu 10 người. Do công ty nguyên liệu tài trợ. Nồng độ cao hơn Photo Defense (0,1%).</span></p>
+            </div>
+        </div>
+      </div>
+      <div data-tab-panel="e3" role="tabpanel" id="panel-e3" aria-labelledby="tab-e3" tabindex="0" hidden class="flex flex-col gap-6 px-4 pb-12 pt-8 md:px-8 xl:px-[72px] xl:pb-[72px] xl:pt-12 focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-brown">
+        <div class="flex flex-wrap items-end gap-x-4 gap-y-3">
+          <div class="flex min-w-0 flex-1 basis-full flex-col gap-2 uppercase sm:basis-0">
+            <p class="text-sm leading-[22px] tracking-[4px] text-brown md:text-base">E3</p>
+            <h3 class="text-3xl leading-[1.4] tracking-[0.624px] text-brown-dark md:text-5xl">Bề mặt da</h3>
+          </div>
+          <span class="rounded-full bg-brown-50 px-[14px] py-1.5 text-sm leading-5 tracking-[0.14px] text-brown">Bề mặt da</span>
+          <p class="text-sm leading-5 tracking-[0.14px] text-gray-66">2 nghiên cứu</p>
+        </div>
+        <div role="table" aria-label="Nghiên cứu nhóm Bề mặt da" class="overflow-hidden rounded-md border border-gray-dd bg-white">
+            <div role="row" class="hidden gap-6 bg-gray-ee px-6 py-4 text-base font-medium leading-[22px] tracking-[0.192px] text-brown-dark lg:grid lg:grid-cols-[minmax(0,236fr)_minmax(0,356fr)_minmax(0,320fr)_minmax(0,264fr)]">
+              <p role="columnheader">Nghiên cứu</p><p role="columnheader">Hoạt chất · thiết kế · đối tượng</p><p role="columnheader">Kết quả chính</p><p role="columnheader">Mức bằng chứng · giới hạn</p>
+            </div>
+            <div role="row" class="grid gap-3 border-t border-gray-ee px-4 py-5 text-sm leading-5 tracking-[0.14px] lg:grid-cols-[minmax(0,236fr)_minmax(0,356fr)_minmax(0,320fr)_minmax(0,264fr)] lg:gap-6 lg:px-6 max-lg:[&:nth-child(2)]:border-t-0">
+              <p role="cell" class="font-medium text-brown-dark">Báo cáo tại Hội nghị AMWC Monaco 2025</p>
+              <p role="cell" class="text-gray-49"><span class="mb-1 block text-xs leading-4 text-gray-66 lg:hidden">Hoạt chất · thiết kế · đối tượng</span>So sánh HPR 0,2%, retinol 0,2% và retinal 0,2%. 42 người chia 3 nhóm, bôi mỗi tối trong 4 tuần.</p>
+              <p role="cell" class="text-navy"><span class="mb-1 block text-xs leading-4 text-gray-66 lg:hidden">Kết quả chính</span>71% người dùng HPR nhận thấy da mịn hơn, so với 61% ở nhóm retinol và 69% ở nhóm retinal (tự đánh giá).</p>
+              <p role="cell"><span class="mb-1 block text-xs leading-4 text-gray-66 lg:hidden">Mức bằng chứng · giới hạn</span><span class="font-medium text-brown">Cấp 2 – báo cáo hội nghị.</span> <span class="text-gray-66">Chưa phải bài báo bình duyệt đầy đủ, thời gian ngắn. Chỉ đăng khi có trích dẫn đầy đủ.</span></p>
+            </div>
+            <div role="row" class="grid gap-3 border-t border-gray-ee px-4 py-5 text-sm leading-5 tracking-[0.14px] lg:grid-cols-[minmax(0,236fr)_minmax(0,356fr)_minmax(0,320fr)_minmax(0,264fr)] lg:gap-6 lg:px-6">
+              <p role="cell" class="font-medium text-brown-dark">Dębowska và cs. Dermatology Review 2015</p>
+              <p role="cell" class="text-gray-49"><span class="mb-1 block text-xs leading-4 text-gray-66 lg:hidden">Hoạt chất · thiết kế · đối tượng</span>Mandelic acid 5% và 10%. 60 người, tiến cứu, 2 tháng.</p>
+              <p role="cell" class="text-navy"><span class="mb-1 block text-xs leading-4 text-gray-66 lg:hidden">Kết quả chính</span>Ghi nhận cải thiện trên da dễ nổi mụn. Dung nạp tốt, không có ca bỏ cuộc.</p>
+              <p role="cell"><span class="mb-1 block text-xs leading-4 text-gray-66 lg:hidden">Mức bằng chứng · giới hạn</span><span class="font-medium text-brown">Cấp 2 – trên người.</span> <span class="text-gray-66">Không có nhóm đối chứng kem nền.</span></p>
+            </div>
+        </div>
+      </div>
+      <div data-tab-panel="e4" role="tabpanel" id="panel-e4" aria-labelledby="tab-e4" tabindex="0" hidden class="flex flex-col gap-6 px-4 pb-12 pt-8 md:px-8 xl:px-[72px] xl:pb-[72px] xl:pt-12 focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-brown">
+        <div class="flex flex-wrap items-end gap-x-4 gap-y-3">
+          <div class="flex min-w-0 flex-1 basis-full flex-col gap-2 uppercase sm:basis-0">
+            <p class="text-sm leading-[22px] tracking-[4px] text-brown md:text-base">E4</p>
+            <h3 class="text-3xl leading-[1.4] tracking-[0.624px] text-brown-dark md:text-5xl">Peptide</h3>
+          </div>
+          <span class="rounded-full bg-brown-50 px-[14px] py-1.5 text-sm leading-5 tracking-[0.14px] text-brown">Peptide</span>
+          <p class="text-sm leading-5 tracking-[0.14px] text-gray-66">2 nghiên cứu</p>
+        </div>
+        <div role="table" aria-label="Nghiên cứu nhóm Peptide" class="overflow-hidden rounded-md border border-gray-dd bg-white">
+            <div role="row" class="hidden gap-6 bg-gray-ee px-6 py-4 text-base font-medium leading-[22px] tracking-[0.192px] text-brown-dark lg:grid lg:grid-cols-[minmax(0,236fr)_minmax(0,356fr)_minmax(0,320fr)_minmax(0,264fr)]">
+              <p role="columnheader">Nghiên cứu</p><p role="columnheader">Hoạt chất · thiết kế · đối tượng</p><p role="columnheader">Kết quả chính</p><p role="columnheader">Mức bằng chứng · giới hạn</p>
+            </div>
+            <div role="row" class="grid gap-3 border-t border-gray-ee px-4 py-5 text-sm leading-5 tracking-[0.14px] lg:grid-cols-[minmax(0,236fr)_minmax(0,356fr)_minmax(0,320fr)_minmax(0,264fr)] lg:gap-6 lg:px-6 max-lg:[&:nth-child(2)]:border-t-0">
+              <p role="cell" class="font-medium text-brown-dark">Wang Y và cs. Am J Clin Dermatol 2013;14(2):147–153</p>
+              <p role="cell" class="text-gray-49"><span class="mb-1 block text-xs leading-4 text-gray-66 lg:hidden">Hoạt chất · thiết kế · đối tượng</span>Acetyl hexapeptide-8 10%. Ngẫu nhiên, mù đôi, đối chứng giả dược. 60 người Trung Quốc 25–60 tuổi, bôi quanh mắt trong 4 tuần.</p>
+              <p role="cell" class="text-navy"><span class="mb-1 block text-xs leading-4 text-gray-66 lg:hidden">Kết quả chính</span>48,9% người dùng hoạt chất đạt hiệu quả giảm nhăn theo thang điểm, so với 0% ở nhóm giả dược. Các chỉ số độ nhám đo khách quan giảm có ý nghĩa (p&lt;0,01).</p>
+              <p role="cell"><span class="mb-1 block text-xs leading-4 text-gray-66 lg:hidden">Mức bằng chứng · giới hạn</span><span class="font-medium text-brown">Cấp 2 – trên người.</span> <span class="text-gray-66">Tác giả công bố không nhận tài trợ. Nồng độ cao gấp 20 lần NeoBright (0,5%). Thời gian ngắn, nhóm giả dược chỉ 15 người.</span></p>
+            </div>
+            <div role="row" class="grid gap-3 border-t border-gray-ee px-4 py-5 text-sm leading-5 tracking-[0.14px] lg:grid-cols-[minmax(0,236fr)_minmax(0,356fr)_minmax(0,320fr)_minmax(0,264fr)] lg:gap-6 lg:px-6">
+              <p role="cell" class="font-medium text-brown-dark">Dữ liệu nhà cung cấp Methylglucoside Phosphate (và) Copper Lysinate/Prolinate; trình bày lại trong bằng sáng chế Hoa Kỳ US10124030B2</p>
+              <p role="cell" class="text-gray-49"><span class="mb-1 block text-xs leading-4 text-gray-66 lg:hidden">Hoạt chất · thiết kế · đối tượng</span>Mảnh da người ngoài cơ thể (0,5%, 11 ngày). Thử nghiệm mù đôi có giả dược trên 20 người (1%, 15 ngày).</p>
+              <p role="cell" class="text-navy"><span class="mb-1 block text-xs leading-4 text-gray-66 lg:hidden">Kết quả chính</span>Mảnh da: collagen I, collagen III và elastin tăng. Trên người: độ sâu nếp nhăn giảm 15%.</p>
+              <p role="cell"><span class="mb-1 block text-xs leading-4 text-gray-66 lg:hidden">Mức bằng chứng · giới hạn</span><span class="font-medium text-brown">Cấp 2 – dữ liệu nhà cung cấp.</span> <span class="text-gray-66">Chưa đăng trên tạp chí bình duyệt. Hai tài liệu cùng dựa trên một bộ dữ liệu gốc, không phải hai bằng chứng độc lập.</span></p>
+            </div>
+        </div>
+      </div>
+      <div data-tab-panel="e5" role="tabpanel" id="panel-e5" aria-labelledby="tab-e5" tabindex="0" hidden class="flex flex-col gap-6 px-4 pb-12 pt-8 md:px-8 xl:px-[72px] xl:pb-[72px] xl:pt-12 focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-brown">
+        <div class="flex flex-wrap items-end gap-x-4 gap-y-3">
+          <div class="flex min-w-0 flex-1 basis-full flex-col gap-2 uppercase sm:basis-0">
+            <p class="text-sm leading-[22px] tracking-[4px] text-brown md:text-base">E5</p>
+            <h3 class="text-3xl leading-[1.4] tracking-[0.624px] text-brown-dark md:text-5xl">Giữ ẩm và lipid lớp sừng</h3>
+          </div>
+          <span class="rounded-full bg-brown-50 px-[14px] py-1.5 text-sm leading-5 tracking-[0.14px] text-brown">Giữ ẩm</span>
+          <p class="text-sm leading-5 tracking-[0.14px] text-gray-66">4 nghiên cứu</p>
+        </div>
+        <div role="table" aria-label="Nghiên cứu nhóm Giữ ẩm" class="overflow-hidden rounded-md border border-gray-dd bg-white">
+            <div role="row" class="hidden gap-6 bg-gray-ee px-6 py-4 text-base font-medium leading-[22px] tracking-[0.192px] text-brown-dark lg:grid lg:grid-cols-[minmax(0,236fr)_minmax(0,356fr)_minmax(0,320fr)_minmax(0,264fr)]">
+              <p role="columnheader">Nghiên cứu</p><p role="columnheader">Hoạt chất · thiết kế · đối tượng</p><p role="columnheader">Kết quả chính</p><p role="columnheader">Mức bằng chứng · giới hạn</p>
+            </div>
+            <div role="row" class="grid gap-3 border-t border-gray-ee px-4 py-5 text-sm leading-5 tracking-[0.14px] lg:grid-cols-[minmax(0,236fr)_minmax(0,356fr)_minmax(0,320fr)_minmax(0,264fr)] lg:gap-6 lg:px-6 max-lg:[&:nth-child(2)]:border-t-0">
+              <p role="cell" class="font-medium text-brown-dark">Man MQ và cs. J Invest Dermatol 1996</p>
+              <p role="cell" class="text-gray-49"><span class="mb-1 block text-xs leading-4 text-gray-66 lg:hidden">Hoạt chất · thiết kế · đối tượng</span>Hỗn hợp lipid lớp sừng (ceramide, cholesterol, acid béo). Mô hình da bị tổn thương hàng rào.</p>
+              <p role="cell" class="text-navy"><span class="mb-1 block text-xs leading-4 text-gray-66 lg:hidden">Kết quả chính</span>Chỉ hỗn hợp đủ ba nhóm lipid mới cho quá trình phục hồi bình thường. Dùng một hoặc hai nhóm làm chậm phục hồi.</p>
+              <p role="cell"><span class="mb-1 block text-xs leading-4 text-gray-66 lg:hidden">Mức bằng chứng · giới hạn</span><span class="font-medium text-brown">Cấp 2 – phòng thí nghiệm.</span></p>
+            </div>
+            <div role="row" class="grid gap-3 border-t border-gray-ee px-4 py-5 text-sm leading-5 tracking-[0.14px] lg:grid-cols-[minmax(0,236fr)_minmax(0,356fr)_minmax(0,320fr)_minmax(0,264fr)] lg:gap-6 lg:px-6">
+              <p role="cell" class="font-medium text-brown-dark">Zettersten EM và cs. J Am Acad Dermatol 1997</p>
+              <p role="cell" class="text-gray-49"><span class="mb-1 block text-xs leading-4 text-gray-66 lg:hidden">Hoạt chất · thiết kế · đối tượng</span>Hỗn hợp lipid ưu thế cholesterol. Da lão hóa, có nhánh trên 6 người (tuổi trung bình 80).</p>
+              <p role="cell" class="text-navy"><span class="mb-1 block text-xs leading-4 text-gray-66 lg:hidden">Kết quả chính</span>Hàng rào da phục hồi nhanh hơn so với kem nền.</p>
+              <p role="cell"><span class="mb-1 block text-xs leading-4 text-gray-66 lg:hidden">Mức bằng chứng · giới hạn</span><span class="font-medium text-brown">Cấp 2.</span> <span class="text-gray-66">Cỡ mẫu rất nhỏ.</span></p>
+            </div>
+            <div role="row" class="grid gap-3 border-t border-gray-ee px-4 py-5 text-sm leading-5 tracking-[0.14px] lg:grid-cols-[minmax(0,236fr)_minmax(0,356fr)_minmax(0,320fr)_minmax(0,264fr)] lg:gap-6 lg:px-6">
+              <p role="cell" class="font-medium text-brown-dark">Tanno O và cs. Br J Dermatol 2000</p>
+              <p role="cell" class="text-gray-49"><span class="mb-1 block text-xs leading-4 text-gray-66 lg:hidden">Hoạt chất · thiết kế · đối tượng</span>Niacinamide 2%. So sánh với kem nền, 12 người, 4 tuần.</p>
+              <p role="cell" class="text-navy"><span class="mb-1 block text-xs leading-4 text-gray-66 lg:hidden">Kết quả chính</span>Ceramide lớp sừng tăng 34%. Mất nước qua da thấp hơn kem nền 27%.</p>
+              <p role="cell"><span class="mb-1 block text-xs leading-4 text-gray-66 lg:hidden">Mức bằng chứng · giới hạn</span><span class="font-medium text-brown">Cấp 2 – trên người.</span> <span class="text-gray-66">Cỡ mẫu nhỏ.</span></p>
+            </div>
+            <div role="row" class="grid gap-3 border-t border-gray-ee px-4 py-5 text-sm leading-5 tracking-[0.14px] lg:grid-cols-[minmax(0,236fr)_minmax(0,356fr)_minmax(0,320fr)_minmax(0,264fr)] lg:gap-6 lg:px-6">
+              <p role="cell" class="font-medium text-brown-dark">Camargo FB Jr và cs. J Cosmet Sci 2011</p>
+              <p role="cell" class="text-gray-49"><span class="mb-1 block text-xs leading-4 text-gray-66 lg:hidden">Hoạt chất · thiết kế · đối tượng</span>Panthenol 1% và 5%. Mù đơn, đối chứng giả dược, 40 người, 30 ngày.</p>
+              <p role="cell" class="text-navy"><span class="mb-1 block text-xs leading-4 text-gray-66 lg:hidden">Kết quả chính</span>Mất nước qua da giảm so với ban đầu và so với nhóm chứng (p&lt;0,001).</p>
+              <p role="cell"><span class="mb-1 block text-xs leading-4 text-gray-66 lg:hidden">Mức bằng chứng · giới hạn</span><span class="font-medium text-brown">Cấp 2 – trên người.</span></p>
+            </div>
+        </div>
+      </div>
+      <div data-tab-panel="e6" role="tabpanel" id="panel-e6" aria-labelledby="tab-e6" tabindex="0" hidden class="flex flex-col gap-6 px-4 pb-12 pt-8 md:px-8 xl:px-[72px] xl:pb-[72px] xl:pt-12 focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-brown">
+        <div class="flex flex-wrap items-end gap-x-4 gap-y-3">
+          <div class="flex min-w-0 flex-1 basis-full flex-col gap-2 uppercase sm:basis-0">
+            <p class="text-sm leading-[22px] tracking-[4px] text-brown md:text-base">E6</p>
+            <h3 class="text-3xl leading-[1.4] tracking-[0.624px] text-brown-dark md:text-5xl">Da dễ nổi mụn và làm sạch</h3>
+          </div>
+          <span class="rounded-full bg-brown-50 px-[14px] py-1.5 text-sm leading-5 tracking-[0.14px] text-brown">Da dễ nổi mụn · Làm sạch</span>
+          <p class="text-sm leading-5 tracking-[0.14px] text-gray-66">3 nghiên cứu</p>
+        </div>
+        <div role="table" aria-label="Nghiên cứu nhóm Da dễ nổi mụn · Làm sạch" class="overflow-hidden rounded-md border border-gray-dd bg-white">
+            <div role="row" class="hidden gap-6 bg-gray-ee px-6 py-4 text-base font-medium leading-[22px] tracking-[0.192px] text-brown-dark lg:grid lg:grid-cols-[minmax(0,236fr)_minmax(0,356fr)_minmax(0,320fr)_minmax(0,264fr)]">
+              <p role="columnheader">Nghiên cứu</p><p role="columnheader">Hoạt chất · thiết kế · đối tượng</p><p role="columnheader">Kết quả chính</p><p role="columnheader">Mức bằng chứng · giới hạn</p>
+            </div>
+            <div role="row" class="grid gap-3 border-t border-gray-ee px-4 py-5 text-sm leading-5 tracking-[0.14px] lg:grid-cols-[minmax(0,236fr)_minmax(0,356fr)_minmax(0,320fr)_minmax(0,264fr)] lg:gap-6 lg:px-6 max-lg:[&:nth-child(2)]:border-t-0">
+              <p role="cell" class="font-medium text-brown-dark">Draelos ZD và cs. J Cosmet Laser Ther 2006;8(2):96–101</p>
+              <p role="cell" class="text-gray-49"><span class="mb-1 block text-xs leading-4 text-gray-66 lg:hidden">Hoạt chất · thiết kế · đối tượng</span>Gel niacinamide 2% + panthenol 1%. Nhánh Nhật Bản: mù đôi, đối chứng giả dược, 100 phụ nữ, 4 tuần. Nhánh Hoa Kỳ: 30 phụ nữ.</p>
+              <p role="cell" class="text-navy"><span class="mb-1 block text-xs leading-4 text-gray-66 lg:hidden">Kết quả chính</span>Nhánh Nhật: tốc độ tiết bã giảm 21,8% so với 10,7% ở nhóm giả dược tại tuần 4 (p=0,027). Nhánh Hoa Kỳ: chỉ số đo bằng thiết bị không khác biệt có ý nghĩa.</p>
+              <p role="cell"><span class="mb-1 block text-xs leading-4 text-gray-66 lg:hidden">Mức bằng chứng · giới hạn</span><span class="font-medium text-brown">Cấp 2 – trên người.</span> <span class="text-gray-66">Do Procter &amp; Gamble tài trợ. Công thức nghiên cứu có thêm panthenol.</span></p>
+            </div>
+            <div role="row" class="grid gap-3 border-t border-gray-ee px-4 py-5 text-sm leading-5 tracking-[0.14px] lg:grid-cols-[minmax(0,236fr)_minmax(0,356fr)_minmax(0,320fr)_minmax(0,264fr)] lg:gap-6 lg:px-6">
+              <p role="cell" class="font-medium text-brown-dark">Korting HC và cs. Infection 1995</p>
+              <p role="cell" class="text-gray-49"><span class="mb-1 block text-xs leading-4 text-gray-66 lg:hidden">Hoạt chất · thiết kế · đối tượng</span>Chất làm sạch tổng hợp pH acid so với xà phòng. 120 người có mụn mức nhẹ, 3 tháng.</p>
+              <p role="cell" class="text-navy"><span class="mb-1 block text-xs leading-4 text-gray-66 lg:hidden">Kết quả chính</span>Nhóm dùng chất làm sạch tổng hợp có ít triệu chứng kích ứng hơn (1,8% so với 40,4%).</p>
+              <p role="cell"><span class="mb-1 block text-xs leading-4 text-gray-66 lg:hidden">Mức bằng chứng · giới hạn</span><span class="font-medium text-brown">Cấp 2 – trên người.</span> <span class="text-gray-66">Nghiên cứu về nhóm chất làm sạch, không phải công thức Purifying Cleansing Gel.</span></p>
+            </div>
+            <div role="row" class="grid gap-3 border-t border-gray-ee px-4 py-5 text-sm leading-5 tracking-[0.14px] lg:grid-cols-[minmax(0,236fr)_minmax(0,356fr)_minmax(0,320fr)_minmax(0,264fr)] lg:gap-6 lg:px-6">
+              <p role="cell" class="font-medium text-brown-dark">Mijaljica D và cs. Molecules 2022</p>
+              <p role="cell" class="text-gray-49"><span class="mb-1 block text-xs leading-4 text-gray-66 lg:hidden">Hoạt chất · thiết kế · đối tượng</span>Tổng quan, có dữ liệu kính hiển vi điện tử.</p>
+              <p role="cell" class="text-navy"><span class="mb-1 block text-xs leading-4 text-gray-66 lg:hidden">Kết quả chính</span>Xà phòng pH kiềm gây biến đổi protein và lipid lớp sừng sau nhiều lần rửa. Chất làm sạch tổng hợp pH 5,5–7 ít gây biến đổi hơn.</p>
+              <p role="cell"><span class="mb-1 block text-xs leading-4 text-gray-66 lg:hidden">Mức bằng chứng · giới hạn</span><span class="font-medium text-brown">Tổng quan.</span></p>
+            </div>
+        </div>
+      </div>
+      <div data-tab-panel="e7" role="tabpanel" id="panel-e7" aria-labelledby="tab-e7" tabindex="0" hidden class="flex flex-col gap-6 px-4 pb-12 pt-8 md:px-8 xl:px-[72px] xl:pb-[72px] xl:pt-12 focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-brown">
+        <div class="flex flex-wrap items-end gap-x-4 gap-y-3">
+          <div class="flex min-w-0 flex-1 basis-full flex-col gap-2 uppercase sm:basis-0">
+            <p class="text-sm leading-[22px] tracking-[4px] text-brown md:text-base">E7</p>
+            <h3 class="text-3xl leading-[1.4] tracking-[0.624px] text-brown-dark md:text-5xl">Chống nắng</h3>
+          </div>
+          <span class="rounded-full bg-brown-50 px-[14px] py-1.5 text-sm leading-5 tracking-[0.14px] text-brown">Chống nắng</span>
+          <p class="text-sm leading-5 tracking-[0.14px] text-gray-66">1 nghiên cứu</p>
+        </div>
+        <div role="table" aria-label="Nghiên cứu nhóm Chống nắng" class="overflow-hidden rounded-md border border-gray-dd bg-white">
+            <div role="row" class="hidden gap-6 bg-gray-ee px-6 py-4 text-base font-medium leading-[22px] tracking-[0.192px] text-brown-dark lg:grid lg:grid-cols-[minmax(0,236fr)_minmax(0,356fr)_minmax(0,320fr)_minmax(0,264fr)]">
+              <p role="columnheader">Nghiên cứu</p><p role="columnheader">Hoạt chất · thiết kế · đối tượng</p><p role="columnheader">Kết quả chính</p><p role="columnheader">Mức bằng chứng · giới hạn</p>
+            </div>
+            <div role="row" class="grid gap-3 border-t border-gray-ee px-4 py-5 text-sm leading-5 tracking-[0.14px] lg:grid-cols-[minmax(0,236fr)_minmax(0,356fr)_minmax(0,320fr)_minmax(0,264fr)] lg:gap-6 lg:px-6 max-lg:[&:nth-child(2)]:border-t-0">
+              <p role="cell" class="font-medium text-brown-dark">Hughes MCB và cs. Ann Intern Med 2013</p>
+              <p role="cell" class="text-gray-49"><span class="mb-1 block text-xs leading-4 text-gray-66 lg:hidden">Hoạt chất · thiết kế · đối tượng</span>Dùng kem chống nắng hằng ngày so với dùng tùy ý. Thử nghiệm ngẫu nhiên cộng đồng, 903 người, 4,5 năm.</p>
+              <p role="cell" class="text-navy"><span class="mb-1 block text-xs leading-4 text-gray-66 lg:hidden">Kết quả chính</span>Nhóm dùng hằng ngày có khả năng tiến triển lão hóa da do ánh nắng thấp hơn 24% (OR 0,76; p=0,033).</p>
+              <p role="cell"><span class="mb-1 block text-xs leading-4 text-gray-66 lg:hidden">Mức bằng chứng · giới hạn</span><span class="font-medium text-brown">Cấp 2 – trên người, chất lượng cao.</span> <span class="text-gray-66">Đánh giá thói quen chống nắng nói chung, không riêng sản phẩm hay bộ lọc cụ thể.</span></p>
+            </div>
+        </div>
+      </div>
+      <div data-tab-panel="e8" role="tabpanel" id="panel-e8" aria-labelledby="tab-e8" tabindex="0" hidden class="flex flex-col gap-6 px-4 pb-12 pt-8 md:px-8 xl:px-[72px] xl:pb-[72px] xl:pt-12 focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-brown">
+        <div class="flex flex-wrap items-end gap-x-4 gap-y-3">
+          <div class="flex min-w-0 flex-1 basis-full flex-col gap-2 uppercase sm:basis-0">
+            <p class="text-sm leading-[22px] tracking-[4px] text-brown md:text-base">E8</p>
+            <h3 class="text-3xl leading-[1.4] tracking-[0.624px] text-brown-dark md:text-5xl">Các nghiên cứu đặc biệt</h3>
+          </div>
+          <p class="text-sm leading-5 tracking-[0.14px] text-gray-66">14 nghiên cứu</p>
+        </div>
+        <div class="rounded-md border-l-4 border-brown bg-brown-50 px-5 py-4" role="note">
+          <p class="text-base leading-[22px] tracking-[0.224px] text-brown-dark">Các nghiên cứu dưới đây được thực hiện trong bối cảnh y khoa hoặc so sánh với thuốc. Chúng được cung cấp để chuyên gia đánh giá cơ sở lựa chọn hoạt chất, không nhằm so sánh sản phẩm Dzentic với thuốc.</p>
+        </div>
+        <div role="table" aria-label="Các nghiên cứu y khoa đặc biệt" class="overflow-hidden rounded-md border border-gray-dd bg-white">
+            <div role="row" class="hidden gap-6 bg-gray-ee px-6 py-4 text-base font-medium leading-[22px] tracking-[0.192px] text-brown-dark lg:grid lg:grid-cols-[minmax(0,236fr)_minmax(0,356fr)_minmax(0,320fr)_minmax(0,264fr)]">
+              <p role="columnheader">Nghiên cứu</p><p role="columnheader">Thiết kế · đối tượng</p><p role="columnheader">Kết quả chính</p><p role="columnheader">Giới hạn</p>
+            </div>
+          <div role="rowgroup" tabindex="0" aria-label="Danh sách nghiên cứu, cuộn để xem thêm" class="max-h-[586px] overflow-y-auto [scrollbar-color:#8a4f25_#eeeeee] [scrollbar-width:thin] focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-brown">
+            <div role="row" class="grid gap-3 border-t border-gray-ee px-4 py-5 text-sm leading-5 tracking-[0.14px] lg:grid-cols-[minmax(0,236fr)_minmax(0,356fr)_minmax(0,320fr)_minmax(0,264fr)] lg:gap-6 lg:px-6 lg:pr-10 max-lg:first:border-t-0">
+              <p role="cell" class="font-medium text-brown-dark">Navarrete-Solís J và cs. Dermatol Res Pract 2011:379173</p>
+              <p role="cell" class="text-gray-49"><span class="mb-1 block text-xs leading-4 text-gray-66 lg:hidden">Thiết kế · đối tượng</span>Niacinamide 4% so với hydroquinone 4%. Mù đôi, chia đôi mặt, 27 phụ nữ có nám (Fitzpatrick IV–V), 8 tuần.</p>
+              <p role="cell" class="text-navy"><span class="mb-1 block text-xs leading-4 text-gray-66 lg:hidden">Kết quả chính</span>MASI giảm 62% (niacinamide) và 70% (hydroquinone). Đo màu không khác biệt giữa hai bên (p=0,78). Tác dụng phụ 18% so với 29%.</p>
+              <p role="cell"><span class="mb-1 block text-xs leading-4 text-gray-66 lg:hidden">Giới hạn</span><span class="text-gray-66">Không có nhánh kem nền. Cả hai bên dùng SPF 50+ nghiêm ngặt. Cỡ mẫu nhỏ. Không được thiết kế để chứng minh tương đương.</span></p>
+            </div>
+            <div role="row" class="grid gap-3 border-t border-gray-ee px-4 py-5 text-sm leading-5 tracking-[0.14px] lg:grid-cols-[minmax(0,236fr)_minmax(0,356fr)_minmax(0,320fr)_minmax(0,264fr)] lg:gap-6 lg:px-6 lg:pr-10">
+              <p role="cell" class="font-medium text-brown-dark">Yasnova và cs. 2024</p>
+              <p role="cell" class="text-gray-49"><span class="mb-1 block text-xs leading-4 text-gray-66 lg:hidden">Thiết kế · đối tượng</span>Tranexamic acid 3% so với hydroquinone 4%. Ngẫu nhiên, mù đôi, chia đôi mặt, 20 người, 8 tuần.</p>
+              <p role="cell" class="text-navy"><span class="mb-1 block text-xs leading-4 text-gray-66 lg:hidden">Kết quả chính</span>mMASI giảm có ý nghĩa ở cả hai bên.</p>
+              <p role="cell"><span class="mb-1 block text-xs leading-4 text-gray-66 lg:hidden">Giới hạn</span><span class="text-gray-66">Cỡ mẫu 20 người, không đủ để kết luận tương đương.</span></p>
+            </div>
+            <div role="row" class="grid gap-3 border-t border-gray-ee px-4 py-5 text-sm leading-5 tracking-[0.14px] lg:grid-cols-[minmax(0,236fr)_minmax(0,356fr)_minmax(0,320fr)_minmax(0,264fr)] lg:gap-6 lg:px-6 lg:pr-10">
+              <p role="cell" class="font-medium text-brown-dark">Janney và cs. 2019</p>
+              <p role="cell" class="text-gray-49"><span class="mb-1 block text-xs leading-4 text-gray-66 lg:hidden">Thiết kế · đối tượng</span>Tranexamic acid 5% so với hydroquinone 3%. Mù đơn, 100 người, 12 tuần.</p>
+              <p role="cell" class="text-navy"><span class="mb-1 block text-xs leading-4 text-gray-66 lg:hidden">Kết quả chính</span>MASI giảm 27% so với 26,7%. Kích ứng 6% so với 38%.</p>
+              <p role="cell"><span class="mb-1 block text-xs leading-4 text-gray-66 lg:hidden">Giới hạn</span><span class="text-gray-66">Nồng độ cao hơn Dzentic.</span></p>
+            </div>
+            <div role="row" class="grid gap-3 border-t border-gray-ee px-4 py-5 text-sm leading-5 tracking-[0.14px] lg:grid-cols-[minmax(0,236fr)_minmax(0,356fr)_minmax(0,320fr)_minmax(0,264fr)] lg:gap-6 lg:px-6 lg:pr-10">
+              <p role="cell" class="font-medium text-brown-dark">Atefi và cs. 2017</p>
+              <p role="cell" class="text-gray-49"><span class="mb-1 block text-xs leading-4 text-gray-66 lg:hidden">Thiết kế · đối tượng</span>Tranexamic acid 5% so với hydroquinone 2%. Mù đôi, 60 người, 12 tuần.</p>
+              <p role="cell" class="text-navy"><span class="mb-1 block text-xs leading-4 text-gray-66 lg:hidden">Kết quả chính</span>Không khác biệt về hiệu quả (p=0,85). Tác dụng phụ 0% so với 10%.</p>
+              <p role="cell"><span class="mb-1 block text-xs leading-4 text-gray-66 lg:hidden">Giới hạn</span><span class="text-gray-66">Nồng độ cao hơn Dzentic.</span></p>
+            </div>
+            <div role="row" class="grid gap-3 border-t border-gray-ee px-4 py-5 text-sm leading-5 tracking-[0.14px] lg:grid-cols-[minmax(0,236fr)_minmax(0,356fr)_minmax(0,320fr)_minmax(0,264fr)] lg:gap-6 lg:px-6 lg:pr-10">
+              <p role="cell" class="font-medium text-brown-dark">Kim và cs. Acta Derm Venereol 2017</p>
+              <p role="cell" class="text-gray-49"><span class="mb-1 block text-xs leading-4 text-gray-66 lg:hidden">Thiết kế · đối tượng</span>Phân tích gộp tranexamic acid, 11 nghiên cứu, 667 người.</p>
+              <p role="cell" class="text-navy"><span class="mb-1 block text-xs leading-4 text-gray-66 lg:hidden">Kết quả chính</span>Toàn bộ các đường dùng: MASI giảm có ý nghĩa. Riêng đường bôi: chưa đạt ý nghĩa thống kê (p=0,08).</p>
+              <p role="cell"><span class="mb-1 block text-xs leading-4 text-gray-66 lg:hidden">Giới hạn</span><span class="text-gray-66">Nên trình bày đầy đủ để không phóng đại bằng chứng của đường bôi.</span></p>
+            </div>
+            <div role="row" class="grid gap-3 border-t border-gray-ee px-4 py-5 text-sm leading-5 tracking-[0.14px] lg:grid-cols-[minmax(0,236fr)_minmax(0,356fr)_minmax(0,320fr)_minmax(0,264fr)] lg:gap-6 lg:px-6 lg:pr-10">
+              <p role="cell" class="font-medium text-brown-dark">Shalita AR và cs. Int J Dermatol 1995;34(6):434–7</p>
+              <p role="cell" class="text-gray-49"><span class="mb-1 block text-xs leading-4 text-gray-66 lg:hidden">Thiết kế · đối tượng</span>Nicotinamide gel 4% so với clindamycin 1%. Mù đôi, 76 người, 8 tuần.</p>
+              <p role="cell" class="text-navy"><span class="mb-1 block text-xs leading-4 text-gray-66 lg:hidden">Kết quả chính</span>82% so với 68% cải thiện, sần mụn mủ giảm 60% so với 43% (p=0,0168), độ nặng mụn giảm 52% so với 38% (p=0,0161); khác biệt không có ý nghĩa thống kê (p=0,19).</p>
+              <p role="cell"><span class="mb-1 block text-xs leading-4 text-gray-66 lg:hidden">Giới hạn</span><span class="text-gray-66">—</span></p>
+            </div>
+            <div role="row" class="grid gap-3 border-t border-gray-ee px-4 py-5 text-sm leading-5 tracking-[0.14px] lg:grid-cols-[minmax(0,236fr)_minmax(0,356fr)_minmax(0,320fr)_minmax(0,264fr)] lg:gap-6 lg:px-6 lg:pr-10">
+              <p role="cell" class="font-medium text-brown-dark">Khodaeiani E và cs. Int J Dermatol 2013;52(8):999–1004</p>
+              <p role="cell" class="text-gray-49"><span class="mb-1 block text-xs leading-4 text-gray-66 lg:hidden">Thiết kế · đối tượng</span>Nicotinamide gel 4% so với clindamycin 1%. Mù đôi, 80 người, 8 tuần.</p>
+              <p role="cell" class="text-navy"><span class="mb-1 block text-xs leading-4 text-gray-66 lg:hidden">Kết quả chính</span>Cả hai nhóm cải thiện, không khác biệt giữa hai nhóm.</p>
+              <p role="cell"><span class="mb-1 block text-xs leading-4 text-gray-66 lg:hidden">Giới hạn</span><span class="text-gray-66">—</span></p>
+            </div>
+            <div role="row" class="grid gap-3 border-t border-gray-ee px-4 py-5 text-sm leading-5 tracking-[0.14px] lg:grid-cols-[minmax(0,236fr)_minmax(0,356fr)_minmax(0,320fr)_minmax(0,264fr)] lg:gap-6 lg:px-6 lg:pr-10">
+              <p role="cell" class="font-medium text-brown-dark">Sitohang IBS và cs. J Clin Aesthet Dermatol 2020;13(7):27–31</p>
+              <p role="cell" class="text-gray-49"><span class="mb-1 block text-xs leading-4 text-gray-66 lg:hidden">Thiết kế · đối tượng</span>Kem nicotinamide + chất kết dính kháng khuẩn + Zinc PCA, bổ trợ adapalene 0,1%. Đa trung tâm, mù đôi, 140 người, 6 tuần.</p>
+              <p role="cell" class="text-navy"><span class="mb-1 block text-xs leading-4 text-gray-66 lg:hidden">Kết quả chính</span>Giảm tổn thương không viêm có ý nghĩa so với giả dược ở tuần 2. Tác dụng phụ nhẹ nhiều hơn ở tuần 6.</p>
+              <p role="cell"><span class="mb-1 block text-xs leading-4 text-gray-66 lg:hidden">Giới hạn</span><span class="text-gray-66">Công thức nhiều thành phần. Do doanh nghiệp tài trợ.</span></p>
+            </div>
+            <div role="row" class="grid gap-3 border-t border-gray-ee px-4 py-5 text-sm leading-5 tracking-[0.14px] lg:grid-cols-[minmax(0,236fr)_minmax(0,356fr)_minmax(0,320fr)_minmax(0,264fr)] lg:gap-6 lg:px-6 lg:pr-10">
+              <p role="cell" class="font-medium text-brown-dark">Andrade 2018, Biomed Biopharm Res</p>
+              <p role="cell" class="text-gray-49"><span class="mb-1 block text-xs leading-4 text-gray-66 lg:hidden">Thiết kế · đối tượng</span>Niacinamide 4% + Zinc PCA 1%. 15 người, 6 tuần.</p>
+              <p role="cell" class="text-navy"><span class="mb-1 block text-xs leading-4 text-gray-66 lg:hidden">Kết quả chính</span>Tổn thương viêm giảm khoảng 60%.</p>
+              <p role="cell"><span class="mb-1 block text-xs leading-4 text-gray-66 lg:hidden">Giới hạn</span><span class="text-gray-66">Không có nhóm chứng, cỡ mẫu rất nhỏ. Nồng độ niacinamide khác Zinc Complex Serum (2%).</span></p>
+            </div>
+            <div role="row" class="grid gap-3 border-t border-gray-ee px-4 py-5 text-sm leading-5 tracking-[0.14px] lg:grid-cols-[minmax(0,236fr)_minmax(0,356fr)_minmax(0,320fr)_minmax(0,264fr)] lg:gap-6 lg:px-6 lg:pr-10">
+              <p role="cell" class="font-medium text-brown-dark">Dhaliwal S và cs. Am J Clin Dermatol 2020</p>
+              <p role="cell" class="text-gray-49"><span class="mb-1 block text-xs leading-4 text-gray-66 lg:hidden">Thiết kế · đối tượng</span>Tổng quan hệ thống về kẽm trên da mụn, 22 thử nghiệm.</p>
+              <p role="cell" class="text-navy"><span class="mb-1 block text-xs leading-4 text-gray-66 lg:hidden">Kết quả chính</span>Kết quả có lợi trong 10/14 nghiên cứu về mụn.</p>
+              <p role="cell"><span class="mb-1 block text-xs leading-4 text-gray-66 lg:hidden">Giới hạn</span><span class="text-gray-66">Gồm cả kẽm đường uống và đường bôi.</span></p>
+            </div>
+            <div role="row" class="grid gap-3 border-t border-gray-ee px-4 py-5 text-sm leading-5 tracking-[0.14px] lg:grid-cols-[minmax(0,236fr)_minmax(0,356fr)_minmax(0,320fr)_minmax(0,264fr)] lg:gap-6 lg:px-6 lg:pr-10">
+              <p role="cell" class="font-medium text-brown-dark">See J và cs. Clin Cosmet Investig Dermatol 2026;19</p>
+              <p role="cell" class="text-gray-49"><span class="mb-1 block text-xs leading-4 text-gray-66 lg:hidden">Thiết kế · đối tượng</span>Đồng thuận của 7 chuyên gia da liễu châu Á (có đại diện Việt Nam) về vai trò của dược mỹ phẩm trong chăm sóc mụn.</p>
+              <p role="cell" class="text-navy"><span class="mb-1 block text-xs leading-4 text-gray-66 lg:hidden">Kết quả chính</span>Niacinamide và kẽm được xếp vào nhóm hoạt chất hướng đích mụn, dùng bổ trợ và duy trì.</p>
+              <p role="cell"><span class="mb-1 block text-xs leading-4 text-gray-66 lg:hidden">Giới hạn</span><span class="text-gray-66">Ý kiến chuyên gia, không phải thử nghiệm. Có hỗ trợ biên tập từ doanh nghiệp.</span></p>
+            </div>
+            <div role="row" class="grid gap-3 border-t border-gray-ee px-4 py-5 text-sm leading-5 tracking-[0.14px] lg:grid-cols-[minmax(0,236fr)_minmax(0,356fr)_minmax(0,320fr)_minmax(0,264fr)] lg:gap-6 lg:px-6 lg:pr-10">
+              <p role="cell" class="font-medium text-brown-dark">Załęska 2025, Molecules 30(11):2470</p>
+              <p role="cell" class="text-gray-49"><span class="mb-1 block text-xs leading-4 text-gray-66 lg:hidden">Thiết kế · đối tượng</span>Ectoin 2% và 5% sau laser CO₂ fractional. 30 người, đối chứng trong cùng người, 4 tuần.</p>
+              <p role="cell" class="text-navy"><span class="mb-1 block text-xs leading-4 text-gray-66 lg:hidden">Kết quả chính</span>Giảm đỏ và mất nước qua da, tăng độ ẩm so với nền.</p>
+              <p role="cell"><span class="mb-1 block text-xs leading-4 text-gray-66 lg:hidden">Giới hạn</span><span class="text-gray-66">Không ngẫu nhiên, không làm mù. Nồng độ cao hơn Dzentic (0,3%).</span></p>
+            </div>
+            <div role="row" class="grid gap-3 border-t border-gray-ee px-4 py-5 text-sm leading-5 tracking-[0.14px] lg:grid-cols-[minmax(0,236fr)_minmax(0,356fr)_minmax(0,320fr)_minmax(0,264fr)] lg:gap-6 lg:px-6 lg:pr-10">
+              <p role="cell" class="font-medium text-brown-dark">Chan RJ và cs. Int J Radiat Oncol Biol Phys 2014;90(4)</p>
+              <p role="cell" class="text-gray-49"><span class="mb-1 block text-xs leading-4 text-gray-66 lg:hidden">Thiết kế · đối tượng</span>Nhũ tương chứa allantoin, viêm da do xạ trị. Thử nghiệm pha 3, mù đôi, 174 người.</p>
+              <p role="cell" class="text-navy"><span class="mb-1 block text-xs leading-4 text-gray-66 lg:hidden">Kết quả chính</span>Tốt hơn kem đối chứng ở tuần 3, nhưng kém hơn có ý nghĩa ở tuần 7–9.</p>
+              <p role="cell"><span class="mb-1 block text-xs leading-4 text-gray-66 lg:hidden">Giới hạn</span><span class="text-gray-66">Kết quả âm tính ở giai đoạn muộn, trình bày để bảo đảm tính trung thực.</span></p>
+            </div>
+            <div role="row" class="grid gap-3 border-t border-gray-ee px-4 py-5 text-sm leading-5 tracking-[0.14px] lg:grid-cols-[minmax(0,236fr)_minmax(0,356fr)_minmax(0,320fr)_minmax(0,264fr)] lg:gap-6 lg:px-6 lg:pr-10">
+              <p role="cell" class="font-medium text-brown-dark">Araújo LU và cs. Acta Cir Bras 2010;25(5):460–6</p>
+              <p role="cell" class="text-gray-49"><span class="mb-1 block text-xs leading-4 text-gray-66 lg:hidden">Thiết kế · đối tượng</span>Allantoin 5%. Mô hình chuột, 60 con, 14 ngày.</p>
+              <p role="cell" class="text-navy"><span class="mb-1 block text-xs leading-4 text-gray-66 lg:hidden">Kết quả chính</span>Điều hòa đáp ứng viêm, thúc đẩy tái tạo mô.</p>
+              <p role="cell"><span class="mb-1 block text-xs leading-4 text-gray-66 lg:hidden">Giới hạn</span><span class="text-gray-66">Tiền lâm sàng.</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION: CTA · Tìm hiểu thêm (banner) -->
+<section class="relative isolate overflow-hidden bg-[#f6ecdd]" aria-labelledby="cta-tim-hieu-them">
+  <img src="assets/img/bang-chung-du-lieu/cta-banner.webp" alt="" loading="lazy" class="absolute inset-0 -z-20 size-full object-cover object-right">
+  <div class="absolute inset-0 -z-10 bg-bg/80 lg:hidden" aria-hidden="true"></div>
+  <div class="mx-auto flex max-w-site flex-col items-start justify-center gap-5 px-4 py-16 md:px-8 lg:min-h-[500px] xl:px-[120px]" data-aos="fade-up">
+    <h2 id="cta-tim-hieu-them" class="text-3xl uppercase leading-[1.4] tracking-[0.624px] text-brown-dark md:text-5xl">Từ bằng chứng<br> đến công thức</h2>
+    <p class="max-w-[520px] text-base leading-[22px] tracking-[0.224px] text-gray-49">Xem cách từng hoạt chất được lựa chọn, phối hợp và đặt đúng nồng độ trong công thức Dzentic.</p>
+    <div class="flex flex-wrap gap-3">
+      <a href="chi-tiet-nhom-hoat-chat.html" class="inline-flex h-12 items-center justify-center gap-2 rounded-sm bg-brown px-6 text-base leading-[22px] tracking-[0.224px] text-bg hover:bg-brown-dark focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown btn sm:min-w-[264px]">Xem cơ chế tác động</a>
+      <a href="thu-vien-hoat-chat.html" class="inline-flex h-12 items-center justify-center gap-2 rounded-sm border border-brown px-6 text-base leading-[22px] tracking-[0.224px] text-brown focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown btn btn-outline btn-fill-brown-50">Khám phá thư viện hoạt chất<img src="assets/img/bang-chung-du-lieu/icon-arrow-brown.svg" alt="" class="h-[13px] w-3"></a>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION: Đánh giá lâm sàng · BV Da liễu Hà Nội (chờ) -->
+<section class="relative isolate flex items-center justify-center overflow-hidden border-t border-gray-dd bg-bg bg-[radial-gradient(ellipse_800px_125px_at_50%_150px,rgba(253,228,191,0.95)_0%,rgba(249,227,207,0.55)_45%,rgba(251,245,239,0)_100%)] px-4 py-16 lg:min-h-[400px]" aria-labelledby="danh-gia-lam-sang">
+  <div class="pointer-events-none absolute bottom-0 left-1/2 -z-10 aspect-[824/371.77] w-[824px] -translate-x-1/2 overflow-hidden" aria-hidden="true">
+    <div class="absolute left-0 top-0 aspect-square w-full opacity-[0.28]">
+      <div class="absolute inset-0 opacity-[0.12]">
+        <div class="absolute inset-y-0 left-0 w-1/2"><img src="assets/img/bang-chung-du-lieu/rays-left.svg" alt="" class="absolute inset-y-0 left-0 h-full w-[107.04%] max-w-none"></div>
+        <div class="absolute inset-y-0 left-1/2 w-1/2"><img src="assets/img/bang-chung-du-lieu/rays-right.svg" alt="" class="absolute inset-y-0 right-0 h-full w-[106.62%] max-w-none"></div>
+      </div>
+    </div>
+  </div>
+  <img src="assets/img/bang-chung-du-lieu/sun-glow.svg" alt="" aria-hidden="true" class="pointer-events-none absolute left-1/2 top-[275px] -z-10 aspect-square w-80 -translate-x-1/2 max-w-none">
+  <div class="flex flex-col items-center gap-5 text-center">
+    <h2 id="danh-gia-lam-sang" class="text-3xl uppercase leading-[1.4] tracking-[0.624px] text-brown-dark md:text-5xl">Bệnh viện Da liễu Hà Nội</h2>
+    <p class="max-w-[370px] text-base leading-[22px] tracking-[0.224px] text-gray-49">Kết quả đánh giá lâm sàng đang được hoàn thiện và sẽ được công bố tại đây.</p>
+    <div class="inline-flex items-center gap-[10px] rounded-full border border-gray-dd bg-white px-[18px] py-[10px]" role="status">
+      <span class="flex items-center gap-[10px]" aria-hidden="true">
+        <img src="assets/img/bang-chung-du-lieu/dot-wait.svg" alt="" class="size-[7px] animate-pulse motion-reduce:animate-none">
+        <img src="assets/img/bang-chung-du-lieu/dot-wait.svg" alt="" class="size-[7px] animate-pulse motion-reduce:animate-none [animation-delay:.3s]">
+        <img src="assets/img/bang-chung-du-lieu/dot-wait.svg" alt="" class="size-[7px] animate-pulse motion-reduce:animate-none [animation-delay:.6s]">
+      </span>
+      <span class="text-sm font-medium leading-5 tracking-[0.14px] text-brown">Đang chờ cập nhật kết quả</span>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- SECTION: Footer -->
+<footer id="footer" class="bg-bg text-navy">
+  <div class="max-w-site mx-auto px-4 md:px-8 xl:px-[72px]">
+    <div class="grid gap-10 pt-12 pb-10 lg:grid-cols-[minmax(0,1fr)_auto] lg:gap-16 lg:pt-24 lg:pb-12">
+      <div>
+        <a href="index.html" class="block max-w-[507px] lg:ml-[9px] lg:mt-[7.4px] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown"><img src="assets/img/footer/logo-dzentic.webp" alt="Dzentic - A brand by Sorai Beauty Engine" class="block h-auto w-full aspect-[507/157]" /></a>
+        <ul class="mt-6 lg:mt-[18.4px] flex items-center gap-2" aria-label="Mạng xã hội">
+          <li><a href="#" aria-label="Facebook" class="flex size-8 items-center justify-center rounded-sm border border-gray-bb transition hover:-translate-y-0.5 hover:border-brown hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown"><img src="assets/img/footer/icon-facebook.svg" alt="" width="16" height="18" /></a></li>
+          <li><a href="#" aria-label="Instagram" class="flex size-8 items-center justify-center rounded-sm border border-gray-bb transition hover:-translate-y-0.5 hover:border-brown hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown"><img src="assets/img/footer/icon-instagram.svg" alt="" width="16" height="18" /></a></li>
+          <li><a href="#" aria-label="TikTok" class="flex size-8 items-center justify-center rounded-sm border border-gray-bb transition hover:-translate-y-0.5 hover:border-brown hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown"><img src="assets/img/footer/icon-tiktok.svg" alt="" width="16" height="18" /></a></li>
+        </ul>
+      </div>
+
+      <div class="grid gap-8 sm:grid-cols-2 md:grid-cols-3 md:gap-0">
+        <nav class="md:w-[220px]" aria-label="Sản phẩm và dịch vụ">
+          <h3 class="text-xl leading-7 font-medium text-navy">Sản phẩm và dịch vụ</h3>
+          <ul class="mt-6 flex flex-col gap-[10px] text-base leading-[22px] tracking-[0.224px] text-gray-49">
+            <li><a href="san-pham.html" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Brightening Serum</a></li>
+            <li><a href="san-pham.html" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Repair Cream</a></li>
+            <li><a href="san-pham.html" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Hydrating Cream</a></li>
+            <li><a href="san-pham.html" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Cleansing Gel</a></li>
+            <li><a href="san-pham.html" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Sunscreen</a></li>
+          </ul>
+        </nav>
+        <nav class="md:w-[220px]" aria-label="Liên kết">
+          <h3 class="text-xl leading-7 font-medium text-navy">Liên kết</h3>
+          <ul class="mt-6 flex flex-col gap-[10px] text-base leading-[22px] tracking-[0.224px] text-gray-49">
+            <li><a href="routine-phac-do.html" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Giải Pháp Làn Da</a></li>
+            <li><a href="thu-vien-hoat-chat.html" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Khoa Học &amp; Bằng Chứng</a></li>
+            <li><a href="cau-chuyen-thuong-hieu.html" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Triết Lý Dzentic</a></li>
+            <li><a href="bai-viet.html" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Blog</a></li>
+            <li><a href="lien-he.html" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Liên hệ</a></li>
+          </ul>
+        </nav>
+        <div>
+          <h3 class="text-xl leading-7 font-medium text-navy">Liên hệ</h3>
+          <ul class="mt-6 flex flex-col gap-[10px] text-base leading-[22px] tracking-[0.224px] text-gray-49">
+            <li class="flex items-start gap-2"><img src="assets/img/footer/icon-phone.svg" alt="" width="20" height="20" class="shrink-0" /><a href="tel:15001515" class="hover:text-brown hover:underline focus-visible:text-brown focus-visible:underline">Hotline: 1500 1515</a></li>
+            <li class="flex items-start gap-2"><img src="assets/img/footer/icon-mobile.svg" alt="" width="20" height="21" class="shrink-0" /><a href="tel:+84123456789" class="hover:text-brown hover:underline focus-visible:text-brown focus-visible:underline">Điện thoại:<br />(+84) 123456789</a></li>
+            <li class="flex items-start gap-2"><img src="assets/img/footer/icon-pin.svg" alt="" width="20" height="21" class="shrink-0" /><a href="https://www.google.com/maps/search/?api=1&amp;query=T%E1%BA%A7ng+4+To%C3%A0+West+Tower%2C+365+%C4%91%C6%B0%E1%BB%9Dng+C%E1%BA%A7u+Gi%E1%BA%A5y%2C+H%C3%A0+N%E1%BB%99i" target="_blank" rel="noopener" class="lg:max-w-[169px] hover:text-brown hover:underline focus-visible:text-brown focus-visible:underline">Tầng 4 Toà West Tower, 365 đường Cầu Giấy, Hà Nội</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <hr class="border-0 h-px bg-gray-dd" />
+
+    <div class="flex flex-col gap-6 py-8 text-base leading-[22px] tracking-[0.224px] lg:flex-row lg:items-center lg:justify-between lg:pt-[39px] lg:pb-[55px]">
+      <ul class="flex flex-wrap gap-x-10 gap-y-2">
+        <li><a href="chinh-sach-bao-mat.html" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">An toàn &amp; Bảo mật</a></li>
+        <li><a href="#" class="hover:text-brown hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Điều khoản sử dụng</a></li>
+      </ul>
+      <div class="flex flex-col gap-4 sm:flex-row sm:items-center sm:gap-8">
+        <a href="#" class="block transition-opacity hover:opacity-80 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown"><img src="assets/img/footer/badge-bo-cong-thuong.webp" alt="Đã thông báo Bộ Công Thương" class="h-10 w-auto" /></a>
+        <p>© Bản quyền 2026 thuộc về Dzentic.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/app.js"></script>
+</body>
+</html>
