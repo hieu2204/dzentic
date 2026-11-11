@@ -3,6 +3,7 @@ import { Navigation, Pagination, Autoplay, EffectFade, Thumbs } from 'swiper/mod
 import { Fancybox } from '@fancyapps/ui';
 import AOS from 'aos';
 import { CountUp } from 'countup.js';
+import { initCart } from './cart.js';
 
 Swiper.use([Navigation, Pagination, Autoplay, EffectFade, Thumbs]);
 window.Swiper = Swiper;
@@ -185,3 +186,5 @@ if (flipCards.length) {
     if (touch.matches && !e.target.closest('[data-flip]')) flipCards.forEach((o) => set(o, false));
   });
 }
+
+initCart();

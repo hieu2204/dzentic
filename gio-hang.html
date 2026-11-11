@@ -322,6 +322,7 @@
   function setHeaderCount(n) { document.querySelectorAll('[data-cart-count]').forEach(function (el) { el.textContent = n; }); }
 
   var list = document.querySelector('[data-cart-list]');
+  if (window.DZCart) DZCart.ensureRows(list, '[data-cart-row]', 'id', DZCart.fillCartRow);
   var saved = loadCart();
   function rows() { return Array.prototype.slice.call(list.querySelectorAll('[data-cart-row]')); }
   function qtyOf(r) { return +r.querySelector('[data-qty-value]').textContent; }

@@ -39,7 +39,7 @@
           <a href="tim-kiem.html" class="hover:opacity-70 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brown" aria-label="Tìm kiếm"><img src="assets/img/hero/icon-search.svg" alt="" width="20" height="20"></a>
           <a href="gio-hang.html" class="group flex items-center gap-2 xl:gap-0.5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brown" aria-label="Giỏ hàng">
             <img src="assets/img/hero/icon-cart.svg" alt="" width="20" height="20" class="group-hover:opacity-70">
-            <span class="grid place-items-center size-5 rounded-[10px] bg-brown text-bg text-base leading-[22px] group-hover:bg-brown-dark">0</span>
+            <span data-cart-count class="grid place-items-center size-5 rounded-[10px] bg-brown text-bg text-base leading-[22px] group-hover:bg-brown-dark">0</span>
           </a>
           <button type="button" data-menu-toggle class="xl:hidden ml-2 p-1 hover:text-brown focus-visible:text-brown focus-visible:outline focus-visible:outline-2 focus-visible:outline-brown" aria-label="Mở menu">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
@@ -132,7 +132,7 @@
       <span class="absolute left-4 top-4 inline-flex h-[31px] items-center rounded-xs bg-white px-2 py-1 text-xs leading-4 tracking-[0.48px] text-ink">DAY SERUM</span>
       <div class="absolute inset-x-4 bottom-4 flex gap-2 transition-opacity duration-300 lg:opacity-0 lg:group-hover:opacity-100 lg:group-focus-within:opacity-100">
         <a href="chi-tiet-san-pham.html" class="flex h-11 flex-1 items-center justify-center rounded-sm bg-bg px-3 text-[15px] leading-5 tracking-[0.21px] text-ink hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy">Xem chi tiết</a>
-        <button type="button" data-add-to-cart class="flex h-11 flex-1 cursor-pointer items-center justify-center rounded-sm bg-navy px-3 text-[15px] leading-5 tracking-[0.21px] text-bg hover:bg-blue focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy">Thêm vào giỏ hàng</button>
+        <button type="button" data-add-to-cart data-product="photo-defense" class="flex h-11 flex-1 cursor-pointer items-center justify-center rounded-sm bg-navy px-3 text-[15px] leading-5 tracking-[0.21px] text-bg hover:bg-blue focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy">Thêm vào giỏ hàng</button>
       </div>
     </div>
     <div class="flex flex-1 flex-col gap-5 pt-6">
@@ -154,7 +154,7 @@
       <span class="absolute left-4 top-4 inline-flex h-[31px] items-center rounded-xs bg-white px-2 py-1 text-xs leading-4 tracking-[0.48px] text-ink">NIGHT SERUM</span>
       <div class="absolute inset-x-4 bottom-4 flex gap-2 transition-opacity duration-300 lg:opacity-0 lg:group-hover:opacity-100 lg:group-focus-within:opacity-100">
         <a href="chi-tiet-san-pham.html" class="flex h-11 flex-1 items-center justify-center rounded-sm bg-bg px-3 text-[15px] leading-5 tracking-[0.21px] text-ink hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy">Xem chi tiết</a>
-        <button type="button" data-add-to-cart class="flex h-11 flex-1 cursor-pointer items-center justify-center rounded-sm bg-navy px-3 text-[15px] leading-5 tracking-[0.21px] text-bg hover:bg-blue focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy">Thêm vào giỏ hàng</button>
+        <button type="button" data-add-to-cart data-product="retino" class="flex h-11 flex-1 cursor-pointer items-center justify-center rounded-sm bg-navy px-3 text-[15px] leading-5 tracking-[0.21px] text-bg hover:bg-blue focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy">Thêm vào giỏ hàng</button>
       </div>
     </div>
     <div class="flex flex-1 flex-col gap-5 pt-6">
@@ -198,7 +198,7 @@
       <span class="absolute left-4 top-4 inline-flex h-[31px] items-center rounded-xs bg-white px-2 py-1 text-xs leading-4 tracking-[0.48px] text-ink">CLEANSER</span>
       <div class="absolute inset-x-4 bottom-4 flex gap-2 transition-opacity duration-300 lg:opacity-0 lg:group-hover:opacity-100 lg:group-focus-within:opacity-100">
         <a href="chi-tiet-san-pham.html" class="flex h-11 flex-1 items-center justify-center rounded-sm bg-bg px-3 text-[15px] leading-5 tracking-[0.21px] text-ink hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy">Xem chi tiết</a>
-        <button type="button" data-add-to-cart class="flex h-11 flex-1 cursor-pointer items-center justify-center rounded-sm bg-navy px-3 text-[15px] leading-5 tracking-[0.21px] text-bg hover:bg-blue focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy">Thêm vào giỏ hàng</button>
+        <button type="button" data-add-to-cart data-product="cleansing" class="flex h-11 flex-1 cursor-pointer items-center justify-center rounded-sm bg-navy px-3 text-[15px] leading-5 tracking-[0.21px] text-bg hover:bg-blue focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy">Thêm vào giỏ hàng</button>
       </div>
     </div>
     <div class="flex flex-1 flex-col gap-5 pt-6">
@@ -220,7 +220,7 @@
       <span class="absolute left-4 top-4 inline-flex h-[31px] items-center rounded-xs bg-white px-2 py-1 text-xs leading-4 tracking-[0.48px] text-ink">REPAIR CREAM</span>
       <div class="absolute inset-x-4 bottom-4 flex gap-2 transition-opacity duration-300 lg:opacity-0 lg:group-hover:opacity-100 lg:group-focus-within:opacity-100">
         <a href="chi-tiet-san-pham.html" class="flex h-11 flex-1 items-center justify-center rounded-sm bg-bg px-3 text-[15px] leading-5 tracking-[0.21px] text-ink hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy">Xem chi tiết</a>
-        <button type="button" data-add-to-cart class="flex h-11 flex-1 cursor-pointer items-center justify-center rounded-sm bg-navy px-3 text-[15px] leading-5 tracking-[0.21px] text-bg hover:bg-blue focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy">Thêm vào giỏ hàng</button>
+        <button type="button" data-add-to-cart data-product="neobright" class="flex h-11 flex-1 cursor-pointer items-center justify-center rounded-sm bg-navy px-3 text-[15px] leading-5 tracking-[0.21px] text-bg hover:bg-blue focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy">Thêm vào giỏ hàng</button>
       </div>
     </div>
     <div class="flex flex-1 flex-col gap-5 pt-6">
@@ -242,7 +242,7 @@
       <span class="absolute left-4 top-4 inline-flex h-[31px] items-center rounded-xs bg-white px-2 py-1 text-xs leading-4 tracking-[0.48px] text-ink">RECOVERY CREAM</span>
       <div class="absolute inset-x-4 bottom-4 flex gap-2 transition-opacity duration-300 lg:opacity-0 lg:group-hover:opacity-100 lg:group-focus-within:opacity-100">
         <a href="chi-tiet-san-pham.html" class="flex h-11 flex-1 items-center justify-center rounded-sm bg-bg px-3 text-[15px] leading-5 tracking-[0.21px] text-ink hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy">Xem chi tiết</a>
-        <button type="button" data-add-to-cart class="flex h-11 flex-1 cursor-pointer items-center justify-center rounded-sm bg-navy px-3 text-[15px] leading-5 tracking-[0.21px] text-bg hover:bg-blue focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy">Thêm vào giỏ hàng</button>
+        <button type="button" data-add-to-cart data-product="blemish" class="flex h-11 flex-1 cursor-pointer items-center justify-center rounded-sm bg-navy px-3 text-[15px] leading-5 tracking-[0.21px] text-bg hover:bg-blue focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy">Thêm vào giỏ hàng</button>
       </div>
     </div>
     <div class="flex flex-1 flex-col gap-5 pt-6">
@@ -264,7 +264,7 @@
       <span class="absolute left-4 top-4 inline-flex h-[31px] items-center rounded-xs bg-white px-2 py-1 text-xs leading-4 tracking-[0.48px] text-ink">DAILY PROTECTION</span>
       <div class="absolute inset-x-4 bottom-4 flex gap-2 transition-opacity duration-300 lg:opacity-0 lg:group-hover:opacity-100 lg:group-focus-within:opacity-100">
         <a href="chi-tiet-san-pham.html" class="flex h-11 flex-1 items-center justify-center rounded-sm bg-bg px-3 text-[15px] leading-5 tracking-[0.21px] text-ink hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy">Xem chi tiết</a>
-        <button type="button" data-add-to-cart class="flex h-11 flex-1 cursor-pointer items-center justify-center rounded-sm bg-navy px-3 text-[15px] leading-5 tracking-[0.21px] text-bg hover:bg-blue focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy">Thêm vào giỏ hàng</button>
+        <button type="button" data-add-to-cart data-product="blue-light" class="flex h-11 flex-1 cursor-pointer items-center justify-center rounded-sm bg-navy px-3 text-[15px] leading-5 tracking-[0.21px] text-bg hover:bg-blue focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy">Thêm vào giỏ hàng</button>
       </div>
     </div>
     <div class="flex flex-1 flex-col gap-5 pt-6">
@@ -296,7 +296,7 @@
           <p class="mt-6 text-sm leading-5 text-gray-66">Giá bộ đang cập nhật</p>
           <div class="mt-4 flex flex-col gap-3 sm:flex-row">
             <a href="bo-giai-phap.html" class="inline-flex h-10 items-center justify-center gap-2 rounded-sm bg-brown px-6 text-base leading-[22px] tracking-[0.224px] text-bg hover:bg-brown-dark focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy sm:flex-1 whitespace-nowrap">Khám phá bộ giải pháp <img src="assets/img/san-pham/icon-arrow-up-right.svg" alt="" width="12" height="13"></a>
-            <button type="button" data-add-to-cart data-add-set class="inline-flex h-10 items-center justify-center gap-2 rounded-sm border border-brown px-6 text-base leading-[22px] tracking-[0.224px] text-brown hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy cursor-pointer sm:flex-1 whitespace-nowrap"><span data-label-text>Thêm bộ sản phẩm vào giỏ hàng</span></button>
+            <button type="button" data-add-to-cart data-products="cleansing,photo-defense,neobright,blue-light" data-add-set class="inline-flex h-10 items-center justify-center gap-2 rounded-sm border border-brown px-6 text-base leading-[22px] tracking-[0.224px] text-brown hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy cursor-pointer sm:flex-1 whitespace-nowrap"><span data-label-text>Thêm bộ sản phẩm vào giỏ hàng</span></button>
           </div>
         </div>
       </article>
@@ -310,7 +310,7 @@
           <p class="mt-6 text-sm leading-5 text-gray-66">Giá bộ đang cập nhật</p>
           <div class="mt-4 flex flex-col gap-3 sm:flex-row">
             <a href="bo-giai-phap.html" class="inline-flex h-10 items-center justify-center gap-2 rounded-sm bg-brown px-6 text-base leading-[22px] tracking-[0.224px] text-bg hover:bg-brown-dark focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy sm:flex-1 whitespace-nowrap">Khám phá bộ giải pháp <img src="assets/img/san-pham/icon-arrow-up-right.svg" alt="" width="12" height="13"></a>
-            <button type="button" data-add-to-cart data-add-set class="inline-flex h-10 items-center justify-center gap-2 rounded-sm border border-brown px-6 text-base leading-[22px] tracking-[0.224px] text-brown hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy cursor-pointer sm:flex-1 whitespace-nowrap"><span data-label-text>Thêm bộ sản phẩm vào giỏ hàng</span></button>
+            <button type="button" data-add-to-cart data-products="cleansing,zinc,blemish,blue-light" data-add-set class="inline-flex h-10 items-center justify-center gap-2 rounded-sm border border-brown px-6 text-base leading-[22px] tracking-[0.224px] text-brown hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy cursor-pointer sm:flex-1 whitespace-nowrap"><span data-label-text>Thêm bộ sản phẩm vào giỏ hàng</span></button>
           </div>
         </div>
       </article>
@@ -408,7 +408,7 @@
               <p class="text-sm leading-5 tracking-[0.14px] text-gray-49">Trọn bộ 4 sản phẩm theo đúng thứ tự routine</p>
               <div class="flex flex-wrap items-center gap-x-6 gap-y-3">
                 <a href="routine-phac-do.html" class="inline-flex items-center gap-2 text-sm font-medium leading-5 text-brown hover:text-brown-dark focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy">Xem bộ giải pháp <img src="assets/img/san-pham/icon-arrow-right.svg" alt="" width="16" height="16"></a>
-                <button type="button" data-add-to-cart data-add-set class="inline-flex h-10 items-center justify-center gap-2 rounded-sm bg-brown px-6 text-base leading-[22px] tracking-[0.224px] text-bg hover:bg-brown-dark focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy cursor-pointer"><span data-label-text>Thêm cả bộ vào giỏ hàng</span> <img src="assets/img/san-pham/icon-bag.svg" alt="" width="12" height="13"></button>
+                <button type="button" data-add-to-cart data-products="cleansing,photo-defense,neobright,blue-light" data-add-set class="inline-flex h-10 items-center justify-center gap-2 rounded-sm bg-brown px-6 text-base leading-[22px] tracking-[0.224px] text-bg hover:bg-brown-dark focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy cursor-pointer"><span data-label-text>Thêm cả bộ vào giỏ hàng</span> <img src="assets/img/san-pham/icon-bag.svg" alt="" width="12" height="13"></button>
               </div>
             </div>
             </div>
@@ -475,7 +475,7 @@
               <p class="text-sm leading-5 tracking-[0.14px] text-gray-49">Trọn bộ 3 sản phẩm theo đúng thứ tự routine</p>
               <div class="flex flex-wrap items-center gap-x-6 gap-y-3">
                 <a href="routine-phac-do.html" class="inline-flex items-center gap-2 text-sm font-medium leading-5 text-brown hover:text-brown-dark focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy">Xem bộ giải pháp <img src="assets/img/san-pham/icon-arrow-right.svg" alt="" width="16" height="16"></a>
-                <button type="button" data-add-to-cart data-add-set class="inline-flex h-10 items-center justify-center gap-2 rounded-sm bg-brown px-6 text-base leading-[22px] tracking-[0.224px] text-bg hover:bg-brown-dark focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy cursor-pointer"><span data-label-text>Thêm cả bộ vào giỏ hàng</span> <img src="assets/img/san-pham/icon-bag.svg" alt="" width="12" height="13"></button>
+                <button type="button" data-add-to-cart data-products="cleansing,retino,neobright" data-add-set class="inline-flex h-10 items-center justify-center gap-2 rounded-sm bg-brown px-6 text-base leading-[22px] tracking-[0.224px] text-bg hover:bg-brown-dark focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy cursor-pointer"><span data-label-text>Thêm cả bộ vào giỏ hàng</span> <img src="assets/img/san-pham/icon-bag.svg" alt="" width="12" height="13"></button>
               </div>
             </div>
             </div>
@@ -555,7 +555,7 @@
               <p class="text-sm leading-5 tracking-[0.14px] text-gray-49">Trọn bộ 4 sản phẩm theo đúng thứ tự routine</p>
               <div class="flex flex-wrap items-center gap-x-6 gap-y-3">
                 <a href="routine-phac-do.html" class="inline-flex items-center gap-2 text-sm font-medium leading-5 text-brown hover:text-brown-dark focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy">Xem bộ giải pháp <img src="assets/img/san-pham/icon-arrow-right.svg" alt="" width="16" height="16"></a>
-                <button type="button" data-add-to-cart data-add-set class="inline-flex h-10 items-center justify-center gap-2 rounded-sm bg-brown px-6 text-base leading-[22px] tracking-[0.224px] text-bg hover:bg-brown-dark focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy cursor-pointer"><span data-label-text>Thêm cả bộ vào giỏ hàng</span> <img src="assets/img/san-pham/icon-bag.svg" alt="" width="12" height="13"></button>
+                <button type="button" data-add-to-cart data-products="cleansing,zinc,blemish,blue-light" data-add-set class="inline-flex h-10 items-center justify-center gap-2 rounded-sm bg-brown px-6 text-base leading-[22px] tracking-[0.224px] text-bg hover:bg-brown-dark focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy cursor-pointer"><span data-label-text>Thêm cả bộ vào giỏ hàng</span> <img src="assets/img/san-pham/icon-bag.svg" alt="" width="12" height="13"></button>
               </div>
             </div>
             </div>
@@ -666,21 +666,6 @@
     a.querySelector('[data-acc-toggle]').addEventListener('click', function () {
       var open = this.getAttribute('aria-expanded') !== 'true';
       accs.forEach(function (o) { setAcc(o, o === a ? open : false); });
-    });
-  });
-
-  // Thêm vào giỏ (mẫu): tăng số trên biểu tượng giỏ ở header
-  var badge = document.querySelector('a[aria-label="Giỏ hàng"] span');
-  document.querySelectorAll('[data-add-to-cart]').forEach(function (btn) {
-    var t = btn.querySelector('[data-label-text]') || btn;
-    btn.addEventListener('click', function () {
-      var q = 1, box = btn.closest('[data-qty-scope]');
-      if (box && !btn.hasAttribute('data-add-set')) { var v = box.querySelector('[data-qty-value]'); if (v) q = parseInt(v.textContent, 10) || 1; }
-      if (badge) badge.textContent = (parseInt(badge.textContent, 10) || 0) + q;
-      if (!t.dataset.l) t.dataset.l = t.textContent;
-      t.textContent = 'Đã thêm vào giỏ';
-      clearTimeout(btn._t);
-      btn._t = setTimeout(function () { t.textContent = t.dataset.l; }, 1400);
     });
   });
 })();

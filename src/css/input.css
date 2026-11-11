@@ -6,6 +6,7 @@
 @import "aos/dist/aos.css";
 
 @source "../../*.html";
+@source "../js/*.js";
 @source "../../pages/**/*.html";
 
 /* Design tokens từ Figma sẽ được điền vào @theme */

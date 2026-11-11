@@ -39,7 +39,7 @@
           <a href="tim-kiem.html" class="hover:opacity-70 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brown" aria-label="Tìm kiếm"><img src="assets/img/hero/icon-search.svg" alt="" width="20" height="20"></a>
           <a href="gio-hang.html" class="group flex items-center gap-2 xl:gap-0.5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brown" aria-label="Giỏ hàng">
             <img src="assets/img/hero/icon-cart.svg" alt="" width="20" height="20" class="group-hover:opacity-70">
-            <span class="grid place-items-center size-5 rounded-[10px] bg-brown text-bg text-base leading-[22px] group-hover:bg-brown-dark">0</span>
+            <span data-cart-count class="grid place-items-center size-5 rounded-[10px] bg-brown text-bg text-base leading-[22px] group-hover:bg-brown-dark">0</span>
           </a>
           <button type="button" data-menu-toggle class="xl:hidden ml-2 p-1 hover:text-brown focus-visible:text-brown focus-visible:outline focus-visible:outline-2 focus-visible:outline-brown" aria-label="Mở menu">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
@@ -118,7 +118,7 @@
         </div>
 
         <div class="flex max-w-[540px] flex-col gap-5">
-          <div class="flex flex-col gap-3">
+          <div class="flex flex-col gap-3" data-qty-scope>
             <div class="flex gap-3">
               <!-- Quantity Stepper -->
               <div class="flex shrink-0 items-center rounded-sm border border-gray-bb bg-white" data-qty>
@@ -126,7 +126,7 @@
                 <input type="text" inputmode="numeric" value="1" data-qty-input aria-label="Số lượng" class="size-10 border-0 bg-transparent p-0 text-center text-lg text-navy focus:outline-none">
                 <button type="button" data-qty-plus class="grid size-10 place-items-center text-lg text-navy hover:bg-brown-50 focus-visible:outline focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-brown" aria-label="Tăng số lượng">+</button>
               </div>
-              <button type="button" data-drawer-open="cart-drawer" aria-haspopup="dialog" class="inline-flex h-10 min-w-0 flex-1 items-center justify-center gap-2 rounded-sm bg-brown px-6 text-base leading-[22px] tracking-[0.224px] text-bg hover:bg-brown-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Thêm vào giỏ hàng</button>
+              <button type="button" data-add-to-cart data-product="blue-light" aria-haspopup="dialog" class="inline-flex h-10 min-w-0 flex-1 items-center justify-center gap-2 rounded-sm bg-brown px-6 text-base leading-[22px] tracking-[0.224px] text-bg hover:bg-brown-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Thêm vào giỏ hàng</button>
             </div>
             <a href="routine-phac-do.html" class="inline-flex h-10 w-full items-center justify-center gap-2 rounded-sm border border-brown px-6 text-base leading-[22px] tracking-[0.224px] text-brown hover:bg-brown-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Tìm Routine của bạn <img src="assets/img/gio-hang-drawer/icon-arrow-up-right.svg" alt="" width="12" height="13"></a>
           </div>
@@ -163,57 +163,7 @@
 </main>
 
 <!-- Drawer giỏ hàng (overlay + panel trượt từ phải) -->
-<div id="cart-drawer" data-drawer class="group invisible fixed inset-0 z-[100] transition-[visibility] duration-300 [&.is-open]:visible" aria-hidden="true">
-  <div data-drawer-close class="absolute inset-0 bg-navy/45 opacity-0 transition-opacity duration-300 group-[.is-open]:opacity-100"></div>
-  <aside role="dialog" aria-modal="true" aria-labelledby="cart-drawer-title" tabindex="-1" class="absolute right-0 top-0 flex h-full w-full max-w-[480px] translate-x-full flex-col bg-white shadow-[-8px_0_32px_rgba(0,0,0,0.18)] transition-transform duration-300 focus:outline-none group-[.is-open]:translate-x-0">
-    <div class="flex items-center gap-3 border-b border-gray-ee px-6 py-5">
-      <h2 id="cart-drawer-title" class="flex-1 text-xl font-medium text-navy">Giỏ hàng (4)</h2>
-      <button type="button" data-drawer-close class="grid size-8 place-items-center rounded-sm hover:bg-brown-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-brown" aria-label="Đóng giỏ hàng"><img src="assets/img/gio-hang-drawer/icon-x.svg" alt="" width="20" height="20"></button>
-    </div>
-    <div class="flex min-h-0 flex-1 flex-col gap-4 overflow-y-auto px-6 py-5">
-      <div class="flex items-center gap-2.5 rounded-sm bg-[#eaf4ec] px-3.5 py-3" role="status">
-        <img src="assets/img/gio-hang-drawer/icon-check.svg" alt="" width="16" height="16" class="shrink-0">
-        <p class="flex-1 text-sm leading-5 text-[#2f5d3a]">Đã thêm Blue Light Shield Tone-Up Fluid Sunscreen vào giỏ hàng.</p>
-      </div>
-      <div class="flex flex-col gap-3 rounded-md bg-brown-50 px-5 py-4">
-        <p class="text-sm leading-5 tracking-[0.14px] text-navy">Đơn hàng của bạn được miễn phí giao hàng tiêu chuẩn toàn quốc.</p>
-        <div class="h-1 overflow-hidden rounded-full bg-white" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" aria-label="Tiến độ miễn phí vận chuyển"><div class="h-1 w-full rounded-full bg-brown"></div></div>
-      </div>
-      <ul class="flex flex-col gap-3">
-        <li class="flex items-center gap-4">
-          <div class="relative h-20 w-16 shrink-0">
-            <img src="assets/img/gio-hang-drawer/p-sunscreen.webp" alt="Blue Light Shield Tone-Up Fluid Sunscreen" class="size-full rounded-sm object-contain">
-            <span class="absolute -top-2 left-[52px] grid size-[22px] place-items-center rounded-full bg-navy text-xs leading-4 text-bg">1</span>
-          </div>
-          <div class="flex min-w-0 flex-1 flex-col gap-1"><p class="text-sm font-medium leading-5 tracking-[0.14px] text-navy">Blue Light Shield Tone-Up Fluid Sunscreen</p><p class="text-xs leading-4 text-gray-66">50 g</p></div>
-          <p class="shrink-0 whitespace-nowrap text-sm font-medium leading-5 tracking-[0.14px] text-navy">1.000.000 VNĐ</p>
-        </li>
-        <li class="flex items-center gap-4">
-          <div class="relative h-20 w-16 shrink-0">
-            <img src="assets/img/gio-hang-drawer/p-repair-cream.webp" alt="NeoBright Repair Cream" class="size-full rounded-sm object-contain">
-            <span class="absolute -top-2 left-[52px] grid size-[22px] place-items-center rounded-full bg-navy text-xs leading-4 text-bg">1</span>
-          </div>
-          <div class="flex min-w-0 flex-1 flex-col gap-1"><p class="text-sm font-medium leading-5 tracking-[0.14px] text-navy">NeoBright Repair Cream</p><p class="text-xs leading-4 text-gray-66">50 g</p></div>
-          <p class="shrink-0 whitespace-nowrap text-sm font-medium leading-5 tracking-[0.14px] text-navy">890.000 VNĐ</p>
-        </li>
-        <li class="flex items-center gap-4">
-          <div class="relative h-20 w-16 shrink-0">
-            <img src="assets/img/gio-hang-drawer/p-cleansing-gel.webp" alt="Purifying Cleansing Gel" class="size-full rounded-sm object-contain">
-            <span class="absolute -top-2 left-[52px] grid size-[22px] place-items-center rounded-full bg-navy text-xs leading-4 text-bg">2</span>
-          </div>
-          <div class="flex min-w-0 flex-1 flex-col gap-1"><p class="text-sm font-medium leading-5 tracking-[0.14px] text-navy">Purifying Cleansing Gel</p><p class="text-xs leading-4 text-gray-66">150 ml</p></div>
-          <p class="shrink-0 whitespace-nowrap text-sm font-medium leading-5 tracking-[0.14px] text-navy">900.000 VNĐ</p>
-        </li>
-      </ul>
-    </div>
-    <div class="flex flex-col gap-3 bg-bg px-6 pb-6 pt-5">
-      <div class="flex items-start justify-between gap-4 text-sm leading-5 tracking-[0.14px]"><span class="text-gray-49">Tạm tính (4 sản phẩm)</span><span class="font-medium text-navy">2.790.000 VNĐ</span></div>
-      <p class="text-xs leading-4 text-gray-66">Giao hàng tiêu chuẩn miễn phí cho mọi đơn hàng.</p>
-      <a href="gio-hang.html" class="inline-flex h-12 w-full items-center justify-center rounded-sm bg-brown px-6 text-base leading-[22px] tracking-[0.224px] text-bg hover:bg-brown-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Đi tới giỏ hàng</a>
-      <button type="button" data-drawer-close class="inline-flex h-12 w-full items-center justify-center rounded-sm border border-brown px-6 text-base leading-[22px] tracking-[0.224px] text-brown hover:bg-brown-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Tiếp tục mua sắm</button>
-    </div>
-  </aside>
-</div>
+<!-- Drawer giỏ hàng được dựng chung bằng JS (src/js/cart.js), mở khi bấm nút thêm vào giỏ hoặc truy cập #mo-gio-hang -->
 
 <script>
 (function () {
@@ -226,40 +176,6 @@
     input.addEventListener('change', function () { set(input.value); });
   });
 
-  // Drawer: mở/đóng, khoá cuộn nền, Esc, focus trap
-  var drawer = document.getElementById('cart-drawer');
-  var panel = drawer.querySelector('[role="dialog"]');
-  var lastFocus = null;
-  var FOCUSABLE = 'a[href], button:not([disabled]), input:not([disabled]), [tabindex]:not([tabindex="-1"])';
-  function openDrawer(trigger) {
-    lastFocus = trigger || document.activeElement;
-    drawer.classList.add('is-open');
-    drawer.setAttribute('aria-hidden', 'false');
-    document.documentElement.classList.add('overflow-hidden');
-    setTimeout(function () { panel.focus(); }, 50);
-  }
-  function closeDrawer() {
-    if (!drawer.classList.contains('is-open')) return;
-    drawer.classList.remove('is-open');
-    drawer.setAttribute('aria-hidden', 'true');
-    document.documentElement.classList.remove('overflow-hidden');
-    if (lastFocus && lastFocus.focus) lastFocus.focus();
-  }
-  document.querySelectorAll('[data-drawer-open="cart-drawer"]').forEach(function (b) {
-    b.addEventListener('click', function () { openDrawer(b); });
-  });
-  drawer.querySelectorAll('[data-drawer-close]').forEach(function (b) { b.addEventListener('click', closeDrawer); });
-  document.addEventListener('keydown', function (e) {
-    if (!drawer.classList.contains('is-open')) return;
-    if (e.key === 'Escape') { e.preventDefault(); closeDrawer(); return; }
-    if (e.key !== 'Tab') return;
-    var items = Array.prototype.filter.call(panel.querySelectorAll(FOCUSABLE), function (el) { return el.offsetParent !== null; });
-    if (!items.length) return;
-    var first = items[0], last = items[items.length - 1];
-    if (e.shiftKey && (document.activeElement === first || document.activeElement === panel)) { e.preventDefault(); last.focus(); }
-    else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
-  });
-  if (location.hash === '#mo-gio-hang') openDrawer();
 })();
 </script>
 
