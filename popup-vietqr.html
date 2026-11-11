@@ -120,7 +120,6 @@
             <span class="absolute left-1/2 top-1/2 flex h-5 w-[36.7px] -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-[4px] bg-brown text-sm font-medium leading-5 tracking-[0.14px] text-white" aria-hidden="true">DZ</span>
           </div>
           <p class="text-xs leading-4 text-gray-66">Mở app ngân hàng để quét mã</p>
-          <p class="text-xs leading-4 text-gray-66" aria-live="off">Mã hết hạn sau <span data-countdown="900" class="font-medium text-brown">15:00</span></p>
         </div>
 
         <div class="flex min-w-0 flex-1 flex-col">
@@ -147,25 +146,13 @@
 (function () {
   var modal = document.getElementById('vietqr-modal');
   var panel = modal.querySelector('[role="dialog"]');
-  var lastFocus = null, timer = null;
+  var lastFocus = null;
   var FOCUSABLE = 'a[href], button:not([disabled]), input:not([disabled]), [tabindex]:not([tabindex="-1"])';
-  var cd = modal.querySelector('[data-countdown]');
-  var total = parseInt(cd.getAttribute('data-countdown'), 10), left = total;
-
-  function fmt(s) { var m = Math.floor(s / 60), r = s % 60; return (m < 10 ? '0' : '') + m + ':' + (r < 10 ? '0' : '') + r; }
-  function tick() {
-    left = Math.max(0, left - 1);
-    cd.textContent = left ? fmt(left) : 'đã hết';
-    if (!left) { clearInterval(timer); timer = null; }
-  }
-  function startTimer() { clearInterval(timer); left = total; cd.textContent = fmt(left); timer = setInterval(tick, 1000); }
-
   function openModal(trigger) {
     lastFocus = trigger || document.activeElement;
     modal.classList.add('is-open');
     modal.setAttribute('aria-hidden', 'false');
     document.documentElement.classList.add('overflow-hidden');
-    startTimer();
     setTimeout(function () { panel.focus(); }, 50);
   }
   function closeModal() {
@@ -173,7 +160,6 @@
     modal.classList.remove('is-open');
     modal.setAttribute('aria-hidden', 'true');
     document.documentElement.classList.remove('overflow-hidden');
-    clearInterval(timer);
     if (lastFocus && lastFocus.focus) lastFocus.focus();
   }
   document.querySelectorAll('[data-modal-open="vietqr-modal"]').forEach(function (b) { b.addEventListener('click', function () { openModal(b); }); });
