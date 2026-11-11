@@ -233,4 +233,11 @@ if (videoCards.length) {
   document.addEventListener('keydown', (e) => { if (e.key === 'Escape') videoCards.forEach(stop); });
 }
 
+// FAQ accordion (<details data-faq>): mở một câu hỏi thì tự đóng các câu hỏi khác trên trang.
+document.addEventListener('toggle', (e) => {
+  const d = e.target;
+  if (!(d instanceof HTMLDetailsElement) || !d.hasAttribute('data-faq') || !d.open) return;
+  document.querySelectorAll('details[data-faq][open]').forEach((o) => { if (o !== d) o.open = false; });
+}, true);
+
 initCart();
