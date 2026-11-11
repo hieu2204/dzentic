@@ -60,3 +60,18 @@
 .scroll-thin::-webkit-scrollbar { width: 3px; }
 .scroll-thin::-webkit-scrollbar-track { background: #dddddd; }
 .scroll-thin::-webkit-scrollbar-thumb { background: #494949; border-radius: 0; }
+
+/* Marquee mượt (section Từ khoa học đến bằng chứng): hai nhóm thẻ giống hệt nhau chạy liên tục, vòng lặp nối liền.
+   Tốc độ ~40px/giây: đổi --marquee-duration (mobile, chạy ngang) và --marquee-duration-lg (desktop, chạy dọc). */
+@keyframes marquee-x { to { transform: translateX(-50%); } }
+@keyframes marquee-y { to { transform: translateY(-50%); } }
+.marquee-track { animation: marquee-x var(--marquee-duration, 36s) linear infinite; will-change: transform; }
+@media (min-width: 1024px) {
+  .marquee-track { animation-name: marquee-y; animation-duration: var(--marquee-duration-lg, 33s); }
+}
+@media (hover: hover) { .marquee:hover .marquee-track { animation-play-state: paused; } }
+.marquee:focus-within .marquee-track { animation-play-state: paused; }
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track { animation: none; }
+  .marquee { overflow: auto; }
+}
