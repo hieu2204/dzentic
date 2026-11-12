@@ -207,13 +207,14 @@ if (videoCards.length) {
     [...card.children].forEach((c) => { if (c._hidden) { c.style.display = c._hidden === '-' ? '' : c._hidden; delete c._hidden; } });
     card.classList.remove('is-playing');
   };
-  const play = (card) => {
-    videoCards.forEach((o) => { if (o !== card) stop(o); });
+  const play = (card, auto) => {
+    if (!auto) videoCards.forEach((o) => { if (o !== card) stop(o); });
     if (card.querySelector('video')) return;
     const poster = card.querySelector('img'); 
     [...card.children].forEach((c) => { c._hidden = c.style.display || '-'; c.style.display = 'none'; });
     const v = document.createElement('video');
     v.src = card.dataset.videoSrc; v.controls = true; v.autoplay = true; v.playsInline = true; v.preload = 'auto';
+    if (auto) { v.muted = true; v.loop = true; }
     if (poster) v.poster = poster.currentSrc || poster.src;
     v.setAttribute('aria-label', card.dataset.videoTitle || 'Video');
     v.className = 'absolute inset-0 z-20 size-full bg-ink object-cover';
@@ -222,6 +223,7 @@ if (videoCards.length) {
       const e = document.createElement('p'); e.setAttribute('data-video-error', '');
       e.className = 'absolute inset-x-6 bottom-6 z-20 rounded-sm bg-ink/70 px-4 py-3 text-sm text-bg';
       e.textContent = 'Không tải được video. Vui lòng thử lại sau.'; card.appendChild(e);
+      card._failed = true;
       setTimeout(() => stop(card), 2500);
     });
     card.classList.add('is-playing'); card.appendChild(v);
@@ -231,6 +233,15 @@ if (videoCards.length) {
     card.querySelectorAll('[data-video-play]').forEach((b) => b.addEventListener('click', () => play(card)));
   });
   document.addEventListener('keydown', (e) => { if (e.key === 'Escape') videoCards.forEach(stop); });
+  // [data-video-autoplay]: tự phát (tắt tiếng, lặp) khi cuộn vào khung nhìn, dừng khi cuộn ra; có thể bật tiếng bằng thanh điều khiển.
+  const autoCards = videoCards.filter((c) => c.hasAttribute('data-video-autoplay'));
+  if (autoCards.length && 'IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    const io = new IntersectionObserver((entries) => entries.forEach((en) => {
+      const c = en.target;
+      if (en.isIntersecting) { if (!c._failed) play(c, true); } else stop(c);
+    }), { threshold: 0.5 });
+    autoCards.forEach((c) => io.observe(c));
+  }
 }
 
 // FAQ accordion (<details data-faq>): mở một câu hỏi thì tự đóng các câu hỏi khác trên trang.
