@@ -16,8 +16,9 @@
     Nhận ưu đãi giảm tới 10% và miễn phí vận chuyển cho tất cả các đơn hàng. Cam kết 100% sản phẩm chính hãng.
   </p>
 </section>
-<header class="sticky top-0 z-50 border-b border-gray-ee bg-bg">
-    <div class="max-w-site mx-auto px-4 md:px-8 xl:px-[72px] h-20 xl:h-[120px] flex items-center justify-between xl:grid xl:grid-cols-[1fr_auto_1fr] xl:gap-6">
+<div class="relative h-20 xl:h-[121px]">
+  <header data-site-header class="group/hdr absolute inset-x-0 top-0 z-50 border-b border-gray-ee bg-bg transition-shadow duration-300 [&.is-stuck]:fixed [&.is-stuck]:shadow-popover">
+    <div class="max-w-site mx-auto px-4 md:px-8 xl:px-[72px] h-20 xl:h-[120px] transition-[height] duration-300 group-[.is-stuck]/hdr:h-16 xl:group-[.is-stuck]/hdr:h-[88px] flex items-center justify-between xl:grid xl:grid-cols-[1fr_auto_1fr] xl:gap-6">
       <nav class="hidden xl:flex items-center gap-6 text-base leading-[22px] tracking-[0.224px]" aria-label="Menu trái">
         <a href="thu-vien-hoat-chat.html" class="hover:text-brown focus-visible:text-brown focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brown link-u">Khoa Học &amp; Bằng Chứng</a>
         <a href="san-pham.html" class="hover:text-brown focus-visible:text-brown focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brown link-u">Sản Phẩm</a>
@@ -25,7 +26,7 @@
 
       <a href="index.html" class="block shrink-0 xl:justify-self-center hover:opacity-80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brown" aria-label="Dzentic - Trang chủ">
         <img src="assets/img/hero/logo-dzentic.png" alt="Dzentic - A brand by Sorai Beauty Engine"
-             class="h-14 xl:h-[92px] w-auto object-contain">
+             class="h-14 xl:h-[92px] transition-[height] duration-300 group-[.is-stuck]/hdr:h-10 xl:group-[.is-stuck]/hdr:h-[60px] w-auto object-contain">
       </a>
 
       <div class="flex items-center gap-6 xl:justify-self-end">
@@ -58,6 +59,7 @@
       </ul>
     </nav>
   </header>
+</div>
 <!-- SECTION: Subpage hero (dùng chung cho mọi trang con). Chỉ đổi breadcrumb, tiêu đề, mô tả. -->
 <section class="relative overflow-hidden bg-gradient-to-r from-bg to-[#f6eadf]">
   <img src="assets/img/subhero/bg-sunrise.webp" alt="" aria-hidden="true" class="pointer-events-none absolute inset-x-0 top-0 mx-auto hidden aspect-[1440/280] w-full max-w-[1440px] lg:block">

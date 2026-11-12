@@ -22,8 +22,8 @@
 <!-- SECTION: hero-header -->
 <section class="relative bg-hero-fill text-navy overflow-hidden" aria-roledescription="carousel" aria-label="Giới thiệu Dzentic">
   <!-- Header: nằm NGOÀI slider, đè lên ảnh nền -->
-  <header data-site-header class="absolute inset-x-0 top-0 z-50 transition-[background-color,box-shadow] duration-300 [&.is-stuck]:fixed [&.is-stuck]:bg-bg [&.is-stuck]:border-b [&.is-stuck]:border-gray-ee [&.is-stuck]:shadow-popover">
-    <div class="max-w-site mx-auto px-4 md:px-8 xl:px-[72px] h-20 xl:h-[120px] flex items-center justify-between xl:grid xl:grid-cols-[1fr_auto_1fr] xl:gap-6">
+  <header data-site-header class="group/hdr absolute inset-x-0 top-0 z-50 transition-[background-color,box-shadow] duration-300 [&.is-stuck]:fixed [&.is-stuck]:bg-bg [&.is-stuck]:border-b [&.is-stuck]:border-gray-ee [&.is-stuck]:shadow-popover">
+    <div class="max-w-site mx-auto px-4 md:px-8 xl:px-[72px] h-20 xl:h-[120px] transition-[height] duration-300 group-[.is-stuck]/hdr:h-16 xl:group-[.is-stuck]/hdr:h-[88px] flex items-center justify-between xl:grid xl:grid-cols-[1fr_auto_1fr] xl:gap-6">
       <nav class="hidden xl:flex items-center gap-6 text-base leading-[22px] tracking-[0.224px]" aria-label="Menu trái">
         <a href="thu-vien-hoat-chat.html" class="hover:text-brown focus-visible:text-brown focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brown link-u">Khoa Học &amp; Bằng Chứng</a>
         <a href="san-pham.html" class="hover:text-brown focus-visible:text-brown focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brown link-u">Sản Phẩm</a>
@@ -31,7 +31,7 @@
 
       <a href="index.html" class="block shrink-0 xl:justify-self-center hover:opacity-80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brown" aria-label="Dzentic - Trang chủ">
         <img src="assets/img/hero/logo-dzentic.png" alt="Dzentic - A brand by Sorai Beauty Engine"
-             class="h-14 xl:h-[92px] w-auto object-contain">
+             class="h-14 xl:h-[92px] transition-[height] duration-300 group-[.is-stuck]/hdr:h-10 xl:group-[.is-stuck]/hdr:h-[60px] w-auto object-contain">
       </a>
 
       <div class="flex items-center gap-6 xl:justify-self-end">
@@ -70,11 +70,11 @@
     <div class="swiper-wrapper">
 
       <!-- Slide 01 (Figma) -->
-      <div class="swiper-slide relative !h-auto">
+      <div class="swiper-slide relative !h-auto xl:aspect-[1440/846] xl:max-h-[1000px]">
         <img src="assets/img/hero/hero-bg.webp" alt="Người mẫu cầm sản phẩm Dzentic trên nền tia nắng vàng"
              class="absolute inset-0 w-full h-full object-cover object-[75%_center] md:object-center" fetchpriority="high">
         <div class="absolute inset-0 bg-hero-fill/60 md:hidden" aria-hidden="true"></div>
-        <div class="relative max-w-site mx-auto px-4 md:px-8 xl:px-[72px] pt-[120px] pb-28 md:pt-[148px] md:pb-32 xl:pt-[238px] xl:pb-0 min-h-[560px] xl:min-h-[846px]">
+        <div class="relative max-w-site mx-auto px-4 md:px-8 xl:px-[72px] pt-[120px] pb-28 md:pt-[148px] md:pb-32 xl:pt-[238px] xl:pb-0 min-h-[560px] xl:h-full xl:min-h-0">
           <div class="flex flex-col gap-10 text-brown max-w-[620px] xl:max-w-[780px]">
             <div class="flex flex-col gap-6">
               <div class="flex flex-col gap-3 uppercase">
@@ -100,11 +100,11 @@
       </div>
 
       <!-- Slide 02 (nội dung tham khảo, có thể thay) -->
-      <div class="swiper-slide relative !h-auto">
+      <div class="swiper-slide relative !h-auto xl:aspect-[1440/846] xl:max-h-[1000px]">
         <img src="assets/img/hero/hero-bg-2.jpg" alt="Phân tử hoạt chất Dzentic trên nền sáng"
              class="absolute inset-0 w-full h-full object-cover object-[75%_center] md:object-center" loading="lazy">
         <div class="absolute inset-0 bg-hero-fill/60 md:hidden" aria-hidden="true"></div>
-        <div class="relative max-w-site mx-auto px-4 md:px-8 xl:px-[72px] pt-[120px] pb-28 md:pt-[148px] md:pb-32 xl:pt-[238px] xl:pb-0 min-h-[560px] xl:min-h-[846px]">
+        <div class="relative max-w-site mx-auto px-4 md:px-8 xl:px-[72px] pt-[120px] pb-28 md:pt-[148px] md:pb-32 xl:pt-[238px] xl:pb-0 min-h-[560px] xl:h-full xl:min-h-0">
           <div class="flex flex-col gap-10 text-brown max-w-[620px] xl:max-w-[780px]">
             <div class="flex flex-col gap-6">
               <div class="flex flex-col gap-3 uppercase">
