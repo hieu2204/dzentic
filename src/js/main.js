@@ -237,7 +237,7 @@ if (videoCards.length) {
 document.addEventListener('toggle', (e) => {
   const d = e.target;
   if (!(d instanceof HTMLDetailsElement) || !d.hasAttribute('data-faq') || !d.open) return;
-  document.querySelectorAll('details[data-faq][open]').forEach((o) => { if (o !== d) o.open = false; });
+  document.querySelectorAll('details[data-faq][open]').forEach((o) => { if (o !== d) { if (window.DZ && window.DZ.closeDetails) window.DZ.closeDetails(o); else o.open = false; } });
 }, true);
 
 // Thanh gạch chân trượt cho tab: <div role="tablist" data-tab-indicator> ... tab active = [aria-selected="true"]
@@ -252,6 +252,7 @@ document.querySelectorAll('[data-tab-indicator]').forEach((list) => {
     if (instant) { void bar.offsetWidth; bar.style.transition = ''; }
   };
   const mo = new MutationObserver(() => place(false));
+  if (window.ResizeObserver) { const ro = new ResizeObserver(() => place(false)); ro.observe(list); list.querySelectorAll('[role="tab"]').forEach((t) => ro.observe(t)); }
   list.querySelectorAll('[role="tab"]').forEach((t) => mo.observe(t, { attributes: true, attributeFilter: ['aria-selected'] }));
   window.addEventListener('resize', () => place(true));
   if (document.fonts && document.fonts.ready) document.fonts.ready.then(() => place(true));
@@ -274,5 +275,65 @@ window.DZ.slide = function (el, show) {
     el._anim.onfinish = () => { el.hidden = true; el.style.overflow = ''; el._anim = null; };
   }
 };
+
+// Thẻ nghiêng 3D: <article data-tilt> nghiêng nhẹ theo chuột (chỉ thiết bị có hover + chuột)
+const fineHover = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+const noMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+if (fineHover && !noMotion) {
+  document.querySelectorAll('[data-tilt]').forEach((el) => {
+    let raf = 0;
+    el.addEventListener('pointermove', (e) => {
+      const r = el.getBoundingClientRect(); const x = (e.clientX - r.left) / r.width; const y = (e.clientY - r.top) / r.height;
+      cancelAnimationFrame(raf);
+      raf = requestAnimationFrame(() => {
+        el.classList.add('is-tilting');
+        el.style.setProperty('--rx', ((0.5 - y) * 6).toFixed(2) + 'deg'); el.style.setProperty('--ry', ((x - 0.5) * 6).toFixed(2) + 'deg');
+        el.style.setProperty('--mx', (x * 100).toFixed(1) + '%'); el.style.setProperty('--my', (y * 100).toFixed(1) + '%');
+      });
+    });
+    el.addEventListener('pointerleave', () => { cancelAnimationFrame(raf); el.classList.remove('is-tilting'); el.style.setProperty('--rx', '0deg'); el.style.setProperty('--ry', '0deg'); });
+  });
+
+  // Con trỏ "Phát" bám theo chuột trên thẻ video
+  const vcards = document.querySelectorAll('[data-video-card]');
+  if (vcards.length) {
+    const cur = document.createElement('div'); cur.className = 'play-cursor'; cur.setAttribute('aria-hidden', 'true'); cur.textContent = 'Phát'; document.body.appendChild(cur);
+    let raf2 = 0, px = 0, py = 0;
+    const move = () => { cur.style.transform = 'translate3d(' + px + 'px,' + py + 'px,0)'; raf2 = 0; };
+    vcards.forEach((card) => {
+      card.addEventListener('pointerenter', () => { if (!card.classList.contains('is-playing')) cur.classList.add('is-on'); });
+      card.addEventListener('pointermove', (e) => { px = e.clientX; py = e.clientY; cur.classList.toggle('is-on', !card.classList.contains('is-playing')); if (!raf2) raf2 = requestAnimationFrame(move); });
+      card.addEventListener('pointerleave', () => cur.classList.remove('is-on'));
+      card.addEventListener('click', () => cur.classList.remove('is-on'));
+    });
+  }
+}
+
+// Accordion <details> mở/đóng mượt (FAQ và nhóm bộ lọc). Đóng các câu khác qua DZ.closeDetails.
+window.DZ = window.DZ || {};
+function animDetails(d, opening) {
+  const sum = d.querySelector(':scope > summary'); if (!sum) { d.open = opening; return; }
+  if (d._anim) { d._anim.cancel(); d._anim = null; }
+  const ease = 'cubic-bezier(.2,.7,.2,1)';
+  d.style.overflow = 'hidden';
+  if (opening) {
+    const h0 = d.offsetHeight; d.open = true; const h1 = d.offsetHeight;
+    d._anim = d.animate([{ height: h0 + 'px' }, { height: h1 + 'px' }], { duration: 320, easing: ease });
+    d._anim.onfinish = () => { d.style.overflow = ''; d._anim = null; };
+    d._anim.oncancel = () => { d.style.overflow = ''; };
+  } else {
+    const h0 = d.offsetHeight; const h1 = sum.offsetHeight;
+    d._anim = d.animate([{ height: h0 + 'px' }, { height: h1 + 'px' }], { duration: 260, easing: ease });
+    d._anim.onfinish = () => { d.open = false; d.style.overflow = ''; d._anim = null; };
+    d._anim.oncancel = () => { d.style.overflow = ''; };
+  }
+}
+window.DZ.closeDetails = (o) => { if (!o.open) return; if (noMotion) { o.open = false; } else animDetails(o, false); };
+if (!noMotion) {
+  document.querySelectorAll('details.group, details[data-faq]').forEach((d) => {
+    const sum = d.querySelector(':scope > summary'); if (!sum) return;
+    sum.addEventListener('click', (e) => { e.preventDefault(); animDetails(d, !d.open); });
+  });
+}
 
 initCart();
