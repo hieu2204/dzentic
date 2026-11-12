@@ -166,7 +166,7 @@
     </nav>
   </div>
 </div>
-<section id="hoat-chat" class="scroll-mt-32 xl:scroll-mt-40 bg-bg" aria-label="Hoạt chất nổi bật">
+<section id="hoat-chat" class="scroll-mt-32 xl:scroll-mt-[136px] bg-bg" aria-label="Hoạt chất nổi bật">
   <div class="mx-auto max-w-site px-4 md:px-8 xl:px-[72px] py-8 md:py-12">
     <div class="hidden border-b border-gray-dd py-3 text-sm font-medium leading-5 tracking-[0.14px] text-gray-66 lg:grid lg:grid-cols-[360px_minmax(0,1fr)_248px] lg:gap-6" aria-hidden="true"><span>Hoạt chất</span><span>Vai trò trong công thức</span><span>Tầng bảo vệ</span></div>
     <ul>
@@ -198,7 +198,7 @@
     </ul>
   </div>
 </section>
-<section id="huong-dan" class="scroll-mt-32 xl:scroll-mt-40 bg-brown-50" aria-labelledby="video-title">
+<section id="huong-dan" class="scroll-mt-32 xl:scroll-mt-[136px] bg-brown-50" aria-labelledby="video-title">
   <div class="mx-auto max-w-site px-4 md:px-8 xl:px-[72px] grid gap-10 py-16 md:py-24 lg:grid-cols-[400px_minmax(0,1fr)] lg:gap-14">
     <div class="flex flex-col gap-8">
       <div class="flex flex-col gap-3">
@@ -249,7 +249,7 @@
     </div>
   </div>
 </section>
-<section id="loi-ich" class="scroll-mt-32 xl:scroll-mt-40 bg-bg" aria-labelledby="loi-ich-title">
+<section id="loi-ich" class="scroll-mt-32 xl:scroll-mt-[136px] bg-bg" aria-labelledby="loi-ich-title">
   <div class="mx-auto max-w-site px-4 md:px-8 xl:px-[72px] flex flex-col gap-10 py-16 md:gap-12 md:py-24">
     <h2 id="loi-ich-title" class="text-3xl uppercase leading-[1.4] tracking-[0.624px] text-brown-dark md:text-5xl">Lợi ích trên làn da</h2>
     <ul class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
@@ -271,7 +271,7 @@
     </div>
   </div>
 </section>
-<section id="khac-biet" class="scroll-mt-32 xl:scroll-mt-40 bg-[#7b5532]" aria-labelledby="khac-biet-title">
+<section id="khac-biet" class="scroll-mt-32 xl:scroll-mt-[136px] bg-[#7b5532]" aria-labelledby="khac-biet-title">
   <div class="mx-auto max-w-site px-4 md:px-8 xl:px-[72px] flex flex-col gap-10 py-16 md:py-24">
     <h2 id="khac-biet-title" class="text-3xl uppercase leading-[1.4] tracking-[0.624px] text-bg md:text-5xl">Điểm khác biệt của công thức</h2>
     <ul class="grid gap-6 md:grid-cols-2">
@@ -282,7 +282,7 @@
     </ul>
   </div>
 </section>
-<section id="routine" class="scroll-mt-32 xl:scroll-mt-40 bg-bg" aria-labelledby="routine-title">
+<section id="routine" class="scroll-mt-32 xl:scroll-mt-[136px] bg-bg" aria-labelledby="routine-title">
   <div class="mx-auto max-w-site px-4 md:px-8 xl:px-[72px] flex flex-col gap-10 py-16 md:gap-12 md:py-24">
     <div class="flex flex-col gap-4">
       <div class="flex flex-col gap-3"><p class="text-sm tracking-[4px] uppercase text-brown md:text-base md:leading-[22px]">Vai trò trong routine</p><h2 id="routine-title" class="text-3xl uppercase leading-[1.4] tracking-[0.624px] text-brown-dark md:text-5xl">Bước cuối của chu trình ban ngày</h2></div>
@@ -613,7 +613,7 @@
   var secs = links.map(function (a) { return document.querySelector(a.getAttribute('href')); });
   function spy() {
     var bar = document.querySelector('[data-sec-tabs]');
-    var line = (bar ? bar.getBoundingClientRect().bottom : 0) + 24, idx = 0;
+    var line = (bar ? bar.getBoundingClientRect().bottom : 0) + 48, idx = 0;
     secs.forEach(function (s, i) { if (s && s.getBoundingClientRect().top <= line) idx = i; });
     if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 4) idx = secs.length - 1;
     links.forEach(function (a, i) { if (i === idx) a.setAttribute('aria-current', 'true'); else a.removeAttribute('aria-current'); });
