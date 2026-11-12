@@ -125,56 +125,517 @@
 </section>
 
 <!-- SECTION: Routine theo tình trạng da -->
-<section id="routine" class="bg-brown-50 py-16 md:py-24" aria-labelledby="routine-title">
+<section id="routine" class="bg-brown-50 py-16 md:py-24" aria-labelledby="routine-title" data-routine-quiz>
   <div class="mx-auto flex max-w-site flex-col gap-10 px-5 md:px-10 xl:px-18">
     <h2 id="routine-title" class="text-center text-3xl uppercase leading-[1.4] tracking-[0.624px] text-brown-dark md:text-5xl" data-aos="fade-up">Routine theo tình trạng da</h2>
-    <div class="flex flex-col gap-10 lg:flex-row lg:items-start lg:gap-12">
-      <div class="flex w-full flex-col gap-10 lg:w-[480px] lg:shrink-0 lg:gap-[66px]">
-        <div class="flex flex-col">
-          <ol class="relative flex h-[66px] w-full max-w-[416px] justify-between" aria-label="Các bước">
-            <li class="absolute left-[25px] right-[25px] top-[15px] h-[2px] bg-gray-bb" aria-hidden="true"></li>
-            <li class="relative flex w-16 flex-col items-center gap-3 text-brown-dark" aria-current="step"><span class="flex size-8 items-center justify-center rounded-full bg-brown-dark text-xs text-bg">1</span><span class="text-base leading-[22px] tracking-[0.224px]">Bước 1</span></li>
-            <li class="relative flex w-16 flex-col items-center gap-3 text-gray-99"><span class="flex size-8 items-center justify-center rounded-full bg-gray-bb text-xs text-bg">2</span><span class="text-base leading-[22px] tracking-[0.224px]">Bước 2</span></li>
-            <li class="relative flex w-16 flex-col items-center gap-3 text-gray-99"><span class="flex size-8 items-center justify-center rounded-full bg-gray-bb text-xs text-bg">3</span><span class="text-base leading-[22px] tracking-[0.224px]">Bước 3</span></li>
-          </ol>
-          <fieldset class="mt-9 min-w-0">
-            <legend class="mb-5 text-xl font-bold leading-7 text-brown-dark">Bạn đang quan tâm điều gì nhất?</legend>
-            <div class="flex flex-col gap-3">
-          <label class="group flex cursor-pointer items-start gap-4 rounded-[4px] border border-gray-dd bg-white px-[18px] py-[14px] has-[:checked]:border-brown-dark has-[:checked]:bg-brown-50 hover:border-brown has-[:focus-visible]:outline-2 has-[:focus-visible]:outline-offset-2 has-[:focus-visible]:outline-navy">
-            <span class="flex pt-[3px]"><input type="radio" name="tinh-trang" value="mun" class="peer sr-only"><span class="flex size-[18px] items-center justify-center rounded-[3px] border-[1.5px] border-navy bg-white group-has-[:checked]:bg-navy"><img src="assets/img/routine-phac-do/icon-check-white.svg" alt="" width="12" height="12" class="hidden size-3 group-has-[:checked]:block"></span></span>
-            <span class="flex min-w-0 flex-1 flex-col gap-[2px]"><span class="text-base leading-[22px] tracking-[0.224px] text-navy">Da mụn và thâm mụn</span><span class="text-sm leading-5 tracking-[0.14px] text-gray-66">Da dễ nổi mụn hoặc có vết thâm sau mụn</span></span>
-          </label>
-          <label class="group flex cursor-pointer items-start gap-4 rounded-[4px] border border-gray-dd bg-white px-[18px] py-[14px] has-[:checked]:border-brown-dark has-[:checked]:bg-brown-50 hover:border-brown has-[:focus-visible]:outline-2 has-[:focus-visible]:outline-offset-2 has-[:focus-visible]:outline-navy">
-            <span class="flex pt-[3px]"><input type="radio" name="tinh-trang" value="nam" class="peer sr-only" checked><span class="flex size-[18px] items-center justify-center rounded-[3px] border-[1.5px] border-navy bg-white group-has-[:checked]:bg-navy"><img src="assets/img/routine-phac-do/icon-check-white.svg" alt="" width="12" height="12" class="hidden size-3 group-has-[:checked]:block"></span></span>
-            <span class="flex min-w-0 flex-1 flex-col gap-[2px]"><span class="text-base leading-[22px] tracking-[0.224px] text-navy">Da nám và dấu hiệu lão hóa</span><span class="text-sm leading-5 tracking-[0.14px] text-gray-66">Màu da không đều, thâm nám, nếp nhăn hoặc da kém đàn hồi</span></span>
-          </label>
-          <label class="group flex cursor-pointer items-start gap-4 rounded-[4px] border border-gray-dd bg-white px-[18px] py-[14px] has-[:checked]:border-brown-dark has-[:checked]:bg-brown-50 hover:border-brown has-[:focus-visible]:outline-2 has-[:focus-visible]:outline-offset-2 has-[:focus-visible]:outline-navy">
-            <span class="flex pt-[3px]"><input type="radio" name="tinh-trang" value="nhaycam" class="peer sr-only"><span class="flex size-[18px] items-center justify-center rounded-[3px] border-[1.5px] border-navy bg-white group-has-[:checked]:bg-navy"><img src="assets/img/routine-phac-do/icon-check-white.svg" alt="" width="12" height="12" class="hidden size-3 group-has-[:checked]:block"></span></span>
-            <span class="flex min-w-0 flex-1 flex-col gap-[2px]"><span class="text-base leading-[22px] tracking-[0.224px] text-navy">Da nhạy cảm/ Đang treatment</span><span class="text-sm leading-5 tracking-[0.14px] text-gray-66">Da dễ châm chích, khô căng hoặc bong tróc</span></span>
-          </label>
-          <label class="group flex cursor-pointer items-start gap-4 rounded-[4px] border border-gray-dd bg-white px-[18px] py-[14px] has-[:checked]:border-brown-dark has-[:checked]:bg-brown-50 hover:border-brown has-[:focus-visible]:outline-2 has-[:focus-visible]:outline-offset-2 has-[:focus-visible]:outline-navy">
-            <span class="flex pt-[3px]"><input type="radio" name="tinh-trang" value="dieutri" class="peer sr-only"><span class="flex size-[18px] items-center justify-center rounded-[3px] border-[1.5px] border-navy bg-white group-has-[:checked]:bg-navy"><img src="assets/img/routine-phac-do/icon-check-white.svg" alt="" width="12" height="12" class="hidden size-3 group-has-[:checked]:block"></span></span>
-            <span class="flex min-w-0 flex-1 flex-col gap-[2px]"><span class="text-base leading-[22px] tracking-[0.224px] text-navy">Da đang điều trị theo phác đồ</span><span class="text-sm leading-5 tracking-[0.14px] text-gray-66">Đang dùng thuốc uống hoặc thuốc bôi theo chỉ định của bác sĩ</span></span>
-          </label>
-          <label class="group flex cursor-pointer items-start gap-4 rounded-[4px] border border-gray-dd bg-white px-[18px] py-[14px] has-[:checked]:border-brown-dark has-[:checked]:bg-brown-50 hover:border-brown has-[:focus-visible]:outline-2 has-[:focus-visible]:outline-offset-2 has-[:focus-visible]:outline-navy">
-            <span class="flex pt-[3px]"><input type="radio" name="tinh-trang" value="peel" class="peer sr-only"><span class="flex size-[18px] items-center justify-center rounded-[3px] border-[1.5px] border-navy bg-white group-has-[:checked]:bg-navy"><img src="assets/img/routine-phac-do/icon-check-white.svg" alt="" width="12" height="12" class="hidden size-3 group-has-[:checked]:block"></span></span>
-            <span class="flex min-w-0 flex-1 flex-col gap-[2px]"><span class="text-base leading-[22px] tracking-[0.224px] text-navy">Da sau peel/ Laser hoặc lấy nhân mụn</span><span class="text-sm leading-5 tracking-[0.14px] text-gray-66">Vừa thực hiện thủ thuật chăm sóc hoặc điều trị da</span></span>
-          </label>
-          <label class="group flex cursor-pointer items-start gap-4 rounded-[4px] border border-gray-dd bg-white px-[18px] py-[14px] has-[:checked]:border-brown-dark has-[:checked]:bg-brown-50 hover:border-brown has-[:focus-visible]:outline-2 has-[:focus-visible]:outline-offset-2 has-[:focus-visible]:outline-navy">
-            <span class="flex pt-[3px]"><input type="radio" name="tinh-trang" value="nang" class="peer sr-only"><span class="flex size-[18px] items-center justify-center rounded-[3px] border-[1.5px] border-navy bg-white group-has-[:checked]:bg-navy"><img src="assets/img/routine-phac-do/icon-check-white.svg" alt="" width="12" height="12" class="hidden size-3 group-has-[:checked]:block"></span></span>
-            <span class="flex min-w-0 flex-1 flex-col gap-[2px]"><span class="text-base leading-[22px] tracking-[0.224px] text-navy">Chống nắng hằng ngày</span><span class="text-sm leading-5 tracking-[0.14px] text-gray-66">Muốn bắt đầu với bước bảo vệ da cơ bản</span></span>
-          </label>
-          
-            </div>
-          </fieldset>
-        </div>
-        <div>
-          <a href="#ket-qua" data-next class="inline-flex h-10 items-center gap-2 rounded-sm border border-navy px-6 text-base leading-[22px] tracking-[0.224px] text-navy focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy btn btn-outline btn-fill-white">Tiếp theo<img src="assets/img/routine-phac-do/icon-arrow-right.svg" alt="" width="12" height="13"></a>
+    <div class="grid gap-10 lg:grid-cols-[480px_minmax(0,1fr)] lg:gap-x-12">
+      <!-- Cột câu hỏi -->
+      <div class="flex flex-col" data-aos="fade-up">
+        <!-- Stepper: Active = nâu đậm, Done = xanh + dấu tick, Default = xám -->
+        <ol class="relative flex w-full items-start justify-between lg:-ml-[7px] lg:w-[429px]" aria-label="Các bước của bài trắc nghiệm" data-quiz-stepper>
+          <li class="relative z-10 flex w-16 flex-col items-center gap-3" data-quiz-stepitem="1" aria-current="step">
+            <span class="flex size-8 items-center justify-center rounded-full bg-brown-dark text-xs leading-4 text-bg" data-quiz-dot><span data-quiz-num>1</span><img src="assets/img/routine-quiz/icon-check.svg" alt="" width="12" height="12" class="hidden size-4" data-quiz-check></span>
+            <span class="text-base leading-[22px] tracking-[0.224px] text-brown-dark" data-quiz-steplabel>Bước 1</span>
+          </li>
+          <li class="relative z-10 flex w-16 flex-col items-center gap-3" data-quiz-stepitem="2">
+            <span class="flex size-8 items-center justify-center rounded-full bg-gray-bb text-xs leading-4 text-bg" data-quiz-dot><span data-quiz-num>2</span><img src="assets/img/routine-quiz/icon-check.svg" alt="" width="12" height="12" class="hidden size-4" data-quiz-check></span>
+            <span class="text-base leading-[22px] tracking-[0.224px] text-gray-99" data-quiz-steplabel>Bước 2</span>
+          </li>
+          <li class="relative z-10 flex w-16 flex-col items-center gap-3" data-quiz-stepitem="3">
+            <span class="flex size-8 items-center justify-center rounded-full bg-gray-bb text-xs leading-4 text-bg" data-quiz-dot><span data-quiz-num>3</span><img src="assets/img/routine-quiz/icon-check.svg" alt="" width="12" height="12" class="hidden size-4" data-quiz-check></span>
+            <span class="text-base leading-[22px] tracking-[0.224px] text-gray-99" data-quiz-steplabel>Bước 3</span>
+          </li>
+          <li class="absolute left-8 right-8 top-[15px] z-0 flex h-[2px]" aria-hidden="true">
+            <span class="h-full flex-1 bg-gray-bb" data-quiz-track="1"></span>
+            <span class="h-full flex-1 bg-gray-bb" data-quiz-track="2"></span>
+          </li>
+        </ol>
+
+        <fieldset class="mt-9 min-w-0 border-0 p-0" data-quiz-step="1">
+          <legend class="mb-5 w-full text-xl leading-7 font-bold text-brown-dark">Bạn đang quan tâm điều gì nhất?</legend>
+          <div class="flex flex-col gap-3">
+            <label class="group flex cursor-pointer items-start gap-4 rounded-[4px] border border-gray-dd bg-white px-[18px] py-[14px] hover:border-brown has-[:checked]:border-brown-dark has-[:checked]:bg-brown-50 has-[:focus-visible]:outline-2 has-[:focus-visible]:outline-offset-2 has-[:focus-visible]:outline-navy">
+              <input type="radio" name="quiz-step-1" value="da-mun-tham-mun" class="peer sr-only">
+              <span class="mt-[3px] flex size-[18px] shrink-0 items-center justify-center rounded-[3px] border-[1.5px] border-navy bg-white peer-checked:bg-navy" aria-hidden="true">
+                <img src="assets/img/routine-quiz/icon-check.svg" alt="" width="12" height="12" class="hidden size-3 group-has-[:checked]:block">
+              </span>
+              <span class="flex min-w-0 flex-1 flex-col gap-[2px]">
+                <span class="text-base leading-[22px] tracking-[0.224px] text-navy">Da mụn và thâm mụn</span>
+                <span class="text-sm leading-5 tracking-[0.14px] text-gray-66">Da dễ nổi mụn hoặc có vết thâm sau mụn</span>
+              </span>
+            </label>
+            <label class="group flex cursor-pointer items-start gap-4 rounded-[4px] border border-gray-dd bg-white px-[18px] py-[14px] hover:border-brown has-[:checked]:border-brown-dark has-[:checked]:bg-brown-50 has-[:focus-visible]:outline-2 has-[:focus-visible]:outline-offset-2 has-[:focus-visible]:outline-navy">
+              <input type="radio" name="quiz-step-1" value="da-nam-lao-hoa" class="peer sr-only" checked>
+              <span class="mt-[3px] flex size-[18px] shrink-0 items-center justify-center rounded-[3px] border-[1.5px] border-navy bg-white peer-checked:bg-navy" aria-hidden="true">
+                <img src="assets/img/routine-quiz/icon-check.svg" alt="" width="12" height="12" class="hidden size-3 group-has-[:checked]:block">
+              </span>
+              <span class="flex min-w-0 flex-1 flex-col gap-[2px]">
+                <span class="text-base leading-[22px] tracking-[0.224px] text-navy">Da nám và dấu hiệu lão hóa</span>
+                <span class="text-sm leading-5 tracking-[0.14px] text-gray-66">Màu da không đều, thâm nám, nếp nhăn hoặc da kém đàn hồi</span>
+              </span>
+            </label>
+            <label class="group flex cursor-pointer items-start gap-4 rounded-[4px] border border-gray-dd bg-white px-[18px] py-[14px] hover:border-brown has-[:checked]:border-brown-dark has-[:checked]:bg-brown-50 has-[:focus-visible]:outline-2 has-[:focus-visible]:outline-offset-2 has-[:focus-visible]:outline-navy">
+              <input type="radio" name="quiz-step-1" value="da-nhay-cam" class="peer sr-only">
+              <span class="mt-[3px] flex size-[18px] shrink-0 items-center justify-center rounded-[3px] border-[1.5px] border-navy bg-white peer-checked:bg-navy" aria-hidden="true">
+                <img src="assets/img/routine-quiz/icon-check.svg" alt="" width="12" height="12" class="hidden size-3 group-has-[:checked]:block">
+              </span>
+              <span class="flex min-w-0 flex-1 flex-col gap-[2px]">
+                <span class="text-base leading-[22px] tracking-[0.224px] text-navy">Da nhạy cảm/ Đang treatment</span>
+                <span class="text-sm leading-5 tracking-[0.14px] text-gray-66">Da dễ châm chích, khô căng hoặc bong tróc</span>
+              </span>
+            </label>
+            <label class="group flex cursor-pointer items-start gap-4 rounded-[4px] border border-gray-dd bg-white px-[18px] py-[14px] hover:border-brown has-[:checked]:border-brown-dark has-[:checked]:bg-brown-50 has-[:focus-visible]:outline-2 has-[:focus-visible]:outline-offset-2 has-[:focus-visible]:outline-navy">
+              <input type="radio" name="quiz-step-1" value="da-dieu-tri-phac-do" class="peer sr-only">
+              <span class="mt-[3px] flex size-[18px] shrink-0 items-center justify-center rounded-[3px] border-[1.5px] border-navy bg-white peer-checked:bg-navy" aria-hidden="true">
+                <img src="assets/img/routine-quiz/icon-check.svg" alt="" width="12" height="12" class="hidden size-3 group-has-[:checked]:block">
+              </span>
+              <span class="flex min-w-0 flex-1 flex-col gap-[2px]">
+                <span class="text-base leading-[22px] tracking-[0.224px] text-navy">Da đang điều trị theo phác đồ</span>
+                <span class="text-sm leading-5 tracking-[0.14px] text-gray-66">Đang dùng thuốc uống hoặc thuốc bôi theo chỉ định của bác sĩ</span>
+              </span>
+            </label>
+            <label class="group flex cursor-pointer items-start gap-4 rounded-[4px] border border-gray-dd bg-white px-[18px] py-[14px] hover:border-brown has-[:checked]:border-brown-dark has-[:checked]:bg-brown-50 has-[:focus-visible]:outline-2 has-[:focus-visible]:outline-offset-2 has-[:focus-visible]:outline-navy">
+              <input type="radio" name="quiz-step-1" value="da-sau-peel-laser" class="peer sr-only">
+              <span class="mt-[3px] flex size-[18px] shrink-0 items-center justify-center rounded-[3px] border-[1.5px] border-navy bg-white peer-checked:bg-navy" aria-hidden="true">
+                <img src="assets/img/routine-quiz/icon-check.svg" alt="" width="12" height="12" class="hidden size-3 group-has-[:checked]:block">
+              </span>
+              <span class="flex min-w-0 flex-1 flex-col gap-[2px]">
+                <span class="text-base leading-[22px] tracking-[0.224px] text-navy">Da sau peel/ Laser hoặc lấy nhân mụn</span>
+                <span class="text-sm leading-5 tracking-[0.14px] text-gray-66">Vừa thực hiện thủ thuật chăm sóc hoặc điều trị da</span>
+              </span>
+            </label>
+            <label class="group flex cursor-pointer items-start gap-4 rounded-[4px] border border-gray-dd bg-white px-[18px] py-[14px] hover:border-brown has-[:checked]:border-brown-dark has-[:checked]:bg-brown-50 has-[:focus-visible]:outline-2 has-[:focus-visible]:outline-offset-2 has-[:focus-visible]:outline-navy">
+              <input type="radio" name="quiz-step-1" value="chong-nang-hang-ngay" class="peer sr-only">
+              <span class="mt-[3px] flex size-[18px] shrink-0 items-center justify-center rounded-[3px] border-[1.5px] border-navy bg-white peer-checked:bg-navy" aria-hidden="true">
+                <img src="assets/img/routine-quiz/icon-check.svg" alt="" width="12" height="12" class="hidden size-3 group-has-[:checked]:block">
+              </span>
+              <span class="flex min-w-0 flex-1 flex-col gap-[2px]">
+                <span class="text-base leading-[22px] tracking-[0.224px] text-navy">Chống nắng hằng ngày</span>
+                <span class="text-sm leading-5 tracking-[0.14px] text-gray-66">Muốn bắt đầu với bước bảo vệ da cơ bản</span>
+              </span>
+            </label>
+          </div>
+        </fieldset>
+
+        <fieldset class="mt-9 min-w-0 border-0 p-0" data-quiz-step="2" hidden>
+          <legend class="mb-5 w-full text-xl leading-7 font-bold text-brown-dark">Làn da của bạn hiện ở trạng thái nào?</legend>
+          <div class="flex flex-col gap-3">
+            <label class="group flex cursor-pointer items-start gap-4 rounded-[4px] border border-gray-dd bg-white px-[18px] py-[14px] hover:border-brown has-[:checked]:border-brown-dark has-[:checked]:bg-brown-50 has-[:focus-visible]:outline-2 has-[:focus-visible]:outline-offset-2 has-[:focus-visible]:outline-navy">
+              <input type="radio" name="quiz-step-2" value="binh-thuong" class="peer sr-only">
+              <span class="mt-[3px] flex size-[18px] shrink-0 items-center justify-center rounded-[3px] border-[1.5px] border-navy bg-white peer-checked:bg-navy" aria-hidden="true">
+                <img src="assets/img/routine-quiz/icon-check.svg" alt="" width="12" height="12" class="hidden size-3 group-has-[:checked]:block">
+              </span>
+              <span class="flex min-w-0 flex-1 flex-col gap-[2px]">
+                <span class="text-base leading-[22px] tracking-[0.224px] text-navy">Bình thường ít khi kích ứng</span>
+              </span>
+            </label>
+            <label class="group flex cursor-pointer items-start gap-4 rounded-[4px] border border-gray-dd bg-white px-[18px] py-[14px] hover:border-brown has-[:checked]:border-brown-dark has-[:checked]:bg-brown-50 has-[:focus-visible]:outline-2 has-[:focus-visible]:outline-offset-2 has-[:focus-visible]:outline-navy">
+              <input type="radio" name="quiz-step-2" value="nhay-cam" class="peer sr-only">
+              <span class="mt-[3px] flex size-[18px] shrink-0 items-center justify-center rounded-[3px] border-[1.5px] border-navy bg-white peer-checked:bg-navy" aria-hidden="true">
+                <img src="assets/img/routine-quiz/icon-check.svg" alt="" width="12" height="12" class="hidden size-3 group-has-[:checked]:block">
+              </span>
+              <span class="flex min-w-0 flex-1 flex-col gap-[2px]">
+                <span class="text-base leading-[22px] tracking-[0.224px] text-navy">Nhạy cảm dễ kích ứng</span>
+              </span>
+            </label>
+            <label class="group flex cursor-pointer items-start gap-4 rounded-[4px] border border-gray-dd bg-white px-[18px] py-[14px] hover:border-brown has-[:checked]:border-brown-dark has-[:checked]:bg-brown-50 has-[:focus-visible]:outline-2 has-[:focus-visible]:outline-offset-2 has-[:focus-visible]:outline-navy">
+              <input type="radio" name="quiz-step-2" value="dung-thuoc" class="peer sr-only">
+              <span class="mt-[3px] flex size-[18px] shrink-0 items-center justify-center rounded-[3px] border-[1.5px] border-navy bg-white peer-checked:bg-navy" aria-hidden="true">
+                <img src="assets/img/routine-quiz/icon-check.svg" alt="" width="12" height="12" class="hidden size-3 group-has-[:checked]:block">
+              </span>
+              <span class="flex min-w-0 flex-1 flex-col gap-[2px]">
+                <span class="text-base leading-[22px] tracking-[0.224px] text-navy">Đang dùng thuốc theo chỉ định</span>
+              </span>
+            </label>
+            <label class="group flex cursor-pointer items-start gap-4 rounded-[4px] border border-gray-dd bg-white px-[18px] py-[14px] hover:border-brown has-[:checked]:border-brown-dark has-[:checked]:bg-brown-50 has-[:focus-visible]:outline-2 has-[:focus-visible]:outline-offset-2 has-[:focus-visible]:outline-navy">
+              <input type="radio" name="quiz-step-2" value="retinoid" class="peer sr-only" checked>
+              <span class="mt-[3px] flex size-[18px] shrink-0 items-center justify-center rounded-[3px] border-[1.5px] border-navy bg-white peer-checked:bg-navy" aria-hidden="true">
+                <img src="assets/img/routine-quiz/icon-check.svg" alt="" width="12" height="12" class="hidden size-3 group-has-[:checked]:block">
+              </span>
+              <span class="flex min-w-0 flex-1 flex-col gap-[2px]">
+                <span class="text-base leading-[22px] tracking-[0.224px] text-navy">Đang dùng retinol AHA hoặc BHA</span>
+              </span>
+            </label>
+            <label class="group flex cursor-pointer items-start gap-4 rounded-[4px] border border-gray-dd bg-white px-[18px] py-[14px] hover:border-brown has-[:checked]:border-brown-dark has-[:checked]:bg-brown-50 has-[:focus-visible]:outline-2 has-[:focus-visible]:outline-offset-2 has-[:focus-visible]:outline-navy">
+              <input type="radio" name="quiz-step-2" value="sau-thu-thuat" class="peer sr-only">
+              <span class="mt-[3px] flex size-[18px] shrink-0 items-center justify-center rounded-[3px] border-[1.5px] border-navy bg-white peer-checked:bg-navy" aria-hidden="true">
+                <img src="assets/img/routine-quiz/icon-check.svg" alt="" width="12" height="12" class="hidden size-3 group-has-[:checked]:block">
+              </span>
+              <span class="flex min-w-0 flex-1 flex-col gap-[2px]">
+                <span class="text-base leading-[22px] tracking-[0.224px] text-navy">Vừa làm peel laser hoặc lấy nhân mụn</span>
+              </span>
+            </label>
+            <label class="group flex cursor-pointer items-start gap-4 rounded-[4px] border border-gray-dd bg-white px-[18px] py-[14px] hover:border-brown has-[:checked]:border-brown-dark has-[:checked]:bg-brown-50 has-[:focus-visible]:outline-2 has-[:focus-visible]:outline-offset-2 has-[:focus-visible]:outline-navy">
+              <input type="radio" name="quiz-step-2" value="khong-chac" class="peer sr-only">
+              <span class="mt-[3px] flex size-[18px] shrink-0 items-center justify-center rounded-[3px] border-[1.5px] border-navy bg-white peer-checked:bg-navy" aria-hidden="true">
+                <img src="assets/img/routine-quiz/icon-check.svg" alt="" width="12" height="12" class="hidden size-3 group-has-[:checked]:block">
+              </span>
+              <span class="flex min-w-0 flex-1 flex-col gap-[2px]">
+                <span class="text-base leading-[22px] tracking-[0.224px] text-navy">Không chắc</span>
+              </span>
+            </label>
+          </div>
+        </fieldset>
+
+        <fieldset class="mt-9 min-w-0 border-0 p-0" data-quiz-step="3" hidden>
+          <legend class="mb-5 w-full text-xl leading-7 font-bold text-brown-dark">Có điều nào dưới đây đúng với bạn không?<br> Có thể chọn nhiều.</legend>
+          <div class="flex flex-col gap-3">
+            <label class="group flex cursor-pointer items-start gap-4 rounded-[4px] border border-gray-dd bg-white px-[18px] py-[14px] hover:border-brown has-[:checked]:border-brown-dark has-[:checked]:bg-brown-50 has-[:focus-visible]:outline-2 has-[:focus-visible]:outline-offset-2 has-[:focus-visible]:outline-navy">
+              <input type="checkbox" name="quiz-step-3" value="mang-thai" class="peer sr-only" data-quiz-special>
+              <span class="mt-[3px] flex size-[18px] shrink-0 items-center justify-center rounded-[3px] border-[1.5px] border-navy bg-white peer-checked:bg-navy" aria-hidden="true">
+                <img src="assets/img/routine-quiz/icon-check.svg" alt="" width="12" height="12" class="hidden size-3 group-has-[:checked]:block">
+              </span>
+              <span class="flex min-w-0 flex-1 flex-col gap-[2px]">
+                <span class="text-base leading-[22px] tracking-[0.224px] text-navy">Mang thai hoặc dự định mang thai</span>
+              </span>
+            </label>
+            <label class="group flex cursor-pointer items-start gap-4 rounded-[4px] border border-gray-dd bg-white px-[18px] py-[14px] hover:border-brown has-[:checked]:border-brown-dark has-[:checked]:bg-brown-50 has-[:focus-visible]:outline-2 has-[:focus-visible]:outline-offset-2 has-[:focus-visible]:outline-navy">
+              <input type="checkbox" name="quiz-step-3" value="cho-con-bu" class="peer sr-only" data-quiz-special checked>
+              <span class="mt-[3px] flex size-[18px] shrink-0 items-center justify-center rounded-[3px] border-[1.5px] border-navy bg-white peer-checked:bg-navy" aria-hidden="true">
+                <img src="assets/img/routine-quiz/icon-check.svg" alt="" width="12" height="12" class="hidden size-3 group-has-[:checked]:block">
+              </span>
+              <span class="flex min-w-0 flex-1 flex-col gap-[2px]">
+                <span class="text-base leading-[22px] tracking-[0.224px] text-navy">Đang cho con bú</span>
+              </span>
+            </label>
+            <label class="group flex cursor-pointer items-start gap-4 rounded-[4px] border border-gray-dd bg-white px-[18px] py-[14px] hover:border-brown has-[:checked]:border-brown-dark has-[:checked]:bg-brown-50 has-[:focus-visible]:outline-2 has-[:focus-visible]:outline-offset-2 has-[:focus-visible]:outline-navy">
+              <input type="checkbox" name="quiz-step-3" value="duoi-18" class="peer sr-only" data-quiz-special>
+              <span class="mt-[3px] flex size-[18px] shrink-0 items-center justify-center rounded-[3px] border-[1.5px] border-navy bg-white peer-checked:bg-navy" aria-hidden="true">
+                <img src="assets/img/routine-quiz/icon-check.svg" alt="" width="12" height="12" class="hidden size-3 group-has-[:checked]:block">
+              </span>
+              <span class="flex min-w-0 flex-1 flex-col gap-[2px]">
+                <span class="text-base leading-[22px] tracking-[0.224px] text-navy">Dưới 18 tuổi</span>
+              </span>
+            </label>
+            <label class="group flex cursor-pointer items-start gap-4 rounded-[4px] border border-gray-dd bg-white px-[18px] py-[14px] hover:border-brown has-[:checked]:border-brown-dark has-[:checked]:bg-brown-50 has-[:focus-visible]:outline-2 has-[:focus-visible]:outline-offset-2 has-[:focus-visible]:outline-navy">
+              <input type="checkbox" name="quiz-step-3" value="khong-co" class="peer sr-only" data-quiz-none>
+              <span class="mt-[3px] flex size-[18px] shrink-0 items-center justify-center rounded-[3px] border-[1.5px] border-navy bg-white peer-checked:bg-navy" aria-hidden="true">
+                <img src="assets/img/routine-quiz/icon-check.svg" alt="" width="12" height="12" class="hidden size-3 group-has-[:checked]:block">
+              </span>
+              <span class="flex min-w-0 flex-1 flex-col gap-[2px]">
+                <span class="text-base leading-[22px] tracking-[0.224px] text-navy">Không có điều nào ở trên</span>
+              </span>
+            </label>
+          </div>
+        </fieldset>
+
+        <div class="mt-10 flex flex-wrap gap-3 lg:mt-auto lg:pt-10">
+          <button type="button" class="inline-flex h-10 cursor-pointer items-center gap-2 rounded-sm border border-navy px-6 text-base leading-[22px] tracking-[0.224px] text-navy whitespace-nowrap focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy btn btn-outline btn-fill-brown-50" data-quiz-prev hidden>
+            <span data-quiz-prevlabel>Quay lại bước 1</span>
+          </button>
+          <button type="button" class="inline-flex h-10 cursor-pointer items-center gap-2 rounded-sm border border-navy px-6 text-base leading-[22px] tracking-[0.224px] text-navy whitespace-nowrap focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy btn btn-outline btn-fill-brown-50" data-quiz-next>
+            Tiếp theo
+            <img src="assets/img/routine-quiz/icon-arrow-right.svg" alt="" width="12" height="13">
+          </button>
         </div>
       </div>
 
-      <div id="ket-qua" class="min-w-0 flex-1 scroll-mt-32 rounded-[4px] border border-gray-dd bg-white lg:h-[808px] lg:max-w-[768px] lg:overflow-hidden" aria-live="polite">
-        <div data-result class="flex flex-col gap-6 px-5 py-8 md:pl-10 md:pr-12 md:py-10 lg:h-full lg:overflow-y-auto [scrollbar-color:#494949_#ddd] [scrollbar-width:thin]"></div>
+      <!-- Panel kết quả routine (mỗi bước một nội dung riêng) -->
+      <div class="relative min-w-0 rounded-[4px] border border-gray-dd bg-white lg:h-[808px] lg:overflow-hidden" data-aos="fade-up" data-aos-delay="100" aria-live="polite">
+        <div class="flex flex-col gap-6 px-5 py-6 md:px-10 md:py-10 lg:h-full lg:overflow-y-auto lg:pr-12 [scrollbar-width:thin] [scrollbar-color:#494949_#ddd]" tabindex="0" aria-label="Kết quả routine gợi ý" data-quiz-result="1" data-default-tab="day">
+          <div class="flex flex-wrap gap-[10px]" role="tablist" aria-label="Chọn chu trình">
+            <button type="button" role="tab" id="routine-tab-day-1" aria-selected="true" aria-controls="routine-panel-day-1" data-routine-tab="day" class="group inline-flex h-11 cursor-pointer items-center gap-2 rounded-sm bg-gray-ee px-4 text-xl leading-7 text-gray-66 hover:bg-gray-dd aria-selected:bg-brown aria-selected:text-bg aria-selected:hover:bg-brown-dark focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy btn">
+              <img src="assets/img/routine-quiz/icon-day.svg" alt="" width="18" height="18" class="[filter:brightness(0)_invert(.4)] group-aria-selected:[filter:none]">
+              Chu trình ban ngày
+            </button>
+            <button type="button" role="tab" id="routine-tab-night-1" aria-selected="false" aria-controls="routine-panel-night-1" data-routine-tab="night" class="group inline-flex h-11 cursor-pointer items-center gap-2 rounded-sm bg-gray-ee px-4 text-xl leading-7 text-gray-66 hover:bg-gray-dd aria-selected:bg-brown aria-selected:text-bg aria-selected:hover:bg-brown-dark focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy btn">
+              <img src="assets/img/routine-quiz/icon-night.svg" alt="" width="18" height="18" class="group-aria-selected:[filter:brightness(0)_invert(1)]">
+              Chu trình ban đêm
+            </button>
+          </div>
+          <div role="tabpanel" id="routine-panel-day-1" aria-labelledby="routine-tab-day-1" data-routine-panel="day" class="flex flex-col gap-3">
+              <article class="flex items-center gap-4 rounded-[4px] bg-gray-ee px-5 py-4 md:gap-6">
+                <div class="h-24 w-[88px] shrink-0 overflow-hidden rounded-[4px]"><img src="assets/img/routine-quiz/purifying-cleansing-gel.webp" alt="Purifying Cleansing Gel" class="reveal-wipe size-full object-contain" loading="lazy"></div>
+                <div class="flex min-w-0 flex-1 flex-col gap-1">
+                  <p class="text-base leading-[22px] tracking-[4px] uppercase text-brown">Bước 1</p>
+                  <h4 class="text-xl leading-7 font-medium text-navy">Purifying Cleansing Gel</h4>
+                  <p class="text-sm leading-5 tracking-[0.14px] text-gray-66">Làm sạch dịu nhẹ, ít bọt, không xà phòng.</p>
+                </div>
+              </article>
+              <article class="flex items-center gap-4 rounded-[4px] bg-gray-ee px-5 py-4 md:gap-6">
+                <div class="h-24 w-[88px] shrink-0 overflow-hidden rounded-[4px]" aria-hidden="true"></div>
+                <div class="flex min-w-0 flex-1 flex-col gap-1">
+                  <p class="text-base leading-[22px] tracking-[4px] uppercase text-brown">Bước 2</p>
+                  <h4 class="text-xl leading-7 font-medium text-navy">Photo Defense Brightening Serum</h4>
+                  <p class="text-sm leading-5 tracking-[0.14px] text-gray-66">Serum ban ngày định hướng làm sáng và chống oxy hóa.</p>
+                </div>
+              </article>
+              <article class="flex items-center gap-4 rounded-[4px] bg-gray-ee px-5 py-4 md:gap-6">
+                <div class="h-24 w-[88px] shrink-0 overflow-hidden rounded-[4px]"><img src="assets/img/routine-quiz/neobright-repair-cream.webp" alt="NeoBright Repair Cream" class="reveal-wipe size-full object-contain" loading="lazy"></div>
+                <div class="flex min-w-0 flex-1 flex-col gap-1">
+                  <p class="text-base leading-[22px] tracking-[4px] uppercase text-brown">Bước 3</p>
+                  <h4 class="text-xl leading-7 font-medium text-navy">NeoBright Repair Cream</h4>
+                  <p class="text-sm leading-5 tracking-[0.14px] text-gray-66">Dưỡng ẩm, hỗ trợ hàng rào da và chăm sóc dấu hiệu lão hóa.</p>
+                </div>
+              </article>
+              <article class="flex items-center gap-4 rounded-[4px] bg-gray-ee px-5 py-4 md:gap-6">
+                <div class="h-24 w-[88px] shrink-0 overflow-hidden rounded-[4px]"><img src="assets/img/routine-quiz/blue-light-shield-sunscreen.webp" alt="Blue Light Shield Tone-up Fluid Sunscreen" class="reveal-wipe size-full object-contain" loading="lazy"></div>
+                <div class="flex min-w-0 flex-1 flex-col gap-1">
+                  <p class="text-base leading-[22px] tracking-[4px] uppercase text-brown">Bước 4</p>
+                  <h4 class="text-xl leading-7 font-medium text-navy">Blue Light Shield Tone-up Fluid Sunscreen</h4>
+                  <p class="text-sm leading-5 tracking-[0.14px] text-gray-66">Kem chống nắng bảo vệ da ban ngày</p>
+                </div>
+              </article>
+          </div>
+          <div role="tabpanel" id="routine-panel-night-1" aria-labelledby="routine-tab-night-1" data-routine-panel="night" class="flex flex-col gap-3" hidden>
+              <article class="flex items-center gap-4 rounded-[4px] bg-gray-ee px-5 py-4 md:gap-6">
+                <div class="h-24 w-[88px] shrink-0 overflow-hidden rounded-[4px]"><img src="assets/img/routine-quiz/purifying-cleansing-gel.webp" alt="Purifying Cleansing Gel" class="reveal-wipe size-full object-contain" loading="lazy"></div>
+                <div class="flex min-w-0 flex-1 flex-col gap-1">
+                  <p class="text-base leading-[22px] tracking-[4px] uppercase text-brown">Bước 1</p>
+                  <h4 class="text-xl leading-7 font-medium text-navy">Purifying Cleansing Gel</h4>
+                  <p class="text-sm leading-5 tracking-[0.14px] text-gray-66">Làm sạch dịu nhẹ, ít bọt, không xà phòng.</p>
+                </div>
+              </article>
+              <article class="flex items-center gap-4 rounded-[4px] bg-gray-ee px-5 py-4 md:gap-6">
+                <div class="h-24 w-[88px] shrink-0 overflow-hidden rounded-[4px]" aria-hidden="true"></div>
+                <div class="flex min-w-0 flex-1 flex-col gap-1">
+                  <p class="text-base leading-[22px] tracking-[4px] uppercase text-brown">Bước 2</p>
+                  <h4 class="text-xl leading-7 font-medium text-navy">Retino Renewal Brightening Serum</h4>
+                  <p class="text-sm leading-5 tracking-[0.14px] text-gray-66">Serum ban đêm định hướng làm sáng, ức chế sắc tố, hỗ trợ chống oxy hoá, hỗ trợ mờ thâm nám</p>
+                </div>
+              </article>
+              <article class="flex items-center gap-4 rounded-[4px] bg-gray-ee px-5 py-4 md:gap-6">
+                <div class="h-24 w-[88px] shrink-0 overflow-hidden rounded-[4px]"><img src="assets/img/routine-quiz/neobright-repair-cream.webp" alt="NeoBright Repair Cream" class="reveal-wipe size-full object-contain" loading="lazy"></div>
+                <div class="flex min-w-0 flex-1 flex-col gap-1">
+                  <p class="text-base leading-[22px] tracking-[4px] uppercase text-brown">Bước 3</p>
+                  <h4 class="text-xl leading-7 font-medium text-navy">NeoBright Repair Cream</h4>
+                  <p class="text-sm leading-5 tracking-[0.14px] text-gray-66">Dưỡng ẩm, hỗ trợ hàng rào da và chăm sóc dấu hiệu lão hóa.</p>
+                </div>
+              </article>
+          </div>
+          <hr class="h-px w-full border-0 bg-gray-dd">
+          <div class="flex flex-col gap-2">
+            <h3 class="text-xl leading-7 font-bold text-brown-dark">Vì sao routine này phù hợp với bạn?</h3>
+            <p class="text-base leading-[22px] tracking-[0.224px] text-gray-49">Bạn cho biết làn da hiện có nhu cầu chăm sóc <strong class="font-bold">DA NÁM / KHÔNG ĐỀU MÀU / DẤU HIỆU LÃO HÓA</strong>. Vì vậy Dzentic ưu tiên chăm sóc sắc tố ban ngày - chống oxy hóa - chăm sóc tái tạo ban đêm - phục hồi - chống nắng.</p>
+          </div>
+          <hr class="h-px w-full border-0 bg-gray-dd">
+          <div class="flex flex-col gap-2">
+            <h3 class="text-xl leading-7 font-bold text-brown-dark">Sử dụng:</h3>
+            <p class="text-base leading-[22px] tracking-[0.224px] text-gray-49">Bắt đầu với <strong class="font-bold">Retino Renewal Brightening Serum</strong> 2 tối mỗi tuần. Tăng lên cách tối, rồi mỗi tối nếu da dung nạp tốt, không dùng cùng buổi với retinoid hoặc acid tẩy tế bào chết khác.</p>
+          </div>
+          <div class="flex flex-col gap-3">
+            <p class="text-sm leading-5 font-medium tracking-[0.14px] text-gray-66">Bộ sản phẩm đề xuất</p>
+            <p class="text-xl leading-7 font-medium text-navy">Bộ giải pháp dưỡng sáng và chăm sóc da lão hoá</p>
+            <div>
+              <a href="#" class="inline-flex h-10 items-center gap-2 rounded-sm bg-brown px-6 text-base leading-[22px] tracking-[0.224px] text-bg whitespace-nowrap hover:bg-brown-dark focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy btn">Thêm bộ sản phẩm vào giỏ</a>
+            </div>
+          </div>
+          <p class="text-sm leading-5 tracking-[0.14px] text-gray-66 opacity-85">Routine trên được xây dựng dựa trên thông tin bạn cung cấp và mang tính định hướng chăm sóc. Sản phẩm Dzentic không thay thế thuốc hoặc phác đồ điều trị. Nếu bạn đang sử dụng thuốc, vừa thực hiện thủ thuật hoặc có tình trạng da đặc biệt, hãy tiếp tục tuân thủ hướng dẫn của bác sĩ, người có chuyên môn.</p>
+        </div>
+        <div class="flex flex-col gap-6 px-5 py-6 md:px-10 md:py-10 lg:h-full lg:overflow-y-auto lg:pr-12 [scrollbar-width:thin] [scrollbar-color:#494949_#ddd]" tabindex="0" aria-label="Kết quả routine gợi ý" data-quiz-result="2" data-default-tab="night" hidden>
+          <div class="flex flex-col gap-2">
+            <h3 class="text-xl leading-7 font-bold text-brown-dark">Vì sao routine này phù hợp với bạn?</h3>
+            <p class="text-base leading-[22px] tracking-[0.224px] text-gray-49">Bạn cho biết làn da hiện có nhu cầu chăm sóc <strong class="font-bold">DA NÁM / KHÔNG ĐỀU MÀU / DẤU HIỆU LÃO HÓA</strong>. Vì vậy Dzentic ưu tiên chăm sóc sắc tố ban ngày - chống oxy hóa - chăm sóc tái tạo ban đêm - phục hồi - chống nắng.</p>
+          </div>
+          <div class="rounded-[4px] bg-[#fdf3e6] px-5 py-4" data-quiz-notice="retinoid">
+            <p class="text-sm leading-5 font-medium tracking-[0.14px] text-brown-dark">Routine đã được điều chỉnh theo trạng thái da</p>
+            <p class="mt-1 text-sm leading-5 tracking-[0.14px] text-gray-49">Bạn đang dùng retinoid/AHA/BHA: loại bỏ Retino Renewal Brightening Serum khỏi routine gợi ý, ưu tiên kem phục hồi và kem chống nắng.</p>
+          </div>
+          <hr class="h-px w-full border-0 bg-gray-dd">
+          <div class="flex flex-wrap gap-[10px]" role="tablist" aria-label="Chọn chu trình">
+            <button type="button" role="tab" id="routine-tab-day-2" aria-selected="false" aria-controls="routine-panel-day-2" data-routine-tab="day" class="group inline-flex h-11 cursor-pointer items-center gap-2 rounded-sm bg-gray-ee px-4 text-xl leading-7 text-gray-66 hover:bg-gray-dd aria-selected:bg-brown aria-selected:text-bg aria-selected:hover:bg-brown-dark focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy btn">
+              <img src="assets/img/routine-quiz/icon-day.svg" alt="" width="18" height="18" class="[filter:brightness(0)_invert(.4)] group-aria-selected:[filter:none]">
+              Chu trình ban ngày
+            </button>
+            <button type="button" role="tab" id="routine-tab-night-2" aria-selected="true" aria-controls="routine-panel-night-2" data-routine-tab="night" class="group inline-flex h-11 cursor-pointer items-center gap-2 rounded-sm bg-gray-ee px-4 text-xl leading-7 text-gray-66 hover:bg-gray-dd aria-selected:bg-brown aria-selected:text-bg aria-selected:hover:bg-brown-dark focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy btn">
+              <img src="assets/img/routine-quiz/icon-night.svg" alt="" width="18" height="18" class="group-aria-selected:[filter:brightness(0)_invert(1)]">
+              Chu trình ban đêm
+            </button>
+          </div>
+          <div role="tabpanel" id="routine-panel-day-2" aria-labelledby="routine-tab-day-2" data-routine-panel="day" class="flex flex-col gap-3" hidden>
+              <article class="flex items-center gap-4 rounded-[4px] bg-gray-ee px-5 py-4 md:gap-6">
+                <div class="h-24 w-[88px] shrink-0 overflow-hidden rounded-[4px]"><img src="assets/img/routine-quiz/purifying-cleansing-gel.webp" alt="Purifying Cleansing Gel" class="reveal-wipe size-full object-contain" loading="lazy"></div>
+                <div class="flex min-w-0 flex-1 flex-col gap-1">
+                  <p class="text-base leading-[22px] tracking-[4px] uppercase text-brown">Bước 1</p>
+                  <h4 class="text-xl leading-7 font-medium text-navy">Purifying Cleansing Gel</h4>
+                  <p class="text-sm leading-5 tracking-[0.14px] text-gray-66">Làm sạch dịu nhẹ, ít bọt, không xà phòng.</p>
+                </div>
+              </article>
+              <article class="flex items-center gap-4 rounded-[4px] bg-gray-ee px-5 py-4 md:gap-6">
+                <div class="h-24 w-[88px] shrink-0 overflow-hidden rounded-[4px]" aria-hidden="true"></div>
+                <div class="flex min-w-0 flex-1 flex-col gap-1">
+                  <p class="text-base leading-[22px] tracking-[4px] uppercase text-brown">Bước 2</p>
+                  <h4 class="text-xl leading-7 font-medium text-navy">Photo Defense Brightening Serum</h4>
+                  <p class="text-sm leading-5 tracking-[0.14px] text-gray-66">Serum ban ngày định hướng làm sáng và chống oxy hóa.</p>
+                </div>
+              </article>
+              <article class="flex items-center gap-4 rounded-[4px] bg-gray-ee px-5 py-4 md:gap-6">
+                <div class="h-24 w-[88px] shrink-0 overflow-hidden rounded-[4px]"><img src="assets/img/routine-quiz/neobright-repair-cream.webp" alt="NeoBright Repair Cream" class="reveal-wipe size-full object-contain" loading="lazy"></div>
+                <div class="flex min-w-0 flex-1 flex-col gap-1">
+                  <p class="text-base leading-[22px] tracking-[4px] uppercase text-brown">Bước 3</p>
+                  <h4 class="text-xl leading-7 font-medium text-navy">NeoBright Repair Cream</h4>
+                  <p class="text-sm leading-5 tracking-[0.14px] text-gray-66">Dưỡng ẩm, hỗ trợ hàng rào da và chăm sóc dấu hiệu lão hóa.</p>
+                </div>
+              </article>
+              <article class="flex items-center gap-4 rounded-[4px] bg-gray-ee px-5 py-4 md:gap-6">
+                <div class="h-24 w-[88px] shrink-0 overflow-hidden rounded-[4px]"><img src="assets/img/routine-quiz/blue-light-shield-sunscreen.webp" alt="Blue Light Shield Tone-up Fluid Sunscreen" class="reveal-wipe size-full object-contain" loading="lazy"></div>
+                <div class="flex min-w-0 flex-1 flex-col gap-1">
+                  <p class="text-base leading-[22px] tracking-[4px] uppercase text-brown">Bước 4</p>
+                  <h4 class="text-xl leading-7 font-medium text-navy">Blue Light Shield Tone-up Fluid Sunscreen</h4>
+                  <p class="text-sm leading-5 tracking-[0.14px] text-gray-66">Kem chống nắng bảo vệ da ban ngày</p>
+                </div>
+              </article>
+          </div>
+          <div role="tabpanel" id="routine-panel-night-2" aria-labelledby="routine-tab-night-2" data-routine-panel="night" class="flex flex-col gap-3">
+            <div class="flex flex-col gap-3" data-retinoid="off" hidden>
+              <article class="flex items-center gap-4 rounded-[4px] bg-gray-ee px-5 py-4 md:gap-6">
+                <div class="h-24 w-[88px] shrink-0 overflow-hidden rounded-[4px]"><img src="assets/img/routine-quiz/purifying-cleansing-gel.webp" alt="Purifying Cleansing Gel" class="reveal-wipe size-full object-contain" loading="lazy"></div>
+                <div class="flex min-w-0 flex-1 flex-col gap-1">
+                  <p class="text-base leading-[22px] tracking-[4px] uppercase text-brown">Bước 1</p>
+                  <h4 class="text-xl leading-7 font-medium text-navy">Purifying Cleansing Gel</h4>
+                  <p class="text-sm leading-5 tracking-[0.14px] text-gray-66">Làm sạch dịu nhẹ, ít bọt, không xà phòng.</p>
+                </div>
+              </article>
+              <article class="flex items-center gap-4 rounded-[4px] bg-gray-ee px-5 py-4 md:gap-6">
+                <div class="h-24 w-[88px] shrink-0 overflow-hidden rounded-[4px]" aria-hidden="true"></div>
+                <div class="flex min-w-0 flex-1 flex-col gap-1">
+                  <p class="text-base leading-[22px] tracking-[4px] uppercase text-brown">Bước 2</p>
+                  <h4 class="text-xl leading-7 font-medium text-navy">Retino Renewal Brightening Serum</h4>
+                  <p class="text-sm leading-5 tracking-[0.14px] text-gray-66">Serum ban đêm định hướng làm sáng, ức chế sắc tố, hỗ trợ chống oxy hoá, hỗ trợ mờ thâm nám</p>
+                </div>
+              </article>
+              <article class="flex items-center gap-4 rounded-[4px] bg-gray-ee px-5 py-4 md:gap-6">
+                <div class="h-24 w-[88px] shrink-0 overflow-hidden rounded-[4px]"><img src="assets/img/routine-quiz/neobright-repair-cream.webp" alt="NeoBright Repair Cream" class="reveal-wipe size-full object-contain" loading="lazy"></div>
+                <div class="flex min-w-0 flex-1 flex-col gap-1">
+                  <p class="text-base leading-[22px] tracking-[4px] uppercase text-brown">Bước 3</p>
+                  <h4 class="text-xl leading-7 font-medium text-navy">NeoBright Repair Cream</h4>
+                  <p class="text-sm leading-5 tracking-[0.14px] text-gray-66">Dưỡng ẩm, hỗ trợ hàng rào da và chăm sóc dấu hiệu lão hóa.</p>
+                </div>
+              </article>
+            </div>
+            <div class="flex flex-col gap-3" data-retinoid="on">
+              <article class="flex items-center gap-4 rounded-[4px] bg-gray-ee px-5 py-4 md:gap-6">
+                <div class="h-24 w-[88px] shrink-0 overflow-hidden rounded-[4px]"><img src="assets/img/routine-quiz/purifying-cleansing-gel.webp" alt="Purifying Cleansing Gel" class="reveal-wipe size-full object-contain" loading="lazy"></div>
+                <div class="flex min-w-0 flex-1 flex-col gap-1">
+                  <p class="text-base leading-[22px] tracking-[4px] uppercase text-brown">Bước 1</p>
+                  <h4 class="text-xl leading-7 font-medium text-navy">Purifying Cleansing Gel</h4>
+                  <p class="text-sm leading-5 tracking-[0.14px] text-gray-66">Làm sạch dịu nhẹ, ít bọt, không xà phòng.</p>
+                </div>
+              </article>
+              <article class="flex flex-wrap items-center gap-4 rounded-[4px] border border-dashed border-gray-dd bg-white px-5 py-4 md:flex-nowrap md:gap-6">
+                <div class="h-24 w-[88px] shrink-0 rounded-[4px] bg-gray-ee opacity-40" aria-hidden="true"></div>
+                <div class="flex min-w-0 flex-1 flex-col gap-1">
+                  <p class="text-base leading-[22px] tracking-[4px] uppercase text-gray-99">Đã loại</p>
+                  <h4 class="text-xl leading-7 font-medium text-gray-99">Retino Renewal Brightening Serum</h4>
+                  <p class="text-sm leading-5 tracking-[0.14px] text-gray-66">Serum ban đêm định hướng làm sáng, ức chế sắc tố, hỗ trợ chống oxy hoá, hỗ trợ mờ thâm nám</p>
+                  <span class="mt-1 inline-flex w-fit rounded-full bg-[#b3261e]/10 px-[10px] py-1 text-xs leading-4 text-[#b3261e] md:hidden">Đã loại khỏi routine</span>
+                </div>
+                <span class="hidden shrink-0 rounded-full bg-[#b3261e]/10 px-[10px] py-1 text-xs leading-4 whitespace-nowrap text-[#b3261e] md:inline-flex">Đã loại khỏi routine</span>
+              </article>
+              <article class="flex items-center gap-4 rounded-[4px] bg-gray-ee px-5 py-4 md:gap-6">
+                <div class="h-24 w-[88px] shrink-0 overflow-hidden rounded-[4px]"><img src="assets/img/routine-quiz/neobright-repair-cream.webp" alt="NeoBright Repair Cream" class="reveal-wipe size-full object-contain" loading="lazy"></div>
+                <div class="flex min-w-0 flex-1 flex-col gap-1">
+                  <p class="text-base leading-[22px] tracking-[4px] uppercase text-brown">Bước 2</p>
+                  <h4 class="text-xl leading-7 font-medium text-navy">NeoBright Repair Cream</h4>
+                  <p class="text-sm leading-5 tracking-[0.14px] text-gray-66">Dưỡng ẩm, hỗ trợ hàng rào da và chăm sóc dấu hiệu lão hóa.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <hr class="h-px w-full border-0 bg-gray-dd">
+          <div class="flex flex-col gap-3">
+            <p class="text-sm leading-5 font-medium tracking-[0.14px] text-gray-66">Bộ sản phẩm đề xuất</p>
+            <p class="text-xl leading-7 font-medium text-navy">Bộ giải pháp dưỡng sáng và chăm sóc da lão hoá</p>
+            <div>
+              <a href="#" class="inline-flex h-10 items-center gap-2 rounded-sm bg-brown px-6 text-base leading-[22px] tracking-[0.224px] text-bg whitespace-nowrap hover:bg-brown-dark focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy btn">Thêm bộ sản phẩm vào giỏ</a>
+            </div>
+          </div>
+          <p class="text-sm leading-5 tracking-[0.14px] text-gray-66 opacity-85">Routine trên được xây dựng dựa trên thông tin bạn cung cấp và mang tính định hướng chăm sóc. Sản phẩm Dzentic không thay thế thuốc hoặc phác đồ điều trị. Nếu bạn đang sử dụng thuốc, vừa thực hiện thủ thuật hoặc có tình trạng da đặc biệt, hãy tiếp tục tuân thủ hướng dẫn của bác sĩ, người có chuyên môn.</p>
+        </div>
+        <div class="flex flex-col gap-6 px-5 py-6 md:px-10 md:py-10 lg:h-full lg:overflow-y-auto lg:pr-12 [scrollbar-width:thin] [scrollbar-color:#494949_#ddd]" tabindex="0" aria-label="Kết quả routine gợi ý" data-quiz-result="3" data-default-tab="day" hidden>
+          <div class="flex flex-col gap-2">
+            <h3 class="text-xl leading-7 font-bold text-brown-dark">Vì sao routine này phù hợp với bạn?</h3>
+            <p class="text-base leading-[22px] tracking-[0.224px] text-gray-49">Bạn cho biết làn da hiện có nhu cầu chăm sóc <strong class="font-bold">DA NÁM / KHÔNG ĐỀU MÀU / DẤU HIỆU LÃO HÓA</strong>. Vì vậy Dzentic ưu tiên chăm sóc sắc tố ban ngày - chống oxy hóa - chăm sóc tái tạo ban đêm - phục hồi - chống nắng.</p>
+          </div>
+          <div class="rounded-[4px] bg-brown-50 px-5 py-4" data-quiz-notice="special">
+            <p class="text-sm leading-5 font-medium tracking-[0.14px] text-brown-dark">Routine của bạn đã được điều chỉnh</p>
+            <p class="mt-1 text-sm leading-5 tracking-[0.14px] text-gray-49">Nếu bạn đang mang thai, cho con bú hoặc có tình trạng da đặc biệt, hãy tham khảo ý kiến chuyên môn trước khi bổ sung hoạt chất mới hoặc để lại thông tin nhận hỗ trợ 1-1.</p>
+          </div>
+          <hr class="h-px w-full border-0 bg-gray-dd">
+          <div class="flex flex-wrap gap-[10px]" role="tablist" aria-label="Chọn chu trình">
+            <button type="button" role="tab" id="routine-tab-day-3" aria-selected="true" aria-controls="routine-panel-day-3" data-routine-tab="day" class="group inline-flex h-11 cursor-pointer items-center gap-2 rounded-sm bg-gray-ee px-4 text-xl leading-7 text-gray-66 hover:bg-gray-dd aria-selected:bg-brown aria-selected:text-bg aria-selected:hover:bg-brown-dark focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy btn">
+              <img src="assets/img/routine-quiz/icon-day.svg" alt="" width="18" height="18" class="[filter:brightness(0)_invert(.4)] group-aria-selected:[filter:none]">
+              Chu trình ban ngày
+            </button>
+            <button type="button" role="tab" id="routine-tab-night-3" aria-selected="false" aria-controls="routine-panel-night-3" data-routine-tab="night" class="group inline-flex h-11 cursor-pointer items-center gap-2 rounded-sm bg-gray-ee px-4 text-xl leading-7 text-gray-66 hover:bg-gray-dd aria-selected:bg-brown aria-selected:text-bg aria-selected:hover:bg-brown-dark focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy btn">
+              <img src="assets/img/routine-quiz/icon-night.svg" alt="" width="18" height="18" class="group-aria-selected:[filter:brightness(0)_invert(1)]">
+              Chu trình ban đêm
+            </button>
+          </div>
+          <div role="tabpanel" id="routine-panel-day-3" aria-labelledby="routine-tab-day-3" data-routine-panel="day" class="flex flex-col gap-3">
+              <article class="flex items-center gap-4 rounded-[4px] bg-gray-ee px-5 py-4 md:gap-6">
+                <div class="h-24 w-[88px] shrink-0 overflow-hidden rounded-[4px]"><img src="assets/img/routine-quiz/purifying-cleansing-gel.webp" alt="Purifying Cleansing Gel" class="reveal-wipe size-full object-contain" loading="lazy"></div>
+                <div class="flex min-w-0 flex-1 flex-col gap-1">
+                  <p class="text-base leading-[22px] tracking-[4px] uppercase text-brown">Bước 1</p>
+                  <h4 class="text-xl leading-7 font-medium text-navy">Purifying Cleansing Gel</h4>
+                  <p class="text-sm leading-5 tracking-[0.14px] text-gray-66">Làm sạch dịu nhẹ, ít bọt, không xà phòng.</p>
+                </div>
+              </article>
+              <article class="flex items-center gap-4 rounded-[4px] bg-gray-ee px-5 py-4 md:gap-6">
+                <div class="h-24 w-[88px] shrink-0 overflow-hidden rounded-[4px]" aria-hidden="true"></div>
+                <div class="flex min-w-0 flex-1 flex-col gap-1">
+                  <p class="text-base leading-[22px] tracking-[4px] uppercase text-brown">Bước 2</p>
+                  <h4 class="text-xl leading-7 font-medium text-navy">Photo Defense Brightening Serum</h4>
+                  <p class="text-sm leading-5 tracking-[0.14px] text-gray-66">Serum ban ngày định hướng làm sáng và chống oxy hóa.</p>
+                </div>
+              </article>
+              <article class="flex items-center gap-4 rounded-[4px] bg-gray-ee px-5 py-4 md:gap-6">
+                <div class="h-24 w-[88px] shrink-0 overflow-hidden rounded-[4px]"><img src="assets/img/routine-quiz/neobright-repair-cream.webp" alt="NeoBright Repair Cream" class="reveal-wipe size-full object-contain" loading="lazy"></div>
+                <div class="flex min-w-0 flex-1 flex-col gap-1">
+                  <p class="text-base leading-[22px] tracking-[4px] uppercase text-brown">Bước 3</p>
+                  <h4 class="text-xl leading-7 font-medium text-navy">NeoBright Repair Cream</h4>
+                  <p class="text-sm leading-5 tracking-[0.14px] text-gray-66">Dưỡng ẩm, hỗ trợ hàng rào da và chăm sóc dấu hiệu lão hóa.</p>
+                </div>
+              </article>
+              <article class="flex items-center gap-4 rounded-[4px] bg-gray-ee px-5 py-4 md:gap-6">
+                <div class="h-24 w-[88px] shrink-0 overflow-hidden rounded-[4px]"><img src="assets/img/routine-quiz/blue-light-shield-sunscreen.webp" alt="Blue Light Shield Tone-up Fluid Sunscreen" class="reveal-wipe size-full object-contain" loading="lazy"></div>
+                <div class="flex min-w-0 flex-1 flex-col gap-1">
+                  <p class="text-base leading-[22px] tracking-[4px] uppercase text-brown">Bước 4</p>
+                  <h4 class="text-xl leading-7 font-medium text-navy">Blue Light Shield Tone-up Fluid Sunscreen</h4>
+                  <p class="text-sm leading-5 tracking-[0.14px] text-gray-66">Kem chống nắng bảo vệ da ban ngày</p>
+                </div>
+              </article>
+          </div>
+          <div role="tabpanel" id="routine-panel-night-3" aria-labelledby="routine-tab-night-3" data-routine-panel="night" class="flex flex-col gap-3" hidden>
+              <article class="flex items-center gap-4 rounded-[4px] bg-gray-ee px-5 py-4 md:gap-6">
+                <div class="h-24 w-[88px] shrink-0 overflow-hidden rounded-[4px]"><img src="assets/img/routine-quiz/purifying-cleansing-gel.webp" alt="Purifying Cleansing Gel" class="reveal-wipe size-full object-contain" loading="lazy"></div>
+                <div class="flex min-w-0 flex-1 flex-col gap-1">
+                  <p class="text-base leading-[22px] tracking-[4px] uppercase text-brown">Bước 1</p>
+                  <h4 class="text-xl leading-7 font-medium text-navy">Purifying Cleansing Gel</h4>
+                  <p class="text-sm leading-5 tracking-[0.14px] text-gray-66">Làm sạch dịu nhẹ, ít bọt, không xà phòng.</p>
+                </div>
+              </article>
+              <article class="flex items-center gap-4 rounded-[4px] bg-gray-ee px-5 py-4 md:gap-6">
+                <div class="h-24 w-[88px] shrink-0 overflow-hidden rounded-[4px]" aria-hidden="true"></div>
+                <div class="flex min-w-0 flex-1 flex-col gap-1">
+                  <p class="text-base leading-[22px] tracking-[4px] uppercase text-brown">Bước 2</p>
+                  <h4 class="text-xl leading-7 font-medium text-navy">Retino Renewal Brightening Serum</h4>
+                  <p class="text-sm leading-5 tracking-[0.14px] text-gray-66">Serum ban đêm định hướng làm sáng, ức chế sắc tố, hỗ trợ chống oxy hoá, hỗ trợ mờ thâm nám</p>
+                </div>
+              </article>
+              <article class="flex items-center gap-4 rounded-[4px] bg-gray-ee px-5 py-4 md:gap-6">
+                <div class="h-24 w-[88px] shrink-0 overflow-hidden rounded-[4px]"><img src="assets/img/routine-quiz/neobright-repair-cream.webp" alt="NeoBright Repair Cream" class="reveal-wipe size-full object-contain" loading="lazy"></div>
+                <div class="flex min-w-0 flex-1 flex-col gap-1">
+                  <p class="text-base leading-[22px] tracking-[4px] uppercase text-brown">Bước 3</p>
+                  <h4 class="text-xl leading-7 font-medium text-navy">NeoBright Repair Cream</h4>
+                  <p class="text-sm leading-5 tracking-[0.14px] text-gray-66">Dưỡng ẩm, hỗ trợ hàng rào da và chăm sóc dấu hiệu lão hóa.</p>
+                </div>
+              </article>
+          </div>
+          <hr class="h-px w-full border-0 bg-gray-dd">
+          <div class="flex flex-col gap-4">
+            <div class="flex flex-wrap gap-3">
+              <a href="#" class="inline-flex h-10 items-center gap-2 rounded-sm bg-brown px-6 text-base leading-[22px] tracking-[0.224px] text-bg whitespace-nowrap hover:bg-brown-dark focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy btn">Thêm sản phẩm vào giỏ</a>
+              <a href="#" class="inline-flex h-10 cursor-pointer items-center gap-2 rounded-sm border border-navy px-6 text-base leading-[22px] tracking-[0.224px] text-navy whitespace-nowrap focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy btn btn-outline btn-fill-brown-50">Nhận tư vấn 1-1</a>
+            </div>
+            <div class="flex flex-wrap gap-x-5 gap-y-2">
+              <a href="#" class="underline underline-offset-2 text-sm leading-5 font-medium tracking-[0.14px] text-brown hover:text-brown-dark focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy link-u">Chat Zalo</a>
+              <a href="#" class="underline underline-offset-2 text-sm leading-5 font-medium tracking-[0.14px] text-brown hover:text-brown-dark focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy link-u">Xem hướng dẫn đầy đủ</a>
+              <button type="button" class="cursor-pointer underline underline-offset-2 text-sm leading-5 font-medium tracking-[0.14px] text-brown hover:text-brown-dark focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy" data-quiz-reset>Làm lại</button>
+            </div>
+          </div>
+          <p class="text-sm leading-5 tracking-[0.14px] text-gray-66 opacity-85">Routine trên được xây dựng dựa trên thông tin bạn cung cấp và mang tính định hướng chăm sóc. Sản phẩm Dzentic không thay thế thuốc hoặc phác đồ điều trị. Nếu bạn đang sử dụng thuốc, vừa thực hiện thủ thuật hoặc có tình trạng da đặc biệt, hãy tiếp tục tuân thủ hướng dẫn của bác sĩ, người có chuyên môn.</p>
+        </div>
       </div>
     </div>
   </div>
@@ -346,15 +807,19 @@
 <script src="assets/js/app.js"></script>
 <script>
 (function () {
-  var P = 'assets/img/routine-phac-do/', D = 'assets/img/danh-muc-san-pham/';
+  var root = document.querySelector('[data-routine-quiz]');
+  if (!root) return;
+
+  /* ---- Dữ liệu routine theo tình trạng da (bước 1) ---- */
+  var Q = 'assets/img/routine-quiz/', D = 'assets/img/danh-muc-san-pham/', P = 'assets/img/routine-phac-do/';
   var IMG = {
-    gel: [P + 'step-cleansing-gel.png', 'Purifying Cleansing Gel', 'Làm sạch dịu nhẹ, ít bọt, không xà phòng.'],
+    gel: [Q + 'purifying-cleansing-gel.webp', 'Purifying Cleansing Gel', 'Làm sạch dịu nhẹ, ít bọt, không xà phòng.'],
     photo: [D + 'photo-defense-brightening-serum.webp', 'Photo Defense Brightening Serum', 'Serum ban ngày định hướng làm sáng và chống oxy hóa.'],
-    retino: [D + 'retino-renewal-brightening-serum.webp', 'Retino Renewal Brightening Serum', 'Serum ban đêm trẻ hóa, làm sáng đa cơ chế.'],
+    retino: [D + 'retino-renewal-brightening-serum.webp', 'Retino Renewal Brightening Serum', 'Serum ban đêm định hướng làm sáng, ức chế sắc tố, hỗ trợ chống oxy hoá, hỗ trợ mờ thâm nám'],
     zinc: [D + 'zinc-complex-serum.webp', 'Zinc Complex Serum', 'Cân bằng bã nhờn, làm dịu, hỗ trợ da dễ bít tắc.'],
-    repair: [P + 'step-repair-cream.png', 'NeoBright Repair Cream', 'Dưỡng ẩm, hỗ trợ hàng rào da và chăm sóc dấu hiệu lão hóa.'],
+    repair: [Q + 'neobright-repair-cream.webp', 'NeoBright Repair Cream', 'Dưỡng ẩm, hỗ trợ hàng rào da và chăm sóc dấu hiệu lão hóa.'],
     hyd: [P + 'step-hydrating-cream.png', 'Blemish Recovery Hydrating Cream', 'Làm dịu, cấp ẩm và hỗ trợ hàng rào bảo vệ da.'],
-    sun: [P + 'step-sunscreen.png', 'Blue Light Shield Tone-up Fluid Sunscreen', 'Kem chống nắng bảo vệ da ban ngày']
+    sun: [Q + 'blue-light-shield-sunscreen.webp', 'Blue Light Shield Tone-up Fluid Sunscreen', 'Kem chống nắng bảo vệ da ban ngày']
   };
   var DATA = {
     mun: { label: 'DA MỤN / THÂM MỤN', day: ['gel', 'zinc', 'hyd', 'sun'], night: ['gel', 'zinc', 'hyd'], tail: '. Vì vậy Dzentic ưu tiên làm sạch dịu nhẹ - kiểm soát bã nhờn - làm dịu và phục hồi - chống nắng.', use: ['Bắt đầu với ', 'Zinc Complex Serum', ' mỗi tối, thoa lượng nhỏ lên vùng da dễ nổi mụn. Giảm tần suất nếu da khô căng hoặc châm chích.'], set: 'Bộ giải pháp da mụn và dễ bít tắc' },
@@ -364,43 +829,151 @@
     peel: { label: 'DA SAU PEEL / LASER / LẤY NHÂN MỤN', day: ['gel', 'hyd', 'sun'], night: ['gel', 'hyd'], tail: '. Vì vậy Dzentic ưu tiên làm dịu - cấp ẩm - bảo vệ nghiêm ngặt, tránh hoạt chất đặc trị.', use: ['Dùng ', 'Blemish Recovery Hydrating Cream', ' 2 lần mỗi ngày trong giai đoạn phục hồi và thoa lại kem chống nắng sau 2–3 giờ. Không dùng hoạt chất đặc trị cho đến khi da ổn định.'], set: 'Bộ giải pháp phục hồi sau thủ thuật' },
     nang: { label: 'CHỐNG NẮNG HẰNG NGÀY', day: ['gel', 'photo', 'sun'], night: ['gel', 'hyd'], tail: '. Vì vậy Dzentic ưu tiên bảo vệ da trước UV, ánh sáng xanh và tác nhân môi trường mỗi ngày.', use: ['Thoa ', 'Blue Light Shield Tone-up Fluid Sunscreen', ' đủ lượng vào bước cuối buổi sáng và thoa lại sau 2–3 giờ khi ở ngoài trời.'], set: 'Bộ giải pháp bảo vệ da hằng ngày' }
   };
-  var root = document.querySelector('[data-result]');
-  var FOC = 'focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy';
-  var mode = 'day', cond = 'nam';
-  function card(k, i) {
+  var COND = { 'da-mun-tham-mun': 'mun', 'da-nam-lao-hoa': 'nam', 'da-nhay-cam': 'nhaycam', 'da-dieu-tri-phac-do': 'dieutri', 'da-sau-peel-laser': 'peel', 'chong-nang-hang-ngay': 'nang' };
+
+  var ART = 'flex items-center gap-4 rounded-[4px] bg-gray-ee px-5 py-4 md:gap-6';
+  function art(k, n, removed) {
     var p = IMG[k];
-    return '<li class="flex items-center gap-4 rounded-[4px] bg-gray-ee px-4 py-4 sm:gap-6 sm:px-5"><span class="h-24 w-[88px] shrink-0 overflow-hidden rounded-[4px]"><img src="' + p[0] + '" alt="" width="88" height="96" class="size-full object-contain" loading="lazy"></span><span class="flex min-w-0 flex-1 flex-col gap-1"><span class="text-base uppercase leading-[22px] tracking-[4px] text-brown">Bước ' + (i + 1) + '</span><span class="text-lg font-medium leading-7 text-navy sm:text-xl">' + p[1] + '</span><span class="text-sm leading-5 tracking-[0.14px] text-gray-66">' + p[2] + '</span></span></li>';
+    return '<article class="' + ART + '"><div class="h-24 w-[88px] shrink-0 overflow-hidden rounded-[4px]"><img src="' + p[0] + '" alt="' + p[1] + '" class="size-full object-contain" loading="lazy"></div>' +
+      '<div class="flex min-w-0 flex-1 flex-col gap-1"><p class="text-base leading-[22px] tracking-[4px] uppercase ' + (removed ? 'text-gray-99">Đã loại' : 'text-brown">Bước ' + n) + '</p>' +
+      '<h4 class="text-xl leading-7 font-medium ' + (removed ? 'text-gray-99' : 'text-navy') + '">' + p[1] + '</h4>' +
+      '<p class="text-sm leading-5 tracking-[0.14px] text-gray-66">' + p[2] + '</p>' +
+      (removed ? '<span class="mt-1 inline-flex w-fit rounded-full bg-[#b3261e]/10 px-[10px] py-1 text-xs leading-4 text-[#b3261e] md:hidden">Đã loại khỏi routine</span>' : '') +
+      '</div>' +
+      (removed ? '<span class="hidden shrink-0 rounded-full bg-[#b3261e]/10 px-[10px] py-1 text-xs leading-4 whitespace-nowrap text-[#b3261e] md:inline-flex">Đã loại khỏi routine</span>' : '') +
+      '</article>';
   }
-  function tog(id, label, icon) {
-    var on = mode === id;
-    return '<button type="button" data-mode="' + id + '" aria-pressed="' + on + '" class="flex h-11 items-center gap-2 rounded-sm px-4 text-xl leading-7 ' + FOC + ' ' + (on ? 'bg-brown text-bg hover:bg-brown-dark' : 'bg-gray-ee text-gray-66 hover:bg-gray-dd') + '"><img src="' + P + icon + '" alt="" width="18" height="18" class="size-[18px]' + (on ? '' : '') + '">' + label + '</button>';
+  function list(keys, dropRetino) {
+    var n = 0;
+    return keys.map(function (k) {
+      if (dropRetino && k === 'retino') return art(k, 0, true);
+      return art(k, ++n, false);
+    }).join('');
   }
-  function render() {
-    var d = DATA[cond], list = (mode === 'day' ? d.day : d.night).map(card).join('');
-    root.innerHTML =
-      '<div class="flex flex-wrap gap-[10px]">' + tog('day', 'Chu trình ban ngày', 'icon-day.svg') + tog('night', 'Chu trình ban đêm', 'icon-night.svg') + '</div>' +
-      '<ul class="flex flex-col gap-3">' + list + '</ul>' +
-      '<hr class="border-gray-dd">' +
-      '<div class="flex flex-col gap-2"><h3 class="text-xl font-bold leading-7 text-brown-dark">Vì sao routine này phù hợp với bạn?</h3><p class="text-base leading-[22px] tracking-[0.224px] text-gray-49">Bạn cho biết làn da hiện có nhu cầu chăm sóc <strong class="font-bold">' + d.label + '</strong>' + d.tail + '</p></div>' +
-      '<hr class="border-gray-dd">' +
-      '<div class="flex flex-col gap-2"><h3 class="text-xl font-bold leading-7 text-brown-dark">Sử dụng:</h3><p class="text-base leading-[22px] tracking-[0.224px] text-gray-49">' + d.use[0] + '<strong class="font-bold">' + d.use[1] + '</strong>' + d.use[2] + '</p></div>' +
-      '<div class="flex flex-col gap-3"><p class="text-sm font-medium leading-5 tracking-[0.14px] text-gray-66">Bộ sản phẩm đề xuất</p><p class="text-xl font-medium leading-7 text-navy">' + d.set + '</p><div><button type="button" class="inline-flex h-10 items-center rounded-sm bg-brown px-6 text-base leading-[22px] tracking-[0.224px] text-bg hover:bg-brown-dark ' + FOC + ' btn">Thêm bộ sản phẩm vào giỏ</button></div></div>' +
-      '<p class="text-sm leading-5 tracking-[0.14px] text-gray-66 opacity-85">Routine trên được xây dựng dựa trên thông tin bạn cung cấp và mang tính định hướng chăm sóc. Sản phẩm Dzentic không thay thế thuốc hoặc phác đồ điều trị. Nếu bạn đang sử dụng thuốc, vừa thực hiện thủ thuật hoặc có tình trạng da đặc biệt, hãy tiếp tục tuân thủ hướng dẫn của bác sĩ, người có chuyên môn.</p>';
+
+  var steps = root.querySelectorAll('[data-quiz-step]');
+  var results = root.querySelectorAll('[data-quiz-result]');
+  var items = root.querySelectorAll('[data-quiz-stepitem]');
+  var tracks = root.querySelectorAll('[data-quiz-track]');
+  var next = root.querySelector('[data-quiz-next]');
+  var prev = root.querySelector('[data-quiz-prev]');
+  var prevLabel = root.querySelector('[data-quiz-prevlabel]');
+  var total = steps.length;
+  var current = 1;
+
+  function swap(el, off, on) {
+    off.split(' ').forEach(function (c) { el.classList.remove(c); });
+    on.split(' ').forEach(function (c) { el.classList.add(c); });
   }
-  root.addEventListener('click', function (e) {
-    var b = e.target.closest('[data-mode]');
-    if (!b) return;
-    mode = b.dataset.mode; render();
-    var nb = root.querySelector('[data-mode="' + mode + '"]'); if (nb) nb.focus();
+  function textOf(res, head) {
+    var hs = res.querySelectorAll('h3, p');
+    for (var i = 0; i < hs.length; i++) if (hs[i].textContent.trim().indexOf(head) === 0) return hs[i];
+    return null;
+  }
+
+  /* Đổ nội dung kết quả theo tình trạng da đã chọn ở bước 1 */
+  function paintResults() {
+    var c1 = root.querySelector('input[name="quiz-step-1"]:checked');
+    var d = DATA[(c1 && COND[c1.value]) || 'nam'];
+    results.forEach(function (res) {
+      var day = res.querySelector('[data-routine-panel="day"]');
+      var night = res.querySelector('[data-routine-panel="night"]');
+      day.innerHTML = list(d.day);
+      var blocks = night.querySelectorAll('[data-retinoid]');
+      if (blocks.length) {
+        blocks.forEach(function (b) { b.innerHTML = list(d.night, b.getAttribute('data-retinoid') === 'on'); });
+      } else {
+        night.innerHTML = list(d.night);
+      }
+      var why = textOf(res, 'Vì sao');
+      if (why && why.nextElementSibling) why.nextElementSibling.innerHTML = 'Bạn cho biết làn da hiện có nhu cầu chăm sóc <strong class="font-bold">' + d.label + '</strong>' + d.tail;
+      var use = textOf(res, 'Sử dụng');
+      if (use && use.nextElementSibling) use.nextElementSibling.innerHTML = d.use[0] + '<strong class="font-bold">' + d.use[1] + '</strong>' + d.use[2];
+      var set = textOf(res, 'Bộ sản phẩm đề xuất');
+      if (set && set.nextElementSibling) set.nextElementSibling.textContent = d.set;
+    });
+  }
+
+  // Stepper: Done (xanh + tick) / Active (nâu đậm) / Default (xám)
+  function paintStepper() {
+    items.forEach(function (li) {
+      var n = Number(li.getAttribute('data-quiz-stepitem'));
+      var dot = li.querySelector('[data-quiz-dot]');
+      var label = li.querySelector('[data-quiz-steplabel]');
+      var done = n < current, active = n === current;
+      swap(dot, 'bg-green bg-brown-dark bg-gray-bb', done ? 'bg-green' : active ? 'bg-brown-dark' : 'bg-gray-bb');
+      swap(label, 'text-green text-brown-dark text-gray-99', done ? 'text-green' : active ? 'text-brown-dark' : 'text-gray-99');
+      li.querySelector('[data-quiz-num]').hidden = done;
+      li.querySelector('[data-quiz-check]').classList.toggle('hidden', !done);
+      if (active) li.setAttribute('aria-current', 'step'); else li.removeAttribute('aria-current');
+    });
+    tracks.forEach(function (t) {
+      var done = Number(t.getAttribute('data-quiz-track')) < current;
+      swap(t, 'bg-green bg-gray-bb', done ? 'bg-green' : 'bg-gray-bb');
+    });
+  }
+
+  // Chu trình ngày / đêm trong từng kết quả
+  function selectTab(res, key) {
+    res.querySelectorAll('[data-routine-tab]').forEach(function (t) {
+      t.setAttribute('aria-selected', String(t.getAttribute('data-routine-tab') === key));
+    });
+    res.querySelectorAll('[data-routine-panel]').forEach(function (p) {
+      p.hidden = p.getAttribute('data-routine-panel') !== key;
+    });
+  }
+  results.forEach(function (res) {
+    res.querySelectorAll('[data-routine-tab]').forEach(function (tab) {
+      tab.addEventListener('click', function () { selectTab(res, tab.getAttribute('data-routine-tab')); });
+    });
   });
-  document.querySelectorAll('input[name="tinh-trang"]').forEach(function (r) {
-    r.addEventListener('change', function () { cond = r.value; render(); root.scrollTop = 0; });
+
+  // Đáp án bước 2 / 3 điều chỉnh kết quả
+  function syncAnswers() {
+    var c2 = root.querySelector('input[name="quiz-step-2"]:checked');
+    var retinoid = !!c2 && c2.value === 'retinoid';
+    var r2 = root.querySelector('[data-quiz-result="2"]');
+    r2.querySelector('[data-quiz-notice="retinoid"]').hidden = !retinoid;
+    r2.querySelectorAll('[data-retinoid]').forEach(function (b) {
+      b.hidden = (b.getAttribute('data-retinoid') === 'on') !== retinoid;
+    });
+    var special = root.querySelector('input[data-quiz-special]:checked');
+    root.querySelector('[data-quiz-notice="special"]').hidden = !special;
+  }
+  root.addEventListener('change', function (e) {
+    var t = e.target;
+    if (t.name === 'quiz-step-3' && t.checked) {
+      // "Không có điều nào ở trên" loại trừ các đáp án còn lại
+      root.querySelectorAll('input[name="quiz-step-3"]').forEach(function (i) {
+        if (i !== t && (t.hasAttribute('data-quiz-none') || i.hasAttribute('data-quiz-none'))) i.checked = false;
+      });
+    }
+    if (t.name === 'quiz-step-1') paintResults();
+    syncAnswers();
   });
-  var next = document.querySelector('[data-next]');
-  if (next) next.addEventListener('click', function (e) {
-    if (matchMedia('(min-width:1024px)').matches) { e.preventDefault(); root.scrollTo({ top: root.scrollHeight, behavior: 'smooth' }); }
+
+  function show(n) {
+    current = Math.max(1, Math.min(total, n));
+    steps.forEach(function (s) { s.hidden = Number(s.getAttribute('data-quiz-step')) !== current; });
+    results.forEach(function (r) {
+      var on = Number(r.getAttribute('data-quiz-result')) === current;
+      r.hidden = !on;
+      if (on) { selectTab(r, r.getAttribute('data-default-tab')); r.scrollTop = 0; }
+    });
+    prev.hidden = current === 1;
+    next.hidden = current === total;
+    prevLabel.textContent = 'Quay lại bước ' + (current - 1);
+    paintStepper();
+    syncAnswers();
+  }
+
+  next.addEventListener('click', function () { show(current + 1); });
+  prev.addEventListener('click', function () { show(current - 1); });
+  root.querySelectorAll('[data-quiz-reset]').forEach(function (b) {
+    b.addEventListener('click', function () { show(1); });
   });
-  render();
+  paintResults();
+  show(1);
 })();
 </script>
 </body>
