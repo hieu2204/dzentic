@@ -240,4 +240,39 @@ document.addEventListener('toggle', (e) => {
   document.querySelectorAll('details[data-faq][open]').forEach((o) => { if (o !== d) o.open = false; });
 }, true);
 
+// Thanh gạch chân trượt cho tab: <div role="tablist" data-tab-indicator> ... tab active = [aria-selected="true"]
+document.querySelectorAll('[data-tab-indicator]').forEach((list) => {
+  const bar = document.createElement('span'); bar.className = 'tab-indicator'; bar.setAttribute('aria-hidden', 'true'); list.appendChild(bar);
+  const place = (instant) => {
+    const t = list.querySelector('[role="tab"][aria-selected="true"]'); if (!t) { bar.style.opacity = '0'; return; }
+    const th = parseFloat(getComputedStyle(t).borderBottomWidth) || 2;
+    if (instant) bar.style.transition = 'none';
+    bar.style.height = th + 'px'; bar.style.width = t.offsetWidth + 'px';
+    bar.style.transform = 'translate(' + t.offsetLeft + 'px,' + (t.offsetTop + t.offsetHeight - th) + 'px)'; bar.style.opacity = '1';
+    if (instant) { void bar.offsetWidth; bar.style.transition = ''; }
+  };
+  const mo = new MutationObserver(() => place(false));
+  list.querySelectorAll('[role="tab"]').forEach((t) => mo.observe(t, { attributes: true, attributeFilter: ['aria-selected'] }));
+  window.addEventListener('resize', () => place(true));
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(() => place(true));
+  place(true); setTimeout(() => place(true), 300);
+});
+
+// Trượt mở/đóng mượt cho một phần tử (dùng cho accordion): DZ.slide(el, show)
+window.DZ = window.DZ || {};
+window.DZ.slide = function (el, show) {
+  if (matchMedia('(prefers-reduced-motion: reduce)').matches) { el.hidden = !show; return; }
+  if (el._anim) el._anim.cancel();
+  if (show) {
+    el.hidden = false; const h = el.scrollHeight;
+    el._anim = el.animate([{ height: '0px', opacity: 0 }, { height: h + 'px', opacity: 1 }], { duration: 320, easing: 'cubic-bezier(.2,.7,.2,1)' });
+    el.style.overflow = 'hidden';
+    el._anim.onfinish = () => { el.style.overflow = ''; el._anim = null; };
+  } else {
+    const h = el.offsetHeight; el.style.overflow = 'hidden';
+    el._anim = el.animate([{ height: h + 'px', opacity: 1 }, { height: '0px', opacity: 0 }], { duration: 260, easing: 'cubic-bezier(.2,.7,.2,1)' });
+    el._anim.onfinish = () => { el.hidden = true; el.style.overflow = ''; el._anim = null; };
+  }
+};
+
 initCart();

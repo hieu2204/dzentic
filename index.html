@@ -22,7 +22,7 @@
 <!-- SECTION: hero-header -->
 <section class="relative bg-hero-fill text-navy overflow-hidden" aria-roledescription="carousel" aria-label="Giới thiệu Dzentic">
   <!-- Header: nằm NGOÀI slider, đè lên ảnh nền -->
-  <header data-site-header class="group/hdr absolute inset-x-0 top-0 z-50 transition-[background-color,box-shadow] duration-300 [&.is-stuck]:fixed [&.is-stuck]:bg-bg [&.is-stuck]:border-b [&.is-stuck]:border-gray-ee [&.is-stuck]:shadow-popover">
+  <header data-site-header class="group/hdr absolute inset-x-0 top-0 z-50 transition-[background-color,box-shadow] duration-300 [&.is-stuck]:fixed [&.is-stuck]:bg-bg/85 [&.is-stuck]:border-b [&.is-stuck]:border-gray-ee [&.is-stuck]:shadow-popover">
     <div class="max-w-site mx-auto px-4 md:px-8 xl:px-[72px] h-20 xl:h-[120px] transition-[height] duration-300 group-[.is-stuck]/hdr:h-16 xl:group-[.is-stuck]/hdr:h-[88px] flex items-center justify-between xl:grid xl:grid-cols-[1fr_auto_1fr] xl:gap-6">
       <nav class="hidden xl:flex items-center gap-6 text-base leading-[22px] tracking-[0.224px]" aria-label="Menu trái">
         <a href="thu-vien-hoat-chat.html" class="hover:text-brown focus-visible:text-brown focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brown link-u">Khoa Học &amp; Bằng Chứng</a>
@@ -167,14 +167,14 @@
     </h2>
 
     <div data-tabs>
-      <div class="mt-8 flex justify-start overflow-x-auto pb-1 md:mt-12 lg:mt-[26.5px] lg:justify-center lg:pb-0" role="tablist" aria-label="Loại da" data-aos="fade-up" data-aos-delay="100">
+      <div data-tab-indicator class="mt-8 flex justify-start overflow-x-auto pb-1 md:mt-12 lg:mt-[26.5px] lg:justify-center lg:pb-0" role="tablist" aria-label="Loại da" data-aos="fade-up" data-aos-delay="100">
         <div class="flex gap-6 lg:gap-10">
-          <button type="button" role="tab" data-tab="mun" aria-selected="true" class="shrink-0 whitespace-nowrap border-b border-gray-bb px-2 pb-2 text-lg leading-7 text-gray-99 aria-selected:border-navy aria-selected:text-navy aria-[selected=false]:hover:border-gray-99 aria-[selected=false]:hover:text-gray-66 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue lg:text-xl">Da mụn</button>
-          <button type="button" role="tab" data-tab="nam" aria-selected="false" class="shrink-0 whitespace-nowrap border-b border-gray-bb px-2 pb-2 text-lg leading-7 text-gray-99 aria-selected:border-navy aria-selected:text-navy aria-[selected=false]:hover:border-gray-99 aria-[selected=false]:hover:text-gray-66 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue lg:text-xl">Da nám &amp; lão hoá</button>
-          <button type="button" role="tab" data-tab="nhay-cam" aria-selected="false" class="shrink-0 whitespace-nowrap border-b border-gray-bb px-2 pb-2 text-lg leading-7 text-gray-99 aria-selected:border-navy aria-selected:text-navy aria-[selected=false]:hover:border-gray-99 aria-[selected=false]:hover:text-gray-66 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue lg:text-xl">Da nhạy cảm</button>
-          <button type="button" role="tab" data-tab="dieu-tri" aria-selected="false" class="shrink-0 whitespace-nowrap border-b border-gray-bb px-2 pb-2 text-lg leading-7 text-gray-99 aria-selected:border-navy aria-selected:text-navy aria-[selected=false]:hover:border-gray-99 aria-[selected=false]:hover:text-gray-66 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue lg:text-xl">Da điều trị</button>
-          <button type="button" role="tab" data-tab="sau-lieu-trinh" aria-selected="false" class="shrink-0 whitespace-nowrap border-b border-gray-bb px-2 pb-2 text-lg leading-7 text-gray-99 aria-selected:border-navy aria-selected:text-navy aria-[selected=false]:hover:border-gray-99 aria-[selected=false]:hover:text-gray-66 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue lg:text-xl">Da sau liệu trình</button>
-          <button type="button" role="tab" data-tab="ton-thuong" aria-selected="false" class="shrink-0 whitespace-nowrap border-b border-gray-bb px-2 pb-2 text-lg leading-7 text-gray-99 aria-selected:border-navy aria-selected:text-navy aria-[selected=false]:hover:border-gray-99 aria-[selected=false]:hover:text-gray-66 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue lg:text-xl">Da tổn thương</button>
+          <button type="button" role="tab" data-tab="mun" aria-selected="true" class="shrink-0 whitespace-nowrap border-b border-gray-bb px-2 pb-2 text-lg leading-7 text-gray-99 aria-selected:text-navy aria-[selected=false]:hover:border-gray-99 aria-[selected=false]:hover:text-gray-66 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue lg:text-xl">Da mụn</button>
+          <button type="button" role="tab" data-tab="nam" aria-selected="false" class="shrink-0 whitespace-nowrap border-b border-gray-bb px-2 pb-2 text-lg leading-7 text-gray-99 aria-selected:text-navy aria-[selected=false]:hover:border-gray-99 aria-[selected=false]:hover:text-gray-66 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue lg:text-xl">Da nám &amp; lão hoá</button>
+          <button type="button" role="tab" data-tab="nhay-cam" aria-selected="false" class="shrink-0 whitespace-nowrap border-b border-gray-bb px-2 pb-2 text-lg leading-7 text-gray-99 aria-selected:text-navy aria-[selected=false]:hover:border-gray-99 aria-[selected=false]:hover:text-gray-66 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue lg:text-xl">Da nhạy cảm</button>
+          <button type="button" role="tab" data-tab="dieu-tri" aria-selected="false" class="shrink-0 whitespace-nowrap border-b border-gray-bb px-2 pb-2 text-lg leading-7 text-gray-99 aria-selected:text-navy aria-[selected=false]:hover:border-gray-99 aria-[selected=false]:hover:text-gray-66 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue lg:text-xl">Da điều trị</button>
+          <button type="button" role="tab" data-tab="sau-lieu-trinh" aria-selected="false" class="shrink-0 whitespace-nowrap border-b border-gray-bb px-2 pb-2 text-lg leading-7 text-gray-99 aria-selected:text-navy aria-[selected=false]:hover:border-gray-99 aria-[selected=false]:hover:text-gray-66 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue lg:text-xl">Da sau liệu trình</button>
+          <button type="button" role="tab" data-tab="ton-thuong" aria-selected="false" class="shrink-0 whitespace-nowrap border-b border-gray-bb px-2 pb-2 text-lg leading-7 text-gray-99 aria-selected:text-navy aria-[selected=false]:hover:border-gray-99 aria-[selected=false]:hover:text-gray-66 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue lg:text-xl">Da tổn thương</button>
         </div>
       </div>
 
@@ -308,7 +308,7 @@
                     <article class="group flex flex-col gap-6 transition-transform duration-300 hover:-translate-y-1">
                       <div class="relative aspect-[196/284] overflow-hidden">
                         <img src="assets/img/thau-hieu-da/nen-san-pham.webp" alt="" class="absolute inset-0 size-full object-cover" loading="lazy" />
-                        <img src="assets/img/thau-hieu-da/sp-cleansing-gel.webp" alt="Purifying Cleansing Gel" class="absolute left-[27%] top-[17.6%] h-[64.4%] w-[46%] object-contain aspect-[656/1338]" loading="lazy" />
+                        <img src="assets/img/thau-hieu-da/sp-cleansing-gel.webp" alt="Purifying Cleansing Gel" class="reveal-wipe absolute left-[27%] top-[17.6%] h-[64.4%] w-[46%] object-contain aspect-[656/1338]" loading="lazy" />
                         <div class="absolute inset-x-[10px] bottom-[10px] flex flex-col gap-1 opacity-100 transition-opacity lg:opacity-0 lg:group-focus-within:opacity-100 lg:group-hover:opacity-100">
                           <a href="#" class="flex h-8 items-center justify-center rounded-sm bg-bg px-3 text-base tracking-[0.014em] text-ink hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue">Xem chi tiết</a>
                           <button type="button" class="flex h-8 items-center justify-center rounded-sm bg-navy px-3 text-base tracking-[0.014em] text-bg hover:bg-blue focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-bg">Thêm vào giỏ hàng</button>
@@ -376,7 +376,7 @@
                     <article class="group flex flex-col gap-6 transition-transform duration-300 hover:-translate-y-1">
                       <div class="relative aspect-[196/284] overflow-hidden">
                         <img src="assets/img/thau-hieu-da/nen-san-pham.webp" alt="" class="absolute inset-0 size-full object-cover" loading="lazy" />
-                        <img src="assets/img/thau-hieu-da/sp-cleansing-gel.webp" alt="Purifying Cleansing Gel" class="absolute left-[27%] top-[17.6%] h-[64.4%] w-[46%] object-contain aspect-[656/1338]" loading="lazy" />
+                        <img src="assets/img/thau-hieu-da/sp-cleansing-gel.webp" alt="Purifying Cleansing Gel" class="reveal-wipe absolute left-[27%] top-[17.6%] h-[64.4%] w-[46%] object-contain aspect-[656/1338]" loading="lazy" />
                         <div class="absolute inset-x-[10px] bottom-[10px] flex flex-col gap-1 opacity-100 transition-opacity lg:opacity-0 lg:group-focus-within:opacity-100 lg:group-hover:opacity-100">
                           <a href="#" class="flex h-8 items-center justify-center rounded-sm bg-bg px-3 text-base tracking-[0.014em] text-ink hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue">Xem chi tiết</a>
                           <button type="button" class="flex h-8 items-center justify-center rounded-sm bg-navy px-3 text-base tracking-[0.014em] text-bg hover:bg-blue focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-bg">Thêm vào giỏ hàng</button>
@@ -391,7 +391,7 @@
                   <li class="swiper-slide">
                     <article class="group flex flex-col gap-6 transition-transform duration-300 hover:-translate-y-1">
                       <div class="relative aspect-[196/284] overflow-hidden">
-                        <img src="assets/img/danh-muc-san-pham/zinc-complex-serum.webp" alt="Zinc Complex Night Serum" class="absolute inset-0 size-full object-cover" loading="lazy" />
+                        <img src="assets/img/danh-muc-san-pham/zinc-complex-serum.webp" alt="Zinc Complex Night Serum" class="reveal-wipe absolute inset-0 size-full object-cover" loading="lazy" />
                         <div class="absolute inset-x-[10px] bottom-[10px] flex flex-col gap-1 opacity-100 transition-opacity lg:opacity-0 lg:group-focus-within:opacity-100 lg:group-hover:opacity-100">
                           <a href="#" class="flex h-8 items-center justify-center rounded-sm bg-bg px-3 text-base tracking-[0.014em] text-ink hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue">Xem chi tiết</a>
                           <button type="button" class="flex h-8 items-center justify-center rounded-sm bg-navy px-3 text-base tracking-[0.014em] text-bg hover:bg-blue focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-bg">Thêm vào giỏ hàng</button>
@@ -406,7 +406,7 @@
                   <li class="swiper-slide">
                     <article class="group flex flex-col gap-6 transition-transform duration-300 hover:-translate-y-1">
                       <div class="relative aspect-[196/284] overflow-hidden">
-                        <img src="assets/img/danh-muc-san-pham/retino-renewal-brightening-serum.webp" alt="Retino Renewal Brightening Serum" class="absolute inset-0 size-full object-cover" loading="lazy" />
+                        <img src="assets/img/danh-muc-san-pham/retino-renewal-brightening-serum.webp" alt="Retino Renewal Brightening Serum" class="reveal-wipe absolute inset-0 size-full object-cover" loading="lazy" />
                         <div class="absolute inset-x-[10px] bottom-[10px] flex flex-col gap-1 opacity-100 transition-opacity lg:opacity-0 lg:group-focus-within:opacity-100 lg:group-hover:opacity-100">
                           <a href="#" class="flex h-8 items-center justify-center rounded-sm bg-bg px-3 text-base tracking-[0.014em] text-ink hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue">Xem chi tiết</a>
                           <button type="button" class="flex h-8 items-center justify-center rounded-sm bg-navy px-3 text-base tracking-[0.014em] text-bg hover:bg-blue focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-bg">Thêm vào giỏ hàng</button>
@@ -513,7 +513,7 @@
                     <article class="group flex flex-col gap-6 transition-transform duration-300 hover:-translate-y-1">
                       <div class="relative aspect-[196/284] overflow-hidden">
                         <img src="assets/img/thau-hieu-da/nen-san-pham.webp" alt="" class="absolute inset-0 size-full object-cover" loading="lazy" />
-                        <img src="assets/img/thau-hieu-da/sp-cleansing-gel.webp" alt="Purifying Cleansing Gel" class="absolute left-[27%] top-[17.6%] h-[64.4%] w-[46%] object-contain aspect-[656/1338]" loading="lazy" />
+                        <img src="assets/img/thau-hieu-da/sp-cleansing-gel.webp" alt="Purifying Cleansing Gel" class="reveal-wipe absolute left-[27%] top-[17.6%] h-[64.4%] w-[46%] object-contain aspect-[656/1338]" loading="lazy" />
                         <div class="absolute inset-x-[10px] bottom-[10px] flex flex-col gap-1 opacity-100 transition-opacity lg:opacity-0 lg:group-focus-within:opacity-100 lg:group-hover:opacity-100">
                           <a href="#" class="flex h-8 items-center justify-center rounded-sm bg-bg px-3 text-base tracking-[0.014em] text-ink hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue">Xem chi tiết</a>
                           <button type="button" class="flex h-8 items-center justify-center rounded-sm bg-navy px-3 text-base tracking-[0.014em] text-bg hover:bg-blue focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-bg">Thêm vào giỏ hàng</button>
@@ -528,7 +528,7 @@
                   <li class="swiper-slide">
                     <article class="group flex flex-col gap-6 transition-transform duration-300 hover:-translate-y-1">
                       <div class="relative aspect-[196/284] overflow-hidden">
-                        <img src="assets/img/danh-muc-san-pham/retino-renewal-brightening-serum.webp" alt="Retino Renewal Brightening Serum" class="absolute inset-0 size-full object-cover" loading="lazy" />
+                        <img src="assets/img/danh-muc-san-pham/retino-renewal-brightening-serum.webp" alt="Retino Renewal Brightening Serum" class="reveal-wipe absolute inset-0 size-full object-cover" loading="lazy" />
                         <div class="absolute inset-x-[10px] bottom-[10px] flex flex-col gap-1 opacity-100 transition-opacity lg:opacity-0 lg:group-focus-within:opacity-100 lg:group-hover:opacity-100">
                           <a href="#" class="flex h-8 items-center justify-center rounded-sm bg-bg px-3 text-base tracking-[0.014em] text-ink hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue">Xem chi tiết</a>
                           <button type="button" class="flex h-8 items-center justify-center rounded-sm bg-navy px-3 text-base tracking-[0.014em] text-bg hover:bg-blue focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-bg">Thêm vào giỏ hàng</button>
@@ -543,7 +543,7 @@
                   <li class="swiper-slide">
                     <article class="group flex flex-col gap-6 transition-transform duration-300 hover:-translate-y-1">
                       <div class="relative aspect-[196/284] overflow-hidden">
-                        <img src="assets/img/danh-muc-san-pham/photo-defense-brightening-serum.webp" alt="Photo Defense Brightening Serum" class="absolute inset-0 size-full object-cover" loading="lazy" />
+                        <img src="assets/img/danh-muc-san-pham/photo-defense-brightening-serum.webp" alt="Photo Defense Brightening Serum" class="reveal-wipe absolute inset-0 size-full object-cover" loading="lazy" />
                         <div class="absolute inset-x-[10px] bottom-[10px] flex flex-col gap-1 opacity-100 transition-opacity lg:opacity-0 lg:group-focus-within:opacity-100 lg:group-hover:opacity-100">
                           <a href="#" class="flex h-8 items-center justify-center rounded-sm bg-bg px-3 text-base tracking-[0.014em] text-ink hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue">Xem chi tiết</a>
                           <button type="button" class="flex h-8 items-center justify-center rounded-sm bg-navy px-3 text-base tracking-[0.014em] text-bg hover:bg-blue focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-bg">Thêm vào giỏ hàng</button>
@@ -597,7 +597,7 @@
                     <article class="group flex flex-col gap-6 transition-transform duration-300 hover:-translate-y-1">
                       <div class="relative aspect-[196/284] overflow-hidden">
                         <img src="assets/img/thau-hieu-da/nen-san-pham.webp" alt="" class="absolute inset-0 size-full object-cover" loading="lazy" />
-                        <img src="assets/img/thau-hieu-da/sp-cleansing-gel.webp" alt="Gentle Purifying Cleansing Gel" class="absolute left-[27%] top-[17.6%] h-[64.4%] w-[46%] object-contain aspect-[656/1338]" loading="lazy" />
+                        <img src="assets/img/thau-hieu-da/sp-cleansing-gel.webp" alt="Gentle Purifying Cleansing Gel" class="reveal-wipe absolute left-[27%] top-[17.6%] h-[64.4%] w-[46%] object-contain aspect-[656/1338]" loading="lazy" />
                         <div class="absolute inset-x-[10px] bottom-[10px] flex flex-col gap-1 opacity-100 transition-opacity lg:opacity-0 lg:group-focus-within:opacity-100 lg:group-hover:opacity-100">
                           <a href="#" class="flex h-8 items-center justify-center rounded-sm bg-bg px-3 text-base tracking-[0.014em] text-ink hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue">Xem chi tiết</a>
                           <button type="button" class="flex h-8 items-center justify-center rounded-sm bg-navy px-3 text-base tracking-[0.014em] text-bg hover:bg-blue focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-bg">Thêm vào giỏ hàng</button>
@@ -612,7 +612,7 @@
                   <li class="swiper-slide">
                     <article class="group flex flex-col gap-6 transition-transform duration-300 hover:-translate-y-1">
                       <div class="relative aspect-[196/284] overflow-hidden">
-                        <img src="assets/img/danh-muc-san-pham/zinc-complex-serum.webp" alt="Zinc Complex Serum" class="absolute inset-0 size-full object-cover" loading="lazy" />
+                        <img src="assets/img/danh-muc-san-pham/zinc-complex-serum.webp" alt="Zinc Complex Serum" class="reveal-wipe absolute inset-0 size-full object-cover" loading="lazy" />
                         <div class="absolute inset-x-[10px] bottom-[10px] flex flex-col gap-1 opacity-100 transition-opacity lg:opacity-0 lg:group-focus-within:opacity-100 lg:group-hover:opacity-100">
                           <a href="#" class="flex h-8 items-center justify-center rounded-sm bg-bg px-3 text-base tracking-[0.014em] text-ink hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue">Xem chi tiết</a>
                           <button type="button" class="flex h-8 items-center justify-center rounded-sm bg-navy px-3 text-base tracking-[0.014em] text-bg hover:bg-blue focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-bg">Thêm vào giỏ hàng</button>
@@ -666,7 +666,7 @@
                     <article class="group flex flex-col gap-6 transition-transform duration-300 hover:-translate-y-1">
                       <div class="relative aspect-[196/284] overflow-hidden">
                         <img src="assets/img/thau-hieu-da/nen-san-pham.webp" alt="" class="absolute inset-0 size-full object-cover" loading="lazy" />
-                        <img src="assets/img/thau-hieu-da/sp-cleansing-gel.webp" alt="Gentle Purifying Cleansing Gel" class="absolute left-[27%] top-[17.6%] h-[64.4%] w-[46%] object-contain aspect-[656/1338]" loading="lazy" />
+                        <img src="assets/img/thau-hieu-da/sp-cleansing-gel.webp" alt="Gentle Purifying Cleansing Gel" class="reveal-wipe absolute left-[27%] top-[17.6%] h-[64.4%] w-[46%] object-contain aspect-[656/1338]" loading="lazy" />
                         <div class="absolute inset-x-[10px] bottom-[10px] flex flex-col gap-1 opacity-100 transition-opacity lg:opacity-0 lg:group-focus-within:opacity-100 lg:group-hover:opacity-100">
                           <a href="#" class="flex h-8 items-center justify-center rounded-sm bg-bg px-3 text-base tracking-[0.014em] text-ink hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue">Xem chi tiết</a>
                           <button type="button" class="flex h-8 items-center justify-center rounded-sm bg-navy px-3 text-base tracking-[0.014em] text-bg hover:bg-blue focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-bg">Thêm vào giỏ hàng</button>
@@ -750,7 +750,7 @@
                     <article class="group flex flex-col gap-6 transition-transform duration-300 hover:-translate-y-1">
                       <div class="relative aspect-[196/284] overflow-hidden">
                         <img src="assets/img/thau-hieu-da/nen-san-pham.webp" alt="" class="absolute inset-0 size-full object-cover" loading="lazy" />
-                        <img src="assets/img/thau-hieu-da/sp-cleansing-gel.webp" alt="Purifying Cleansing Gel" class="absolute left-[27%] top-[17.6%] h-[64.4%] w-[46%] object-contain aspect-[656/1338]" loading="lazy" />
+                        <img src="assets/img/thau-hieu-da/sp-cleansing-gel.webp" alt="Purifying Cleansing Gel" class="reveal-wipe absolute left-[27%] top-[17.6%] h-[64.4%] w-[46%] object-contain aspect-[656/1338]" loading="lazy" />
                         <div class="absolute inset-x-[10px] bottom-[10px] flex flex-col gap-1 opacity-100 transition-opacity lg:opacity-0 lg:group-focus-within:opacity-100 lg:group-hover:opacity-100">
                           <a href="#" class="flex h-8 items-center justify-center rounded-sm bg-bg px-3 text-base tracking-[0.014em] text-ink hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue">Xem chi tiết</a>
                           <button type="button" class="flex h-8 items-center justify-center rounded-sm bg-navy px-3 text-base tracking-[0.014em] text-bg hover:bg-blue focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-bg">Thêm vào giỏ hàng</button>
@@ -765,7 +765,7 @@
                   <li class="swiper-slide">
                     <article class="group flex flex-col gap-6 transition-transform duration-300 hover:-translate-y-1">
                       <div class="relative aspect-[196/284] overflow-hidden">
-                        <img src="assets/img/danh-muc-san-pham/photo-defense-brightening-serum.webp" alt="Photo Defense Brightening Serum" class="absolute inset-0 size-full object-cover" loading="lazy" />
+                        <img src="assets/img/danh-muc-san-pham/photo-defense-brightening-serum.webp" alt="Photo Defense Brightening Serum" class="reveal-wipe absolute inset-0 size-full object-cover" loading="lazy" />
                         <div class="absolute inset-x-[10px] bottom-[10px] flex flex-col gap-1 opacity-100 transition-opacity lg:opacity-0 lg:group-focus-within:opacity-100 lg:group-hover:opacity-100">
                           <a href="#" class="flex h-8 items-center justify-center rounded-sm bg-bg px-3 text-base tracking-[0.014em] text-ink hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue">Xem chi tiết</a>
                           <button type="button" class="flex h-8 items-center justify-center rounded-sm bg-navy px-3 text-base tracking-[0.014em] text-bg hover:bg-blue focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-bg">Thêm vào giỏ hàng</button>
@@ -818,7 +818,7 @@
                     <article class="group flex flex-col gap-6 transition-transform duration-300 hover:-translate-y-1">
                       <div class="relative aspect-[196/284] overflow-hidden">
                         <img src="assets/img/thau-hieu-da/nen-san-pham.webp" alt="" class="absolute inset-0 size-full object-cover" loading="lazy" />
-                        <img src="assets/img/thau-hieu-da/sp-cleansing-gel.webp" alt="Purifying Cleansing Gel" class="absolute left-[27%] top-[17.6%] h-[64.4%] w-[46%] object-contain aspect-[656/1338]" loading="lazy" />
+                        <img src="assets/img/thau-hieu-da/sp-cleansing-gel.webp" alt="Purifying Cleansing Gel" class="reveal-wipe absolute left-[27%] top-[17.6%] h-[64.4%] w-[46%] object-contain aspect-[656/1338]" loading="lazy" />
                         <div class="absolute inset-x-[10px] bottom-[10px] flex flex-col gap-1 opacity-100 transition-opacity lg:opacity-0 lg:group-focus-within:opacity-100 lg:group-hover:opacity-100">
                           <a href="#" class="flex h-8 items-center justify-center rounded-sm bg-bg px-3 text-base tracking-[0.014em] text-ink hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue">Xem chi tiết</a>
                           <button type="button" class="flex h-8 items-center justify-center rounded-sm bg-navy px-3 text-base tracking-[0.014em] text-bg hover:bg-blue focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-bg">Thêm vào giỏ hàng</button>
@@ -833,7 +833,7 @@
                   <li class="swiper-slide">
                     <article class="group flex flex-col gap-6 transition-transform duration-300 hover:-translate-y-1">
                       <div class="relative aspect-[196/284] overflow-hidden">
-                        <img src="assets/img/danh-muc-san-pham/retino-renewal-brightening-serum.webp" alt="Retino Renewal Treatment Serum" class="absolute inset-0 size-full object-cover" loading="lazy" />
+                        <img src="assets/img/danh-muc-san-pham/retino-renewal-brightening-serum.webp" alt="Retino Renewal Treatment Serum" class="reveal-wipe absolute inset-0 size-full object-cover" loading="lazy" />
                         <div class="absolute inset-x-[10px] bottom-[10px] flex flex-col gap-1 opacity-100 transition-opacity lg:opacity-0 lg:group-focus-within:opacity-100 lg:group-hover:opacity-100">
                           <a href="#" class="flex h-8 items-center justify-center rounded-sm bg-bg px-3 text-base tracking-[0.014em] text-ink hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue">Xem chi tiết</a>
                           <button type="button" class="flex h-8 items-center justify-center rounded-sm bg-navy px-3 text-base tracking-[0.014em] text-bg hover:bg-blue focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-bg">Thêm vào giỏ hàng</button>
@@ -848,7 +848,7 @@
                   <li class="swiper-slide">
                     <article class="group flex flex-col gap-6 transition-transform duration-300 hover:-translate-y-1">
                       <div class="relative aspect-[196/284] overflow-hidden">
-                        <img src="assets/img/danh-muc-san-pham/zinc-complex-serum.webp" alt="Zinc Complex Recovery Serum" class="absolute inset-0 size-full object-cover" loading="lazy" />
+                        <img src="assets/img/danh-muc-san-pham/zinc-complex-serum.webp" alt="Zinc Complex Recovery Serum" class="reveal-wipe absolute inset-0 size-full object-cover" loading="lazy" />
                         <div class="absolute inset-x-[10px] bottom-[10px] flex flex-col gap-1 opacity-100 transition-opacity lg:opacity-0 lg:group-focus-within:opacity-100 lg:group-hover:opacity-100">
                           <a href="#" class="flex h-8 items-center justify-center rounded-sm bg-bg px-3 text-base tracking-[0.014em] text-ink hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue">Xem chi tiết</a>
                           <button type="button" class="flex h-8 items-center justify-center rounded-sm bg-navy px-3 text-base tracking-[0.014em] text-bg hover:bg-blue focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-bg">Thêm vào giỏ hàng</button>
@@ -902,7 +902,7 @@
                     <article class="group flex flex-col gap-6 transition-transform duration-300 hover:-translate-y-1">
                       <div class="relative aspect-[196/284] overflow-hidden">
                         <img src="assets/img/thau-hieu-da/nen-san-pham.webp" alt="" class="absolute inset-0 size-full object-cover" loading="lazy" />
-                        <img src="assets/img/thau-hieu-da/sp-cleansing-gel.webp" alt="Purifying Cleansing Gel" class="absolute left-[27%] top-[17.6%] h-[64.4%] w-[46%] object-contain aspect-[656/1338]" loading="lazy" />
+                        <img src="assets/img/thau-hieu-da/sp-cleansing-gel.webp" alt="Purifying Cleansing Gel" class="reveal-wipe absolute left-[27%] top-[17.6%] h-[64.4%] w-[46%] object-contain aspect-[656/1338]" loading="lazy" />
                         <div class="absolute inset-x-[10px] bottom-[10px] flex flex-col gap-1 opacity-100 transition-opacity lg:opacity-0 lg:group-focus-within:opacity-100 lg:group-hover:opacity-100">
                           <a href="#" class="flex h-8 items-center justify-center rounded-sm bg-bg px-3 text-base tracking-[0.014em] text-ink hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue">Xem chi tiết</a>
                           <button type="button" class="flex h-8 items-center justify-center rounded-sm bg-navy px-3 text-base tracking-[0.014em] text-bg hover:bg-blue focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-bg">Thêm vào giỏ hàng</button>
@@ -970,7 +970,7 @@
                     <article class="group flex flex-col gap-6 transition-transform duration-300 hover:-translate-y-1">
                       <div class="relative aspect-[196/284] overflow-hidden">
                         <img src="assets/img/thau-hieu-da/nen-san-pham.webp" alt="" class="absolute inset-0 size-full object-cover" loading="lazy" />
-                        <img src="assets/img/thau-hieu-da/sp-cleansing-gel.webp" alt="Purifying Cleansing Gel" class="absolute left-[27%] top-[17.6%] h-[64.4%] w-[46%] object-contain aspect-[656/1338]" loading="lazy" />
+                        <img src="assets/img/thau-hieu-da/sp-cleansing-gel.webp" alt="Purifying Cleansing Gel" class="reveal-wipe absolute left-[27%] top-[17.6%] h-[64.4%] w-[46%] object-contain aspect-[656/1338]" loading="lazy" />
                         <div class="absolute inset-x-[10px] bottom-[10px] flex flex-col gap-1 opacity-100 transition-opacity lg:opacity-0 lg:group-focus-within:opacity-100 lg:group-hover:opacity-100">
                           <a href="#" class="flex h-8 items-center justify-center rounded-sm bg-bg px-3 text-base tracking-[0.014em] text-ink hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue">Xem chi tiết</a>
                           <button type="button" class="flex h-8 items-center justify-center rounded-sm bg-navy px-3 text-base tracking-[0.014em] text-bg hover:bg-blue focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-bg">Thêm vào giỏ hàng</button>
@@ -985,7 +985,7 @@
                   <li class="swiper-slide">
                     <article class="group flex flex-col gap-6 transition-transform duration-300 hover:-translate-y-1">
                       <div class="relative aspect-[196/284] overflow-hidden">
-                        <img src="assets/img/danh-muc-san-pham/photo-defense-brightening-serum.webp" alt="Photo Defense Recovery Serum" class="absolute inset-0 size-full object-cover" loading="lazy" />
+                        <img src="assets/img/danh-muc-san-pham/photo-defense-brightening-serum.webp" alt="Photo Defense Recovery Serum" class="reveal-wipe absolute inset-0 size-full object-cover" loading="lazy" />
                         <div class="absolute inset-x-[10px] bottom-[10px] flex flex-col gap-1 opacity-100 transition-opacity lg:opacity-0 lg:group-focus-within:opacity-100 lg:group-hover:opacity-100">
                           <a href="#" class="flex h-8 items-center justify-center rounded-sm bg-bg px-3 text-base tracking-[0.014em] text-ink hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue">Xem chi tiết</a>
                           <button type="button" class="flex h-8 items-center justify-center rounded-sm bg-navy px-3 text-base tracking-[0.014em] text-bg hover:bg-blue focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-bg">Thêm vào giỏ hàng</button>
@@ -1054,7 +1054,7 @@
                     <article class="group flex flex-col gap-6 transition-transform duration-300 hover:-translate-y-1">
                       <div class="relative aspect-[196/284] overflow-hidden">
                         <img src="assets/img/thau-hieu-da/nen-san-pham.webp" alt="" class="absolute inset-0 size-full object-cover" loading="lazy" />
-                        <img src="assets/img/thau-hieu-da/sp-cleansing-gel.webp" alt="Gentle Purifying Cleansing Gel" class="absolute left-[27%] top-[17.6%] h-[64.4%] w-[46%] object-contain aspect-[656/1338]" loading="lazy" />
+                        <img src="assets/img/thau-hieu-da/sp-cleansing-gel.webp" alt="Gentle Purifying Cleansing Gel" class="reveal-wipe absolute left-[27%] top-[17.6%] h-[64.4%] w-[46%] object-contain aspect-[656/1338]" loading="lazy" />
                         <div class="absolute inset-x-[10px] bottom-[10px] flex flex-col gap-1 opacity-100 transition-opacity lg:opacity-0 lg:group-focus-within:opacity-100 lg:group-hover:opacity-100">
                           <a href="#" class="flex h-8 items-center justify-center rounded-sm bg-bg px-3 text-base tracking-[0.014em] text-ink hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue">Xem chi tiết</a>
                           <button type="button" class="flex h-8 items-center justify-center rounded-sm bg-navy px-3 text-base tracking-[0.014em] text-bg hover:bg-blue focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-bg">Thêm vào giỏ hàng</button>
@@ -1123,7 +1123,7 @@
                     <article class="group flex flex-col gap-6 transition-transform duration-300 hover:-translate-y-1">
                       <div class="relative aspect-[196/284] overflow-hidden">
                         <img src="assets/img/thau-hieu-da/nen-san-pham.webp" alt="" class="absolute inset-0 size-full object-cover" loading="lazy" />
-                        <img src="assets/img/thau-hieu-da/sp-cleansing-gel.webp" alt="Gentle Purifying Cleansing Gel" class="absolute left-[27%] top-[17.6%] h-[64.4%] w-[46%] object-contain aspect-[656/1338]" loading="lazy" />
+                        <img src="assets/img/thau-hieu-da/sp-cleansing-gel.webp" alt="Gentle Purifying Cleansing Gel" class="reveal-wipe absolute left-[27%] top-[17.6%] h-[64.4%] w-[46%] object-contain aspect-[656/1338]" loading="lazy" />
                         <div class="absolute inset-x-[10px] bottom-[10px] flex flex-col gap-1 opacity-100 transition-opacity lg:opacity-0 lg:group-focus-within:opacity-100 lg:group-hover:opacity-100">
                           <a href="#" class="flex h-8 items-center justify-center rounded-sm bg-bg px-3 text-base tracking-[0.014em] text-ink hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue">Xem chi tiết</a>
                           <button type="button" class="flex h-8 items-center justify-center rounded-sm bg-navy px-3 text-base tracking-[0.014em] text-bg hover:bg-blue focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-bg">Thêm vào giỏ hàng</button>
@@ -1138,7 +1138,7 @@
                   <li class="swiper-slide">
                     <article class="group flex flex-col gap-6 transition-transform duration-300 hover:-translate-y-1">
                       <div class="relative aspect-[196/284] overflow-hidden">
-                        <img src="assets/img/danh-muc-san-pham/zinc-complex-serum.webp" alt="Zinc Complex Barrier Serum" class="absolute inset-0 size-full object-cover" loading="lazy" />
+                        <img src="assets/img/danh-muc-san-pham/zinc-complex-serum.webp" alt="Zinc Complex Barrier Serum" class="reveal-wipe absolute inset-0 size-full object-cover" loading="lazy" />
                         <div class="absolute inset-x-[10px] bottom-[10px] flex flex-col gap-1 opacity-100 transition-opacity lg:opacity-0 lg:group-focus-within:opacity-100 lg:group-hover:opacity-100">
                           <a href="#" class="flex h-8 items-center justify-center rounded-sm bg-bg px-3 text-base tracking-[0.014em] text-ink hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue">Xem chi tiết</a>
                           <button type="button" class="flex h-8 items-center justify-center rounded-sm bg-navy px-3 text-base tracking-[0.014em] text-bg hover:bg-blue focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-bg">Thêm vào giỏ hàng</button>
@@ -1368,7 +1368,7 @@
           <article class="group flex h-full flex-col">
             <div class="relative aspect-[424/500] overflow-hidden rounded-[4px] bg-[#ecebec] transition-shadow duration-300 group-hover:shadow-popover">
               <a href="#" class="block size-full focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy focus-visible:-outline-offset-2" aria-label="Photo Defense Brightening Serum">
-                <img src="assets/img/danh-muc-san-pham/photo-defense-brightening-serum.webp" alt="Lọ Photo Defense Brightening Serum của Dzentic" class="size-full object-cover transition-transform duration-500 group-hover:scale-[1.03]" loading="lazy">
+                <img src="assets/img/danh-muc-san-pham/photo-defense-brightening-serum.webp" alt="Lọ Photo Defense Brightening Serum của Dzentic" class="reveal-wipe size-full object-cover transition-transform duration-500 group-hover:scale-[1.03]" loading="lazy">
               </a>
               <span class="absolute left-4 top-4 inline-flex h-[31px] items-center rounded-xs bg-white px-2 py-1 text-xs leading-4 tracking-[0.48px] text-ink">DAY SERUM</span>
               <div class="absolute inset-x-4 bottom-4 flex gap-2 transition-opacity duration-300 lg:opacity-0 lg:group-hover:opacity-100 lg:group-focus-within:opacity-100">
@@ -1389,7 +1389,7 @@
           <article class="group flex h-full flex-col">
             <div class="relative aspect-[424/500] overflow-hidden rounded-[4px] bg-[#ecebec] transition-shadow duration-300 group-hover:shadow-popover">
               <a href="#" class="block size-full focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy focus-visible:-outline-offset-2" aria-label="Retino Renewal Brightening Serum">
-                <img src="assets/img/danh-muc-san-pham/retino-renewal-brightening-serum.webp" alt="Lọ Retino Renewal Brightening Serum của Dzentic" class="size-full object-cover transition-transform duration-500 group-hover:scale-[1.03]" loading="lazy">
+                <img src="assets/img/danh-muc-san-pham/retino-renewal-brightening-serum.webp" alt="Lọ Retino Renewal Brightening Serum của Dzentic" class="reveal-wipe size-full object-cover transition-transform duration-500 group-hover:scale-[1.03]" loading="lazy">
               </a>
               <span class="absolute left-4 top-4 inline-flex h-[31px] items-center rounded-xs bg-white px-2 py-1 text-xs leading-4 tracking-[0.48px] text-ink">NIGHT SERUM</span>
               <div class="absolute inset-x-4 bottom-4 flex gap-2 transition-opacity duration-300 lg:opacity-0 lg:group-hover:opacity-100 lg:group-focus-within:opacity-100">
@@ -1410,7 +1410,7 @@
           <article class="group flex h-full flex-col">
             <div class="relative aspect-[424/500] overflow-hidden rounded-[4px] bg-[#ecebec] transition-shadow duration-300 group-hover:shadow-popover">
               <a href="#" class="block size-full focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy focus-visible:-outline-offset-2" aria-label="Zinc Complex Serum">
-                <img src="assets/img/danh-muc-san-pham/zinc-complex-serum.webp" alt="Lọ Zinc Complex Serum của Dzentic" class="size-full object-cover transition-transform duration-500 group-hover:scale-[1.03]" loading="lazy">
+                <img src="assets/img/danh-muc-san-pham/zinc-complex-serum.webp" alt="Lọ Zinc Complex Serum của Dzentic" class="reveal-wipe size-full object-cover transition-transform duration-500 group-hover:scale-[1.03]" loading="lazy">
               </a>
               <div class="absolute inset-x-4 bottom-4 flex gap-2 transition-opacity duration-300 lg:opacity-0 lg:group-hover:opacity-100 lg:group-focus-within:opacity-100">
                 <a href="#" class="flex h-10 flex-1 items-center justify-center rounded-sm bg-bg px-3 text-base leading-[22px] tracking-[0.224px] text-ink hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy btn">Xem chi tiết</a>
@@ -1663,7 +1663,7 @@
           </div>
           <div role="tabpanel" id="routine-panel-day-1" aria-labelledby="routine-tab-day-1" data-routine-panel="day" class="flex flex-col gap-3">
               <article class="flex items-center gap-4 rounded-[4px] bg-gray-ee px-5 py-4 md:gap-6">
-                <div class="h-24 w-[88px] shrink-0 overflow-hidden rounded-[4px]"><img src="assets/img/routine-quiz/purifying-cleansing-gel.webp" alt="Purifying Cleansing Gel" class="size-full object-contain" loading="lazy"></div>
+                <div class="h-24 w-[88px] shrink-0 overflow-hidden rounded-[4px]"><img src="assets/img/routine-quiz/purifying-cleansing-gel.webp" alt="Purifying Cleansing Gel" class="reveal-wipe size-full object-contain" loading="lazy"></div>
                 <div class="flex min-w-0 flex-1 flex-col gap-1">
                   <p class="text-base leading-[22px] tracking-[4px] uppercase text-brown">Bước 1</p>
                   <h4 class="text-xl leading-7 font-medium text-navy">Purifying Cleansing Gel</h4>
@@ -1679,7 +1679,7 @@
                 </div>
               </article>
               <article class="flex items-center gap-4 rounded-[4px] bg-gray-ee px-5 py-4 md:gap-6">
-                <div class="h-24 w-[88px] shrink-0 overflow-hidden rounded-[4px]"><img src="assets/img/routine-quiz/neobright-repair-cream.webp" alt="NeoBright Repair Cream" class="size-full object-contain" loading="lazy"></div>
+                <div class="h-24 w-[88px] shrink-0 overflow-hidden rounded-[4px]"><img src="assets/img/routine-quiz/neobright-repair-cream.webp" alt="NeoBright Repair Cream" class="reveal-wipe size-full object-contain" loading="lazy"></div>
                 <div class="flex min-w-0 flex-1 flex-col gap-1">
                   <p class="text-base leading-[22px] tracking-[4px] uppercase text-brown">Bước 3</p>
                   <h4 class="text-xl leading-7 font-medium text-navy">NeoBright Repair Cream</h4>
@@ -1687,7 +1687,7 @@
                 </div>
               </article>
               <article class="flex items-center gap-4 rounded-[4px] bg-gray-ee px-5 py-4 md:gap-6">
-                <div class="h-24 w-[88px] shrink-0 overflow-hidden rounded-[4px]"><img src="assets/img/routine-quiz/blue-light-shield-sunscreen.webp" alt="Blue Light Shield Tone-up Fluid Sunscreen" class="size-full object-contain" loading="lazy"></div>
+                <div class="h-24 w-[88px] shrink-0 overflow-hidden rounded-[4px]"><img src="assets/img/routine-quiz/blue-light-shield-sunscreen.webp" alt="Blue Light Shield Tone-up Fluid Sunscreen" class="reveal-wipe size-full object-contain" loading="lazy"></div>
                 <div class="flex min-w-0 flex-1 flex-col gap-1">
                   <p class="text-base leading-[22px] tracking-[4px] uppercase text-brown">Bước 4</p>
                   <h4 class="text-xl leading-7 font-medium text-navy">Blue Light Shield Tone-up Fluid Sunscreen</h4>
@@ -1697,7 +1697,7 @@
           </div>
           <div role="tabpanel" id="routine-panel-night-1" aria-labelledby="routine-tab-night-1" data-routine-panel="night" class="flex flex-col gap-3" hidden>
               <article class="flex items-center gap-4 rounded-[4px] bg-gray-ee px-5 py-4 md:gap-6">
-                <div class="h-24 w-[88px] shrink-0 overflow-hidden rounded-[4px]"><img src="assets/img/routine-quiz/purifying-cleansing-gel.webp" alt="Purifying Cleansing Gel" class="size-full object-contain" loading="lazy"></div>
+                <div class="h-24 w-[88px] shrink-0 overflow-hidden rounded-[4px]"><img src="assets/img/routine-quiz/purifying-cleansing-gel.webp" alt="Purifying Cleansing Gel" class="reveal-wipe size-full object-contain" loading="lazy"></div>
                 <div class="flex min-w-0 flex-1 flex-col gap-1">
                   <p class="text-base leading-[22px] tracking-[4px] uppercase text-brown">Bước 1</p>
                   <h4 class="text-xl leading-7 font-medium text-navy">Purifying Cleansing Gel</h4>
@@ -1713,7 +1713,7 @@
                 </div>
               </article>
               <article class="flex items-center gap-4 rounded-[4px] bg-gray-ee px-5 py-4 md:gap-6">
-                <div class="h-24 w-[88px] shrink-0 overflow-hidden rounded-[4px]"><img src="assets/img/routine-quiz/neobright-repair-cream.webp" alt="NeoBright Repair Cream" class="size-full object-contain" loading="lazy"></div>
+                <div class="h-24 w-[88px] shrink-0 overflow-hidden rounded-[4px]"><img src="assets/img/routine-quiz/neobright-repair-cream.webp" alt="NeoBright Repair Cream" class="reveal-wipe size-full object-contain" loading="lazy"></div>
                 <div class="flex min-w-0 flex-1 flex-col gap-1">
                   <p class="text-base leading-[22px] tracking-[4px] uppercase text-brown">Bước 3</p>
                   <h4 class="text-xl leading-7 font-medium text-navy">NeoBright Repair Cream</h4>
@@ -1762,7 +1762,7 @@
           </div>
           <div role="tabpanel" id="routine-panel-day-2" aria-labelledby="routine-tab-day-2" data-routine-panel="day" class="flex flex-col gap-3" hidden>
               <article class="flex items-center gap-4 rounded-[4px] bg-gray-ee px-5 py-4 md:gap-6">
-                <div class="h-24 w-[88px] shrink-0 overflow-hidden rounded-[4px]"><img src="assets/img/routine-quiz/purifying-cleansing-gel.webp" alt="Purifying Cleansing Gel" class="size-full object-contain" loading="lazy"></div>
+                <div class="h-24 w-[88px] shrink-0 overflow-hidden rounded-[4px]"><img src="assets/img/routine-quiz/purifying-cleansing-gel.webp" alt="Purifying Cleansing Gel" class="reveal-wipe size-full object-contain" loading="lazy"></div>
                 <div class="flex min-w-0 flex-1 flex-col gap-1">
                   <p class="text-base leading-[22px] tracking-[4px] uppercase text-brown">Bước 1</p>
                   <h4 class="text-xl leading-7 font-medium text-navy">Purifying Cleansing Gel</h4>
@@ -1778,7 +1778,7 @@
                 </div>
               </article>
               <article class="flex items-center gap-4 rounded-[4px] bg-gray-ee px-5 py-4 md:gap-6">
-                <div class="h-24 w-[88px] shrink-0 overflow-hidden rounded-[4px]"><img src="assets/img/routine-quiz/neobright-repair-cream.webp" alt="NeoBright Repair Cream" class="size-full object-contain" loading="lazy"></div>
+                <div class="h-24 w-[88px] shrink-0 overflow-hidden rounded-[4px]"><img src="assets/img/routine-quiz/neobright-repair-cream.webp" alt="NeoBright Repair Cream" class="reveal-wipe size-full object-contain" loading="lazy"></div>
                 <div class="flex min-w-0 flex-1 flex-col gap-1">
                   <p class="text-base leading-[22px] tracking-[4px] uppercase text-brown">Bước 3</p>
                   <h4 class="text-xl leading-7 font-medium text-navy">NeoBright Repair Cream</h4>
@@ -1786,7 +1786,7 @@
                 </div>
               </article>
               <article class="flex items-center gap-4 rounded-[4px] bg-gray-ee px-5 py-4 md:gap-6">
-                <div class="h-24 w-[88px] shrink-0 overflow-hidden rounded-[4px]"><img src="assets/img/routine-quiz/blue-light-shield-sunscreen.webp" alt="Blue Light Shield Tone-up Fluid Sunscreen" class="size-full object-contain" loading="lazy"></div>
+                <div class="h-24 w-[88px] shrink-0 overflow-hidden rounded-[4px]"><img src="assets/img/routine-quiz/blue-light-shield-sunscreen.webp" alt="Blue Light Shield Tone-up Fluid Sunscreen" class="reveal-wipe size-full object-contain" loading="lazy"></div>
                 <div class="flex min-w-0 flex-1 flex-col gap-1">
                   <p class="text-base leading-[22px] tracking-[4px] uppercase text-brown">Bước 4</p>
                   <h4 class="text-xl leading-7 font-medium text-navy">Blue Light Shield Tone-up Fluid Sunscreen</h4>
@@ -1797,7 +1797,7 @@
           <div role="tabpanel" id="routine-panel-night-2" aria-labelledby="routine-tab-night-2" data-routine-panel="night" class="flex flex-col gap-3">
             <div class="flex flex-col gap-3" data-retinoid="off" hidden>
               <article class="flex items-center gap-4 rounded-[4px] bg-gray-ee px-5 py-4 md:gap-6">
-                <div class="h-24 w-[88px] shrink-0 overflow-hidden rounded-[4px]"><img src="assets/img/routine-quiz/purifying-cleansing-gel.webp" alt="Purifying Cleansing Gel" class="size-full object-contain" loading="lazy"></div>
+                <div class="h-24 w-[88px] shrink-0 overflow-hidden rounded-[4px]"><img src="assets/img/routine-quiz/purifying-cleansing-gel.webp" alt="Purifying Cleansing Gel" class="reveal-wipe size-full object-contain" loading="lazy"></div>
                 <div class="flex min-w-0 flex-1 flex-col gap-1">
                   <p class="text-base leading-[22px] tracking-[4px] uppercase text-brown">Bước 1</p>
                   <h4 class="text-xl leading-7 font-medium text-navy">Purifying Cleansing Gel</h4>
@@ -1813,7 +1813,7 @@
                 </div>
               </article>
               <article class="flex items-center gap-4 rounded-[4px] bg-gray-ee px-5 py-4 md:gap-6">
-                <div class="h-24 w-[88px] shrink-0 overflow-hidden rounded-[4px]"><img src="assets/img/routine-quiz/neobright-repair-cream.webp" alt="NeoBright Repair Cream" class="size-full object-contain" loading="lazy"></div>
+                <div class="h-24 w-[88px] shrink-0 overflow-hidden rounded-[4px]"><img src="assets/img/routine-quiz/neobright-repair-cream.webp" alt="NeoBright Repair Cream" class="reveal-wipe size-full object-contain" loading="lazy"></div>
                 <div class="flex min-w-0 flex-1 flex-col gap-1">
                   <p class="text-base leading-[22px] tracking-[4px] uppercase text-brown">Bước 3</p>
                   <h4 class="text-xl leading-7 font-medium text-navy">NeoBright Repair Cream</h4>
@@ -1823,7 +1823,7 @@
             </div>
             <div class="flex flex-col gap-3" data-retinoid="on">
               <article class="flex items-center gap-4 rounded-[4px] bg-gray-ee px-5 py-4 md:gap-6">
-                <div class="h-24 w-[88px] shrink-0 overflow-hidden rounded-[4px]"><img src="assets/img/routine-quiz/purifying-cleansing-gel.webp" alt="Purifying Cleansing Gel" class="size-full object-contain" loading="lazy"></div>
+                <div class="h-24 w-[88px] shrink-0 overflow-hidden rounded-[4px]"><img src="assets/img/routine-quiz/purifying-cleansing-gel.webp" alt="Purifying Cleansing Gel" class="reveal-wipe size-full object-contain" loading="lazy"></div>
                 <div class="flex min-w-0 flex-1 flex-col gap-1">
                   <p class="text-base leading-[22px] tracking-[4px] uppercase text-brown">Bước 1</p>
                   <h4 class="text-xl leading-7 font-medium text-navy">Purifying Cleansing Gel</h4>
@@ -1841,7 +1841,7 @@
                 <span class="hidden shrink-0 rounded-full bg-[#b3261e]/10 px-[10px] py-1 text-xs leading-4 whitespace-nowrap text-[#b3261e] md:inline-flex">Đã loại khỏi routine</span>
               </article>
               <article class="flex items-center gap-4 rounded-[4px] bg-gray-ee px-5 py-4 md:gap-6">
-                <div class="h-24 w-[88px] shrink-0 overflow-hidden rounded-[4px]"><img src="assets/img/routine-quiz/neobright-repair-cream.webp" alt="NeoBright Repair Cream" class="size-full object-contain" loading="lazy"></div>
+                <div class="h-24 w-[88px] shrink-0 overflow-hidden rounded-[4px]"><img src="assets/img/routine-quiz/neobright-repair-cream.webp" alt="NeoBright Repair Cream" class="reveal-wipe size-full object-contain" loading="lazy"></div>
                 <div class="flex min-w-0 flex-1 flex-col gap-1">
                   <p class="text-base leading-[22px] tracking-[4px] uppercase text-brown">Bước 2</p>
                   <h4 class="text-xl leading-7 font-medium text-navy">NeoBright Repair Cream</h4>
@@ -1882,7 +1882,7 @@
           </div>
           <div role="tabpanel" id="routine-panel-day-3" aria-labelledby="routine-tab-day-3" data-routine-panel="day" class="flex flex-col gap-3">
               <article class="flex items-center gap-4 rounded-[4px] bg-gray-ee px-5 py-4 md:gap-6">
-                <div class="h-24 w-[88px] shrink-0 overflow-hidden rounded-[4px]"><img src="assets/img/routine-quiz/purifying-cleansing-gel.webp" alt="Purifying Cleansing Gel" class="size-full object-contain" loading="lazy"></div>
+                <div class="h-24 w-[88px] shrink-0 overflow-hidden rounded-[4px]"><img src="assets/img/routine-quiz/purifying-cleansing-gel.webp" alt="Purifying Cleansing Gel" class="reveal-wipe size-full object-contain" loading="lazy"></div>
                 <div class="flex min-w-0 flex-1 flex-col gap-1">
                   <p class="text-base leading-[22px] tracking-[4px] uppercase text-brown">Bước 1</p>
                   <h4 class="text-xl leading-7 font-medium text-navy">Purifying Cleansing Gel</h4>
@@ -1898,7 +1898,7 @@
                 </div>
               </article>
               <article class="flex items-center gap-4 rounded-[4px] bg-gray-ee px-5 py-4 md:gap-6">
-                <div class="h-24 w-[88px] shrink-0 overflow-hidden rounded-[4px]"><img src="assets/img/routine-quiz/neobright-repair-cream.webp" alt="NeoBright Repair Cream" class="size-full object-contain" loading="lazy"></div>
+                <div class="h-24 w-[88px] shrink-0 overflow-hidden rounded-[4px]"><img src="assets/img/routine-quiz/neobright-repair-cream.webp" alt="NeoBright Repair Cream" class="reveal-wipe size-full object-contain" loading="lazy"></div>
                 <div class="flex min-w-0 flex-1 flex-col gap-1">
                   <p class="text-base leading-[22px] tracking-[4px] uppercase text-brown">Bước 3</p>
                   <h4 class="text-xl leading-7 font-medium text-navy">NeoBright Repair Cream</h4>
@@ -1906,7 +1906,7 @@
                 </div>
               </article>
               <article class="flex items-center gap-4 rounded-[4px] bg-gray-ee px-5 py-4 md:gap-6">
-                <div class="h-24 w-[88px] shrink-0 overflow-hidden rounded-[4px]"><img src="assets/img/routine-quiz/blue-light-shield-sunscreen.webp" alt="Blue Light Shield Tone-up Fluid Sunscreen" class="size-full object-contain" loading="lazy"></div>
+                <div class="h-24 w-[88px] shrink-0 overflow-hidden rounded-[4px]"><img src="assets/img/routine-quiz/blue-light-shield-sunscreen.webp" alt="Blue Light Shield Tone-up Fluid Sunscreen" class="reveal-wipe size-full object-contain" loading="lazy"></div>
                 <div class="flex min-w-0 flex-1 flex-col gap-1">
                   <p class="text-base leading-[22px] tracking-[4px] uppercase text-brown">Bước 4</p>
                   <h4 class="text-xl leading-7 font-medium text-navy">Blue Light Shield Tone-up Fluid Sunscreen</h4>
@@ -1916,7 +1916,7 @@
           </div>
           <div role="tabpanel" id="routine-panel-night-3" aria-labelledby="routine-tab-night-3" data-routine-panel="night" class="flex flex-col gap-3" hidden>
               <article class="flex items-center gap-4 rounded-[4px] bg-gray-ee px-5 py-4 md:gap-6">
-                <div class="h-24 w-[88px] shrink-0 overflow-hidden rounded-[4px]"><img src="assets/img/routine-quiz/purifying-cleansing-gel.webp" alt="Purifying Cleansing Gel" class="size-full object-contain" loading="lazy"></div>
+                <div class="h-24 w-[88px] shrink-0 overflow-hidden rounded-[4px]"><img src="assets/img/routine-quiz/purifying-cleansing-gel.webp" alt="Purifying Cleansing Gel" class="reveal-wipe size-full object-contain" loading="lazy"></div>
                 <div class="flex min-w-0 flex-1 flex-col gap-1">
                   <p class="text-base leading-[22px] tracking-[4px] uppercase text-brown">Bước 1</p>
                   <h4 class="text-xl leading-7 font-medium text-navy">Purifying Cleansing Gel</h4>
@@ -1932,7 +1932,7 @@
                 </div>
               </article>
               <article class="flex items-center gap-4 rounded-[4px] bg-gray-ee px-5 py-4 md:gap-6">
-                <div class="h-24 w-[88px] shrink-0 overflow-hidden rounded-[4px]"><img src="assets/img/routine-quiz/neobright-repair-cream.webp" alt="NeoBright Repair Cream" class="size-full object-contain" loading="lazy"></div>
+                <div class="h-24 w-[88px] shrink-0 overflow-hidden rounded-[4px]"><img src="assets/img/routine-quiz/neobright-repair-cream.webp" alt="NeoBright Repair Cream" class="reveal-wipe size-full object-contain" loading="lazy"></div>
                 <div class="flex min-w-0 flex-1 flex-col gap-1">
                   <p class="text-base leading-[22px] tracking-[4px] uppercase text-brown">Bước 3</p>
                   <h4 class="text-xl leading-7 font-medium text-navy">NeoBright Repair Cream</h4>
@@ -2119,7 +2119,7 @@
     <article class="mt-12 lg:mt-[120px] border border-gray-bb rounded-md p-4 lg:pt-[18px] lg:pb-[21px] lg:px-[19px] flex flex-col lg:flex-row gap-8 lg:gap-[67px]" data-aos="fade-up">
       <!-- Video chuyên gia: có thể bọc ảnh bằng <a data-fancybox="chuyen-gia" href="https://www.youtube.com/watch?v=PLACEHOLDER"> nếu cần -->
       <div class="lg:w-[529px] shrink-0">
-        <img src="assets/img/goc-nhin-chuyen-mon/bs-ngo-hanh.jpg" alt="Bác sĩ Ngô Hạnh mặc áo blouse trắng, đeo ống nghe" class="w-full object-cover rounded-md aspect-[529/819]" loading="lazy">
+        <img src="assets/img/goc-nhin-chuyen-mon/bs-ngo-hanh.jpg" alt="Bác sĩ Ngô Hạnh mặc áo blouse trắng, đeo ống nghe" class="reveal-wipe w-full object-cover rounded-md aspect-[529/819]" loading="lazy">
       </div>
       <div class="flex flex-col gap-10 lg:pt-[40px] lg:pr-8 lg:max-w-[573px]">
         <div class="flex flex-col gap-8">
@@ -2172,7 +2172,7 @@
     <!-- Nghiên cứu viên (lặp: WordPress loop) -->
     <ul class="mt-8 lg:mt-[48px] grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 xl:gap-3">
       <li class="flex gap-6 items-start" data-aos="fade-up">
-        <img src="assets/img/goc-nhin-chuyen-mon/nghien-cuu-vien-le-duc.jpg" alt="Nghiên cứu viên Lê Đức" class="w-[140px] sm:w-[196px] shrink-0 object-cover rounded-md aspect-[196/239]" loading="lazy">
+        <img src="assets/img/goc-nhin-chuyen-mon/nghien-cuu-vien-le-duc.jpg" alt="Nghiên cứu viên Lê Đức" class="reveal-wipe w-[140px] sm:w-[196px] shrink-0 object-cover rounded-md aspect-[196/239]" loading="lazy">
         <div class="flex flex-col justify-between self-stretch gap-4 min-w-0">
           <div class="flex flex-col gap-1 text-navy">
             <p class="text-xs leading-4 uppercase">Nghiên cứu viên</p>
@@ -2182,7 +2182,7 @@
         </div>
       </li>
       <li class="flex gap-6 items-start" data-aos="fade-up" data-aos-delay="100">
-        <img src="assets/img/goc-nhin-chuyen-mon/nghien-cuu-vien-le-duc.jpg" alt="Nghiên cứu viên Lê Đức" class="w-[140px] sm:w-[196px] shrink-0 object-cover rounded-md aspect-[196/239]" loading="lazy">
+        <img src="assets/img/goc-nhin-chuyen-mon/nghien-cuu-vien-le-duc.jpg" alt="Nghiên cứu viên Lê Đức" class="reveal-wipe w-[140px] sm:w-[196px] shrink-0 object-cover rounded-md aspect-[196/239]" loading="lazy">
         <div class="flex flex-col justify-between self-stretch gap-4 min-w-0">
           <div class="flex flex-col gap-1 text-navy">
             <p class="text-xs leading-4 uppercase">Nghiên cứu viên</p>
@@ -2192,7 +2192,7 @@
         </div>
       </li>
       <li class="flex gap-6 items-start" data-aos="fade-up" data-aos-delay="200">
-        <img src="assets/img/goc-nhin-chuyen-mon/nghien-cuu-vien-le-duc.jpg" alt="Nghiên cứu viên Lê Đức" class="w-[140px] sm:w-[196px] shrink-0 object-cover rounded-md aspect-[196/239]" loading="lazy">
+        <img src="assets/img/goc-nhin-chuyen-mon/nghien-cuu-vien-le-duc.jpg" alt="Nghiên cứu viên Lê Đức" class="reveal-wipe w-[140px] sm:w-[196px] shrink-0 object-cover rounded-md aspect-[196/239]" loading="lazy">
         <div class="flex flex-col justify-between self-stretch gap-4 min-w-0">
           <div class="flex flex-col gap-1 text-navy">
             <p class="text-xs leading-4 uppercase">Nghiên cứu viên</p>
@@ -2221,7 +2221,7 @@
         <!-- TODO: thay data-video-src bằng file MP4 thật (vd assets/video/trai-nghiem-1.mp4); hiện dùng video mẫu -->
         <div data-video-card data-video-src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" data-video-title="Nám của tôi có dùng được không?" class="group relative block overflow-hidden rounded-md outline-offset-4 focus-visible:outline-2 focus-visible:outline-brown hover:shadow-popover transition-shadow cursor-pointer aspect-[424/700]">
           <button type="button" data-video-play class="absolute inset-0 z-10 cursor-pointer focus-visible:outline-2 focus-visible:-outline-offset-4 focus-visible:outline-bg" aria-label="Phát video: Nám của tôi có dùng được không?"></button>
-          <img src="assets/img/trai-nghiem-thuc-te/story-nam.jpg" alt="Cô gái chạm tay lên má, làn da sáng khỏe" class="absolute inset-0 size-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy">
+          <img src="assets/img/trai-nghiem-thuc-te/story-nam.jpg" alt="Cô gái chạm tay lên má, làn da sáng khỏe" class="reveal-wipe absolute inset-0 size-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy">
           <span class="absolute inset-0 bg-gradient-to-t from-ink/70 via-transparent to-transparent" aria-hidden="true"></span>
           <span class="absolute top-6 right-6 size-10 flex items-center justify-center bg-ink/30 transition-all duration-300 group-hover:scale-110 group-hover:bg-ink/60 group-has-[:focus-visible]:scale-110 group-has-[:focus-visible]:bg-ink/60">
             <img src="assets/img/trai-nghiem-thuc-te/icon-play.svg" alt="" width="20" height="21">
@@ -2236,7 +2236,7 @@
         <!-- TODO: thay data-video-src bằng file MP4 thật (vd assets/video/trai-nghiem-2.mp4); hiện dùng video mẫu -->
         <div data-video-card data-video-src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" data-video-title="Cảm nhận sau 14 ngày dùng kem phục hồi" class="group relative block overflow-hidden rounded-md outline-offset-4 focus-visible:outline-2 focus-visible:outline-brown hover:shadow-popover transition-shadow cursor-pointer aspect-[424/700]">
           <button type="button" data-video-play class="absolute inset-0 z-10 cursor-pointer focus-visible:outline-2 focus-visible:-outline-offset-4 focus-visible:outline-bg" aria-label="Phát video: Cảm nhận sau 14 ngày dùng kem phục hồi"></button>
-          <img src="assets/img/trai-nghiem-thuc-te/story-kem-phuc-hoi.jpg" alt="Khách hàng cầm hũ kem phục hồi Dzentic Neobright" class="absolute inset-0 size-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy">
+          <img src="assets/img/trai-nghiem-thuc-te/story-kem-phuc-hoi.jpg" alt="Khách hàng cầm hũ kem phục hồi Dzentic Neobright" class="reveal-wipe absolute inset-0 size-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy">
           <span class="absolute inset-0 bg-gradient-to-t from-ink/70 via-transparent to-transparent" aria-hidden="true"></span>
           <span class="absolute top-6 right-6 size-10 flex items-center justify-center bg-ink/30 transition-all duration-300 group-hover:scale-110 group-hover:bg-ink/60 group-has-[:focus-visible]:scale-110 group-has-[:focus-visible]:bg-ink/60">
             <img src="assets/img/trai-nghiem-thuc-te/icon-play.svg" alt="" width="20" height="21">
@@ -2251,7 +2251,7 @@
         <!-- TODO: thay data-video-src bằng file MP4 thật (vd assets/video/trai-nghiem-3.mp4); hiện dùng video mẫu -->
         <div data-video-card data-video-src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" data-video-title="Da nhạy cảm, dễ kích ứng có dùng được Serum?" class="group relative block overflow-hidden rounded-md outline-offset-4 focus-visible:outline-2 focus-visible:outline-brown hover:shadow-popover transition-shadow cursor-pointer aspect-[424/700]">
           <button type="button" data-video-play class="absolute inset-0 z-10 cursor-pointer focus-visible:outline-2 focus-visible:-outline-offset-4 focus-visible:outline-bg" aria-label="Phát video: Da nhạy cảm, dễ kích ứng có dùng được Serum?"></button>
-          <img src="assets/img/trai-nghiem-thuc-te/story-serum.jpg" alt="Nhỏ serum từ ống bóp lên mu bàn tay" class="absolute inset-0 size-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy">
+          <img src="assets/img/trai-nghiem-thuc-te/story-serum.jpg" alt="Nhỏ serum từ ống bóp lên mu bàn tay" class="reveal-wipe absolute inset-0 size-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy">
           <span class="absolute inset-0 bg-gradient-to-t from-ink/70 via-transparent to-transparent" aria-hidden="true"></span>
           <span class="absolute top-6 right-6 size-10 flex items-center justify-center bg-ink/30 transition-all duration-300 group-hover:scale-110 group-hover:bg-ink/60 group-has-[:focus-visible]:scale-110 group-has-[:focus-visible]:bg-ink/60">
             <img src="assets/img/trai-nghiem-thuc-te/icon-play.svg" alt="" width="20" height="21">
@@ -2284,7 +2284,7 @@
     <div class="mt-10 xl:mt-[17px] grid grid-cols-1 xl:grid-cols-[746px_1fr] gap-6">
       <!-- Bài nổi bật (WordPress: bài sticky / mới nhất) -->
       <article class="group relative min-h-[480px] overflow-hidden rounded-md flex flex-col justify-end" data-aos="fade-up">
-        <img src="assets/img/blog/bai-noi-bat-nong-do.jpg" alt="Những giọt tinh chất màu vàng ánh kim" class="absolute inset-0 size-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy">
+        <img src="assets/img/blog/bai-noi-bat-nong-do.jpg" alt="Những giọt tinh chất màu vàng ánh kim" class="reveal-wipe absolute inset-0 size-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy">
         <span class="absolute inset-0 bg-gradient-to-t from-ink/70 via-ink/20 to-transparent" aria-hidden="true"></span>
         <span class="absolute left-6 top-6 h-[31px] px-1.5 flex items-center bg-white rounded-xs text-base leading-[22px] tracking-[0.224px] text-ink">Khoa học về da</span>
         <div class="relative flex flex-col gap-5 p-6 lg:pb-0.5">

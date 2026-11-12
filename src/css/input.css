@@ -130,3 +130,34 @@
   .btn-icon, .btn-icon:hover { scale: none; transition: background-color .2s ease; }
   .link-u { transition: color .2s ease; }
 }
+
+/* ========== Hiệu ứng tinh tế (chỉ dùng transform/opacity/clip-path, không đổi kích thước layout) ========== */
+/* Tiêu đề h2 nằm trong khối AOS: lộ dần từ trên xuống khi khối xuất hiện */
+.aos-init:not(.aos-animate) h2 { clip-path: inset(0 0 100% 0); transform: translateY(14px); }
+.aos-animate h2 { clip-path: inset(0 0 -0.2em 0); transform: none; transition: clip-path .9s var(--ease-out) .12s, transform .9s var(--ease-out) .12s; }
+/* Ảnh .reveal-wipe: mở ra từ trái sang phải khi khối AOS cha xuất hiện */
+.aos-init:not(.aos-animate) .reveal-wipe { clip-path: inset(0 100% 0 0); }
+.aos-animate .reveal-wipe { clip-path: inset(0 0 0 0); transition: clip-path 1s var(--ease-out) .15s, transform .5s ease, opacity .3s ease; }
+
+/* Thanh gạch chân trượt giữa các tab: [data-tab-indicator] trên tablist (JS tạo .tab-indicator) */
+[data-tab-indicator] { position: relative; }
+.tab-indicator { position: absolute; top: 0; left: 0; background: var(--color-navy); pointer-events: none; transition: transform .38s var(--ease-out), width .38s var(--ease-out); will-change: transform, width; }
+
+/* Thêm vào giỏ: badge nảy + ảnh bay */
+@keyframes cart-bump { 0%,100% { transform: scale(1); } 40% { transform: scale(1.35); } 70% { transform: scale(.92); } }
+.cart-bump { animation: cart-bump .5s var(--ease-out); }
+
+/* Header kính mờ khi dính */
+[data-site-header].is-stuck { -webkit-backdrop-filter: saturate(1.2) blur(10px); backdrop-filter: saturate(1.2) blur(10px); }
+
+/* Chuyển trang mượt (Chrome/Edge; trình duyệt khác bỏ qua) */
+@view-transition { navigation: auto; }
+::view-transition-old(root), ::view-transition-new(root) { animation-duration: .3s; animation-timing-function: var(--ease-out); }
+
+@media (prefers-reduced-motion: reduce) {
+  .aos-init:not(.aos-animate) h2, .aos-init:not(.aos-animate) .reveal-wipe { clip-path: none; transform: none; }
+  .aos-animate h2, .aos-animate .reveal-wipe { transition: none; }
+  .tab-indicator { transition: none; }
+  .cart-bump { animation: none; }
+  @view-transition { navigation: none; }
+}

@@ -186,6 +186,25 @@ function qtyFor(btn) {
   return q > 0 ? q : 1;
 }
 
+function badgeBump() {
+  document.querySelectorAll('[data-cart-count]').forEach((el) => { el.classList.remove('cart-bump'); void el.offsetWidth; el.classList.add('cart-bump'); });
+}
+// Ảnh sản phẩm "bay" tới icon giỏ ở header, sau đó callback
+function flyToCart(btn, done) {
+  const target = document.querySelector('[data-cart-count]');
+  const holder = btn.closest('li, article, [data-qty-scope], section') || document;
+  const src = [...holder.querySelectorAll('img')].find((i) => i.offsetParent && /\.(webp|png|jpe?g)/i.test(i.currentSrc || i.src) && i.getBoundingClientRect().width > 60);
+  if (!target || !src || matchMedia('(prefers-reduced-motion: reduce)').matches) { done(); return; }
+  const a = src.getBoundingClientRect(); const b = target.getBoundingClientRect();
+  const g = document.createElement('img'); g.src = src.currentSrc || src.src; g.alt = ''; g.setAttribute('aria-hidden', 'true');
+  const size = Math.min(110, a.width);
+  g.style.cssText = 'position:fixed;z-index:200;pointer-events:none;object-fit:contain;border-radius:8px;left:' + (a.left + a.width / 2 - size / 2) + 'px;top:' + (a.top + a.height / 2 - size / 2) + 'px;width:' + size + 'px;height:' + size + 'px;';
+  document.body.appendChild(g);
+  const dx = b.left + b.width / 2 - (a.left + a.width / 2), dy = b.top + b.height / 2 - (a.top + a.height / 2);
+  const an = g.animate([{ transform: 'translate(0,0) scale(1)', opacity: 1 }, { transform: 'translate(' + dx * 0.6 + 'px,' + (dy * 0.6 - 40) + 'px) scale(.55)', opacity: .95, offset: .6 }, { transform: 'translate(' + dx + 'px,' + dy + 'px) scale(.12)', opacity: .2 }], { duration: 620, easing: 'cubic-bezier(.5,0,.3,1)' });
+  an.onfinish = () => { g.remove(); done(); };
+}
+
 export function initCart() {
   syncBadges();
   document.addEventListener('click', (e) => {
@@ -195,7 +214,7 @@ export function initCart() {
     if (!ids.length) return;
     const q = qtyFor(btn);
     ids.forEach((id) => add(id, q));
-    openDrawer(ids, btn);
+    flyToCart(btn, () => { syncBadges(); badgeBump(); openDrawer(ids, btn); });
   });
   if (location.hash === '#mo-gio-hang') openDrawer(null);
   window.addEventListener('storage', syncBadges);

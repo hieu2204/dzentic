@@ -18,7 +18,7 @@
 </section>
 
 <div class="relative h-20 xl:h-[121px]">
-  <header data-site-header class="group/hdr absolute inset-x-0 top-0 z-50 border-b border-gray-ee bg-bg transition-shadow duration-300 [&.is-stuck]:fixed [&.is-stuck]:shadow-popover">
+  <header data-site-header class="group/hdr absolute inset-x-0 top-0 z-50 border-b border-gray-ee bg-bg transition-shadow duration-300 [&.is-stuck]:fixed [&.is-stuck]:bg-bg/85 [&.is-stuck]:shadow-popover">
     <div class="max-w-site mx-auto px-4 md:px-8 xl:px-[72px] h-20 xl:h-[120px] transition-[height] duration-300 group-[.is-stuck]/hdr:h-16 xl:group-[.is-stuck]/hdr:h-[88px] flex items-center justify-between xl:grid xl:grid-cols-[1fr_auto_1fr] xl:gap-6">
       <nav class="hidden xl:flex items-center gap-6 text-base leading-[22px] tracking-[0.224px]" aria-label="Menu trái">
         <a href="thu-vien-hoat-chat.html" class="hover:text-brown focus-visible:text-brown focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brown link-u">Khoa Học &amp; Bằng Chứng</a>
@@ -85,28 +85,28 @@
 <section aria-label="Nhóm sản phẩm" class="bg-bg">
   <div class="mx-auto max-w-site px-4 pt-8 md:px-8 xl:px-[72px]">
     <div class="-mx-4 overflow-x-auto px-4 md:mx-0 md:px-0">
-      <div role="tablist" aria-label="Lọc theo nhóm sản phẩm" data-nhom-tabs class="mx-auto flex w-max items-end gap-6 border-gray-dd">
-        <button type="button" role="tab" data-nhom="tat-ca" data-ten="Tất cả" data-sl="7" aria-selected="true" class="group/tab flex w-[120px] shrink-0 cursor-pointer flex-col items-center gap-1.5 border-b-2 border-transparent pb-2.5 text-center text-gray-66 aria-selected:border-navy aria-selected:text-navy hover:text-brown focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy">
+      <div data-tab-indicator role="tablist" aria-label="Lọc theo nhóm sản phẩm" data-nhom-tabs class="mx-auto flex w-max items-end gap-6 border-gray-dd">
+        <button type="button" role="tab" data-nhom="tat-ca" data-ten="Tất cả" data-sl="7" aria-selected="true" class="group/tab flex w-[120px] shrink-0 cursor-pointer flex-col items-center gap-1.5 border-b-2 border-transparent pb-2.5 text-center text-gray-66 aria-selected:text-navy hover:text-brown focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy">
           <span class="flex size-16 items-center justify-center overflow-hidden rounded-full border border-gray-dd group-aria-selected/tab:border-2 group-aria-selected/tab:border-brown"><img src="assets/img/san-pham/nav-tat-ca.png" alt="" class="w-[54px] aspect-square"></span>
           <span class="text-base leading-[22px] tracking-[0.224px]">Tất cả</span>
           <span class="text-xs leading-4 text-gray-66">7 sản phẩm</span>
         </button>
-        <button type="button" role="tab" data-nhom="lam-sach" data-ten="Làm sạch" data-sl="1" aria-selected="false" class="group/tab flex w-[200px] shrink-0 cursor-pointer flex-col items-center gap-1.5 border-b-2 border-transparent pb-2.5 text-center text-gray-66 aria-selected:border-navy aria-selected:text-navy hover:text-brown focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy">
+        <button type="button" role="tab" data-nhom="lam-sach" data-ten="Làm sạch" data-sl="1" aria-selected="false" class="group/tab flex w-[200px] shrink-0 cursor-pointer flex-col items-center gap-1.5 border-b-2 border-transparent pb-2.5 text-center text-gray-66 aria-selected:text-navy hover:text-brown focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy">
           <span class="flex size-16 items-center justify-center overflow-hidden rounded-full border border-gray-dd group-aria-selected/tab:border-2 group-aria-selected/tab:border-brown"><img src="assets/img/san-pham/nav-lam-sach.png" alt="" class="w-[54px] aspect-square"></span>
           <span class="text-base leading-[22px] tracking-[0.224px]">Làm sạch</span>
           <span class="text-xs leading-4 text-gray-66">1 sản phẩm</span>
         </button>
-        <button type="button" role="tab" data-nhom="cham-soc-chuyen-sau" data-ten="Chăm sóc chuyên sâu" data-sl="3" aria-selected="false" class="group/tab flex w-[200px] shrink-0 cursor-pointer flex-col items-center gap-1.5 border-b-2 border-transparent pb-2.5 text-center text-gray-66 aria-selected:border-navy aria-selected:text-navy hover:text-brown focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy">
+        <button type="button" role="tab" data-nhom="cham-soc-chuyen-sau" data-ten="Chăm sóc chuyên sâu" data-sl="3" aria-selected="false" class="group/tab flex w-[200px] shrink-0 cursor-pointer flex-col items-center gap-1.5 border-b-2 border-transparent pb-2.5 text-center text-gray-66 aria-selected:text-navy hover:text-brown focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy">
           <span class="flex size-16 items-center justify-center overflow-hidden rounded-full border border-gray-dd group-aria-selected/tab:border-2 group-aria-selected/tab:border-brown"><img src="assets/img/san-pham/nav-cham-soc-chuyen-sau.png" alt="" class="w-[54px] aspect-square"></span>
           <span class="text-base leading-[22px] tracking-[0.224px]">Chăm sóc chuyên sâu</span>
           <span class="text-xs leading-4 text-gray-66">3 sản phẩm</span>
         </button>
-        <button type="button" role="tab" data-nhom="phuc-hoi" data-ten="Phục hồi" data-sl="2" aria-selected="false" class="group/tab flex w-[200px] shrink-0 cursor-pointer flex-col items-center gap-1.5 border-b-2 border-transparent pb-2.5 text-center text-gray-66 aria-selected:border-navy aria-selected:text-navy hover:text-brown focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy">
+        <button type="button" role="tab" data-nhom="phuc-hoi" data-ten="Phục hồi" data-sl="2" aria-selected="false" class="group/tab flex w-[200px] shrink-0 cursor-pointer flex-col items-center gap-1.5 border-b-2 border-transparent pb-2.5 text-center text-gray-66 aria-selected:text-navy hover:text-brown focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy">
           <span class="flex size-16 items-center justify-center overflow-hidden rounded-full border border-gray-dd group-aria-selected/tab:border-2 group-aria-selected/tab:border-brown"><img src="assets/img/san-pham/nav-phuc-hoi.png" alt="" class="w-[54px] aspect-square"></span>
           <span class="text-base leading-[22px] tracking-[0.224px]">Phục hồi</span>
           <span class="text-xs leading-4 text-gray-66">2 sản phẩm</span>
         </button>
-        <button type="button" role="tab" data-nhom="bao-ve" data-ten="Bảo vệ" data-sl="1" aria-selected="false" class="group/tab flex w-[200px] shrink-0 cursor-pointer flex-col items-center gap-1.5 border-b-2 border-transparent pb-2.5 text-center text-gray-66 aria-selected:border-navy aria-selected:text-navy hover:text-brown focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy">
+        <button type="button" role="tab" data-nhom="bao-ve" data-ten="Bảo vệ" data-sl="1" aria-selected="false" class="group/tab flex w-[200px] shrink-0 cursor-pointer flex-col items-center gap-1.5 border-b-2 border-transparent pb-2.5 text-center text-gray-66 aria-selected:text-navy hover:text-brown focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy">
           <span class="flex size-16 items-center justify-center overflow-hidden rounded-full border border-gray-dd group-aria-selected/tab:border-2 group-aria-selected/tab:border-brown"><img src="assets/img/san-pham/nav-bao-ve.png" alt="" class="w-[54px] aspect-square"></span>
           <span class="text-base leading-[22px] tracking-[0.224px]">Bảo vệ</span>
           <span class="text-xs leading-4 text-gray-66">1 sản phẩm</span>
@@ -129,7 +129,7 @@
   <article class="group flex h-full flex-col">
     <div class="relative aspect-[424/500] overflow-hidden rounded-[4px] bg-[#ecebec] transition-shadow duration-300 group-hover:shadow-popover">
       <a href="chi-tiet-san-pham.html" class="block size-full focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy focus-visible:-outline-offset-2" aria-label="Photo Defense Brightening Serum">
-        <img src="assets/img/san-pham/photo-defense-brightening-serum.webp" alt="Lọ Photo Defense Brightening Serum của Dzentic" class="size-full object-cover transition-transform duration-500 group-hover:scale-[1.03]" loading="lazy">
+        <img src="assets/img/san-pham/photo-defense-brightening-serum.webp" alt="Lọ Photo Defense Brightening Serum của Dzentic" class="reveal-wipe size-full object-cover transition-transform duration-500 group-hover:scale-[1.03]" loading="lazy">
       </a>
       <span class="absolute left-4 top-4 inline-flex h-[31px] items-center rounded-xs bg-white px-2 py-1 text-xs leading-4 tracking-[0.48px] text-ink">DAY SERUM</span>
       <div class="absolute inset-x-4 bottom-4 flex gap-2 transition-opacity duration-300 lg:opacity-0 lg:group-hover:opacity-100 lg:group-focus-within:opacity-100">
@@ -151,7 +151,7 @@
   <article class="group flex h-full flex-col">
     <div class="relative aspect-[424/500] overflow-hidden rounded-[4px] bg-[#ecebec] transition-shadow duration-300 group-hover:shadow-popover">
       <a href="chi-tiet-san-pham.html" class="block size-full focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy focus-visible:-outline-offset-2" aria-label="Retino Renewal Brightening Serum">
-        <img src="assets/img/san-pham/retino-renewal-brightening-serum.webp" alt="Lọ Retino Renewal Brightening Serum của Dzentic" class="size-full object-cover transition-transform duration-500 group-hover:scale-[1.03]" loading="lazy">
+        <img src="assets/img/san-pham/retino-renewal-brightening-serum.webp" alt="Lọ Retino Renewal Brightening Serum của Dzentic" class="reveal-wipe size-full object-cover transition-transform duration-500 group-hover:scale-[1.03]" loading="lazy">
       </a>
       <span class="absolute left-4 top-4 inline-flex h-[31px] items-center rounded-xs bg-white px-2 py-1 text-xs leading-4 tracking-[0.48px] text-ink">NIGHT SERUM</span>
       <div class="absolute inset-x-4 bottom-4 flex gap-2 transition-opacity duration-300 lg:opacity-0 lg:group-hover:opacity-100 lg:group-focus-within:opacity-100">
@@ -173,7 +173,7 @@
   <article class="group flex h-full flex-col">
     <div class="relative aspect-[424/500] overflow-hidden rounded-[4px] bg-[#ecebec] transition-shadow duration-300 group-hover:shadow-popover">
       <a href="chi-tiet-san-pham.html" class="block size-full focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy focus-visible:-outline-offset-2" aria-label="Zinc Complex Serum">
-        <img src="assets/img/san-pham/zinc-complex-serum.webp" alt="Lọ Zinc Complex Serum của Dzentic" class="size-full object-cover transition-transform duration-500 group-hover:scale-[1.03]" loading="lazy">
+        <img src="assets/img/san-pham/zinc-complex-serum.webp" alt="Lọ Zinc Complex Serum của Dzentic" class="reveal-wipe size-full object-cover transition-transform duration-500 group-hover:scale-[1.03]" loading="lazy">
       </a>
       
       <div class="absolute inset-x-4 bottom-4 flex gap-2 transition-opacity duration-300 lg:opacity-0 lg:group-hover:opacity-100 lg:group-focus-within:opacity-100">
@@ -195,7 +195,7 @@
   <article class="group flex h-full flex-col">
     <div class="relative aspect-[424/500] overflow-hidden rounded-[4px] bg-[#ecebec] transition-shadow duration-300 group-hover:shadow-popover">
       <a href="chi-tiet-san-pham.html" class="block size-full focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy focus-visible:-outline-offset-2" aria-label="Purifying Cleansing Gel">
-        <img src="assets/img/san-pham/cleansing-gel.webp" alt="Tuýp Purifying Cleansing Gel của Dzentic" class="size-full object-contain p-3 transition-transform duration-500 group-hover:scale-[1.03]" loading="lazy">
+        <img src="assets/img/san-pham/cleansing-gel.webp" alt="Tuýp Purifying Cleansing Gel của Dzentic" class="reveal-wipe size-full object-contain p-3 transition-transform duration-500 group-hover:scale-[1.03]" loading="lazy">
       </a>
       <span class="absolute left-4 top-4 inline-flex h-[31px] items-center rounded-xs bg-white px-2 py-1 text-xs leading-4 tracking-[0.48px] text-ink">CLEANSER</span>
       <div class="absolute inset-x-4 bottom-4 flex gap-2 transition-opacity duration-300 lg:opacity-0 lg:group-hover:opacity-100 lg:group-focus-within:opacity-100">
@@ -217,7 +217,7 @@
   <article class="group flex h-full flex-col">
     <div class="relative aspect-[424/500] overflow-hidden rounded-[4px] bg-[#ecebec] transition-shadow duration-300 group-hover:shadow-popover">
       <a href="chi-tiet-san-pham.html" class="block size-full focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy focus-visible:-outline-offset-2" aria-label="NeoBright Repair Cream">
-        <img src="assets/img/san-pham/neobright-repair-cream.webp" alt="Hũ NeoBright Repair Cream của Dzentic" class="size-full object-cover transition-transform duration-500 group-hover:scale-[1.03]" loading="lazy">
+        <img src="assets/img/san-pham/neobright-repair-cream.webp" alt="Hũ NeoBright Repair Cream của Dzentic" class="reveal-wipe size-full object-cover transition-transform duration-500 group-hover:scale-[1.03]" loading="lazy">
       </a>
       <span class="absolute left-4 top-4 inline-flex h-[31px] items-center rounded-xs bg-white px-2 py-1 text-xs leading-4 tracking-[0.48px] text-ink">REPAIR CREAM</span>
       <div class="absolute inset-x-4 bottom-4 flex gap-2 transition-opacity duration-300 lg:opacity-0 lg:group-hover:opacity-100 lg:group-focus-within:opacity-100">
@@ -239,7 +239,7 @@
   <article class="group flex h-full flex-col">
     <div class="relative aspect-[424/500] overflow-hidden rounded-[4px] bg-[#ecebec] transition-shadow duration-300 group-hover:shadow-popover">
       <a href="chi-tiet-san-pham.html" class="block size-full focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy focus-visible:-outline-offset-2" aria-label="Blemish Recovery Hydrating Cream">
-        <img src="assets/img/san-pham/step-blemish-cream.webp" alt="Tuýp Blemish Recovery Hydrating Cream của Dzentic" class="size-full object-contain p-3 transition-transform duration-500 group-hover:scale-[1.03]" loading="lazy">
+        <img src="assets/img/san-pham/step-blemish-cream.webp" alt="Tuýp Blemish Recovery Hydrating Cream của Dzentic" class="reveal-wipe size-full object-contain p-3 transition-transform duration-500 group-hover:scale-[1.03]" loading="lazy">
       </a>
       <span class="absolute left-4 top-4 inline-flex h-[31px] items-center rounded-xs bg-white px-2 py-1 text-xs leading-4 tracking-[0.48px] text-ink">RECOVERY CREAM</span>
       <div class="absolute inset-x-4 bottom-4 flex gap-2 transition-opacity duration-300 lg:opacity-0 lg:group-hover:opacity-100 lg:group-focus-within:opacity-100">
@@ -261,7 +261,7 @@
   <article class="group flex h-full flex-col">
     <div class="relative aspect-[424/500] overflow-hidden rounded-[4px] bg-[#ecebec] transition-shadow duration-300 group-hover:shadow-popover">
       <a href="chi-tiet-san-pham.html" class="block size-full focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy focus-visible:-outline-offset-2" aria-label="Blue Light Shield Tone-Up Fluid Sunscreen">
-        <img src="assets/img/san-pham/blue-light-shield.webp" alt="Chai Blue Light Shield Tone-Up Fluid Sunscreen của Dzentic" class="size-full object-cover transition-transform duration-500 group-hover:scale-[1.03]" loading="lazy">
+        <img src="assets/img/san-pham/blue-light-shield.webp" alt="Chai Blue Light Shield Tone-Up Fluid Sunscreen của Dzentic" class="reveal-wipe size-full object-cover transition-transform duration-500 group-hover:scale-[1.03]" loading="lazy">
       </a>
       <span class="absolute left-4 top-4 inline-flex h-[31px] items-center rounded-xs bg-white px-2 py-1 text-xs leading-4 tracking-[0.48px] text-ink">DAILY PROTECTION</span>
       <div class="absolute inset-x-4 bottom-4 flex gap-2 transition-opacity duration-300 lg:opacity-0 lg:group-hover:opacity-100 lg:group-focus-within:opacity-100">
@@ -343,7 +343,7 @@
           <div class="min-w-0 flex-1">
             <div data-acc-summary class="flex flex-col gap-4 xl:min-h-[100px] xl:flex-row xl:items-center xl:gap-10 hidden">
               <div class="flex items-center gap-3"><img src="assets/img/san-pham/icon-day.svg" alt="" width="28" height="28" class="size-7"><h3 class="text-xl leading-7 text-navy">Bộ Trẻ hóa – Làm sáng</h3><span class="text-sm leading-5 text-gray-66">Buổi sáng</span></div>
-              <div class="flex"><span class="relative -ml-3.5 first:ml-0 size-[52px] shrink-0 overflow-hidden rounded-full bg-white"><img src="assets/img/san-pham/step-cleansing-gel.webp" alt="" class="size-full object-contain p-1"><img src="assets/img/san-pham/border.svg" alt="" width="52" height="52" class="absolute inset-0 size-full max-w-none"></span><span class="relative -ml-3.5 first:ml-0 size-[52px] shrink-0 overflow-hidden rounded-full bg-white"><img src="assets/img/san-pham/step-photo-defense.webp" alt="" class="size-full object-contain p-1"><img src="assets/img/san-pham/border.svg" alt="" width="52" height="52" class="absolute inset-0 size-full max-w-none"></span><span class="relative -ml-3.5 first:ml-0 size-[52px] shrink-0 overflow-hidden rounded-full bg-white"><img src="assets/img/san-pham/step-neobright.webp" alt="" class="size-full object-contain p-1"><img src="assets/img/san-pham/border.svg" alt="" width="52" height="52" class="absolute inset-0 size-full max-w-none"></span><span class="relative -ml-3.5 first:ml-0 size-[52px] shrink-0 overflow-hidden rounded-full bg-white"><img src="assets/img/san-pham/step-sunscreen.webp" alt="" class="size-full object-contain p-1"><img src="assets/img/san-pham/border.svg" alt="" width="52" height="52" class="absolute inset-0 size-full max-w-none"></span></div>
+              <div class="flex"><span class="relative -ml-3.5 first:ml-0 size-[52px] shrink-0 overflow-hidden rounded-full bg-white"><img src="assets/img/san-pham/step-cleansing-gel.webp" alt="" class="reveal-wipe size-full object-contain p-1"><img src="assets/img/san-pham/border.svg" alt="" width="52" height="52" class="absolute inset-0 size-full max-w-none"></span><span class="relative -ml-3.5 first:ml-0 size-[52px] shrink-0 overflow-hidden rounded-full bg-white"><img src="assets/img/san-pham/step-photo-defense.webp" alt="" class="reveal-wipe size-full object-contain p-1"><img src="assets/img/san-pham/border.svg" alt="" width="52" height="52" class="absolute inset-0 size-full max-w-none"></span><span class="relative -ml-3.5 first:ml-0 size-[52px] shrink-0 overflow-hidden rounded-full bg-white"><img src="assets/img/san-pham/step-neobright.webp" alt="" class="reveal-wipe size-full object-contain p-1"><img src="assets/img/san-pham/border.svg" alt="" width="52" height="52" class="absolute inset-0 size-full max-w-none"></span><span class="relative -ml-3.5 first:ml-0 size-[52px] shrink-0 overflow-hidden rounded-full bg-white"><img src="assets/img/san-pham/step-sunscreen.webp" alt="" class="size-full object-contain p-1"><img src="assets/img/san-pham/border.svg" alt="" width="52" height="52" class="absolute inset-0 size-full max-w-none"></span></div>
               <p class="text-sm leading-5 tracking-[0.14px] text-gray-66 xl:flex-1">Purifying Cleansing Gel &nbsp;→&nbsp; Photo Defense Brightening Serum &nbsp;→&nbsp; NeoBright Repair Cream &nbsp;→&nbsp; Blue Light Shield</p>
             </div>
             <div data-acc-panel class="md:py-3">
@@ -354,7 +354,7 @@
                   <ol class="relative grid grid-cols-2 gap-x-4 gap-y-8 xl:flex xl:justify-between"><li class="mx-auto flex w-full max-w-[200px] flex-col items-center gap-3 text-center xl:mx-0 xl:w-[200px]">
   <div class="relative size-24 shrink-0">
     <div class="relative size-full overflow-hidden rounded-full border border-gray-dd bg-white">
-      <img src="assets/img/san-pham/step-cleansing-gel.webp" alt="" class="size-full object-contain p-2" loading="lazy">
+      <img src="assets/img/san-pham/step-cleansing-gel.webp" alt="" class="reveal-wipe size-full object-contain p-2" loading="lazy">
     </div>
     
     <span class="absolute -right-1 top-0 grid size-7 place-items-center rounded-full bg-navy text-white text-xs leading-4">01</span>
@@ -367,7 +367,7 @@
 </li><li class="mx-auto flex w-full max-w-[200px] flex-col items-center gap-3 text-center xl:mx-0 xl:w-[200px]">
   <div class="relative size-24 shrink-0">
     <div class="relative size-full overflow-hidden rounded-full border border-gray-dd bg-brown-50">
-      <img src="assets/img/san-pham/step-photo-defense.webp" alt="" class="size-full object-contain p-2" loading="lazy">
+      <img src="assets/img/san-pham/step-photo-defense.webp" alt="" class="reveal-wipe size-full object-contain p-2" loading="lazy">
     </div>
     <img src="assets/img/san-pham/ring.svg" alt="" width="96" height="96" class="pointer-events-none absolute inset-0 size-full max-w-none">
     <span class="absolute -right-1 top-0 grid size-7 place-items-center rounded-full bg-white text-brown text-xs leading-4">02</span>
@@ -380,7 +380,7 @@
 </li><li class="mx-auto flex w-full max-w-[200px] flex-col items-center gap-3 text-center xl:mx-0 xl:w-[200px]">
   <div class="relative size-24 shrink-0">
     <div class="relative size-full overflow-hidden rounded-full border border-gray-dd bg-white">
-      <img src="assets/img/san-pham/step-neobright.webp" alt="" class="size-full object-contain p-2" loading="lazy">
+      <img src="assets/img/san-pham/step-neobright.webp" alt="" class="reveal-wipe size-full object-contain p-2" loading="lazy">
     </div>
     
     <span class="absolute -right-1 top-0 grid size-7 place-items-center rounded-full bg-navy text-white text-xs leading-4">03</span>
@@ -423,7 +423,7 @@
           <div class="min-w-0 flex-1">
             <div data-acc-summary class="flex flex-col gap-4 xl:min-h-[100px] xl:flex-row xl:items-center xl:gap-10">
               <div class="flex items-center gap-3"><img src="assets/img/san-pham/icon-night.svg" alt="" width="28" height="28" class="size-7"><h3 class="text-xl leading-7 text-navy">Bộ Trẻ hóa – Làm sáng</h3><span class="text-sm leading-5 text-gray-66">Buổi tối</span></div>
-              <div class="flex"><span class="relative -ml-3.5 first:ml-0 size-[52px] shrink-0 overflow-hidden rounded-full bg-white"><img src="assets/img/san-pham/step-cleansing-gel.webp" alt="" class="size-full object-contain p-1"><img src="assets/img/san-pham/border.svg" alt="" width="52" height="52" class="absolute inset-0 size-full max-w-none"></span><span class="relative -ml-3.5 first:ml-0 size-[52px] shrink-0 overflow-hidden rounded-full bg-white"><img src="assets/img/san-pham/retino-renewal-brightening-serum.webp" alt="" class="size-full object-cover"><img src="assets/img/san-pham/border.svg" alt="" width="52" height="52" class="absolute inset-0 size-full max-w-none"></span><span class="relative -ml-3.5 first:ml-0 size-[52px] shrink-0 overflow-hidden rounded-full bg-white"><img src="assets/img/san-pham/step-neobright.webp" alt="" class="size-full object-contain p-1"><img src="assets/img/san-pham/border.svg" alt="" width="52" height="52" class="absolute inset-0 size-full max-w-none"></span></div>
+              <div class="flex"><span class="relative -ml-3.5 first:ml-0 size-[52px] shrink-0 overflow-hidden rounded-full bg-white"><img src="assets/img/san-pham/step-cleansing-gel.webp" alt="" class="reveal-wipe size-full object-contain p-1"><img src="assets/img/san-pham/border.svg" alt="" width="52" height="52" class="absolute inset-0 size-full max-w-none"></span><span class="relative -ml-3.5 first:ml-0 size-[52px] shrink-0 overflow-hidden rounded-full bg-white"><img src="assets/img/san-pham/retino-renewal-brightening-serum.webp" alt="" class="reveal-wipe size-full object-cover"><img src="assets/img/san-pham/border.svg" alt="" width="52" height="52" class="absolute inset-0 size-full max-w-none"></span><span class="relative -ml-3.5 first:ml-0 size-[52px] shrink-0 overflow-hidden rounded-full bg-white"><img src="assets/img/san-pham/step-neobright.webp" alt="" class="reveal-wipe size-full object-contain p-1"><img src="assets/img/san-pham/border.svg" alt="" width="52" height="52" class="absolute inset-0 size-full max-w-none"></span></div>
               <p class="text-sm leading-5 tracking-[0.14px] text-gray-66 xl:flex-1">Purifying Cleansing Gel &nbsp;→&nbsp; Retino Renewal Brightening Serum &nbsp;→&nbsp; NeoBright Repair Cream</p>
             </div>
             <div data-acc-panel class="md:py-3" hidden>
@@ -434,7 +434,7 @@
                   <ol class="relative grid grid-cols-2 gap-x-4 gap-y-8 xl:flex xl:justify-between"><li class="mx-auto flex w-full max-w-[200px] flex-col items-center gap-3 text-center xl:mx-0 xl:w-[200px]">
   <div class="relative size-24 shrink-0">
     <div class="relative size-full overflow-hidden rounded-full border border-gray-dd bg-white">
-      <img src="assets/img/san-pham/step-cleansing-gel.webp" alt="" class="size-full object-contain p-2" loading="lazy">
+      <img src="assets/img/san-pham/step-cleansing-gel.webp" alt="" class="reveal-wipe size-full object-contain p-2" loading="lazy">
     </div>
     
     <span class="absolute -right-1 top-0 grid size-7 place-items-center rounded-full bg-navy text-white text-xs leading-4">01</span>
@@ -447,7 +447,7 @@
 </li><li class="mx-auto flex w-full max-w-[200px] flex-col items-center gap-3 text-center xl:mx-0 xl:w-[200px]">
   <div class="relative size-24 shrink-0">
     <div class="relative size-full overflow-hidden rounded-full border border-gray-dd bg-brown-50">
-      <img src="assets/img/san-pham/retino-renewal-brightening-serum.webp" alt="" class="size-full object-cover" loading="lazy">
+      <img src="assets/img/san-pham/retino-renewal-brightening-serum.webp" alt="" class="reveal-wipe size-full object-cover" loading="lazy">
     </div>
     <img src="assets/img/san-pham/ring.svg" alt="" width="96" height="96" class="pointer-events-none absolute inset-0 size-full max-w-none">
     <span class="absolute -right-1 top-0 grid size-7 place-items-center rounded-full bg-white text-brown text-xs leading-4">02</span>
@@ -460,7 +460,7 @@
 </li><li class="mx-auto flex w-full max-w-[200px] flex-col items-center gap-3 text-center xl:mx-0 xl:w-[200px]">
   <div class="relative size-24 shrink-0">
     <div class="relative size-full overflow-hidden rounded-full border border-gray-dd bg-white">
-      <img src="assets/img/san-pham/step-neobright.webp" alt="" class="size-full object-contain p-2" loading="lazy">
+      <img src="assets/img/san-pham/step-neobright.webp" alt="" class="reveal-wipe size-full object-contain p-2" loading="lazy">
     </div>
     
     <span class="absolute -right-1 top-0 grid size-7 place-items-center rounded-full bg-navy text-white text-xs leading-4">03</span>
@@ -490,7 +490,7 @@
           <div class="min-w-0 flex-1">
             <div data-acc-summary class="flex flex-col gap-4 xl:min-h-[128px] xl:flex-row xl:items-center xl:gap-10">
               <div class="flex items-center gap-3"><img src="assets/img/san-pham/icon-feature-4.svg" alt="" width="28" height="28" class="size-7"><h3 class="text-xl leading-7 text-navy">Bộ giải pháp cho da mụn</h3><span class="text-sm leading-5 text-gray-66">Routine 4 bước</span></div>
-              <div class="flex"><span class="relative -ml-3.5 first:ml-0 size-[52px] shrink-0 overflow-hidden rounded-full bg-white"><img src="assets/img/san-pham/step-cleansing-gel.webp" alt="" class="size-full object-contain p-1"><img src="assets/img/san-pham/border.svg" alt="" width="52" height="52" class="absolute inset-0 size-full max-w-none"></span><span class="relative -ml-3.5 first:ml-0 size-[52px] shrink-0 overflow-hidden rounded-full bg-white"><img src="assets/img/san-pham/zinc-complex-serum.webp" alt="" class="size-full object-cover"><img src="assets/img/san-pham/border.svg" alt="" width="52" height="52" class="absolute inset-0 size-full max-w-none"></span><span class="relative -ml-3.5 first:ml-0 size-[52px] shrink-0 overflow-hidden rounded-full bg-white"><img src="assets/img/san-pham/step-blemish-cream.webp" alt="" class="size-full object-contain p-1"><img src="assets/img/san-pham/border.svg" alt="" width="52" height="52" class="absolute inset-0 size-full max-w-none"></span><span class="relative -ml-3.5 first:ml-0 size-[52px] shrink-0 overflow-hidden rounded-full bg-white"><img src="assets/img/san-pham/step-sunscreen.webp" alt="" class="size-full object-contain p-1"><img src="assets/img/san-pham/border.svg" alt="" width="52" height="52" class="absolute inset-0 size-full max-w-none"></span></div>
+              <div class="flex"><span class="relative -ml-3.5 first:ml-0 size-[52px] shrink-0 overflow-hidden rounded-full bg-white"><img src="assets/img/san-pham/step-cleansing-gel.webp" alt="" class="reveal-wipe size-full object-contain p-1"><img src="assets/img/san-pham/border.svg" alt="" width="52" height="52" class="absolute inset-0 size-full max-w-none"></span><span class="relative -ml-3.5 first:ml-0 size-[52px] shrink-0 overflow-hidden rounded-full bg-white"><img src="assets/img/san-pham/zinc-complex-serum.webp" alt="" class="reveal-wipe size-full object-cover"><img src="assets/img/san-pham/border.svg" alt="" width="52" height="52" class="absolute inset-0 size-full max-w-none"></span><span class="relative -ml-3.5 first:ml-0 size-[52px] shrink-0 overflow-hidden rounded-full bg-white"><img src="assets/img/san-pham/step-blemish-cream.webp" alt="" class="reveal-wipe size-full object-contain p-1"><img src="assets/img/san-pham/border.svg" alt="" width="52" height="52" class="absolute inset-0 size-full max-w-none"></span><span class="relative -ml-3.5 first:ml-0 size-[52px] shrink-0 overflow-hidden rounded-full bg-white"><img src="assets/img/san-pham/step-sunscreen.webp" alt="" class="size-full object-contain p-1"><img src="assets/img/san-pham/border.svg" alt="" width="52" height="52" class="absolute inset-0 size-full max-w-none"></span></div>
               <p class="text-sm leading-5 tracking-[0.14px] text-gray-66 xl:flex-1">Purifying Cleansing Gel &nbsp;→&nbsp; Zinc Complex Serum &nbsp;→&nbsp; Blemish Recovery Hydrating Cream &nbsp;→&nbsp; Blue Light Shield Tone-Up Fluid Sunscreen</p>
             </div>
             <div data-acc-panel class="md:py-3" hidden>
@@ -501,7 +501,7 @@
                   <ol class="relative grid grid-cols-2 gap-x-4 gap-y-8 xl:flex xl:justify-between"><li class="mx-auto flex w-full max-w-[200px] flex-col items-center gap-3 text-center xl:mx-0 xl:w-[200px]">
   <div class="relative size-24 shrink-0">
     <div class="relative size-full overflow-hidden rounded-full border border-gray-dd bg-white">
-      <img src="assets/img/san-pham/step-cleansing-gel.webp" alt="" class="size-full object-contain p-2" loading="lazy">
+      <img src="assets/img/san-pham/step-cleansing-gel.webp" alt="" class="reveal-wipe size-full object-contain p-2" loading="lazy">
     </div>
     
     <span class="absolute -right-1 top-0 grid size-7 place-items-center rounded-full bg-navy text-white text-xs leading-4">01</span>
@@ -514,7 +514,7 @@
 </li><li class="mx-auto flex w-full max-w-[200px] flex-col items-center gap-3 text-center xl:mx-0 xl:w-[200px]">
   <div class="relative size-24 shrink-0">
     <div class="relative size-full overflow-hidden rounded-full border border-gray-dd bg-brown-50">
-      <img src="assets/img/san-pham/zinc-complex-serum.webp" alt="" class="size-full object-cover" loading="lazy">
+      <img src="assets/img/san-pham/zinc-complex-serum.webp" alt="" class="reveal-wipe size-full object-cover" loading="lazy">
     </div>
     <img src="assets/img/san-pham/ring.svg" alt="" width="96" height="96" class="pointer-events-none absolute inset-0 size-full max-w-none">
     <span class="absolute -right-1 top-0 grid size-7 place-items-center rounded-full bg-white text-brown text-xs leading-4">02</span>
@@ -527,7 +527,7 @@
 </li><li class="mx-auto flex w-full max-w-[200px] flex-col items-center gap-3 text-center xl:mx-0 xl:w-[200px]">
   <div class="relative size-24 shrink-0">
     <div class="relative size-full overflow-hidden rounded-full border border-gray-dd bg-white">
-      <img src="assets/img/san-pham/step-blemish-cream.webp" alt="" class="size-full object-contain p-2" loading="lazy">
+      <img src="assets/img/san-pham/step-blemish-cream.webp" alt="" class="reveal-wipe size-full object-contain p-2" loading="lazy">
     </div>
     
     <span class="absolute -right-1 top-0 grid size-7 place-items-center rounded-full bg-navy text-white text-xs leading-4">03</span>
@@ -658,7 +658,8 @@
   var accs = [].slice.call(document.querySelectorAll('[data-acc]'));
   function setAcc(a, open) {
     var b = a.querySelector('[data-acc-toggle]');
-    a.querySelector('[data-acc-panel]').hidden = !open;
+    var pn = a.querySelector('[data-acc-panel]');
+    if (window.DZ && DZ.slide) DZ.slide(pn, open); else pn.hidden = !open;
     a.querySelector('[data-acc-summary]').hidden = open;
     b.setAttribute('aria-expanded', String(open));
     b.firstElementChild.textContent = open ? '\u2212' : '+';
