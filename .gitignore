@@ -2,3 +2,7 @@ node_modules/
 .claude/
 *.log
 .DS_Store
+
+# WordPress local (theme repo riêng, plugins, uploads, backup DB) + skill chuẩn code
+dzentic-theme/
+wecan-wp-theme-standard/
