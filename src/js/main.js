@@ -35,14 +35,92 @@ if (countEls.length) {
   countEls.forEach((el) => io.observe(el));
 }
 
-// Mobile menu: <button data-menu-toggle> + <div data-menu>
-document.querySelectorAll('[data-menu-toggle]').forEach((btn) => {
-  btn.addEventListener('click', () => {
-    const m = document.querySelector('[data-menu]');
-    m && m.classList.toggle('hidden');
-    btn.setAttribute('aria-expanded', m && !m.classList.contains('hidden'));
+// Menu mobile (< xl): drawer trượt từ phải, dựng từ các link trong <nav data-menu> của từng trang
+// (nav gốc luôn ẩn, chỉ làm nguồn dữ liệu). Gắn vào <body> vì header dính có backdrop-filter.
+const menuSrc = document.querySelector('[data-menu]');
+const menuToggles = document.querySelectorAll('[data-menu-toggle]');
+if (menuSrc && menuToggles.length) {
+  const here = location.pathname.split('/').pop() || 'index.html';
+  const logo = document.querySelector('[data-site-header] img[src*="logo"]');
+  const chevron = '<svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M6 3l5 5-5 5"/></svg>';
+  const links = [...menuSrc.querySelectorAll('a[href]')].map((a) => {
+    const href = a.getAttribute('href');
+    const current = a.getAttribute('aria-current') === 'page' || href === here;
+    return `<li><a href="${href}"${current ? ' aria-current="page"' : ''} class="mnav-link">${a.innerHTML}${chevron}</a></li>`;
+  }).join('');
+
+  const drawer = document.createElement('div');
+  drawer.className = 'mnav';
+  drawer.id = 'mobile-menu';
+  drawer.hidden = true;
+  drawer.innerHTML = `
+    <div class="mnav-overlay" data-mnav-close></div>
+    <div class="mnav-panel" role="dialog" aria-modal="true" aria-label="Menu chính">
+      <div class="mnav-head">
+        <a href="index.html" class="mnav-logo" aria-label="Dzentic - Trang chủ">${logo ? `<img src="${logo.getAttribute('src')}" alt="">` : 'Dzentic'}</a>
+        <button type="button" class="mnav-close" data-mnav-close aria-label="Đóng menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+        </button>
+      </div>
+      <nav class="mnav-body" aria-label="Menu chính">
+        <a href="tim-kiem.html" class="mnav-search">
+          <img src="assets/img/hero/icon-search.svg" alt="" width="20" height="20">
+          <span>Tìm sản phẩm, hoạt chất, bài viết…</span>
+        </a>
+        <ul class="mnav-list">${links}</ul>
+      </nav>
+      <div class="mnav-foot">
+        <a href="routine-phac-do.html" class="mnav-cta btn">Tìm Routine của bạn</a>
+        <div class="mnav-meta">
+          <a href="gio-hang.html" class="mnav-cart">
+            <img src="assets/img/hero/icon-cart.svg" alt="" width="20" height="20">
+            Giỏ hàng <span data-cart-count class="mnav-badge">0</span>
+          </a>
+          <a href="tel:15001515" class="mnav-tel">Hotline: 1500 1515</a>
+        </div>
+      </div>
+    </div>`;
+  document.body.appendChild(drawer);
+
+  const panel = drawer.querySelector('.mnav-panel');
+  let lastFocus = null;
+  let closeTimer = 0;
+  const setOpen = (open) => {
+    clearTimeout(closeTimer);
+    menuToggles.forEach((b) => b.setAttribute('aria-expanded', open));
+    document.documentElement.classList.toggle('mnav-lock', open);
+    if (open) {
+      lastFocus = document.activeElement;
+      drawer.hidden = false;
+      requestAnimationFrame(() => requestAnimationFrame(() => drawer.classList.add('is-open')));
+      setTimeout(() => drawer.querySelector('.mnav-close').focus({ preventScroll: true }), 50);
+    } else {
+      drawer.classList.remove('is-open');
+      closeTimer = setTimeout(() => { drawer.hidden = true; }, 350);
+      lastFocus && lastFocus.focus && lastFocus.focus({ preventScroll: true });
+    }
+  };
+  const isOpen = () => drawer.classList.contains('is-open');
+
+  menuToggles.forEach((btn) => {
+    btn.setAttribute('aria-controls', 'mobile-menu');
+    btn.setAttribute('aria-expanded', 'false');
+    btn.addEventListener('click', () => setOpen(!isOpen()));
   });
-});
+  drawer.querySelectorAll('[data-mnav-close]').forEach((el) => el.addEventListener('click', () => setOpen(false)));
+  drawer.querySelectorAll('.mnav-body a, .mnav-foot a').forEach((a) => a.addEventListener('click', () => setOpen(false)));
+  document.addEventListener('keydown', (e) => {
+    if (!isOpen()) return;
+    if (e.key === 'Escape') { setOpen(false); return; }
+    if (e.key !== 'Tab') return;
+    // Giữ focus trong drawer
+    const f = [...panel.querySelectorAll('a[href], button')];
+    const first = f[0], last = f[f.length - 1];
+    if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+    else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+  });
+  window.matchMedia('(min-width: 1280px)').addEventListener('change', (e) => { if (e.matches && isOpen()) setOpen(false); });
+}
 
 // Tabs: <div data-tabs> [data-tab="id"] (button, role=tab) + [data-tab-panel="id"] (panel, hidden)
 // Style trạng thái active bằng Tailwind: aria-selected:... / group-aria-selected:...

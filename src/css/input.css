@@ -150,6 +150,60 @@
 /* Header kính mờ khi dính */
 [data-site-header].is-stuck { -webkit-backdrop-filter: saturate(1.2) blur(10px); backdrop-filter: saturate(1.2) blur(10px); }
 
+/* Nút cao cố định không xuống dòng (whitespace-nowrap). Màn rất hẹp: thu padding + cỡ chữ để chữ dài vẫn vừa màn hình */
+@media (max-width: 400px) {
+  :is(a, button).whitespace-nowrap:is(.h-10, .h-11, .h-12) { padding-inline: 14px; font-size: 15px; letter-spacing: 0; }
+  :is(a, button).whitespace-nowrap:is(.h-10, .h-11, .h-12) > img { flex-shrink: 0; }
+}
+
+/* ========== Menu mobile (drawer trượt từ phải, JS dựng .mnav trong main.js) ========== */
+html.mnav-lock, html.mnav-lock body { overflow: hidden; }
+.mnav { position: fixed; inset: 0; z-index: 100; }
+.mnav-overlay { position: absolute; inset: 0; background: rgb(16 27 59 / .45); opacity: 0; transition: opacity .3s ease; }
+.mnav-panel {
+  position: absolute; top: 0; right: 0; bottom: 0; width: min(100%, 420px);
+  display: flex; flex-direction: column; background: var(--color-bg); color: var(--color-navy);
+  box-shadow: -12px 0 32px rgb(16 27 59 / .18);
+  transform: translateX(100%); transition: transform .35s var(--ease-out);
+}
+.mnav.is-open .mnav-overlay { opacity: 1; }
+.mnav.is-open .mnav-panel { transform: none; }
+.mnav-head { display: flex; align-items: center; justify-content: space-between; gap: 16px; height: 64px; padding: 0 16px; border-bottom: 1px solid var(--color-gray-ee); flex-shrink: 0; }
+.mnav-logo { display: block; }
+.mnav-logo img { height: 40px; width: auto; object-fit: contain; }
+.mnav-close { display: grid; place-items: center; width: 40px; height: 40px; margin-right: -8px; border-radius: 9999px; color: var(--color-navy); }
+.mnav-close:hover, .mnav-close:focus-visible { background: var(--color-brown-50); color: var(--color-brown); }
+.mnav-close:focus-visible { outline: 2px solid var(--color-brown); outline-offset: 2px; }
+.mnav-body { flex: 1; overflow-y: auto; overscroll-behavior: contain; padding: 20px 16px 8px; }
+.mnav-search { display: flex; align-items: center; gap: 12px; height: 48px; padding: 0 16px; border: 1px solid var(--color-gray-dd); border-radius: var(--radius-sm); background: #fff; color: var(--color-gray-99); font-size: 15px; }
+.mnav-search:hover, .mnav-search:focus-visible { border-color: var(--color-brown); outline: none; }
+.mnav-list { margin-top: 12px; }
+.mnav-list li { opacity: 0; transform: translateX(16px); transition: opacity .35s ease, transform .35s var(--ease-out); }
+.mnav.is-open .mnav-list li { opacity: 1; transform: none; }
+.mnav.is-open .mnav-list li:nth-child(1) { transition-delay: .08s; }
+.mnav.is-open .mnav-list li:nth-child(2) { transition-delay: .12s; }
+.mnav.is-open .mnav-list li:nth-child(3) { transition-delay: .16s; }
+.mnav.is-open .mnav-list li:nth-child(4) { transition-delay: .2s; }
+.mnav.is-open .mnav-list li:nth-child(5) { transition-delay: .24s; }
+.mnav.is-open .mnav-list li:nth-child(n+6) { transition-delay: .28s; }
+.mnav-link { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 18px 0; border-bottom: 1px solid var(--color-gray-dd); font-size: 20px; line-height: 28px; letter-spacing: .2px; text-transform: uppercase; color: var(--color-navy); }
+.mnav-link svg { flex-shrink: 0; color: var(--color-gray-99); transition: transform .25s var(--ease-out), color .2s ease; }
+.mnav-link:hover, .mnav-link:focus-visible, .mnav-link[aria-current="page"] { color: var(--color-brown); outline: none; }
+.mnav-link:hover svg, .mnav-link:focus-visible svg { color: var(--color-brown); transform: translateX(3px); }
+.mnav-link[aria-current="page"] svg { color: var(--color-brown); }
+.mnav-foot { flex-shrink: 0; padding: 16px 16px calc(16px + env(safe-area-inset-bottom)); border-top: 1px solid var(--color-gray-ee); display: flex; flex-direction: column; gap: 16px; }
+.mnav-cta { display: flex; align-items: center; justify-content: center; height: 48px; border-radius: var(--radius-sm); background: var(--color-brown); color: var(--color-bg); font-size: 16px; letter-spacing: .224px; }
+.mnav-cta:hover, .mnav-cta:focus-visible { background: var(--color-brown-dark); }
+.mnav-meta { display: flex; align-items: center; justify-content: space-between; gap: 12px; font-size: 15px; }
+.mnav-cart { display: inline-flex; align-items: center; gap: 8px; }
+.mnav-badge { display: grid; place-items: center; min-width: 20px; height: 20px; padding: 0 5px; border-radius: 10px; background: var(--color-brown); color: var(--color-bg); font-size: 13px; }
+.mnav-tel { color: var(--color-brown); }
+.mnav-cart:hover, .mnav-tel:hover { color: var(--color-brown-dark); }
+@media (min-width: 1280px) { .mnav { display: none; } }
+@media (prefers-reduced-motion: reduce) {
+  .mnav-overlay, .mnav-panel, .mnav-list li { transition: none; }
+}
+
 /* Chuyển trang mượt (Chrome/Edge; trình duyệt khác bỏ qua) */
 @view-transition { navigation: auto; }
 ::view-transition-old(root), ::view-transition-new(root) { animation-duration: .3s; animation-timing-function: var(--ease-out); }

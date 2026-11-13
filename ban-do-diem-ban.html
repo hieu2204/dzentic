@@ -101,7 +101,7 @@
             <li><button type="button" role="tab" data-tab="da-nang" data-city="Đà Nẵng" aria-selected="false" class="h-[39px] px-3 bg-gray-ee text-navy hover:bg-brown-50 aria-selected:bg-brown aria-selected:text-bg aria-selected:hover:bg-brown-dark text-base leading-[22px] tracking-[0.224px] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Đà Nẵng</button></li>
         </ul>
       </div>
-      <button type="button" data-locate class="inline-flex h-10 items-center justify-center gap-2 rounded-sm border border-navy px-6 text-base leading-[22px] tracking-[0.224px] text-navy focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown self-start btn btn-outline btn-fill-brown-50">Dùng vị trí của tôi<img src="assets/img/ban-do-diem-ban/icon-location.svg" alt="" width="12" height="13" /></button>
+      <button type="button" data-locate class="inline-flex h-10 items-center justify-center gap-2 rounded-sm border border-navy px-6 text-base leading-[22px] tracking-[0.224px] text-navy focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown self-start btn btn-outline btn-fill-brown-50 whitespace-nowrap">Dùng vị trí của tôi<img src="assets/img/ban-do-diem-ban/icon-location.svg" alt="" width="12" height="13" /></button>
     </div>
 
     <div class="mt-6 grid gap-8 lg:grid-cols-[440px_minmax(0,1fr)]">
@@ -306,7 +306,7 @@
       <div class="relative h-[420px] overflow-hidden bg-[#f2f2f2] sm:h-[520px] lg:h-[760px]">
         <img src="assets/img/ban-do-diem-ban/ban-do.webp" alt="Bản đồ hệ thống điểm bán Dzentic" class="absolute inset-0 size-full object-cover" />
         <iframe data-map-frame title="Vị trí điểm bán trên Google Maps" class="absolute inset-0 z-[5] size-full border-0 bg-[#f2f2f2]" hidden loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <button type="button" data-map-reset class="absolute left-3 top-3 z-[6] inline-flex h-10 items-center gap-2 rounded-sm bg-bg px-4 text-base text-navy shadow-popover hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy leading-[22px] tracking-[0.224px] btn" hidden>← Bản đồ tổng</button>
+        <button type="button" data-map-reset class="absolute left-3 top-3 z-[6] inline-flex h-10 items-center gap-2 rounded-sm bg-bg px-4 text-base text-navy shadow-popover hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy leading-[22px] tracking-[0.224px] btn whitespace-nowrap" hidden>← Bản đồ tổng</button>
           <div data-tab-panel="ha-noi" class="absolute inset-0">
             <button type="button" data-marker="hn-1" aria-label="Điểm bán Dzentic Hà Nội - điểm 1" aria-pressed="true" class="absolute size-[35.5px] cursor-pointer rounded-full transition-transform duration-200 hover:scale-125 focus-visible:scale-125 focus-visible:outline-2 focus-visible:outline-brown [&[aria-pressed=true]]:z-10 [&[aria-pressed=true]]:scale-150" style="left:14.56%;top:11.84%"><img src="assets/img/ban-do-diem-ban/marker.png" alt="" class="size-full max-w-none" /></button>
             <button type="button" data-marker="hn-2" aria-label="Điểm bán Dzentic Hà Nội - điểm 2" class="absolute size-[35.5px] cursor-pointer rounded-full transition-transform duration-200 hover:scale-125 focus-visible:scale-125 focus-visible:outline-2 focus-visible:outline-brown [&[aria-pressed=true]]:z-10 [&[aria-pressed=true]]:scale-150" style="left:73.54%;top:18.42%"><img src="assets/img/ban-do-diem-ban/marker.png" alt="" class="size-full max-w-none" /></button>
@@ -332,7 +332,7 @@
             <p class="text-xl font-bold leading-7">Chưa có điểm gần bạn?</p>
             <p class="text-base leading-[22px] tracking-[0.224px]">Để lại khu vực để Dzentic gợi ý kênh mua phù hợp.</p>
           </div>
-          <a href="lien-he.html" class="inline-flex h-10 items-center justify-center gap-2 rounded-sm border border-navy px-6 text-base leading-[22px] tracking-[0.224px] text-navy focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown shrink-0 btn btn-outline btn-fill-brown-50">Dẫn đường<img src="assets/img/ban-do-diem-ban/icon-arrow-navy.svg" alt="" width="12" height="13" /></a>
+          <a href="lien-he.html" class="inline-flex h-10 items-center justify-center gap-2 rounded-sm border border-navy px-6 text-base leading-[22px] tracking-[0.224px] text-navy focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown shrink-0 btn btn-outline btn-fill-brown-50 whitespace-nowrap">Dẫn đường<img src="assets/img/ban-do-diem-ban/icon-arrow-navy.svg" alt="" width="12" height="13" /></a>
         </div>
       </div>
     </div>
@@ -376,8 +376,8 @@
       <h2 id="dang-ky-title" class="uppercase text-3xl md:text-5xl leading-[1.4] tracking-[0.624px]">Trở thành đối tác<br class="hidden md:block" /> phân phối Dzentic</h2>
       <p class="text-base leading-[22px] tracking-[0.224px]">Cùng Dzentic mang giải pháp da liễu chuẩn Nhật Bản đến gần hơn với khách hàng của bạn. Nhận đào tạo chuyên môn, tài liệu lâm sàng và chính sách giá dành riêng cho đối tác.</p>
       <div class="flex flex-wrap gap-3 pt-4">
-        <a href="cong-chuyen-mon.html" class="inline-flex h-10 items-center justify-center gap-2 rounded-sm bg-bg px-6 text-base leading-[22px] tracking-[0.224px] text-navy hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-bg btn">Đăng ký hợp tác phân phối<img src="assets/img/ban-do-diem-ban/icon-arrow-navy.svg" alt="" width="12" height="13" /></a>
-        <a href="thu-vien-tai-lieu.html" class="inline-flex h-10 items-center justify-center gap-2 rounded-sm border border-bg px-6 text-base leading-[22px] tracking-[0.224px] text-bg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-bg btn btn-outline btn-fill-bg-15">Tải hồ sơ năng lực<img src="assets/img/ban-do-diem-ban/icon-arrow-light.svg" alt="" width="12" height="13" /></a>
+        <a href="cong-chuyen-mon.html" class="inline-flex h-10 items-center justify-center gap-2 rounded-sm bg-bg px-6 text-base leading-[22px] tracking-[0.224px] text-navy hover:bg-brown-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-bg btn whitespace-nowrap">Đăng ký hợp tác phân phối<img src="assets/img/ban-do-diem-ban/icon-arrow-navy.svg" alt="" width="12" height="13" /></a>
+        <a href="thu-vien-tai-lieu.html" class="inline-flex h-10 items-center justify-center gap-2 rounded-sm border border-bg px-6 text-base leading-[22px] tracking-[0.224px] text-bg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-bg btn btn-outline btn-fill-bg-15 whitespace-nowrap">Tải hồ sơ năng lực<img src="assets/img/ban-do-diem-ban/icon-arrow-light.svg" alt="" width="12" height="13" /></a>
       </div>
     </div>
     <ol class="flex flex-col">

@@ -111,8 +111,8 @@ function ensureDrawer() {
     <div class="flex flex-col gap-3 bg-bg px-6 pb-6 pt-5">
       <div class="flex items-start justify-between gap-4 text-sm leading-5 tracking-[0.14px]"><span class="text-gray-49" data-drawer-sub-label>Tạm tính</span><span class="font-medium text-navy" data-drawer-sub>0 VNĐ</span></div>
       <p class="text-xs leading-4 text-gray-66">Giao hàng tiêu chuẩn miễn phí cho mọi đơn hàng.</p>
-      <a href="gio-hang.html" class="inline-flex h-12 w-full items-center justify-center rounded-sm bg-brown px-6 text-base leading-[22px] tracking-[0.224px] text-bg hover:bg-brown-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Đi tới giỏ hàng</a>
-      <button type="button" data-drawer-close class="inline-flex h-12 w-full items-center justify-center rounded-sm border border-brown px-6 text-base leading-[22px] tracking-[0.224px] text-brown hover:bg-brown-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown">Tiếp tục mua sắm</button>
+      <a href="gio-hang.html" class="inline-flex h-12 w-full items-center justify-center rounded-sm bg-brown px-6 text-base leading-[22px] tracking-[0.224px] text-bg hover:bg-brown-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown whitespace-nowrap">Đi tới giỏ hàng</a>
+      <button type="button" data-drawer-close class="inline-flex h-12 w-full items-center justify-center rounded-sm border border-brown px-6 text-base leading-[22px] tracking-[0.224px] text-brown hover:bg-brown-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown whitespace-nowrap">Tiếp tục mua sắm</button>
     </div>
   </aside>`;
   document.body.appendChild(drawer);
